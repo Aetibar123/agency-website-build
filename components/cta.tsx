@@ -59,7 +59,7 @@ export function CTA() {
               >
                 <Link href="mailto:[EMAIL_ADDRESS]">
                   <span className="relative z-10 flex items-center gap-2">
-                    aetibar786@gmail.com  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    hello.aetibar@gmail.com  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Link>
               </Button>
