@@ -10,12 +10,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Nexus Digital | Premium Software Development & Digital Marketing Agency',
+  title: 'Aetibar | Premium Software Development & Digital Marketing Agency',
   description: 'We build scalable digital products and growth systems. Custom web apps, mobile apps, AI solutions, branding, SEO, and performance marketing for startups and enterprises.',
   keywords: ['software development', 'digital marketing', 'web development', 'mobile apps', 'AI solutions', 'SEO', 'branding'],
-  authors: [{ name: 'Nexus Digital' }],
+  authors: [{ name: 'Aetibar' }],
   openGraph: {
-    title: 'Nexus Digital | Premium Software Development & Digital Marketing Agency',
+    title: 'Aetibar | Premium Software Development & Digital Marketing Agency',
     description: 'We build scalable digital products and growth systems.',
     type: 'website',
   },
