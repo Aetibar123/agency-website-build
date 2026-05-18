@@ -34,6 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark bg-background">
+       <head>
+     <meta name="google-site-verification" content="PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ" />"
+  
+    </head>
       <body className={`${plusJakarta.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
