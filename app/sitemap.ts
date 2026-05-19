@@ -9,7 +9,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
-      url: 'https://www.aetibar.in/about',
+      url: 'https://www.aetibar.in/services',
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+
+    {
+      url: 'https://www.aetibar.in/projects',
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+
+    {
+      url: 'https://www.aetibar.in/process',
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+
+    {
+      url: 'https://www.aetibar.in/pricing',
       lastModified: new Date(),
       priority: 0.8,
     },
