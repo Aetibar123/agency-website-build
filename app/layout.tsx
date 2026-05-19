@@ -48,19 +48,26 @@ export default function RootLayout({
   
     </head>
       <body className={`${plusJakarta.variable} font-sans antialiased`}>
-        <!-- Google tag (gtag.js) -->
-  <Script id="google-analytics" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-EBH9X58H1B');
-  `}
-</Script>
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
-      </body>
+  <Script
+    src="https://www.googletagmanager.com/gtag/js?id=G-EBH9X58H1B"
+    strategy="afterInteractive"
+  />
+
+  <Script id="google-analytics" strategy="afterInteractive">
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EBH9X58H1B');
+    `}
+  </Script>
+
+  {children}
+
+  {process.env.NODE_ENV === 'production' && <Analytics />}
+</body>
     </html>
   )
 }
