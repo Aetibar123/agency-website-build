@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Aetibar | Premium Software Development & Digital Marketing Agency',
     description: 'We build scalable digital products and growth systems.',
+    url: 'https://www.aetibar.in',
+    siteName: 'Aetibar',
     type: 'website',
   },
 }
