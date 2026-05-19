@@ -3,19 +3,19 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://aetibar-portfolio-f8zc.vercel.app',
+      url: 'https://www.aetibar.in',
       lastModified: new Date(),
       priority: 1,
     },
 
     {
-      url: 'https://aetibar-portfolio-f8zc.vercel.app/about',
+      url: 'https://www.aetibar.in/about',
       lastModified: new Date(),
       priority: 0.8,
     },
 
     {
-      url: 'https://aetibar-portfolio-f8zc.vercel.app/contact',
+      url: 'https://www.aetibar.in/contact',
       lastModified: new Date(),
       priority: 0.8,
     },
