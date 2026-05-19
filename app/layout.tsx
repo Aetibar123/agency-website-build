@@ -45,6 +45,22 @@ export default function RootLayout({
     <html lang="en" className="dark bg-background">
        <head>
      <meta name="google-site-verification" content="PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ" />"
+
+         <Script
+  id="schema-markup"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Aetibar Information & Technologies",
+      url: "https://www.aetibar.in",
+      logo: "https://www.aetibar.in/logo.png",
+      description:
+        "Web development, SEO, AI solutions and digital services company.",
+    }),
+  }}
+/>
   
     </head>
       <body className={`${plusJakarta.variable} font-sans antialiased`}>
