@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     alt: 'Aetibar',
   },
 ],
+  },
 }
 
 export const viewport: Viewport = {
