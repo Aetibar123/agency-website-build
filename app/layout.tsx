@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   
   title: 'Aetibar | Premium Software Development & Digital Marketing Agency',
-  description: 'We build scalable digital products and growth systems. Custom web apps, mobile apps, AI solutions, branding, SEO, and performance marketing for startups and enterprises.',
+  description: 'Build smarter digital experiences with Aetibar. We create high-performance websites, mobile apps, AI solutions, SEO strategies, and growth-focused digital systems.',
   keywords: ['software development', 'digital marketing', 'web development', 'mobile apps', 'AI solutions', 'SEO', 'branding'],
   authors: [{ name: 'Aetibar' }],
   openGraph: {
@@ -57,7 +57,7 @@ export default function RootLayout({
       url: "https://www.aetibar.in",
       logo: "https://www.aetibar.in/logo.png",
       description:
-        "Web development, SEO, AI solutions and digital services company.",
+        "Custom web apps, AI solutions, SEO, branding, and scalable digital growth systems.",
     }),
   }}
 />
