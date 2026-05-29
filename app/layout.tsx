@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: 'Aetibar | Premium Software Development & Digital Marketing Agency',
   description: 'Build smarter digital experiences with Aetibar. We create high-performance websites, mobile apps, AI solutions, SEO strategies, and growth-focused digital systems.',
   keywords: ['software development', 'digital marketing', 'web development', 'mobile apps', 'AI solutions', 'SEO', 'branding'],
+    icons: {
+    icon: '/logo.jpeg',
+  },
   authors: [{ name: 'Aetibar' }],
   openGraph: {
     title: 'Aetibar | Premium Software Development & Digital Marketing Agency',
@@ -63,7 +66,7 @@ export default function RootLayout({
       "@type": "Organization",
       name: "Aetibar Information & Technologies",
       url: "https://www.aetibar.in",
-      logo: "https://www.aetibar.in//og-image.jpg",
+      logo: "https://www.aetibar.in/logo.jpeg",
       description:
         "Custom web apps, AI solutions, SEO, branding, and scalable digital growth systems.",
     }),
