@@ -63,7 +63,7 @@ export default function RootLayout({
       "@type": "Organization",
       name: "Aetibar Information & Technologies",
       url: "https://www.aetibar.in",
-      logo: "https://www.aetibar.in/logo.png",
+      logo: "https://www.aetibar.in//og-image.jpg",
       description:
         "Custom web apps, AI solutions, SEO, branding, and scalable digital growth systems.",
     }),
