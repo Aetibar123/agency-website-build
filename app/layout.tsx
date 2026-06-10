@@ -105,6 +105,54 @@ export default function RootLayout({
     }),
   }}
 />
+         <Script
+  id="service-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Aetibar Information & Technologies",
+      "url": "https://www.aetibar.in",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Services",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "name": "Full Stack Web Development",
+            "description": "Custom web applications and website development services."
+          },
+          {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "Android and iOS mobile application development."
+          },
+          {
+            "@type": "Service",
+            "name": "UI/UX Design",
+            "description": "User interface and user experience design services."
+          },
+          {
+            "@type": "Service",
+            "name": "SEO Optimization",
+            "description": "Technical SEO, on-page SEO, off-page SEO and local SEO services."
+          },
+          {
+            "@type": "Service",
+            "name": "Social Media Marketing",
+            "description": "Social media management and marketing services."
+          },
+          {
+            "@type": "Service",
+            "name": "AI Automation Solutions",
+            "description": "AI integrations, automation workflows and business automation services."
+          }
+        ]
+      }
+    }),
+  }}
+/>
   
     </head>
       <body className={`${plusJakarta.variable} font-sans antialiased`}>
