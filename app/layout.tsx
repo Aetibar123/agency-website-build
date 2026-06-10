@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
   {
-    url: 'https://www.aetibar.in//og-image.jpg',
+    url: 'https://www.aetibar.in/og-image.jpg',
     width: 1200,
     height: 630,
     alt: 'Aetibar',
@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark bg-background">
        <head>
-     <meta name="google-site-verification" content="PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ" />"
+     <meta name="google-site-verification" content="PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ" />
 
          <Script
   id="schema-markup"
@@ -69,6 +69,39 @@ export default function RootLayout({
       logo: "https://www.aetibar.in/logo.jpeg",
       description:
         "Custom web apps, AI solutions, SEO, branding, and scalable digital growth systems.",
+    }),
+  }}
+/>
+
+         <Script
+  id="local-business-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Aetibar Information & Technologies",
+      "url": "https://www.aetibar.in",
+      "logo": "https://www.aetibar.in/logo.jpeg",
+      "image": "https://www.aetibar.in/og-image.jpg",
+      "description": "Website Development, SEO, Digital Marketing, AI Solutions and Software Development Services.",
+      "telephone": "+91-7878055698",
+      "email": "hello.aetibar@gmail.com",
+
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mallah Talai",
+        "addressRegion": "Rajasthan",
+        "addressCountry": "IN"
+      },
+
+      "areaServed": [
+        "Udaipur",
+        "Rajasthan",
+        "India"
+      ],
+
+      "priceRange": "$$"
     }),
   }}
 />
