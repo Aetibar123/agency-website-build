@@ -6,34 +6,34 @@ import { ChevronDown } from "lucide-react"
 
 const faqs = [
   {
-    question: "What is your typical project timeline?",
+    question: "What services does Aetibar Information & Technologies provide?",
     answer:
-      "Project timelines vary based on scope and complexity. A typical website takes 2-5 weeks, while larger applications can take 3-6 months. We provide detailed timelines during our discovery phase and keep you updated throughout the process.",
+      "Aetibar provides website development, web application development, SEO services, digital marketing, branding, AI solutions, and software development services.",
   },
   {
-    question: "How do you handle project communication?",
+    question: "Why choose Aetibar for web development services?",
     answer:
-      "We believe in transparent communication. You'll have a dedicated project manager, access to our project management tools, and regular check-ins. We provide weekly progress reports and are always available via Slack, email, or video calls.",
+      "Aetibar develops responsive, SEO-friendly, and high-performance websites tailored to business goals and user experience.",
   },
   {
-    question: "Do you offer ongoing support after launch?",
+    question: "Does Aetibar offer SEO services?",
     answer:
-      "Absolutely! All our packages include post-launch support. We also offer extended maintenance plans that include updates, security patches, performance monitoring, and feature enhancements to keep your product running smoothly.",
+      "Yes, Aetibar offers technical SEO, on-page SEO, off-page SEO, local SEO, keyword research, content optimization, and SEO audits.",
   },
   {
-    question: "What technologies do you work with?",
+    question: "Do you provide digital marketing services?",
     answer:
-      "We specialize in modern web technologies including React, React Native, Next.js, Node.js, Python, Firebase, Supabase, and cloud platforms like AWS and Google Cloud. We choose the best tech stack for each project based on your specific requirements and scalability needs.",
+      "Yes, Aetibar provides digital marketing services including Google Ads, social media marketing, content marketing, SEO, and lead generation strategies.",
   },
   {
-    question: "How do you ensure project quality?",
+    question: "How long does it take to develop a website?",
     answer:
-      "Quality is embedded in our process. We follow agile methodologies, conduct thorough code reviews, implement automated testing, and perform extensive QA before every release. Our team adheres to industry best practices and coding standards.",
+      "Website development timelines depend on project complexity. A standard business website usually takes 2–6 weeks, while custom web applications may require additional time.",
   },
   {
-    question: "Can you work with our existing team?",
+    question: "Do you provide ongoing website maintenance and support?",
     answer:
-      "Yes! We frequently collaborate with in-house teams. Whether you need us to augment your existing capabilities or take the lead on specific initiatives, we adapt our approach to integrate seamlessly with your workflow and team culture.",
+      "Yes, Aetibar provides website maintenance, security updates, performance monitoring, technical support, and ongoing optimization services.",
   },
 ]
 
