@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Aetibar",
     images: [
       {
-        url: "/logo.jpeg",
+        url: "https://www.aetibar.in/logo.jpeg",
         width: 512,
         height: 512,
         alt: "Aetibar Logo",
