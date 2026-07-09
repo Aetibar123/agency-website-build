@@ -1,6 +1,48 @@
+import { Metadata } from "next";
 import ThemeRegistry from "../components/providers/ThemeRegistry";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.aetibar.in"),
+
+  title: {
+    default: "Aetibar | Web Development & Digital Marketing Company",
+    template: "%s | Aetibar",
+  },
+
+  description:
+    "Aetibar provides Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design services.",
+
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
+
+  openGraph: {
+    title: "Aetibar",
+    description:
+      "Web Development, Mobile App Development, AI Automations, SEO & Marketing.",
+    url: "https://www.aetibar.in",
+    siteName: "Aetibar",
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 512,
+        height: 512,
+        alt: "Aetibar Logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["/logo.jpeg"],
+  },
+};
 
 export default function RootLayout({
   children,
