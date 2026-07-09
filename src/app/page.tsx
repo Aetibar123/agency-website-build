@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from "next";
 import HeroSection from "../components/home/HeroSection";
 import TechStackSection from "../components/home/TechStackSection";
 import AboutSection from "../components/home/AboutSection";
@@ -7,6 +8,63 @@ import MethodologySection from "../components/home/MethodologySection";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import CtaSection from "../components/home/CtaSection";
 import BrandAnchorSection from "../components/home/BrandAnchorSection";
+
+export const metadata: Metadata = {
+  title:
+    "Aetibar | Web Development, App Development & Digital Marketing Company in Udaipur",
+
+  description:
+    "Aetibar offers Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design services in Udaipur to help businesses grow online.",
+
+  keywords: [
+    "Web Development Company in Udaipur",
+    "Website Development Company",
+    "Website Design Company",
+    "Mobile App Development",
+    "App Development Company",
+    "AI Automation Services",
+    "SEO Services",
+    "Digital Marketing Company in Udaipur",
+    "Brand Design",
+    "Aetibar",
+  ],
+
+  alternates: {
+    canonical: "https://www.aetibar.in/",
+  },
+
+  openGraph: {
+    title:
+      "Aetibar | Web Development, App Development & Digital Marketing Company in Udaipur",
+
+    description:
+      "Professional Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design services.",
+
+    url: "https://www.aetibar.in/",
+    siteName: "Aetibar",
+    type: "website",
+
+    images: [
+      {
+        url: "https://www.aetibar.in/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aetibar",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Aetibar | Web Development & Digital Marketing Company in Udaipur",
+
+    description:
+      "Professional Web Development, Mobile App Development, AI Automation, SEO & Marketing and Brand Design services.",
+
+    images: ["https://www.aetibar.in/og-image.jpg"],
+  },
+};
 
 export default function HomePage() {
   return (
