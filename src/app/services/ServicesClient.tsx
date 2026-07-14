@@ -15,21 +15,21 @@ export default function ServicesClient() {
         {/* Soft elegant background glows */}
         <Box sx={{ position: 'absolute', top: -100, left: '30%', width: 600, height: 600, bgcolor: 'rgba(110,65,226,0.03)', filter: 'blur(120px)', borderRadius: '50%', zIndex: 0 }} />
         
-        <Container maxWidth="md" sx={{ position: 'relative', zIndex: 1 }}>
+        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
           <Box sx={{ display: 'inline-block', px: 3, py: 1, border: '1px solid rgba(110,65,226,0.15)', borderRadius: 10, mb: 4, bgcolor: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(10px)' }}>
             <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 700, letterSpacing: 2 }}>
-              OUR DOMAINS OF EXPERTISE
+              OUR SERVICES
             </Typography>
           </Box>
           <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '3.5rem', md: '5.5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
-            Elevate Your <br />
+            Engineered for Speed. <br />
             <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
-              Digital Presence
+             Designed to Convert.
               <Box sx={{ position: 'absolute', bottom: 10, left: 0, width: '100%', height: 16, bgcolor: 'primary.main', opacity: 0.1, transform: 'skewX(-15deg)' }} />
             </Box>
           </Typography>
           <Typography variant="body1" sx={{ color: '#555', fontSize: '1.35rem', lineHeight: 1.8, maxWidth: 800, mx: 'auto' }}>
-            From bleeding-edge AI automation to cinematic visual storytelling, our specialized departments work in absolute synergy to scale your brand's authority.
+            We design and develop high-performance business websites, custom web applications, and intuitive UI/UX solutions that help modern businesses streamline operations, strengthen their digital presence, and drive sustainable growth.
           </Typography>
         </Container>
       </Box>
@@ -104,7 +104,7 @@ export default function ServicesClient() {
                   {/* Elegant Learn More CTA */}
                   <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: '#888' }}>
                     <Typography variant="subtitle2" sx={{ fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1, fontSize: '0.75rem' }}>
-                      Explore Service
+                      Learn More
                     </Typography>
                     <ArrowForwardIosIcon className="arrow-icon" sx={{ fontSize: 14, transition: 'all 0.3s ease' }} />
                   </Box>

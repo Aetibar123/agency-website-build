@@ -8,19 +8,26 @@ import CtaSection from '../../home/CtaSection';
 
 const webDevFaqs = [
   {
-    question: "Do you build custom websites or use templates?",
-    answer: "We strictly build custom, highly scalable websites using modern frameworks like Next.js and React. We do not use bloated, slow templates. Every line of code is written to ensure maximum performance, security, and a unique brand experience."
+    question: "Do you build custom websites?",
+    answer:
+      "Yes. We develop custom websites and web applications tailored to your business requirements, focusing on performance, scalability, security, and long-term maintainability."
   },
   {
-    question: "What is a Headless CMS and why should I care?",
-    answer: "A Headless CMS separates your content from your website's code. This means your website loads infinitely faster (which Google loves for SEO), and your marketing team can easily update content without needing a developer to change code."
+    question: "Can you integrate my website with third-party services?",
+    answer:
+      "Absolutely. We can integrate payment gateways, CRMs, APIs, authentication systems, analytics tools, and other third-party services based on your project requirements."
   },
   {
-    question: "Will my website be mobile-friendly?",
-    answer: "Yes, absolute mobile responsiveness is mandatory in all our builds. We follow a mobile-first design philosophy, ensuring your application looks and functions flawlessly across all devices, from ultra-wide monitors to the smallest smartphones."
+    question: "Will my website work on all devices?",
+    answer:
+      "Yes. Every website we build is fully responsive and optimized to provide a consistent experience across desktops, tablets, and mobile devices."
+  },
+  {
+    question: "Can the website be expanded as my business grows?",
+    answer:
+      "Yes. We build scalable web applications that can support new features, integrations, and future business requirements without requiring a complete rebuild."
   }
 ];
-
 export default function WebDevelopmentPage({ service }: { service: ServiceDetail }) {
   return (
     <Box sx={{ bgcolor: '#ffffff', color: '#111', minHeight: '100vh' }}>
@@ -32,7 +39,7 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
               <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, p: 1, px: 2, bgcolor: 'rgba(110,65,226,0.1)', borderRadius: 2, mb: 3 }}>
                 <CodeIcon sx={{ color: 'primary.main', fontSize: 20 }} />
                 <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                  Engineering Department
+                  Web Engineering
                 </Typography>
               </Box>
               <Typography variant="h1" sx={{ color: 'secondary.main', mb: 4, fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
@@ -156,7 +163,7 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="h3" sx={{ fontWeight: 800, mb: 4 }}>
-                Target Domains
+               Industries Served
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
                 {service.domains.map((domain, idx) => (

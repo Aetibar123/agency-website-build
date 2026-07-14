@@ -9,16 +9,24 @@ import CtaSection from '../../home/CtaSection';
 
 const appDevFaqs = [
   {
-    question: "Do you build for iOS, Android, or both?",
-    answer: "We typically build using cross-platform frameworks like React Native, which allows us to deploy highly performant, native-feeling applications to both iOS and Android simultaneously. This saves you significant development time and budget compared to building two separate native apps."
+    question: "Do you develop apps for both Android and iOS?",
+    answer:
+      "Yes. We build cross-platform mobile applications that run on both Android and iOS, helping businesses reach a wider audience while reducing development time and maintenance costs."
   },
   {
-    question: "Can my app work completely offline?",
-    answer: "Yes. We specialize in 'offline-first' architecture. By utilizing robust local databases and background synchronization engines, we can ensure your app remains functional and caches data even when the user enters a complete network dead zone."
+    question: "Can the app work without an internet connection?",
+    answer:
+      "Yes, when required. We can develop applications with offline functionality that allows users to access important features and automatically sync data once an internet connection is available."
   },
   {
-    question: "Will you help us launch the app on the App Store and Google Play?",
-    answer: "Absolutely. Our service doesn't end at development. We handle the entire deployment process, ensuring all strict compliance, privacy policies, and technical requirements are met for successful approval on both Apple and Google stores."
+    question: "Will you publish the app on the App Store and Google Play?",
+    answer:
+      "Yes. We assist with the complete deployment process, including app store preparation, submission, and publishing for both Apple App Store and Google Play."
+  },
+  {
+    question: "Can my app be expanded with new features later?",
+    answer:
+      "Absolutely. We build scalable applications that can easily support new features, integrations, and future business requirements as your product grows."
   }
 ];
 
@@ -29,7 +37,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
       {/* HERO SECTION */}
       <Box sx={{ textAlign: 'center', mb: 10, px: 2 }}>
         <Typography variant="caption" sx={{ display: 'inline-block', p: 1, px: 3, bgcolor: '#f0f4ff', color: '#3366ff', borderRadius: 10, mb: 3, fontWeight: 700, letterSpacing: 1 }}>
-          MOBILE PLATFORMS
+         APP DEVELOPMENT
         </Typography>
         <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 3, letterSpacing: '-0.02em' }}>
           {service.title}
@@ -99,7 +107,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
       <Box sx={{ mt: 10, bgcolor: '#0B0F19', color: 'white', py: { xs: 10, md: 15 } }}>
         <Container maxWidth="xl">
           <Typography variant="h2" sx={{ fontWeight: 900, mb: 6, textAlign: 'center', letterSpacing: '-0.02em' }}>
-            Powered By Modern Technologies
+            Built with Modern Technologies
           </Typography>
           <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 2, maxWidth: 900, mx: 'auto' }}>
             {service.technologies.map((tech, idx) => (

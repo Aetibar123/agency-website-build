@@ -13,16 +13,24 @@ import CtaSection from '../../home/CtaSection';
 
 const paidFaqs = [
   {
-    question: "What is the minimum ad spend you manage?",
-    answer: "To ensure we can gather enough statistically significant data for machine learning optimization, we typically require a minimum ad spend of $10,000 per month across your chosen platforms."
+    question: "Which advertising platforms do you manage?",
+    answer:
+      "We manage advertising campaigns across Google Ads, Meta Ads, LinkedIn Ads, and other major digital advertising platforms based on your business goals and target audience."
   },
   {
-    question: "Who creates the ad creatives (images/videos)?",
-    answer: "We offer end-to-end solutions. Our in-house creative team can produce highly engaging, conversion-optimized video and image assets, or we can use your existing brand assets if they meet our performance standards."
+    question: "Can you create the ad creatives as well?",
+    answer:
+      "Yes. We can design ad creatives, write ad copy, and produce visual assets that align with your brand and campaign objectives."
   },
   {
-    question: "What happens if a campaign isn't working?",
-    answer: "We monitor campaigns daily. If a campaign isn't hitting our projected KPIs, we aggressively A/B test new variables (audiences, creatives, copy, landing pages) until we find the winning combination. We never 'set it and forget it'."
+    question: "How do you optimize advertising campaigns?",
+    answer:
+      "We continuously monitor campaign performance, analyze key metrics, test different audiences and creatives, and make data-driven adjustments to improve overall campaign results."
+  },
+  {
+    question: "Will I receive campaign performance reports?",
+    answer:
+      "Yes. We provide regular reports with clear insights into campaign performance, advertising spend, conversions, and opportunities for ongoing optimization."
   }
 ];
 
@@ -40,7 +48,7 @@ export default function PaidAdvertisingPage({ service }: { service: ServiceDetai
             </Typography>
           </Box>
           <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5.5rem' }, fontWeight: 900, mb: 3, lineHeight: 1 }}>
-            Engineered For <span style={{ color: '#6e41e2' }}>ROAS</span>
+            Results <span style={{ color: '#6e41e2' }}>That Matter</span>
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.35rem', maxWidth: 800, mx: 'auto', lineHeight: 1.8 }}>
             {service.description}

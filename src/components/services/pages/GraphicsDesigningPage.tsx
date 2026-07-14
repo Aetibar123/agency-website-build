@@ -10,16 +10,24 @@ import CtaSection from '../../home/CtaSection';
 
 const graphicsFaqs = [
   {
-    question: "Do you offer unlimited design subscriptions?",
-    answer: "No. We do not operate a 'design factory' model. We are a premium agency that focuses on high-impact, strategic design (like full rebranding, enterprise UI/UX, or flagship product packaging). Every pixel is intentionally crafted, not rushed."
+    question: "Do you provide both one-time and ongoing design services?",
+    answer:
+      "Yes. We offer project-based graphic design as well as ongoing creative support for businesses that need consistent branding, marketing materials, and digital design."
   },
   {
-    question: "What do we receive at the end of a branding project?",
-    answer: "You receive a comprehensive Brand Guidelines document, all vector logo files (AI, EPS, SVG), typography licenses, color palette codes (HEX, RGB, CMYK), and all custom UI assets ready for developer handoff."
+    question: "What will I receive after a branding project?",
+    answer:
+      "You'll receive all final design assets, logo files, brand guidelines, typography and color specifications, along with files ready for both print and digital use."
   },
   {
-    question: "Can you redesign our existing software interface?",
-    answer: "Yes. Our UI/UX specialists excel at taking complex, outdated legacy software and transforming it into modern, intuitive, and highly engaging user experiences that drastically improve user retention and satisfaction."
+    question: "Can you redesign our existing website or application interface?",
+    answer:
+      "Yes. We redesign websites and digital products to improve usability, visual consistency, accessibility, and overall user experience while maintaining your brand identity."
+  },
+  {
+    question: "Can you create designs for both digital and print media?",
+    answer:
+      "Absolutely. We design assets for websites, social media, presentations, marketing campaigns, brochures, packaging, and other digital or print materials."
   }
 ];
 
@@ -38,8 +46,8 @@ export default function GraphicsDesigningPage({ service }: { service: ServiceDet
               </Typography>
             </Box>
             <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3.5rem', md: '5.5rem' }, fontWeight: 900, mb: 4, lineHeight: 1.05 }}>
-              Premium <br />
-              <span style={{ color: '#6e41e2' }}>Visual Identity</span>
+              Visual <br />
+              <span style={{ color: '#6e41e2' }}> Identity</span>
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', maxWidth: 600, lineHeight: 1.8 }}>
               {service.description}

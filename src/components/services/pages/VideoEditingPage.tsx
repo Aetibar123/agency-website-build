@@ -14,7 +14,7 @@ export default function VideoEditingPage({ service }: { service: ServiceDetail }
           <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, p: 1, px: 3, bgcolor: 'rgba(110,65,226,0.08)', borderRadius: 10, mb: 4 }}>
             <PlayCircleOutlinedIcon sx={{ color: 'primary.main' }} />
             <Typography variant="subtitle2" sx={{ color: 'primary.main', letterSpacing: 2, textTransform: 'uppercase', fontWeight: 700 }}>
-              Creative Studio
+             Creative Production
             </Typography>
           </Box>
           <Typography variant="h1" sx={{ color: 'secondary.main', fontSize: { xs: '3.5rem', md: '5.5rem' }, fontWeight: 900, textTransform: 'uppercase', lineHeight: 1, mb: 3 }}>

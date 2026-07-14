@@ -9,16 +9,24 @@ import CtaSection from '../../home/CtaSection';
 
 const seoFaqs = [
   {
-    question: "How long does it take to see results from SEO?",
-    answer: "SEO is a long-term compound strategy. While technical fixes can yield immediate indexing improvements, significant movement in highly competitive organic keywords typically takes 3 to 6 months of consistent, high-quality optimization."
+    question: "How long does SEO take to show results?",
+    answer:
+      "SEO is a long-term strategy. Depending on your website, competition, and industry, noticeable improvements can take several months. We focus on building sustainable growth through continuous optimization."
   },
   {
-    question: "Do you guarantee a #1 ranking on Google?",
-    answer: "No reputable agency can guarantee a #1 spot, as Google's algorithm is proprietary and constantly evolving. However, we guarantee the execution of a world-class, data-driven strategy that has consistently placed our clients in the Top 3 for their primary revenue-driving keywords."
+    question: "Can you guarantee first-page or #1 rankings?",
+    answer:
+      "No ethical SEO agency can guarantee specific rankings because search engine algorithms constantly evolve. Our focus is on implementing proven SEO strategies that improve visibility, traffic, and long-term performance."
   },
   {
-    question: "What is Technical SEO?",
-    answer: "Technical SEO involves optimizing the underlying architecture of your website. This includes dramatically improving server response times, fixing Core Web Vitals, structuring schema markup, and ensuring Googlebot can crawl and index your site flawlessly."
+    question: "What does Technical SEO include?",
+    answer:
+      "Technical SEO includes improving website speed, mobile usability, crawlability, indexing, structured data, Core Web Vitals, and overall website performance to help search engines understand and access your content more effectively."
+  },
+  {
+    question: "Do you provide ongoing SEO support?",
+    answer:
+      "Yes. SEO requires continuous monitoring, content optimization, technical improvements, and performance analysis to maintain and improve search visibility over time."
   }
 ];
 
@@ -33,7 +41,7 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
             <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, p: 1, px: 2, border: '1px solid', borderColor: 'primary.main', borderRadius: 10, mb: 4, bgcolor: 'rgba(110,65,226,0.05)' }}>
               <SearchOutlinedIcon sx={{ color: 'primary.main' }} />
               <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 800, letterSpacing: 1 }}>
-                ORGANIC DOMINANCE
+              Organic Growth
               </Typography>
             </Box>
             <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1 }}>
@@ -46,8 +54,8 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
 
             <Box sx={{ display: 'flex', gap: 4 }}>
               <Box>
-                <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19' }}>#1</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600 }}>Target Ranking</Typography>
+                <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19' }}>Search</Typography>
+                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600 }}>Performance</Typography>
               </Box>
               <Divider orientation="vertical" flexItem />
               <Box>

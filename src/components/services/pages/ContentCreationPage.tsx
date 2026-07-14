@@ -9,16 +9,24 @@ import CtaSection from '../../home/CtaSection';
 
 const contentFaqs = [
   {
-    question: "Do you shoot on location?",
-    answer: "Yes. We have mobile production crews equipped with RED cameras and cinema lenses ready to travel globally to capture your brand's essence, facilities, and leadership team in 4K/8K resolution."
+    question: "What types of content do you create?",
+    answer:
+      "We create website content, landing pages, blog articles, service pages, email campaigns, social media content, product descriptions, and other marketing materials tailored to your business goals."
   },
   {
-    question: "Can you manage our social media accounts completely?",
-    answer: "Absolutely. We offer full-service Social Media Management. We don't just create the content; we handle the posting schedule, community management, and growth strategies across all major platforms."
+    question: "Do you create SEO-friendly content?",
+    answer:
+      "Yes. We develop content using keyword research, search intent, and SEO best practices to improve visibility while keeping the content natural, informative, and easy to read."
   },
   {
-    question: "How do you ensure the content matches our brand voice?",
-    answer: "Before any cameras roll or copy is written, we conduct a deep 'Brand Discovery' workshop. We build a comprehensive brand Bible that dictates tone, visual aesthetics, and messaging pillars, ensuring 100% consistency."
+    question: "Can you match our existing brand voice?",
+    answer:
+      "Absolutely. We take time to understand your brand, audience, and communication style so every piece of content maintains a consistent tone across all platforms."
+  },
+  {
+    question: "Can you provide ongoing content support?",
+    answer:
+      "Yes. We offer ongoing content creation for blogs, websites, marketing campaigns, newsletters, and social media to help businesses maintain a consistent online presence."
   }
 ];
 
@@ -31,7 +39,7 @@ export default function ContentCreationPage({ service }: { service: ServiceDetai
         <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, p: 1, px: 3, border: '1px solid #e0e0e0', borderRadius: 10, mb: 4, bgcolor: 'white' }}>
           <CreateOutlinedIcon sx={{ color: 'primary.main', fontSize: 18 }} />
           <Typography variant="caption" sx={{ color: '#444', fontWeight: 700, letterSpacing: 2 }}>
-            AUTHORITATIVE COPY
+           Content That Connects
           </Typography>
         </Box>
         <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, mb: 4, fontFamily: 'serif' }}>
@@ -79,7 +87,7 @@ export default function ContentCreationPage({ service }: { service: ServiceDetai
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: 'sticky', top: 120 }}>
               <Card sx={{ bgcolor: 'white', borderRadius: 4, p: 4, mb: 4, border: '1px solid #eee', boxShadow: '0 20px 40px rgba(0,0,0,0.03)' }}>
-                <Typography variant="h6" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>Content Arsenal</Typography>
+                <Typography variant="h6" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>Content Expertise</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                   {service.features.map((feature, idx) => (
                     <Box key={idx} sx={{ display: 'flex', gap: 2 }}>
