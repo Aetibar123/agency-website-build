@@ -1,11 +1,59 @@
 import React from "react";
+import { Metadata } from "next";
 import ContactHeroSection from "../../components/contact/ContactHeroSection";
 import { Box, Container, Typography, IconButton } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+
+export const metadata: Metadata = {
+  title: "Contact Aetibar | web development and digital marketing company delivering websites, mobile apps, AI automation, SEO, and branding solutions",
+
+  description:
+  "Get in touch with Aetibar for expert web development, mobile app development, AI automation, SEO, digital marketing, and brand design services in Udaipur.",
+
+  keywords: [
+    "Contact Aetibar",
+    "Web Development Company in Udaipur",
+    "Website Development Company",
+    "Mobile App Development",
+    "AI Automation",
+    "SEO Services",
+    "Digital Marketing Company in Udaipur",
+    "Brand Design",
+  ],
+
+  alternates: {
+    canonical: "https://www.aetibar.in/contact",
+  },
+
+  openGraph: {
+    title: "Contact Aetibar | Web Development Company in Udaipur",
+    description:
+      "Get in touch with Aetibar for web development, app development, AI automation, SEO, digital marketing, and branding services.",
+    url: "https://www.aetibar.in/contact",
+    siteName: "Aetibar",
+    type: "website",
+    images: [
+      {
+        url: "https://www.aetibar.in/logo.jpeg",
+        width: 512,
+        height: 512,
+        alt: "Aetibar Logo",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Aetibar",
+    description:
+      "Contact Aetibar for professional web development and digital marketing solutions.",
+    images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+};
+
 
 export default function ContactPage() {
   return (
