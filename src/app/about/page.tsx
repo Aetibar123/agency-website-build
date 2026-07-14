@@ -8,7 +8,7 @@ import CtaSection from "../../components/home/CtaSection";
 export const metadata: Metadata = {
   title: "About Aetibar | Web Development & Digital Marketing Company",
   description:
-    "Learn about Aetibar, a trusted web development and digital marketing company in Udaipur specializing in Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design.",
+    "Learn about Aetibar, a trusted web development and digital marketing company delivering websites, mobile apps, AI automation, SEO, and branding solutions",
 
   keywords: [
     "About Aetibar",
