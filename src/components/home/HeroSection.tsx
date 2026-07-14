@@ -45,17 +45,18 @@ export default function HeroSection() {
               </Typography>
             </Box>
 
-            <Typography variant="h1" sx={{ color: 'white', mb: 4, fontSize: { xs: '3.5rem', md: '5.5rem' }, fontWeight: 900, lineHeight: 1.05, letterSpacing: '-0.02em', mx: 'auto' }}>
-              We Engineer the <br />
+            <Typography variant="h1" sx={{ color: 'white', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.05, letterSpacing: '-0.02em', mx: 'auto' }}>
+             Build Smarter Websites, AI Solutions  <br />
               <Box component="span" sx={{ color: 'transparent', backgroundImage: 'linear-gradient(90deg, #6e41e2 0%, #00c6ff 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', display: 'inline-block' }}>
-                Unfair Advantage.
+               & Digital Experiences
               </Box>
             </Typography>
 
             {/* Subtitle Content */}
-            <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.8)', mb: 6, fontSize: { xs: '1.1rem', md: '1.35rem' }, fontWeight: 400, lineHeight: 1.7, maxWidth: '800px', mx: 'auto', letterSpacing: '0.01em' }}>
-              We are an elite collective of software engineers, AI architects, and data-driven growth hackers. We tear down legacy systems and build hyper-optimized, revenue-generating digital engines to secure your market dominance.
+            <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.8)', mb: 6, fontSize: { xs: '1rem', md: '1.25rem' }, fontWeight: 400, lineHeight: 1.7, maxWidth: '800px', mx: 'auto', letterSpacing: '0.01em' }}>
+             Custom Web & Mobile App Development, AI Automation, SEO, and Digital Solutions Built to Help Businesses Grow Faster.
             </Typography>
+             
 
             <Box sx={{ display: 'flex', gap: 3, flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/contact" style={{ textDecoration: 'none' }}>
@@ -97,6 +98,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
             </Box>
+            
           </Grid>
         </Grid>
       </Container>
