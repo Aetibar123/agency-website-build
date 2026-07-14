@@ -25,7 +25,7 @@ export default function PerksSection() {
     },
     {
       title: "Comprehensive Health",
-      desc: "Premium global health, dental, and vision insurance for you and your family.",
+      desc: "Premium global health, dental, and vision insurance for you & your family.",
       icon: <HealthAndSafetyIcon fontSize="large" color="primary" />
     }
   ];
