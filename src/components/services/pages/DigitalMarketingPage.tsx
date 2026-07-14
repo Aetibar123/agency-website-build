@@ -10,16 +10,24 @@ import CtaSection from '../../home/CtaSection';
 
 const digitalFaqs = [
   {
-    question: "How do you measure marketing success?",
-    answer: "We strictly focus on bottom-line metrics: Customer Acquisition Cost (CAC), Return on Ad Spend (ROAS), and Customer Lifetime Value (LTV). We don't hide behind 'vanity metrics' like impressions or likes unless they directly attribute to revenue."
+    question: "How do you measure the success of a marketing campaign?",
+    answer:
+      "We measure campaign performance using meaningful business metrics such as website traffic, lead generation, conversion rates, customer engagement, and return on marketing investment. Every campaign is monitored and optimized based on its objectives."
   },
   {
-    question: "Do you handle both B2B and B2C marketing?",
-    answer: "Yes. Our strategies are highly customized. For B2B, we focus on Account-Based Marketing (ABM) and LinkedIn lead generation. For B2C and DTC, we dominate paid social platforms (Meta, TikTok) and high-converting influencer campaigns."
+    question: "Do you provide marketing services for both B2B and B2C businesses?",
+    answer:
+      "Yes. We develop customized digital marketing strategies for both B2B and B2C businesses, adapting campaigns to your target audience, industry, and business goals."
   },
   {
-    question: "How often will we get performance reports?",
-    answer: "You will have 24/7 access to a custom real-time analytics dashboard. Additionally, we provide comprehensive strategic reviews bi-weekly or monthly, depending on your retainer, where we analyze the data and pitch our next strategic moves."
+    question: "Will I receive regular campaign reports?",
+    answer:
+      "Yes. We provide regular performance reports and campaign updates that help you understand progress, key metrics, and opportunities for further optimization."
+  },
+  {
+    question: "Can you manage multiple marketing channels?",
+    answer:
+      "Absolutely. We can manage content marketing, social media, email marketing, SEO, paid advertising, and other digital channels through a unified marketing strategy."
   }
 ];
 
@@ -35,7 +43,7 @@ export default function DigitalMarketingPage({ service }: { service: ServiceDeta
               <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, p: 1, px: 2, bgcolor: 'rgba(110,65,226,0.1)', borderRadius: 2, mb: 3 }}>
                 <CampaignOutlinedIcon sx={{ color: 'primary.main' }} />
                 <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 700, letterSpacing: 1 }}>
-                  GROWTH ENGINE
+                  Driving Business Growth
                 </Typography>
               </Box>
               <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1 }}>

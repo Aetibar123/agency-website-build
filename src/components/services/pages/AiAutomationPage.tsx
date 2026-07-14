@@ -9,16 +9,29 @@ import CtaSection from '../../home/CtaSection';
 
 const autoFaqs = [
   {
-    question: "Can AI really automate my business without errors?",
-    answer: "Our AI automations use highly deterministic pipelines and human-in-the-loop fallback mechanisms. We strictly bound our LLMs with guardrails, ensuring they only perform predefined actions securely."
+    question: "What business processes can AI automate?",
+    answer:
+      "AI can automate repetitive business tasks such as customer support, lead qualification, document processing, data entry, appointment scheduling, email workflows, and internal operations. Every solution is tailored to your specific business needs."
   },
   {
-    question: "How long does it take to deploy an AI agent?",
-    answer: "A standard customer service or data extraction AI agent can typically be deployed within 4 to 8 weeks, depending on the complexity of your existing databases and APIs."
+    question: "Can AI integrate with my existing business tools?",
+    answer:
+      "Yes. We can integrate AI solutions with CRMs, business applications, communication platforms, APIs, and other third-party tools to create seamless automated workflows without disrupting your existing processes."
   },
   {
-    question: "Will this replace my employees?",
-    answer: "Our automations are designed to augment your workforce, not replace it. By automating repetitive, low-value tasks (like data entry or basic support), your team is freed to focus on strategic, high-value work."
+    question: "How long does an AI automation project take?",
+    answer:
+      "Project timelines depend on the complexity of your requirements, existing systems, and integrations. After understanding your business goals, we provide a clear project roadmap and estimated delivery timeline."
+  },
+  {
+    question: "Is my business data secure?",
+    answer:
+      "Yes. We build AI solutions using modern security practices and carefully manage data access throughout the development process. Protecting your business information is an important part of every project."
+  },
+  {
+    question: "Will AI replace my team?",
+    answer:
+      "Our goal is to help your team work more efficiently by automating repetitive tasks. This allows employees to focus on higher-value work that requires creativity, decision-making, and customer relationships."
   }
 ];
 
@@ -33,7 +46,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
             <Box sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, p: 1, px: 2, border: '1px solid #e0e0e0', borderRadius: 10, mb: 4 }}>
               <SmartToyOutlinedIcon sx={{ color: '#00bcd4' }} />
               <Typography variant="caption" sx={{ color: '#555', fontWeight: 700, letterSpacing: 1 }}>
-                INTELLIGENT WORKFLOWS
+             BUSINESS AUTOMATION
               </Typography>
             </Box>
             <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '4.5rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1 }}>
@@ -61,7 +74,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
         <Box sx={{ maxWidth: 800, mx: 'auto', textAlign: 'center', mb: 10 }}>
           <AccountTreeOutlinedIcon sx={{ fontSize: 60, color: '#00bcd4', mb: 2 }} />
           <Typography variant="h2" sx={{ fontWeight: 800, color: '#0B0F19' }}>
-            The Architecture of Efficiency
+            Intelligent Business Automation
           </Typography>
         </Box>
 

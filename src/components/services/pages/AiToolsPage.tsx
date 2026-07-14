@@ -7,16 +7,24 @@ import CtaSection from '../../home/CtaSection';
 
 const toolsFaqs = [
   {
-    question: "Do you build custom internal AI tools or white-label SaaS products?",
-    answer: "Both. We build highly secure, custom internal tools (like contract analyzers or predictive inventory engines) for enterprise operations, as well as scalable, white-label AI features that you can integrate directly into your own SaaS product to offer to your users."
+    question: "Can you build custom AI solutions for my business?",
+    answer:
+      "Yes. We develop custom AI solutions tailored to your business requirements, including internal business tools, AI-powered web applications, workflow automation, chatbots, document processing systems, and AI features for SaaS products."
   },
   {
-    question: "Can these tools connect to our existing databases?",
-    answer: "Absolutely. Our tools are designed to be entirely API-driven. We can seamlessly integrate our AI engines with your existing ERPs (SAP, Oracle), CRMs (Salesforce), or custom Postgres/SQL data lakes."
+    question: "Can AI integrate with our existing software and databases?",
+    answer:
+      "Yes. We can integrate AI solutions with your existing databases, CRMs, business applications, APIs, and third-party platforms to ensure a seamless workflow without disrupting your current systems."
   },
   {
-    question: "Who owns the IP of the custom AI tools you build?",
-    answer: "You do. We are a development agency. Once the final milestone is delivered and paid for, the entire codebase, architecture, and Intellectual Property (IP) of the custom tool is 100% transferred to your company."
+    question: "Who owns the AI solution after the project is completed?",
+    answer:
+      "Once the project is completed and delivered, you own the source code, project assets, and intellectual property as outlined in the project agreement."
+  },
+  {
+    question: "Can the AI solution be expanded in the future?",
+    answer:
+      "Absolutely. We build scalable AI solutions that can be extended with new features, integrations, and capabilities as your business grows."
   }
 ];
 
@@ -31,7 +39,7 @@ export default function AiToolsPage({ service }: { service: ServiceDetail }) {
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1, pt: { xs: 12, md: 16 } }}>
         <Box sx={{ textAlign: 'center', mb: 10 }}>
           <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 3 }}>
-            Proprietary <span style={{ color: '#8a2be2' }}>Intelligence</span>
+            Custom <span style={{ color: '#8a2be2' }}> AI Solutions</span>
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', maxWidth: 800, mx: 'auto' }}>
             {service.description}
