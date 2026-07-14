@@ -5,18 +5,20 @@ import { Box, Container, Typography } from "@mui/material";
 const techLogos = [
   "Next.js", "React", "Node.js", "TypeScript", "Python", 
   "TensorFlow", "OpenAI", "AWS", "Vercel", "PostgreSQL",
-  "TailwindCSS", "Figma", "Meta Ads", "Google Ads"
+  "TailwindCSS", "Figma","Next.js", "React", "Node.js", "TypeScript", "Python", 
+  "TensorFlow", "OpenAI", "AWS", "Vercel", "PostgreSQL",
+  "TailwindCSS", "Figma"
 ];
 
 export default function TechStackSection() {
   return (
     <Box sx={{ bgcolor: '#0B0F19', py: { xs: 8, md: 10 }, borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)', overflow: 'hidden' }}>
       <Container maxWidth="lg" sx={{ mb: 6, textAlign: 'center' }}>
-        <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 800, letterSpacing: 2, display: 'block', mb: 2 }}>
-          ENTERPRISE GRADE ARSENAL
+        <Typography variant="h2" sx={{ color: 'primary.main', fontWeight: 800, letterSpacing: 2, display: 'block', mb: 2 ,fontSize: { xs: '1.5rem', md: '2.5rem' }}}>
+        TECHNOLOGIES WE TRUST
         </Typography>
-        <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', maxWidth: 600, mx: 'auto', fontSize: '1.1rem' }}>
-          We do not compromise on technology. Every application, AI pipeline, and marketing campaign is built upon the most robust, scalable, and secure platforms available in the modern digital ecosystem.
+        <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.25rem' }}}>
+         We build every website, application, and AI solution using modern, scalable technologies trusted by leading startups and businesses worldwide.
         </Typography>
       </Container>
       
@@ -24,7 +26,7 @@ export default function TechStackSection() {
       <Box sx={{
         display: 'flex',
         whiteSpace: 'nowrap',
-        animation: 'scroll 40s linear infinite',
+        animation: 'scroll 15s linear infinite',
         '@keyframes scroll': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' }

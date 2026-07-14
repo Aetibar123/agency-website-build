@@ -28,7 +28,7 @@ export interface ServiceDetail {
 export const detailedServices: Record<string, ServiceDetail> = {
   "web-development": {
     slug: "web-development",
-    title: "Enterprise Web Development",
+    title: "Custom Web Development",
     subtitle: "High-performance digital architectures built for scale.",
     description: "We engineer lightning-fast, secure, and scalable web applications. Moving beyond simple websites, we build complex digital platforms that drive business operations and handle immense traffic with zero latency.",
     detailedContent: [
@@ -76,7 +76,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "app-development": {
     slug: "app-development",
-    title: "Native App Development",
+    title: "Web & Mobile App Development",
     subtitle: "Flawless mobile experiences for iOS and Android.",
     description: "Your users live on their phones. We build beautiful, intuitive, and crash-free mobile applications that keep your brand in their pockets. From complex backend data syncing to buttery-smooth UI animations.",
     detailedContent: [
@@ -172,7 +172,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "ai-tools": {
     slug: "ai-tools",
-    title: "Custom AI Tools Development",
+    title: "Custom AI Development",
     subtitle: "Proprietary AI models trained on your unique business data.",
     description: "Stop relying on generic AI. We build custom Large Language Models (LLMs) and machine learning tools trained exclusively on your proprietary data. These tools provide highly specific, context-aware intelligence that gives you an unbeatable competitive moat.",
     detailedContent: [
@@ -220,7 +220,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "digital-marketing": {
     slug: "digital-marketing",
-    title: "360° Digital Marketing",
+    title: "Digital Marketing",
     subtitle: "Data-driven campaigns that dominate the digital landscape.",
     description: "We deploy aggressive, data-driven marketing strategies that capture market share. From social media dominance to strategic content distribution, our holistic approach ensures your brand message reaches the right audience at the perfect moment.",
     detailedContent: [
@@ -268,7 +268,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "paid-advertising": {
     slug: "paid-advertising",
-    title: "Performance Paid Advertising",
+    title: "Performance Marketing",
     subtitle: "Maximize your Return on Ad Spend (ROAS) with precision targeting.",
     description: "We engineer highly profitable paid ad campaigns across search and social platforms. By utilizing advanced audience segmentation, A/B testing, and AI-driven bidding strategies, we acquire high-intent customers at the lowest possible cost.",
     detailedContent: [
@@ -364,7 +364,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "graphics-designing": {
     slug: "graphics-designing",
-    title: "Premium Graphics Designing",
+    title: "Graphic Design",
     subtitle: "Visual identities that command attention and respect.",
     description: "Design is not just how it looks; it's how it communicates. Our creative directors craft stunning visual assets, from corporate branding to modern UI/UX elements, ensuring your brand stands out with a premium, unmistakable aesthetic.",
     detailedContent: [
@@ -412,7 +412,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "video-editing": {
     slug: "video-editing",
-    title: "Cinematic Video Editing",
+    title: "Video Editing",
     subtitle: "Scroll-stopping video content that tells your story.",
     description: "In an era of short attention spans, high-quality video is your most powerful tool. We produce cinematic-grade corporate videos, dynamic social media reels, and compelling product demos utilizing advanced color grading and motion graphics.",
     detailedContent: [
@@ -460,7 +460,7 @@ export const detailedServices: Record<string, ServiceDetail> = {
   },
   "content-creation": {
     slug: "content-creation",
-    title: "Strategic Content Creation",
+    title: "Content Strategy & Creation",
     subtitle: "Authoritative copy and media that engages and converts.",
     description: "We craft compelling narratives across all mediums. Whether it is SEO-optimized blog posts, persuasive sales copywriting, or viral social media scripts, our content team ensures your brand's voice is authoritative, consistent, and impactful.",
     detailedContent: [

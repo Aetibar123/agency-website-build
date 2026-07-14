@@ -8,28 +8,28 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
 const methodologies = [
   {
-    phase: "PHASE 01",
-    title: "Discovery & Blueprinting",
+    phase: "01 Discover",
+    title: "Discovery & Strategy",
     icon: <SearchIcon sx={{ fontSize: 32, color: 'primary.main' }} />,
-    content: "We never write a single line of code without a master plan. During the discovery phase, our technical architects and growth strategists conduct a deep-dive audit into your existing infrastructure, data lakes, and marketing funnels. We identify bottlenecks, security vulnerabilities, and missed revenue opportunities. The deliverable is a comprehensive Blueprint—a highly detailed architectural document outlining the exact tech stack, database schemas, and AI models required to execute the vision."
+    content: "We start by understanding your business, goals, audience, and technical requirements. This helps us create a clear project roadmap before development begins, reducing risks and ensuring every decision supports your long-term growth."
   },
   {
-    phase: "PHASE 02",
-    title: "Agile Engineering",
+    phase: "02 Build",
+    title: "Design & Development",
     icon: <ArchitectureIcon sx={{ fontSize: 32, color: 'primary.main' }} />,
-    content: "Once the blueprint is approved, our elite engineering pods deploy. We operate on strict, 2-week agile sprint cycles. You are never left in the dark; you have direct access to staging environments where you can watch the application come to life in real-time. We enforce rigorous code reviews, automated unit testing, and continuous integration/continuous deployment (CI/CD) pipelines to ensure every push to production is flawless and secure."
+    content: "Our team designs intuitive user experiences and develops secure, scalable websites, applications, and AI solutions using modern technologies. Every feature is built with performance, quality, and maintainability in mind."
   },
   {
-    phase: "PHASE 03",
-    title: "Launch & Stabilization",
+    phase: "03 Launch",
+    title: "Launch & Quality Assurance",
     icon: <RocketLaunchIcon sx={{ fontSize: 32, color: 'primary.main' }} />,
-    content: "Deployment is not the finish line; it is the starting line. During the critical launch window, our DevOps team monitors server health, database queries, and Core Web Vitals 24/7. We utilize load balancers and auto-scaling cloud clusters (AWS/Vercel) to ensure that even if your traffic spikes by 10,000%, your application remains blazing fast and perfectly stable."
+    content: "Before launch, every solution goes through comprehensive testing for functionality, performance, security, and responsiveness. Once everything is validated, we deploy your project with confidence."
   },
   {
-    phase: "PHASE 04",
-    title: "Scale & Optimize",
+    phase: "04 Grow",
+    title: "Growth & Optimization",
     icon: <TrendingUpIcon sx={{ fontSize: 32, color: 'primary.main' }} />,
-    content: "With a rock-solid infrastructure in place, our performance marketing team takes the reins. We unleash aggressive, data-driven ad campaigns and Technical SEO strategies to flood your new system with highly qualified traffic. Simultaneously, we use AI analytics to monitor user behavior, running continuous A/B tests to iteratively improve conversion rates and maximize your Return on Investment (ROI)."
+    content: "Launching is only the beginning. We continuously improve your digital presence through SEO, performance optimization, AI enhancements, and data-driven strategies that help your business grow over time."
   }
 ];
 
@@ -43,11 +43,11 @@ export default function MethodologySection() {
           <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 800, letterSpacing: 2, mb: 2, display: 'block' }}>
             HOW WE OPERATE
           </Typography>
-          <Typography variant="h2" sx={{ fontWeight: 900, fontSize: { xs: '2.5rem', md: '4rem' }, lineHeight: 1.1, letterSpacing: '-0.02em', mb: 4 }}>
+          <Typography variant="h2" sx={{ fontWeight: 900, fontSize: { xs: '2rem', md: '3rem' }, lineHeight: 1.1, letterSpacing: '-0.02em', mb: 4 }}>
             The Aetibar Standard.
           </Typography>
-          <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.2rem', maxWidth: 800, mx: 'auto', lineHeight: 1.8 }}>
-            We do not believe in chaos. From the initial handshake to the multi-million dollar scaling phase, our operational methodology is a heavily refined, deterministic machine designed to eliminate risk and guarantee results.
+          <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.7)', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 800, mx: 'auto', lineHeight: 1.8 }}>
+            Every successful project follows a proven process. From strategy and development to launch and continuous optimization, we work with a clear roadmap that keeps projects transparent, efficient, and focused on business outcomes.
           </Typography>
         </Box>
 
@@ -61,10 +61,10 @@ export default function MethodologySection() {
                   </Box>
                   <Box>
                     <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 800, letterSpacing: 1 }}>{item.phase}</Typography>
-                    <Typography variant="h4" sx={{ fontWeight: 800, color: 'white' }}>{item.title}</Typography>
+                    <Typography variant="h4" sx={{ fontWeight: 800, color: 'white', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>{item.title}</Typography>
                   </Box>
                 </Box>
-                <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', lineHeight: 1.9 }}>
+                <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.7)', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.9 }}>
                   {item.content}
                 </Typography>
               </Card>
