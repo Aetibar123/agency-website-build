@@ -11,10 +11,10 @@ import BrandAnchorSection from "../components/home/BrandAnchorSection";
 
 export const metadata: Metadata = {
   title:
-    "Aetibar | Web Development, App Development & Digital Marketing Company in Udaipur",
+    "Aetibar | Ai, Web, App Development & Digital Marketing Company in Udaipur",
 
   description:
-    "Aetibar offers Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design services in Udaipur to help businesses grow online.",
+    "Build powerful websites and mobile apps with Aetibar. We also offer AI automation, SEO, digital marketing, and brand design services.",
 
   keywords: [
     "Web Development Company in Udaipur",
