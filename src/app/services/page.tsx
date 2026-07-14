@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next";
 import React from "react";
 import { Box, Container, Grid, Typography, Card, CardMedia, CardContent, Divider } from "@mui/material";
