@@ -14,10 +14,10 @@ export default function TechStackSection() {
   return (
     <Box sx={{ bgcolor: '#0B0F19', py: { xs: 8, md: 10 }, borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)', overflow: 'hidden' }}>
       <Container maxWidth="lg" sx={{ mb: 6, textAlign: 'center' }}>
-        <Typography variant="h2" sx={{ color: 'primary.main', fontWeight: 800, letterSpacing: 2, display: 'block', mb: 2 ,fontSize: { xs: '1.5rem', md: '2.5rem' }}}>
+        <Typography variant="h2" sx={{ color: 'primary.main', fontWeight: 900, letterSpacing: '-0.02em', display: 'block', mb: 2, fontSize: { xs: '2rem', md: '3rem' } }}>
         TECHNOLOGIES WE TRUST
         </Typography>
-        <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.25rem' }}}>
+        <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>
          We build every website, application, and AI solution using modern, scalable technologies trusted by leading startups and businesses worldwide.
         </Typography>
       </Container>
@@ -51,7 +51,7 @@ export default function TechStackSection() {
               '&:hover': { bgcolor: 'rgba(110,65,226,0.1)', borderColor: 'rgba(110,65,226,0.3)', transform: 'translateY(-2px)' }
             }}
           >
-            <Typography variant="h5" sx={{ color: 'white', fontWeight: 800, opacity: 0.8 }}>
+            <Typography variant="h5" sx={{ color: 'white', fontWeight: 800, opacity: 0.8, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
               {tech}
             </Typography>
           </Box>

@@ -21,11 +21,11 @@ export default function PortfolioPage() {
           <Typography variant="caption" sx={{ display: 'inline-block', p: 1, px: 3, bgcolor: 'rgba(110,65,226,0.1)', color: 'primary.main', borderRadius: 10, mb: 3, fontWeight: 700, letterSpacing: 2 }}>
             OUR WORK
           </Typography>
-          <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 4, letterSpacing: '-0.02em' }}>
-            Transforming Visions into <Box component="span" sx={{ color: 'primary.main' }}>Reality.</Box>
+          <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 4, letterSpacing: '-0.02em' }}>
+            Projects Built to Solve <Box component="span" sx={{ color: 'primary.main' }}>Real Business Challenges.</Box>
           </Typography>
-          <Typography variant="body1" sx={{ color: '#555', fontSize: '1.25rem', maxWidth: 700, mx: 'auto', mb: 8, lineHeight: 1.8 }}>
-            Explore our featured case studies. We partner with ambitious brands to build robust digital infrastructure, scale their presence, and automate their operations.
+          <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 700, mx: 'auto', mb: 8, lineHeight: 1.9 }}>
+           Explore a selection of websites, applications, and digital solutions we've designed and developed for businesses focused on growth, performance, and long-term success.
           </Typography>
 
           {/* Filtering */}

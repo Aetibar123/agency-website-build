@@ -65,6 +65,7 @@ export default function Navbar() {
                 letterSpacing: '-0.02em',
                 color: '#0B0F19',
                 textDecoration: 'none',
+                fontSize: { xs: '1.25rem', md: '1.5rem' }
               }}
             >
               AETIBAR<Box component="span" sx={{ color: 'primary.main' }}>.</Box>

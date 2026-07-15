@@ -21,14 +21,14 @@ export default function ServicesClient() {
               OUR SERVICES
             </Typography>
           </Box>
-          <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '3.5rem', md: '5.5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+          <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
             Engineered for Speed. <br />
             <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
              Designed to Convert.
               <Box sx={{ position: 'absolute', bottom: 10, left: 0, width: '100%', height: 16, bgcolor: 'primary.main', opacity: 0.1, transform: 'skewX(-15deg)' }} />
             </Box>
           </Typography>
-          <Typography variant="body1" sx={{ color: '#555', fontSize: '1.35rem', lineHeight: 1.8, maxWidth: 800, mx: 'auto' }}>
+          <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, maxWidth: 800, mx: 'auto' }}>
             We design and develop high-performance business websites, custom web applications, and intuitive UI/UX solutions that help modern businesses streamline operations, strengthen their digital presence, and drive sustainable growth.
           </Typography>
         </Container>
@@ -90,12 +90,12 @@ export default function ServicesClient() {
                     <Box sx={{ color: 'primary.main', display: 'flex' }}>
                       {service.icon}
                     </Box>
-                    <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19' }}>
+                    <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                       {service.title}
                     </Typography>
                   </Box>
                   
-                  <Typography variant="body2" sx={{ color: '#666', lineHeight: 1.7, mb: 4, flexGrow: 1 }}>
+                  <Typography variant="body2" sx={{ color: '#666', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' }, mb: 4, flexGrow: 1 }}>
                     {service.description.length > 130 ? service.description.substring(0, 130) + "..." : service.description}
                   </Typography>
 

@@ -7,27 +7,26 @@ import CtaSection from "../../components/home/CtaSection";
 const faqData = [
   {
     question: "What makes Aetibar different from other digital agencies?",
-    answer: "We are not just order-takers; we are strategic partners. Unlike traditional agencies that just build what you ask for, we deeply analyze your business model to deliver engineering and design solutions that directly impact your bottom line. Our team consists of elite specialists across AI, Web Development, and Marketing, ensuring a holistic approach to your growth."
+    answer: "We combine strategy, design, engineering, AI, and digital marketing under one team. Instead of simply delivering projects, we focus on building scalable digital solutions that improve user experience, business efficiency, and long-term growth."
   },
   {
     question: "How long does a typical project take?",
-    answer: "Project timelines vary significantly based on complexity. A corporate website might take 4-6 weeks, while a complex headless e-commerce platform or custom SaaS application can take 3-6 months. We provide a highly detailed, phased timeline during our initial blueprinting phase before any contracts are signed."
+    answer: "Timelines depend on the project's scope and complexity. Business websites typically take 3–6 weeks, while custom web applications, AI solutions, or enterprise platforms may require several months. Before development begins, we provide a clear project roadmap with milestones and estimated delivery timelines."
   },
   {
-    question: "Do you work with startups or only enterprise clients?",
-    answer: "We work with visionaries across all stages. While we handle massive enterprise migrations and complex AI integrations, we also partner with well-funded startups to build robust, scalable MVPs that are designed to secure Series A/B funding."
+    question: "Do you work with startups or established businesses?",
+    answer: "Yes. We work with startups, growing businesses, and established organizations. Whether you're launching an MVP, modernizing an existing platform, or scaling enterprise operations, we tailor our solutions to your business goals and growth stage."
   }
 ];
-
 export default function FaqPage() {
   return (
     <Box sx={{ bgcolor: '#ffffff', minHeight: '100vh' }}>
-      
+
       {/* Hero Section */}
-      <Box sx={{ 
-        bgcolor: '#0B0F19', 
-        color: 'white', 
-        pt: { xs: 20, md: 28 }, 
+      <Box sx={{
+        bgcolor: '#0B0F19',
+        color: 'white',
+        pt: { xs: 20, md: 28 },
         pb: { xs: 15, md: 20 },
         textAlign: 'center',
         position: 'relative',
@@ -35,7 +34,7 @@ export default function FaqPage() {
       }}>
         <Box sx={{ position: 'absolute', top: -100, left: '20%', width: 400, height: 400, bgcolor: 'primary.main', opacity: 0.1, borderRadius: '50%', filter: 'blur(100px)' }} />
         <Box sx={{ position: 'absolute', bottom: -50, right: '10%', width: 300, height: 300, bgcolor: '#00c6ff', opacity: 0.1, borderRadius: '50%', filter: 'blur(80px)' }} />
-        
+
         <Container maxWidth="md" sx={{ position: 'relative', zIndex: 1 }}>
           <Typography variant="caption" sx={{ display: 'inline-block', p: 1, px: 3, border: '1px solid rgba(255,255,255,0.2)', borderRadius: 10, mb: 4, fontWeight: 700, letterSpacing: 2 }}>
             KNOWLEDGE BASE
@@ -45,7 +44,9 @@ export default function FaqPage() {
             <Box component="span" sx={{ color: 'primary.main' }}>Questions.</Box>
           </Typography>
           <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.25rem', maxWidth: 600, mx: 'auto' }}>
-            Everything you need to know about how we work, our technical capabilities, and how we deliver world-class digital solutions.
+            Everything You Need To Know
+
+            Find answers to common questions about our services, development process, project timelines, and how we help businesses build scalable digital solutions.
           </Typography>
         </Container>
       </Box>
@@ -60,11 +61,11 @@ export default function FaqPage() {
 
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           {faqData.map((faq, index) => (
-            <Accordion 
-              key={index} 
-              elevation={0} 
-              sx={{ 
-                bgcolor: '#f8f9fa', 
+            <Accordion
+              key={index}
+              elevation={0}
+              sx={{
+                bgcolor: '#f8f9fa',
                 border: '1px solid rgba(0,0,0,0.05)',
                 borderRadius: '12px !important',
                 '&:before': { display: 'none' },

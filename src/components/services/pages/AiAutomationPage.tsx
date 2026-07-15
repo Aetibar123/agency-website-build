@@ -49,10 +49,10 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
              BUSINESS AUTOMATION
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '4.5rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1 }}>
+            <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
               {service.title}
             </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', mb: 4, lineHeight: 1.8 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, mb: 4, lineHeight: 1.9 }}>
               {service.description}
             </Typography>
           </Box>
@@ -73,7 +73,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
       <Container maxWidth="xl" sx={{ py: { xs: 10, md: 15 } }}>
         <Box sx={{ maxWidth: 800, mx: 'auto', textAlign: 'center', mb: 10 }}>
           <AccountTreeOutlinedIcon sx={{ fontSize: 60, color: '#00bcd4', mb: 2 }} />
-          <Typography variant="h2" sx={{ fontWeight: 800, color: '#0B0F19' }}>
+          <Typography variant="h2" sx={{ fontWeight: 900, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
             Intelligent Business Automation
           </Typography>
         </Box>
@@ -85,8 +85,8 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
               {service.features.map((feature, idx) => (
                 <Box key={idx} sx={{ position: 'relative', mb: 6 }}>
                   <Box sx={{ position: 'absolute', left: -43, top: 0, width: 20, height: 20, borderRadius: '50%', bgcolor: '#00bcd4', border: '4px solid white' }} />
-                  <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 1 }}>{feature.title}</Typography>
-                  <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.7 }}>{feature.desc}</Typography>
+                  <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 1, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>{feature.title}</Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>{feature.desc}</Typography>
                 </Box>
               ))}
             </Box>
@@ -97,11 +97,11 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
             <Card sx={{ bgcolor: '#f8f9fa', borderRadius: 6, p: { xs: 4, md: 8 }, border: '1px solid #eee', boxShadow: 'none' }}>
               {service.detailedContent?.map((content, idx) => (
                 <Box key={idx} sx={{ mb: idx === service.detailedContent!.length - 1 ? 0 : 8 }}>
-                  <Typography variant="h4" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19' }}>
+                  <Typography variant="h4" sx={{ fontWeight: 900, mb: 3, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                     {content.heading}
                   </Typography>
                   {content.paragraphs.map((p, pIdx) => (
-                    <Typography key={pIdx} variant="body1" sx={{ color: '#444', fontSize: '1.1rem', lineHeight: 1.9, mb: 2 }}>
+                    <Typography key={pIdx} variant="body1" sx={{ color: '#444', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 2 }}>
                       {p}
                     </Typography>
                   ))}

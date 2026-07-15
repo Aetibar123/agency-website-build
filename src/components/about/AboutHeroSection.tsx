@@ -21,17 +21,17 @@ export default function AboutHeroSection() {
                 OUR STORY
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
-              We Build Digital Experiences That <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
-                Matter.
+            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+              Building Digital Solutions That  <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
+                Drive Real Business Growth.
                 <Box sx={{ position: 'absolute', bottom: 10, left: 0, width: '100%', height: 16, bgcolor: 'primary.main', opacity: 0.1, transform: 'skewX(-15deg)' }} />
               </Box>
             </Typography>
-            <Typography variant="body1" sx={{ color: '#555', fontSize: '1.25rem', lineHeight: 1.8, maxWidth: 600 }}>
-              Aetibar was born out of a simple belief: that every ambitious brand deserves world-class digital infrastructure. We combine engineering excellence with creative brilliance to solve complex business challenges in an ever-evolving digital world.
+            <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.25rem' }, lineHeight: 1.9, maxWidth: 600 }}>
+           Aetibar combines engineering, design, and automation to help businesses build scalable digital products. We create high-performance websites, software solutions, and AI-powered experiences designed to solve real challenges and drive growth.
             </Typography>
           </Grid>
-          
+
           <Grid size={{ xs: 12, md: 6 }}>
             <Box sx={{ position: 'relative', borderRadius: 6, overflow: 'hidden', boxShadow: '0 30px 60px -20px rgba(0,0,0,0.15)' }}>
               <CardMedia

@@ -6,10 +6,10 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function TeamSection() {
   const team = [
-    { name: "Hasrat", role: "Chief Executive Officer", image: "/images/about/team_ceo.png" },
-    { name: "Rakhi", role: "Head of Engineering", image: "/images/about/team_engineering.png" },
-    { name: "Aaqib DM", role: "Lead AI Architect", image: "/images/about/team_ai.png" },
-    { name: "Rohit", role: "Creative Director", image: "/images/about/team_creative.png" },
+    { name: "Hasrat", role: "Chief Executive Officer", image: "/images/about/person1.jpeg" },
+    { name: "Amaan", role: "Head of Engineering", image: "/images/about/person2.jpeg" },
+    { name: "Aaqib", role: "Lead AI Architect", image: "/images/about/person1.jpeg" },
+    { name: "Rohit", role: "Creative Director", image: "/images/about/person1.jpeg" },
   ];
 
   return (
@@ -19,11 +19,11 @@ export default function TeamSection() {
           <Typography variant="subtitle1" sx={{ color: 'primary.main', fontWeight: 700, mb: 2, textTransform: 'uppercase', letterSpacing: 2 }}>
             Leadership
           </Typography>
-          <Typography variant="h2" sx={{ color: '#0B0F19', mb: 3, fontWeight: 900, fontSize: { xs: '2.5rem', md: '3.5rem' }, letterSpacing: '-0.02em' }}>
-            Meet the Minds Behind the Magic
+          <Typography variant="h2" sx={{ color: '#0B0F19', mb: 3, fontWeight: 900, fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
+            Meet The Minds Behind Aetibar
           </Typography>
-          <Typography variant="body1" sx={{ color: '#666', maxWidth: 600, mx: 'auto', fontSize: '1.25rem' }}>
-            Our team consists of industry veterans, prodigious engineers, and visionary designers united by a single goal.
+          <Typography variant="body1" sx={{ color: '#666', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>
+          A team of engineers, designers, and technology enthusiasts working together to build impactful digital solutions. We combine technical expertise, creative thinking, and a passion for innovation to help businesses transform their ideas into scalable digital experiences.
           </Typography>
         </Box>
         
@@ -71,33 +71,11 @@ export default function TeamSection() {
                       transition: 'all 0.5s ease'
                     }}
                   />
-                  {/* Social Icons Overlay */}
-                  <Box 
-                    className="social-icons"
-                    sx={{
-                      position: 'absolute',
-                      bottom: 0, left: 0, right: 0,
-                      p: 2,
-                      display: 'flex',
-                      justifyContent: 'center',
-                      gap: 1,
-                      background: 'linear-gradient(to top, rgba(0,0,0,0.6), transparent)',
-                      opacity: 0,
-                      transform: 'translateY(20px)',
-                      transition: 'all 0.3s ease'
-                    }}
-                  >
-                    <IconButton size="small" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.2)', '&:hover': { bgcolor: 'primary.main' } }}>
-                      <LinkedInIcon fontSize="small" />
-                    </IconButton>
-                    <IconButton size="small" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.2)', '&:hover': { bgcolor: 'primary.main' } }}>
-                      <TwitterIcon fontSize="small" />
-                    </IconButton>
-                  </Box>
+                 
                 </Box>
                 
                 <CardContent sx={{ p: 0, pb: '0 !important', textAlign: 'center' }}>
-                  <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 0.5 }}>
+                  <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 0.5, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                     {member.name}
                   </Typography>
                   <Typography variant="body2" sx={{ color: 'primary.main', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', fontSize: '0.75rem' }}>

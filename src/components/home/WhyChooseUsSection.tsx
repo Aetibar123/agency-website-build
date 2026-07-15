@@ -34,7 +34,7 @@ export default function WhyChooseUsSection() {
           <Typography variant="h2" sx={{ fontWeight: 900, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, lineHeight: 1.1, letterSpacing: '-0.02em', mb: 4 }}>
             Built on Trust. <Box component="span" sx={{ color: 'primary.main' }}>Driven by Results.</Box>
           </Typography>
-          <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 700, mx: 'auto', lineHeight: 1.8 }}>
+          <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 700, mx: 'auto', lineHeight: 1.9 }}>
             Instead of making unrealistic promises, we focus on delivering reliable digital solutions that help businesses grow. Every project is built with performance, scalability, and long-term success in mind.
           </Typography>
         </Box>
@@ -59,7 +59,7 @@ export default function WhyChooseUsSection() {
                 }}
               >
                 {reason.icon}
-                <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2 }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                   {reason.title}
                 </Typography>
                 <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>

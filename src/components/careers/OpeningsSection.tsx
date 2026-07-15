@@ -4,17 +4,11 @@ import { Box, Container, Typography, Card, Box as MuiBox } from "@mui/material";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function OpeningsSection() {
-  const openings = [
-    { title: "Senior Full-Stack Engineer", department: "Engineering", location: "Remote", type: "Full-time" },
-    { title: "Lead AI/Prompt Engineer", department: "Artificial Intelligence", location: "Remote", type: "Full-time" },
-    { title: "Senior UX/UI Designer", department: "Design", location: "Remote", type: "Full-time" },
-    { title: "Performance Marketing Manager", department: "Growth", location: "Remote", type: "Full-time" },
-  ];
-
+ 
   return (
     <Box sx={{ py: { xs: 12, md: 15 }, bgcolor: '#fcfcfc' }}>
       <Container maxWidth="md">
-        <Typography variant="h3" sx={{ color: '#0B0F19', mb: 6, fontWeight: 900, letterSpacing: '-0.02em', textAlign: 'center' }}>
+        <Typography variant="h3" sx={{ color: '#0B0F19', mb: 6, fontWeight: 900, letterSpacing: '-0.02em', textAlign: 'center', fontSize: { xs: '2rem', md: '3rem' } }}>
           Open Positions
         </Typography>
 
@@ -36,11 +30,11 @@ export default function OpeningsSection() {
               }
             }}
           >
-            <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2 }}>
+            <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
               Don't see a perfect fit?
             </Typography>
-            <Typography variant="body1" sx={{ color: '#666', mb: 4, lineHeight: 1.7 }}>
-              We are always on the lookout for exceptional talent. If you believe you can bring massive value to Aetibar, send your resume and portfolio directly to our HR team.
+            <Typography variant="body1" sx={{ color: '#666', mb: 4, fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>
+          We are always searching for exceptional talent. If you are passionate about building impactful technology and believe you can contribute to Aetibar’s vision, we would love to connect. Send us your resume and portfolio to start the conversation.
             </Typography>
             
             <Box 
@@ -55,7 +49,7 @@ export default function OpeningsSection() {
                 border: '1px solid rgba(110,65,226,0.1)'
               }}
             >
-              <Typography variant="subtitle1" sx={{ fontWeight: 800, color: 'primary.main', letterSpacing: 1 }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 800, color: 'primary.main', letterSpacing: 1, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>
                 hr.aetibar@gmail.com
               </Typography>
             </Box>

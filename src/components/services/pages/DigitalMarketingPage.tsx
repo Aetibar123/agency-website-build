@@ -46,10 +46,10 @@ export default function DigitalMarketingPage({ service }: { service: ServiceDeta
                   Driving Business Growth
                 </Typography>
               </Box>
-              <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1 }}>
+              <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
                 {service.title}
               </Typography>
-              <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', mb: 5, lineHeight: 1.8 }}>
+              <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, mb: 5, lineHeight: 1.9 }}>
                 {service.subtitle}
               </Typography>
             </Grid>
@@ -78,11 +78,11 @@ export default function DigitalMarketingPage({ service }: { service: ServiceDeta
           <Grid size={{ xs: 12, md: 7, lg: 8 }}>
             {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: '1.15rem', lineHeight: 2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -94,7 +94,7 @@ export default function DigitalMarketingPage({ service }: { service: ServiceDeta
           <Grid size={{ xs: 12, md: 5, lg: 4 }}>
             <Box sx={{ position: 'sticky', top: 120 }}>
               <Card sx={{ bgcolor: '#ffffff', borderRadius: 6, p: 4, boxShadow: '0 20px 60px rgba(0,0,0,0.05)', border: '1px solid #f0f0f0', mb: 6 }}>
-                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                   The Funnel Approach
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -107,8 +107,8 @@ export default function DigitalMarketingPage({ service }: { service: ServiceDeta
                         {idx + 1}
                       </Box>
                       <Box>
-                        <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#0B0F19', mb: 0.5 }}>{feature.title}</Typography>
-                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>{feature.desc}</Typography>
+                        <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#0B0F19', mb: 0.5, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>{feature.desc}</Typography>
                       </Box>
                     </Box>
                   ))}
@@ -116,7 +116,7 @@ export default function DigitalMarketingPage({ service }: { service: ServiceDeta
               </Card>
 
               {/* TECH STACK CHIPS */}
-              <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19' }}>Marketing Stack</Typography>
+              <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Marketing Stack</Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5 }}>
                 {service.technologies.map((tech, idx) => (
                   <Box key={idx} sx={{ px: 2, py: 1, bgcolor: '#f5f5f5', borderRadius: 8, border: '1px solid #e0e0e0' }}>

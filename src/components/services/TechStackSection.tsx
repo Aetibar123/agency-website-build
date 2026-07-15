@@ -9,10 +9,10 @@ export default function TechStackSection({ service }: { service: ServiceDetail }
       <Container maxWidth="lg">
         <Grid container spacing={8} sx={{ alignItems: 'center' }}>
           <Grid size={{ xs: 12, md: 4 }}>
-            <Typography variant="h3" sx={{ fontWeight: 800, mb: 2 }}>
+            <Typography variant="h3" sx={{ fontWeight: 900, mb: 2, fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
               Our Tech Stack
             </Typography>
-            <Typography variant="body1" sx={{ color: 'primary.light', mb: 4 }}>
+            <Typography variant="body1" sx={{ color: 'primary.light', mb: 4, fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>
               We leverage enterprise-grade technologies and industry-standard tools to ensure maximum reliability and performance.
             </Typography>
           </Grid>
@@ -25,7 +25,7 @@ export default function TechStackSection({ service }: { service: ServiceDetail }
                   sx={{ 
                     bgcolor: 'rgba(255,255,255,0.1)', 
                     color: 'white', 
-                    fontSize: '1.1rem',
+                    fontSize: { xs: '0.95rem', md: '1.05rem' },
                     py: 3,
                     px: 2,
                     borderRadius: 2,

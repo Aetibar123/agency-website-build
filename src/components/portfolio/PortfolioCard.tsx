@@ -48,7 +48,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
       >
          {project.image && <Box sx={{ position: 'absolute', inset: 0, bgcolor: 'rgba(11, 15, 25, 0.4)' }} />}
          {!project.image && (
-           <Typography variant="h4" sx={{ color: 'rgba(255,255,255,0.2)', fontWeight: 900, textTransform: 'uppercase', letterSpacing: 4 }}>
+           <Typography variant="h4" sx={{ color: 'rgba(255,255,255,0.2)', fontWeight: 900, textTransform: 'uppercase', letterSpacing: 4, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
              {project.category}
            </Typography>
          )}
@@ -62,15 +62,15 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
             {project.category}
           </Typography>
         </Box>
-        <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2, lineHeight: 1.3 }}>
+        <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2, lineHeight: 1.3, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
           {project.title}
         </Typography>
-        <Typography variant="body2" sx={{ color: '#666', mb: 4, lineHeight: 1.6, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+        <Typography variant="body2" sx={{ color: '#666', mb: 4, lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' }, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
           {project.summary}
         </Typography>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Typography variant="button" sx={{ color: '#0B0F19', fontWeight: 700 }}>
-            Read Case Study
+            View Case Study
           </Typography>
           <ArrowForwardIcon className="arrow-icon" sx={{ fontSize: 18, color: '#0B0F19', transition: 'all 0.3s ease' }} />
         </Box>

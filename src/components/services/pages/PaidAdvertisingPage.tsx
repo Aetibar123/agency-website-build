@@ -47,10 +47,10 @@ export default function PaidAdvertisingPage({ service }: { service: ServiceDetai
               PERFORMANCE MARKETING
             </Typography>
           </Box>
-          <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5.5rem' }, fontWeight: 900, mb: 3, lineHeight: 1 }}>
+          <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, lineHeight: 1, letterSpacing: '-0.02em' }}>
             Results <span style={{ color: '#6e41e2' }}>That Matter</span>
           </Typography>
-          <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.35rem', maxWidth: 800, mx: 'auto', lineHeight: 1.8 }}>
+          <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 800, mx: 'auto', lineHeight: 1.9 }}>
             {service.description}
           </Typography>
         </Box>
@@ -84,8 +84,8 @@ export default function PaidAdvertisingPage({ service }: { service: ServiceDetai
                 <Card sx={{ bgcolor: 'white', borderRadius: 4, p: 3, boxShadow: '0 20px 40px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', gap: 3 }}>
                   <Box sx={{ p: 2, bgcolor: '#f8f9fa', borderRadius: 3 }}>{metric.icon}</Box>
                   <Box>
-                    <Typography variant="h6" sx={{ fontWeight: 800, color: '#0B0F19' }}>{metric.title}</Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>{metric.desc}</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 800, color: '#0B0F19', fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{metric.title}</Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>{metric.desc}</Typography>
                   </Box>
                 </Card>
               </Grid>
@@ -103,11 +103,11 @@ export default function PaidAdvertisingPage({ service }: { service: ServiceDetai
           <Grid size={{ xs: 12, md: 8 }}>
             {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: '#444', fontSize: '1.15rem', lineHeight: 2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: '#444', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -119,7 +119,7 @@ export default function PaidAdvertisingPage({ service }: { service: ServiceDetai
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: 'sticky', top: 120 }}>
               <Card sx={{ bgcolor: '#0B0F19', color: 'white', borderRadius: 6, p: 4, mb: 4, boxShadow: '0 20px 40px rgba(110,65,226,0.2)' }}>
-                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4 }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                   Ad Platforms
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -133,12 +133,12 @@ export default function PaidAdvertisingPage({ service }: { service: ServiceDetai
               </Card>
 
               <Card sx={{ bgcolor: '#f8f9fa', borderRadius: 6, p: 4, border: '1px solid #eee' }}>
-                <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19' }}>Methodology</Typography>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Methodology</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                   {service.features.map((feature, idx) => (
                     <Box key={idx}>
-                      <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main' }}>{feature.title}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>{feature.desc}</Typography>
+                      <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main', fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
+                      <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>{feature.desc}</Typography>
                     </Box>
                   ))}
                 </Box>

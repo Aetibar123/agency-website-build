@@ -38,10 +38,10 @@ export default function AiToolsPage({ service }: { service: ServiceDetail }) {
 
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1, pt: { xs: 12, md: 16 } }}>
         <Box sx={{ textAlign: 'center', mb: 10 }}>
-          <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 3 }}>
+          <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, letterSpacing: '-0.02em' }}>
             Custom <span style={{ color: '#8a2be2' }}> AI Solutions</span>
           </Typography>
-          <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', maxWidth: 800, mx: 'auto' }}>
+          <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 800, mx: 'auto', lineHeight: 1.9 }}>
             {service.description}
           </Typography>
         </Box>
@@ -65,11 +65,11 @@ export default function AiToolsPage({ service }: { service: ServiceDetail }) {
              {/* 600 WORD CONTENT */}
              {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: '1.15rem', lineHeight: 2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -80,19 +80,19 @@ export default function AiToolsPage({ service }: { service: ServiceDetail }) {
           <Grid size={{ xs: 12, md: 4 }}>
              <Box sx={{ position: 'sticky', top: 120 }}>
                 <Card sx={{ bgcolor: '#ffffff', borderRadius: 4, p: 4, boxShadow: '0 20px 40px rgba(0,0,0,0.05)', border: '1px solid rgba(0,0,0,0.05)', mb: 4 }}>
-                  <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19' }}>Architecture Highlights</Typography>
+                  <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Architecture Highlights</Typography>
                   <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                     {service.features.map((feature, idx) => (
                       <Box key={idx}>
-                        <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#8a2be2' }}>{feature.title}</Typography>
-                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>{feature.desc}</Typography>
+                        <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#8a2be2', fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>{feature.desc}</Typography>
                       </Box>
                     ))}
                   </Box>
                 </Card>
 
                 <Card sx={{ bgcolor: '#0B0F19', color: 'white', borderRadius: 4, p: 4 }}>
-                   <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>Deployment Stack</Typography>
+                   <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Deployment Stack</Typography>
                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                       {service.technologies.map((tech, idx) => (
                         <Box key={idx} sx={{ px: 2, py: 1, bgcolor: 'rgba(255,255,255,0.1)', borderRadius: 1 }}>
