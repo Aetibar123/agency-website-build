@@ -17,13 +17,13 @@ export default function VideoEditingPage({ service }: { service: ServiceDetail }
              Creative Production
             </Typography>
           </Box>
-          <Typography variant="h1" sx={{ color: 'secondary.main', fontSize: { xs: '3.5rem', md: '5.5rem' }, fontWeight: 900, textTransform: 'uppercase', lineHeight: 1, mb: 3 }}>
+          <Typography variant="h1" sx={{ color: 'secondary.main', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, textTransform: 'uppercase', lineHeight: 1, mb: 3, letterSpacing: '-0.02em' }}>
             {service.title.split(' ')[0]} <br/> 
             <Box component="span" sx={{ color: 'primary.main', fontStyle: 'italic' }}>
               {service.title.split(' ').slice(1).join(' ')}
             </Box>
           </Typography>
-          <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.35rem', maxWidth: 800, mx: 'auto', lineHeight: 1.8 }}>
+          <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, maxWidth: 800, mx: 'auto', lineHeight: 1.9 }}>
             {service.description}
           </Typography>
         </Box>
@@ -51,11 +51,11 @@ export default function VideoEditingPage({ service }: { service: ServiceDetail }
           <Grid size={{ xs: 12, md: 7, lg: 8 }}>
             {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: 'secondary.main' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: 'secondary.main', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: '1.15rem', lineHeight: 2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -68,16 +68,16 @@ export default function VideoEditingPage({ service }: { service: ServiceDetail }
             <Box sx={{ position: 'sticky', top: 120 }}>
               
               <Card sx={{ bgcolor: 'white', borderRadius: 4, p: 4, mb: 6, boxShadow: '0 10px 40px rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.05)' }}>
-                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4, color: 'secondary.main' }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4, color: 'secondary.main', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                   Methodology
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                   {service.features.map((feature, idx) => (
                     <Box key={idx}>
-                      <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main', mb: 0.5 }}>
+                      <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main', mb: 0.5, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>
                         {feature.title}
                       </Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+                      <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
                         {feature.desc}
                       </Typography>
                     </Box>
@@ -86,7 +86,7 @@ export default function VideoEditingPage({ service }: { service: ServiceDetail }
               </Card>
 
               <Card sx={{ bgcolor: '#0B0F19', color: 'white', borderRadius: 4, p: 4, boxShadow: '0 20px 40px rgba(110,65,226,0.15)' }}>
-                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4 }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 4, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                   Toolkit & Software
                 </Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5 }}>
@@ -99,7 +99,7 @@ export default function VideoEditingPage({ service }: { service: ServiceDetail }
                 
                 <Divider sx={{ my: 4, borderColor: 'rgba(255,255,255,0.1)' }} />
                 
-                <Typography variant="h5" sx={{ fontWeight: 800, mb: 3 }}>
+                <Typography variant="h5" sx={{ fontWeight: 800, mb: 3, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                   Industries Served
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>

@@ -44,23 +44,23 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
               Organic Growth
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1 }}>
+            <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
               Search Engine <br />
               <span style={{ color: '#6e41e2' }}>Optimization</span>
             </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', mb: 5, lineHeight: 1.8 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, mb: 5, lineHeight: 1.9 }}>
               {service.description}
             </Typography>
 
             <Box sx={{ display: 'flex', gap: 4 }}>
               <Box>
-                <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19' }}>Search</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600 }}>Performance</Typography>
+                <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Search</Typography>
+                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600, fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>Performance</Typography>
               </Box>
               <Divider orientation="vertical" flexItem />
               <Box>
-                <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19' }}>Organic</Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600 }}>Traffic Source</Typography>
+                <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Organic</Typography>
+                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 600, fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>Traffic Source</Typography>
               </Box>
             </Box>
           </Grid>
@@ -88,15 +88,15 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: 'sticky', top: 120 }}>
               <LanguageOutlinedIcon sx={{ fontSize: 60, color: 'primary.main', mb: 3 }} />
-              <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19', mb: 4 }}>
+              <Typography variant="h4" sx={{ fontWeight: 900, color: '#0B0F19', mb: 4, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                 The SEO Architecture
               </Typography>
               
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
                 {service.features.map((feature, idx) => (
                   <Box key={idx} sx={{ borderLeft: '4px solid #6e41e2', pl: 3 }}>
-                    <Typography variant="h6" sx={{ fontWeight: 800, color: '#0B0F19', mb: 1 }}>{feature.title}</Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.7 }}>{feature.desc}</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 800, color: '#0B0F19', mb: 1, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>{feature.desc}</Typography>
                   </Box>
                 ))}
               </Box>
@@ -119,11 +119,11 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
             <Card sx={{ p: { xs: 4, md: 8 }, borderRadius: 6, boxShadow: '0 20px 60px rgba(0,0,0,0.03)', border: '1px solid #f5f5f5' }}>
               {service.detailedContent?.map((content, idx) => (
                 <Box key={idx} sx={{ mb: idx === service.detailedContent!.length - 1 ? 0 : 8 }}>
-                  <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>
+                  <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                     {content.heading}
                   </Typography>
                   {content.paragraphs.map((p, pIdx) => (
-                    <Typography key={pIdx} variant="body1" sx={{ color: '#444', fontSize: '1.15rem', lineHeight: 2.1, mb: 3 }}>
+                    <Typography key={pIdx} variant="body1" sx={{ color: '#444', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                       {p}
                     </Typography>
                   ))}

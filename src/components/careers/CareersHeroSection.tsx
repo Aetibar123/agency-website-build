@@ -21,22 +21,23 @@ export default function CareersHeroSection() {
                 JOIN OUR TEAM
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
               Build the <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
-                Future.
+                Future With Us
+
                 <Box sx={{ position: 'absolute', bottom: 10, left: 0, width: '100%', height: 16, bgcolor: 'primary.main', opacity: 0.1, transform: 'skewX(-15deg)' }} />
               </Box>
             </Typography>
-            <Typography variant="body1" sx={{ color: '#555', fontSize: '1.25rem', lineHeight: 1.8, maxWidth: 600 }}>
-              We are a collective of elite engineers, visionary designers, and strategic thinkers. If you are obsessed with pushing the boundaries of digital innovation, you belong here.
+            <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.25rem' }, lineHeight: 1.9, maxWidth: 600 }}>
+              At Aetibar, we bring together exceptional engineers, creative minds, and strategic thinkers who believe technology can transform businesses. We are looking for people who challenge assumptions, embrace innovation, and build solutions that make a real impact.
             </Typography>
           </Grid>
-          
+
           <Grid size={{ xs: 12, md: 6 }}>
-            <Box sx={{ 
-              position: 'relative', 
-              borderRadius: 6, 
-              overflow: 'hidden', 
+            <Box sx={{
+              position: 'relative',
+              borderRadius: 6,
+              overflow: 'hidden',
               boxShadow: '0 30px 60px -20px rgba(0,0,0,0.15)',
               height: 400,
               width: '100%',
@@ -76,6 +77,7 @@ export default function CareersHeroSection() {
               }} />
               <Typography variant="h3" sx={{ color: 'white', fontWeight: 800, position: 'relative', zIndex: 1, letterSpacing: 4 }}>
                 CULTURE
+              
               </Typography>
             </Box>
           </Grid>

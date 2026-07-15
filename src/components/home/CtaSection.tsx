@@ -11,10 +11,10 @@ export default function CtaSection() {
           <Typography variant="caption" sx={{ mb: 3, color: 'primary.main', fontWeight: 800, letterSpacing: 2, display: 'block' }}>
           READY TO BUILD?
           </Typography>
-           <Typography variant="h2" sx={{ mb: 3, color: 'white', fontSize: { xs: '2rem', md: '3rem' } }}>
+           <Typography variant="h2" sx={{ mb: 3, color: 'white', fontWeight: 900, letterSpacing: '-0.02em', fontSize: { xs: '2rem', md: '3rem' } }}>
           Let's Build Something Great Together.
           </Typography>
-          <Typography variant="body1" sx={{ mb: 5, color: 'grey.300', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.15rem' } }}>
+          <Typography variant="body1" sx={{ mb: 5, color: 'grey.300', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>
            Whether you need a high-performance website, custom software, AI automation, or digital marketing, we'll help you build scalable digital solutions that grow with your business.
           </Typography>
           <Link href="/contact" passHref style={{ textDecoration: 'none' }}>

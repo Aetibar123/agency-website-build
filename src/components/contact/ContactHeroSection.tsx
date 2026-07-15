@@ -21,14 +21,14 @@ export default function ContactHeroSection() {
                 GET IN TOUCH
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
               Let's Build Something <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
                 Extraordinary.
                 <Box sx={{ position: 'absolute', bottom: 10, left: 0, width: '100%', height: 16, bgcolor: 'primary.main', opacity: 0.1, transform: 'skewX(-15deg)' }} />
               </Box>
             </Typography>
-            <Typography variant="body1" sx={{ color: '#555', fontSize: '1.25rem', lineHeight: 1.8, maxWidth: 600 }}>
-              Whether you have a fully fleshed-out RFP or just a bold idea, our experts are ready to blueprint your digital future. Reach out and let's start the conversation.
+            <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.25rem' }, lineHeight: 1.9, maxWidth: 600 }}>
+              Whether you're launching a new product, modernizing existing systems, or exploring AI-driven solutions, our team is ready to turn your vision into reality. Let's start a conversation about your next digital initiative.
             </Typography>
           </Grid>
           

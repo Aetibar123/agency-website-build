@@ -7,38 +7,39 @@ import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import PublicIcon from '@mui/icons-material/Public';
 
 export default function PerksSection() {
-  const perks = [
-    {
-      title: "Remote-First Culture",
-      desc: "Work from anywhere in the world. We care about output, not office hours.",
-      icon: <PublicIcon fontSize="large" color="primary" />
-    },
-    {
-      title: "Elite Hardware",
-      desc: "Top-of-the-line MacBook Pros and a generous home office stipend.",
-      icon: <ComputerIcon fontSize="large" color="primary" />
-    },
-    {
-      title: "Continuous Growth",
-      desc: "Unlimited budget for books, courses, and premium industry conferences.",
-      icon: <TrendingUpIcon fontSize="large" color="primary" />
-    },
-    {
-      title: "Comprehensive Health",
-      desc: "Premium global health, dental, and vision insurance for you and your family.",
-      icon: <HealthAndSafetyIcon fontSize="large" color="primary" />
-    }
-  ];
+ const perks = [
+  {
+    title: "Remote-First Flexibility",
+    desc: "Work from anywhere and collaborate with a global team. We value impact, creativity, and results over traditional office boundaries.",
+    icon: <PublicIcon fontSize="large" color="primary" />
+  },
+  {
+    title: "Modern Development Environment",
+    desc: "Access the tools, technologies, and resources you need to build high-quality digital products efficiently.",
+    icon: <ComputerIcon fontSize="large" color="primary" />
+  },
+  {
+    title: "Continuous Learning",
+    desc: "Grow your skills through knowledge sharing, technical exploration, and opportunities to work on cutting-edge technologies.",
+    icon: <TrendingUpIcon fontSize="large" color="primary" />
+  },
+  {
+    title: "Wellbeing & Balance",
+    desc: "We believe great work comes from healthy teams. We support a culture built around balance, respect, and sustainable growth.",
+    icon: <HealthAndSafetyIcon fontSize="large" color="primary" />
+  }
+];
 
   return (
     <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: '#ffffff' }}>
       <Container maxWidth="xl">
         <Box sx={{ textAlign: 'center', mb: 10 }}>
-          <Typography variant="h2" sx={{ color: '#0B0F19', mb: 3, fontWeight: 900, fontSize: { xs: '2.5rem', md: '3.5rem' }, letterSpacing: '-0.02em' }}>
+          <Typography variant="h2" sx={{ color: '#0B0F19', mb: 3, fontWeight: 900, fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
             Why Aetibar?
           </Typography>
-          <Typography variant="body1" sx={{ color: '#666', maxWidth: 600, mx: 'auto', fontSize: '1.25rem' }}>
-            We demand excellence, and we reward it. Our benefits are designed to support your life, health, and professional growth.
+          <Typography variant="body1" sx={{ color: '#666', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>
+            <span style={{ fontSize: '{xs:"1.2rem",md:"1.5rem"}', fontWeight: '700', color: '#6E41E2' }}>Build. Learn. Grow.</span> <br />
+            We believe exceptional work comes from exceptional people. At Aetibar, we create an environment where talented individuals can do their best work, explore new ideas, and grow alongside a team passionate about technology and innovation.
           </Typography>
         </Box>
 
@@ -63,10 +64,10 @@ export default function PerksSection() {
                   <Box sx={{ p: 1.5, display: 'inline-flex', bgcolor: 'rgba(110,65,226,0.1)', borderRadius: 3, mb: 3 }}>
                     {perk.icon}
                   </Box>
-                  <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2 }}>
+                  <Typography variant="h5" sx={{ fontWeight: 800, color: '#0B0F19', mb: 2, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                     {perk.title}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: '#666', lineHeight: 1.7 }}>
+                  <Typography variant="body2" sx={{ color: '#666', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>
                     {perk.desc}
                   </Typography>
                 </CardContent>

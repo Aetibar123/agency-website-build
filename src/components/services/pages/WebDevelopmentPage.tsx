@@ -42,10 +42,10 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
                   Web Engineering
                 </Typography>
               </Box>
-              <Typography variant="h1" sx={{ color: 'secondary.main', mb: 4, fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
+              <Typography variant="h1" sx={{ color: 'secondary.main', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
                 {service.title}
               </Typography>
-              <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', mb: 5, maxWidth: 600, lineHeight: 1.8 }}>
+              <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, mb: 5, maxWidth: 600, lineHeight: 1.9 }}>
                 {service.description}
               </Typography>
             </Grid>
@@ -96,11 +96,11 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
           <Grid size={{ xs: 12, md: 8, lg: 9 }}>
             {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: 'secondary.main' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: 'secondary.main', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: '1.15rem', lineHeight: 2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -109,7 +109,7 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
 
             {/* FEATURES - LIGHT CARDS */}
             <Box sx={{ mt: 10, mb: 10 }}>
-              <Typography variant="h3" sx={{ mb: 6, fontWeight: 800, color: 'secondary.main' }}>System Architecture</Typography>
+              <Typography variant="h3" sx={{ mb: 6, fontWeight: 900, color: 'secondary.main', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>System Architecture</Typography>
               <Grid container spacing={4}>
                 {service.features.map((feature, idx) => (
                   <Grid size={{ xs: 12, md: 6 }} key={idx}>
@@ -118,10 +118,10 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
                         <Box sx={{ width: 40, height: 40, borderRadius: 2, bgcolor: 'rgba(110,65,226,0.1)', mb: 3, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                           <Typography sx={{ color: 'primary.main', fontWeight: 800 }}>0{idx + 1}</Typography>
                         </Box>
-                        <Typography variant="h5" sx={{ color: 'secondary.main', mb: 2, fontWeight: 700 }}>
+                        <Typography variant="h5" sx={{ color: 'secondary.main', mb: 2, fontWeight: 800, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                           {feature.title}
                         </Typography>
-                        <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.7 }}>
+                        <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
                           {feature.desc}
                         </Typography>
                       </CardContent>
@@ -139,7 +139,7 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
         <Container maxWidth="xl">
           <Grid container spacing={10}>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Typography variant="h3" sx={{ fontWeight: 800, mb: 4 }}>
+              <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                 Our Tech Stack
               </Typography>
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
@@ -162,16 +162,16 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
               </Box>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Typography variant="h3" sx={{ fontWeight: 800, mb: 4 }}>
+              <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                Industries Served
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
                 {service.domains.map((domain, idx) => (
                   <Box key={idx} sx={{ borderLeft: '3px solid #6e41e2', pl: 3 }}>
-                    <Typography variant="h5" sx={{ color: 'white', mb: 1, fontWeight: 700 }}>
+                    <Typography variant="h5" sx={{ color: 'white', mb: 1, fontWeight: 800, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                       {domain.name}
                     </Typography>
-                    <Typography variant="body1" sx={{ color: 'grey.400' }}>
+                    <Typography variant="body1" sx={{ color: 'grey.400', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>
                       {domain.desc}
                     </Typography>
                   </Box>

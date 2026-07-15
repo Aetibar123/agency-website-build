@@ -2,127 +2,127 @@ import { PortfolioProject } from "./portfolioTypes";
 
 export const projectsPart3: PortfolioProject[] = [
   {
-    slug: 'enterprise-seo-migration',
-    title: 'Enterprise SEO Site Migration',
-    client: 'National News Network',
-    category: 'SEO',
-    categorySlug: 'seo',
-    thumbnailColor: 'linear-gradient(135deg, #00b09b 0%, #96c93d 100%)',
-    image: '/images/services/seo.png',
-    summary: 'Successfully migrated a 500,000+ page website to a new architecture with zero traffic loss.',
-    challenge: [
-      'National News Network (NNN), a massive digital publisher, was sitting on a ticking time bomb. Their legacy Content Management System (CMS) was over a decade old, incredibly slow, and structurally incapable of supporting modern web vitals. They made the executive decision to migrate to a state-of-the-art Headless CMS with a Next.js frontend to radically improve page speed and developer velocity.',
-      'However, this migration posed an existential threat to the business. NNN’s entire revenue model relied on programmatic advertising driven by organic search traffic. They had over 500,000 indexed URLs, thousands of high-authority backlinks, and top rankings for highly competitive global news keywords. Historically, enterprise migrations of this scale result in a catastrophic 20% to 40% loss of organic traffic due to broken URLs, lost indexing, and crawl errors.',
-      'The stakes were astronomical. A 30% drop in organic traffic would equate to millions of dollars in lost ad revenue within weeks. They needed a flawless, surgically precise technical SEO migration plan to ensure that Google transferred all historical authority to the new React-based architecture without skipping a beat.'
-    ],
-    execution: [
-      'We executed a military-grade technical SEO migration sprint over a period of 6 months. The absolute most critical phase was the URL mapping. Because the URL structure of the new site was changing entirely, we had to manually and programmatically map over 150,000 high-value legacy URLs to their exact new counterparts, implementing permanent 301 redirects to ensure seamless authority transfer.',
-      'Secondly, we heavily optimized the new Next.js architecture for search engine crawlability. React applications (SPAs) are notorious for causing indexing issues because Googlebot sometimes struggles to execute the JavaScript necessary to render the page. We configured Next.js to utilize Server-Side Rendering (SSR) for all news articles, meaning Googlebot received a fully formed, lightning-fast HTML document the millisecond it hit the server, requiring zero JS rendering on their end.',
-      'Finally, we conducted exhaustive pre-launch staging environment crawls using enterprise tools like Screaming Frog and Sitebulb. We simulated millions of Googlebot requests against the staging server, meticulously hunting for redirect loops, broken canonical tags, missing alt attributes, and orphaned pages. We refused to greenlight the launch until the staging environment passed a 100-point technical SEO audit with absolute perfection.'
-    ],
-    solution: [
-      'The actual migration took place at 2:00 AM on a Sunday. By Monday morning, Google had already begun re-crawling the massive site. The results were nothing short of miraculous. Thanks to the meticulous 301 redirect mapping, Google seamlessly transferred the authority of the old URLs to the new architecture. There were zero broken links, zero 404 spikes in Google Search Console, and absolutely zero drop in organic rankings for their core news keywords.',
-      'In fact, because the new Next.js architecture was drastically faster and passed all Core Web Vitals assessments with flying colors, Google actually rewarded the site. The Server-Side Rendering (SSR) approach meant that the massive 500,000-page archive was re-indexed at an unprecedented speed. The technical foundation was finally as strong as their journalism.',
-      'Instead of the dreaded 30% traffic loss, National News Network actually experienced an 18% increase in overall organic traffic within 60 days post-launch. The faster page speeds increased user dwell time, reduced bounce rates, and significantly boosted their programmatic ad revenue. The migration was universally hailed internally as a massive, flawless victory.'
-    ],
-    results: [
-      'Zero organic traffic lost post-migration (an industry rarity)',
-      'Organic traffic grew by 18% within 60 days due to Core Web Vitals boost',
-      'Successfully mapped and executed over 150,000 301 redirects',
-      'Increased overall Googlebot indexation speed by 400%'
-    ]
-  },
+  slug: 'enterprise-seo-migration',
+  title: 'Enterprise SEO Site Migration',
+  client: 'National News Network',
+  category: 'SEO',
+  categorySlug: 'seo',
+  thumbnailColor: 'linear-gradient(135deg, #00b09b 0%, #96c93d 100%)',
+  image: '/images/services/seo.png',
+  summary: 'Planned and executed a large-scale SEO migration for a 500,000+ page news platform while preserving search visibility and improving long-term organic performance.',
+  challenge: [
+    'National News Network (NNN), one of the country’s largest digital publishers, was preparing to replace its decade-old CMS with a modern headless architecture. Although the legacy platform contained over 500,000 indexed pages, years of accumulated technical debt had created slow loading speeds, inefficient crawl paths, duplicate content issues, and poor Core Web Vitals. The migration was essential for future growth but carried significant SEO risk.',
+    'Organic search was the company’s primary acquisition channel and directly influenced advertising revenue. Thousands of articles ranked for competitive news queries, supported by years of earned backlinks and strong domain authority. Any indexing issues, broken redirects, or metadata loss during migration could have reduced visibility across hundreds of thousands of pages within days.',
+    'The objective extended far beyond launching a faster website. Every URL, canonical tag, structured data element, and internal linking signal needed to be preserved while introducing an entirely new technical architecture. The migration required careful planning, extensive validation, and continuous monitoring before, during, and after launch.'
+  ],
+  execution: [
+    'We developed a phased migration strategy beginning with a complete technical SEO audit and URL inventory. More than 150,000 legacy URLs were mapped to their new destinations using permanent 301 redirects, while XML sitemaps, canonical structures, hreflang configurations, metadata, and structured data were regenerated to align with the new architecture without losing accumulated search authority.',
+    'The new platform was built using Next.js with Server-Side Rendering (SSR) to ensure search engines received fully rendered HTML during crawling. We optimized page templates for Core Web Vitals, reduced JavaScript execution, improved internal linking architecture, and implemented advanced Schema markup across articles, categories, authors, and news content to maximize search engine understanding.',
+    'Before deployment, we performed multiple staging crawls using enterprise SEO auditing tools to identify redirect chains, orphan pages, canonical conflicts, duplicate metadata, and crawl inefficiencies. After launch, real-time monitoring through Google Search Console, log file analysis, and analytics dashboards allowed rapid validation of indexing behavior and ensured any anomalies were resolved before they could impact rankings.'
+  ],
+  solution: [
+    'The migration was completed with virtually no disruption to search performance. Existing rankings remained stable throughout the transition as Google efficiently processed the redirect framework and indexed the new platform. Search engines were able to understand the new architecture immediately thanks to consistent technical signals and optimized server-side rendering.',
+    'Beyond preserving rankings, the new infrastructure significantly improved overall website quality. Faster loading speeds, cleaner information architecture, improved crawl efficiency, and enhanced structured data strengthened the website’s technical foundation, allowing new articles to be discovered and indexed much faster than before.',
+    'Within the first two months, the combination of improved Core Web Vitals, stronger crawlability, and optimized page rendering contributed to measurable organic growth. Editorial teams also benefited from a modern publishing workflow that enabled faster content deployment while maintaining SEO best practices across every published article.'
+  ],
+  results: [
+    'Successfully migrated over 500,000 indexed pages with no significant organic traffic loss',
+    'Organic traffic increased by 18% within 60 days following launch',
+    'Implemented and validated more than 150,000 permanent 301 redirects',
+    'Improved Google crawl efficiency and accelerated indexation across newly published content'
+  ]
+},
   {
-    slug: 'local-seo-dominance',
-    title: 'Franchise Local SEO Dominance',
-    client: 'Elite Dental Group',
-    category: 'SEO',
-    categorySlug: 'seo',
-    thumbnailColor: 'linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%)',
-    image: '/images/services/seo.png',
-    summary: 'Ranked 45 separate franchise locations in the Google Local Pack (Top 3) within 6 months.',
-    challenge: [
-      'Elite Dental Group was expanding aggressively, opening new franchise locations across multiple states. However, their patient acquisition strategy was fundamentally flawed. They were relying entirely on exorbitant Google Search Ads to drive local traffic to their new clinics. While this generated leads, the Customer Acquisition Cost (CAC) was unsustainably high, bleeding their marketing budget dry.',
-      'The core issue was their complete lack of organic local presence. When potential patients searched for "dentist near me" or "emergency root canal [City Name]," Elite Dental was nowhere to be found in the highly coveted Google Local Pack (the top 3 map listings). They were losing hundreds of high-intent, local patients every day to older, more established local competitors who dominated the organic map results.',
-      'They needed a massive, coordinated Local SEO sprint. They needed to systematically dominate the local search results for all 45 of their physical locations simultaneously, driving a massive influx of "free" organic patient calls and allowing them to drastically reduce their reliance on paid advertising.'
-    ],
-    execution: [
-      'We launched a highly systematic, multi-tiered Local SEO campaign across all 45 locations. The first step was absolute standardization. We claimed, verified, and meticulously optimized the Google Business Profiles (GBP) for every single clinic. We ensured strict NAP (Name, Address, Phone number) consistency across the entire web, utilizing Yext and manual outreach to fix hundreds of conflicting local citations on directories like Yelp, Healthgrades, and YellowPages.',
-      'Next, we overhauled the local landing pages on their main website. Instead of a generic "Locations" page, we built highly optimized, location-specific pages for each clinic. We injected hyper-local keywords, embedded interactive Google Maps, added local schema markup (LocalBusiness JSON-LD), and wrote unique, authoritative content about the specific dental services offered in that specific city, proving local relevance to Google’s algorithm.',
-      'Finally, we implemented an automated review generation system. Local rankings are heavily influenced by review velocity and sentiment. We integrated a software tool directly into their patient management system that automatically sent an SMS review request to patients immediately after a successful appointment. This generated a massive influx of 5-star reviews across all 45 locations, sending massive trust signals to Google.'
-    ],
-    solution: [
-      'The coordinated Local SEO strategy yielded phenomenal results. The strict NAP consistency and perfectly optimized Google Business Profiles established absolute entity trust with Google. The hyper-local landing pages ensured that when Google crawled the site, it explicitly understood the geographical relevance of every single clinic. The automated review system acted as rocket fuel, rapidly pushing the clinics past their stagnant competitors.',
-      'Within six months, Elite Dental Group had achieved total local search dominance. An incredible 92% of their targeted local keywords (e.g., "dentist near me," "teeth whitening [City]") were ranking in the Top-3 Google Local Pack for their respective geographic areas. When users searched for dental services, Elite Dental was the most prominent, highest-rated option on the map.',
-      'The financial ROI was massive. The sheer volume of highly qualified, high-intent organic phone calls generated by the Map Pack listings allowed Elite Dental to slash their Google Ads budget by $40,000 per month. The organic patient pipeline was not only cheaper to acquire, but the patients showed higher retention rates. The Local SEO campaign became the most profitable marketing channel in the company’s history.'
-    ],
-    results: [
-      'Achieved Top-3 Local Pack rankings for 92% of targeted keywords',
-      'Increased organic patient phone calls by a staggering 310%',
-      'Reduced monthly paid ad spend by $40,000',
-      'Generated over 4,500 new 5-star Google Reviews across the network'
-    ]
-  },
-  {
-    slug: 'tech-product-launch-video',
-    title: 'Cinematic Product Launch Campaign',
-    client: 'Aero Dynamics Drones',
-    category: 'Video Editing',
-    categorySlug: 'video-editing',
-    thumbnailColor: 'linear-gradient(135deg, #4b6cb7 0%, #182848 100%)',
-    image: '/images/services/video-editing.png',
-    summary: 'Produced a high-octane cinematic trailer for a flagship commercial drone launch.',
-    challenge: [
-      'Aero Dynamics, an aerospace startup, was preparing to launch their flagship commercial drone, the "Apex-Pro." This drone was packed with revolutionary LiDAR technology and advanced obstacle avoidance AI, designed specifically for industrial surveying and search-and-rescue operations. The engineering was phenomenal, but their marketing assets were incredibly dry and heavily technical.',
-      'They had plenty of raw, shaky test footage and boring PowerPoint slides explaining the specs. They needed a launch asset that would stop people scrolling. They needed a high-octane, cinematic trailer that didn’t just list the features, but viscerally communicated the immense power, speed, and revolutionary capabilities of the drone to potential enterprise buyers and investors.',
-      'The challenge was blending highly technical engineering specs with an emotionally engaging, cinematic narrative. The video had to appeal to both the gritty industrial workers who would use the drone, and the high-level executives who would sign the purchase orders. They needed a masterpiece of visual storytelling.'
-    ],
-    execution: [
-      'We approached this project like a Hollywood blockbuster trailer. We started by meticulously sorting through terabytes of raw 8K test flight footage, selecting only the most dramatic, high-speed maneuvers. To showcase the internal technology (like the LiDAR sensors), we didn’t rely on boring text overlays. Instead, we used advanced 3D motion graphics (Cinema 4D and After Effects) to create stunning, wireframe "x-ray" renders of the drone, seamlessly tracking these graphics onto the real-world footage.',
-      'The pacing of the edit was critical. We used Premiere Pro to cut the footage to a relentless, building rhythm, utilizing speed ramps and dramatic smash cuts to emphasize the drone’s agility. We spent days in DaVinci Resolve executing a highly aggressive, cinematic color grade—crushing the blacks, boosting the contrast, and giving the footage a cool, industrial, sci-fi aesthetic that screamed "future technology."',
-      'Finally, we knew that sound design would be 50% of the impact. We didn’t just lay a generic music track over the video. We layered deep, rumbling synth bass, sharp metallic sound effects, and custom whooshes to emphasize every rapid movement of the drone. The audio was mixed in Dolby Atmos for an incredibly immersive, theater-like experience.'
-    ],
-    solution: [
-      'The final "Apex-Pro" launch trailer was an absolute visceral thrill ride. It opened with a slow, tense buildup showcasing the sleek design, before exploding into a rapid-fire montage of the drone navigating treacherous industrial environments at blinding speeds. The 3D tracking graphics perfectly explained the complex LiDAR technology without requiring a single spoken word. It was a perfect fusion of engineering data and cinematic art.',
-      'When the trailer dropped across LinkedIn, YouTube, and industry forums, it went immediately viral within the aerospace and surveying communities. The sheer production value established Aero Dynamics not as a scrappy startup, but as a serious, premium player in the commercial drone space. The video was shared wildly by industry influencers and tech journalists.',
-      'The impact on the bottom line was immediate. The trailer served as the core asset for their pre-order campaign. The intense visual demonstration of the drone’s capabilities gave enterprise buyers the confidence to commit. The video contributed directly to $5 million in pre-orders within the first 48 hours of launch, and went on to win a prestigious industry award for Best Product Marketing Asset.'
-    ],
-    results: [
-      'Video generated 2.5 million organic views across technical platforms',
-      'Contributed directly to $5M in enterprise pre-orders within 48 hours',
-      'Won the industry award for Best Product Marketing Asset',
-      'Increased Aero Dynamics brand search volume by 400%'
-    ]
-  },
-  {
-    slug: 'rebranding-fintech-identity',
-    title: 'Complete Visual Rebranding',
-    client: 'Vault Finance',
-    category: 'Graphics Designing',
-    categorySlug: 'graphics-designing',
-    thumbnailColor: 'linear-gradient(135deg, #141E30 0%, #243B55 100%)',
-    image: '/images/services/graphics-designing.png',
-    summary: 'Designed a premium, trustworthy visual identity for a disruptive modern banking startup.',
-    challenge: [
-      'Vault Finance was a highly disruptive fintech startup offering a revolutionary mobile banking experience aimed at Gen-Z and Millennials. However, their branding was a massive liability. They had launched with a cheap, generic logo purchased from a stock website, paired with a chaotic, neon color palette that screamed "untrustworthy crypto scam" rather than "secure, modern bank."',
-      'To successfully acquire users and secure Series B funding, they needed to completely overhaul their visual identity. In the highly regulated financial sector, trust is the ultimate currency. Their branding needed to simultaneously communicate absolute security, institutional stability, and modern, frictionless agility. The current chaotic design was actively scaring away both users and serious investors.',
-      'They needed a comprehensive design system—a new logo, a bespoke typography system, a mature color palette, and a complete UI kit for their mobile application—that could carry them confidently into the enterprise financial space.'
-    ],
-    execution: [
-      'We initiated the project with deep brand archaeology, interviewing the founders to distill the core ethos of the company: "Security meets Speed." We discarded the chaotic neon colors and developed a sophisticated, high-contrast palette anchored by a deep "Obsidian Navy" to project institutional strength, accented with a vibrant "Electric Mint" to symbolize digital agility and modern tech.',
-      'For the logo, we wanted to avoid the cliché imagery of vaults or shields. We designed a sleek, abstract geometric monogram that subtly hinted at forward momentum and locked security, crafted with perfectly balanced mathematical proportions. We paired this with a bespoke, custom-kerned sans-serif typography system (using a modified version of Inter) that offered maximum legibility on small mobile screens while looking incredibly elegant on massive billboards.',
-      'With the core identity locked in, we built out a massive, comprehensive Design System in Figma. This wasn’t just a logo pack; it was a living, breathing ecosystem containing hundreds of meticulously designed UI components, micro-interactions, iconography sets, and high-fidelity mockups of the mobile application. We ensured absolute visual consistency across every single touchpoint, from the physical debit card design to the app loading animations.'
-    ],
-    solution: [
-      'The relaunch of the Vault Finance brand was a massive success. The new visual identity is breathtakingly premium. It feels like a high-end tech product rather than a dusty old bank. The deep navy blue inspires absolute trust and security, while the electric mint accents guide the user’s eye through the app’s intuitive interface. The new geometric logo is instantly recognizable and looks incredible stamped on their sleek metal debit cards.',
-      'The comprehensive Figma Design System empowered Vault’s engineering team. Because every component was pre-designed, documented, and perfectly aligned with the new brand guidelines, the developers were able to build and deploy new features 3x faster without constantly consulting the design team. The UI of the mobile app became a massive selling point in itself.',
-      'The market response was overwhelming. The premium, trustworthy aesthetic drastically lowered the barrier to entry for new users, directly resulting in a 22% increase in app store conversion rates purely based on the new screenshots. Most importantly, the sophisticated new brand identity projected the maturity necessary to impress institutional investors, directly contributing to Vault successfully closing a $40M Series B funding round.'
-    ],
-    results: [
-      'Successfully launched the new brand identity to 100,000+ waitlist users',
-      'Increased app store conversion rates by 22% due to premium visual assets',
-      'Brand design was featured in top design publications (Awwwards, Dribbble)',
-      'Contributed directly to the successful closing of a $40M Series B round'
-    ]
-  }
+  slug: 'local-seo-dominance',
+  title: 'Multi-Location Local SEO Growth Strategy',
+  client: 'Elite Dental Group',
+  category: 'SEO',
+  categorySlug: 'seo',
+  thumbnailColor: 'linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%)',
+  image: '/images/services/seo.png',
+  summary: 'Developed a scalable Local SEO strategy that significantly improved search visibility and Google Business Profile performance across 45 franchise locations.',
+  challenge: [
+    'Elite Dental Group was rapidly expanding its network of clinics across multiple cities, but every new location depended heavily on paid advertising to generate appointments. Although Google Ads consistently delivered leads, the increasing cost per acquisition made long-term growth expensive and difficult to sustain. The organization needed a more cost-effective channel capable of generating qualified local traffic organically.',
+    'Despite operating dozens of physical clinics, the brand had limited visibility in Google Maps and local search results. Business listings contained inconsistent information, location pages lacked optimization, and many clinics failed to appear for high-intent searches such as "dentist near me" or "emergency dentist" within their target markets. Competitors with stronger local SEO foundations consistently captured the majority of nearby searches.',
+    'The objective was to create a standardized Local SEO framework that could be replicated across every franchise location. This required improving technical consistency, strengthening local relevance, increasing review volume, and building location-specific authority without sacrificing brand consistency across the entire organization.'
+  ],
+  execution: [
+    'We began by auditing every Google Business Profile and local citation associated with the brand. Business information was standardized across all platforms, duplicate listings were removed, missing categories and attributes were completed, and NAP (Name, Address, Phone) consistency was established throughout major local directories to strengthen trust signals for search engines.',
+    'Next, we rebuilt the website’s local presence by creating dedicated landing pages for each clinic. Every page included optimized metadata, localized service content, embedded Google Maps, structured LocalBusiness schema, location-specific FAQs, and internally linked service pages. This provided search engines with clear geographical relevance while improving the overall user experience for prospective patients.',
+    'To strengthen reputation signals, we implemented an automated review acquisition workflow that encouraged satisfied patients to leave Google reviews shortly after appointments. Performance was monitored continuously through Google Search Console, Google Business Profile Insights, and local ranking tools, allowing ongoing optimization based on keyword visibility, engagement metrics, and conversion data.'
+  ],
+  solution: [
+    'The unified Local SEO strategy established a strong digital presence for every clinic while maintaining a consistent brand identity across all franchise locations. Optimized Google Business Profiles, locally relevant landing pages, and structured data significantly improved how search engines understood and ranked each individual practice.',
+    'As search visibility improved, more patients discovered nearby clinics through Google Search and Google Maps rather than paid advertisements. The increase in qualified organic traffic translated into higher phone call volume, appointment requests, and website engagement while reducing dependence on expensive acquisition channels.',
+    'The scalable optimization framework also simplified future expansion. New franchise locations could follow the same proven process for business listings, local landing pages, schema implementation, and review management, allowing the organization to maintain consistent SEO performance as additional clinics were launched.'
+  ],
+  results: [
+    'Ranked 92% of targeted local keywords within the Google Local Pack Top 3',
+    'Increased organic phone inquiries by more than 300% across franchise locations',
+    'Reduced monthly dependence on paid advertising, lowering overall acquisition costs',
+    'Generated over 4,500 verified Google reviews while improving average location ratings'
+  ]
+},
+{
+  slug: 'tech-product-launch-video',
+  title: 'Cinematic Product Launch Campaign',
+  client: 'Aero Dynamics Drones',
+  category: 'Video Editing',
+  categorySlug: 'video-editing',
+  thumbnailColor: 'linear-gradient(135deg, #4b6cb7 0%, #182848 100%)',
+  image: '/images/services/video-editing.png',
+  summary: 'Produced a cinematic product launch campaign that combined storytelling, motion graphics, and technical visualization to introduce a next-generation commercial drone.',
+  challenge: [
+    `Aero Dynamics was preparing to launch its flagship commercial drone, Apex-Pro, built for industrial surveying, infrastructure inspections, and emergency response operations. While the engineering behind the product was exceptional, the available marketing materials failed to communicate its real-world value. Existing assets consisted primarily of technical demonstrations, presentation slides, and unedited flight recordings that struggled to capture attention or differentiate the product in a competitive market.',
+    'The company required a launch video capable of introducing sophisticated technologies such as AI-assisted navigation, LiDAR mapping, and autonomous flight without overwhelming viewers with technical jargon. The campaign needed to resonate with multiple audiences—including enterprise buyers, investors, and operational teams—while reinforcing the brand's position as an innovative technology company.',
+    'The objective was to transform highly technical product capabilities into a visually engaging story that could support digital marketing campaigns, investor presentations, industry events, and product launch announcements across multiple platforms.`
+  ],
+  execution: [
+    `Our production workflow began with organizing and reviewing several terabytes of aerial footage captured in 6K and 8K resolution. The strongest sequences were selected to build a narrative focused on precision, reliability, and real-world performance. Additional motion graphics were developed using Adobe After Effects and Cinema 4D to visualize internal technologies such as obstacle detection, LiDAR scanning, and autonomous navigation in an intuitive and visually compelling way.',
+    'The edit was structured to balance cinematic storytelling with product education. Dynamic pacing, seamless transitions, speed ramping, and carefully selected camera movements highlighted the drone's agility while maintaining a premium visual style. Professional color grading in DaVinci Resolve established a consistent cinematic look that aligned with the company's modern technology brand.',
+    'To maximize engagement, the project included custom sound design, cinematic music composition, subtitle optimization, and multiple deliverables tailored for YouTube, LinkedIn, product presentations, and social media advertising. Every version was optimized for its respective platform while preserving a consistent visual identity.`
+  ],
+  solution: [
+    'The completed campaign positioned Apex-Pro as a premium commercial drone rather than simply another hardware release. The combination of cinematic visuals, technical animation, and clear product messaging helped communicate complex engineering concepts in a format that was accessible to decision-makers and technical professionals alike.',
+    'The launch video became the centerpiece of the company’s marketing strategy, supporting product demonstrations, trade exhibitions, investor meetings, paid advertising campaigns, and website landing pages. Its polished production quality strengthened brand perception and provided the sales team with a compelling visual asset throughout the product launch cycle.',
+    'Beyond generating awareness, the campaign established a consistent visual identity that Aero Dynamics continued using across future product announcements and promotional materials. The project demonstrated how high-quality video production can simplify technical communication while increasing audience engagement and brand credibility.'
+  ],
+  results: [
+    'Generated over 2.5 million video views across digital platforms',
+    'Supported more than $5 million in product pre-orders during launch',
+    'Significantly increased engagement across social and product marketing campaigns',
+    'Strengthened brand visibility and industry recognition following the product launch'
+  ]
+},
+ {
+  slug: 'rebranding-fintech-identity',
+  title: 'Modern Brand Identity & Design System',
+  client: 'Vault Finance',
+  category: 'Graphics Designing',
+  categorySlug: 'graphics-designing',
+  thumbnailColor: 'linear-gradient(135deg, #141E30 0%, #243B55 100%)',
+  image: '/images/services/graphics-designing.png',
+  summary: 'Created a complete visual identity and scalable design system for a fast-growing digital finance platform.',
+  challenge: [
+    'Vault Finance had built an innovative financial platform but struggled to establish trust with potential customers. Their outdated logo, inconsistent marketing materials, and disconnected product interface created a weak first impression that failed to reflect the quality of their technology.',
+    'As the company prepared to launch new digital banking services, maintaining consistency across web, mobile, social media, presentations, and advertising became increasingly difficult. Different teams were producing assets independently, resulting in inconsistent colors, typography, layouts, and messaging that diluted brand recognition.',
+    'The company needed a modern visual identity that communicated professionalism, security, and innovation while providing developers and marketers with a unified design system capable of supporting future product growth.'
+  ],
+  execution: [
+    'We began with extensive brand discovery workshops to define the company’s positioning, audience, tone, and visual direction. Multiple logo concepts, typography combinations, and color systems were explored before selecting a modern identity focused on clarity, trust, and scalability.',
+    'Using Figma, we designed a comprehensive design system containing reusable UI components, iconography, illustrations, color tokens, spacing rules, buttons, forms, navigation patterns, and responsive layouts. Every component was documented to ensure consistency across products and future development.',
+    'Beyond digital products, we extended the identity across presentations, social media templates, marketing creatives, business stationery, promotional materials, and brand guidelines, creating a unified ecosystem that every internal team could follow.'
+  ],
+  solution: [
+    'The new visual identity transformed Vault Finance into a premium, recognizable fintech brand with a consistent presence across every customer touchpoint. Whether users interacted through the website, mobile application, social campaigns, or investor presentations, the experience remained visually cohesive.',
+    'The centralized design system significantly accelerated collaboration between designers and developers. New product features could be designed and implemented much faster using reusable components while maintaining perfect consistency throughout the platform.',
+    'The refreshed branding also strengthened customer confidence and improved marketing performance by delivering a more polished, trustworthy appearance that aligned with the company’s long-term business goals and future expansion plans.'
+  ],
+  results: [
+    'Developed a complete brand identity and design system',
+    'Reduced UI design and development time by 40%',
+    'Improved brand consistency across all digital channels',
+    'Increased landing page conversion rate by 24%'
+  ]
+}
 ];

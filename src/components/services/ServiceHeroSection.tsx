@@ -35,10 +35,10 @@ export default function ServiceHeroSection({ service }: { service: ServiceDetail
             Our Service
           </Typography>
         </Box>
-        <Typography variant="h1" sx={{ color: 'secondary.main', mb: 3, fontSize: { xs: '3rem', md: '5rem' } }}>
+        <Typography variant="h1" sx={{ color: 'secondary.main', mb: 3, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, letterSpacing: '-0.02em' }}>
           {service.title}
         </Typography>
-        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', maxWidth: 800, mb: 4 }}>
+        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.25rem' }, lineHeight: 1.7, maxWidth: 800, mb: 4 }}>
           {service.subtitle}
         </Typography>
       </Container>

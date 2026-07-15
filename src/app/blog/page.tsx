@@ -41,7 +41,7 @@ export default function BlogListingPage() {
 
   return (
     <Box sx={{ bgcolor: '#0B0F19', minHeight: '100vh', pt: { xs: 15, md: 22 }, pb: 15, position: 'relative', overflow: 'hidden' }}>
-      
+
       {/* Dynamic Background Glow */}
       <Box sx={{
         position: 'absolute',
@@ -61,16 +61,18 @@ export default function BlogListingPage() {
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
         {/* Hero Header */}
         <Box sx={{ mb: { xs: 8, md: 12 }, textAlign: 'center' }}>
-          <Chip 
-            icon={<AutoAwesomeIcon sx={{ fontSize: 16 }} />} 
-            label="Knowledge Hub" 
+          <Chip
+            icon={<AutoAwesomeIcon sx={{ fontSize: 16 }} />}
+            label="Knowledge Hub"
             sx={{ mb: 3, bgcolor: 'rgba(110,65,226,0.15)', color: 'primary.light', fontWeight: 800, border: '1px solid rgba(110,65,226,0.3)', px: 1, py: 2.5, borderRadius: 10 }}
           />
           <Typography variant="h1" sx={{ color: 'white', fontWeight: 900, mb: 3, fontSize: { xs: '3rem', md: '5.5rem' }, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
             The Aetibar <Box component="span" sx={{ background: 'linear-gradient(90deg, #b485ff, #8250df)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Journal</Box>
           </Typography>
           <Typography variant="h6" sx={{ color: 'rgba(255,255,255,0.6)', fontWeight: 400, maxWidth: 650, mx: 'auto', fontSize: { xs: '1rem', md: '1.25rem' }, lineHeight: 1.7 }}>
-            Deep dives, industry insights, and powerful strategies for digital growth, AI automation, and scalable technology.
+            Engineering Ideas Into Digital Advantage
+
+            From AI automation and software architecture to growth strategies and emerging technologies, we share insights that help businesses stay ahead in a rapidly evolving digital landscape.
           </Typography>
         </Box>
 
@@ -87,12 +89,12 @@ export default function BlogListingPage() {
           </Box>
         ) : (
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 4, md: 8 } }}>
-            
+
             {/* Featured Post (Most Recent) */}
             {featuredBlog && (
-              <Card sx={{ 
-                bgcolor: 'rgba(255,255,255,0.03)', 
-                borderRadius: { xs: 6, md: 8 }, 
+              <Card sx={{
+                bgcolor: 'rgba(255,255,255,0.03)',
+                borderRadius: { xs: 6, md: 8 },
                 border: '1px solid rgba(255,255,255,0.08)',
                 backdropFilter: 'blur(20px)',
                 overflow: 'hidden',
@@ -121,7 +123,7 @@ export default function BlogListingPage() {
                       <Chip label="Latest Post" sx={{ bgcolor: 'primary.main', color: 'white', fontWeight: 800, backdropFilter: 'blur(10px)' }} />
                     </Box>
                   </Box>
-                  
+
                   <CardContent sx={{ p: { xs: 4, md: 8 }, width: { xs: '100%', md: '45%' }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     <Box sx={{ display: 'flex', gap: 2, alignItems: 'center', mb: 3 }}>
                       <Typography variant="caption" sx={{ color: 'primary.light', fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase' }}>
@@ -148,9 +150,9 @@ export default function BlogListingPage() {
             {regularBlogs.length > 0 && (
               <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }, gap: { xs: 4, md: 5 } }}>
                 {regularBlogs.map((blog) => (
-                  <Card key={blog._id} sx={{ 
-                    bgcolor: 'rgba(255,255,255,0.02)', 
-                    borderRadius: 6, 
+                  <Card key={blog._id} sx={{
+                    bgcolor: 'rgba(255,255,255,0.02)',
+                    borderRadius: 6,
                     border: '1px solid rgba(255,255,255,0.05)',
                     backdropFilter: 'blur(10px)',
                     display: 'flex',
@@ -196,7 +198,7 @@ export default function BlogListingPage() {
                 ))}
               </Box>
             )}
-            
+
           </Box>
         )}
       </Container>

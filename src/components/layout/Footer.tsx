@@ -16,29 +16,30 @@ export default function Footer() {
         <Grid container spacing={8}>
           {/* Logo & Description */}
           <Grid size={{ xs: 12, md: 4 }}>
-            <Typography variant="h4" sx={{ color: 'white', mb: 3, fontWeight: 800 }}>
+            <Typography variant="h4" sx={{ color: 'white', mb: 3, fontWeight: 800, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
               AETIBAR<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
             </Typography>
-            <Typography variant="body2" sx={{ mb: 3, lineHeight: 1.8 }}>
-              A premium, full-service digital transformation agency specializing in cutting-edge web development, sophisticated AI automations, and data-driven global marketing strategies. We build the technology of tomorrow, today.
+            <Typography variant="body2" sx={{ mb: 3, lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
+              Aetibar is a full-service digital agency helping businesses design, build, and scale modern digital products through software development, AI solutions, creative design, SEO, and performance marketing.
             </Typography>
-            <Typography variant="body2" sx={{ opacity: 0.7 }}>
+            <Typography variant="body2" sx={{ opacity: 0.7, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
               Headquartered in Udaipur, India.
             </Typography>
           </Grid>
           
           {/* Services Links */}
           <Grid size={{ xs: 12, sm: 6, md: 2 }}>
-            <Typography variant="h6" sx={{ color: 'white', mb: 3 }}>Services</Typography>
+            <Typography variant="h6" sx={{ color: 'white', mb: 3, fontSize: { xs: '1.1rem', md: '1.25rem' }, fontWeight: 700 }}>Services</Typography>
             {[
               { name: 'Web Development', href: '/services/web-development' },
               { name: 'App Development', href: '/services/app-development' },
               { name: 'AI Automations', href: '/services/ai-automation' },
               { name: 'SEO & Marketing', href: '/services/seo' },
-              { name: 'Brand Design', href: '/services/graphics-designing' }
+              { name: 'Graphics Designing', href: '/services/graphics-designing' },
+              { name: 'Digital Marketing', href: '/services/digital-marketing' }
             ].map(link => (
               <Link key={link.name} href={link.href} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <Typography variant="body2" sx={{ cursor: 'pointer', mb: 1.5, transition: 'all 0.2s', '&:hover': { color: 'primary.main', transform: 'translateX(5px)' } }}>
+                <Typography variant="body2" sx={{ cursor: 'pointer', mb: 1.5, fontSize: { xs: '0.95rem', md: '1.05rem' }, transition: 'all 0.2s', '&:hover': { color: 'primary.main', transform: 'translateX(5px)' } }}>
                   {link.name}
                 </Typography>
               </Link>
@@ -47,7 +48,7 @@ export default function Footer() {
           
           {/* Company Links */}
           <Grid size={{ xs: 12, sm: 6, md: 2 }}>
-            <Typography variant="h6" sx={{ color: 'white', mb: 3 }}>Company</Typography>
+            <Typography variant="h6" sx={{ color: 'white', mb: 3, fontSize: { xs: '1.1rem', md: '1.25rem' }, fontWeight: 700 }}>Company</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
               {[
                 { name: 'About Us', href: '/about' },
@@ -58,7 +59,7 @@ export default function Footer() {
                 { name: 'Contact Us', href: '/contact' }
               ].map(link => (
                 <Link key={link.name} href={link.href} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <Typography variant="body2" sx={{ cursor: 'pointer', transition: 'all 0.2s', '&:hover': { color: 'primary.main', transform: 'translateX(5px)' } }}>
+                  <Typography variant="body2" sx={{ cursor: 'pointer', fontSize: { xs: '0.95rem', md: '1.05rem' }, transition: 'all 0.2s', '&:hover': { color: 'primary.main', transform: 'translateX(5px)' } }}>
                     {link.name}
                   </Typography>
                 </Link>
@@ -68,12 +69,12 @@ export default function Footer() {
           
           {/* Contact Info & Socials */}
           <Grid size={{ xs: 12, md: 4 }}>
-            <Typography variant="h6" sx={{ color: 'white', mb: 3 }}>Get in Touch</Typography>
-            <Typography variant="body2" sx={{ mb: 1, color: 'white', fontWeight: 600 }}>
+            <Typography variant="h6" sx={{ color: 'white', mb: 3, fontSize: { xs: '1.1rem', md: '1.25rem' }, fontWeight: 700 }}>Get in Touch</Typography>
+            <Typography variant="body2" sx={{ mb: 1, color: 'white', fontWeight: 600, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
               hello.aetibar@gmail.com
             </Typography>
             
-            <Typography variant="subtitle2" sx={{ color: 'white', mb: 2, textTransform: 'uppercase', letterSpacing: 1 }}>Follow Us</Typography>
+            <Typography variant="subtitle2" sx={{ color: 'white', mb: 2, textTransform: 'uppercase', letterSpacing: 1, fontSize: { xs: '0.85rem', md: '0.95rem' } }}>Follow Us</Typography>
             <Box sx={{ display: 'flex', gap: 1.5 }}>
               <IconButton href="https://x.com/Aetibar_" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-3px)' } }}><TwitterIcon fontSize="small" /></IconButton>
               <IconButton href="https://www.linkedin.com/in/aetibar-information-and-technologies-502531406" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-3px)' } }}><LinkedInIcon fontSize="small" /></IconButton>

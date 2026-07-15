@@ -39,10 +39,10 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
         <Typography variant="caption" sx={{ display: 'inline-block', p: 1, px: 3, bgcolor: '#f0f4ff', color: '#3366ff', borderRadius: 10, mb: 3, fontWeight: 700, letterSpacing: 1 }}>
          APP DEVELOPMENT
         </Typography>
-        <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3rem', md: '5rem' }, fontWeight: 900, mb: 3, letterSpacing: '-0.02em' }}>
+        <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, letterSpacing: '-0.02em' }}>
           {service.title}
         </Typography>
-        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.25rem', maxWidth: 700, mx: 'auto', mb: 6 }}>
+        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, maxWidth: 700, mx: 'auto', mb: 6 }}>
           {service.subtitle}
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: 3 }}>
@@ -71,11 +71,11 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
           <Grid size={{ xs: 12, md: 7 }}>
             {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19', fontSize: '2rem' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: '1.15rem', lineHeight: 2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -85,15 +85,15 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
           
           <Grid size={{ xs: 12, md: 5 }}>
             <Box sx={{ position: 'sticky', top: 120 }}>
-              <Typography variant="h4" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>
+              <Typography variant="h4" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
                 Key Capabilities
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, mb: 6 }}>
                 {service.features.map((feature, idx) => (
                   <Card key={idx} sx={{ bgcolor: '#f8f9fa', border: 'none', boxShadow: 'none', borderRadius: 4 }}>
                     <CardContent sx={{ p: 3 }}>
-                      <Typography variant="h6" sx={{ fontWeight: 700, color: '#3366ff', mb: 1 }}>{feature.title}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>{feature.desc}</Typography>
+                      <Typography variant="h6" sx={{ fontWeight: 700, color: '#3366ff', mb: 1, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
+                      <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>{feature.desc}</Typography>
                     </CardContent>
                   </Card>
                 ))}
@@ -106,7 +106,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
       {/* MASSIVE TECH STACK BANNER */}
       <Box sx={{ mt: 10, bgcolor: '#0B0F19', color: 'white', py: { xs: 10, md: 15 } }}>
         <Container maxWidth="xl">
-          <Typography variant="h2" sx={{ fontWeight: 900, mb: 6, textAlign: 'center', letterSpacing: '-0.02em' }}>
+          <Typography variant="h2" sx={{ fontWeight: 900, mb: 6, textAlign: 'center', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
             Built with Modern Technologies
           </Typography>
           <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 2, maxWidth: 900, mx: 'auto' }}>

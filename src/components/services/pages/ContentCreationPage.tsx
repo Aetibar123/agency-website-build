@@ -42,10 +42,10 @@ export default function ContentCreationPage({ service }: { service: ServiceDetai
            Content That Connects
           </Typography>
         </Box>
-        <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '3.5rem', md: '5rem' }, fontWeight: 900, mb: 4, fontFamily: 'serif' }}>
+        <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 4, fontFamily: 'serif', letterSpacing: '-0.02em' }}>
           {service.title}
         </Typography>
-        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.35rem', lineHeight: 1.8, px: { md: 6 } }}>
+        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, px: { md: 6 } }}>
           {service.description}
         </Typography>
       </Container>
@@ -71,11 +71,11 @@ export default function ContentCreationPage({ service }: { service: ServiceDetai
             {service.detailedContent?.map((content, idx) => (
               <Box key={idx} sx={{ mb: 10 }}>
                 {idx === 0 && <FormatQuoteOutlinedIcon sx={{ fontSize: 60, color: 'primary.main', mb: 2, opacity: 0.2 }} />}
-                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontFamily: 'serif' }}>
+                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontFamily: 'serif', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
                   {content.heading}
                 </Typography>
                 {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: '#333', fontSize: '1.25rem', lineHeight: 2.2, mb: 3 }}>
+                  <Typography key={pIdx} variant="body1" sx={{ color: '#333', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
                     {p}
                   </Typography>
                 ))}
@@ -87,14 +87,14 @@ export default function ContentCreationPage({ service }: { service: ServiceDetai
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: 'sticky', top: 120 }}>
               <Card sx={{ bgcolor: 'white', borderRadius: 4, p: 4, mb: 4, border: '1px solid #eee', boxShadow: '0 20px 40px rgba(0,0,0,0.03)' }}>
-                <Typography variant="h6" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19' }}>Content Expertise</Typography>
+                <Typography variant="h6" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>Content Expertise</Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                   {service.features.map((feature, idx) => (
                     <Box key={idx} sx={{ display: 'flex', gap: 2 }}>
                       <Box sx={{ color: 'primary.main', fontWeight: 800 }}>0{idx + 1}</Box>
                       <Box>
-                        <Typography variant="subtitle2" sx={{ fontWeight: 800, color: '#0B0F19' }}>{feature.title}</Typography>
-                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>{feature.desc}</Typography>
+                        <Typography variant="subtitle2" sx={{ fontWeight: 800, color: '#0B0F19', fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary', fontSize: { xs: '0.95rem', md: '1.05rem' }, lineHeight: 1.8 }}>{feature.desc}</Typography>
                       </Box>
                     </Box>
                   ))}
@@ -102,7 +102,7 @@ export default function ContentCreationPage({ service }: { service: ServiceDetai
               </Card>
 
               <Box sx={{ px: 2 }}>
-                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 2, color: 'text.secondary', textTransform: 'uppercase' }}>Software</Typography>
+                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 2, color: 'text.secondary', textTransform: 'uppercase', fontSize: { xs: '1.1rem', md: '1.25rem' } }}>Software</Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
                   {service.technologies.map((tech, idx) => (
                     <Box key={idx} sx={{ px: 2, py: 1, bgcolor: '#f0f0f0', borderRadius: 1 }}>
