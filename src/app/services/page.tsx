@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ServicesClient from "./ServicesClient";
 
 export const metadata: Metadata = {
-  title: "Services | Ai, Web & App Development, Digital Marketing, Seo | Aetibar",
+  title: "Aetibar Services | Ai, Web & App Development, Digital Marketing, Seo",
 
   description:
     "Explore Aetibar's expert web development, mobile app development, AI automation, SEO, digital marketing, and brand design services for business growth.",
