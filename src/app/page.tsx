@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Aetibar | Ai, Web, App Development & Digital Marketing Company in Udaipur",
 
   description:
-    "Build powerful websites and mobile apps with Aetibar. We also offer AI automation, SEO, digital marketing, and brand design services.",
+    "Aetibar | Build powerful websites and mobile apps. We also offer AI automation, SEO, digital marketing, and brand design services.",
 
   keywords: [
     "Web Development Company in Udaipur",
