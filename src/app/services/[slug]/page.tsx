@@ -1,6 +1,8 @@
 import React from "react";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { getServiceBySlug, getAllServices } from "../../../data/detailedServices";
+import { generateServiceSEO } from "../../../lib/seo";
 
 // Import Unique Page Templates
 import WebDevelopmentPage from "../../../components/services/pages/WebDevelopmentPage";
@@ -21,6 +23,33 @@ import CoreOfferingsSection from "../../../components/services/CoreOfferingsSect
 import TechStackSection from "../../../components/services/TechStackSection";
 import DomainsSection from "../../../components/services/DomainsSection";
 import CtaSection from "../../../components/home/CtaSection";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const service = getServiceBySlug(resolvedParams.slug);
+
+  if (!service) {
+    return {
+      title: "Service Not Found | Aetibar",
+      description: "The requested service could not be found.",
+    };
+  }
+
+  // Derive keywords intelligently from service technologies and features
+  const keywords = [
+    ...(service.technologies || []),
+    ...(service.features ? service.features.map(f => f.title) : []),
+    service.title,
+    "agency services"
+  ];
+
+  return generateServiceSEO({
+    title: service.title,
+    description: service.description,
+    slug: service.slug,
+    keywords,
+  });
+}
 
 export async function generateStaticParams() {
   const services = getAllServices();
