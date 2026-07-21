@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.aetibar.in"),
 
   verification: {
-    google: "PVyFa8z-DWpWv1QPIIsj9kBQAbxQXhvagtURSD7-ZQ",
+    google: "PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ",
   },
   
   title: {
