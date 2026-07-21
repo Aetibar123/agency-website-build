@@ -8,9 +8,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.aetibar.in"),
 
 verification: {
-  google: "PVyFa8z-DWpwW1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ",
+  google: "PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ",
 },
 
+  
   title: {
     default: "Aetibar | Web Development & Digital Marketing Company",
     template: "%s | Aetibar",
