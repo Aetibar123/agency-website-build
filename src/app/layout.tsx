@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Script from "next/script";
 import ThemeRegistry from "../components/providers/ThemeRegistry";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
@@ -55,6 +56,21 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+        <Script
+  id="organization-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Aetibar",
+      url: "https://www.aetibar.in",
+      logo: "https://www.aetibar.in/logo.jpeg",
+    }),
+  }}
+/>
+        
       </head>
       <body style={{ margin: 0, fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
         <ThemeRegistry>
