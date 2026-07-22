@@ -16,6 +16,19 @@ export const metadata: Metadata = {
   description:
     "Aetibar provides Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design services.",
 
+  keywords: [
+    "Web Development Company",
+    "Website Development Company",
+    "Mobile App Development",
+    "AI Automation",
+    "SEO Company",
+    "Digital Marketing Company",
+    "Brand Design",
+    "Software Development Company",
+    "IT Company in Udaipur",
+    "Aetibar",
+  ],
+
   icons: {
     icon: "/logo.jpeg",
     shortcut: "/logo.jpeg",
@@ -25,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aetibar",
     description:
-      "Web Development, Mobile App Development, AI Automations, SEO & Marketing.",
+      "Web Development, Mobile App Development, AI Automations, SEO & Digital Marketing.",
     url: "https://www.aetibar.in",
     siteName: "Aetibar",
     images: [
