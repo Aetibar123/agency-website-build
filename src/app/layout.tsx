@@ -83,6 +83,22 @@ export default function RootLayout({
       name: "Aetibar",
       url: "https://www.aetibar.in",
       logo: "https://www.aetibar.in/logo.jpeg",
+      image: "https://www.aetibar.in/logo.jpeg",
+      description:
+        "Web Development, Mobile App Development, AI Automation, SEO, Digital Marketing and Branding Company.",
+      email: "info@aetibar.in",
+      telephone: "+91-XXXXXXXXXX",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Udaipur",
+        addressRegion: "Rajasthan",
+        addressCountry: "IN",
+      },
+      sameAs: [
+        "https://www.linkedin.com/company/your-linkedin",
+        "https://www.instagram.com/your-instagram",
+        "https://www.facebook.com/your-facebook"
+      ]
     }),
   }}
 />
