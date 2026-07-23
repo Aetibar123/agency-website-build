@@ -108,14 +108,19 @@ export default function RootLayout({
   src="https://www.googletagmanager.com/gtag/js?id=G-EBH9X58H1B"
 />
 
-<Script id="google-analytics">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<Script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-EBH9X58H1B"
+/>
 
-    gtag('config', 'G-EBH9X58H1B');
-  `}
+<Script id="google-analytics">
+{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EBH9X58H1B');
+`}
 </Script>
       </head>
       <body style={{ margin: 0, fontFamily: '"Plus Jakarta Sans", sans-serif' }}>
