@@ -6,7 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function TeamSection() {
   const team = [
-    { name: "Hasrat", role: "Chief Executive Officer", image: "/images/about/person1.jpeg" },
+    { name: "Hasrat", role: "Chief Executive Officer", image: "" },
     { name: "Amaan", role: "Head of Engineering", image: "/images/about/person2.jpeg" },
     { name: "Aaqib", role: "Lead AI Architect", image: "/images/about/person1.jpeg" },
     { name: "Rohit", role: "Creative Director", image: "/images/about/person1.jpeg" },
