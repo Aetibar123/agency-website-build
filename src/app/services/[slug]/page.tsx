@@ -16,7 +16,7 @@ import SeoPage from "../../../components/services/pages/SeoPage";
 import GraphicsDesigningPage from "../../../components/services/pages/GraphicsDesigningPage";
 import ContentCreationPage from "../../../components/services/pages/ContentCreationPage";
 import ServiceBackButton from "../../../components/services/ServiceBackButton";
-
+ 
 // Generic Fallback components
 import ServiceHeroSection from "../../../components/services/ServiceHeroSection";
 import CoreOfferingsSection from "../../../components/services/CoreOfferingsSection";
@@ -27,6 +27,7 @@ import CtaSection from "../../../components/home/CtaSection";
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
   const service = getServiceBySlug(resolvedParams.slug);
+  
 
   if (!service) {
     return {
@@ -42,6 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     service.title,
     "agency services"
   ];
+
 
   return generateServiceSEO({
     title: service.title,

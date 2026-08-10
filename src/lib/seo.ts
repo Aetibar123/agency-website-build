@@ -17,7 +17,7 @@ export function generateServiceSEO({
   image,
   type = 'website',
 }: SEOProps): Metadata {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aetibar.in';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.aetibar.in';
   const url = `${baseUrl}/services/${slug}`;
 
   // Intelligently derive keywords if none are provided
@@ -28,7 +28,7 @@ export function generateServiceSEO({
   return {
   metadataBase: new URL(baseUrl),
 
-  title: `${title} | Aetibar`,
+  title: title,
   description,
 
   keywords: [...new Set(derivedKeywords)],
