@@ -8,8 +8,8 @@ export const projectsPart2: PortfolioProject[] = [
   category: 'AI Automation',
   categorySlug: 'ai-automation',
   thumbnailColor: 'linear-gradient(135deg, #1f4037 0%, #99f2c8 100%)',
-  image: '/images/services/ai-automation.png',
-
+  image: '/images/portfolio/aiInvoice.png',
+ 
   summary:
     'Built an AI-powered document processing platform that automated invoice extraction, approval workflows, and ERP integration, significantly reducing manual processing time and operational overhead.',
 
@@ -51,7 +51,7 @@ export const projectsPart2: PortfolioProject[] = [
   category: 'AI Tools',
   categorySlug: 'ai-tools',
   thumbnailColor: 'linear-gradient(135deg, #3a7bd5 0%, #3a6073 100%)',
-  image: '/images/services/ai-tools.png',
+  image: '/images/portfolio/legal.png',
 
   summary:
     'Developed a secure AI-powered legal document analysis platform that accelerates contract review while maintaining enterprise-grade privacy and compliance.',
@@ -94,7 +94,7 @@ export const projectsPart2: PortfolioProject[] = [
   category: 'AI Tools',
   categorySlug: 'ai-tools',
   thumbnailColor: 'linear-gradient(135deg, #ff9966 0%, #ff5e62 100%)',
-  image: '/images/services/ai-tools.png',
+  image: '/images/portfolio/inventry.png',
 
   summary:
     'Built an AI-powered demand forecasting platform that helps retail businesses optimize inventory planning, reduce stock shortages, and improve supply chain decision-making.',
@@ -137,7 +137,7 @@ export const projectsPart2: PortfolioProject[] = [
   category: 'Digital Marketing',
   categorySlug: 'digital-marketing',
   thumbnailColor: 'linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%)',
-  image: '/images/services/digital-marketing.png',
+  image: '/images/portfolio/b2b.png',
 
   summary:
     'Designed and executed an omnichannel B2B marketing strategy focused on lead generation, brand positioning, and enterprise customer acquisition.',
@@ -180,7 +180,7 @@ export const projectsPart2: PortfolioProject[] = [
   category: 'Digital Marketing',
   categorySlug: 'digital-marketing',
   thumbnailColor: 'linear-gradient(135deg, #e65c00 0%, #F9D423 100%)',
-  image: '/images/services/digital-marketing.png',
+  image: '/images/portfolio/dtc.png',
 
   summary:
     'Developed a customer retention and lifecycle marketing strategy that improved engagement, repeat purchases, and long-term customer value.',

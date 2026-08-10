@@ -8,8 +8,8 @@ export const projectsPart1: PortfolioProject[] = [
   category: "Web Development",
   categorySlug: "web-development",
   thumbnailColor: "linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%)",
-  image: "/images/services/web-development.png",
-
+  image: "/images/portfolio/ecommerce.png",
+ 
   summary:
     "Designed and developed a modern headless e-commerce platform focused on performance, scalability, and seamless shopping experiences across all devices.",
 
@@ -51,7 +51,7 @@ export const projectsPart1: PortfolioProject[] = [
   category: "Web Development",
   categorySlug: "web-development",
   thumbnailColor: "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
-  image: "/images/services/web-development.png",
+  image: "/images/portfolio/fintechDashboard.png",
 
   summary:
     "Designed and developed a modern financial analytics dashboard that centralizes business data, improves reporting, and provides real-time insights for better decision-making.",
@@ -94,7 +94,7 @@ export const projectsPart1: PortfolioProject[] = [
   category: "App Development",
   categorySlug: "app-development",
   thumbnailColor: "linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)",
-  image: "/images/services/app-development.png",
+  image: "/images/portfolio/health.png",
 
   summary:
     "Designed and developed a secure telemedicine application that enables online consultations, appointment scheduling, and seamless communication between patients and healthcare providers.",
@@ -137,7 +137,7 @@ export const projectsPart1: PortfolioProject[] = [
   category: "App Development",
   categorySlug: "app-development",
   thumbnailColor: "linear-gradient(135deg, #f12711 0%, #f5af19 100%)",
-  image: "/images/services/app-development.png",
+  image: "/images/portfolio/logix.png",
 
   summary:
     "Designed and developed a fleet management mobile application with offline capabilities, GPS tracking, route management, and digital proof of delivery.",
@@ -180,7 +180,7 @@ export const projectsPart1: PortfolioProject[] = [
   category: 'AI Automation',
   categorySlug: 'ai-automation',
   thumbnailColor: 'linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)',
-  image: '/images/services/ai-automation.png',
+  image: '/images/portfolio/aiCostomer.png',
 
   summary:
     'Developed an enterprise AI support platform that automated customer service workflows, reduced response times, and enabled support teams to scale without increasing operational costs.',
