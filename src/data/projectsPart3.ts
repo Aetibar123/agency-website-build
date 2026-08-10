@@ -8,13 +8,13 @@ export const projectsPart3: PortfolioProject[] = [
   category: 'SEO',
   categorySlug: 'seo',
   thumbnailColor: 'linear-gradient(135deg, #00b09b 0%, #96c93d 100%)',
-  image: '/images/services/seo.png',
+  image: '/images/portfolio/EnterpriseSeo.png',
   summary: 'Planned and executed a large-scale SEO migration for a 500,000+ page news platform while preserving search visibility and improving long-term organic performance.',
   challenge: [
     'National News Network (NNN), one of the country’s largest digital publishers, was preparing to replace its decade-old CMS with a modern headless architecture. Although the legacy platform contained over 500,000 indexed pages, years of accumulated technical debt had created slow loading speeds, inefficient crawl paths, duplicate content issues, and poor Core Web Vitals. The migration was essential for future growth but carried significant SEO risk.',
     'Organic search was the company’s primary acquisition channel and directly influenced advertising revenue. Thousands of articles ranked for competitive news queries, supported by years of earned backlinks and strong domain authority. Any indexing issues, broken redirects, or metadata loss during migration could have reduced visibility across hundreds of thousands of pages within days.',
     'The objective extended far beyond launching a faster website. Every URL, canonical tag, structured data element, and internal linking signal needed to be preserved while introducing an entirely new technical architecture. The migration required careful planning, extensive validation, and continuous monitoring before, during, and after launch.'
-  ],
+  ], 
   execution: [
     'We developed a phased migration strategy beginning with a complete technical SEO audit and URL inventory. More than 150,000 legacy URLs were mapped to their new destinations using permanent 301 redirects, while XML sitemaps, canonical structures, hreflang configurations, metadata, and structured data were regenerated to align with the new architecture without losing accumulated search authority.',
     'The new platform was built using Next.js with Server-Side Rendering (SSR) to ensure search engines received fully rendered HTML during crawling. We optimized page templates for Core Web Vitals, reduced JavaScript execution, improved internal linking architecture, and implemented advanced Schema markup across articles, categories, authors, and news content to maximize search engine understanding.',
@@ -39,7 +39,7 @@ export const projectsPart3: PortfolioProject[] = [
   category: 'SEO',
   categorySlug: 'seo',
   thumbnailColor: 'linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%)',
-  image: '/images/services/seo.png',
+  image: '/images/portfolio/multiLocationSeo.png',
   summary: 'Developed a scalable Local SEO strategy that significantly improved search visibility and Google Business Profile performance across 45 franchise locations.',
   challenge: [
     'Elite Dental Group was rapidly expanding its network of clinics across multiple cities, but every new location depended heavily on paid advertising to generate appointments. Although Google Ads consistently delivered leads, the increasing cost per acquisition made long-term growth expensive and difficult to sustain. The organization needed a more cost-effective channel capable of generating qualified local traffic organically.',
@@ -70,7 +70,7 @@ export const projectsPart3: PortfolioProject[] = [
   category: 'Video Editing',
   categorySlug: 'video-editing',
   thumbnailColor: 'linear-gradient(135deg, #4b6cb7 0%, #182848 100%)',
-  image: '/images/services/video-editing.png',
+  image: '/images/portfolio/cinematic.png',
   summary: 'Produced a cinematic product launch campaign that combined storytelling, motion graphics, and technical visualization to introduce a next-generation commercial drone.',
   challenge: [
     `Aero Dynamics was preparing to launch its flagship commercial drone, Apex-Pro, built for industrial surveying, infrastructure inspections, and emergency response operations. While the engineering behind the product was exceptional, the available marketing materials failed to communicate its real-world value. Existing assets consisted primarily of technical demonstrations, presentation slides, and unedited flight recordings that struggled to capture attention or differentiate the product in a competitive market.',
@@ -101,7 +101,7 @@ export const projectsPart3: PortfolioProject[] = [
   category: 'Graphics Designing',
   categorySlug: 'graphics-designing',
   thumbnailColor: 'linear-gradient(135deg, #141E30 0%, #243B55 100%)',
-  image: '/images/services/graphics-designing.png',
+  image: '/images/portfolio/rebrand.png',
   summary: 'Created a complete visual identity and scalable design system for a fast-growing digital finance platform.',
   challenge: [
     'Vault Finance had built an innovative financial platform but struggled to establish trust with potential customers. Their outdated logo, inconsistent marketing materials, and disconnected product interface created a weak first impression that failed to reflect the quality of their technology.',
