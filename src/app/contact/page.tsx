@@ -8,7 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const metadata: Metadata = {
-  title: "Contact | web development and digital marketing company delivering websites",
+  title: "Contact - Aetibar",
 
   description:
   "Get in touch with Aetibar for expert web development, mobile app development, AI automation, SEO, digital marketing, and brand design services in Udaipur.",
