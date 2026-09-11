@@ -7,6 +7,10 @@ export interface PortfolioProject {
   thumbnailColor: string;
   image?: string;
   summary: string;
+  metric?: string;
+  metricLabel?: string;
+  timeline?: string;
+  techStack?: string[];
   challenge: string[];
   execution: string[];
   solution: string[];

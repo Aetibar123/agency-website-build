@@ -9,6 +9,10 @@ export const projectsPart3: PortfolioProject[] = [
   categorySlug: 'seo',
   thumbnailColor: 'linear-gradient(135deg, #00b09b 0%, #96c93d 100%)',
   image: '/images/portfolio/EnterpriseSeo.png',
+  metric: "+18% Traffic Lift",
+  metricLabel: "Post-Migration",
+  timeline: "14 Weeks",
+  techStack: ["Screaming Frog", "Next.js SSR", "Google Search Console", "Schema.org", "Log Analysis"],
   summary: 'Planned and executed a large-scale SEO migration for a 500,000+ page news platform while preserving search visibility and improving long-term organic performance.',
   challenge: [
     'National News Network (NNN), one of the country’s largest digital publishers, was preparing to replace its decade-old CMS with a modern headless architecture. Although the legacy platform contained over 500,000 indexed pages, years of accumulated technical debt had created slow loading speeds, inefficient crawl paths, duplicate content issues, and poor Core Web Vitals. The migration was essential for future growth but carried significant SEO risk.',
@@ -32,68 +36,7 @@ export const projectsPart3: PortfolioProject[] = [
     'Improved Google crawl efficiency and accelerated indexation across newly published content'
   ]
 },
-  {
-  slug: 'local-seo-dominance',
-  title: 'Multi-Location Local SEO Growth Strategy',
-  client: 'Elite Dental Group',
-  category: 'SEO',
-  categorySlug: 'seo',
-  thumbnailColor: 'linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%)',
-  image: '/images/portfolio/multiLocationSeo.png',
-  summary: 'Developed a scalable Local SEO strategy that significantly improved search visibility and Google Business Profile performance across 45 franchise locations.',
-  challenge: [
-    'Elite Dental Group was rapidly expanding its network of clinics across multiple cities, but every new location depended heavily on paid advertising to generate appointments. Although Google Ads consistently delivered leads, the increasing cost per acquisition made long-term growth expensive and difficult to sustain. The organization needed a more cost-effective channel capable of generating qualified local traffic organically.',
-    'Despite operating dozens of physical clinics, the brand had limited visibility in Google Maps and local search results. Business listings contained inconsistent information, location pages lacked optimization, and many clinics failed to appear for high-intent searches such as "dentist near me" or "emergency dentist" within their target markets. Competitors with stronger local SEO foundations consistently captured the majority of nearby searches.',
-    'The objective was to create a standardized Local SEO framework that could be replicated across every franchise location. This required improving technical consistency, strengthening local relevance, increasing review volume, and building location-specific authority without sacrificing brand consistency across the entire organization.'
-  ],
-  execution: [
-    'We began by auditing every Google Business Profile and local citation associated with the brand. Business information was standardized across all platforms, duplicate listings were removed, missing categories and attributes were completed, and NAP (Name, Address, Phone) consistency was established throughout major local directories to strengthen trust signals for search engines.',
-    'Next, we rebuilt the website’s local presence by creating dedicated landing pages for each clinic. Every page included optimized metadata, localized service content, embedded Google Maps, structured LocalBusiness schema, location-specific FAQs, and internally linked service pages. This provided search engines with clear geographical relevance while improving the overall user experience for prospective patients.',
-    'To strengthen reputation signals, we implemented an automated review acquisition workflow that encouraged satisfied patients to leave Google reviews shortly after appointments. Performance was monitored continuously through Google Search Console, Google Business Profile Insights, and local ranking tools, allowing ongoing optimization based on keyword visibility, engagement metrics, and conversion data.'
-  ],
-  solution: [
-    'The unified Local SEO strategy established a strong digital presence for every clinic while maintaining a consistent brand identity across all franchise locations. Optimized Google Business Profiles, locally relevant landing pages, and structured data significantly improved how search engines understood and ranked each individual practice.',
-    'As search visibility improved, more patients discovered nearby clinics through Google Search and Google Maps rather than paid advertisements. The increase in qualified organic traffic translated into higher phone call volume, appointment requests, and website engagement while reducing dependence on expensive acquisition channels.',
-    'The scalable optimization framework also simplified future expansion. New franchise locations could follow the same proven process for business listings, local landing pages, schema implementation, and review management, allowing the organization to maintain consistent SEO performance as additional clinics were launched.'
-  ],
-  results: [
-    'Ranked 92% of targeted local keywords within the Google Local Pack Top 3',
-    'Increased organic phone inquiries by more than 300% across franchise locations',
-    'Reduced monthly dependence on paid advertising, lowering overall acquisition costs',
-    'Generated over 4,500 verified Google reviews while improving average location ratings'
-  ]
-},
-{
-  slug: 'tech-product-launch-video',
-  title: 'Cinematic Product Launch Campaign',
-  client: 'Aero Dynamics Drones',
-  category: 'Video Editing',
-  categorySlug: 'video-editing',
-  thumbnailColor: 'linear-gradient(135deg, #4b6cb7 0%, #182848 100%)',
-  image: '/images/portfolio/cinematic.png',
-  summary: 'Produced a cinematic product launch campaign that combined storytelling, motion graphics, and technical visualization to introduce a next-generation commercial drone.',
-  challenge: [
-    `Aero Dynamics was preparing to launch its flagship commercial drone, Apex-Pro, built for industrial surveying, infrastructure inspections, and emergency response operations. While the engineering behind the product was exceptional, the available marketing materials failed to communicate its real-world value. Existing assets consisted primarily of technical demonstrations, presentation slides, and unedited flight recordings that struggled to capture attention or differentiate the product in a competitive market.',
-    'The company required a launch video capable of introducing sophisticated technologies such as AI-assisted navigation, LiDAR mapping, and autonomous flight without overwhelming viewers with technical jargon. The campaign needed to resonate with multiple audiences—including enterprise buyers, investors, and operational teams—while reinforcing the brand's position as an innovative technology company.',
-    'The objective was to transform highly technical product capabilities into a visually engaging story that could support digital marketing campaigns, investor presentations, industry events, and product launch announcements across multiple platforms.`
-  ],
-  execution: [
-    `Our production workflow began with organizing and reviewing several terabytes of aerial footage captured in 6K and 8K resolution. The strongest sequences were selected to build a narrative focused on precision, reliability, and real-world performance. Additional motion graphics were developed using Adobe After Effects and Cinema 4D to visualize internal technologies such as obstacle detection, LiDAR scanning, and autonomous navigation in an intuitive and visually compelling way.',
-    'The edit was structured to balance cinematic storytelling with product education. Dynamic pacing, seamless transitions, speed ramping, and carefully selected camera movements highlighted the drone's agility while maintaining a premium visual style. Professional color grading in DaVinci Resolve established a consistent cinematic look that aligned with the company's modern technology brand.',
-    'To maximize engagement, the project included custom sound design, cinematic music composition, subtitle optimization, and multiple deliverables tailored for YouTube, LinkedIn, product presentations, and social media advertising. Every version was optimized for its respective platform while preserving a consistent visual identity.`
-  ],
-  solution: [
-    'The completed campaign positioned Apex-Pro as a premium commercial drone rather than simply another hardware release. The combination of cinematic visuals, technical animation, and clear product messaging helped communicate complex engineering concepts in a format that was accessible to decision-makers and technical professionals alike.',
-    'The launch video became the centerpiece of the company’s marketing strategy, supporting product demonstrations, trade exhibitions, investor meetings, paid advertising campaigns, and website landing pages. Its polished production quality strengthened brand perception and provided the sales team with a compelling visual asset throughout the product launch cycle.',
-    'Beyond generating awareness, the campaign established a consistent visual identity that Aero Dynamics continued using across future product announcements and promotional materials. The project demonstrated how high-quality video production can simplify technical communication while increasing audience engagement and brand credibility.'
-  ],
-  results: [
-    'Generated over 2.5 million video views across digital platforms',
-    'Supported more than $5 million in product pre-orders during launch',
-    'Significantly increased engagement across social and product marketing campaigns',
-    'Strengthened brand visibility and industry recognition following the product launch'
-  ]
-},
+
  {
   slug: 'rebranding-fintech-identity',
   title: 'Modern Brand Identity & Design System',
@@ -102,6 +45,10 @@ export const projectsPart3: PortfolioProject[] = [
   categorySlug: 'graphics-designing',
   thumbnailColor: 'linear-gradient(135deg, #141E30 0%, #243B55 100%)',
   image: '/images/portfolio/rebrand.png',
+  metric: "-40% UI Dev Time",
+  metricLabel: "Design Velocity",
+  timeline: "6 Weeks",
+  techStack: ["Figma", "Design Tokens", "Illustrator", "WCAG AAA", "Typography System"],
   summary: 'Created a complete visual identity and scalable design system for a fast-growing digital finance platform.',
   challenge: [
     'Vault Finance had built an innovative financial platform but struggled to establish trust with potential customers. Their outdated logo, inconsistent marketing materials, and disconnected product interface created a weak first impression that failed to reflect the quality of their technology.',

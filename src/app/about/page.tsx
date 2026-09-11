@@ -2,7 +2,6 @@ import React from "react";
 import { Metadata } from "next";
 import AboutHeroSection from "../../components/about/AboutHeroSection";
 import MissionSection from "../../components/about/MissionSection";
-import TeamSection from "../../components/about/TeamSection";
 import CtaSection from "../../components/home/CtaSection";
 
 export const metadata: Metadata = {
@@ -58,7 +57,6 @@ export default function AboutPage() {
     <>
       <AboutHeroSection />
       <MissionSection />
-      <TeamSection />
       <CtaSection />
     </>
   );

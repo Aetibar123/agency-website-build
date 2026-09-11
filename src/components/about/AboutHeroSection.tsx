@@ -1,56 +1,107 @@
 "use client";
 import React from "react";
-import { Box, Container, Typography, CardMedia, Grid } from "@mui/material";
+import { Box, Container, Typography, Grid } from "@mui/material";
+import Image from "next/image";
 
 export default function AboutHeroSection() {
   return (
     <Box
       sx={{
-        bgcolor: '#fcfcfc',
-        pt: { xs: 15, md: 22 },
-        pb: { xs: 10, md: 15 },
-        position: 'relative',
-        overflow: 'hidden',
+        bgcolor: "#FAF9F5",
+        pt: { xs: 16, md: 24 },
+        pb: { xs: 10, md: 14 },
+        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
       }}
     >
-      <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
-        <Grid container spacing={8} sx={{ alignItems: 'center' }}>
-          <Grid size={{ xs: 12, md: 6 }}>
-            <Box sx={{ display: 'inline-block', px: 3, py: 1, border: '1px solid rgba(110,65,226,0.15)', borderRadius: 10, mb: 4, bgcolor: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(10px)' }}>
-              <Typography variant="caption" sx={{ color: 'primary.main', fontWeight: 700, letterSpacing: 2 }}>
-                OUR STORY
+      <Container maxWidth="xl">
+        <Grid container spacing={{ xs: 6, lg: 8 }} sx={{ alignItems: "center" }}>
+          <Grid size={{ xs: 12, lg: 6 }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1.5,
+                mb: 3,
+                px: 1.8,
+                py: 0.6,
+                borderRadius: "4px",
+                bgcolor: "rgba(14, 116, 144, 0.08)",
+                border: "1px solid rgba(14, 116, 144, 0.18)",
+              }}
+            >
+              <Box
+                sx={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: "50%",
+                  bgcolor: "#0E7490",
+                }}
+              />
+              <Typography
+                variant="caption"
+                sx={{
+                  color: "#0E7490",
+                  fontWeight: 700,
+                  letterSpacing: "0.14em",
+                  fontSize: "0.78rem",
+                }}
+              >
+                OUR STORY &amp; ETHOS
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
-              Building Digital Solutions That  <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
-                Drive Real Business Growth.
-                <Box sx={{ position: 'absolute', bottom: 10, left: 0, width: '100%', height: 16, bgcolor: 'primary.main', opacity: 0.1, transform: 'skewX(-15deg)' }} />
+
+            <Typography
+              variant="h1"
+              sx={{
+                color: "#0E172A",
+                mb: 3,
+                fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
+                fontWeight: 800,
+                lineHeight: { xs: 1.1, md: 1.05 },
+                letterSpacing: "-0.03em",
+                textTransform: "uppercase",
+              }}
+            >
+              Building Digital Solutions That <br />
+              <Box component="span" sx={{ color: "#0E7490" }}>
+                Drive Real Growth.
               </Box>
             </Typography>
-            <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.25rem' }, lineHeight: 1.9, maxWidth: 600 }}>
-           Aetibar combines engineering, design, and automation to help businesses build scalable digital products. We create high-performance websites, software solutions, and AI-powered experiences designed to solve real challenges and drive growth.
+
+            <Typography
+              variant="body1"
+              sx={{
+                color: "#4A4D57",
+                fontSize: { xs: "1.05rem", md: "1.2rem" },
+                lineHeight: 1.8,
+                maxWidth: 600,
+              }}
+            >
+              Aetibar combines software engineering, AI automation, and visual design to help
+              businesses launch resilient digital products. We engineer high-performance platforms
+              designed to solve real operational bottlenecks and scale seamlessly.
             </Typography>
           </Grid>
 
-          <Grid size={{ xs: 12, md: 6 }}>
-            <Box sx={{ position: 'relative', borderRadius: 6, overflow: 'hidden', boxShadow: '0 30px 60px -20px rgba(0,0,0,0.15)' }}>
-              <CardMedia
-                component="img"
-                image="/images/about/office.png"
-                alt="Aetibar Agency Modern Office"
-                sx={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                  transform: 'scale(1.02)',
-                  transition: 'transform 0.5s ease',
-                  '&:hover': {
-                    transform: 'scale(1.05)'
-                  }
-                }}
+          <Grid size={{ xs: 12, lg: 6 }}>
+            <Box
+              sx={{
+                position: "relative",
+                height: { xs: 280, sm: 380, md: 460 },
+                width: "100%",
+                borderRadius: "12px",
+                overflow: "hidden",
+                border: "1px solid rgba(17, 18, 21, 0.08)",
+                boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+              }}
+            >
+              <Image
+                src="/images/about/office.png"
+                alt="Aetibar Studio Environment"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
               />
-              {/* Subtle glass overlay to give it a polished look */}
-              <Box sx={{ position: 'absolute', inset: 0, background: 'linear-gradient(45deg, rgba(110,65,226,0.05), transparent)', pointerEvents: 'none' }} />
             </Box>
           </Grid>
         </Grid>

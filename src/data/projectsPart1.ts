@@ -9,7 +9,10 @@ export const projectsPart1: PortfolioProject[] = [
   categorySlug: "web-development",
   thumbnailColor: "linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%)",
   image: "/images/portfolio/ecommerce.png",
- 
+  metric: "0.38s FCP",
+  metricLabel: "Page Speed",
+  timeline: "10 Weeks",
+  techStack: ["Next.js 15", "Node.js", "GraphQL", "PostgreSQL", "Redis"],
   summary:
     "Designed and developed a modern headless e-commerce platform focused on performance, scalability, and seamless shopping experiences across all devices.",
 
@@ -44,92 +47,7 @@ export const projectsPart1: PortfolioProject[] = [
     "Simplified content and product management workflow"
   ]
 },
-  {
-  slug: "fintech-dashboard",
-  title: "Financial Analytics Dashboard",
-  client: "Financial Services",
-  category: "Web Development",
-  categorySlug: "web-development",
-  thumbnailColor: "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
-  image: "/images/portfolio/fintechDashboard.png",
 
-  summary:
-    "Designed and developed a modern financial analytics dashboard that centralizes business data, improves reporting, and provides real-time insights for better decision-making.",
-
-  challenge: [
-    "The client relied on multiple disconnected systems and spreadsheets to monitor financial data, making reporting slow and time-consuming. Important information was spread across different platforms, reducing operational efficiency and making collaboration difficult.",
-
-    "The existing dashboard lacked modern visualization capabilities and responsive performance. Users struggled to quickly identify trends, compare financial metrics, and generate meaningful reports for daily business operations.",
-
-    "The goal was to build a centralized web application that could consolidate financial information, present data through intuitive dashboards, and provide a scalable foundation for future business growth."
-  ],
-
-  execution: [
-    "We designed and developed a responsive dashboard using React and TypeScript with a modular component architecture that supports future feature expansion and long-term maintainability.",
-
-    "Interactive charts, customizable widgets, advanced filtering, and role-based access controls were implemented to help users explore financial data more efficiently while maintaining appropriate data visibility across different user roles.",
-
-    "The application integrates with backend APIs to retrieve business data in real time while utilizing caching strategies, optimized rendering, and performance best practices to ensure a smooth user experience across desktop and tablet devices."
-  ],
-
-  solution: [
-    "The completed dashboard provides a centralized workspace where users can monitor financial performance, review key metrics, and generate reports through a clean and intuitive interface.",
-
-    "Interactive visualizations and configurable dashboards enable faster access to business insights while reducing the complexity of manual reporting processes. The responsive interface allows teams to access critical information from multiple devices.",
-
-    "The modular architecture supports future integrations, additional reporting modules, and evolving business requirements, ensuring the platform remains scalable as organizational needs grow."
-  ],
-
-  results: [
-    "Centralized financial reporting within a single dashboard",
-    "Improved visibility through interactive charts and analytics",
-    "Reduced manual reporting and data management effort",
-    "Scalable architecture supporting future business expansion"
-  ]
-},
-  {
-  slug: "health-sync-app",
-  title: "Telemedicine Mobile Application",
-  client: "Healthcare Provider",
-  category: "App Development",
-  categorySlug: "app-development",
-  thumbnailColor: "linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)",
-  image: "/images/portfolio/health.png",
-
-  summary:
-    "Designed and developed a secure telemedicine application that enables online consultations, appointment scheduling, and seamless communication between patients and healthcare providers.",
-
-  challenge: [
-    "The client required a modern mobile application that would allow patients to schedule appointments, connect with healthcare professionals remotely, and access essential healthcare services through a single digital platform.",
-
-    "The existing appointment process relied heavily on manual coordination, making scheduling inefficient and limiting accessibility for patients. The application also needed to prioritize data security, responsive performance, and an intuitive user experience for people of all age groups.",
-
-    "The objective was to build a scalable telemedicine solution that simplifies healthcare access, streamlines appointment management, and provides a reliable foundation for future digital healthcare services."
-  ],
-
-  execution: [
-    "We developed a cross-platform mobile application using React Native, allowing the client to deliver a consistent experience across both Android and iOS while maintaining a single codebase for easier long-term maintenance.",
-
-    "The application includes secure authentication, appointment scheduling, patient profiles, notifications, and integrated video consultations through trusted communication services. A responsive interface was designed to ensure accessibility across different devices and screen sizes.",
-
-    "Performance optimization, secure API communication, and scalable backend architecture were implemented to support future feature expansion while maintaining reliability, security, and smooth application performance."
-  ],
-
-  solution: [
-    "The completed application provides patients with a convenient platform to schedule appointments, communicate with healthcare professionals, receive reminders, and participate in virtual consultations from their mobile devices.",
-
-    "Healthcare providers benefit from centralized appointment management, improved patient communication, and an organized workflow that reduces manual administrative tasks while improving overall service efficiency.",
-
-    "The modular architecture allows additional healthcare services, integrations, and future features to be introduced without requiring significant changes to the application's core infrastructure."
-  ],
-
-  results: [
-    "Simplified online appointment scheduling and patient management",
-    "Improved accessibility through secure virtual consultations",
-    "Responsive mobile experience across Android and iOS devices",
-    "Scalable architecture supporting future healthcare services"
-  ]
-},
   {
   slug: "logix-driver-app",
   title: "Fleet Management Mobile Application",
@@ -138,7 +56,10 @@ export const projectsPart1: PortfolioProject[] = [
   categorySlug: "app-development",
   thumbnailColor: "linear-gradient(135deg, #f12711 0%, #f5af19 100%)",
   image: "/images/portfolio/logix.png",
-
+  metric: "100% Offline GPS",
+  metricLabel: "Reliability",
+  timeline: "12 Weeks",
+  techStack: ["Flutter", "SQLite", "Google Maps API", "Firebase", "Node.js"],
   summary:
     "Designed and developed a fleet management mobile application with offline capabilities, GPS tracking, route management, and digital proof of delivery.",
 
@@ -181,7 +102,10 @@ export const projectsPart1: PortfolioProject[] = [
   categorySlug: 'ai-automation',
   thumbnailColor: 'linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)',
   image: '/images/portfolio/aiCostomer.png',
-
+  metric: "70% Ticket Deflection",
+  metricLabel: "Automation Rate",
+  timeline: "8 Weeks",
+  techStack: ["LangChain", "Python", "LlamaIndex", "FastAPI", "Vector DB"],
   summary:
     'Developed an enterprise AI support platform that automated customer service workflows, reduced response times, and enabled support teams to scale without increasing operational costs.',
 

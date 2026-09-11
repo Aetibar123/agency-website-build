@@ -2,16 +2,16 @@ import React from "react";
 import { Metadata } from "next";
 import ContactHeroSection from "../../components/contact/ContactHeroSection";
 import { Box, Container, Typography, IconButton } from "@mui/material";
-import EmailIcon from '@mui/icons-material/Email';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export const metadata: Metadata = {
   title: "Contact",
 
   description:
-  "Get in touch with Aetibar for expert web development, mobile app development, AI automation, SEO, digital marketing, and brand design services in Udaipur.",
+    "Get in touch with Aetibar for expert web development, mobile app development, AI automation, SEO, digital marketing, and brand design services.",
 
   keywords: [
     "Contact Aetibar",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Contact Aetibar | Web Development Company in Udaipur",
+    title: "Contact Aetibar | Web Development & AI Studio",
     description:
-      "Get in touch with Aetibar for web development, app development, AI automation, SEO, digital marketing, and branding services.",
+      "Get in touch with Aetibar for web development, mobile apps, AI automation, SEO, and branding services.",
     url: "https://www.aetibar.in/contact",
     siteName: "Aetibar",
     type: "website",
@@ -49,78 +49,174 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Aetibar",
     description:
-      "Contact Aetibar for professional web development and digital marketing solutions.",
+      "Contact Aetibar for professional web development and digital solutions.",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };
 
-
 export default function ContactPage() {
   return (
-    <>
+    <main>
       <ContactHeroSection />
-      
-      {/* Contact Info Section */}
-      <Box sx={{ 
-        bgcolor: '#060913', // Slightly darker than footer for visual separation
-        py: { xs: 8, md: 15 }, 
-        textAlign: 'center', 
-        borderTop: '1px solid rgba(255,255,255,0.05)',
-        borderBottom: '1px solid rgba(110,65,226,0.2)', // Purple separator line before footer
-        position: 'relative'
-      }}>
-        {/* Subtle purple glow */}
-        <Box sx={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: '30%', height: '5px', bgcolor: 'primary.main', filter: 'blur(20px)' }} />
 
-        <Container maxWidth="sm" sx={{ position: 'relative', zIndex: 1 }}>
+      {/* Direct Contact Channel Section (Light Architectural Surface) */}
+      <Box
+        sx={{
+          bgcolor: "#FAF9F5",
+          py: { xs: 10, md: 16 },
+          textAlign: "center",
+        }}
+      >
+        <Container maxWidth="sm">
           <Box sx={{ mb: 6 }}>
-            <EmailIcon sx={{ fontSize: 40, color: 'primary.main', mb: 2 }} />
-            <Typography variant="h5" sx={{ color: 'white', fontWeight: 800, mb: 1 }}>
-              Get in Touch
+            <Box
+              sx={{
+                width: 56,
+                height: 56,
+                borderRadius: "50%",
+                bgcolor: "rgba(14, 116, 144, 0.08)",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                mb: 2.5,
+              }}
+            >
+              <EmailOutlinedIcon sx={{ fontSize: 28, color: "#0E7490" }} />
+            </Box>
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "#0E172A",
+                fontWeight: 800,
+                fontSize: { xs: "1.5rem", md: "1.8rem" },
+                mb: 1.5,
+              }}
+            >
+              Start a Conversation
             </Typography>
-            <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.6)', mb: 4 }}>
-              Prefer direct email? Drop us a message anytime at:
+
+            <Typography
+              variant="body1"
+              sx={{
+                color: "#5E6068",
+                mb: 3.5,
+                fontSize: "1rem",
+                lineHeight: 1.7,
+              }}
+            >
+              Have a technical specification, RFP, or rough project outline? Send your inquiry
+              directly to our engineering lead:
             </Typography>
-            <Typography 
-              variant="h4" 
-              component="a" 
+
+            <Typography
+              variant="h4"
+              component="a"
               href="mailto:hello.aetibar@gmail.com"
-              sx={{ 
-                color: 'white', 
-                fontWeight: 900, 
-                textDecoration: 'none', 
-                borderBottom: '2px solid',
-                borderColor: 'primary.main',
-                pb: 1,
-                transition: 'all 0.3s',
-                '&:hover': {
-                  color: 'primary.light',
-                  borderColor: 'primary.light'
-                }
+              sx={{
+                display: "inline-block",
+                color: "#0E172A",
+                fontWeight: 800,
+                fontSize: { xs: "1.3rem", sm: "1.7rem" },
+                textDecoration: "none",
+                borderBottom: "2px solid #0E7490",
+                pb: 0.5,
+                transition: "all 0.25s ease",
+                "&:hover": {
+                  color: "#0E7490",
+                  transform: "translateY(-2px)",
+                },
               }}
             >
               hello.aetibar@gmail.com
             </Typography>
           </Box>
 
-          <Box sx={{ mt: 8 }}>
-            <Typography variant="subtitle1" sx={{ color: 'rgba(255,255,255,0.5)', mb: 3, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase' }}>
-              Follow our journey
+          <Box sx={{ pt: 4, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#5E6068",
+                mb: 2.5,
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                display: "block",
+              }}
+            >
+              CONNECT WITH OUR STUDIO
             </Typography>
-            <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center' }}>
-              <IconButton href="https://x.com/Aetibar_" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', width: 50, height: 50, transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-5px)' } }}>
-                <TwitterIcon />
+
+            <Box sx={{ display: "flex", gap: 1.5, justifyContent: "center" }}>
+              <IconButton
+                component="a"
+                href="https://x.com/Aetibar_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aetibar on X"
+                sx={{
+                  color: "#0E172A",
+                  bgcolor: "#FFFFFF",
+                  border: "1px solid rgba(17, 18, 21, 0.1)",
+                  width: 46,
+                  height: 46,
+                  transition: "all 0.25s ease",
+                  "&:hover": {
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                    transform: "translateY(-2px)",
+                  },
+                }}
+              >
+                <TwitterIcon fontSize="small" />
               </IconButton>
-              <IconButton href="https://www.linkedin.com/in/aetibar-information-and-technologies-502531406" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', width: 50, height: 50, transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-5px)' } }}>
-                <LinkedInIcon />
+              <IconButton
+                component="a"
+                href="https://www.linkedin.com/company/aetibar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aetibar on LinkedIn"
+                sx={{
+                  color: "#0E172A",
+                  bgcolor: "#FFFFFF",
+                  border: "1px solid rgba(17, 18, 21, 0.1)",
+                  width: 46,
+                  height: 46,
+                  transition: "all 0.25s ease",
+                  "&:hover": {
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                    transform: "translateY(-2px)",
+                  },
+                }}
+              >
+                <LinkedInIcon fontSize="small" />
               </IconButton>
-              <IconButton href="https://www.instagram.com/aetibar_information/" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', width: 50, height: 50, transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-5px)' } }}>
-                <InstagramIcon />
+              <IconButton
+                component="a"
+                href="https://www.instagram.com/aetibar_information/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aetibar on Instagram"
+                sx={{
+                  color: "#0E172A",
+                  bgcolor: "#FFFFFF",
+                  border: "1px solid rgba(17, 18, 21, 0.1)",
+                  width: 46,
+                  height: 46,
+                  transition: "all 0.25s ease",
+                  "&:hover": {
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                    transform: "translateY(-2px)",
+                  },
+                }}
+              >
+                <InstagramIcon fontSize="small" />
               </IconButton>
             </Box>
           </Box>
         </Container>
       </Box>
-    </>
+    </main>
   );
 }
