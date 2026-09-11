@@ -11,16 +11,19 @@ export default function ServiceBackButton() {
     <Box sx={{ position: 'fixed', top: { xs: 80, md: 100 }, left: { xs: 16, md: 40 }, zIndex: 999 }}>
       <IconButton 
         onClick={() => router.push('/services')}
+        aria-label="Back to Services"
         sx={{ 
-          bgcolor: 'white', 
-          color: 'primary.main', 
-          boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-          '&:hover': { bgcolor: '#f0f0f0' },
-          width: 50,
-          height: 50
+          bgcolor: '#FAF9F5', 
+          color: '#0E172A', 
+          border: '1px solid rgba(17, 18, 21, 0.1)',
+          boxShadow: '0 4px 16px rgba(17, 18, 21, 0.06)',
+          '&:hover': { bgcolor: '#0E172A', color: '#FFFFFF' },
+          width: 46,
+          height: 46,
+          transition: 'all 0.25s ease',
         }}
       >
-        <ArrowBackIcon />
+        <ArrowBackIcon sx={{ fontSize: 20 }} />
       </IconButton>
     </Box>
   );

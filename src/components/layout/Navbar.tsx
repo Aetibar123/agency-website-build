@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   AppBar,
   Container,
@@ -12,23 +13,31 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemText
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'Services', path: '/services' },
-  { name: 'Portfolio', path: '/portfolio' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Journal', path: '/blog' },
-  { name: 'Careers', path: '/careers' },
-  { name: 'FAQ', path: '/faq' }
+  { name: "Services", path: "/services", num: "01" },
+  { name: "Work", path: "/portfolio", num: "02" },
+  { name: "About", path: "/about", num: "03" },
+  { name: "Insights", path: "/blog", num: "04" },
+  { name: "Contact", path: "/contact", num: "05" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -36,91 +45,147 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar 
-        position="fixed" 
-        color="transparent" 
-        elevation={0} 
-        sx={{ 
-          top: { xs: 10, md: 20 },
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: { xs: '95%', md: '85%', lg: 1100 },
-          bgcolor: 'rgba(255,255,255,0.85)',
-          backdropFilter: 'blur(16px)',
-          border: '1px solid rgba(255,255,255,0.3)',
-          borderRadius: 10,
-          boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
-          zIndex: 1100
+      <AppBar
+        position="fixed"
+        elevation={0}
+        sx={{
+          top: 0,
+          left: 0,
+          right: 0,
+          bgcolor: scrolled
+            ? "rgba(250, 249, 245, 0.92)"
+            : "rgba(250, 249, 245, 0.65)",
+          backdropFilter: "blur(20px)",
+          borderBottom: "1px solid",
+          borderColor: scrolled ? "rgba(17, 18, 21, 0.08)" : "transparent",
+          transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+          zIndex: 1100,
         }}
       >
         <Container maxWidth="xl">
-          <Toolbar disableGutters sx={{ justifyContent: 'space-between', height: 70, px: { xs: 1, md: 2 } }}>
+          <Toolbar
+            disableGutters
+            sx={{
+              justifyContent: "space-between",
+              height: { xs: 68, md: 80 },
+              px: { xs: 1, md: 3 },
+            }}
+          >
+            {/* Brand Logo */}
             <Typography
-              variant="h5"
-              noWrap
               component={Link}
               href="/"
               sx={{
                 fontWeight: 900,
-                letterSpacing: '-0.02em',
-                color: '#0B0F19',
-                textDecoration: 'none',
-                fontSize: { xs: '1.25rem', md: '1.5rem' }
+                letterSpacing: "-0.03em",
+                color: "#0E172A",
+                textDecoration: "none",
+                fontSize: { xs: "1.2rem", md: "1.4rem" },
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 0.5,
               }}
             >
-              AETIBAR<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
+              AETIBAR
+              <Box
+                component="span"
+                sx={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: "50%",
+                  bgcolor: "#0E7490",
+                  display: "inline-block",
+                }}
+              />
             </Typography>
 
-            <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4, alignItems: 'center' }}>
-              {navItems.map((item) => (
-                <Typography
-                  key={item.name}
-                  component={Link}
-                  href={item.path}
-                  sx={{
-                    color: '#444',
-                    fontWeight: 600,
-                    fontSize: '0.95rem',
-                    textDecoration: 'none',
-                    transition: 'all 0.3s ease',
-                    '&:hover': { color: 'primary.main', transform: 'translateY(-2px)' },
-                    cursor: 'pointer',
-                  }}
-                >
-                  {item.name}
-                </Typography>
-              ))}
+            {/* Desktop Navigation Links */}
+            <Box
+              component="nav"
+              sx={{
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+                gap: 4.5,
+              }}
+            >
+              {navItems.map((item) => {
+                const isActive =
+                  item.path === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(item.path);
+
+                return (
+                  <Typography
+                    key={item.name}
+                    component={Link}
+                    href={item.path}
+                    sx={{
+                      color: isActive ? "#0E172A" : "#5E6068",
+                      fontWeight: isActive ? 600 : 500,
+                      fontSize: "0.9375rem",
+                      textDecoration: "none",
+                      position: "relative",
+                      transition: "color 0.2s ease",
+                      "&:hover": {
+                        color: "#0E172A",
+                      },
+                      ...(isActive && {
+                        "&::after": {
+                          content: '""',
+                          position: "absolute",
+                          bottom: -6,
+                          left: 0,
+                          width: "100%",
+                          height: 1.5,
+                          bgcolor: "#0E7490",
+                          borderRadius: 1,
+                        },
+                      }),
+                    }}
+                  >
+                    {item.name}
+                  </Typography>
+                );
+              })}
             </Box>
 
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button 
+            {/* CTA & Mobile Menu Toggle */}
+            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+              <Button
                 component={Link}
                 href="/contact"
-                variant="contained" 
-                color="primary" 
-                sx={{ 
-                  borderRadius: 8, 
-                  px: 3, 
-                  py: 1, 
-                  fontWeight: 700, 
-                  textTransform: 'none',
-                  boxShadow: '0 8px 20px rgba(110,65,226,0.25)',
-                  '&:hover': {
-                    boxShadow: '0 12px 25px rgba(110,65,226,0.35)',
-                    transform: 'translateY(-2px)'
-                  }
+                variant="contained"
+                sx={{
+                  display: { xs: "none", sm: "inline-flex" },
+                  bgcolor: "#0E172A",
+                  color: "#FFFFFF",
+                  px: 2.5,
+                  py: 1.1,
+                  fontSize: "0.875rem",
+                  fontWeight: 600,
+                  borderRadius: "6px",
+                  "&:hover": {
+                    bgcolor: "#1E293B",
+                  },
                 }}
               >
-                Contact Us
+                Start a Project
               </Button>
-            </Box>
 
-            <IconButton 
-              sx={{ display: { md: 'none' }, color: '#0B0F19' }}
-              onClick={handleDrawerToggle}
-            >
-              <MenuIcon />
-            </IconButton>
+              <IconButton
+                aria-label="Toggle navigation menu"
+                onClick={handleDrawerToggle}
+                sx={{
+                  display: { md: "none" },
+                  color: "#0E172A",
+                  p: 1,
+                  border: "1px solid rgba(17, 18, 21, 0.1)",
+                  borderRadius: 2,
+                }}
+              >
+                <MenuIcon fontSize="small" />
+              </IconButton>
+            </Box>
           </Toolbar>
         </Container>
       </AppBar>
@@ -132,75 +197,143 @@ export default function Navbar() {
         onClose={handleDrawerToggle}
         ModalProps={{ keepMounted: true }}
         sx={{
-          '& .MuiDrawer-paper': { 
-            width: 240, // Even smaller width
-            bgcolor: 'rgba(255, 255, 255, 0.95)', // Light theme
-            backdropFilter: 'blur(20px)',
-            borderLeft: '1px solid rgba(0,0,0,0.05)',
-            borderTopLeftRadius: 20,
-            borderBottomLeftRadius: 20,
-            p: 2.5,
-            boxShadow: '-10px 0 40px rgba(0,0,0,0.05)'
-          }
+          "& .MuiDrawer-paper": {
+            width: { xs: "100%", sm: 380 },
+            bgcolor: "#FAF9F5",
+            p: { xs: 3, sm: 4 },
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          },
         }}
       >
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-          <Typography variant="h6" sx={{ fontWeight: 800, color: '#0B0F19', letterSpacing: 1 }}>
-            MENU
-          </Typography>
-          <IconButton onClick={handleDrawerToggle} sx={{ color: '#0B0F19', bgcolor: 'rgba(0,0,0,0.03)', '&:hover': { bgcolor: 'rgba(0,0,0,0.06)' } }}>
-            <CloseIcon fontSize="small" />
-          </IconButton>
-        </Box>
-        
-        <List sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-          {navItems.map((item) => (
-            <ListItem 
-              key={item.name} 
-              component={Link} 
-              href={item.path}
-              onClick={handleDrawerToggle}
-              sx={{ 
-                color: '#444', 
-                textDecoration: 'none',
-                borderRadius: 2,
-                px: 2,
-                py: 1,
-                transition: 'all 0.2s ease',
-                '&:hover': { bgcolor: 'rgba(110,65,226,0.08)', color: 'primary.main', transform: 'translateX(4px)' }
+        <Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              pb: 3,
+              borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+            }}
+          >
+            <Typography
+              sx={{
+                fontWeight: 900,
+                letterSpacing: "-0.03em",
+                color: "#0E172A",
+                fontSize: "1.2rem",
               }}
             >
-              <ListItemText 
-                primary={
-                  <Typography sx={{ fontWeight: 700, fontSize: '0.95rem' }}>
+              AETIBAR<Box component="span" sx={{ color: "#0E7490" }}>.</Box>
+            </Typography>
+            <IconButton
+              onClick={handleDrawerToggle}
+              sx={{
+                color: "#0E172A",
+                border: "1px solid rgba(17, 18, 21, 0.1)",
+                borderRadius: "50%",
+                p: 0.8,
+              }}
+            >
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </Box>
+
+          <List sx={{ pt: 4, display: "flex", flexDirection: "column", gap: 1 }}>
+            {navItems.map((item) => {
+              const isActive =
+                item.path === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.path);
+
+              return (
+                <ListItem
+                  key={item.name}
+                  component={Link}
+                  href={item.path}
+                  onClick={handleDrawerToggle}
+                  sx={{
+                    textDecoration: "none",
+                    px: 1,
+                    py: 1.5,
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    borderBottom: "1px solid rgba(17, 18, 21, 0.04)",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "1.25rem",
+                      fontWeight: isActive ? 700 : 500,
+                      color: isActive ? "#0E172A" : "#3B3D44",
+                    }}
+                  >
                     {item.name}
                   </Typography>
-                } 
-              />
-            </ListItem>
-          ))}
-          <ListItem 
-            component={Link} 
+                  <Typography
+                    sx={{
+                      fontSize: "0.8rem",
+                      fontWeight: 600,
+                      color: "#9A9AA0",
+                      letterSpacing: "0.05em",
+                    }}
+                  >
+                    {item.num}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </List>
+        </Box>
+
+        <Box sx={{ pt: 4, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+          <Button
+            component={Link}
             href="/contact"
             onClick={handleDrawerToggle}
-            sx={{ mt: 2, px: 1 }}
+            fullWidth
+            variant="contained"
+            endIcon={<ArrowForwardIcon />}
+            sx={{
+              py: 1.6,
+              fontSize: "1rem",
+              fontWeight: 600,
+              bgcolor: "#0E172A",
+              color: "#FFFFFF",
+              borderRadius: "8px",
+              mb: 3,
+            }}
           >
-            <Button 
-              fullWidth 
-              variant="contained" 
-              color="primary" 
-              sx={{ 
-                borderRadius: 6, 
-                fontWeight: 700, 
-                py: 1.2,
-                boxShadow: '0 4px 15px rgba(110,65,226,0.2)',
-                '&:hover': { boxShadow: '0 6px 20px rgba(110,65,226,0.3)' }
-              }}
-            >
-              Contact Us
-            </Button>
-          </ListItem>
-        </List>
+            Start a Project
+          </Button>
+
+          <Typography
+            variant="caption"
+            sx={{
+              display: "block",
+              color: "#5E6068",
+              fontWeight: 500,
+              letterSpacing: "0.05em",
+              mb: 0.5,
+            }}
+          >
+            Direct Inquiry
+          </Typography>
+          <Typography
+            component="a"
+            href="mailto:hello.aetibar@gmail.com"
+            sx={{
+              color: "#0E172A",
+              fontWeight: 600,
+              fontSize: "0.95rem",
+              textDecoration: "none",
+            }}
+          >
+            hello.aetibar@gmail.com
+          </Typography>
+        </Box>
       </Drawer>
     </>
   );

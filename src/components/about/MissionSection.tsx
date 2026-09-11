@@ -1,28 +1,67 @@
 "use client";
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 export default function MissionSection() {
   return (
-    <Box sx={{ py: { xs: 15, md: 25 }, bgcolor: '#ffffff', position: 'relative' }}>
-      {/* Very light abstract background elements */}
-      <Box sx={{ position: 'absolute', top: 0, right: 0, width: '40%', height: '100%', bgcolor: '#fcfcfc', borderBottomLeftRadius: 100, zIndex: 0 }} />
-      
-      <Container maxWidth="md" sx={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
-        <FormatQuoteIcon sx={{ fontSize: 80, color: 'primary.main', opacity: 0.2, mb: 2 }} />
-        
-        <Typography variant="h2" sx={{ color: '#0B0F19', mb: 6, fontSize: { xs: '2rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.3, letterSpacing: '-0.02em' }}>
-          Our Mission is to <Box component="span" sx={{ color: 'primary.main' }}>Accelerating</Box> Innovation Through Technology.
+    <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: "#FAF9F5" }}>
+      <Container maxWidth="md" sx={{ textAlign: "center" }}>
+        <Typography
+          variant="caption"
+          sx={{
+            color: "#0E7490",
+            fontWeight: 700,
+            letterSpacing: "0.14em",
+            display: "block",
+            mb: 2,
+          }}
+        >
+          OUR GUIDING MISSION
         </Typography>
-        
-        <Box sx={{ maxWidth: 800, mx: 'auto', textAlign: 'left', display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, position: 'relative', pl: 4, borderLeft: '3px solid', borderColor: 'primary.main' }}>
-          Our mission is to help businesses unlock their potential through powerful digital solutions. We don't just build websites or run campaigns — we create scalable digital ecosystems powered by modern engineering, automation, and data-driven strategies.
+
+        <Typography
+          variant="h2"
+          sx={{
+            color: "#0E172A",
+            mb: 5,
+            fontSize: { xs: "2rem", md: "2.75rem" },
+            fontWeight: 800,
+            lineHeight: 1.2,
+            letterSpacing: "-0.03em",
+            textTransform: "uppercase",
+          }}
+        >
+          Accelerating Innovation Through <br />
+          <Box component="span" sx={{ color: "#0E7490" }}>
+            Disciplined Technology.
+          </Box>
+        </Typography>
+
+        <Box sx={{ maxWidth: 780, mx: "auto", textAlign: "left", display: "flex", flexDirection: "column", gap: 3.5 }}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#4A4D57",
+              fontSize: { xs: "1.05rem", md: "1.125rem" },
+              lineHeight: 1.85,
+              position: "relative",
+              pl: 3.5,
+              borderLeft: "3px solid #0E7490",
+            }}
+          >
+            Our mission is to help ambitious companies unlock sustainable growth through bespoke digital solutions. We don&apos;t just build websites or launch one-off campaigns—we engineer interconnected digital ecosystems powered by modern full-stack architectures, automated AI pipelines, and deterministic search performance.
           </Typography>
-          
-          <Typography variant="body1" sx={{ color: '#555', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, pl: 4 }}>
-           Transparency, agility, and a commitment to quality guide everything we build. We believe technology should simplify complexity, enable growth, and become a competitive advantage for every business we partner with.
+
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#5E6068",
+              fontSize: { xs: "1rem", md: "1.08rem" },
+              lineHeight: 1.85,
+              pl: 3.5,
+            }}
+          >
+            Radical transparency, technical rigor, and zero compromise on code quality guide every repository we touch. We believe software should simplify operational complexity and serve as an enduring commercial asset for your business.
           </Typography>
         </Box>
       </Container>

@@ -1,32 +1,33 @@
 import React from "react";
 import { Metadata } from "next";
 import HeroSection from "../components/home/HeroSection";
-import TechStackSection from "../components/home/TechStackSection";
-import AboutSection from "../components/home/AboutSection";
+import IntroductionSection from "../components/home/IntroductionSection";
 import ServicesSection from "../components/home/ServicesSection";
-import MethodologySection from "../components/home/MethodologySection";
-import WhyChooseUsSection from "../components/home/WhyChooseUsSection";
+import SelectedWorkSection from "../components/home/SelectedWorkSection";
+import ProcessSection from "../components/home/ProcessSection";
+import TechCapabilitiesSection from "../components/home/TechCapabilitiesSection";
+import WhyAetibarSection from "../components/home/WhyAetibarSection";
+import AboutStorySection from "../components/home/AboutStorySection";
 import CtaSection from "../components/home/CtaSection";
-import BrandAnchorSection from "../components/home/BrandAnchorSection";
 
 export const metadata: Metadata = {
   title:
-    "Aetibar | Ai, Web, App Development & Digital Marketing Company in Udaipur",
+    "Aetibar | AI, Web, App Development & Digital Marketing Studio in Udaipur",
 
   description:
-    "Aetibar | Build powerful websites and mobile apps. We also offer AI automation, SEO, digital marketing, and brand design services.",
+    "Aetibar is an engineering and creative studio building custom web platforms, mobile applications, AI automation, and technical SEO for ambitious businesses.",
 
   keywords: [
     "Web Development Company in Udaipur",
-    "Website Development Company",
-    "Website Design Company",
+    "Custom Website Development",
     "Mobile App Development",
-    "App Development Company",
-    "AI Automation Services",
-    "SEO Services",
-    "Digital Marketing Company in Udaipur",
-    "Brand Design",
-    "Aetibar",
+    "AI Automation Agency",
+    "AI Agent Development",
+    "Technical SEO Services",
+    "Performance Marketing Agency",
+    "Brand Design & UI UX",
+    "Software Engineering Studio",
+    "Aetibar Technologies",
   ],
 
   alternates: {
@@ -35,10 +36,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Aetibar | Web Development, App Development & Digital Marketing Company in Udaipur",
+      "Aetibar | Digital Products, AI Automation & Growth Engineering",
 
     description:
-      "Professional Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design services.",
+      "Engineering bespoke digital platforms, intelligent AI workflows, and strategic growth infrastructure.",
 
     url: "https://www.aetibar.in/",
     siteName: "Aetibar",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://www.aetibar.in/og-image.jpg",
+        url: "https://www.aetibar.in/logo.jpeg",
         width: 1200,
         height: 630,
         alt: "Aetibar",
@@ -57,26 +58,27 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Aetibar | Web Development & Digital Marketing Company in Udaipur",
+      "Aetibar | Digital Products, AI Automation & Growth Engineering",
 
     description:
-      "Professional Web Development, Mobile App Development, AI Automation, SEO & Marketing and Brand Design services.",
+      "Engineering bespoke digital platforms, intelligent AI workflows, and strategic growth infrastructure.",
 
-    images: ["https://www.aetibar.in/og-image.jpg"],
+    images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <HeroSection />
-      <TechStackSection />
-      <AboutSection />
+      <IntroductionSection />
       <ServicesSection />
-      <MethodologySection />
-      <WhyChooseUsSection />
+      <SelectedWorkSection />
+      <ProcessSection />
+      <TechCapabilitiesSection />
+      <WhyAetibarSection />
+      <AboutStorySection />
       <CtaSection />
-      <BrandAnchorSection />
-    </>
+    </main>
   );
 }

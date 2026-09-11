@@ -1,140 +1,428 @@
 "use client";
 import React from "react";
-import { Box, Container, Grid, Typography, Card, CardContent, Chip } from "@mui/material";
+import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import { ServiceDetail } from "../../../data/detailedServices";
-import AppleIcon from '@mui/icons-material/Apple';
-import AndroidIcon from '@mui/icons-material/Android';
-import ServiceFaqSection from '../ServiceFaqSection';
-import CtaSection from '../../home/CtaSection';
+import SmartphoneIcon from "@mui/icons-material/Smartphone";
+import AppleIcon from "@mui/icons-material/Apple";
+import AndroidIcon from "@mui/icons-material/Android";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ServiceFaqSection from "../ServiceFaqSection";
+import InteractiveServiceExplorer from "../InteractiveServiceExplorer";
+import InteractiveScopeEstimator from "../InteractiveScopeEstimator";
+import CtaSection from "../../home/CtaSection";
+import Image from "next/image";
+import Link from "next/link";
 
 const appDevFaqs = [
   {
     question: "Do you develop apps for both Android and iOS?",
     answer:
-      "Yes. We build cross-platform mobile applications that run on both Android and iOS, helping businesses reach a wider audience while reducing development time and maintenance costs."
+      "Yes. We develop cross-platform mobile applications that run smoothly on both iOS and Android from a unified codebase, reducing development and maintenance overhead while preserving native performance.",
   },
   {
-    question: "Can the app work without an internet connection?",
+    question: "Can the application function without an active internet connection?",
     answer:
-      "Yes, when required. We can develop applications with offline functionality that allows users to access important features and automatically sync data once an internet connection is available."
+      "Yes. We specialize in offline-first mobile engineering. Data is securely persisted locally on the device using SQLite or local storage, and automatically syncs with your backend when connectivity resumes.",
   },
   {
-    question: "Will you publish the app on the App Store and Google Play?",
+    question: "Do you assist with Apple App Store and Google Play submissions?",
     answer:
-      "Yes. We assist with the complete deployment process, including app store preparation, submission, and publishing for both Apple App Store and Google Play."
+      "We handle the complete release process: developer account configurations, code signing, screenshot assets, privacy compliance documentation, and store submission reviews until live approval.",
   },
   {
-    question: "Can my app be expanded with new features later?",
+    question: "Can we add new features and integrations after launch?",
     answer:
-      "Absolutely. We build scalable applications that can easily support new features, integrations, and future business requirements as your product grows."
-  }
+      "Every app is architected with modular components and clean separation of concerns, making post-launch feature additions, SDK upgrades, and API expansions straightforward and risk-free.",
+  },
 ];
 
 export default function AppDevelopmentPage({ service }: { service: ServiceDetail }) {
   return (
-    <Box sx={{ bgcolor: '#ffffff', color: '#111', minHeight: '100vh', pt: { xs: 12, md: 16 } }}>
-      
+    <Box sx={{ bgcolor: "#FAF9F5", color: "#111215", minHeight: "100vh" }}>
       {/* HERO SECTION */}
-      <Box sx={{ textAlign: 'center', mb: 10, px: 2 }}>
-        <Typography variant="caption" sx={{ display: 'inline-block', p: 1, px: 3, bgcolor: '#f0f4ff', color: '#3366ff', borderRadius: 10, mb: 3, fontWeight: 700, letterSpacing: 1 }}>
-         APP DEVELOPMENT
-        </Typography>
-        <Typography variant="h1" sx={{ color: '#0B0F19', fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, mb: 3, letterSpacing: '-0.02em' }}>
-          {service.title}
-        </Typography>
-        <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, maxWidth: 700, mx: 'auto', mb: 6 }}>
-          {service.subtitle}
-        </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 3 }}>
-           <AppleIcon sx={{ fontSize: 40, color: '#000' }} />
-           <AndroidIcon sx={{ fontSize: 40, color: '#3DDC84' }} />
-        </Box>
-      </Box>
-
-      <Container maxWidth="lg">
-        {/* HUGE HERO IMAGE */}
-        <Box 
-          sx={{ 
-            width: '100%', 
-            height: { xs: 300, md: 600 }, 
-            backgroundImage: 'url(/images/services/app-development.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            borderRadius: 6,
-            boxShadow: '0 40px 80px rgba(0,0,0,0.08)',
-            mb: { xs: 10, md: 15 }
-          }} 
-        />
-
-        {/* CONTENT & FEATURES SPLIT */}
-        <Grid container spacing={10}>
-          <Grid size={{ xs: 12, md: 7 }}>
-            {service.detailedContent?.map((content, idx) => (
-              <Box key={idx} sx={{ mb: 8 }}>
-                <Typography variant="h3" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
-                  {content.heading}
-                </Typography>
-                {content.paragraphs.map((p, pIdx) => (
-                  <Typography key={pIdx} variant="body1" sx={{ color: 'text.secondary', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9, mb: 3 }}>
-                    {p}
-                  </Typography>
-                ))}
-              </Box>
-            ))}
-          </Grid>
-          
-          <Grid size={{ xs: 12, md: 5 }}>
-            <Box sx={{ position: 'sticky', top: 120 }}>
-              <Typography variant="h4" sx={{ fontWeight: 800, mb: 4, color: '#0B0F19', fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
-                Key Capabilities
-              </Typography>
-              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, mb: 6 }}>
-                {service.features.map((feature, idx) => (
-                  <Card key={idx} sx={{ bgcolor: '#f8f9fa', border: 'none', boxShadow: 'none', borderRadius: 4 }}>
-                    <CardContent sx={{ p: 3 }}>
-                      <Typography variant="h6" sx={{ fontWeight: 700, color: '#3366ff', mb: 1, fontSize: { xs: '1.1rem', md: '1.25rem' } }}>{feature.title}</Typography>
-                      <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>{feature.desc}</Typography>
-                    </CardContent>
-                  </Card>
-                ))}
-              </Box>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-      
-      {/* MASSIVE TECH STACK BANNER */}
-      <Box sx={{ mt: 10, bgcolor: '#0B0F19', color: 'white', py: { xs: 10, md: 15 } }}>
+      <Box
+        sx={{
+          pt: { xs: 16, md: 22 },
+          pb: { xs: 10, md: 14 },
+          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        }}
+      >
         <Container maxWidth="xl">
-          <Typography variant="h2" sx={{ fontWeight: 900, mb: 6, textAlign: 'center', fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
-            Built with Modern Technologies
-          </Typography>
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 2, maxWidth: 900, mx: 'auto' }}>
-            {service.technologies.map((tech, idx) => (
-              <Chip 
-                key={idx} 
-                label={tech} 
-                sx={{ 
-                  bgcolor: 'rgba(255,255,255,0.05)', 
-                  color: 'white', 
-                  fontSize: '1.2rem',
-                  py: 3,
-                  px: 3,
-                  borderRadius: 3,
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  fontWeight: 700,
-                  transition: 'all 0.3s ease',
-                  '&:hover': {
-                    bgcolor: 'primary.main',
-                    borderColor: 'primary.main',
-                    transform: 'translateY(-2px)'
-                  }
-                }} 
-              />
-            ))}
-          </Box>
+          <Grid container spacing={{ xs: 6, lg: 8 }} sx={{ alignItems: "center" }}>
+            <Grid size={{ xs: 12, lg: 7 }}>
+              <Box
+                sx={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 1.5,
+                  mb: 3,
+                  px: 1.8,
+                  py: 0.6,
+                  borderRadius: "4px",
+                  bgcolor: "rgba(14, 116, 144, 0.08)",
+                  border: "1px solid rgba(14, 116, 144, 0.18)",
+                }}
+              >
+                <SmartphoneIcon sx={{ color: "#0E7490", fontSize: 18 }} />
+                <Typography
+                  variant="caption"
+                  sx={{
+                    color: "#0E7490",
+                    fontWeight: 700,
+                    letterSpacing: "0.14em",
+                    fontSize: "0.78rem",
+                  }}
+                >
+                  IOS &bull; ANDROID &bull; CROSS-PLATFORM
+                </Typography>
+              </Box>
+
+              <Typography
+                variant="h1"
+                sx={{
+                  color: "#0E172A",
+                  fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
+                  fontWeight: 800,
+                  letterSpacing: "-0.03em",
+                  lineHeight: { xs: 1.1, md: 1.05 },
+                  textTransform: "uppercase",
+                  mb: 3,
+                }}
+              >
+                {service.title}
+              </Typography>
+
+              <Typography
+                variant="body1"
+                sx={{
+                  color: "#4A4D57",
+                  fontSize: { xs: "1.05rem", md: "1.2rem" },
+                  lineHeight: 1.8,
+                  maxWidth: 680,
+                  mb: 4,
+                }}
+              >
+                {service.description}
+              </Typography>
+
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3, alignItems: "center", mb: 4 }}>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <AppleIcon sx={{ fontSize: 24, color: "#0E172A" }} />
+                  <Typography sx={{ fontWeight: 600, fontSize: "0.9rem", color: "#0E172A" }}>
+                    iOS Ready
+                  </Typography>
+                </Box>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <AndroidIcon sx={{ fontSize: 24, color: "#0E7490" }} />
+                  <Typography sx={{ fontWeight: 600, fontSize: "0.9rem", color: "#0E172A" }}>
+                    Android Ready
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, alignItems: "center" }}>
+                <Button
+                  component={Link}
+                  href="/contact"
+                  variant="contained"
+                  endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+                  sx={{
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                    px: 3.5,
+                    py: 1.4,
+                    fontSize: "0.92rem",
+                    fontWeight: 600,
+                    borderRadius: "6px",
+                    boxShadow: "0 6px 20px rgba(14, 23, 42, 0.12)",
+                    "&:hover": {
+                      bgcolor: "#1E293B",
+                      transform: "translateY(-2px)",
+                    },
+                  }}
+                >
+                  Start an App Project
+                </Button>
+
+                <Button
+                  component="a"
+                  href="#methodology"
+                  variant="outlined"
+                  sx={{
+                    borderColor: "rgba(17, 18, 21, 0.2)",
+                    color: "#0E172A",
+                    px: 3,
+                    py: 1.4,
+                    fontSize: "0.92rem",
+                    fontWeight: 600,
+                    borderRadius: "6px",
+                    "&:hover": {
+                      borderColor: "#0E172A",
+                      bgcolor: "rgba(14, 23, 42, 0.04)",
+                    },
+                  }}
+                >
+                  Explore Capabilities
+                </Button>
+              </Box>
+            </Grid>
+
+            <Grid size={{ xs: 12, lg: 5 }}>
+              <Box
+                sx={{
+                  position: "relative",
+                  maxWidth: { xs: "100%", sm: "380px" },
+                  mx: "auto",
+                  bgcolor: "#FFFFFF",
+                  borderRadius: "28px",
+                  p: 1.5,
+                  border: "2px solid rgba(17, 18, 21, 0.14)",
+                  boxShadow: "0 24px 50px rgba(17, 18, 21, 0.08)",
+                }}
+              >
+                {/* Mobile Top Speaker & Camera Notch */}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    pb: 1,
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: 72,
+                      height: 5,
+                      borderRadius: "3px",
+                      bgcolor: "rgba(17, 18, 21, 0.15)",
+                    }}
+                  />
+                </Box>
+
+                {/* Mobile Viewport Screen */}
+                <Box
+                  sx={{
+                    position: "relative",
+                    height: { xs: 280, sm: 360, md: 400 },
+                    borderRadius: "20px",
+                    overflow: "hidden",
+                    bgcolor: "#EBE8DF",
+                  }}
+                >
+                  <Image
+                    src="/images/portfolio/logix.png"
+                    alt={service.title}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    priority
+                  />
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      inset: 0,
+                      background:
+                        "linear-gradient(180deg, rgba(14, 23, 42, 0.05) 0%, rgba(14, 23, 42, 0.4) 100%)",
+                    }}
+                  />
+
+                  {/* Offline-First & Realtime Telemetry Overlay */}
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      bottom: 12,
+                      left: 12,
+                      right: 12,
+                      bgcolor: "rgba(250, 249, 245, 0.95)",
+                      backdropFilter: "blur(6px)",
+                      p: 1.5,
+                      borderRadius: "8px",
+                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                    }}
+                  >
+                    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 0.5 }}>
+                      <Typography
+                        variant="caption"
+                        sx={{
+                          color: "#0E7490",
+                          fontWeight: 800,
+                          fontSize: "0.72rem",
+                          letterSpacing: "0.06em",
+                        }}
+                      >
+                        ● OFFLINE-FIRST SYNC ACTIVE
+                      </Typography>
+                      <Typography
+                        variant="caption"
+                        sx={{
+                          color: "#10B981",
+                          fontFamily: "monospace",
+                          fontSize: "0.7rem",
+                          fontWeight: 700,
+                        }}
+                      >
+                        60 FPS NATIVE
+                      </Typography>
+                    </Box>
+                    <Typography
+                      sx={{
+                        color: "#0E172A",
+                        fontSize: "0.78rem",
+                        fontWeight: 600,
+                        lineHeight: 1.3,
+                      }}
+                    >
+                      Background SQLite DB &bull; Real-time GPS &bull; Push Sync
+                    </Typography>
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
         </Container>
       </Box>
+
+      {/* 2. INTERACTIVE METHODOLOGY EXPLORER */}
+      <Box id="methodology" sx={{ py: { xs: 10, md: 16 } }}>
+        <Container maxWidth="xl">
+          <InteractiveServiceExplorer
+            detailedContent={service.detailedContent}
+            features={service.features}
+            serviceTitle={service.title}
+          />
+        </Container>
+      </Box>
+
+      {/* 3. INTERACTIVE SCOPE & TIMELINE ESTIMATOR */}
+      <Box sx={{ bgcolor: "#F2F0EB", py: { xs: 10, md: 16 }, borderTop: "1px solid rgba(17, 18, 21, 0.08)", borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+        <Container maxWidth="xl">
+          <InteractiveScopeEstimator
+            serviceTitle={service.title}
+            serviceSlug={service.slug}
+          />
+        </Container>
+      </Box>
+
+      {/* 4. TECH STACK & INDUSTRIES SERVED */}
+      <Box
+        sx={{
+          bgcolor: "#FAF9F5",
+          py: { xs: 10, md: 16 },
+          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        }}
+      >
+        <Container maxWidth="xl">
+          <Grid container spacing={{ xs: 6, lg: 8 }}>
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Typography
+                variant="caption"
+                sx={{
+                  color: "#0E7490",
+                  fontWeight: 700,
+                  letterSpacing: "0.1em",
+                  display: "block",
+                  mb: 1.5,
+                }}
+              >
+                MOBILE TOOLING &amp; FRAMEWORKS
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  fontWeight: 800,
+                  mb: 3,
+                  color: "#0E172A",
+                  fontSize: { xs: "1.8rem", md: "2.3rem" },
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Technologies We Use
+              </Typography>
+              <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 1.5 }}>
+                {service.technologies.map((tech, idx) => (
+                  <Box
+                    key={idx}
+                    sx={{
+                      bgcolor: "#FFFFFF",
+                      p: 2,
+                      borderRadius: "8px",
+                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1.2,
+                      transition: "all 0.2s ease",
+                      "&:hover": {
+                        borderColor: "#0E7490",
+                        transform: "translateX(3px)",
+                      },
+                    }}
+                  >
+                    <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#0E7490" }} />
+                    <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", color: "#0E172A" }}>
+                      {tech}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
+            </Grid>
+
+            <Grid size={{ xs: 12, md: 6 }}>
+              <Typography
+                variant="caption"
+                sx={{
+                  color: "#0E7490",
+                  fontWeight: 700,
+                  letterSpacing: "0.1em",
+                  display: "block",
+                  mb: 1.5,
+                }}
+              >
+                APP DOMAINS &amp; USE CASES
+              </Typography>
+              <Typography
+                variant="h3"
+                sx={{
+                  fontWeight: 800,
+                  mb: 3,
+                  color: "#0E172A",
+                  fontSize: { xs: "1.8rem", md: "2.3rem" },
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Industries Served
+              </Typography>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                {service.domains.map((domain, idx) => (
+                  <Box
+                    key={idx}
+                    sx={{
+                      bgcolor: "#FFFFFF",
+                      p: 2.5,
+                      borderRadius: "8px",
+                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      borderLeft: "3px solid #0E7490",
+                      transition: "all 0.2s ease",
+                      "&:hover": {
+                        boxShadow: "0 6px 16px rgba(17, 18, 21, 0.04)",
+                      },
+                    }}
+                  >
+                    <Typography
+                      sx={{ color: "#0E172A", mb: 0.5, fontWeight: 700, fontSize: "1.05rem" }}
+                    >
+                      {domain.name}
+                    </Typography>
+                    <Typography variant="body2" sx={{ color: "#5E6068", lineHeight: 1.6 }}>
+                      {domain.desc}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+
+      {/* 5. INTERACTIVE FAQS & CTA */}
       <ServiceFaqSection faqs={appDevFaqs} />
       <CtaSection />
     </Box>

@@ -1,97 +1,311 @@
 "use client";
 import React from "react";
-import { Box, Container, Grid, Typography, Divider } from "@mui/material";
+import { Box, Container, Grid, Typography, IconButton } from "@mui/material";
 import Link from "next/link";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { IconButton } from "@mui/material";
+const serviceLinks = [
+  { name: "Web Development", href: "/services/web-development" },
+  { name: "Mobile App Development", href: "/services/mobile-app-development" },
+  { name: "AI Automation", href: "/services/ai-automation" },
+  { name: "Search Engine Optimization", href: "/services/search-engine-optimization" },
+  { name: "Digital Marketing", href: "/services/digital-marketing" },
+  { name: "Graphic & Brand Design", href: "/services/graphic-design" },
+];
+
+const companyLinks = [
+  { name: "Selected Work", href: "/portfolio" },
+  { name: "About the Studio", href: "/about" },
+  { name: "Insights & Journal", href: "/blog" },
+  { name: "Careers", href: "/careers" },
+  { name: "Contact", href: "/contact" },
+];
 
 export default function Footer() {
   return (
-    <Box sx={{ bgcolor: '#0B0F19', color: 'grey.400', py: 8, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+    <Box
+      component="footer"
+      sx={{
+        bgcolor: "#F2F0EB",
+        color: "#111215",
+        pt: { xs: 10, md: 14 },
+        pb: 6,
+        borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+      }}
+    >
       <Container maxWidth="xl">
-        <Grid container spacing={8}>
-          {/* Logo & Description */}
-          <Grid size={{ xs: 12, md: 4 }}>
-            <Typography variant="h4" sx={{ color: 'white', mb: 3, fontWeight: 800, fontSize: { xs: '1.25rem', md: '1.5rem' } }}>
-              AETIBAR<Box component="span" sx={{ color: 'primary.main' }}>.</Box>
+        <Grid container spacing={{ xs: 6, md: 8 }} sx={{ mb: { xs: 8, md: 12 } }}>
+          {/* Col 1: Logo & Brand Statement */}
+          <Grid size={{ xs: 12, md: 5 }}>
+            <Typography
+              component={Link}
+              href="/"
+              sx={{
+                fontWeight: 900,
+                letterSpacing: "-0.03em",
+                color: "#0E172A",
+                textDecoration: "none",
+                fontSize: "1.4rem",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 0.5,
+                mb: 2.5,
+              }}
+            >
+              AETIBAR
+              <Box
+                component="span"
+                sx={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: "50%",
+                  bgcolor: "#0E7490",
+                  display: "inline-block",
+                }}
+              />
             </Typography>
-            <Typography variant="body2" sx={{ mb: 3, lineHeight: 1.8, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
-              Aetibar is a full-service digital agency helping businesses design, build, and scale modern digital products through software development, AI solutions, creative design, SEO, and performance marketing.
+
+            <Typography
+              variant="body2"
+              sx={{
+                color: "#4A4D57",
+                lineHeight: 1.75,
+                fontSize: "0.95rem",
+                maxWidth: 420,
+                mb: 3,
+              }}
+            >
+              Aetibar is an engineering and creative studio building custom digital products,
+              intelligent AI workflows, and strategic growth infrastructure for ambitious businesses.
             </Typography>
-            <Typography variant="body2" sx={{ opacity: 0.7, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
-              Headquartered in Udaipur, India.
-            </Typography>
+
+            <Box sx={{ mb: 3 }}>
+              <Typography
+                variant="caption"
+                sx={{
+                  display: "block",
+                  color: "#0E7490",
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  fontSize: "0.75rem",
+                  mb: 0.5,
+                }}
+              >
+                STUDIO LOCATION
+              </Typography>
+              <Typography variant="body2" sx={{ color: "#111215", fontWeight: 600 }}>
+                Udaipur, Rajasthan, India &bull; Serving Clients Globally
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: "flex", gap: 1 }}>
+              <IconButton
+                component="a"
+                href="https://x.com/Aetibar_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aetibar on X"
+                sx={{
+                  color: "#0E172A",
+                  bgcolor: "#FAF9F5",
+                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  "&:hover": {
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                  },
+                }}
+              >
+                <TwitterIcon fontSize="small" />
+              </IconButton>
+              <IconButton
+                component="a"
+                href="https://www.linkedin.com/company/aetibar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aetibar on LinkedIn"
+                sx={{
+                  color: "#0E172A",
+                  bgcolor: "#FAF9F5",
+                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  "&:hover": {
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                  },
+                }}
+              >
+                <LinkedInIcon fontSize="small" />
+              </IconButton>
+              <IconButton
+                component="a"
+                href="https://www.instagram.com/aetibar_information/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Aetibar on Instagram"
+                sx={{
+                  color: "#0E172A",
+                  bgcolor: "#FAF9F5",
+                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  "&:hover": {
+                    bgcolor: "#0E172A",
+                    color: "#FFFFFF",
+                  },
+                }}
+              >
+                <InstagramIcon fontSize="small" />
+              </IconButton>
+            </Box>
           </Grid>
-          
-          {/* Services Links */}
-          <Grid size={{ xs: 12, sm: 6, md: 2 }}>
-            <Typography variant="h6" sx={{ color: 'white', mb: 3, fontSize: { xs: '1.1rem', md: '1.25rem' }, fontWeight: 700 }}>Services</Typography>
-            {[
-              { name: 'Web Development', href: '/services/web-development' },
-              { name: 'App Development', href: '/services/app-development' },
-              { name: 'AI Automations', href: '/services/ai-automation' },
-              { name: 'SEO & Marketing', href: '/services/seo' },
-              { name: 'Graphics Designing', href: '/services/graphics-designing' },
-              { name: 'Digital Marketing', href: '/services/digital-marketing' }
-            ].map(link => (
-              <Link key={link.name} href={link.href} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <Typography variant="body2" sx={{ cursor: 'pointer', mb: 1.5, fontSize: { xs: '0.95rem', md: '1.05rem' }, transition: 'all 0.2s', '&:hover': { color: 'primary.main', transform: 'translateX(5px)' } }}>
+
+          {/* Col 2: Services Links */}
+          <Grid size={{ xs: 12, sm: 6, md: 3, lg: 3.5 }}>
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#0E7490",
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                display: "block",
+                mb: 2.5,
+              }}
+            >
+              SERVICES & PRACTICES
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
+              {serviceLinks.map((link) => (
+                <Typography
+                  key={link.name}
+                  component={Link}
+                  href={link.href}
+                  sx={{
+                    color: "#4A4D57",
+                    fontSize: "0.9375rem",
+                    fontWeight: 500,
+                    textDecoration: "none",
+                    transition: "color 0.2s ease, transform 0.2s ease",
+                    "&:hover": {
+                      color: "#0E172A",
+                      transform: "translateX(4px)",
+                    },
+                  }}
+                >
                   {link.name}
                 </Typography>
-              </Link>
-            ))}
-          </Grid>
-          
-          {/* Company Links */}
-          <Grid size={{ xs: 12, sm: 6, md: 2 }}>
-            <Typography variant="h6" sx={{ color: 'white', mb: 3, fontSize: { xs: '1.1rem', md: '1.25rem' }, fontWeight: 700 }}>Company</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
-              {[
-                { name: 'About Us', href: '/about' },
-                { name: 'Portfolio', href: '/portfolio' },
-                { name: 'Journal', href: '/blog' },
-                { name: 'Careers', href: '/careers' },
-                { name: 'FAQ', href: '/faq' },
-                { name: 'Contact Us', href: '/contact' }
-              ].map(link => (
-                <Link key={link.name} href={link.href} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <Typography variant="body2" sx={{ cursor: 'pointer', fontSize: { xs: '0.95rem', md: '1.05rem' }, transition: 'all 0.2s', '&:hover': { color: 'primary.main', transform: 'translateX(5px)' } }}>
-                    {link.name}
-                  </Typography>
-                </Link>
               ))}
             </Box>
           </Grid>
-          
-          {/* Contact Info & Socials */}
-          <Grid size={{ xs: 12, md: 4 }}>
-            <Typography variant="h6" sx={{ color: 'white', mb: 3, fontSize: { xs: '1.1rem', md: '1.25rem' }, fontWeight: 700 }}>Get in Touch</Typography>
-            <Typography variant="body2" sx={{ mb: 1, color: 'white', fontWeight: 600, fontSize: { xs: '0.95rem', md: '1.05rem' } }}>
-              hello.aetibar@gmail.com
+
+          {/* Col 3: Company Links & Direct Contact */}
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3.5 }}>
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#0E7490",
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                display: "block",
+                mb: 2.5,
+              }}
+            >
+              COMPANY & CONTACT
             </Typography>
-            
-            <Typography variant="subtitle2" sx={{ color: 'white', mb: 2, textTransform: 'uppercase', letterSpacing: 1, fontSize: { xs: '0.85rem', md: '0.95rem' } }}>Follow Us</Typography>
-            <Box sx={{ display: 'flex', gap: 1.5 }}>
-              <IconButton href="https://x.com/Aetibar_" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-3px)' } }}><TwitterIcon fontSize="small" /></IconButton>
-              <IconButton href="https://www.linkedin.com/in/aetibar-information-and-technologies-502531406" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-3px)' } }}><LinkedInIcon fontSize="small" /></IconButton>
-              <IconButton href="https://www.instagram.com/aetibar_information/" target="_blank" sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.05)', transition: 'all 0.3s', '&:hover': { bgcolor: 'primary.main', transform: 'translateY(-3px)' } }}><InstagramIcon fontSize="small" /></IconButton>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 3 }}>
+              {companyLinks.map((link) => (
+                <Typography
+                  key={link.name}
+                  component={Link}
+                  href={link.href}
+                  sx={{
+                    color: "#4A4D57",
+                    fontSize: "0.9375rem",
+                    fontWeight: 500,
+                    textDecoration: "none",
+                    transition: "color 0.2s ease, transform 0.2s ease",
+                    "&:hover": {
+                      color: "#0E172A",
+                      transform: "translateX(4px)",
+                    },
+                  }}
+                >
+                  {link.name}
+                </Typography>
+              ))}
+            </Box>
+
+            <Box sx={{ pt: 2, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+              <Typography
+                variant="caption"
+                sx={{
+                  color: "#5E6068",
+                  fontWeight: 600,
+                  letterSpacing: "0.05em",
+                  display: "block",
+                  mb: 0.5,
+                }}
+              >
+                DIRECT INQUIRIES
+              </Typography>
+              <Typography
+                component="a"
+                href="mailto:hello.aetibar@gmail.com"
+                sx={{
+                  color: "#0E172A",
+                  fontWeight: 700,
+                  fontSize: "0.95rem",
+                  textDecoration: "none",
+                  "&:hover": {
+                    color: "#0E7490",
+                  },
+                }}
+              >
+                hello.aetibar@gmail.com
+              </Typography>
             </Box>
           </Grid>
         </Grid>
-        
-        {/* Bottom Copyright Bar */}
-        <Divider sx={{ borderColor: 'rgba(255,255,255,0.1)', mt: 8, mb: 4 }} />
-        <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: 'space-between', alignItems: 'center', gap: 2 }}>
-          <Typography variant="body2">
-            &copy; {new Date().getFullYear()} AETIBAR Digital Agency. All rights reserved.
+
+        {/* Bottom Bar: Copyright & Legal */}
+        <Box
+          sx={{
+            pt: 4,
+            borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: "space-between",
+            alignItems: { xs: "flex-start", sm: "center" },
+            gap: 2,
+          }}
+        >
+          <Typography variant="body2" sx={{ color: "#5E6068", fontSize: "0.85rem" }}>
+            &copy; {new Date().getFullYear()} Aetibar Information &amp; Technologies. All rights reserved.
           </Typography>
-          <Box sx={{ display: 'flex', gap: 3 }}>
-            <Link href="/privacy-policy" style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.3s' }}><Typography variant="body2" sx={{ '&:hover': { color: 'white' } }}>Privacy Policy</Typography></Link>
-            <Link href="/terms-of-service" style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.3s' }}><Typography variant="body2" sx={{ '&:hover': { color: 'white' } }}>Terms of Service</Typography></Link>
+
+          <Box sx={{ display: "flex", gap: 3 }}>
+            <Typography
+              component={Link}
+              href="/privacy-policy"
+              sx={{
+                color: "#5E6068",
+                fontSize: "0.85rem",
+                textDecoration: "none",
+                "&:hover": { color: "#0E172A" },
+              }}
+            >
+              Privacy Policy
+            </Typography>
+            <Typography
+              component={Link}
+              href="/terms-of-service"
+              sx={{
+                color: "#5E6068",
+                fontSize: "0.85rem",
+                textDecoration: "none",
+                "&:hover": { color: "#0E172A" },
+              }}
+            >
+              Terms of Service
+            </Typography>
           </Box>
         </Box>
       </Container>
