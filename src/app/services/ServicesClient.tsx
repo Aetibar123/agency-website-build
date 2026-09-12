@@ -523,7 +523,7 @@ export default function ServicesClient() {
               sx={{
                 color: "#0E172A",
                 fontSize: { xs: "2.35rem", sm: "3.4rem", md: "4.4rem" },
-                fontWeight: 800,
+                fontWeight: 600,
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.12, md: 1.06 },
                 textTransform: "uppercase",
@@ -642,7 +642,7 @@ export default function ServicesClient() {
               sx={{
                 color: "#0E172A",
                 fontSize: { xs: "1.8rem", sm: "2.4rem", md: "2.8rem" },
-                fontWeight: 800,
+                fontWeight: 600,
                 letterSpacing: "-0.025em",
               }}
             >
@@ -814,7 +814,7 @@ export default function ServicesClient() {
                     sx={{
                       color: "#0E172A",
                       fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.1rem" },
-                      fontWeight: 800,
+                      fontWeight: 600,
                       letterSpacing: "-0.025em",
                       lineHeight: 1.25,
                       mb: 1.5,
@@ -1157,7 +1157,7 @@ export default function ServicesClient() {
               sx={{
                 color: "#0E172A",
                 fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem" },
-                fontWeight: 800,
+                fontWeight: 600,
                 letterSpacing: "-0.03em",
                 mb: 2.5,
               }}
@@ -1329,7 +1329,7 @@ export default function ServicesClient() {
               sx={{
                 color: "#0E172A",
                 fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem" },
-                fontWeight: 800,
+                fontWeight: 600,
                 letterSpacing: "-0.03em",
                 mb: 2,
               }}
@@ -1408,7 +1408,7 @@ export default function ServicesClient() {
               sx={{
                 color: "#0E172A",
                 fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem" },
-                fontWeight: 800,
+                fontWeight: 600,
                 letterSpacing: "-0.03em",
                 mb: 2,
               }}

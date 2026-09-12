@@ -3,9 +3,16 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Enable native Next.js image optimization with AVIF and WebP support
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days cache for static images
   },
+  // Gzip / Brotli compression for all text assets and API responses
+  compress: true,
+  poweredByHeader: false,
   async redirects() {
     return [
       {
@@ -27,4 +34,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig
+export default nextConfig;

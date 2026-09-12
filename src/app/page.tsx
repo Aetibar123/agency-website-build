@@ -1,50 +1,37 @@
 import React from "react";
 import { Metadata } from "next";
-import HeroSection from "../components/home/HeroSection";
-import IntroductionSection from "../components/home/IntroductionSection";
-import ServicesSection from "../components/home/ServicesSection";
-import SelectedWorkSection from "../components/home/SelectedWorkSection";
-import ProcessSection from "../components/home/ProcessSection";
-import TechCapabilitiesSection from "../components/home/TechCapabilitiesSection";
-import WhyAetibarSection from "../components/home/WhyAetibarSection";
-import AboutStorySection from "../components/home/AboutStorySection";
-import CtaSection from "../components/home/CtaSection";
+import HomeHero from "../components/home/HomeHero";
+import ProblemSection from "../components/home/ProblemSection";
+import PhilosophySection from "../components/home/PhilosophySection";
+import TwoSidesSection from "../components/home/TwoSidesSection";
+import SolutionAreasSection from "../components/home/SolutionAreasSection";
+import HowWeWorkHomeSection from "../components/home/HowWeWorkHomeSection";
+import SelectedWorkHomeSection from "../components/home/SelectedWorkHomeSection";
+import HomeCtaSection from "../components/home/HomeCtaSection";
 
 export const metadata: Metadata = {
-  title:
-    "Aetibar | AI, Web, App Development & Digital Marketing Studio in Udaipur",
-
+  title: "Aetibar | Digital Systems & Workflow Solutions for Modern Businesses",
   description:
-    "Aetibar is an engineering and creative studio building custom web platforms, mobile applications, AI automation, and technical SEO for ambitious businesses.",
-
+    "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
   keywords: [
-    "Web Development Company in Udaipur",
-    "Custom Website Development",
-    "Mobile App Development",
-    "AI Automation Agency",
-    "AI Agent Development",
-    "Technical SEO Services",
-    "Performance Marketing Agency",
-    "Brand Design & UI UX",
-    "Software Engineering Studio",
+    "Business workflow solutions",
+    "Custom business websites",
+    "Customer and lead systems",
+    "Internal operations tools",
+    "Practical AI automation",
+    "Digital problem solving",
     "Aetibar Technologies",
   ],
-
   alternates: {
     canonical: "https://www.aetibar.in/",
   },
-
   openGraph: {
-    title:
-      "Aetibar | Digital Products, AI Automation & Growth Engineering",
-
+    title: "Aetibar | Build a better way for your business to work.",
     description:
-      "Engineering bespoke digital platforms, intelligent AI workflows, and strategic growth infrastructure.",
-
+      "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
     url: "https://www.aetibar.in/",
     siteName: "Aetibar",
     type: "website",
-
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -54,15 +41,11 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title:
-      "Aetibar | Digital Products, AI Automation & Growth Engineering",
-
+    title: "Aetibar | Build a better way for your business to work.",
     description:
-      "Engineering bespoke digital platforms, intelligent AI workflows, and strategic growth infrastructure.",
-
+      "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };
@@ -70,15 +53,29 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main>
-      <HeroSection />
-      <IntroductionSection />
-      <ServicesSection />
-      <SelectedWorkSection />
-      <ProcessSection />
-      <TechCapabilitiesSection />
-      <WhyAetibarSection />
-      <AboutStorySection />
-      <CtaSection />
+      {/* 1. Hero */}
+      <HomeHero />
+
+      {/* 2. The Problem */}
+      <ProblemSection />
+
+      {/* 3. How Aetibar Thinks */}
+      <PhilosophySection />
+
+      {/* 4. Two Sides of a Digital Business */}
+      <TwoSidesSection />
+
+      {/* 5. Solution Areas */}
+      <SolutionAreasSection />
+
+      {/* 6. How We Work */}
+      <HowWeWorkHomeSection />
+
+      {/* 7. Selected Work */}
+      <SelectedWorkHomeSection />
+
+      {/* 8. Final CTA */}
+      <HomeCtaSection />
     </main>
   );
 }

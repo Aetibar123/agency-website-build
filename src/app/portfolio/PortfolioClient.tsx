@@ -134,7 +134,7 @@ export default function PortfolioClient() {
                 sx={{
                   color: "#0E172A",
                   fontSize: { xs: "2.35rem", sm: "3.5rem", md: "4.4rem" },
-                  fontWeight: 800,
+                  fontWeight: 600,
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.1, md: 1.05 },
                   textTransform: "uppercase",

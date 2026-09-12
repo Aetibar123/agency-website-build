@@ -81,7 +81,7 @@ export default function GraphicsDesigningPage({ service }: { service: ServiceDet
                 sx={{
                   color: "#0E172A",
                   fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
-                  fontWeight: 800,
+                  fontWeight: 600,
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.1, md: 1.05 },
                   textTransform: "uppercase",
@@ -254,7 +254,7 @@ export default function GraphicsDesigningPage({ service }: { service: ServiceDet
                 >
                   {[
                     { label: "COLOR PALETTE", val: "Teal #0E7490 & Midnight" },
-                    { label: "TYPE HIERARCHY", val: "Plus Jakarta Sans Bold" },
+                    { label: "TYPE HIERARCHY", val: "Poppins Bold" },
                     { label: "ACCESSIBILITY", val: "WCAG AAA 8.2:1 Ratio" },
                     { label: "FIGMA COMPONENTS", val: "240+ Auto-Layout Variants" },
                   ].map((token) => (
@@ -352,7 +352,7 @@ export default function GraphicsDesigningPage({ service }: { service: ServiceDet
               <Typography
                 variant="h3"
                 sx={{
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   color: "#0E172A",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
@@ -405,7 +405,7 @@ export default function GraphicsDesigningPage({ service }: { service: ServiceDet
               <Typography
                 variant="h3"
                 sx={{
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   color: "#0E172A",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
