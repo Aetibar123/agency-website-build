@@ -82,7 +82,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                 sx={{
                   color: "#0E172A",
                   fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
-                  fontWeight: 800,
+                  fontWeight: 600,
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.1, md: 1.05 },
                   textTransform: "uppercase",
@@ -328,7 +328,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
               <Typography
                 variant="h3"
                 sx={{
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   color: "#0E172A",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
@@ -376,12 +376,12 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                   mb: 1.5,
                 }}
               >
-                APP DOMAINS &amp; USE CASES
+                MARKET SECTORS
               </Typography>
               <Typography
                 variant="h3"
                 sx={{
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   color: "#0E172A",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },

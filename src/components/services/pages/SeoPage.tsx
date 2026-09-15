@@ -81,7 +81,7 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
                 sx={{
                   color: "#0E172A",
                   fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
-                  fontWeight: 800,
+                  fontWeight: 600,
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.1, md: 1.05 },
                   textTransform: "uppercase",
@@ -352,14 +352,14 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
               <Typography
                 variant="h3"
                 sx={{
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   color: "#0E172A",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
                   letterSpacing: "-0.02em",
                 }}
               >
-                Technologies &amp; Tools
+                Technologies We Use
               </Typography>
               <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 1.5 }}>
                 {service.technologies.map((tech, idx) => (
@@ -400,12 +400,12 @@ export default function SeoPage({ service }: { service: ServiceDetail }) {
                   mb: 1.5,
                 }}
               >
-                ORGANIC SEARCH SECTORS
+                SEO SPECIALIZATION SECTORS
               </Typography>
               <Typography
                 variant="h3"
                 sx={{
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   color: "#0E172A",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },

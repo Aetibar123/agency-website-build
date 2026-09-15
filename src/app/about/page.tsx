@@ -1,63 +1,43 @@
 import React from "react";
 import { Metadata } from "next";
-import AboutHeroSection from "../../components/about/AboutHeroSection";
-import MissionSection from "../../components/about/MissionSection";
-import CtaSection from "../../components/home/CtaSection";
+import AboutPageClient from "../../components/about/AboutPageClient";
 
 export const metadata: Metadata = {
-  title: "About | Web Development & Digital Marketing Company",
+  title: "About Aetibar | Problem-First Systems & Software Engineering Studio",
   description:
-    "Learn about Aetibar, a trusted web development and digital marketing company delivering websites, mobile apps, AI automation, SEO, and branding solutions",
-
-  keywords: [
-    "About Aetibar",
-    "Web Development Company",
-    "Web Development Company in Udaipur",
-    "Website Development Company",
-    "Mobile App Development",
-    "AI Automations",
-    "SEO & Marketing",
-    "Digital Marketing Company in Udaipur",
-    "Brand Design",
-    "Aetibar",
-  ],
-
+    "We help growing businesses replace fragmented SaaS apps and spreadsheet chaos with custom, reliable digital systems. Learn about our philosophy, engineering standards, and ethos.",
   alternates: {
     canonical: "https://www.aetibar.in/about",
   },
-
   openGraph: {
-    title: "About Aetibar | Web Development & Digital Marketing Company",
+    title: "About Aetibar | Problem-First Systems & Software Engineering",
     description:
-      "Discover Aetibar's expertise in Web Development, Mobile App Development, AI Automations, SEO & Marketing, and Brand Design.",
+      "We help growing businesses replace fragmented SaaS apps and spreadsheet chaos with custom, reliable digital systems. Learn about our philosophy, engineering standards, and ethos.",
     url: "https://www.aetibar.in/about",
     siteName: "Aetibar",
     type: "website",
     images: [
       {
-        url: "/logo.jpeg",
-        width: 512,
-        height: 512,
-        alt: "Aetibar Logo",
+        url: "https://www.aetibar.in/images/home/editorial-craft-operations.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Aetibar - Software & Systems Engineering Studio",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "About Aetibar",
+    title: "About Aetibar | Problem-First Systems & Software Engineering",
     description:
-      "Learn more about Aetibar and our digital solutions for businesses.",
-    images: ["/logo.jpeg"],
+      "We help growing businesses replace fragmented SaaS apps and spreadsheet chaos with custom, reliable digital systems.",
+    images: ["https://www.aetibar.in/images/home/editorial-craft-operations.jpg"],
   },
 };
 
 export default function AboutPage() {
   return (
-    <>
-      <AboutHeroSection />
-      <MissionSection />
-      <CtaSection />
-    </>
+    <main>
+      <AboutPageClient />
+    </main>
   );
 }

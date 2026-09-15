@@ -179,7 +179,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
           <Typography
             variant="h5"
             sx={{
-              fontWeight: 800,
+              fontWeight: 600,
               color: "#0E172A",
               mb: 1.5,
               lineHeight: 1.28,

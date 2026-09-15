@@ -104,7 +104,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               sx={{
                 color: "#0E172A",
                 fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4.2rem" },
-                fontWeight: 800,
+                fontWeight: 600,
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.1, md: 1.05 },
                 textTransform: "uppercase",
@@ -283,7 +283,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 variant="h2"
                 sx={{
                   color: "#0E172A",
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   letterSpacing: "-0.02em",
@@ -327,7 +327,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 variant="h2"
                 sx={{
                   color: "#0E172A",
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   letterSpacing: "-0.02em",
@@ -390,7 +390,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 variant="h2"
                 sx={{
                   color: "#0E172A",
-                  fontWeight: 800,
+                  fontWeight: 600,
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   letterSpacing: "-0.02em",
@@ -443,7 +443,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 <Typography
                   variant="h3"
                   sx={{
-                    fontWeight: 800,
+                    fontWeight: 600,
                     color: "#0E172A",
                     fontSize: { xs: "1.5rem", md: "1.85rem" },
                     letterSpacing: "-0.02em",
@@ -499,7 +499,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 <Typography
                   variant="h5"
                   sx={{
-                    fontWeight: 800,
+                    fontWeight: 600,
                     color: "#0E172A",
                     mb: 1.5,
                     fontSize: "1.2rem",
@@ -625,7 +625,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   variant="h5"
                   sx={{
                     color: "#0E172A",
-                    fontWeight: 800,
+                    fontWeight: 600,
                     fontSize: { xs: "1.15rem", md: "1.3rem" },
                     mb: 1,
                   }}
@@ -685,7 +685,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   variant="h5"
                   sx={{
                     color: "#0E172A",
-                    fontWeight: 800,
+                    fontWeight: 600,
                     fontSize: { xs: "1.15rem", md: "1.3rem" },
                     mb: 1,
                   }}
