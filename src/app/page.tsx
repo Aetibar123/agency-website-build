@@ -10,25 +10,27 @@ import SelectedWorkHomeSection from "../components/home/SelectedWorkHomeSection"
 import HomeCtaSection from "../components/home/HomeCtaSection";
 
 export const metadata: Metadata = {
-  title: "Aetibar | Digital Systems & Workflow Solutions for Modern Businesses",
+  title: "Aetibar | Web Development, Custom Software & AI Solutions in Udaipur",
   description:
-    "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
+    "Aetibar is a technology company based in Udaipur, India. We build custom websites, web applications, business software, and practical AI automation that solve real problems.",
   keywords: [
-    "Business workflow solutions",
-    "Custom business websites",
-    "Customer and lead systems",
-    "Internal operations tools",
-    "Practical AI automation",
-    "Digital problem solving",
+    "web development company in Udaipur",
+    "custom software development",
+    "website development company in India",
+    "web application development",
+    "custom business software",
+    "AI automation for business",
+    "mobile app development",
+    "SEO services Udaipur",
     "Aetibar Technologies",
   ],
   alternates: {
     canonical: "https://www.aetibar.in/",
   },
   openGraph: {
-    title: "Aetibar | Build a better way for your business to work.",
+    title: "Aetibar | Web Development, Custom Software & AI Solutions in Udaipur",
     description:
-      "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
+      "Aetibar is a technology company based in Udaipur, India. We build custom websites, web applications, business software, and practical AI automation that solve real problems.",
     url: "https://www.aetibar.in/",
     siteName: "Aetibar",
     type: "website",
@@ -37,15 +39,15 @@ export const metadata: Metadata = {
         url: "https://www.aetibar.in/logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "Aetibar",
+        alt: "Aetibar - Web Development & Custom Software",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aetibar | Build a better way for your business to work.",
+    title: "Aetibar | Web Development, Custom Software & AI Solutions in Udaipur",
     description:
-      "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
+      "Aetibar is a technology company based in Udaipur, India. We build custom websites, web applications, business software, and practical AI automation that solve real problems.",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };

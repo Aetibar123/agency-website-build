@@ -42,93 +42,93 @@ const stories: TransformationStory[] = [
     id: "leads",
     number: "01",
     category: "CUSTOMER INTAKE",
-    headline: "Every inquiry answered in 30 seconds. Never lost.",
+    headline: "Every inquiry captured and organized. Never overlooked.",
     icon: <ChatBubbleOutlineRoundedIcon sx={{ fontSize: 24 }} />,
-    quickShiftFrom: "4-Hour Delay",
-    quickShiftTo: "30s Instant Welcome",
+    quickShiftFrom: "Unread Inboxes",
+    quickShiftTo: "Centralized Intake",
 
     oldWayTitle: "The Frustration Today",
     oldWayStory:
-      "A potential customer reaches out on your website or sends a WhatsApp message. The notification goes to an employee's personal phone. If they are in a meeting, out to lunch, or on leave, that inquiry sits unread. By the time someone replies four hours later, the customer has already hired your competitor.",
-    oldWayPain: "35% of potential clients slip away simply because no one answered in time.",
+      "A potential customer reaches out on your website or sends a message. The notification lands in an individual inbox or personal phone. If that person is busy, in a meeting, or away, the inquiry sits unattended. By the time someone replies hours later, the prospect has often moved on to another provider.",
+    oldWayPain: "Valuable inquiries slip through the cracks when communication depends on individual inboxes.",
 
     newWayTitle: "How Your Business Runs With Aetibar",
     newWayStory:
-      "Every inquiry from your website, WhatsApp, and social channels flows directly into one central company hub. Within 30 seconds, the customer receives an immediate, friendly automated WhatsApp confirmation. At the exact same second, your available sales team gets a phone alert with the full client brief.",
-    newWayGain: "Zero lost inquiries. Under 30-second response. Total peace of mind.",
+      "Inquiries from your website and digital channels flow directly into a central company hub. The customer receives an immediate confirmation acknowledging their request, while your team gets an organized notification with complete project requirements ready for follow-up.",
+    newWayGain: "Organized inquiry intake, fast follow-up, and clear visibility across your team.",
 
     bottomTakeaway:
-      "The Difference: You capture 100% of incoming deals before your competitors even know they exist.",
-    ctaText: "See How We Handle Inquiries",
+      "The Difference: Inquiries are captured in one central place so your team can respond consistently and professionally.",
+    ctaText: "See How We Organize Inquiries",
   },
   {
     id: "quotes",
     number: "02",
     category: "SALES & ESTIMATION",
-    headline: "Accurate price quotes delivered in 2 minutes, not 3 days.",
+    headline: "Accurate project proposals prepared without spreadsheet chaos.",
     icon: <CalculateOutlinedIcon sx={{ fontSize: 24 }} />,
-    quickShiftFrom: "72-Hour Wait",
-    quickShiftTo: "2-Minute Signed Quote",
+    quickShiftFrom: "Manual Spreadsheets",
+    quickShiftTo: "Standardized Quoting",
 
     oldWayTitle: "The Frustration Today",
     oldWayStory:
-      "A buyer requests a quote. Your sales rep spends the next two days digging through outdated PDF catalogs, calculating material costs in Excel formulas, and wrestling with Word templates. While the customer waits, their buying excitement cools down and they look elsewhere.",
-    oldWayPain: "Days of delay and spreadsheet math errors that quietly eat into your profit margins.",
+      "A client requests a quote. Your team spends hours digging through older estimates, recalculating line items across spreadsheets, and manually formatting proposal documents. The delay slows down the sales cycle and risks pricing discrepancies.",
+    oldWayPain: "Slow turnaround times and formula errors that create inconsistencies in project pricing.",
 
     newWayTitle: "How Your Business Runs With Aetibar",
     newWayStory:
-      "Your sales team (or the client directly on your site) selects project options in an interactive quote builder. Profit margins and pricing calculate automatically in real time. In under two minutes, a polished, branded proposal arrives in the client's inbox with a digital sign-off button.",
-    newWayGain: "Turnaround drops from 3 days to 2 minutes with guaranteed, protected profit margins.",
+      "Your team selects project deliverables in a custom estimation tool with predefined pricing logic and margin rules. The system calculates totals consistently and stages a formatted proposal ready for review and digital delivery.",
+    newWayGain: "Faster quote preparation with consistent pricing rules and structured proposals.",
 
     bottomTakeaway:
-      "The Difference: You deliver professional proposals while the client is still on the phone.",
-    ctaText: "See How We Automate Quoting",
+      "The Difference: Consistent pricing rules eliminate guesswork and allow your team to deliver proposals promptly.",
+    ctaText: "See How We Streamline Quoting",
   },
   {
     id: "sync",
     number: "03",
     category: "DATA & OPERATIONS",
-    headline: "Zero manual copy-pasting. One entry updates everything.",
+    headline: "Reduce repetitive copy-pasting. Connect your tools into one workflow.",
     icon: <TableChartOutlinedIcon sx={{ fontSize: 24 }} />,
-    quickShiftFrom: "18+ Hours Typing",
-    quickShiftTo: "100% Automatic Sync",
+    quickShiftFrom: "Scattered Spreadsheets",
+    quickShiftTo: "Connected Systems",
 
     oldWayTitle: "The Frustration Today",
     oldWayStory:
-      "When an order comes in, your staff spend hours manually copying customer names, phone numbers, and job specs into fulfillment spreadsheets, then re-typing them into accounting software, then emailing the warehouse. It’s tedious work, and a single typo causes expensive delivery mistakes.",
-    oldWayPain: "Over 15 hours a week per employee wasted on boring, error-prone data entry.",
+      "When an order or project starts, team members spend time manually re-entering client names, requirements, and project specifications across multiple spreadsheets, project boards, and accounting software. Re-typing the same data across multiple tools is tedious and invites transcription mistakes.",
+    oldWayPain: "Valuable hours spent on manual data entry and fixing copy-paste errors across disconnected tools.",
 
     newWayTitle: "How Your Business Runs With Aetibar",
     newWayStory:
-      "When a customer submits an order or signs a contract, the information flows everywhere automatically. Your project boards, accounting software, and inventory update in real time. Nobody types anything twice, and customer records stay 100% accurate across the entire company.",
-    newWayGain: "Zero manual data entry. Total cross-team accuracy. Happy, productive staff.",
+      "When a client submits an order or approves a proposal, relevant details sync directly across your operational tools. Project boards, databases, and accounting workflows receive the data automatically without manual re-entry.",
+    newWayGain: "Significantly reduced manual data entry and consistent records across teams.",
 
     bottomTakeaway:
-      "The Difference: Your team spends their days growing your business instead of copy-pasting numbers.",
-    ctaText: "See How We Connect Tools",
+      "The Difference: Your team spends time on high-value client work instead of entering the same data into multiple tools.",
+    ctaText: "See How We Connect Business Tools",
   },
   {
     id: "field",
     number: "04",
-    category: "FIELD OPERATIONS",
-    headline: "Your field technicians and office always in perfect sync.",
+    category: "OPERATIONS & BILLING",
+    headline: "Connect your frontline team, project tracking, and billing.",
     icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 24 }} />,
-    quickShiftFrom: "7-Day Invoice Lag",
-    quickShiftTo: "Same-Day Invoicing",
+    quickShiftFrom: "Delayed Status Updates",
+    quickShiftTo: "Prompt Invoicing",
 
     oldWayTitle: "The Frustration Today",
     oldWayStory:
-      "Your technicians and mobile workers call the office ten times a day asking for gate codes, client notes, and addresses. Job sign-offs are scribbled on paper clipboards that sit in work vans for days. Accounting can't send an invoice until the paper receipt is physically brought to head office next week.",
-    oldWayPain: "Slow billing delays your cash flow, and constant phone calls distract your office team.",
+      "Frontline teams, field specialists, or project managers complete deliverables, but project status remains trapped in chat messages or handwritten notes. The office has to chase updates, and billing is delayed until paperwork is manually verified and entered into accounting.",
+    oldWayPain: "Billing lag slows cash flow while office staff spend time chasing project completion status.",
 
     newWayTitle: "How Your Business Runs With Aetibar",
     newWayStory:
-      "Field workers open a simple, lightweight mobile app on their phone. They see their daily jobs, access client gate codes, snap before-and-after photos, and collect customer signatures directly on glass. As soon as the job is marked complete, an invoice is automatically staged in your accounting system that same day.",
-    newWayGain: "Same-day billing. Zero phone tag. Instant digital proof of completed work.",
+      "Team members update project milestones directly through a mobile-friendly web portal or app. Completion proofs, client sign-offs, and project notes are logged instantly. Once a milestone is verified, the accounting system prepares an invoice draft without delay.",
+    newWayGain: "Timely billing, transparent milestone tracking, and clear completion records.",
 
     bottomTakeaway:
-      "The Difference: Invoices go out the day work finishes, accelerating your cash flow.",
-    ctaText: "See How We Equip Field Teams",
+      "The Difference: Invoices can be generated promptly upon project completion, keeping cash flow steady.",
+    ctaText: "See How We Connect Operations",
   },
 ];
 
@@ -204,16 +204,26 @@ export default function FrictionScenariosSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.5rem" },
+                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                letterSpacing: "-0.03em",
-                lineHeight: 1.15,
+                lineHeight: { xs: 1.15, md: 1.08 },
+                letterSpacing: "-0.035em",
                 textAlign: "left",
                 mb: 2.5,
               }}
             >
-              Four ways we make your business run like clockwork.
+              Four ways we make your business{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                run like clockwork.
+              </Box>
             </Typography>
             <Typography
               sx={{
@@ -226,8 +236,8 @@ export default function FrictionScenariosSection() {
                 textAlign: "left",
               }}
             >
-              You don&apos;t just need a pretty website. You need your customer front door and your daily
-              operations to work together seamlessly. Here is what happens when your business runs on Aetibar.
+              You don&apos;t just need a brochure website. You need your customer touchpoints and your daily
+              operations to work together smoothly. Here is what happens when your business runs on connected systems.
             </Typography>
           </motion.div>
         </Box>

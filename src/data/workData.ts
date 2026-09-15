@@ -1,4 +1,11 @@
-export type ProjectType = "Client Project" | "Concept Project" | "Product Demonstration";
+export type ProjectType =
+  | "Production Build"
+  | "Client Project"
+  | "Internal Build"
+  | "Product Exploration"
+  | "Prototype"
+  | "Technical Architecture"
+  | "Design System";
 
 export type SolutionArea =
   | "Digital Presence"
@@ -30,299 +37,299 @@ export const workProjects: WorkProject[] = [
   {
     slug: "nexus-ecommerce",
     title: "Headless Commerce & Multi-Channel Inventory Sync",
-    clientType: "Commercial Retailer",
-    projectType: "Client Project",
+    clientType: "eCommerce & Catalog Architecture",
+    projectType: "Production Build",
     solutionArea: "Digital Presence",
     solutionAreaSlug: "business-websites",
     image: "/images/portfolio/ecommerce.png",
     summary:
-      "Engineered a headless digital storefront with direct inventory API reconciliation, replacing slow page loads with edge rendering and eliminating manual catalog updates.",
-    timeline: "10 Weeks",
-    primaryMetric: "Sub-second",
+      "A custom headless eCommerce platform that connects online storefronts with warehouse inventory, delivering fast page loads and keeping catalog stock synchronized automatically.",
+    timeline: "Completed Build",
+    primaryMetric: "Fast SSR",
     primaryMetricLabel: "Edge Page Delivery",
     context:
-      "A fast-growing retail business managing over 4,000 product SKUs was struggling with a bloated legacy web shop that failed during seasonal traffic surges and required manual catalog re-entry.",
+      "A retail business managing multi-category product catalogs needed a responsive web store that would load quickly across mobile devices and synchronize inventory directly with backend warehouse records.",
     challenge: [
-      "The client's previous monolithic website suffered from 4+ second load times on mobile devices, leading to high bounce rates from potential shoppers.",
-      "Store managers spent 15+ hours each week manually re-entering inventory adjustments and price changes across three disconnected spreadsheets.",
-      "The platform lacked flexibility to introduce custom promotional funnels or integrate directly with modern fulfillment and payment APIs."
+      "Monolithic legacy storefront suffered from slow mobile response times, impacting browsing experience and product discovery.",
+      "Manual catalog and stock updates across disconnected spreadsheets created duplicate data entry and inventory discrepancies.",
+      "Rigid template structure limited custom promotional funnels and direct API integration with third-party payment and delivery services.",
     ],
     approach: [
-      "Separated the public-facing storefront from the backend database using Next.js with Server-Side Rendering (SSR) for instant page presentation.",
-      "Mapped out the exact inventory workflow between warehouse receiving, current stock levels, and online availability to design a single automated API bridge.",
-      "Implemented structured schema, semantic navigation, and an intuitive checkout flow built around customer purchase intent rather than generic templates."
+      "Separated public storefront presentation from backend data layers using Next.js for fast server-side rendering and search visibility.",
+      "Engineered automated API synchronization connecting warehouse stock levels directly to storefront availability.",
+      "Structured clean category navigation, instant product search, and streamlined multi-step checkout.",
     ],
     solution: [
-      "Delivered a custom headless frontend optimized for speed, Core Web Vitals, and mobile purchasing behavior.",
-      "Created an automated webhook sync that updates product availability instantly whenever changes are made in the central warehouse system.",
-      "Integrated a unified administration panel where marketing staff can publish seasonal campaigns and edit product bundles without touching code."
+      "Lightweight, responsive headless frontend optimized for speed and mobile purchasing behavior.",
+      "Automated webhook synchronization updating stock status when changes occur in backend inventory.",
+      "Intuitive management dashboard for publishing seasonal promotions and updating product details without code.",
     ],
     technology: ["Next.js", "Node.js", "GraphQL", "PostgreSQL", "Redis", "TypeScript"],
     outcome: [
-      "Achieved sub-second initial page rendering across mobile and desktop devices.",
-      "Completely eliminated duplicate manual inventory entries between warehouse and website.",
-      "Provided marketing and catalog teams with an independent workflow requiring zero developer intervention for routine updates."
-    ]
+      "Responsive page presentation and fast initial load across mobile and desktop devices.",
+      "Automated catalog reconciliation, removing the need for manual stock re-entry.",
+      "Self-serve content workflows enabling catalog updates without developer assistance.",
+    ],
   },
   {
     slug: "logix-driver-app",
-    title: "Fleet Dispatch & Real-Time Driver Operations System",
-    clientType: "Regional Logistics Carrier",
-    projectType: "Client Project",
+    title: "Fleet Operations & Driver Dispatch System",
+    clientType: "Logistics Operations Platform",
+    projectType: "Product Exploration",
     solutionArea: "Internal Business Tools",
     solutionAreaSlug: "internal-business-tools",
     image: "/images/portfolio/logix.png",
     summary:
-      "Replaced phone check-ins, WhatsApp dispatch threads, and paper delivery manifests with an offline-capable mobile application and central operations console.",
-    timeline: "8 Weeks",
-    primaryMetric: "100% Offline",
-    primaryMetricLabel: "Route Checkpoint Sync",
+      "A mobile application and centralized operations dashboard designed for dispatchers and route drivers, enabling offline milestone tracking, digital signatures, and automated status updates.",
+    timeline: "Functional Prototype",
+    primaryMetric: "Offline-First",
+    primaryMetricLabel: "Local Queue Sync",
     context:
-      "A regional freight carrier coordinating 45+ drivers and dispatch managers across multiple interstate distribution hubs required a reliable operational system.",
+      "Coordinating drivers and dispatch managers across transit hubs often relies on phone calls and paper manifests that cannot be tracked or verified in transit.",
     challenge: [
-      "Dispatchers spent 3 to 4 hours daily making phone calls to locate drivers, confirm deliveries, and manually update status spreadsheets.",
-      "Drivers frequently operated in remote transit zones with spotty cellular coverage where cloud-only tools failed to save signatures and delivery notes.",
-      "Disputed deliveries took days to resolve because physical paper consignment notes were only returned to head office at the end of the week."
+      "Dispatchers spend hours daily calling drivers to confirm delivery statuses and manually updating central spreadsheets.",
+      "Transit zones with intermittent cellular signal cause cloud-only apps to lose delivery notes, timestamps, and customer signatures.",
+      "Physical paper delivery slips require manual return to office before billing records can be finalized.",
     ],
     approach: [
-      "Interviewed dispatch coordinators and spent time observing route operations to identify the exact friction points in daily handoffs.",
-      "Designed an offline-first architecture that stores route waypoints, client signatures, and time-stamped delivery photos locally and syncs automatically when signal returns.",
-      "Built a unified dispatcher console giving head office real-time route visibility without requiring a single check-in phone call."
+      "Mapped driver workflows from dispatch assignment and route waypoints to customer signature capture and return verification.",
+      "Architected an offline-first mobile app using local SQLite storage that queues actions locally and syncs when connectivity restores.",
+      "Built a centralized web dashboard giving operations teams clear visibility into route milestones and exception alerts.",
     ],
     solution: [
-      "Developed a driver mobile application with high-contrast UI, offline queueing, digital signature capture, and photo verification.",
-      "Created a web-based dispatch control tower showing route milestones, exception alerts, and instant document search.",
-      "Implemented automated client notification webhooks that send delivery confirmation with digital receipts immediately upon completion."
+      "High-contrast driver mobile interface with offline queueing, photo verification, and digital signature capture.",
+      "Web-based dispatch console providing real-time job status overview and searchable delivery archives.",
+      "Automated customer notifications dispatched immediately when milestones are marked complete.",
     ],
     technology: ["React Native", "Node.js", "SQLite (Offline)", "PostgreSQL", "Tailwind CSS"],
     outcome: [
-      "Eliminated daily dispatch check-in phone calls across all 45 routes.",
-      "Provided instant access to signed delivery receipts within seconds of job completion.",
-      "Prevented data loss in zero-connectivity areas through automated local-to-cloud queue synchronization."
-    ]
+      "Streamlined dispatch coordination without requiring routine check-in calls.",
+      "Reliable operation in low-connectivity zones with automated background data sync.",
+      "Instant digital records and photo proofs accessible immediately upon job completion.",
+    ],
   },
   {
     slug: "service-lead-pipeline",
-    title: "Multi-Channel Lead Intake & Instant Quote Builder",
-    clientType: "Commercial Equipment Provider",
-    projectType: "Client Project",
+    title: "Lead Intake & Dynamic Proposal Generator",
+    clientType: "B2B Sales & Quoting Tool",
+    projectType: "Production Build",
     solutionArea: "Customer & Lead Systems",
     solutionAreaSlug: "customer-lead-systems",
     image: "/images/portfolio/b2b.png",
     summary:
-      "Unified scattered email, form, and messaging leads into a structured intake pipeline paired with an internal estimation tool that cuts proposal time from days to minutes.",
-    timeline: "6 Weeks",
-    primaryMetric: "Minutes vs Days",
-    primaryMetricLabel: "Turnaround on Quotes",
+      "A centralized inquiry management system and margin-aware quotation tool that routes prospect inquiries from forms and messaging into a single dashboard, enabling fast proposal creation.",
+    timeline: "Completed Build",
+    primaryMetric: "Structured",
+    primaryMetricLabel: "Inquiry & Quote Pipeline",
     context:
-      "A B2B industrial equipment and engineering distributor received dozens of custom inquiries weekly across WhatsApp, website forms, and direct salesperson emails.",
+      "Businesses receiving custom specification inquiries across website forms, emails, and WhatsApp often experience delays in responding and building standardized price quotes.",
     challenge: [
-      "Prospective leads sat unanswered for up to 48 hours because sales reps had no shared queue and often assumed someone else had responded.",
-      "Calculating equipment specifications and margin pricing required pulling numbers from four separate supplier PDF price sheets.",
-      "Management had no visibility into total open quote values, stalled negotiations, or conversion bottlenecks."
+      "Inbound leads scattered across separate email boxes and messaging chats lead to slow response times and forgotten inquiries.",
+      "Quoting complex service tiers or equipment configurations requires pulling formulas from disconnected spreadsheets, risking margin errors.",
+      "Management lacks centralized visibility into pending proposals, follow-up stages, and conversion bottlenecks.",
     ],
     approach: [
-      "Mapped the entire buyer journey from initial specification inquiry to final contract sign-off.",
-      "Built a unified lead intake webhook connecting website inquiry forms and WhatsApp API into one centralized triage inbox.",
-      "Engineered an interactive quote builder that stores supplier pricing tables and generates professional PDF proposals with one click."
+      "Mapped prospect inquiry touchpoints into a unified triage dashboard with automated role assignment rules.",
+      "Engineered an internal proposal builder that stores pricing tiers, calculates volume adjustments, and outputs branded PDFs.",
+      "Added automated email confirmations for clients and scheduled follow-up notifications for sales staff.",
     ],
     solution: [
-      "Designed a central lead intake dashboard with automated assignment rules based on equipment category and territory.",
-      "Built an internal margin-aware quotation tool that calculates component costs, applies volume discounts, and generates branded PDF proposals.",
-      "Added automated reminder sequences for prospective clients whose proposals have been pending for more than 72 hours."
+      "Centralized lead management inbox capturing inquiries from web forms and direct communication channels.",
+      "Internal pricing calculator that ensures accurate margin application before proposal generation.",
+      "One-click branded PDF quote generator with digital approval links and automated status tracking.",
     ],
     technology: ["Next.js", "Express.js", "PostgreSQL", "MUI", "PDFKit", "SendGrid API"],
     outcome: [
-      "Reduced average custom quote generation time from 3 hours to under 10 minutes.",
-      "Consolidated all incoming prospect inquiries into a single, accountable queue with zero lost inquiries.",
-      "Gave leadership real-time visibility into the complete pipeline of open proposals and follow-up statuses."
-    ]
+      "Consolidated all incoming prospect leads into a single accountable pipeline.",
+      "Significantly accelerated quote generation turnaround with standardized pricing rules.",
+      "Clear visibility for leadership across open estimates, stages, and customer follow-ups.",
+    ],
   },
   {
     slug: "ai-customer-support",
-    title: "Intelligent Inquiry Triage & Structured Routing Engine",
-    clientType: "B2B Services Demonstration",
-    projectType: "Product Demonstration",
+    title: "Inquiry Triage & Assisted Routing Engine",
+    clientType: "AI Operations Prototype",
+    projectType: "Prototype",
     solutionArea: "AI & Automation",
     solutionAreaSlug: "ai-automation",
     image: "/images/portfolio/aiCostomer.png",
     summary:
-      "A practical natural language processing engine that reads unstructured support emails, extracts account metadata, categorizes urgency, and prepares drafts for human agent sign-off.",
-    timeline: "Concept Prototype",
-    primaryMetric: "Human-in-Loop",
-    primaryMetricLabel: "Verified Routing",
+      "An AI-assisted workflow engine that parses incoming customer support emails, extracts account details and urgency, and drafts recommended responses for human agent review.",
+    timeline: "Working Prototype",
+    primaryMetric: "Assisted",
+    primaryMetricLabel: "Human-in-the-Loop AI",
     context:
-      "A high-volume technical support demonstration showing how AI can eliminate administrative triage without taking dangerous autonomous actions.",
+      "High-volume support teams spend considerable time reading unstructured emails to categorize tickets, while completely autonomous bots risk hallucinating incorrect customer information.",
     challenge: [
-      "Support organizations spend hours each morning manually reading rambling customer emails just to tag them as billing, technical bug, or account inquiry.",
-      "Emergency production issues often sit in the general queue for hours behind trivial questions.",
-      "Fully autonomous AI bots often hallucinate incorrect answers and frustrate high-value business clients."
+      "Support agents spend hours manually reading incoming messages simply to route them to the right department.",
+      "High-priority bugs or billing emergencies get delayed in general queues behind routine questions.",
+      "Fully autonomous AI systems carry unacceptable risks of inaccurate answers or inappropriate commitments to customers.",
     ],
     approach: [
-      "Employed an intentional 'AI as Assistant, Human as Decider' philosophy instead of risky fully autonomous replies.",
-      "Used language models strictly for classification, key data extraction (order IDs, error codes), and sentiment analysis against strict schema.",
-      "Engineered confidence scoring where only high-certainty classifications are suggested, and all outgoing drafts require one-click agent approval."
+      "Adopted a strict 'AI as Assistant, Human as Decider' framework to ensure reliable, verified interactions.",
+      "Used language models strictly for classification, metadata extraction (account IDs, order numbers), and drafting against verified knowledge bases.",
+      "Built an agent dashboard where suggested replies are displayed alongside source documentation for rapid verification.",
     ],
     solution: [
-      "Built an inbound email processor that parses raw message bodies into clean JSON with extracted intent, urgency score, and customer account details.",
-      "Integrated a priority escalation queue that alerts on-call engineers to mission-critical system failures immediately.",
-      "Designed an agent interface that presents the incoming message alongside an AI-suggested diagnostic answer pulled directly from company documentation."
+      "Inbound message parser extracting structured JSON metadata, intent categorization, and urgency scoring.",
+      "Priority routing engine alerting specialized team members to critical issues immediately.",
+      "Agent review interface providing one-click approval or editing of context-aware draft responses.",
     ],
     technology: ["Python", "FastAPI", "OpenAI API", "Vector Embeddings", "Next.js", "Tailwind CSS"],
     outcome: [
-      "Standardized 100% of inbound inquiry tagging into structured, searchable database fields.",
-      "Eliminated manual reading time needed for initial ticket categorization and priority ranking.",
-      "Maintained zero false autonomous responses by keeping human specialists in the final approval loop."
-    ]
+      "Structured categorization of incoming requests without manual sorting overhead.",
+      "Faster response times through context-rich drafts prepared for agent sign-off.",
+      "Zero risk of unvetted AI responses by keeping qualified human team members in control.",
+    ],
   },
   {
     slug: "internal-ops-portal",
-    title: "Field Contractor Scheduling & Dispatch Portal",
-    clientType: "Commercial Facilities Management",
-    projectType: "Client Project",
+    title: "Field Service Operations & Scheduling Portal",
+    clientType: "Operations & Scheduling System",
+    projectType: "Internal Build",
     solutionArea: "Internal Business Tools",
     solutionAreaSlug: "internal-business-tools",
     image: "/images/portfolio/inventry.png",
     summary:
-      "A custom internal web system for scheduling 30+ service technicians, logging work completion with photos, and automating weekly customer invoice preparation.",
-    timeline: "7 Weeks",
-    primaryMetric: "Same-Day",
-    primaryMetricLabel: "Work Order Billing",
+      "A web portal for field contractor dispatch, on-site job completion logging with photo attachments, and automated invoice staging based on verified milestones.",
+    timeline: "Internal Build",
+    primaryMetric: "Connected",
+    primaryMetricLabel: "Dispatch & Milestone Billing",
     context:
-      "A commercial maintenance and cleaning contractor managing 30 technicians across 80+ office properties was reliant on printed binders and desktop spreadsheets.",
+      "Service and facilities businesses managing teams across multiple client locations often struggle with paper work orders, scheduling conflicts, and delayed billing reconciliations.",
     challenge: [
-      "Scheduling recurring weekly and monthly facility maintenance across dozens of teams was error-prone and caused double-bookings.",
-      "Technicians had to visit the head office every morning to collect paper work orders and return at night to hand in completed slips.",
-      "Invoices were delayed by 2 to 3 weeks waiting for office staff to decipher handwritten technician logs."
+      "Coordinating recurring maintenance schedules across dispersed service teams via phone and paper slips leads to scheduling conflicts.",
+      "Lack of real-time job completion proof causes delayed approvals and client disputes over service delivery.",
+      "Invoicing is delayed for weeks while office staff gather and reconcile paper timecards and receipts.",
     ],
     approach: [
-      "Mapped the operational steps between contract agreement, calendar dispatch, on-site completion, and monthly invoicing.",
-      "Designed a responsive web portal tailored for two distinct roles: Office Dispatcher (desktop view) and Field Technician (mobile view).",
-      "Created an automated invoice staging system that compiles verified time logs and completed work photos directly into accounting entries."
+      "Unified operational stages between customer agreements, team scheduling, on-site verification, and invoice generation.",
+      "Built responsive desktop and mobile web interfaces tailored specifically for dispatchers and field staff.",
+      "Connected verified completion events directly to draft invoice creation in backend accounting.",
     ],
     solution: [
-      "Built a drag-and-drop dispatch calendar that prevents double-booking and assigns jobs based on location proximity.",
-      "Developed a mobile-friendly technician interface allowing workers to check in, view site access codes, and upload completion photos.",
-      "Implemented a billing dashboard that aggregates verified work orders into client-ready itemized invoices."
+      "Visual scheduling calendar with conflict prevention, team assignment, and location tracking.",
+      "Mobile field interface for technicians to view job briefs, record timestamps, and upload completion photos.",
+      "Automated invoice staging aggregating verified work orders into itemized, client-ready billing entries.",
     ],
     technology: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "AWS S3"],
     outcome: [
-      "Eliminated daily morning visits to head office, saving 45 minutes per technician daily.",
-      "Reduced client invoicing cycles from 18 days to same-day automated reconciliation.",
-      "Gave clients transparent, photo-verified proof of completed maintenance visits."
-    ]
+      "Centralized scheduling and dispatch with clear daily assignment visibility.",
+      "Verifiable digital job completion proof with photo attachments and timestamps.",
+      "Faster invoicing cycles through direct reconciliation of verified work orders.",
+    ],
   },
   {
     slug: "dtc-brand-scaling",
-    title: "Post-Purchase Lifecycle & Customer Retention System",
-    clientType: "Wellness & Personal Care Brand",
-    projectType: "Client Project",
+    title: "Customer Retention & Lifecycle Automation Workflow",
+    clientType: "Customer Lifecycle Automation",
+    projectType: "Product Exploration",
     solutionArea: "Customer & Lead Systems",
     solutionAreaSlug: "customer-lead-systems",
     image: "/images/portfolio/dtc.png",
     summary:
-      "Replaced generic batch-and-blast marketing with event-triggered customer journeys based on product usage cycles, replenishment needs, and customer VIP tiers.",
-    timeline: "6 Weeks",
-    primaryMetric: "Segmented",
-    primaryMetricLabel: "Event-Triggered Journeys",
+      "An automated lifecycle engagement system that replaces generic email blasts with event-triggered customer journeys based on product usage stages, replenishment cycles, and account milestones.",
+    timeline: "Workflow Exploration",
+    primaryMetric: "Event-Driven",
+    primaryMetricLabel: "Automated Customer Journeys",
     context:
-      "A direct-to-consumer brand was acquiring hundreds of buyers monthly through paid media but experiencing high single-purchase churn.",
+      "Growing digital commerce brands often acquire customers effectively but experience high churn when post-purchase communication relies on impersonal, one-size-fits-all broadcasts.",
     challenge: [
-      "The client relied exclusively on weekly mass discount emails, eroding brand equity and training customers never to buy at full price.",
-      "Customers received generic newsletters instead of helpful usage guidance tailored to the specific products they had purchased.",
-      "Replenishment timing was ignored, missing the crucial window when customers were running low on consumable items."
+      "Relying on generic mass discount emails trains customers to wait for discounts and erodes product value.",
+      "Customers miss key usage guidelines and onboarding tips, leading to poor initial experience and lower retention.",
+      "Lack of automated replenishment reminders results in lost repeat orders when consumable products run out.",
     ],
     approach: [
-      "Analyzed historical purchase data to identify average replenishment cycles across each product category.",
-      "Constructed targeted lifecycle sequences: unboxing education, 14-day check-in, replenishment trigger, and VIP loyalty access.",
-      "Integrated e-commerce purchase events with lifecycle automation software to deliver timely, hyper-relevant communications."
+      "Analyzed typical product usage timelines to structure post-purchase touchpoints around customer value rather than aggressive sales pushes.",
+      "Built event-driven triggers: onboarding education, check-in milestones, replenishment reminders, and loyalty rewards.",
+      "Integrated eCommerce transaction webhooks with lifecycle messaging to ensure contextually relevant timing.",
     ],
     solution: [
-      "Built automated post-purchase flows that guide customers on how to use their products effectively for best results.",
-      "Implemented smart replenishment triggers sent precisely when a customer's product is estimated to be 80% consumed.",
-      "Created a customer dashboard where subscribers can easily pause, swap, or adjust delivery intervals without contacting support."
+      "Educational post-purchase email and messaging flows guiding customers through optimal product usage.",
+      "Timely replenishment triggers timed to anticipated product consumption cycles.",
+      "Self-serve customer account portal allowing easy subscription pauses, delivery swaps, and frequency updates.",
     ],
     technology: ["Klaviyo", "Shopify API", "Webhooks", "Customer Data Platform", "Figma"],
     outcome: [
-      "Replaced arbitrary discount broadcasts with value-driven educational and replenishment touchpoints.",
-      "Established predictable repeat order cycles without needing ongoing manual campaign creation.",
-      "Significantly reduced support inquiries related to subscription management and order modifications."
-    ]
+      "Transitioned from arbitrary promotional blasts to helpful, timely customer touchpoints.",
+      "Established predictable repeat order engagement without daily manual marketing intervention.",
+      "Reduced routine support questions through self-service subscription and order management.",
+    ],
   },
   {
     slug: "enterprise-seo-migration",
-    title: "Technical Content Architecture & SEO Infrastructure",
-    clientType: "Digital Publishing Network",
-    projectType: "Client Project",
+    title: "Content Architecture & URL Migration Engine",
+    clientType: "Content Architecture & Migration System",
+    projectType: "Technical Architecture",
     solutionArea: "Digital Presence",
     solutionAreaSlug: "business-websites",
     image: "/images/portfolio/EnterpriseSeo.png",
     summary:
-      "Designed and executed a structured technical architecture and automated URL redirection framework for a 400,000+ page content platform migration.",
-    timeline: "12 Weeks",
-    primaryMetric: "Zero",
-    primaryMetricLabel: "Broken Indexation Signals",
+      "A structured technical architecture and edge redirection framework designed to preserve search index authority, URL relationships, and metadata integrity during complex platform migrations.",
+    timeline: "Architectural Framework",
+    primaryMetric: "Structured",
+    primaryMetricLabel: "Redirect & Index Architecture",
     context:
-      "A long-established digital publishing group needed to retire a decade-old legacy CMS without losing accumulated search engine authority across decades of content.",
+      "Organizations moving legacy websites or large content archives to modern web frameworks risk losing search rankings, canonical links, and referral traffic if URL structures are broken.",
     challenge: [
-      "Hundreds of thousands of URLs had historical backlinks and established search visibility that had to be preserved during the platform shift.",
-      "The legacy database contained inconsistent URL patterns, legacy taxonomy tags, and broken internal links accumulated over 12 years.",
-      "Any indexing disruption would directly damage reader traffic and daily programmatic advertising revenue."
+      "Large web platforms have accumulated thousands of legacy URLs, backlinks, and search rankings that must be preserved.",
+      "Inconsistent legacy URL structures, missing canonicals, and broken internal links degrade crawler efficiency.",
+      "Slow server response times on legacy CMS backends negatively impact Core Web Vitals and user retention.",
     ],
     approach: [
-      "Extracted and audited every indexed URL to build a comprehensive redirection and canonicalization framework.",
-      "Architected a Next.js Server-Side Rendered (SSR) structure providing search engine crawlers with instant, lightweight, semantic HTML.",
-      "Implemented strict JSON-LD Article and Breadcrumb schemas to clearly communicate topical hierarchy to search engines."
+      "Audited legacy URL structures to map comprehensive 1:1 redirection rules and semantic taxonomy.",
+      "Implemented Next.js server-side rendering to deliver clean, lightweight HTML and structured schema directly to search crawlers.",
+      "Configured edge-level redirection middleware to resolve legacy URLs instantly without server overhead.",
     ],
     solution: [
-      "Built an edge-level 301 redirection engine that maps legacy URL structures to new semantic paths in under 5 milliseconds.",
-      "Engineered automated Core Web Vitals optimizations, eliminating crawl bottlenecks and JavaScript bloat.",
-      "Set up automated crawl telemetry to monitor search engine crawler responses and identify status code anomalies immediately."
+      "Edge redirection engine handling URL translation and preserving established backlink equity.",
+      "Structured JSON-LD schema implementation providing search engines with clear topical hierarchy.",
+      "Telemetry and status monitoring to verify indexing health and catch broken paths proactively.",
     ],
-    technology: ["Next.js SSR", "Edge Middleware", "TypeScript", "Schema.org", "Log Stream Analysis"],
+    technology: ["Next.js SSR", "Edge Middleware", "TypeScript", "Schema.org", "Log Analysis"],
     outcome: [
-      "Completed migration of over 400,000 URLs with zero broken canonical pathways.",
-      "Maintained stable search engine crawl frequency throughout the transition.",
-      "Cut average server response time (TTFB) for article pages by more than 65%."
-    ]
+      "Clean migration pathway with preserved link equity and unbroken canonical URLs.",
+      "Improved page rendering speed through lightweight server-rendered HTML.",
+      "Organized taxonomy and semantic schema for long-term organic search discovery.",
+    ],
   },
   {
     slug: "rebranding-fintech-identity",
-    title: "Design System & Product Interface Architecture",
-    clientType: "Financial Software Concept",
-    projectType: "Concept Project",
+    title: "Design System & Component Library Architecture",
+    clientType: "Design System & UI Architecture",
+    projectType: "Design System",
     solutionArea: "Digital Presence",
     solutionAreaSlug: "business-websites",
     image: "/images/portfolio/rebrand.png",
     summary:
-      "An exploratory concept project creating an atomic design token system and interface guidelines for a multi-tenant business finance platform.",
-    timeline: "4 Weeks",
-    primaryMetric: "60+ Tokens",
-    primaryMetricLabel: "Design System Library",
+      "A comprehensive UI design system and reusable component library created to standardize product interfaces, speed up frontend development, and ensure accessible design across business applications.",
+    timeline: "Component System",
+    primaryMetric: "Atomic Tokens",
+    primaryMetricLabel: "Component System Library",
     context:
-      "A product demonstration modeling how design systems streamline multi-screen engineering workflows and eliminate visual inconsistencies.",
+      "As web products expand, inconsistent colors, mismatched buttons, and unstandardized form components slow down development velocity and confuse users.",
     challenge: [
-      "Rapidly scaling products often end up with 10 different shades of blue, inconsistent form validation states, and fragmented button behaviors.",
-      "Engineers waste valuable sprint hours reinventing common table, modal, and filter components rather than building core product features.",
-      "Inaccessible contrast ratios and unstandardized typography impair usability for operational power users."
+      "Multiple developers building screens independently create inconsistent styling, varied form validation states, and fragmented UI.",
+      "Engineers waste development sprint hours rebuilding common tables, dialogs, and filters rather than shipping core features.",
+      "Inaccessible color contrast and haphazard spacing create usability problems for business users.",
     ],
     approach: [
       "Established atomic design foundations: typography scale, semantic color palette, spacing grid, and elevation tokens.",
-      "Built high-utility components modeled around real financial workflows (data tables with sorting, multi-step transaction approval modals).",
-      "Tested all visual components against WCAG AA accessibility standards."
+      "Engineered reusable, high-utility components modeled around complex data workflows (sortable data tables, multi-step modals).",
+      "Validated all UI components against WCAG AA contrast and keyboard navigation accessibility standards.",
     ],
     solution: [
-      "Created a complete Figma component library with responsive auto-layout, interactive states, and strict design token naming.",
-      "Produced comprehensive documentation detailing component usage guidelines, keyboard accessibility, and state transitions.",
-      "Constructed reference prototype screens for both desktop admin dashboards and mobile employee expense submissions."
+      "Figma component system with auto-layout, interactive variants, and strict token naming conventions.",
+      "Detailed developer documentation detailing component props, keyboard behaviors, and interactive states.",
+      "Reference interface templates for operational dashboards, data visualization, and input forms.",
     ],
-    technology: ["Figma", "Design Tokens", "WCAG 2.1 AA", "Atomic Design Principles", "React / MUI Architecture"],
+    technology: ["Figma", "Design Tokens", "WCAG 2.1 AA", "Atomic Design", "React / MUI"],
     outcome: [
-      "Standardized 60+ modular UI components with consistent interaction patterns.",
-      "Created an engineer-ready specification document eliminating design ambiguity.",
-      "Verified full compliance with WCAG accessibility guidelines across all color and type styles."
-    ]
-  }
+      "Standardized modular UI component library with uniform interaction patterns.",
+      "Accelerated frontend feature delivery through pre-tested, reusable interface blocks.",
+      "Verified compliance with accessibility standards across typography, inputs, and color tokens.",
+    ],
+  },
 ];
 
 export const getAllWorkProjects = () => workProjects;

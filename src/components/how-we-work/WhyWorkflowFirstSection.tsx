@@ -26,44 +26,44 @@ const disciplineCards: DisciplineCard[] = [
   {
     number: "01",
     category: "PROJECT VISIBILITY",
-    title: "No 6-Month 'Dark Periods'",
+    title: "Visible Progress Throughout Development",
     icon: <VisibilityOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Software Trap",
+    riskTitle: "The Common Challenge",
     riskDescription:
-      "Most agencies collect requirements, disappear for 4 to 6 months into a black box, and only reveal the system on launch day — when fixes are painfully expensive and deadlines have blown up.",
-    solutionBadge: "OUR WORKFLOW DISCIPLINE",
-    solutionTitle: "Clickable Working Previews Every 14 Days",
+      "Requirements are collected once, followed by months of silence without previews. When the system is finally revealed, misunderstandings are expensive and stressful to fix.",
+    solutionBadge: "OUR APPROACH",
+    solutionTitle: "Regular Working Previews",
     solutionDescription:
-      "Starting on Day 14, you receive private, live staging links. Your team tests actual working screens with real company data every two weeks so there are zero surprises on launch day.",
-    keyTakeaway: "You see, test, and approve working software every two weeks.",
+      "You receive private, working preview links throughout development. Your team can test actual screens, try workflows with representative data, and provide direct feedback as features are built.",
+    keyTakeaway: "Review working features early and guide development as it happens.",
   },
   {
     number: "02",
     category: "TRANSITION SAFETY",
-    title: "No Lost Data or Launch Chaos",
+    title: "Careful Staged Transition",
     icon: <ShieldOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Software Trap",
+    riskTitle: "The Common Challenge",
     riskDescription:
-      "Attempting an overnight 'big-bang' switch from old spreadsheets to new software. Inevitable data mismatches, dropped customer orders, and employee panic on Monday morning.",
-    solutionBadge: "OUR WORKFLOW DISCIPLINE",
-    solutionTitle: "Dual-Run Parallel Safety Transition",
+      "Rushing into an abrupt overnight cutover can cause missing records, disrupted customer inquiries, and employee confusion on launch day.",
+    solutionBadge: "OUR APPROACH",
+    solutionTitle: "Planned Migration & Thorough Testing",
     solutionDescription:
-      "Your old spreadsheets and new system run in tandem for at least 7 days with automated sync checks. We only complete final cutover once 100% of historical records are verified.",
-    keyTakeaway: "Zero business downtime, zero lost leads, and zero Monday panic.",
+      "We test important workflows, validate historical data, and plan the rollout in stages so your everyday business operations continue smoothly during switchover.",
+    keyTakeaway: "A controlled rollout designed to protect day-to-day business operations.",
   },
   {
     number: "03",
-    category: "ASSET OWNERSHIP",
-    title: "No Endless Monthly Per-User Taxes",
+    category: "PRACTICAL ARCHITECTURE",
+    title: "Purpose-Built Systems & Direct Ownership",
     icon: <KeyOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Software Trap",
+    riskTitle: "The Common Challenge",
     riskDescription:
-      "Big-box SaaS tools force your business into generic, rigid boxes and charge escalating fees ($100–$300/user/month) while holding your customer data hostage in proprietary databases.",
-    solutionBadge: "OUR WORKFLOW DISCIPLINE",
-    solutionTitle: "100% Permanent Code & Data Ownership",
+      "Off-the-shelf tools work well for standard tasks, but rigid templates and mounting per-user fees can force your business into clumsy workarounds when workflows require custom logic.",
+    solutionBadge: "OUR APPROACH",
+    solutionTitle: "Custom Systems Built Around Your Workflow",
     solutionDescription:
-      "You own the entire Next.js codebase, PostgreSQL database schemas, and documentation from day one. A fixed one-time engineering investment with zero monthly user taxes.",
-    keyTakeaway: "A permanent business asset that builds real enterprise valuation.",
+      "We design websites, applications, and tools tailored to how your team operates, with source code, database access, and documentation clearly transferred as defined in our agreement.",
+    keyTakeaway: "A dedicated digital asset built to serve how your business runs.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function WhyWorkflowFirstSection() {
                     fontWeight: 700,
                   }}
                 >
-                  THE WORKFLOW DISCIPLINE &bull; WHY PROJECTS SUCCEED
+                  OUR APPROACH &bull; BUILT FOR RELIABILITY
                 </Typography>
               </Box>
             </Box>
@@ -149,7 +149,7 @@ export default function WhyWorkflowFirstSection() {
                 mb: 2.5,
               }}
             >
-              Why traditional software projects fail —{" "}
+              Why technology projects need a clear process —{" "}
               <Box
                 component="span"
                 sx={{
@@ -158,7 +158,7 @@ export default function WhyWorkflowFirstSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                and how our discipline prevents it.
+                and how we build with visibility.
               </Box>
             </Typography>
 
@@ -173,7 +173,7 @@ export default function WhyWorkflowFirstSection() {
                 textAlign: "center",
               }}
             >
-              Most custom software fails not because developers can’t write code, but because they start building before understanding your team’s daily operations. Here is how our workflow-first discipline eliminates the 3 biggest project risks.
+              Great digital products succeed when teams understand the actual workflow before writing code. Here is how we keep projects visible, reliable, and aligned with your real business needs.
             </Typography>
           </motion.div>
         </Box>
@@ -317,10 +317,10 @@ export default function WhyWorkflowFirstSection() {
         >
           <Box sx={{ maxWidth: 780 }}>
             <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
-              Ready to see this discipline in action across our full development process?
+              Ready to see our process in action across our full development lifecycle?
             </Typography>
             <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.6 }}>
-              Explore how we take you from Day 1 operational shadowing to bi-weekly staging builds, automated data verification, and safe parallel cutover.
+              Explore how we take you from initial discovery and planning to visible development, thorough testing, and ongoing support.
             </Typography>
           </Box>
 
@@ -345,7 +345,7 @@ export default function WhyWorkflowFirstSection() {
                 },
               }}
             >
-              Explore 5-Stage Lifecycle
+              Explore the 5 Stages
             </Button>
           </a>
         </Box>

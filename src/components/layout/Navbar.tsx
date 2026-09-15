@@ -67,8 +67,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Automatically close mobile menu when navigating to a new route
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
+    setMobileOpen((prev) => !prev);
   };
 
   const handleOpenSolutions = (event: React.MouseEvent<HTMLElement>) => {
@@ -143,7 +148,7 @@ export default function Navbar() {
               sx={{
                 display: { xs: "none", md: "flex" },
                 alignItems: "center",
-                gap: { md: 3.5, lg: 4.5 },
+                gap: { md: 2, lg: 3.2, xl: 4.5 },
               }}
             >
               {/* Solutions Dropdown Trigger */}
@@ -169,10 +174,11 @@ export default function Navbar() {
                   sx={{
                     color: isSolutionsActive ? "#0E172A" : "#525760",
                     fontWeight: isSolutionsActive ? 700 : 500,
-                    fontSize: "0.9375rem",
+                    fontSize: { md: "0.875rem", lg: "0.9375rem" },
                     textTransform: "none",
                     p: 0,
                     minWidth: "auto",
+                    whiteSpace: "nowrap",
                     "&:hover": {
                       color: "#0E172A",
                       bgcolor: "transparent",
@@ -309,9 +315,10 @@ export default function Navbar() {
                     sx={{
                       color: isActive ? "#0E172A" : "#525760",
                       fontWeight: isActive ? 700 : 500,
-                      fontSize: "0.9375rem",
+                      fontSize: { md: "0.875rem", lg: "0.9375rem" },
                       textDecoration: "none",
                       position: "relative",
+                      whiteSpace: "nowrap",
                       transition: "color 0.2s ease",
                       "&:hover": {
                         color: "#0E172A",
@@ -337,7 +344,7 @@ export default function Navbar() {
             </Box>
 
             {/* Desktop CTA & Mobile Menu Toggle */}
-            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: { xs: 1, sm: 2 } }}>
               <Button
                 component={Link}
                 href="/contact"
@@ -346,12 +353,13 @@ export default function Navbar() {
                   display: { xs: "none", sm: "inline-flex" },
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
                   color: "#FFFFFF",
-                  px: 3,
-                  py: 1.1,
-                  fontSize: "0.875rem",
+                  px: { sm: 2.2, md: 2.5, lg: 3 },
+                  py: { sm: 0.85, md: 1, lg: 1.1 },
+                  fontSize: { sm: "0.8125rem", md: "0.85rem", lg: "0.875rem" },
                   fontWeight: 700,
                   borderRadius: "9999px",
                   boxShadow: "0 4px 14px rgba(234, 88, 12, 0.28)",
+                  whiteSpace: "nowrap",
                   transition: "all 0.25s ease",
                   "&:hover": {
                     background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
@@ -369,20 +377,30 @@ export default function Navbar() {
                 sx={{
                   display: { md: "none" },
                   color: "#0E172A",
-                  p: 1,
-                  border: "1px solid rgba(17, 18, 21, 0.1)",
-                  borderRadius: 2,
+                  width: { xs: 40, sm: 44 },
+                  height: { xs: 40, sm: 44 },
+                  border: "1px solid rgba(17, 18, 21, 0.12)",
+                  borderRadius: "12px",
                   bgcolor: "#FFFFFF",
+                  transition: "all 0.2s ease",
+                  "&:hover": {
+                    bgcolor: "rgba(234, 88, 12, 0.08)",
+                    borderColor: "#EA580C",
+                    color: "#EA580C",
+                  },
+                  "&:active": {
+                    transform: "scale(0.95)",
+                  },
                 }}
               >
-                <MenuIcon fontSize="small" />
+                <MenuIcon sx={{ fontSize: { xs: 20, sm: 22 } }} />
               </IconButton>
             </Box>
           </Toolbar>
         </Container>
       </AppBar>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer - Takes half view of screen on mobile */}
       <Drawer
         anchor="right"
         open={mobileOpen}
@@ -390,12 +408,16 @@ export default function Navbar() {
         ModalProps={{ keepMounted: true }}
         sx={{
           "& .MuiDrawer-paper": {
-            width: { xs: "100%", sm: 380 },
+            width: { xs: "50vw", sm: "50vw", md: 360 },
+            maxWidth: { xs: "50vw", sm: "50vw", md: 360 },
             bgcolor: "#FFFFFF",
-            p: { xs: 3, sm: 4 },
+            p: { xs: 2, sm: 2.5 },
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+            overflowY: "auto",
+            overflowX: "hidden",
+            boxShadow: "-8px 0 32px rgba(14, 23, 42, 0.15)",
           },
         }}
       >
@@ -405,7 +427,7 @@ export default function Navbar() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              pb: 3,
+              pb: { xs: 2, sm: 2.5 },
               borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
             }}
           >
@@ -414,7 +436,8 @@ export default function Navbar() {
                 fontWeight: 900,
                 letterSpacing: "-0.03em",
                 color: "#0E172A",
-                fontSize: "1.25rem",
+                fontSize: { xs: "1.05rem", sm: "1.2rem" },
+                whiteSpace: "nowrap",
               }}
             >
               AETIBAR<Box component="span" sx={{ color: "#EA580C" }}>.</Box>
@@ -424,37 +447,52 @@ export default function Navbar() {
               aria-label="Close navigation"
               sx={{
                 color: "#0E172A",
-                border: "1px solid rgba(17, 18, 21, 0.1)",
+                border: "1px solid rgba(17, 18, 21, 0.12)",
                 borderRadius: "50%",
-                p: 0.8,
+                width: { xs: 32, sm: 36 },
+                height: { xs: 32, sm: 36 },
+                p: 0,
+                transition: "all 0.2s ease",
+                "&:hover": {
+                  bgcolor: "rgba(234, 88, 12, 0.08)",
+                  borderColor: "#EA580C",
+                  color: "#EA580C",
+                },
+                "&:active": {
+                  transform: "scale(0.95)",
+                },
               }}
             >
-              <CloseIcon fontSize="small" />
+              <CloseIcon sx={{ fontSize: { xs: 16, sm: 18 } }} />
             </IconButton>
           </Box>
 
-          <List sx={{ pt: 3, display: "flex", flexDirection: "column", gap: 0.5 }}>
+          <List disablePadding sx={{ pt: 2, display: "flex", flexDirection: "column", gap: 0.25 }}>
             <ListItem
               component={Link}
               href="/solutions"
               onClick={handleDrawerToggle}
               sx={{
                 textDecoration: "none",
-                px: 1,
-                py: 1.25,
+                px: { xs: 0.5, sm: 1 },
+                py: { xs: 0.8, sm: 1.1 },
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+                borderRadius: "8px",
+                "&:hover": {
+                  bgcolor: "rgba(234, 88, 12, 0.05)",
+                },
               }}
             >
-              <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#0E172A" }}>
+              <Typography sx={{ fontSize: { xs: "0.95rem", sm: "1.05rem" }, fontWeight: 700, color: "#0E172A" }}>
                 Solutions
               </Typography>
-              <ArrowForwardIcon sx={{ fontSize: 16, color: "#94A3B8" }} />
+              <ArrowForwardIcon sx={{ fontSize: { xs: 14, sm: 16 }, color: "#94A3B8" }} />
             </ListItem>
 
             {/* Sub items for Solutions in mobile */}
-            <Box sx={{ pl: 2, pr: 1, pb: 1, display: "flex", flexDirection: "column", gap: 0.8 }}>
+            <Box sx={{ pl: { xs: 1.25, sm: 2 }, pr: 0.5, pb: 0.5, display: "flex", flexDirection: "column", gap: 0.4 }}>
               {solutionItems.map((sub) => (
                 <Typography
                   key={sub.path}
@@ -463,10 +501,15 @@ export default function Navbar() {
                   onClick={handleDrawerToggle}
                   sx={{
                     textDecoration: "none",
-                    fontSize: "0.9rem",
+                    fontSize: { xs: "0.78rem", sm: "0.85rem" },
                     color: pathname === sub.path ? "#EA580C" : "#64748B",
                     fontWeight: pathname === sub.path ? 600 : 500,
-                    py: 0.5,
+                    py: 0.35,
+                    lineHeight: 1.3,
+                    transition: "color 0.2s ease",
+                    "&:hover": {
+                      color: "#EA580C",
+                    },
                   }}
                 >
                   &bull; {sub.title}
@@ -474,7 +517,7 @@ export default function Navbar() {
               ))}
             </Box>
 
-            <Divider sx={{ my: 1, borderColor: "rgba(17, 18, 21, 0.06)" }} />
+            <Divider sx={{ my: 0.75, borderColor: "rgba(17, 18, 21, 0.06)" }} />
 
             {[
               { name: "How We Help", path: "/how-we-help" },
@@ -496,17 +539,21 @@ export default function Navbar() {
                   onClick={handleDrawerToggle}
                   sx={{
                     textDecoration: "none",
-                    px: 1,
-                    py: 1.25,
+                    px: { xs: 0.5, sm: 1 },
+                    py: { xs: 0.8, sm: 1.1 },
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
+                    borderRadius: "8px",
                     borderBottom: "1px solid rgba(17, 18, 21, 0.04)",
+                    "&:hover": {
+                      bgcolor: "rgba(234, 88, 12, 0.05)",
+                    },
                   }}
                 >
                   <Typography
                     sx={{
-                      fontSize: "1.15rem",
+                      fontSize: { xs: "0.95rem", sm: "1.05rem" },
                       fontWeight: isActive ? 700 : 500,
                       color: isActive ? "#EA580C" : "#0E172A",
                     }}
@@ -519,23 +566,25 @@ export default function Navbar() {
           </List>
         </Box>
 
-        <Box sx={{ pt: 3, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+        <Box sx={{ pt: 2, mt: 2, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
           <Button
             component={Link}
             href="/contact"
             onClick={handleDrawerToggle}
             fullWidth
             variant="contained"
-            endIcon={<ArrowForwardIcon />}
+            endIcon={<ArrowForwardIcon sx={{ fontSize: { xs: 14, sm: 16 } }} />}
             sx={{
-              py: 1.5,
-              fontSize: "0.95rem",
+              py: { xs: 1, sm: 1.25 },
+              px: 1,
+              fontSize: { xs: "0.825rem", sm: "0.9rem" },
               fontWeight: 700,
               background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
               color: "#FFFFFF",
               borderRadius: "9999px",
-              mb: 2.5,
+              mb: 1.75,
               boxShadow: "0 4px 14px rgba(234, 88, 12, 0.3)",
+              whiteSpace: "nowrap",
             }}
           >
             Let&apos;s Talk
@@ -548,9 +597,9 @@ export default function Navbar() {
               color: "#64748B",
               fontWeight: 600,
               letterSpacing: "0.05em",
-              mb: 0.5,
+              mb: 0.25,
               textTransform: "uppercase",
-              fontSize: "0.725rem",
+              fontSize: { xs: "0.65rem", sm: "0.725rem" },
             }}
           >
             Start with the problem
@@ -561,8 +610,11 @@ export default function Navbar() {
             sx={{
               color: "#0E172A",
               fontWeight: 600,
-              fontSize: "0.95rem",
+              fontSize: { xs: "0.75rem", sm: "0.85rem" },
               textDecoration: "none",
+              display: "block",
+              wordBreak: "break-all",
+              lineHeight: 1.3,
             }}
           >
             hello.aetibar@gmail.com

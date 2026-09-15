@@ -99,11 +99,11 @@ export default function HomeHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.5rem", sm: "3.75rem", md: "4.75rem", lg: "5.5rem" },
+                fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.1, sm: 1.05, md: 1.02 },
-                letterSpacing: { xs: "-0.03em", md: "-0.04em" },
+                lineHeight: { xs: 1.15, md: 1.12 },
+                letterSpacing: { xs: "-0.03em", md: "-0.035em" },
                 mb: { xs: 3, md: 3.5 },
               }}
             >
@@ -132,14 +132,12 @@ export default function HomeHero() {
                 fontSize: { xs: "1.05rem", sm: "1.2rem", md: "1.25rem" },
                 lineHeight: 1.75,
                 color: "#52525B",
-                maxWidth: 720,
+                maxWidth: 760,
                 mb: { xs: 4, md: 5 },
                 fontWeight: 400,
               }}
             >
-              From a business website to a custom web app or practical AI-assisted workflow,
-              we help turn ideas into useful, well-crafted software built around how your business
-              actually works.
+              Based in Udaipur, Aetibar is a technology company building modern websites, custom software, web applications, and practical AI automation designed around how your business actually runs.
             </Typography>
           </motion.div>
 

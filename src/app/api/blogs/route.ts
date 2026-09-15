@@ -1,14 +1,19 @@
 import { NextResponse } from "next/server";
 import connectToDatabase from "../../../lib/mongodb";
 import Blog from "../../../models/Blog";
+import { defaultBlogArticles } from "../../../data/blogData";
 
 export async function GET() {
   try {
     await connectToDatabase();
     const blogs = await Blog.find({}).sort({ publishedAt: -1 });
-    return NextResponse.json({ success: true, data: blogs });
+    if (blogs && blogs.length > 0) {
+      return NextResponse.json({ success: true, data: blogs });
+    }
+    return NextResponse.json({ success: true, data: defaultBlogArticles, fallback: true });
   } catch (error: any) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    // If DB is unreachable or MONGODB_URI not configured, gracefully return default articles
+    return NextResponse.json({ success: true, data: defaultBlogArticles, fallback: true });
   }
 }
 

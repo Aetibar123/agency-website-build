@@ -41,44 +41,44 @@ const projectHudStats: Record<
   Array<{ val: string; lbl: string; highlight?: boolean }>
 > = {
   "nexus-ecommerce": [
-    { val: "Sub-sec", lbl: "Edge Page Delivery", highlight: true },
-    { val: "15 hrs/wk", lbl: "Manual Sync Cut" },
-    { val: "4,000+", lbl: "Live SKUs Automated" },
+    { val: "Fast SSR", lbl: "Edge Page Delivery", highlight: true },
+    { val: "Automated", lbl: "Inventory Sync" },
+    { val: "Scalable", lbl: "Catalog Architecture" },
   ],
   "logix-driver-app": [
-    { val: "100%", lbl: "Offline Route Sync", highlight: true },
-    { val: "45 Routes", lbl: "Fleet Drivers Live" },
-    { val: "0 Calls", lbl: "Phone Checks Cut" },
+    { val: "Offline-First", lbl: "Local SQLite Queue", highlight: true },
+    { val: "Cross-Platform", lbl: "Driver App" },
+    { val: "Verified", lbl: "Photo & Signature Logs" },
   ],
   "service-lead-pipeline": [
-    { val: "10 Mins", lbl: "Quote Turnaround", highlight: true },
-    { val: "100%", lbl: "Lead Intake Capture" },
-    { val: "1-Click", lbl: "Branded PDF Quotes" },
+    { val: "Structured", lbl: "Inquiry Routing", highlight: true },
+    { val: "Centralized", lbl: "Multi-Channel Intake" },
+    { val: "Automated", lbl: "Dynamic PDF Quotes" },
   ],
   "ai-customer-support": [
-    { val: "Human-in-Loop", lbl: "Verified Routing", highlight: true },
-    { val: "100%", lbl: "Structured JSON Data" },
-    { val: "< 30s", lbl: "Inbound Triage Time" },
+    { val: "Assisted", lbl: "Human-in-the-Loop", highlight: true },
+    { val: "Structured", lbl: "Schema Validation" },
+    { val: "Drafts", lbl: "Context-Aware Replies" },
   ],
   "internal-ops-portal": [
-    { val: "Same-Day", lbl: "Work Order Billing", highlight: true },
-    { val: "30 Techs", lbl: "Mobile Dispatch" },
-    { val: "80+ Sites", lbl: "Photo Proof Logs" },
+    { val: "Integrated", lbl: "Milestone Billing", highlight: true },
+    { val: "Role-Based", lbl: "Technician & Dispatch" },
+    { val: "Verified", lbl: "Photo Completion Proof" },
   ],
   "dtc-brand-scaling": [
-    { val: "3.4x LTV", lbl: "Repeat Purchase Lift", highlight: true },
-    { val: "80%", lbl: "Smart Replenishment" },
-    { val: "0 Batch", lbl: "Tailored Education" },
+    { val: "Event-Driven", lbl: "Lifecycle Sequences", highlight: true },
+    { val: "Automated", lbl: "Replenishment Alerts" },
+    { val: "Segmented", lbl: "Onboarding Guidance" },
   ],
   "enterprise-seo-migration": [
-    { val: "400,000+", lbl: "Indexed URLs Migrated", highlight: true },
-    { val: "< 5ms", lbl: "Edge Redirections" },
-    { val: "65% Cut", lbl: "Server Response TTFB" },
+    { val: "Edge-Level", lbl: "301 Redirect Rules", highlight: true },
+    { val: "Structured", lbl: "Schema & Canonical Data" },
+    { val: "Lightweight", lbl: "Server-Rendered HTML" },
   ],
   "rebranding-fintech-identity": [
-    { val: "60+ Tokens", lbl: "Atomic UI Library", highlight: true },
-    { val: "100%", lbl: "WCAG AA Compliance" },
-    { val: "0 Drift", lbl: "Engineer Handoff" },
+    { val: "Tokens", lbl: "Atomic Design System", highlight: true },
+    { val: "Accessible", lbl: "WCAG AA Compliance" },
+    { val: "Modular", lbl: "Reusable UI Library" },
   ],
 };
 
@@ -102,10 +102,10 @@ export default function WorkPageClient() {
 
   const filterTabs: FilterTab[] = useMemo(() => {
     return [
-      { id: "all", label: "All Systems", count: workProjects.length },
+      { id: "all", label: "All Work", count: workProjects.length },
       {
         id: "business-websites",
-        label: "Digital Storefronts",
+        label: "Web & eCommerce",
         count: workProjects.filter((p) => p.solutionAreaSlug === "business-websites").length,
       },
       {
@@ -292,7 +292,7 @@ export default function WorkPageClient() {
             }}
           >
             <Typography sx={{ fontSize: "0.82rem", color: "#71717A", fontWeight: 500 }}>
-              Displaying <strong>{filteredProjects.length}</strong> of <strong>{workProjects.length}</strong> production architectures
+              Displaying <strong>{filteredProjects.length}</strong> of <strong>{workProjects.length}</strong> selected projects and systems
             </Typography>
             {searchQuery && (
               <Typography
@@ -327,10 +327,10 @@ export default function WorkPageClient() {
           >
             <SpeedRoundedIcon sx={{ fontSize: 44, color: "#EA580C", mb: 1.5 }} />
             <Typography sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
-              No production architectures match your filter
+              No projects match your filter
             </Typography>
             <Typography sx={{ fontSize: "0.92rem", color: "#71717A", mb: 3 }}>
-              No case studies match your query &ldquo;{searchQuery}&rdquo;. Try another term or reset filters.
+              No projects match your query &ldquo;{searchQuery}&rdquo;. Try another term or reset filters.
             </Typography>
             <Button
               onClick={() => {
@@ -461,17 +461,20 @@ export default function WorkPageClient() {
                               py: 0.25,
                               borderRadius: "4px",
                               bgcolor:
-                                project.projectType === "Client Project"
+                                project.projectType === "Production Build" || project.projectType === "Client Project"
                                   ? "rgba(34, 197, 94, 0.15)"
                                   : "rgba(249, 115, 22, 0.15)",
-                              color: project.projectType === "Client Project" ? "#22C55E" : "#FB923C",
+                              color:
+                                project.projectType === "Production Build" || project.projectType === "Client Project"
+                                  ? "#22C55E"
+                                  : "#FB923C",
                               fontSize: "0.7rem",
                               fontWeight: 700,
                               textTransform: "uppercase",
                               fontFamily: "monospace",
                             }}
                           >
-                            {project.projectType === "Client Project" ? "LIVE SYSTEM" : "CONCEPT DEMO"}
+                            {project.projectType.toUpperCase()}
                           </Box>
                         </Box>
 
@@ -557,7 +560,7 @@ export default function WorkPageClient() {
                                 fontFamily: "monospace",
                               }}
                             >
-                              CASE {String(idx + 1).padStart(2, "0")} // {project.solutionArea.toUpperCase()}
+                              PROJECT {String(idx + 1).padStart(2, "0")} // {project.solutionArea.toUpperCase()}
                             </Box>
 
                             <Typography sx={{ fontSize: "0.78rem", color: "#71717A", fontWeight: 600 }}>
@@ -742,7 +745,7 @@ export default function WorkPageClient() {
                                 },
                               }}
                             >
-                              Deep-Dive
+                              Read Case Study
                             </Button>
                           </Link>
                         ) : (
@@ -790,7 +793,7 @@ export default function WorkPageClient() {
                                 border: "1px solid #27272A",
                               }}
                             >
-                              {/* Organizational Context */}
+                              {/* System Context */}
                               <Box sx={{ mb: 2.5 }}>
                                 <Typography
                                   sx={{
@@ -802,7 +805,7 @@ export default function WorkPageClient() {
                                     mb: 0.6,
                                   }}
                                 >
-                                  ORGANIZATIONAL CONTEXT:
+                                  SYSTEM CONTEXT:
                                 </Typography>
                                 <Typography sx={{ fontSize: "0.85rem", color: "#D4D4D8", lineHeight: 1.7 }}>
                                   {project.context}
@@ -821,7 +824,7 @@ export default function WorkPageClient() {
                                     mb: 0.8,
                                   }}
                                 >
-                                  THE OPERATIONAL CHALLENGE:
+                                  THE CHALLENGE:
                                 </Typography>
                                 <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8 }}>
                                   {project.challenge.map((ch, cIdx) => (
@@ -849,7 +852,7 @@ export default function WorkPageClient() {
                                     mb: 0.8,
                                   }}
                                 >
-                                  ENGINEERING BLUEPRINT & APPROACH:
+                                  TECHNICAL APPROACH & ARCHITECTURE:
                                 </Typography>
                                 <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8 }}>
                                   {project.approach.map((ap, aIdx) => (
@@ -877,7 +880,7 @@ export default function WorkPageClient() {
                                     mb: 0.8,
                                   }}
                                 >
-                                  DEPLOYED CODE & ARTIFACTS:
+                                  KEY DELIVERABLES & FEATURES:
                                 </Typography>
                                 <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8 }}>
                                   {project.solution.map((sol, sIdx) => (
@@ -953,7 +956,7 @@ export default function WorkPageClient() {
                         textTransform: "uppercase",
                       }}
                     >
-                      CUSTOM SOFTWARE // ZERO SPECULATIVE RISK
+                      HAVE A PROJECT IN MIND?
                     </Typography>
                   </Box>
 
@@ -967,7 +970,7 @@ export default function WorkPageClient() {
                       mb: 2,
                     }}
                   >
-                    Ready to engineer software tailored to your{" "}
+                    Have a project or problem you want to{" "}
                     <Box
                       component="span"
                       sx={{
@@ -976,7 +979,7 @@ export default function WorkPageClient() {
                         WebkitTextFillColor: "transparent",
                       }}
                     >
-                      exact business workflows?
+                      solve together?
                     </Box>
                   </Typography>
 
@@ -988,8 +991,7 @@ export default function WorkPageClient() {
                       maxWidth: 680,
                     }}
                   >
-                    We shadow your team&apos;s daily operations, eliminate manual copy-pasting, architect resilient PostgreSQL
-                    databases, and deliver working staging builds every 14 days. Zero dark periods, zero hostage source code.
+                    Whether you need a full-stack web application, an internal tool to streamline daily operations, or a reliable engineering partner for your next product cycle, we are here to help.
                   </Typography>
                 </Grid>
 
@@ -1015,7 +1017,7 @@ export default function WorkPageClient() {
                           },
                         }}
                       >
-                        Schedule Architecture Discovery
+                        Discuss Your Project
                       </Button>
                     </Link>
 
@@ -1037,7 +1039,7 @@ export default function WorkPageClient() {
                           },
                         }}
                       >
-                        Explore 5-Stage Engineering Lifecycle
+                        Explore How We Work
                       </Button>
                     </Link>
                   </Box>

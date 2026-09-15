@@ -9,26 +9,29 @@ import ComparisonSection from "../../components/how-we-help/ComparisonSection";
 import HowWeHelpCta from "../../components/how-we-help/HowWeHelpCta";
 
 export const metadata: Metadata = {
-  title: "How We Help | Bridging Customer Touchpoints & Internal Operations",
+  title: "How We Help | Custom Software, Web Apps & Workflow Automation | Aetibar",
   description:
-    "Technology should fit your business — not the other way around. We help businesses eliminate disconnected tools, manual copy-pasting, and communication bottlenecks with cohesive digital systems.",
+    "Technology should fit your business — not the other way around. Aetibar develops custom software, web applications, and system integrations that connect customer touchpoints with internal operations.",
   keywords: [
     "How Aetibar helps",
-    "Business workflow solutions",
-    "Customer and lead systems",
-    "Internal operations tools",
-    "Digital system architecture",
-    "Friction diagnostic",
-    "Custom Next.js platforms",
+    "Custom software development",
+    "Business workflow automation",
+    "Web application development",
+    "Internal business tools",
+    "System integration",
+    "API integration",
+    "Custom business software",
+    "Software development company in Udaipur",
+    "Software development company in India",
     "Aetibar Technologies",
   ],
   alternates: {
     canonical: "https://www.aetibar.in/how-we-help",
   },
   openGraph: {
-    title: "How We Help | Bridging Customer Touchpoints & Internal Operations",
+    title: "How We Help | Custom Software, Web Apps & Workflow Automation | Aetibar",
     description:
-      "Technology should fit your business — not the other way around. We help businesses improve how customers interact with them and how work happens internally.",
+      "Technology should fit your business — not the other way around. We build custom software and connected systems around how your business actually works.",
     url: "https://www.aetibar.in/how-we-help",
     siteName: "Aetibar",
     type: "website",
@@ -45,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How We Help | Aetibar",
     description:
-      "Technology should fit your business — not the other way around. We build practical digital systems around how your business actually works.",
+      "Technology should fit your business — not the other way around. We build practical digital systems and software around how your business actually works.",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };

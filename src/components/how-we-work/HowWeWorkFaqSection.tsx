@@ -34,77 +34,77 @@ const faqs: FaqItem[] = [
     category: "Time & Collaboration",
     categorySlug: "time",
     icon: AccessTimeRoundedIcon,
-    question: "How much time is actually required from our internal team?",
-    quickAnswer: "Under 90 minutes in Week 1, and only 3 minutes every two weeks after that.",
+    question: "How involved does my team need to be during the project?",
+    quickAnswer: "We need focused input during discovery and key milestones, without meeting exhaustion.",
     detailedAnswer:
-      "We design our sprints so your business continues running smoothly without meeting exhaustion. During Phase 01 (Week 1), we require one 60-minute executive discovery session with founders and 30 minutes shadowing key operators. From Sprint 1 onward, updates are 100% asynchronous: we deliver clickable private Vercel staging links accompanied by a 3-minute Loom video demo for your team to test whenever convenient. Zero status meeting bloat.",
-    takeaways: ["90-Min Kickoff Only", "3-Min Async Video Demos", "0 Status Meeting Bloat"],
+      "We structure our collaboration to respect your time while ensuring the software accurately fits your business. We spend focused time upfront understanding your workflows, tools, and goals. Once development begins, we provide regular working previews and clear progress summaries so you can review real features asynchronously, reserving meetings only for meaningful design and milestone sign-offs.",
+    takeaways: ["Collaborative Discovery Upfront", "Asynchronous Working Previews", "Respect for Your Daily Operations"],
   },
   {
     id: "existing-tools",
     category: "Data Safety & Tools",
     categorySlug: "data",
     icon: SyncRoundedIcon,
-    question: "Can we keep using our existing spreadsheets, WhatsApp, and accounting software?",
-    quickAnswer: "Yes, 100%. We integrate with what works and only replace what is costing you money.",
+    question: "Can we keep using our existing software, databases, and daily tools?",
+    quickAnswer: "Yes. We connect with what works well and only replace what creates friction.",
     detailedAnswer:
-      "We never force clients to discard software that already serves their team well. If your sales team closes deals on WhatsApp or your finance team relies on QuickBooks, we engineer reliable webhook pipelines and API connectors to synchronize data directly into your central PostgreSQL core. We only replace manual spreadsheets and fragmented tools where duplicate entry or human error is actively leaking revenue.",
-    takeaways: ["Keep Preferred Tools", "Automated Webhook Sync", "Zero Duplicate Data Entry"],
+      "We never force you to abandon software that already serves your team effectively. Whether you manage records in specialized software, spreadsheets, WhatsApp, or accounting platforms like Tally or QuickBooks, we evaluate your toolchain and build custom API connectors, automated syncs, or unified portals around your established workflows.",
+    takeaways: ["Evaluate Existing Toolchain", "Custom API & Webhook Integrations", "Preserve What Works Well"],
   },
   {
     id: "zero-downtime",
     category: "Data Safety & Tools",
     categorySlug: "data",
     icon: SyncRoundedIcon,
-    question: "How do you guarantee zero data loss or operational disruption during cutover?",
-    quickAnswer: "We run your old and new platforms in parallel for 7 days until 100% of data reconciles.",
+    question: "How do you handle data migration and avoid disrupting live operations?",
+    quickAnswer: "We map records carefully, test in staging, and plan staged deployments with rollbacks.",
     detailedAnswer:
-      "We never attempt a risky overnight 'big-bang' launch on Sunday night. During Phase 04, your team continues using existing tools while the new system runs concurrently in the background. Automated reconciliation scripts cross-verify 100% of historical records, active orders, and customer databases. We only complete DNS cutover once data drift is literally 0.00%, backed by an armed 1-click rollback safety guard.",
-    takeaways: ["7-Day Dual-Run Sync", "100% Automated Reconciliation", "1-Click Instant Rollback"],
+      "Transitions should never jeopardize daily business. We map data structures, audit historical records, and test migrations thoroughly in staging environments before any live switch. When deploying, we plan cutovers during low-traffic windows or run phased transitions, ensuring complete data verification and clear rollback plans are always in place.",
+    takeaways: ["Thorough Pre-Migration Audits", "Staged Deployment Windows", "Zero Disruption Cutover Planning"],
   },
   {
     id: "code-ownership",
     category: "IP & Code Ownership",
     categorySlug: "ownership",
     icon: LockOutlinedIcon,
-    question: "Do we own the source code, database schemas, and infrastructure completely?",
-    quickAnswer: "Yes, 100%. Complete GitHub repository handover with zero ongoing per-seat taxes.",
+    question: "Who owns the source code, databases, and design assets after completion?",
+    quickAnswer: "You do. Complete ownership of code, documentation, and credentials transfers to you.",
     detailedAnswer:
-      "Unlike enterprise SaaS platforms that charge $100–$200 per employee per month forever, or agencies that hold repositories hostage over disputed invoices, full ownership of the GitHub repository, PostgreSQL database schemas, environment keys, and deployment configurations is assigned directly to your organization upon milestone completion. Deployed to your cloud accounts with zero monthly user taxes.",
-    takeaways: ["Full GitHub Transfer", "Your Cloud Infrastructure", "$0 Monthly Per-Seat Taxes"],
+      "Unlike proprietary SaaS platforms that lock your data behind recurring license fees, or vendors who hold repositories hostage, full ownership of your custom codebase, database schemas, and digital assets is transferred to your organization upon project completion as defined in our agreement. You have full freedom to host, modify, and scale your software.",
+    takeaways: ["Complete Codebase Ownership", "Full Access to Credentials & Data", "Independent Cloud Hosting"],
   },
   {
     id: "scope-changes",
     category: "Pricing & Scope",
     categorySlug: "pricing",
     icon: ReceiptLongOutlinedIcon,
-    question: "What happens if our operational requirements change during development?",
-    quickAnswer: "We operate in agile 14-day sprints. You can swap backlog features with zero change-order penalties.",
+    question: "What happens if our requirements change or new ideas emerge during development?",
+    quickAnswer: "We build in visible stages, so adjustments can be evaluated and incorporated smoothly.",
     detailedAnswer:
-      "Real operations reveal real nuances once you interact with live software on Day 14. Because we develop in tight 2-week iterations with clickable staging environments, you never wait months to discover a misalignment. If an operational nuance is uncovered during testing, we simply swap backlog items of equivalent engineering effort without bureaucratic delays or punitive surprise change-order fees.",
-    takeaways: ["14-Day Sprint Slices", "1-to-1 Backlog Swapping", "Zero Surprise Invoices"],
+      "As you see working software come together, priorities often sharpen. Because we develop in transparent milestone stages, adjustments are expected and manageable. When new needs arise, we evaluate their impact on scope and timeline collaboratively, giving you clear choices before making any changes.",
+    takeaways: ["Transparent Milestone Reviews", "Collaborative Scope Adjustments", "Clear Timeline & Budget Visibility"],
   },
   {
     id: "post-launch-support",
     category: "Time & Collaboration",
     categorySlug: "time",
     icon: AccessTimeRoundedIcon,
-    question: "What happens after launch? Who maintains the software and fixes edge cases?",
-    quickAnswer: "Launch is Day 1. Every project includes a 30-day hyper-care warranty and dedicated architect SLAs.",
+    question: "What happens after launch? Who maintains and updates the software?",
+    quickAnswer: "We provide post-launch stabilization, team walkthroughs, and ongoing support options.",
     detailedAnswer:
-      "Deployment is not the finish line—it is the beginning of operational leverage. Every deployment includes 30 days of active warranty, automated crash telemetry, and sub-300ms response time monitoring. You retain direct access to the senior engineers who built your platform via a private Slack or WhatsApp channel, supported by comprehensive Loom video training libraries for your staff.",
-    takeaways: ["30-Day Hyper-Care Warranty", "Direct Senior Architect Line", "Staff Loom Video Guides"],
+      "Launch is the start of your system in the real world. Every project includes dedicated launch support, thorough team walkthroughs, and documentation to ensure smooth adoption. Afterwards, we offer tailored ongoing support, performance monitoring, security updates, and phased enhancements as your business grows.",
+    takeaways: ["Post-Launch Stabilization Window", "Staff Walkthroughs & Documentation", "Long-Term Support & Evolution"],
   },
   {
     id: "pricing-structure",
     category: "Pricing & Scope",
     categorySlug: "pricing",
     icon: ReceiptLongOutlinedIcon,
-    question: "How do your fixed-sprint pricing and commercial agreements work?",
-    quickAnswer: "Transparent, milestone-based sprint pricing with contractual SLA credits if we slip.",
+    question: "How is project pricing determined and structured?",
+    quickAnswer: "Milestone-based pricing tied to clearly defined deliverables and transparent scope.",
     detailedAnswer:
-      "We avoid vague hourly billing models that incentivize agencies to move slowly and pad invoices. Every engagement is structured into 2-week sprints with guaranteed, verifiable deliverables outlined before work begins. Payments align strictly with verified milestone completions, and our Master Services Agreement (MSA) includes direct sprint credits if we fail to deliver promised staging previews.",
-    takeaways: ["Fixed Sprint Milestones", "Milestone-Based Billing", "Contractual SLA Credits"],
+      "Every engagement begins with a documented scope of work outlining deliverables, technical architecture, and realistic timelines. Pricing is structured around verifiable project milestones rather than unpredictable open-ended hours, giving you budget certainty and clear accountability at every stage.",
+    takeaways: ["Documented Deliverables & Scope", "Milestone-Linked Payments", "Predictable Project Costs"],
   },
 ];
 
@@ -233,7 +233,7 @@ export default function HowWeWorkFaqSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                how we collaborate.
+                how we work together.
               </Box>
             </Typography>
 
@@ -248,8 +248,7 @@ export default function HowWeWorkFaqSection() {
                 mb: 4,
               }}
             >
-              Clear, transparent answers on time commitments, zero-data-loss migrations, complete code sovereignty, and
-              fixed-sprint governance.
+              Clear answers on collaboration, working with existing tools, code ownership, and project delivery.
             </Typography>
           </motion.div>
 
@@ -662,7 +661,7 @@ export default function HowWeWorkFaqSection() {
                     mb: 1,
                   }}
                 >
-                  HAVE A UNIQUE WORKFLOW?
+                  HAVE QUESTIONS ABOUT YOUR WORKFLOW?
                 </Typography>
 
                 <Typography
@@ -676,12 +675,12 @@ export default function HowWeWorkFaqSection() {
                     mb: 1.5,
                   }}
                 >
-                  Ask a lead systems architect directly.
+                  Speak directly with our team.
                 </Typography>
 
                 <Typography sx={{ fontSize: "0.88rem", color: "#A1A1AA", lineHeight: 1.7, mb: 3 }}>
-                  No salespeople, no slide decks. We discuss your database structure, legacy spreadsheet constraints, and
-                  sprint feasibility in a focused 30-minute working session.
+                  No aggressive sales tactics. We discuss your operational workflows, existing software constraints, and
+                  project feasibility in a practical, honest conversation.
                 </Typography>
 
                 <Link href="/contact" style={{ textDecoration: "none" }}>
@@ -704,7 +703,7 @@ export default function HowWeWorkFaqSection() {
                       },
                     }}
                   >
-                    Book Architecture Call
+                    Start a Conversation
                   </Button>
                 </Link>
 
@@ -720,10 +719,10 @@ export default function HowWeWorkFaqSection() {
                   }}
                 >
                   <Typography sx={{ fontSize: "0.72rem", color: "#A1A1AA" }}>
-                    Median Discovery Response:
+                    Typical Initial Response:
                   </Typography>
                   <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#22C55E" }}>
-                    &lt; 2 Hours
+                    Within 1 Business Day
                   </Typography>
                 </Box>
               </Box>
@@ -738,13 +737,13 @@ export default function HowWeWorkFaqSection() {
                 }}
               >
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", mb: 0.5, textTransform: "uppercase" }}>
-                  Contractual Guarantees
+                  OUR COMMITMENTS
                 </Typography>
                 <Typography sx={{ fontSize: "0.88rem", fontWeight: 600, color: "#18181B", mb: 1 }}>
-                  Want to review our 6 ironclad guarantees?
+                  Want to review our working commitments?
                 </Typography>
                 <Typography sx={{ fontSize: "0.8rem", color: "#71717A", lineHeight: 1.6, mb: 2 }}>
-                  See how we back bi-weekly staging previews and dual-run cutovers with contractual sprint credits.
+                  See how we build with regular milestone reviews, direct engineer communication, and complete client ownership.
                 </Typography>
                 <a href="#client-promise" style={{ textDecoration: "none" }}>
                   <Typography
@@ -758,7 +757,7 @@ export default function HowWeWorkFaqSection() {
                       "&:hover": { textDecoration: "underline" },
                     }}
                   >
-                    View Our Client Promise &rarr;
+                    View Our Working Commitments &rarr;
                   </Typography>
                 </a>
               </Box>

@@ -38,97 +38,97 @@ const diagnosticPaths: DiagnosticPath[] = [
   {
     id: "connect",
     step: "01",
-    badge: "PATH 01 • INTEGRATION BRIDGE",
+    badge: "PATH 01 • INTEGRATION & API BRIDGES",
     ruleTitle: "Connect, Don't Replace",
-    question: "Do your existing tools work well, but refuse to talk to each other?",
+    question: "Do your existing tools work well, but refuse to share data?",
     icon: <HubOutlinedIcon sx={{ fontSize: 24 }} />,
     theSymptom:
-      "Your team likes your current accounting software, CRM, and WhatsApp. The only problem is they don't share data. Someone spends 2 hours every single afternoon copying contact info, invoices, and order status back and forth by hand.",
+      "Your team likes your current accounting software, CRM, and communication tools. The only problem is they don't share data. Someone spends significant time every day manually copying contact details, invoices, and order status back and forth by hand.",
     honestAdvice:
-      "Never buy an expensive $2,000/month all-in-one software suite when you only need a bridge. We don't touch what already works — we simply build an automatic sync between your tools so data moves in seconds without human re-typing.",
+      "Avoid buying an expensive all-in-one enterprise software suite when you only need a bridge. We don't touch what already works — we build an automatic integration between your tools so data moves without manual re-typing.",
     whatWeBuild:
-      "A silent, fail-safe webhook and API bridge. When a customer signs an agreement or pays an invoice, your CRM, accounting records, and team WhatsApp groups update automatically in real-time.",
+      "A reliable API integration and automated sync. When a customer signs an agreement or an order is submitted, your CRM, accounting records, and internal team channels update automatically.",
     whatYouAvoid: [
-      "No painful team retraining on new software",
-      "No recurring per-user enterprise seat fees",
-      "Zero business downtime or messy data migration",
+      "Retraining your team on completely new software",
+      "Paying for unnecessary enterprise software modules",
+      "Disruptive transitions or risky data migrations",
     ],
-    deliverables: ["Automatic Webhook Sync", "Instant WhatsApp Alerts", "Duplicate Data Prevention", "Error-Proof Retry Engine"],
-    timeline: "1–2 Weeks Delivery",
-    complexity: "Low Complexity & High Speed",
-    roiHighlight: "Saves 10+ hours of manual data entry every week",
+    deliverables: ["Automated System Integration", "Team Workflow Alerts", "Duplicate Entry Prevention", "Reliable Retry Workflows"],
+    timeline: "Streamlined Implementation",
+    complexity: "Targeted Integration",
+    roiHighlight: "Reduces repetitive manual copy-pasting across tools",
     link: "/solutions/customer-lead-systems",
   },
   {
     id: "frontdoor",
     step: "02",
-    badge: "PATH 02 • CUSTOM FRONT DOOR",
-    ruleTitle: "Templates Can't Sell Complex Services",
-    question: "Are high-value buyers leaving your website because it looks generic?",
+    badge: "PATH 02 • CUSTOM WEB PLATFORM",
+    ruleTitle: "When Templates Aren't Enough",
+    question: "Is your website struggling to explain complex services or capture qualified inquiries?",
     icon: <WebAssetOutlinedIcon sx={{ fontSize: 24 }} />,
     theSymptom:
-      "You offer premium, high-value services, but your website was built on a generic template. It takes 4 seconds to load, looks like your cheapest competitor, and has a vague 'Contact Us' form that tells serious buyers nothing about how you can help them.",
+      "You offer specialized, high-value services, but your website was built on a generic template. It loads slowly, looks identical to competitors, and relies on a generic contact form that fails to capture the specifications your team needs.",
     honestAdvice:
-      "Off-the-shelf templates are fine for local cafes, but serious B2B buyers judge your competence by your digital front door. We build a purpose-built platform that clearly explains your value and lets buyers specify their exact requirements.",
+      "Off-the-shelf website templates work well for simple businesses. But when your offering involves custom specifications, pricing tiers, or integrated workflows, a purpose-built web platform communicates your value more clearly and collects actionable project briefs.",
     whatWeBuild:
-      "A sub-second, custom Next.js digital experience. Pages open instantaneously. Serious buyers can explore interactive project breakdowns, view your track record, and submit structured briefs that your sales team can close immediately.",
+      "A fast, modern web application built with Next.js. Prospective clients can explore your capabilities, understand your offerings, and submit structured project requirements directly into your team's workflow.",
     whatYouAvoid: [
-      "No slow, vulnerable WordPress plugins crashing on updates",
-      "No cookie-cutter layouts that fail to build trust",
-      "No vague tire-kickers submitting incomplete inquiries",
+      "Slow-loading template plugins and update conflicts",
+      "Generic layouts that fail to explain your capabilities",
+      "Vague inquiries that require lengthy back-and-forth",
     ],
-    deliverables: ["Sub-Second Next.js Front-End", "Interactive Project Configurator", "Clear Problem-First Copywriting", "Structured Lead Capture"],
-    timeline: "3–4 Weeks Delivery",
-    complexity: "Medium Complexity",
-    roiHighlight: "3x higher conversion rate on qualified buyers",
+    deliverables: ["Fast Next.js Web Platform", "Interactive Project Intake", "Clear Problem-First Content", "Structured Inbound Capture"],
+    timeline: "Purpose-Built Delivery",
+    complexity: "Custom Web Application",
+    roiHighlight: "Higher-quality inquiries with clear project specifications",
     link: "/solutions/business-websites",
   },
   {
     id: "operations",
     step: "03",
     badge: "PATH 03 • OPERATIONS HUB",
-    ruleTitle: "Spreadsheets Run Ideas. Portals Run Scale.",
-    question: "Have shared spreadsheets become a dangerous bottleneck for daily work?",
+    ruleTitle: "Purpose-Built Internal Operations",
+    question: "Have shared spreadsheets become a bottleneck for your daily operations?",
     icon: <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 24 }} />,
     theSymptom:
-      "Your company has grown past 10 people. Shared Google Sheets or Excel files are now chaotic: formulas get accidentally deleted, quotes take 3 days to prepare by hand, and managers have zero visibility into who changed what.",
+      "As your team and project volume grow, shared spreadsheets become unwieldy. Formulas break, quoting takes too long, and managers lack clear visibility into project status and team handoffs.",
     honestAdvice:
-      "Off-the-shelf project software forces you into rigid boxes that don't fit your business. Instead, build a private operations hub built strictly around your team's real steps — keeping quoting, task dispatch, and margins completely organized.",
+      "Generic project management tools often force teams into rigid processes that don't match their actual work. A custom internal tool can be designed around how your team already operates, keeping quoting, scheduling, and project handoffs organized in one place.",
     whatWeBuild:
-      "A clean, secure internal web portal. Your sales team generates client-ready quotes in under 4 minutes, operations staff track project delivery stages with zero confusion, and role permissions ensure everyone only sees what they need.",
+      "A custom internal web application and business dashboard. Your sales team can generate standardized quotes, operations can track project milestones, and role-based permissions ensure each person sees the information they need.",
     whatYouAvoid: [
-      "No broken formulas or overwritten customer spreadsheets",
-      "No 3-day turnaround delays on client proposals",
-      "No rising per-user subscription fees as your staff expands",
+      "Fragile spreadsheets with broken formulas",
+      "Slow turnaround times on client proposals",
+      "Disconnected tools that require constant status checks",
     ],
-    deliverables: ["4-Minute Dynamic Quoting Engine", "Role-Based Team Permissions", "Central PostgreSQL Customer Database", "Real-Time Margin Calculator"],
-    timeline: "4–6 Weeks Delivery",
-    complexity: "Tailored Engineering",
-    roiHighlight: "Quote delivery cut from 72 hours down to 4 minutes",
+    deliverables: ["Custom Quoting Workflow", "Role-Based Team Access", "Centralized Project Database", "Operational Dashboards"],
+    timeline: "Tailored Development",
+    complexity: "Custom Web Application",
+    roiHighlight: "Consistent proposal generation and clear operational status",
     link: "/solutions/internal-business-tools",
   },
   {
     id: "ai",
     step: "04",
     badge: "PATH 04 • PRACTICAL AI AUTOMATION",
-    ruleTitle: "Automate Reading, Keep Humans in Control",
-    question: "Is your staff buried under stacks of invoices, emails, and PDFs?",
+    ruleTitle: "Practical AI & Workflow Automation",
+    question: "Is your team spending valuable time manually processing documents and inquiries?",
     icon: <PsychologyOutlinedIcon sx={{ fontSize: 24 }} />,
     theSymptom:
-      "Your skilled employees spend 3 to 4 hours every single day opening incoming supplier bills, reading customer inquiry emails, and manually typing numbers, dates, and line items into internal software.",
+      "Team members spend significant portions of their day reading incoming invoices, inquiries, or forms and manually typing details into internal tools and spreadsheets.",
     honestAdvice:
-      "Avoid gimmick AI chatbots that make things up or hallucinate in front of customers. Instead, use focused machine intelligence for one specific job: reading unstructured documents and presenting clean extracted data for 1-click human verification.",
+      "Rather than implementing generic AI chatbots that lack business context, we apply targeted AI and automation to practical tasks: extracting data from documents, categorizing incoming requests, and staging information for quick human review.",
     whatWeBuild:
-      "An automated document intake pipeline. When an invoice or technical brief arrives, the system reads line items, validates tax numbers, and queues it on a clean review screen. Your team clicks 'Approve' once and it syncs to accounting.",
+      "An intelligent data processing and automation workflow. Incoming documents and customer requests are parsed, categorized, and presented on a review interface for fast verification before syncing to your database or accounting system.",
     whatYouAvoid: [
-      "No embarrassing AI hallucinations in front of clients",
-      "No tedious, mind-numbing data entry burning out staff",
-      "No costly human typos on invoice numbers or billing totals",
+      "Unreliable AI tools without human review safeguards",
+      "Repetitive manual data entry that drains team focus",
+      "Transcription errors on numbers, dates, and order details",
     ],
-    deliverables: ["Automated Document Parser", "1-Click Human Review Screen", "Confidence-Scored Extraction", "Direct Accounting Sync"],
-    timeline: "2–4 Weeks Delivery",
-    complexity: "Targeted Intelligence",
-    roiHighlight: "80% reduction in manual document handling time",
+    deliverables: ["Automated Document Processing", "Human Review & Verification Interface", "Smart Data Extraction", "Business System Integration"],
+    timeline: "Focused Integration",
+    complexity: "Intelligent Automation",
+    roiHighlight: "Reduced manual data processing and faster review cycles",
     link: "/solutions/ai-automation",
   },
 ];
@@ -219,16 +219,26 @@ export default function DiagnosticMatrixSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.4rem" },
+                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                letterSpacing: "-0.03em",
-                lineHeight: 1.18,
+                lineHeight: { xs: 1.15, md: 1.08 },
+                letterSpacing: "-0.035em",
                 textAlign: "left",
                 mb: 2.5,
               }}
             >
-              How we figure out what your business actually needs
+              How we figure out what your business{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                actually needs.
+              </Box>
             </Typography>
             <Typography
               sx={{
@@ -270,13 +280,13 @@ export default function DiagnosticMatrixSection() {
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <TrendingUpRoundedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
               <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B" }}>
-                Built strictly around measurable ROI
+                Built strictly around practical business value
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <LightbulbOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
               <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B" }}>
-                Zero gimmicks or endless consulting loops
+                Zero gimmicks or unnecessary complexity
               </Typography>
             </Box>
           </Box>
@@ -876,8 +886,8 @@ export default function DiagnosticMatrixSection() {
               Not sure which intervention your business actually needs?
             </Typography>
             <Typography sx={{ fontSize: "0.95rem", color: "#52525B", lineHeight: 1.65 }}>
-              That is what our 20-minute diagnostic session is for. We review your current tools, identify
-              where your staff is losing hours, and give you an honest recommendation — even if it means writing zero code.
+              That is what our diagnostic discovery session is for. We review your current workflow, identify
+              where manual bottlenecks exist, and give you an honest recommendation on the best approach — whether custom software is needed or not.
             </Typography>
           </Box>
 

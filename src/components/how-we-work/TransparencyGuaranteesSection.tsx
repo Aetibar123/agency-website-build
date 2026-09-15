@@ -43,117 +43,117 @@ interface ClientPromise {
 const clientPromises: ClientPromise[] = [
   {
     num: "01",
-    category: "SPRINT VISIBILITY",
+    category: "PROJECT VISIBILITY",
     filterCategory: "visibility",
-    title: "Zero Dark Periods",
-    headline: "Clickable staging builds delivered every 14 days.",
+    title: "Visible Progress Throughout Development",
+    headline: "Working software previews you can review as features are built.",
     promise:
-      "Most agencies go dark for 3 to 6 months before revealing buggy software. From Sprint 1, we deploy private Vercel staging preview URLs. You test working screens populated with real operational data every two weeks, accompanied by a 3-minute async video walkthrough. If you can't click it and test it, it's not done.",
-    trapTitle: "The 4-Month Black Box Trap",
+      "Instead of waiting months to see what has been built, you receive working preview links throughout development. You and your team can test actual screens, try workflows with representative data, and provide direct feedback so the final product aligns with your expectations.",
+    trapTitle: "The Multi-Month Black Box",
     trapText:
-      "Traditional agencies disappear for months behind closed doors, billing monthly while showing static slide decks until a chaotic, broken launch day.",
+      "Development happens behind closed doors for months with little to no visibility until launch day, making adjustments stressful and expensive.",
     slaClause:
-      "MSA §4.2 — Working staging previews guaranteed every 14 calendar days; failure to deploy triggers an automatic 15% sprint credit.",
-    artifactType: "VERCEL STAGING PREVIEW",
-    artifactDetail: "https://staging.aetibar.internal/preview-sprint-02",
-    artifactStatus: "Active Build • 0 Errors",
+      "Standard Practice — Regular working previews throughout development with clear demo walkthroughs.",
+    artifactType: "STAGING ENVIRONMENT PREVIEW",
+    artifactDetail: "Active Staging Environment Preview Link",
+    artifactStatus: "Working Preview • Ready for Review",
     icon: VisibilityOutlinedIcon,
-    metrics: ["14-Day Staging Cycles", "3-Min Video Demos", "No Slide-Deck Illusions"],
+    metrics: ["Working Staging Previews", "Video Walkthroughs", "Continuous Alignment"],
   },
   {
     num: "02",
-    category: "IP SOVEREIGNTY",
+    category: "CODE & ASSET ACCESS",
     filterCategory: "ownership",
-    title: "100% Code & Asset Sovereignty",
-    headline: "You own 100% of the code, database schemas, and keys.",
+    title: "Clear Ownership and Access",
+    headline: "Source code, database access, and credentials clearly transferred.",
     promise:
-      "Unlike enterprise SaaS platforms that tax you $150/user/month, or agencies holding source code hostage, we transfer complete GitHub repositories, raw PostgreSQL database schemas, and deployment configurations directly to your team. Zero proprietary lock-in, zero monthly user taxes.",
-    trapTitle: "The Hostage Code & Per-Seat Tax",
+      "We believe your software should belong to your business. We provide clear handover of code repositories, database access, documentation, and deployment configurations as defined in our project agreement, giving you complete long-term control over your digital assets.",
+    trapTitle: "Proprietary Lock-in & Withheld Code",
     trapText:
-      "Agencies holding repository access hostage over disputed invoices or building on proprietary CMS platforms where you pay escalating monthly seat fees forever.",
+      "Agencies or vendors holding code or database access hostage, or forcing you into closed proprietary systems where you cannot easily modify your own tools.",
     slaClause:
-      "MSA §8.1 — Full intellectual property, GitHub source repositories, and raw database schemas assign to client upon milestone completion.",
-    artifactType: "GITHUB REPO TRANSFER",
-    artifactDetail: "github.com/your-org/platform (Admin Transferred)",
-    artifactStatus: "Transferred • Full Ownership",
+      "Standard Agreement — Full handover of designated source repositories, database access, and technical documentation upon milestone completion.",
+    artifactType: "CODEBASE & CREDENTIALS HANDOVER",
+    artifactDetail: "github.com/your-business/platform (Full Access Handover)",
+    artifactStatus: "Documented Handover • Complete Access",
     icon: LockOutlinedIcon,
-    metrics: ["Full GitHub Repo Transfer", "Zero Monthly Seat Taxes", "Direct Cloud Account Access"],
+    metrics: ["Full Code Handover", "Database Access", "Clear Technical Documentation"],
   },
   {
     num: "03",
-    category: "TALENT INTEGRITY",
+    category: "TEAM ACCESS",
     filterCategory: "visibility",
-    title: "Direct Senior Architect Line",
-    headline: "Direct Slack & WhatsApp channel with lead system engineers.",
+    title: "Direct Access to Engineers",
+    headline: "Direct communication with the people designing and building your software.",
     promise:
-      "Zero junior bait-and-switch. You communicate directly with the senior full-stack architects and systems engineers designing your database and writing your code. One dedicated Slack/WhatsApp channel with no non-technical account managers acting as filters, no misunderstood briefs, and zero telephone games.",
-    trapTitle: "The Account Manager Telephone Game",
+      "You can communicate directly with the developers and designers working on your project. Questions, suggestions, and feedback don't have to pass through unnecessary layers or non-technical intermediaries, keeping communication fast and precise.",
+    trapTitle: "The Layered Telephone Game",
     trapText:
-      "Pitched by senior founders, then silently delegated to junior interns or offshore subcontractors who don't understand your core business workflows.",
+      "Briefings and feedback passing through multiple intermediaries who don't understand the underlying technical nuances, leading to misunderstandings and delayed answers.",
     slaClause:
-      "MSA §3.4 — Dedicated named senior systems engineers assigned directly; zero unannounced junior delegation or offshore outsourcing.",
-    artifactType: "DIRECT ARCHITECT CHANNEL",
-    artifactDetail: "Slack #client-aetibar-engineering (Lead Architect Online)",
-    artifactStatus: "Direct Access • < 2hr Response",
+      "Direct Collaboration — Dedicated communication channel connecting your stakeholders directly with our development team.",
+    artifactType: "COLLABORATIVE WORKSPACE CHANNEL",
+    artifactDetail: "Direct Slack / WhatsApp Channel (Engineering Team Available)",
+    artifactStatus: "Direct Collaboration • Responsive Support",
     icon: EngineeringOutlinedIcon,
-    metrics: ["Senior Engineers Only", "Direct Slack / WhatsApp", "Zero Junior Telephone Games"],
+    metrics: ["Direct Team Access", "Clear Communication Channels", "Fast Feedback Loops"],
   },
   {
     num: "04",
-    category: "OPERATIONAL SAFETY",
+    category: "LAUNCH SAFETY",
     filterCategory: "ownership",
-    title: "Dual-Run Zero-Downtime Migration",
-    headline: "Parallel dual-run testing with 1-click rollback guard.",
+    title: "Controlled & Careful Launch",
+    headline: "Staged rollout, data validation, and rollback planning.",
     promise:
-      "Switching core business systems should never cause panic on a Monday morning. We run your existing tools and the new platform concurrently until 100% of historical records match and your employees are completely confident. If anything falters, our 1-click rollback restores operations instantly.",
-    trapTitle: "The Risky Overnight Cutover",
+      "Switching to a new digital system should never disrupt daily business. We plan migrations carefully, validate historical customer records, and test all critical workflows. Where appropriate, we use staged deployment and rollback preparations to minimize risk when going live.",
+    trapTitle: "The Rushed, Unplanned Cutover",
     trapText:
-      "A rushed 'big-bang' Sunday night launch leads to corrupted customer records, dropped orders, and complete employee panic on Monday morning.",
+      "Rushed overnight launches with untested data imports, leading to corrupted customer records, dropped inquiries, and Monday morning operational chaos.",
     slaClause:
-      "MSA §6.3 — Dual-run parallel sync required with 100% verified record reconciliation before DNS cutover; 1-click rollback armed.",
-    artifactType: "DATA RECONCILIATION PIPELINE",
-    artifactDetail: "14,820 / 14,820 records verified (0 drift)",
-    artifactStatus: "Reconciled • Rollback Armed",
+      "Launch Protocol — Thorough pre-launch staging verification, data validation check, and staged deployment protocol.",
+    artifactType: "DATA VALIDATION PROTOCOL",
+    artifactDetail: "All Key Business Records & Workflows Verified Pre-Launch",
+    artifactStatus: "Pre-Launch Audited • Rollback Planned",
     icon: ShieldOutlinedIcon,
-    metrics: ["7-Day Dual-Run Sync", "100% Historical Data Verified", "1-Click Rollback Guard"],
+    metrics: ["Staged Deployment", "Data Validation Checks", "Rollback Planning"],
   },
   {
     num: "05",
-    category: "BUDGET INTEGRITY",
+    category: "SCOPE & PRICING",
     filterCategory: "performance",
-    title: "Fixed-Sprint Scope Certainty",
-    headline: "Agreed sprint scopes with flexible backlog priority swapping.",
+    title: "Clear Scope and Transparent Pricing",
+    headline: "Agreed deliverables, clear milestones, and transparent change handling.",
     promise:
-      "Every two-week sprint has a locked scope and flat investment. If an operational nuance is discovered during staging testing, we simply swap features of equal engineering weight in the backlog. You never get blindsided by unexpected invoices for basic operational adjustments.",
-    trapTitle: "The Lowball Quote & Change-Order Trap",
+      "We define the project scope, milestones, and deliverables clearly before development begins. If your team identifies new requirements along the way, we evaluate their impact on timeline and cost openly, ensuring you are never surprised by unexpected invoices.",
+    trapTitle: "Unclear Scope & Surprise Change Orders",
     trapText:
-      "An agency quotes an artificially low price to win the contract, then hits you with endless surprise 'Change Order' invoices for basic requirements.",
+      "Vague initial proposals followed by surprise invoices and disputes whenever minor adjustments are required during the build.",
     slaClause:
-      "MSA §5.1 — Sprint pricing is fixed; emerging requirements are accommodated via balanced backlog item swapping at zero penalty fee.",
-    artifactType: "SPRINT SCOPE CONTRACT",
-    artifactDetail: "Sprint 03 Backlog: 100% Scope Locked",
-    artifactStatus: "Agreed • $0.00 Hidden Fees",
+      "Transparent Billing — Clear milestone deliverables with upfront scope agreement and collaborative priority management.",
+    artifactType: "MILESTONE SCOPE AGREEMENT",
+    artifactDetail: "Agreed Deliverables & Milestone Breakdown",
+    artifactStatus: "Transparent Scope • No Hidden Fees",
     icon: ReceiptLongOutlinedIcon,
-    metrics: ["Fixed Sprint Investment", "Flexible Backlog Swapping", "Zero Surprise Invoices"],
+    metrics: ["Documented Deliverables", "Clear Milestones", "Upfront Scope Alignment"],
   },
   {
     num: "06",
-    category: "PERFORMANCE SLA",
+    category: "PERFORMANCE FOCUS",
     filterCategory: "performance",
-    title: "Sub-Second Latency & Core Web Vitals SLA",
-    headline: "Sub-300ms server response times & Core Web Vitals 95+.",
+    title: "Performance-Focused Development",
+    headline: "Fast load times, responsive layouts, and efficient database queries.",
     promise:
-      "Internal operational tools and customer portals must feel instant. We optimize every relational query, API route, and responsive layout to maintain sub-300ms server response times and Core Web Vitals 95+. Your staff never stare at spinning wheels, whether on desktop or in the field.",
-    trapTitle: "The Bloated, Sluggish Web App",
+      "Whether building a customer-facing website, an internal operations portal, or an automation pipeline, we engineer for speed and dependability. We optimize queries, structure clean code, and test on both mobile and desktop so your users enjoy a responsive experience.",
+    trapTitle: "Bloated, Sluggish Applications",
     trapText:
-      "Clunky, bloated templates that take 5+ seconds to load, freeze under concurrent load, and break completely on mobile phones in the field.",
+      "Heavy, bloated templates and inefficient queries that load slowly, crash under concurrent use, and degrade on mobile devices in the field.",
     slaClause:
-      "MSA §9.2 — Sub-300ms P95 API response times and Core Web Vitals 95+ audited in production environment prior to final sign-off.",
-    artifactType: "LIGHTHOUSE & P95 TELEMETRY",
-    artifactDetail: "Server P95: 218ms | Core Web Vitals: 98/100",
-    artifactStatus: "Audited • Mobile Responsive",
+      "Quality Standard — Performance-tested routes, responsive mobile layouts, and modern architecture.",
+    artifactType: "PERFORMANCE & QUALITY CHECK",
+    artifactDetail: "Performance Audited | Responsive Across Devices",
+    artifactStatus: "Quality Audited • Production Ready",
     icon: SpeedOutlinedIcon,
-    metrics: ["< 300ms Server Latency", "Core Web Vitals 95+", "Fail-Safe Crash Telemetry"],
+    metrics: ["Fast Loading Speeds", "Mobile & Desktop Tested", "Clean Semantic Code"],
   },
 ];
 
@@ -250,7 +250,7 @@ export default function TransparencyGuaranteesSection() {
                   fontFamily: "monospace",
                 }}
               >
-                OUR CLIENT PROMISE // THE IRONCLAD PLEDGE
+                OUR APPROACH & COMMITMENTS // WHAT YOU CAN EXPECT
               </Typography>
             </Box>
           </motion.div>
@@ -273,7 +273,7 @@ export default function TransparencyGuaranteesSection() {
                 mb: 2.5,
               }}
             >
-              Six engineering commitments we{" "}
+              Six practical commitments you can{" "}
               <Box
                 component="span"
                 sx={{
@@ -282,7 +282,7 @@ export default function TransparencyGuaranteesSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                write into your contract.
+                expect from Aetibar.
               </Box>
             </Typography>
 
@@ -297,8 +297,7 @@ export default function TransparencyGuaranteesSection() {
                 mb: 4.5,
               }}
             >
-              Hiring an engineering partner shouldn&apos;t feel like a leap of faith. We eliminate the traditional agency
-              black-box playbook with bi-weekly working builds, senior-only execution, and contractual skin in the game.
+              Working with a development partner should feel predictable and transparent. We work with visible milestone previews, direct engineering communication, documented scope, and complete client ownership.
             </Typography>
           </motion.div>
 
@@ -346,7 +345,7 @@ export default function TransparencyGuaranteesSection() {
                 }}
               >
                 <VerifiedRoundedIcon sx={{ fontSize: 18 }} />
-                <span>The Aetibar Guarantees</span>
+                <span>What You Can Expect</span>
                 <Box
                   sx={{
                     px: 1,
@@ -358,7 +357,7 @@ export default function TransparencyGuaranteesSection() {
                     fontWeight: 800,
                   }}
                 >
-                  CONTRACTUAL
+                  COMMITMENTS
                 </Box>
               </Button>
 
@@ -385,7 +384,7 @@ export default function TransparencyGuaranteesSection() {
                 }}
               >
                 <WarningAmberRoundedIcon sx={{ fontSize: 18 }} />
-                <span>The Agency Traps We Ban</span>
+                <span>Common Project Pitfalls</span>
                 <Box
                   sx={{
                     px: 1,
@@ -397,7 +396,7 @@ export default function TransparencyGuaranteesSection() {
                     fontWeight: 800,
                   }}
                 >
-                  INDUSTRY TRAPS
+                  WHAT WE AVOID
                 </Box>
               </Button>
             </Box>
@@ -413,10 +412,10 @@ export default function TransparencyGuaranteesSection() {
               }}
             >
               {[
-                { id: "all", label: "All Guarantees (6)" },
-                { id: "visibility", label: "Sprint Visibility & Senior Team" },
-                { id: "ownership", label: "Code Ownership & Safe Cutover" },
-                { id: "performance", label: "Fixed Budget & Speed SLA" },
+                { id: "all", label: "All Commitments (6)" },
+                { id: "visibility", label: "Visibility & Direct Team" },
+                { id: "ownership", label: "Ownership & Safe Launch" },
+                { id: "performance", label: "Scope & Performance" },
               ].map((tab) => {
                 const isSelected = activeCategory === tab.id;
                 return (
@@ -854,7 +853,7 @@ export default function TransparencyGuaranteesSection() {
                         textTransform: "uppercase",
                       }}
                     >
-                      THE 100% SKIN-IN-THE-GAME PLEDGE
+                      ENGINEERING ACCOUNTABILITY // OUR WORKING COMMITMENT
                     </Typography>
                   </Box>
 
@@ -868,7 +867,7 @@ export default function TransparencyGuaranteesSection() {
                       mb: 2,
                     }}
                   >
-                    We put our engineering fees{" "}
+                    A transparent approach from{" "}
                     <Box
                       component="span"
                       sx={{
@@ -877,7 +876,7 @@ export default function TransparencyGuaranteesSection() {
                         WebkitTextFillColor: "transparent",
                       }}
                     >
-                      on the line.
+                      start to finish.
                     </Box>
                   </Typography>
 
@@ -890,18 +889,16 @@ export default function TransparencyGuaranteesSection() {
                       mb: 3.5,
                     }}
                   >
-                    Every commitment listed above is an enforceable clause in our Master Services Agreement (MSA). If we
-                    miss a scheduled bi-weekly staging preview or compromise your live business cutover, you receive
-                    direct sprint credits. We believe engineering accountability should be contractual, not aspirational.
+                    Every project is built on clear communication, documented scope, and dependable execution. You get regular milestone reviews, direct access to the engineers working on your product, and complete ownership of your codebase and digital assets upon completion.
                   </Typography>
 
-                  {/* 4 Quantitative SLA Badges */}
+                  {/* 4 Qualitative Commitment Badges */}
                   <Grid container spacing={2}>
                     {[
-                      { val: "100%", lbl: "Code & Schema Sovereignty" },
-                      { val: "14 Days", lbl: "Max Staging Release Window" },
-                      { val: "< 300ms", lbl: "Server Latency SLA" },
-                      { val: "0 Risk", lbl: "Dual-Run Migration Net" },
+                      { val: "Clear", lbl: "Documented Scope & Deliverables" },
+                      { val: "Visible", lbl: "Regular Working Previews" },
+                      { val: "Careful", lbl: "Tested Staged Deployment" },
+                      { val: "Direct", lbl: "Code & Credential Handover" },
                     ].map((badge, bIdx) => (
                       <Grid size={{ xs: 6, sm: 3 }} key={bIdx}>
                         <Box
@@ -953,11 +950,10 @@ export default function TransparencyGuaranteesSection() {
                     }}
                   >
                     <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#FFFFFF", mb: 1 }}>
-                      Ready to build with radical transparency?
+                      Ready to discuss your project?
                     </Typography>
                     <Typography sx={{ fontSize: "0.9rem", color: "#A1A1AA", lineHeight: 1.6, mb: 3 }}>
-                      Schedule a 30-minute discovery call directly with a lead systems architect to review your operational
-                      workflows and obtain a fixed-sprint roadmap.
+                      Reach out to our team to discuss your operational workflows, current bottlenecks, and how custom software or automation can help.
                     </Typography>
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
@@ -981,7 +977,7 @@ export default function TransparencyGuaranteesSection() {
                             },
                           }}
                         >
-                          Schedule Architecture Call
+                          Start a Conversation
                         </Button>
                       </Link>
 
@@ -1007,7 +1003,7 @@ export default function TransparencyGuaranteesSection() {
                             },
                           }}
                         >
-                          Explore Our 5-Stage Lifecycle
+                          Explore the 5 Stages
                         </Button>
                       </a>
                     </Box>

@@ -15,27 +15,27 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const heroMetrics = [
   {
-    value: "14-Day",
-    title: "Blueprint Guarantee",
-    desc: "Complete architectural specs and database schemas signed off before sprint one.",
+    value: "Scope",
+    title: "Clear Project Plan",
+    desc: "Detailed technical plan, milestones, and deliverables agreed upon before development starts.",
     icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Bi-Weekly",
-    title: "Staging Previews",
-    desc: "Private Vercel preview environments tested with your real operational data.",
+    value: "Visible",
+    title: "Regular Previews",
+    desc: "Working development previews so you can test features and give feedback as we build.",
     icon: <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "100%",
-    title: "Code & Data Sovereignty",
-    desc: "Full transfer of GitHub repositories, database credentials, and production keys.",
+    value: "Direct",
+    title: "Code & Data Ownership",
+    desc: "Full transfer of repositories, credentials, documentation, and assets as defined in our agreement.",
     icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "0.0%",
-    title: "Disruption / Data Loss",
-    desc: "Dual-run parallel migration guarantees zero lost inquiries or operational pauses.",
+    value: "Careful",
+    title: "Controlled Launch",
+    desc: "Staged cutover, data validation, and post-launch monitoring to protect day-to-day operations.",
     icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
 ];
@@ -43,33 +43,33 @@ const heroMetrics = [
 const showcaseTabs = [
   {
     id: "shadowing",
-    label: "01. Operational Discovery",
+    label: "01. Discovery",
     image: "/images/home/editorial-client-consultation.jpg",
-    alt: "Operational shadowing session auditing customer intake and spreadsheet bottlenecks",
-    phaseTag: "Phase 01 &bull; Discovery Audit",
-    headline: "Shadowing Daily Workflows Before Writing a Single Line of Code",
-    metric1: "100% Process Clarity",
-    metric2: "Zero Guesswork",
+    alt: "Operational discovery session auditing business intake and workflow bottlenecks",
+    phaseTag: "Phase 01 &bull; Discovery",
+    headline: "Understanding Daily Workflows Before Writing Code",
+    metric1: "Workflow Clarity",
+    metric2: "Clear Requirements",
   },
   {
     id: "architecture",
-    label: "02. Systems Topology",
+    label: "02. Architecture",
     image: "/images/home/hero-architecture.jpg",
     alt: "Aetibar system architecture blueprint and relational schema visualization",
-    phaseTag: "Phase 02 &bull; Relational Blueprint",
-    headline: "Relational PostgreSQL Topologies & Fail-Safe Webhooks",
-    metric1: "Sub-Second P95 Latency",
-    metric2: "Zero Architectural Debt",
+    phaseTag: "Phase 02 &bull; Solution Blueprint",
+    headline: "Clean Data Architecture, APIs & Practical Workflows",
+    metric1: "Performance-Focused",
+    metric2: "Scalable Architecture",
   },
   {
     id: "staging",
-    label: "03. Working Staging Sprints",
+    label: "03. Development",
     image: "/images/home/hero-agency-showcase.jpg",
-    alt: "Private Vercel staging engine with real client operational workflows",
-    phaseTag: "Phase 03 &bull; Precision Sprints",
-    headline: "Working Next.js Software Delivered to Private Staging Every 14 Days",
-    metric1: "Core Web Vitals 98+",
-    metric2: "Zero Dark Periods",
+    alt: "Private staging engine with real client operational workflows",
+    phaseTag: "Phase 03 &bull; Staged Development",
+    headline: "Working Software Previews Delivered Throughout Development",
+    metric1: "Modern Web Standards",
+    metric2: "Continuous Visibility",
   },
 ];
 
@@ -177,7 +177,7 @@ export default function HowWeWorkHero() {
                   textTransform: "uppercase",
                 }}
               >
-                OUR METHODOLOGY &bull; OPERATIONAL AUDIT TO LIVE CUTOVER
+                OUR APPROACH &bull; UNDERSTAND &bull; PLAN &bull; BUILD &bull; LAUNCH
               </Typography>
             </Box>
           </motion.div>
@@ -202,7 +202,7 @@ export default function HowWeWorkHero() {
                 mb: { xs: 3, md: 3.5 },
               }}
             >
-              Turning operational chaos into{" "}
+              We understand the work{" "}
               <Box
                 component="span"
                 sx={{
@@ -212,7 +212,7 @@ export default function HowWeWorkHero() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                precision digital systems.
+                before we build the software.
               </Box>
             </Typography>
           </motion.div>
@@ -235,9 +235,7 @@ export default function HowWeWorkHero() {
                 fontWeight: 400,
               }}
             >
-              We don&apos;t start with code or generic templates. We shadow how work and inquiries actually flow
-              through your business, architect clean relational schemas, deliver working staging software every
-              14 days, and guarantee zero-downtime data migration.
+              We start by understanding your business, your existing tools, and the problems slowing your team down. Then we plan, build, test, and launch a solution around the way your business actually works — whether that means custom software, a modern web app, or practical automation.
             </Typography>
           </motion.div>
 
@@ -278,7 +276,7 @@ export default function HowWeWorkHero() {
                       },
                     }}
                   >
-                    Schedule an Operational Discovery Call
+                    Start a Conversation
                   </Button>
                 </Link>
               </motion.div>
@@ -329,7 +327,7 @@ export default function HowWeWorkHero() {
                 alignItems: "center",
               }}
             >
-              {["14-Day Blueprint Guarantee", "Zero Disruption Cutover", "100% Code Sovereignty"].map(
+              {["Clear, Documented Scope", "Careful Staged Deployment", "Direct Code & Asset Ownership"].map(
                 (badge, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                     <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
@@ -420,7 +418,7 @@ export default function HowWeWorkHero() {
                     }}
                   />
                   <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B" }}>
-                    Operational Blueprint Console:
+                    Development Lifecycle:
                   </Typography>
                 </Box>
 
@@ -576,7 +574,7 @@ export default function HowWeWorkHero() {
                   </Box>
                   <Box>
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#22C55E", textTransform: "uppercase" }}>
-                      Operational Standard
+                      Working Standard
                     </Typography>
                     <Typography sx={{ fontSize: "0.875rem", fontWeight: 700, color: "#FFFFFF" }}>
                       {currentTab.metric2}

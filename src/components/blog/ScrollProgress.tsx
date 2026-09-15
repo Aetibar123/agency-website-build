@@ -32,9 +32,9 @@ export default function ScrollProgress() {
       <Box 
         sx={{ 
           height: '100%', 
-          bgcolor: 'primary.main', 
+          bgcolor: '#EA580C', 
           width: `${scrollProgress}%`,
-          boxShadow: '0 0 10px rgba(110,65,226,0.8)',
+          boxShadow: '0 0 12px rgba(234, 88, 12, 0.7)',
           transition: 'width 0.1s ease-out'
         }} 
       />

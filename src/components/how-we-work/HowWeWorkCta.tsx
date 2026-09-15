@@ -102,7 +102,7 @@ export default function HowWeWorkCta() {
                     fontWeight: 700,
                   }}
                 >
-                  START WITH PHASE 01
+                  START A CONVERSATION
                 </Typography>
               </Box>
 
@@ -117,7 +117,17 @@ export default function HowWeWorkCta() {
                   mb: 3,
                 }}
               >
-                Let&apos;s diagnose where your business is losing time.
+                Let&apos;s understand{" "}
+                <Box
+                  component="span"
+                  sx={{
+                    background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  what your business needs.
+                </Box>
               </Typography>
 
               <Typography
@@ -131,7 +141,7 @@ export default function HowWeWorkCta() {
                   fontWeight: 400,
                 }}
               >
-                Tell us how your business currently operates and where manual handoffs break down. We start with Phase 01: uncovering operational friction and determining whether custom system architecture makes economic sense.
+                Tell us how your current process works, what is slowing your team down, and what you want to improve. We&apos;ll help you determine whether a website, custom software, automation, integration, or another digital solution makes sense.
               </Typography>
 
               {/* Button Row */}
@@ -157,7 +167,7 @@ export default function HowWeWorkCta() {
                         },
                       }}
                     >
-                      Schedule an Operational Discovery Call
+                      Start a Conversation
                     </Button>
                   </Link>
                 </motion.div>
@@ -202,9 +212,9 @@ export default function HowWeWorkCta() {
                 }}
               >
                 {[
-                  { text: "Direct Access to System Architect", icon: <VerifiedOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
-                  { text: "100% Confidential & NDA-Protected", icon: <LockOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
-                  { text: "Zero Obligation or Hard Sell", icon: <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
+                  { text: "Direct Engineer Access", icon: <VerifiedOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
+                  { text: "Confidential & Respectful", icon: <LockOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
+                  { text: "Clear, Honest Advice", icon: <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
                 ].map((item, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                     {item.icon}
