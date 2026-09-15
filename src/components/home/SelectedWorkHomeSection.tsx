@@ -19,11 +19,11 @@ interface WorkFilterCategory {
 }
 
 const filterCategories: WorkFilterCategory[] = [
-  { id: "all", label: "All Systems", count: 4 },
-  { id: "digital-presence", label: "Digital Presence", count: 1 },
+  { id: "all", label: "All Projects", count: 4 },
+  { id: "digital-presence", label: "Websites & Apps", count: 1 },
   { id: "internal-tools", label: "Internal Tools", count: 1 },
   { id: "ai-automation", label: "AI & Automation", count: 1 },
-  { id: "customer-leads", label: "Customer & Lead", count: 1 },
+  { id: "customer-leads", label: "Lead Systems", count: 1 },
 ];
 
 export default function SelectedWorkHomeSection() {
@@ -100,7 +100,7 @@ export default function SelectedWorkHomeSection() {
                     fontWeight: 600,
                   }}
                 >
-                  Selected Work // Proven Production Systems
+                  Selected Projects & Prototypes
                 </Typography>
               </Box>
 
@@ -115,7 +115,7 @@ export default function SelectedWorkHomeSection() {
                   mb: 2.5,
                 }}
               >
-                Architecture in the real world.
+                Examples of our work and internal prototypes.
               </Typography>
 
               <Typography
@@ -126,7 +126,7 @@ export default function SelectedWorkHomeSection() {
                   fontWeight: 400,
                 }}
               >
-                No theoretical mockups or decorative templates. Every system below resolved a specific operational bottleneck—verified by real metrics, sub-second latencies, and automated production pipelines.
+                A selection of digital products, operational tools, and internal prototypes built to solve practical business challenges.
               </Typography>
             </Box>
 
@@ -155,7 +155,7 @@ export default function SelectedWorkHomeSection() {
                   },
                 }}
               >
-                View Complete Archive (8+)
+                View All Projects
               </Button>
             </Link>
           </Box>
@@ -291,7 +291,7 @@ export default function SelectedWorkHomeSection() {
                               textTransform: "uppercase",
                             }}
                           >
-                            CASE 01 // DIGITAL PRESENCE
+                            CONCEPT // E-COMMERCE STOREFRONT
                           </Typography>
                         </Box>
 
@@ -302,7 +302,7 @@ export default function SelectedWorkHomeSection() {
                             fontWeight: 600,
                           }}
                         >
-                          Commercial Retailer • 10 Weeks
+                          Internal Concept Build
                         </Typography>
                       </Box>
 
@@ -318,7 +318,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 2,
                         }}
                       >
-                        Headless Commerce & Multi-Channel Inventory Sync
+                        E-Commerce Storefront &amp; Inventory Sync Concept
                       </Typography>
 
                       {/* Narrative */}
@@ -330,7 +330,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 3.5,
                         }}
                       >
-                        A fast-growing retail business managing over 4,000 SKUs was losing customers to 4-second legacy load times and 15 hours of weekly manual inventory re-entry. We replaced their monolithic stack with an edge-rendered Next.js storefront and automated webhook inventory sync.
+                        A modern e-commerce storefront concept designed for clean catalog browsing, fast page performance, and automated inventory synchronization across sales channels.
                       </Typography>
 
                       {/* Verified Metrics HUD Strip */}
@@ -347,27 +347,27 @@ export default function SelectedWorkHomeSection() {
                         }}
                       >
                         <Box>
-                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#EA580C", lineHeight: 1.1 }}>
-                            Sub-sec
+                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#EA580C", lineHeight: 1 }}>
+                            Fast
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 0.4, fontWeight: 500 }}>
-                            Edge Page Delivery
+                            Page Performance
                           </Typography>
                         </Box>
                         <Box>
-                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#18181B", lineHeight: 1.1 }}>
-                            15 hrs/wk
+                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
+                            Real-Time
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 0.4, fontWeight: 500 }}>
-                            Manual Sync Eliminated
+                            Inventory Sync Logic
                           </Typography>
                         </Box>
                         <Box>
-                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#18181B", lineHeight: 1.1 }}>
-                            4,000+
+                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
+                            Modular
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 0.4, fontWeight: 500 }}>
-                            Live SKU Automation
+                            Component Architecture
                           </Typography>
                         </Box>
                       </Box>
@@ -416,7 +416,7 @@ export default function SelectedWorkHomeSection() {
                               },
                             }}
                           >
-                            Explore Architecture Deep Dive
+                            Explore Project Details
                           </Button>
                         </Link>
                       </Box>
@@ -523,7 +523,7 @@ export default function SelectedWorkHomeSection() {
                           }}
                         >
                           <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#22C55E" }} />
-                          EDGE CACHED · 48ms TTFB
+                          FAST PAGE LOADING
                         </Box>
 
                         {/* Floating Bottom Telemetry Badge */}
@@ -551,10 +551,10 @@ export default function SelectedWorkHomeSection() {
                           }}
                         >
                           <Typography sx={{ fontSize: "0.8rem", fontWeight: 600, color: "#FB923C" }}>
-                            Core Web Vitals: 99/100
+                            Modern Web Vitals Optimized
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#A1A1AA", fontFamily: "monospace" }}>
-                            0% DESYNC ERRORS
+                            CATALOG SYNC ARCHITECTURE
                           </Typography>
                         </Box>
                       </Box>
@@ -635,11 +635,11 @@ export default function SelectedWorkHomeSection() {
                               letterSpacing: "0.05em",
                             }}
                           >
-                            CASE 02 // INTERNAL OPERATIONS
+                            PROTOTYPE // INTERNAL TOOLS
                           </Typography>
                         </Box>
                         <Typography sx={{ fontSize: "0.78rem", color: "#A1A1AA", fontWeight: 600 }}>
-                          Regional Logistics Carrier • 8 Weeks
+                          Fleet Management Prototype
                         </Typography>
                       </Box>
 
@@ -655,7 +655,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 1.5,
                         }}
                       >
-                        Fleet Dispatch & Real-Time Driver Operations System
+                        Fleet Dispatch &amp; Mobile Driver Operations System
                       </Typography>
 
                       <Typography
@@ -666,7 +666,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 3,
                         }}
                       >
-                        Replaced chaotic phone check-ins, WhatsApp dispatch threads, and physical delivery manifests across 45+ drivers with an offline-capable mobile app and head-office operations console.
+                        An operational prototype designed to streamline fleet dispatching, replace scattered messaging threads, and provide drivers with an offline-capable mobile interface for route check-ins and delivery verification.
                       </Typography>
 
                       {/* Verified Telemetry Strip */}
@@ -684,19 +684,19 @@ export default function SelectedWorkHomeSection() {
                       >
                         <Box>
                           <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#FB923C", lineHeight: 1 }}>
-                            100% Offline
+                            Offline-Ready
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#A1A1AA", mt: 0.3 }}>
-                            Route Checkpoint Sync
+                            Local Data Storage
                           </Typography>
                         </Box>
                         <Box sx={{ width: 1, height: 28, bgcolor: "rgba(255, 255, 255, 0.1)" }} />
                         <Box>
                           <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#FFFFFF", lineHeight: 1 }}>
-                            0 Phone Calls
+                            Centralized
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#A1A1AA", mt: 0.3 }}>
-                            Daily Check-in Overhead
+                            Dispatch Dashboard
                           </Typography>
                         </Box>
                       </Box>
@@ -739,7 +739,7 @@ export default function SelectedWorkHomeSection() {
                             fontWeight: 700,
                           }}
                         >
-                          ● ROUTE VERIFIED · LOCAL SQLITE
+                          ● ROUTE VERIFICATION DEMO
                         </Box>
                       </Box>
                     </Box>
@@ -788,7 +788,7 @@ export default function SelectedWorkHomeSection() {
                             "&:hover": { bgcolor: "transparent", color: "#EA580C" },
                           }}
                         >
-                          View System Specs
+                          View Prototype Details
                         </Button>
                       </Link>
                     </Box>
@@ -850,11 +850,11 @@ export default function SelectedWorkHomeSection() {
                               letterSpacing: "0.05em",
                             }}
                           >
-                            CASE 03 // AI & AUTOMATION
+                            PROTOTYPE // AI &amp; AUTOMATION
                           </Typography>
                         </Box>
                         <Typography sx={{ fontSize: "0.78rem", color: "#71717A", fontWeight: 600 }}>
-                          B2B Services Prototype
+                          Inquiry Triage Prototype
                         </Typography>
                       </Box>
 
@@ -870,7 +870,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 1.5,
                         }}
                       >
-                        Intelligent Inquiry Triage & Structured Routing Engine
+                        Inquiry Triage &amp; Structured Routing Prototype
                       </Typography>
 
                       <Typography
@@ -881,7 +881,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 3,
                         }}
                       >
-                        A practical natural language processing engine that parses unstructured support emails, extracts structured account metadata, and prepares drafts for human agent sign-off.
+                        A targeted language processing prototype that parses unstructured incoming inquiries, extracts key metadata, and prepares drafted responses for human team review.
                       </Typography>
 
                       {/* Verified Telemetry Strip */}
@@ -902,16 +902,16 @@ export default function SelectedWorkHomeSection() {
                             Human-in-Loop
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
-                            Zero Hallucination Risk
+                            Manual Verification Check
                           </Typography>
                         </Box>
                         <Box sx={{ width: 1, height: 28, bgcolor: "rgba(228, 228, 231, 0.8)" }} />
                         <Box>
                           <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
-                            3x Velocity
+                            Structured
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
-                            Faster Triage & Routing
+                            Automatic Classification
                           </Typography>
                         </Box>
                       </Box>
@@ -954,7 +954,7 @@ export default function SelectedWorkHomeSection() {
                             fontWeight: 700,
                           }}
                         >
-                          98.4% CLASSIFICATION CONFIDENCE
+                          AUTOMATED CLASSIFICATION DEMO
                         </Box>
                       </Box>
                     </Box>
@@ -1003,7 +1003,7 @@ export default function SelectedWorkHomeSection() {
                             "&:hover": { bgcolor: "transparent", color: "#C2410C" },
                           }}
                         >
-                          View Prototype Logic
+                          View Prototype Details
                         </Button>
                       </Link>
                     </Box>
@@ -1065,11 +1065,11 @@ export default function SelectedWorkHomeSection() {
                               letterSpacing: "0.05em",
                             }}
                           >
-                            CASE 04 // CUSTOMER & LEAD SYSTEMS
+                            PROTOTYPE // LEAD SYSTEMS
                           </Typography>
                         </Box>
                         <Typography sx={{ fontSize: "0.78rem", color: "#71717A", fontWeight: 600 }}>
-                          Commercial Equipment Provider • 6 Weeks
+                          Lead Intake Prototype
                         </Typography>
                       </Box>
 
@@ -1084,7 +1084,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 1.5,
                         }}
                       >
-                        Multi-Channel Lead Intake & Instant Quote Builder
+                        Multi-Channel Lead Intake &amp; Quote Builder Prototype
                       </Typography>
 
                       <Typography
@@ -1095,7 +1095,7 @@ export default function SelectedWorkHomeSection() {
                           mb: 3,
                         }}
                       >
-                        Unified scattered WhatsApp, email, and website form inquiries into a centralized triage queue. Integrated an internal quotation engine that computes margins and generates customized PDF proposals in minutes instead of days.
+                        A unified lead intake pipeline concept designed to bring together inquiries from websites, forms, and messages into a single queue, paired with an internal quote generator for consistent estimates.
                       </Typography>
 
                       {/* Verified Telemetry Strip */}
@@ -1113,19 +1113,19 @@ export default function SelectedWorkHomeSection() {
                       >
                         <Box>
                           <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#EA580C", lineHeight: 1 }}>
-                            Minutes vs Days
+                            Consistent
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
-                            Turnaround on Proposals
+                            Template-Driven Proposals
                           </Typography>
                         </Box>
                         <Box sx={{ width: 1, height: 28, bgcolor: "rgba(228, 228, 231, 0.8)" }} />
                         <Box>
                           <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
-                            Zero Lost Leads
+                            Centralized
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
-                            Central Accountable Queue
+                            Single Inquiry Queue
                           </Typography>
                         </Box>
                       </Box>
@@ -1169,7 +1169,7 @@ export default function SelectedWorkHomeSection() {
                             },
                           }}
                         >
-                          Explore Lead Pipeline Architecture
+                          Explore Lead Pipeline Concept
                         </Button>
                       </Link>
                     </Box>
@@ -1218,10 +1218,10 @@ export default function SelectedWorkHomeSection() {
                         }}
                       >
                         <Typography sx={{ fontSize: "0.78rem", fontWeight: 600, color: "#FB923C" }}>
-                          ● AUTOMATED MARGIN CALCULATION
+                          ● STANDARDIZED PRICING LOGIC
                         </Typography>
                         <Typography sx={{ fontSize: "0.75rem", color: "#A1A1AA", fontFamily: "monospace" }}>
-                          1-CLICK PDF DISPATCH
+                          PDF PROPOSAL GENERATOR
                         </Typography>
                       </Box>
                     </Box>
@@ -1264,10 +1264,10 @@ export default function SelectedWorkHomeSection() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                Looking for architecture specific to your industry or operational setup?
+                Looking for a digital solution tailored to your business?
               </Typography>
               <Typography sx={{ fontSize: "0.925rem", color: "#52525B", lineHeight: 1.6 }}>
-                We have engineered and deployed over 8 production web systems, private operational consoles, customer acquisition funnels, and automated data pipelines.
+                We design and build custom websites, internal operations tools, customer lead pipelines, and practical automated systems.
               </Typography>
             </Box>
 
@@ -1293,7 +1293,7 @@ export default function SelectedWorkHomeSection() {
                   },
                 }}
               >
-                Browse Full Case Studies Archive
+                View All Projects &amp; Prototypes
               </Button>
             </Link>
           </Box>

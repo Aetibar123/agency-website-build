@@ -19,92 +19,92 @@ import { motion, AnimatePresence } from "framer-motion";
 const pipelineStages = [
   {
     step: "01",
-    title: "Inquiry Capture",
+    title: "Inquiry Intake",
     icon: ChatBubbleOutlineRoundedIcon,
     fragmented: {
-      tag: "Siloed Inbox",
+      tag: "Scattered Inboxes",
       headline: "Trapped in Personal Inboxes",
-      details: "Leads land in private WhatsApp numbers, DMs, and individual inboxes without team visibility or structure.",
-      latency: "4–8 hr lag",
-      status: "Unsynchronized",
+      details: "Customer inquiries land across personal WhatsApp chats, email inboxes, and web forms with no shared view.",
+      latency: "Slow to follow up",
+      status: "Scattered",
       color: "#EF4444",
       bg: "rgba(239, 68, 68, 0.08)",
     },
     connected: {
-      tag: "Unified Webhook",
-      headline: "Zero-Latency Intake",
-      details: "Instant webhook capture validates project scope, budget, and contact parameters straight into your central core.",
-      latency: "0.4 sec capture",
-      status: "Validated",
+      tag: "Centralized Inbox",
+      headline: "All Inquiries in One Place",
+      details: "Inquiries are gathered automatically into one shared view with the essential project details your team needs.",
+      latency: "Immediate capture",
+      status: "Organized",
       color: "#F97316",
       bg: "rgba(249, 115, 22, 0.12)",
     },
   },
   {
     step: "02",
-    title: "Routing & Triage",
+    title: "Routing & Follow-up",
     icon: HubOutlinedIcon,
     fragmented: {
       tag: "Manual Forwarding",
       headline: "Screenshots & Group Chats",
-      details: "Staff copy-paste customer notes across internal chat groups. Leads sit unassigned when key staff are busy.",
-      latency: "Delayed 12h+",
-      status: "Human Bottleneck",
+      details: "Team members manually copy-paste details between chat groups. Inquiries sit unassigned when people are busy.",
+      latency: "Frequently delayed",
+      status: "Bottleneck",
       color: "#EF4444",
       bg: "rgba(239, 68, 68, 0.08)",
     },
     connected: {
-      tag: "Smart Dispatch",
-      headline: "Automated Routing",
-      details: "Logic engine dispatches inquiries to the right lead based on expertise, territory, and current workload.",
-      latency: "3 sec routing",
-      status: "Dispatched",
+      tag: "Direct Routing",
+      headline: "Assigned to the Right Person",
+      details: "Inquiries reach the right team member based on the type of request, availability, and project requirements.",
+      latency: "Routed automatically",
+      status: "Assigned",
       color: "#F97316",
       bg: "rgba(249, 115, 22, 0.12)",
     },
   },
   {
     step: "03",
-    title: "Estimation & Quote",
+    title: "Quotes & Estimates",
     icon: CalculateOutlinedIcon,
     fragmented: {
-      tag: "Manual Spreadsheets",
-      headline: "Calculation Bottlenecks",
-      details: "Pricing looked up across multiple disconnected spreadsheets. Formula mistakes and quote delays lose deals.",
-      latency: "48–72 hrs",
-      status: "Stalled Deal",
+      tag: "Spreadsheet Math",
+      headline: "Manual Calculations Every Time",
+      details: "Pricing looked up across multiple outdated spreadsheets. Formulas break and quotes take days to assemble.",
+      latency: "Days to send quotes",
+      status: "Slow Estimates",
       color: "#EF4444",
       bg: "rgba(239, 68, 68, 0.08)",
     },
     connected: {
-      tag: "Dynamic Engine",
-      headline: "Instant Margin Calculator",
-      details: "Margin-aware proposal engine generates branded, accurate client quotes and PDF proposals in minutes.",
-      latency: "4 min assembly",
-      status: "Generated",
+      tag: "Consistent Pricing",
+      headline: "Standardized Estimates & PDFs",
+      details: "Clear pricing rules and clean templates make it quick to assemble and share accurate proposals with clients.",
+      latency: "Fast turnaround",
+      status: "Ready to send",
       color: "#F97316",
       bg: "rgba(249, 115, 22, 0.12)",
     },
   },
   {
     step: "04",
-    title: "Execution & Visibility",
+    title: "Work Status & Delivery",
     icon: DashboardCustomizeOutlinedIcon,
     fragmented: {
-      tag: "Blind Operations",
+      tag: "No Shared View",
       headline: "Disconnected Status Tracking",
-      details: "Nobody knows what was promised, who followed up, or what needs delivery next without calling a status meeting.",
-      latency: "Blind spots",
-      status: "Siloed Knowledge",
+      details: "Nobody is quite sure what was promised, who followed up, or what needs delivery next without calling a meeting.",
+      latency: "Frequent confusion",
+      status: "Unclear Status",
       color: "#EF4444",
       bg: "rgba(239, 68, 68, 0.08)",
     },
     connected: {
-      tag: "Single Truth",
-      headline: "Operational Cockpit",
-      details: "Unified real-time dashboard synchronizing management, delivery, sales, and automated customer status alerts.",
-      latency: "Real-time sync",
-      status: "Complete Clarity",
+      tag: "Shared Dashboard",
+      headline: "Clear Visibility for the Whole Team",
+      details: "A straightforward dashboard showing ongoing work, assignments, milestones, and upcoming customer deliveries.",
+      latency: "Always current",
+      status: "Clear Visibility",
       color: "#F97316",
       bg: "rgba(249, 115, 22, 0.12)",
     },
@@ -113,14 +113,14 @@ const pipelineStages = [
 
 const telemetryData = {
   fragmented: [
-    { label: "Quote & Response Latency", value: "48–72 Hours", note: "Prospects go cold while waiting", color: "#EF4444" },
-    { label: "Weekly Admin Copy-Paste", value: "18+ Hours", note: "Wasted across manual spreadsheets", color: "#EF4444" },
-    { label: "Pipeline Visibility", value: "35% Blind", note: "Customer data trapped in private chats", color: "#EF4444" },
+    { label: "Response Time", value: "Slow & Inconsistent", note: "Inquiries wait while messages sit in unread inboxes", color: "#EF4444" },
+    { label: "Manual Admin", value: "Hours Lost Weekly", note: "Spent manually copying info between spreadsheets", color: "#EF4444" },
+    { label: "Pipeline Visibility", value: "Scattered", note: "Customer details trapped in individual chat threads", color: "#EF4444" },
   ],
   connected: [
-    { label: "Quote & Response Latency", value: "< 5 Minutes", note: "94% faster client qualification", color: "#F97316" },
-    { label: "Weekly Admin Copy-Paste", value: "0 Hours", note: "100% automated webhook pipeline", color: "#F97316" },
-    { label: "Pipeline Visibility", value: "100% Audit", note: "Single synchronized truth for leadership", color: "#F97316" },
+    { label: "Response Time", value: "Fast & Reliable", note: "Requests reach the right person as soon as they arrive", color: "#F97316" },
+    { label: "Manual Admin", value: "Significantly Reduced", note: "Information moves directly between your tools", color: "#F97316" },
+    { label: "Pipeline Visibility", value: "Clear & Centralized", note: "One shared view for your entire team", color: "#F97316" },
   ],
 };
 
@@ -208,7 +208,7 @@ export default function ProblemSection() {
                   fontWeight: 600,
                 }}
               >
-                The Operational Reality
+                The Core Problem
               </Typography>
             </Box>
 
@@ -224,7 +224,7 @@ export default function ProblemSection() {
                 mb: 2.5,
               }}
             >
-              Your business doesn&apos;t need another tool.{" "}
+              Your business doesn&apos;t need more complex tools.{" "}
               <Box
                 component="span"
                 sx={{
@@ -234,7 +234,7 @@ export default function ProblemSection() {
                   display: { xs: "inline", md: "inline" },
                 }}
               >
-                It needs a connected system.
+                It needs things to work together.
               </Box>
             </Typography>
 
@@ -248,7 +248,7 @@ export default function ProblemSection() {
                 fontWeight: 400,
               }}
             >
-              Most companies aren&apos;t lacking software. They already pay for WhatsApp, spreadsheets, inboxes, web forms, and SaaS dashboards. The friction is that none of these tools speak to each other &mdash; forcing your best people to act as manual human data glue.
+              Most businesses already use plenty of software &mdash; spreadsheets, inboxes, messaging apps, and separate dashboards. The frustration starts when none of these tools communicate, leaving your team to manually copy data, forward messages, and piece together updates by hand.
             </Typography>
           </Box>
         </motion.div>
@@ -328,7 +328,7 @@ export default function ProblemSection() {
                       lineHeight: 1.2,
                     }}
                   >
-                    {isConnected ? "SYSTEM STATE: SYNCHRONIZED" : "SYSTEM STATE: FRAGMENTED CHAOS"}
+                    {isConnected ? "CONNECTED WORKFLOW" : "DISCONNECTED TOOLS"}
                   </Typography>
                   <Typography
                     sx={{
@@ -339,8 +339,8 @@ export default function ProblemSection() {
                     }}
                   >
                     {isConnected
-                      ? "The Aetibar Connected Workflow"
-                      : "The Disconnected Status Quo"}
+                      ? "How Work Flows With Connected Systems"
+                      : "How Work Slows Down With Disconnected Tools"}
                   </Typography>
                 </Box>
               </Box>
@@ -377,7 +377,7 @@ export default function ProblemSection() {
                     },
                   }}
                 >
-                  Fragmented
+                  Disconnected
                 </Button>
 
                 <Button
@@ -405,7 +405,7 @@ export default function ProblemSection() {
                     },
                   }}
                 >
-                  Connected Engine
+                  Connected
                 </Button>
               </Box>
             </Box>
@@ -487,7 +487,7 @@ export default function ProblemSection() {
                                     letterSpacing: "0.04em",
                                   }}
                                 >
-                                  PHASE {stage.step}
+                                  STEP {stage.step}
                                 </Typography>
                               </Box>
 
@@ -569,7 +569,7 @@ export default function ProblemSection() {
                                   color: isConnected ? "rgba(255, 255, 255, 0.85)" : "rgba(255, 255, 255, 0.6)",
                                 }}
                               >
-                                {isConnected ? "Direct Webhook" : "Human Data Entry"}
+                                {isConnected ? "Connected Flow" : "Manual Data Entry"}
                               </Typography>
                             </Box>
 
@@ -672,8 +672,8 @@ export default function ProblemSection() {
                 }}
               >
                 {isConnected
-                  ? "Every department operates on real-time synchronized data without manual copy-paste overhead or forgotten customer threads."
-                  : "Every disconnect costs your company hours of manual work and creates unnecessary customer friction."}
+                  ? "When your systems connect cleanly, information moves automatically and your team spends their time on clients instead of admin."
+                  : "When tools stay disconnected, your team ends up spending hours copying notes, following up manually, and sorting out confusion."}
               </Typography>
 
               <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>

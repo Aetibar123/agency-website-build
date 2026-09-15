@@ -85,7 +85,7 @@ export default function HomeHero() {
                   textTransform: "uppercase",
                 }}
               >
-                Digital Systems &bull; Workflow Engineering &bull; Custom Platforms
+                Websites &bull; Web &amp; Mobile Apps &bull; Practical AI &bull; Digital Systems
               </Typography>
             </Box>
           </motion.div>
@@ -107,7 +107,7 @@ export default function HomeHero() {
                 mb: { xs: 3, md: 3.5 },
               }}
             >
-              Build a better way for{" "}
+              We build websites, apps, and digital products{" "}
               <Box
                 component="span"
                 sx={{
@@ -116,7 +116,7 @@ export default function HomeHero() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                your business to work.
+                that solve real problems.
               </Box>
             </Typography>
           </motion.div>
@@ -137,9 +137,9 @@ export default function HomeHero() {
                 fontWeight: 400,
               }}
             >
-              We help ambitious businesses replace fragmented tools with cohesive digital
-              websites, customer inquiry pipelines, and internal systems built around how work
-              actually happens.
+              From a business website to a custom web app or practical AI-assisted workflow,
+              we help turn ideas into useful, well-crafted software built around how your business
+              actually works.
             </Typography>
           </motion.div>
 
@@ -180,7 +180,7 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    Explore How We Help
+                    See Our Work
                   </Button>
                 </Link>
               </motion.div>
@@ -208,7 +208,7 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    Let&apos;s Talk
+                    Start a Conversation
                   </Button>
                 </Link>
               </motion.div>
@@ -231,9 +231,9 @@ export default function HomeHero() {
               }}
             >
               {[
-                "Purpose-Built Architecture",
-                "Zero Disconnected Silos",
-                "Direct Founder Collaboration",
+                "Thoughtful Design & Engineering",
+                "Practical Problem Solving",
+                "Clear, Honest Communication",
               ].map((text, i) => (
                 <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                   <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
@@ -367,7 +367,7 @@ export default function HomeHero() {
                         textTransform: "uppercase",
                       }}
                     >
-                      Operational Reality
+                      Practical Engineering
                     </Typography>
                     <Typography
                       sx={{
@@ -376,7 +376,7 @@ export default function HomeHero() {
                         color: "#18181B",
                       }}
                     >
-                      Where digital systems meet daily physical execution
+                      Software designed around how work actually happens
                     </Typography>
                   </Box>
                 </Box>
@@ -411,10 +411,10 @@ export default function HomeHero() {
                         textTransform: "uppercase",
                       }}
                     >
-                      Connected Core
+                      Connected Systems
                     </Typography>
                     <Typography sx={{ fontSize: "0.85rem", fontWeight: 600 }}>
-                      Zero manual copy-paste &bull; Total team visibility
+                      Less repetitive data entry &bull; Clear team visibility
                     </Typography>
                   </Box>
                 </Box>

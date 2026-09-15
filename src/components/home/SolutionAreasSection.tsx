@@ -33,104 +33,104 @@ interface SolutionZone {
 const zones: SolutionZone[] = [
   {
     num: "01",
-    badge: "ZONE 01 // CUSTOMER FRONT DOOR",
-    title: "Digital Presence",
-    subtitle: "High-Performance Web Platforms",
-    headline: "Sub-second Next.js web applications engineered for instant credibility and conversion.",
+    badge: "WEB DEVELOPMENT",
+    title: "Websites & Web Apps",
+    subtitle: "Modern Web Platforms",
+    headline: "Fast, well-crafted websites and web applications that clearly explain what you do.",
     narrative:
-      "Most agency websites look decent but fail to explain what the business actually solves. We design and engineer Next.js platforms as strategic customer journeys: establishing instant authority, answering complex buying questions, and capturing qualified project scopes with sub-second speeds.",
+      "A good website communicates value immediately and makes it effortless for prospective clients to take the next step. We design and build responsive web applications with clean architecture, fast load times, and structured content that builds genuine trust.",
     capabilities: [
-      "Sub-second edge rendering (Core Web Vitals 99+)",
-      "Problem-first positioning and clear value propositions",
-      "Dynamic qualification and interactive scope intake",
-      "Semantic SEO architecture and structured schema",
+      "Fast, responsive layouts optimized for mobile and desktop",
+      "Clear positioning and straightforward service explanations",
+      "Structured inquiry and project scope intake forms",
+      "Search-friendly semantic structure and clean markup",
     ],
     metrics: {
-      primary: "0.38s",
-      primaryLabel: "LCP Load Speed",
-      secondary: "+240%",
-      secondaryLabel: "Qualified Conversion",
+      primary: "Fast",
+      primaryLabel: "Page Performance",
+      secondary: "Clean",
+      secondaryLabel: "Modern Architecture",
     },
-    badgeFloatTop: "Core Web Vitals: 99/100",
-    badgeFloatBottom: "Next.js 16 App Router &bull; Global Edge",
+    badgeFloatTop: "Mobile & Desktop Optimized",
+    badgeFloatBottom: "Modern React & Next.js Architecture",
     path: "/solutions/business-websites",
     image: "/images/portfolio/ecommerce.png",
     icon: <WebAssetOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "02",
-    badge: "ZONE 02 // INQUIRY INFRASTRUCTURE",
+    badge: "INQUIRY MANAGEMENT",
     title: "Customer & Lead Systems",
-    subtitle: "Unified Pipelines & Client Portals",
-    headline: "Turn scattered inquiries across web, email, and WhatsApp into accountable revenue pipelines.",
+    subtitle: "Inquiry Pipelines & Client Portals",
+    headline: "Organize incoming leads and give clients a clear, professional way to stay updated.",
     narrative:
-      "When leads arrive across fragmented channels, inquiries get lost and follow-ups drag. We engineer unified intake pipelines and dedicated client portals tailored to how your sales team operates—eliminating enterprise CRM bloat while ensuring every inquiry is answered in seconds.",
+      "When inquiries come in through forms, emails, and direct messages, details easily get lost. We build centralized inquiry pipelines and dedicated client portals that keep communication organized and make following up simple.",
     capabilities: [
-      "Multi-channel webhook lead consolidation (Web, WhatsApp, Email)",
-      "Automated follow-up triggers and immediate SMS/Email sequences",
-      "Customer self-service tracking and document exchange portals",
-      "Clean pipeline visibility without 200 unnecessary enterprise fields",
+      "Centralized lead capture from websites, forms, and email",
+      "Instant team alerts and automatic confirmation messages",
+      "Client portals for milestone visibility and file sharing",
+      "Simple, focused pipelines without unnecessary complexity",
     ],
     metrics: {
-      primary: "< 45s",
-      primaryLabel: "Avg Response Time",
-      secondary: "0%",
-      secondaryLabel: "Dropped Lead Ratio",
+      primary: "Centralized",
+      primaryLabel: "Inquiry Organization",
+      secondary: "Direct",
+      secondaryLabel: "Team Notification",
     },
-    badgeFloatTop: "Intake Integrity: 100%",
-    badgeFloatBottom: "Instant SMS & Email Dispatch Engine",
+    badgeFloatTop: "Organized Intake",
+    badgeFloatBottom: "Instant Email & Notification Dispatch",
     path: "/solutions/customer-lead-systems",
     image: "/images/portfolio/aiCostomer.png",
     icon: <HubOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "03",
-    badge: "ZONE 03 // OPERATIONAL BACKBONE",
+    badge: "INTERNAL TOOLS",
     title: "Internal Business Tools",
-    subtitle: "Custom Operations ERPs & Dashboards",
-    headline: "Replace fragile spreadsheets with role-based operational dispatch and quoting engines.",
+    subtitle: "Custom Operations & Workflow Tools",
+    headline: "Replace tangled spreadsheets with reliable dashboards and internal tools.",
     narrative:
-      "When core business operations run on 15 fragile spreadsheets, dropped tasks and double-bookings become inevitable. We build custom operational dashboards, field dispatch tools, and real-time quotation engines that give management complete clarity and protect profit margins.",
+      "Running day-to-day operations on messy, shared spreadsheets causes data loss, miscommunication, and wasted hours. We build custom dashboards, task trackers, and quotation tools tailored to your exact workflow.",
     capabilities: [
-      "Role-based operational dashboards for managers, field staff, and clients",
-      "Work order scheduling, mobile dispatch, and digital photo sign-offs",
-      "Margin-aware quotation generators and automated invoice staging",
-      "Centralized PostgreSQL database replacing brittle spreadsheets",
+      "Custom operational dashboards for management and team members",
+      "Task coordination, project dispatch, and status tracking",
+      "Standardized estimate calculators and proposal generators",
+      "Reliable database storage replacing fragile spreadsheets",
     ],
     metrics: {
-      primary: "14+",
-      primaryLabel: "Spreadsheets Replaced",
-      secondary: "100%",
-      secondaryLabel: "Margin Visibility",
+      primary: "Tailored",
+      primaryLabel: "Built to Your Workflow",
+      secondary: "Reliable",
+      secondaryLabel: "Structured Data",
     },
-    badgeFloatTop: "PostgreSQL & Real-Time Sync",
-    badgeFloatBottom: "Automated Margin Guard: Protected Floor 32%",
+    badgeFloatTop: "Structured Database",
+    badgeFloatBottom: "Custom Workflows & Role-Based Access",
     path: "/solutions/internal-business-tools",
     image: "/images/portfolio/fintechDashboard.png",
     icon: <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "04",
-    badge: "ZONE 04 // PRACTICAL LEVERAGE",
-    title: "AI & Practical Automation",
-    subtitle: "Intelligent Document & Data Engines",
-    headline: "Targeted language models and webhook bridges where manual administrative friction drains hours.",
+    badge: "PRACTICAL AUTOMATION",
+    title: "Practical AI & Automation",
+    subtitle: "Document Processing & Smart Workflows",
+    headline: "Practical AI tools and automated connections where manual data entry slows you down.",
     narrative:
-      "We reject empty AI marketing and glowing neon gimmicks. We deploy automation and language models strictly where repetitive manual friction drains human effort—such as extracting unstructured invoices, classifying support tickets, or syncing legacy tools with human-in-the-loop oversight.",
+      "We don't build AI for the sake of buzzwords. We implement automation and language models where repetitive administrative work wastes real hours — like organizing inbound documents, routing messages, or connecting tools that don't talk to each other.",
     capabilities: [
-      "Automated extraction of tables and invoices into structured database fields",
-      "Inbound email and ticket categorization with confidence scoring",
-      "Human-in-the-loop review queues preventing false autonomous actions",
-      "Resilient webhook and API bridges connecting disparate platforms",
+      "Automated document intake and data extraction into structured records",
+      "Inbound inquiry classification and automatic team routing",
+      "Human review checkpoints before actions are taken",
+      "Reliable API bridges connecting your existing software",
     ],
     metrics: {
-      primary: "85%",
-      primaryLabel: "Manual Hours Saved",
-      secondary: "99.4%",
-      secondaryLabel: "Extraction Accuracy",
+      primary: "Focused",
+      primaryLabel: "Practical Application",
+      secondary: "Supervised",
+      secondaryLabel: "Human-in-the-Loop",
     },
-    badgeFloatTop: "Confidence Score: 99.4%",
-    badgeFloatBottom: "Human Sign-off Guard Enabled",
+    badgeFloatTop: "Human Review Guard",
+    badgeFloatBottom: "Automated Extraction with Manual Verification",
     path: "/solutions/ai-automation",
     image: "/images/portfolio/aiInvoice.png",
     icon: <PsychologyOutlinedIcon sx={{ fontSize: 20 }} />,
@@ -196,7 +196,7 @@ export default function SolutionAreasSection() {
                   fontWeight: 600,
                 }}
               >
-                Four Specialized Domains
+                What We Build
               </Typography>
             </Box>
 
@@ -211,7 +211,7 @@ export default function SolutionAreasSection() {
                 mb: 2.5,
               }}
             >
-              Different problems need different architecture.
+              Software and digital systems built for practical business needs.
             </Typography>
 
             <Typography
@@ -223,7 +223,7 @@ export default function SolutionAreasSection() {
                 fontWeight: 400,
               }}
             >
-              We don&apos;t force your business into predetermined templates. Explore our four specialized engineering domains, tailored to your exact operational friction.
+              We don&apos;t force your business into rigid templates. We build clean websites, custom software, and focused automation that fit how your team actually works.
             </Typography>
           </Box>
         </motion.div>

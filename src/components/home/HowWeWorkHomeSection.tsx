@@ -33,67 +33,67 @@ interface MethodologyPhase {
 const phases: MethodologyPhase[] = [
   {
     num: "01",
-    timeframe: "Week 1",
-    phaseCode: "PHASE 01 // OPERATIONAL DIAGNOSTIC",
-    name: "Operational Shadowing & Friction Audit",
-    headline: "We observe your day-to-day operations before writing a single line of code.",
+    timeframe: "Stage 1",
+    phaseCode: "STEP 01 // DISCOVERY",
+    name: "Understand the Problem & Workflow",
+    headline: "We understand your daily workflow before writing a single line of code.",
     narrative:
-      "Most agency projects fail because developers rush into code without understanding operational realities. We shadow your team, audit where inquiries get dropped across WhatsApp, email, and spreadsheets, and quantify the exact operational tax draining your revenue.",
-    deliverable: "Operational Friction Matrix & Complete Data Flow Map",
-    gateCheck: "Gate 01: All manual re-entries and bottlenecks quantified and signed off with founders.",
-    tools: ["Workflow Shadowing", "Bottleneck Audit", "Spreadsheet Tax Calculation", "Tooling Inventory"],
+      "Most software projects run into trouble because teams jump into coding before understanding the real problem. We sit down with you, map out how your team currently works, identify where inquiries get dropped or delayed, and agree on clear priorities.",
+    deliverable: "Clear Project Scope & Workflow Map",
+    gateCheck: "Milestone 01: Scope, requirements, and priorities aligned and agreed upon.",
+    tools: ["Workflow Review", "Bottleneck Identification", "Requirements Definition", "Tools Assessment"],
     icon: <SearchOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "02",
-    timeframe: "Weeks 2–3",
-    phaseCode: "PHASE 02 // TECHNICAL BLUEPRINT",
-    name: "Systems Architecture & Schema Design",
-    headline: "Architecting the minimal, most reliable system topology.",
+    timeframe: "Stage 2",
+    phaseCode: "STEP 02 // ARCHITECTURE",
+    name: "Plan the System & Data Flow",
+    headline: "Designing a clean, reliable foundation tailored to your needs.",
     narrative:
-      "We design the complete technical foundation before engineering starts: PostgreSQL relational schemas, webhook event contracts, role-based auth boundaries, and API integrations. Validating data flows upfront eliminates scope bloat and guarantees sub-second performance.",
-    deliverable: "Technical Specifications, Data Schemas & Interactive Wireframes",
-    gateCheck: "Gate 02: API contracts and database schema approved with zero architectural ambiguity.",
-    tools: ["PostgreSQL Schemas", "Webhook Topologies", "Role-Based Auth", "API Contracts"],
+      "We plan the core architecture before building: how data moves, how different services connect, user roles and permissions, and what screens are needed. Laying out a clear plan upfront prevents scope creep and keeps the build focused.",
+    deliverable: "System Architecture, Data Models & Interface Wireframes",
+    gateCheck: "Milestone 02: System structure, workflows, and wireframes confirmed.",
+    tools: ["Data Modeling", "API Integrations", "User Permissions", "Interface Wireframes"],
     icon: <AccountTreeOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "03",
-    timeframe: "Weeks 4–6",
-    phaseCode: "PHASE 03 // EDGE ENGINEERING",
-    name: "Precision Sprints & Staging Previews",
-    headline: "Bi-weekly working previews with test-driven precision.",
+    timeframe: "Stage 3",
+    phaseCode: "STEP 03 // DEVELOPMENT",
+    name: "Build & Share Regular Previews",
+    headline: "Regular working previews with continuous feedback.",
     narrative:
-      "We engineer in tight, transparent 2-week iterations. You receive private Vercel staging preview links at every milestone to test real working software with your actual operational data—ensuring continuous feedback and zero end-of-project surprises.",
-    deliverable: "Production Next.js Engine & Private Staging Deployments",
-    gateCheck: "Gate 03: 100% automated test coverage and Core Web Vitals 95+ verified.",
-    tools: ["Next.js 16 App Router", "Server Actions", "Automated E2E Tests", "Vercel Previews"],
+      "We build in iterative milestones. You get access to live staging previews as features are completed, allowing you to test real functionality, provide early feedback, and stay informed on progress throughout.",
+    deliverable: "Working Staging Previews & Tested Features",
+    gateCheck: "Milestone 03: Core features tested, reviewed, and approved on staging.",
+    tools: ["React & Next.js", "Server Integrations", "Functional Testing", "Staging Environments"],
     icon: <CodeOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "04",
-    timeframe: "Week 7",
-    phaseCode: "PHASE 04 // CONTROLLED ROLLOUT",
-    name: "Zero-Disruption Cutover & Data Migration",
-    headline: "Dual-run migration ensuring zero lost records or business downtime.",
+    timeframe: "Stage 4",
+    phaseCode: "STEP 04 // LAUNCH",
+    name: "Smooth Launch & Team Onboarding",
+    headline: "Careful rollout and team guidance to ensure a seamless transition.",
     narrative:
-      "Switching operational tools shouldn't halt your business. We orchestrate dual-run migrations where old spreadsheets and new systems run in parallel until your team is fully comfortable, supported by hands-on staff video training.",
-    deliverable: "Migration Verification Audit & Video Staff Training Library",
-    gateCheck: "Gate 04: Zero data mismatch across 100% of historical records.",
-    tools: ["Zero-Downtime Cutover", "Data Integrity Sync", "Role-Based Training", "Rollback Guards"],
+      "Adopting a new system shouldn't disrupt your daily business. We migrate your existing records carefully, conduct thorough testing, and walk your team through the new tools so everyone feels confident on day one.",
+    deliverable: "Production Deployment & Team Walkthrough Guide",
+    gateCheck: "Milestone 04: System live, data verified, and team onboarded.",
+    tools: ["Safe Migration", "Production Deployment", "Team Training", "Backup & Recovery"],
     icon: <RocketLaunchOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "05",
-    timeframe: "Ongoing",
-    phaseCode: "PHASE 05 // OBSERVABILITY & SCALE",
-    name: "Telemetry, Observability & SLAs",
-    headline: "Continuous monitoring and proactive architectural evolution.",
+    timeframe: "Stage 5",
+    phaseCode: "STEP 05 // SUPPORT",
+    name: "Support & Ongoing Improvement",
+    headline: "Ongoing support to keep your software fast, secure, and reliable.",
     narrative:
-      "Deployment is day one, not the finish line. We monitor error rates, API response times, and real user interactions with live telemetry. As your business scales, we proactively optimize performance and introduce intelligent automation.",
-    deliverable: "Live Telemetry Dashboard & Dedicated Architect SLA",
-    gateCheck: "Gate 05: P95 API response times under 200ms and 99.9% uptime compliance.",
-    tools: ["Real-time Observability", "P95 Latency Audits", "Error Tracking", "Iterative Enhancements"],
+      "Launching is just the beginning. We keep an eye on performance, fix issues promptly, and help you introduce improvements as your business grows and your requirements evolve.",
+    deliverable: "Ongoing Maintenance & Feature Support",
+    gateCheck: "Milestone 05: Reliable uptime, prompt issue resolution, and regular check-ins.",
+    tools: ["Performance Monitoring", "Error Tracking", "Security Updates", "Feature Iteration"],
     icon: <MonitorHeartOutlinedIcon sx={{ fontSize: 20 }} />,
   },
 ];
@@ -158,7 +158,7 @@ export default function HowWeWorkHomeSection() {
                     fontWeight: 600,
                   }}
                 >
-                  Engineering Methodology
+                  How We Work
                 </Typography>
               </Box>
 
@@ -173,7 +173,7 @@ export default function HowWeWorkHomeSection() {
                   mb: 2.5,
                 }}
               >
-                From operational diagnosis to zero-downtime cutover.
+                From initial conversation to launch and ongoing support.
               </Typography>
 
               <Typography
@@ -185,7 +185,7 @@ export default function HowWeWorkHomeSection() {
                   fontWeight: 400,
                 }}
               >
-                A disciplined 5-stage engineering lifecycle. Every milestone produces a verified deliverable so you never face dark-period surprises.
+                A clear 5-step process. Every milestone produces working software you can review, so there are never any surprises.
               </Typography>
             </Box>
 
@@ -212,7 +212,7 @@ export default function HowWeWorkHomeSection() {
                   },
                 }}
               >
-                Explore Full Lifecycle
+                See Our Full Process
               </Button>
             </Link>
           </Box>
@@ -502,7 +502,7 @@ export default function HowWeWorkHomeSection() {
                                       letterSpacing: "0.06em",
                                     }}
                                   >
-                                    Tangible Client Deliverable
+                                    Key Deliverable
                                   </Typography>
                                 </Box>
                                 <Typography sx={{ fontSize: "0.925rem", fontWeight: 600, color: "#18181B", lineHeight: 1.45 }}>
@@ -530,7 +530,7 @@ export default function HowWeWorkHomeSection() {
                                       letterSpacing: "0.06em",
                                     }}
                                   >
-                                    Milestone Verification Gate
+                                    Milestone Verification
                                   </Typography>
                                 </Box>
                                 <Typography sx={{ fontSize: "0.875rem", fontWeight: 500, color: "#15803D", lineHeight: 1.45 }}>
@@ -587,8 +587,8 @@ export default function HowWeWorkHomeSection() {
           <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: { xs: 2.5, md: 5 } }}>
             {[
               { icon: <VerifiedOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Direct Access to Engineers" },
-              { icon: <LockOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "100% Code & Schema Ownership" },
-              { icon: <SpeedOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Zero-Downtime Migration Record" },
+              { icon: <LockOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Full Code & Asset Ownership" },
+              { icon: <SpeedOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Built for Reliability" },
             ].map((item, idx) => (
               <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
                 {item.icon}
@@ -612,7 +612,7 @@ export default function HowWeWorkHomeSection() {
                 "&:hover": { textDecoration: "underline" },
               }}
             >
-              Request Architecture Audit &rarr;
+              Discuss Your Project &rarr;
             </Typography>
           </Link>
         </Box>

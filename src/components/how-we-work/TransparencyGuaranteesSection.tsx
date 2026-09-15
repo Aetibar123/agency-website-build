@@ -839,7 +839,7 @@ export default function TransparencyGuaranteesSection() {
                 }}
               />
 
-              <Grid container spacing={4} alignItems="center">
+              <Grid container spacing={4} sx={{ alignItems: "center" }}>
                 {/* Left Side: Assurance Statement */}
                 <Grid size={{ xs: 12, lg: 7 }}>
                   <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 2 }}>
