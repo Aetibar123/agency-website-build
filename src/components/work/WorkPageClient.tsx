@@ -939,7 +939,7 @@ export default function WorkPageClient() {
                 }}
               />
 
-              <Grid container spacing={4} alignItems="center">
+              <Grid container spacing={4} sx={{ alignItems: "center" }}>
                 <Grid size={{ xs: 12, lg: 8 }}>
                   <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 2 }}>
                     <VerifiedRoundedIcon sx={{ color: "#EA580C", fontSize: 20 }} />

@@ -100,7 +100,7 @@ export default function HomeCtaSection() {
                     fontWeight: 700,
                   }}
                 >
-                  Begin The Discussion
+                  Start a Conversation
                 </Typography>
               </Box>
 
@@ -115,7 +115,7 @@ export default function HomeCtaSection() {
                   mb: 3,
                 }}
               >
-                Let&apos;s understand what could work better.
+                Have an idea or problem you want to build for?
               </Typography>
 
               <Typography
@@ -129,7 +129,7 @@ export default function HomeCtaSection() {
                   fontWeight: 400,
                 }}
               >
-                Tell us how your business currently operates and where your bottlenecks live. We start by analyzing the operational problem before discussing code or technology.
+                Tell us what you&apos;re working on. We&apos;ll help you figure out what to build, what can be simplified, and where to start.
               </Typography>
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center", alignItems: "center", mb: 5 }}>
@@ -180,7 +180,7 @@ export default function HomeCtaSection() {
                         },
                       }}
                     >
-                      Learn Our Process
+                      See How We Work
                     </Button>
                   </Link>
                 </motion.div>
@@ -196,7 +196,7 @@ export default function HomeCtaSection() {
                   gap: { xs: 2, sm: 4 },
                 }}
               >
-                {["Zero Sales Pressure", "Direct Systems Architecture", "Transparent Fixed-Scope Options"].map((badge, idx) => (
+                {["No Sales Pressure", "Direct Engineer Access", "Clear, Honest Advice"].map((badge, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                     <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
                     <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.78)", fontWeight: 500 }}>

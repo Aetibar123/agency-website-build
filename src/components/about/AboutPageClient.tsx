@@ -467,7 +467,7 @@ export default function AboutPageClient() {
       {/* ========================================================================= */}
       <Box component="section" sx={{ py: { xs: 12, md: 18 }, bgcolor: "#FFFFFF", position: "relative" }}>
         <Container maxWidth="xl">
-          <Grid container spacing={{ xs: 6, lg: 8 }} alignItems="center">
+          <Grid container spacing={{ xs: 6, lg: 8 }} sx={{ alignItems: "center" }}>
             {/* Left Narrative Column */}
             <Grid size={{ xs: 12, lg: 6 }}>
               <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 2.5 }}>
@@ -833,7 +833,7 @@ export default function AboutPageClient() {
       {/* ========================================================================= */}
       <Box component="section" sx={{ py: { xs: 12, md: 18 }, bgcolor: "#FFFFFF" }}>
         <Container maxWidth="xl">
-          <Grid container spacing={{ xs: 6, lg: 8 }} alignItems="stretch">
+          <Grid container spacing={{ xs: 6, lg: 8 }} sx={{ alignItems: "stretch" }}>
             {/* Left: Studio Roots Photo & Physical Culture */}
             <Grid size={{ xs: 12, lg: 6 }} sx={{ display: "flex", flexDirection: "column" }}>
               <Box
@@ -1019,7 +1019,7 @@ export default function AboutPageClient() {
               }}
             />
 
-            <Grid container spacing={4} alignItems="center">
+            <Grid container spacing={4} sx={{ alignItems: "center" }}>
               <Grid size={{ xs: 12, lg: 8 }}>
                 <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 2 }}>
                   <VerifiedRoundedIcon sx={{ color: "#EA580C", fontSize: 20 }} />

@@ -9,10 +9,12 @@ export default function ContactHeroSection() {
   return (
     <Box
       sx={{
-        bgcolor: "#FAF9F5",
-        pt: { xs: 16, md: 24 },
+        bgcolor: "#FFFFFF",
+        pt: { xs: 16, md: 22 },
         pb: { xs: 10, md: 14 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+        background:
+          "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
       }}
     >
       <Container maxWidth="xl">
@@ -24,28 +26,28 @@ export default function ContactHeroSection() {
                 alignItems: "center",
                 gap: 1.5,
                 mb: 3,
-                px: 1.8,
+                px: 2,
                 py: 0.6,
-                borderRadius: "4px",
-                bgcolor: "rgba(14, 116, 144, 0.08)",
-                border: "1px solid rgba(14, 116, 144, 0.18)",
+                borderRadius: "9999px",
+                bgcolor: "rgba(249, 115, 22, 0.08)",
+                border: "1px solid rgba(249, 115, 22, 0.25)",
               }}
             >
               <Box
                 sx={{
-                  width: 6,
-                  height: 6,
+                  width: 8,
+                  height: 8,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#EA580C",
                 }}
               />
               <Typography
-                variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#EA580C",
                   fontWeight: 700,
-                  letterSpacing: "0.14em",
+                  letterSpacing: "0.06em",
                   fontSize: "0.78rem",
+                  textTransform: "uppercase",
                 }}
               >
                 DIRECT CONSULTATION
@@ -55,17 +57,23 @@ export default function ContactHeroSection() {
             <Typography
               variant="h1"
               sx={{
-                color: "#0E172A",
+                color: "#18181B",
                 fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
-                fontWeight: 800,
-                letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.1, md: 1.05 },
-                textTransform: "uppercase",
+                fontWeight: 600,
+                letterSpacing: "-0.035em",
+                lineHeight: { xs: 1.15, md: 1.08 },
                 mb: 3,
               }}
             >
               Let&apos;s Discuss Your <br />
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
                 Next Advantage.
               </Box>
             </Typography>
@@ -73,7 +81,7 @@ export default function ContactHeroSection() {
             <Typography
               variant="body1"
               sx={{
-                color: "#4A4D57",
+                color: "#52525B",
                 fontSize: { xs: "1.05rem", md: "1.2rem" },
                 lineHeight: 1.8,
                 maxWidth: 640,
@@ -88,22 +96,22 @@ export default function ContactHeroSection() {
           <Grid size={{ xs: 12, lg: 5 }}>
             <Box
               sx={{
-                bgcolor: "#F2F0EB",
+                bgcolor: "#FAF8F5",
                 p: { xs: 4, sm: 5 },
-                borderRadius: "12px",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
-                boxShadow: "0 10px 30px rgba(17, 18, 21, 0.04)",
+                borderRadius: "20px",
+                border: "1px solid rgba(228, 228, 231, 0.9)",
+                boxShadow: "0 10px 30px rgba(24, 24, 27, 0.04)",
                 display: "flex",
                 flexDirection: "column",
                 gap: 3.5,
               }}
             >
               <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}>
-                <EmailOutlinedIcon sx={{ color: "#0E7490", fontSize: 24, mt: 0.3 }} />
+                <EmailOutlinedIcon sx={{ color: "#EA580C", fontSize: 24, mt: 0.3 }} />
                 <Box>
                   <Typography
                     variant="caption"
-                    sx={{ color: "#5E6068", fontWeight: 700, letterSpacing: "0.08em" }}
+                    sx={{ color: "#71717A", fontWeight: 700, letterSpacing: "0.08em" }}
                   >
                     DIRECT INQUIRIES
                   </Typography>
@@ -112,11 +120,11 @@ export default function ContactHeroSection() {
                     href="mailto:hello.aetibar@gmail.com"
                     sx={{
                       display: "block",
-                      color: "#0E172A",
+                      color: "#18181B",
                       fontWeight: 700,
                       fontSize: "1.05rem",
                       textDecoration: "none",
-                      "&:hover": { color: "#0E7490" },
+                      "&:hover": { color: "#EA580C" },
                     }}
                   >
                     hello.aetibar@gmail.com
@@ -124,31 +132,31 @@ export default function ContactHeroSection() {
                 </Box>
               </Box>
 
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2, pt: 2, borderTop: "1px solid rgba(17, 18, 21, 0.06)" }}>
-                <AccessTimeOutlinedIcon sx={{ color: "#0E7490", fontSize: 24, mt: 0.3 }} />
+              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2, pt: 2, borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+                <AccessTimeOutlinedIcon sx={{ color: "#EA580C", fontSize: 24, mt: 0.3 }} />
                 <Box>
                   <Typography
                     variant="caption"
-                    sx={{ color: "#5E6068", fontWeight: 700, letterSpacing: "0.08em" }}
+                    sx={{ color: "#71717A", fontWeight: 700, letterSpacing: "0.08em" }}
                   >
                     RESPONSE SLA
                   </Typography>
-                  <Typography sx={{ color: "#0E172A", fontWeight: 600, fontSize: "0.95rem" }}>
+                  <Typography sx={{ color: "#18181B", fontWeight: 600, fontSize: "0.95rem" }}>
                     Within 24 business hours directly from senior leadership.
                   </Typography>
                 </Box>
               </Box>
 
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2, pt: 2, borderTop: "1px solid rgba(17, 18, 21, 0.06)" }}>
-                <LocationOnOutlinedIcon sx={{ color: "#0E7490", fontSize: 24, mt: 0.3 }} />
+              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2, pt: 2, borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+                <LocationOnOutlinedIcon sx={{ color: "#EA580C", fontSize: 24, mt: 0.3 }} />
                 <Box>
                   <Typography
                     variant="caption"
-                    sx={{ color: "#5E6068", fontWeight: 700, letterSpacing: "0.08em" }}
+                    sx={{ color: "#71717A", fontWeight: 700, letterSpacing: "0.08em" }}
                   >
                     STUDIO HQ
                   </Typography>
-                  <Typography sx={{ color: "#0E172A", fontWeight: 600, fontSize: "0.95rem" }}>
+                  <Typography sx={{ color: "#18181B", fontWeight: 600, fontSize: "0.95rem" }}>
                     Udaipur, Rajasthan, India &bull; Serving Clients Globally
                   </Typography>
                 </Box>

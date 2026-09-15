@@ -14,61 +14,61 @@ import { motion } from "framer-motion";
 const principles = [
   {
     num: "01",
-    tag: "DIAGNOSTIC RIGOR",
-    title: "Diagnose Before Code",
-    subtitle: "We study human habits and daily operations before writing a single line of software.",
+    tag: "UNDERSTAND FIRST",
+    title: "Understand Before Building",
+    subtitle: "We take time to learn how your business works before suggesting any technology.",
     summary:
-      "Most software projects fail before development even starts because nobody asked how work actually happens on a typical Tuesday. We sit down with founders, dispatchers, and sales reps to map every handoff from first contact to delivery.",
+      "A lot of software fails because people jump straight into writing code without understanding the day-to-day workflow. We talk with you and your team to understand where time is wasted, what tools you already use, and what actually needs fixing.",
     badgeColor: "#EA580C",
     badgeBg: "rgba(249, 115, 22, 0.08)",
     badgeBorder: "rgba(249, 115, 22, 0.25)",
     icon: TroubleshootOutlinedIcon,
     checklist: [
-      "Customer journey mapping (first contact to quote)",
-      "Audit of spreadsheets, inboxes & manual handoffs",
-      "Identification of hidden operational bottlenecks",
+      "Learning how customer inquiries arrive and how work gets done",
+      "Identifying where manual steps and spreadsheets slow things down",
+      "Clarifying what needs to be built before writing any code",
     ],
-    highlightPill: "Discovery Phase",
-    metricBadge: "100% Process Clarity",
+    highlightPill: "First Step",
+    metricBadge: "Problem-First Approach",
   },
   {
     num: "02",
-    tag: "UNIFIED PIPELINE",
-    title: "Eliminate Human Glue",
-    subtitle: "Zero manual copy-pasting between spreadsheets, inboxes, and chat threads.",
+    tag: "SIMPLICITY",
+    title: "Reduce Repetitive Work",
+    subtitle: "Less time spent copying data between spreadsheets, messages, and inboxes.",
     summary:
-      "Every growing business accumulates operational friction: staff manually re-typing customer orders, quotes delayed because pricing is trapped in PDFs, or reps answering the same status questions ten times a day.",
+      "Growing businesses often pick up disorganized habits over time: re-typing customer details, answering the same status questions repeatedly, or losing track of leads across multiple channels.",
     badgeColor: "#F97316",
     badgeBg: "rgba(249, 115, 22, 0.12)",
     badgeBorder: "rgba(249, 115, 22, 0.35)",
     icon: AccountTreeOutlinedIcon,
     checklist: [
-      "Eliminate duplicate data entry across screens",
-      "Connect WhatsApp, email, and web into one triage queue",
-      "Free 15+ hours/week of team time for high-value work",
+      "Cut down on duplicate data entry across different tools",
+      "Bring inquiries from website, email, and messaging into one view",
+      "Help your team focus on customers rather than admin tasks",
     ],
-    highlightPill: "Automated Core",
-    metricBadge: "Zero Siloed Data",
+    highlightPill: "Practical Help",
+    metricBadge: "Time Saved for Real Work",
     isFeatured: true,
   },
   {
     num: "03",
-    tag: "BESPOKE ARCHITECTURE",
-    title: "Purpose-Built Systems",
-    subtitle: "Custom-engineered around your physical constraints, not generic SaaS templates.",
+    tag: "THOUGHTFUL CRAFT",
+    title: "Built Around Your Business",
+    subtitle: "Software designed for your actual workflow, not bloated generic templates.",
     summary:
-      "We do not force your business into rigid per-user SaaS packages or bloated WordPress themes. We engineer lean, ultra-fast Next.js platforms and tailored internal tools designed specifically for your exact operational workflow.",
+      "We avoid pushing complicated software packages you will never use. Instead, we build clean, fast websites and straightforward internal tools tailored to how your team actually works.",
     badgeColor: "#EA580C",
     badgeBg: "rgba(249, 115, 22, 0.08)",
     badgeBorder: "rgba(249, 115, 22, 0.25)",
     icon: TerminalRoundedIcon,
     checklist: [
-      "Ultra-fast Next.js architecture (< 0.4s response times)",
-      "Zero per-user monthly SaaS subscription taxes",
-      "Tailored role-based interfaces for your exact team",
+      "Fast, responsive websites built with modern technologies",
+      "No paying for bloated software features you don't need",
+      "Simple interfaces that your team can actually understand and use",
     ],
-    highlightPill: "Production Stack",
-    metricBadge: "Built for Longevity",
+    highlightPill: "Modern Tech",
+    metricBadge: "Built for Reliability",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function PhilosophySection() {
                   fontWeight: 600,
                 }}
               >
-                How Aetibar Thinks
+                Our Philosophy
               </Typography>
             </Box>
 
@@ -160,7 +160,7 @@ export default function PhilosophySection() {
                 mb: 2.5,
               }}
             >
-              We don&apos;t build software for the sake of software.{" "}
+              We don&apos;t build software just to build software.{" "}
               <Box
                 component="span"
                 sx={{
@@ -169,7 +169,7 @@ export default function PhilosophySection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                We engineer leverage.
+                We build it to solve actual problems.
               </Box>
             </Typography>
 
@@ -183,7 +183,7 @@ export default function PhilosophySection() {
                 fontWeight: 400,
               }}
             >
-              Technology is only as valuable as the real business friction it removes. We operate on three continuous disciplines to ensure every digital system delivers immediate operational relief and compound commercial value.
+              Software is only useful when it removes real friction from your day. We focus on understanding what your business actually needs, keeping solutions simple, and building tools that are reliable and straightforward to use.
             </Typography>
           </Box>
         </motion.div>
@@ -451,7 +451,7 @@ export default function PhilosophySection() {
                     color: "#FB923C",
                   }}
                 >
-                  Our Practical Guarantee
+                  What We Care About
                 </Typography>
               </Box>
 
@@ -464,7 +464,7 @@ export default function PhilosophySection() {
                   letterSpacing: "-0.015em",
                 }}
               >
-                &ldquo;Technology should feel invisible, effortless, and dependable &mdash; quietly powering your operations so your team can focus on client relationships and revenue.&rdquo;
+                &ldquo;Good software should feel simple, dependable, and useful &mdash; taking care of repetitive work so you and your team can focus on growing your business.&rdquo;
               </Typography>
             </Box>
 

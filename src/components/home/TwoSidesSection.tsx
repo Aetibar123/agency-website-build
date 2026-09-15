@@ -53,153 +53,153 @@ const dualStages: DualStage[] = [
   {
     id: "discovery",
     step: "01",
-    tabLabel: "Discovery & Authority",
-    tabSub: "Search ➔ Instant Render",
+    tabLabel: "First Impression",
+    tabSub: "Fast Page Loading",
     customer: {
-      stageTag: "Front-Stage • First Contact",
-      title: "Immediate Speed & Clear Value",
+      stageTag: "Customer Experience",
+      title: "Fast Loading & Clear Information",
       description:
-        "The prospective buyer discovers your company via organic search or direct referral. Pages render instantaneously with clean architecture, zero agency jargon, and clear proof of capability.",
+        "Visitors find what they need right away. Pages load quickly, work properly across mobile and desktop, and communicate your services clearly without confusing jargon.",
       uiType: "web-preview",
       uiData: {
-        label: "Client Impression",
-        value: "0.38s Next.js Initial Paint",
-        tag: "100% Lighthouse Score",
-        meta: "Clean semantic SEO & verified credibility signals",
+        label: "User Experience",
+        value: "Fast, Responsive Design",
+        tag: "Optimized",
+        meta: "Clear messaging, quick loading, and easy navigation",
       },
-      outcome: "Immediate trust formed; zero bounce from slow load times.",
+      outcome: "Visitors get clear answers and understand what you offer immediately.",
     },
     bridge: {
-      protocol: "SSR & Intent Capture",
-      latency: "< 120ms Latency",
+      protocol: "Direct Data Flow",
+      latency: "Connected System",
     },
     business: {
-      stageTag: "Back-Stage • Audience Analytics",
-      title: "Direct Attribution & Intent Tracking",
+      stageTag: "Internal Operations",
+      title: "Clean Lead Capture & Tracking",
       description:
-        "High-performance server-side logging identifies search intent and prospective lead velocity without invasive third-party cookie bloat or heavy tracking scripts.",
+        "Know where inquiries come from and what services people are looking for, without complicated setups or unnecessary tracking bloat.",
       uiType: "analytics-preview",
       uiData: {
-        label: "Operational Telemetry",
-        value: "Zero Tracking Bloat",
-        tag: "Clean Attribution",
-        meta: "Inquiry source captured and logged to central core",
+        label: "Traffic & Inquiries",
+        value: "Direct Attribution",
+        tag: "Active",
+        meta: "Inquiries recorded directly into your workflow",
       },
-      outcome: "Full visibility into customer acquisition channels.",
+      outcome: "A clear picture of how prospective clients discover your business.",
     },
   },
   {
     id: "intake",
     step: "02",
-    tabLabel: "Structured Intake",
-    tabSub: "Inquiry ➔ Instant Triage",
+    tabLabel: "Getting in Touch",
+    tabSub: "Inquiry ➔ Direct Routing",
     customer: {
-      stageTag: "Front-Stage • Guided Scoping",
-      title: "Frictionless Scope Intake Form",
+      stageTag: "Customer Experience",
+      title: "Clear, Guided Contact Forms",
       description:
-        "Instead of a generic text box that leads to endless back-and-forth emails, the customer moves through an intuitive guided configurator capturing exact project parameters and budget upfront.",
+        "Instead of vague contact forms that cause confusion and endless email chains, clients go through structured questions that capture project details upfront.",
       uiType: "form-preview",
       uiData: {
-        label: "Inquiry Intake",
-        value: "Workflow Automation Scope",
-        tag: "Verified Lead",
-        meta: "Timeline: 4 Weeks • Tier: Growth Enterprise",
+        label: "Project Inquiry",
+        value: "Structured Requirement Intake",
+        tag: "Submitted",
+        meta: "Project type, timeline, and requirements organized clearly",
       },
-      outcome: "Customer feels understood and confident in your process.",
+      outcome: "Clients can submit detailed project details easily.",
     },
     bridge: {
-      protocol: "Real-Time Webhook Pipeline",
-      latency: "180ms Dispatch",
+      protocol: "Instant Routing",
+      latency: "Automated Dispatch",
     },
     business: {
-      stageTag: "Back-Stage • Triage Engine",
-      title: "Automated Routing & Team Dispatch",
+      stageTag: "Internal Operations",
+      title: "Automatic Routing & Notifications",
       description:
-        "Data is ingested via direct API webhook. No human needs to copy-paste info from an email. The lead is automatically routed to the right specialist with instant mobile and Slack alerts.",
+        "Inquiry details go straight to the right person via email, team chat, or your CRM — so nobody has to copy-paste information between multiple tools.",
       uiType: "triage-preview",
       uiData: {
-        label: "Triage Pipeline",
-        value: "Assigned to Lead Architect",
-        tag: "3-Sec Dispatch",
-        meta: "Zero manual re-typing • Calendar slot reserved",
+        label: "Team Notification",
+        value: "Routed to Project Lead",
+        tag: "Instant Alert",
+        meta: "No manual re-typing, ready for direct follow-up",
       },
-      outcome: "Response time drops from 24 hours to under 5 minutes.",
+      outcome: "Inquiries are answered promptly and never get lost in an inbox.",
     },
   },
   {
     id: "quote",
     step: "03",
-    tabLabel: "Dynamic Quotation",
-    tabSub: "Scope ➔ Branded Proposal",
+    tabLabel: "Estimates & Proposals",
+    tabSub: "Scope ➔ Proposal",
     customer: {
-      stageTag: "Front-Stage • Proposal Review",
-      title: "Transparent, Structured Proposals",
+      stageTag: "Customer Experience",
+      title: "Clear, Itemized Proposals",
       description:
-        "The prospective client receives a beautifully formatted, itemized digital proposal with transparent milestone timelines, scope guardrails, and instant acceptance options.",
+        "Clients receive organized proposals with clear scopes, realistic timelines, and transparent milestones, making decisions straightforward and reliable.",
       uiType: "proposal-preview",
       uiData: {
-        label: "Proposal Viewer",
+        label: "Proposal View",
         value: "Itemized Scope & Milestones",
-        tag: "Delivered in 4 Hours",
-        meta: "Clear deliverable milestones & fixed margin quotes",
+        tag: "Structured",
+        meta: "Clear deliverable milestones and transparent pricing terms",
       },
-      outcome: "Frictionless decision making; client closes faster.",
+      outcome: "Clients clearly understand what is included and how much it costs.",
     },
     bridge: {
-      protocol: "Dynamic Margin Calculator",
-      latency: "Automated PDF Engine",
+      protocol: "Connected Pricing Logic",
+      latency: "Standardized Calculation",
     },
     business: {
-      stageTag: "Back-Stage • Pricing Engine",
-      title: "Margin-Aware Calculation Core",
+      stageTag: "Internal Operations",
+      title: "Standardized Costing & Quoting",
       description:
-        "Your team calculates pricing using an automated formula engine that enforces profitability rules and generates branded client PDFs in one click — ending spreadsheet errors forever.",
+        "Generate quotes using consistent formulas and templates instead of manual spreadsheets, ensuring realistic estimates and fewer pricing errors.",
       uiType: "margin-preview",
       uiData: {
-        label: "Pricing Core",
-        value: "Guaranteed 45% Gross Margin",
-        tag: "Zero Excel Errors",
-        meta: "Contract generated & milestone invoice prepared",
+        label: "Cost Estimator",
+        value: "Consistent Pricing Logic",
+        tag: "Formula-Driven",
+        meta: "Standardized rules applied automatically to project scopes",
       },
-      outcome: "Eliminates 12 hours of manual spreadsheet math every week.",
+      outcome: "Spend less time writing quotes while keeping estimates accurate.",
     },
   },
   {
     id: "delivery",
     step: "04",
-    tabLabel: "Milestone Tracking",
-    tabSub: "Execution ➔ Live Sync",
+    tabLabel: "Delivery & Updates",
+    tabSub: "Milestones in Progress",
     customer: {
-      stageTag: "Front-Stage • Client Portal",
-      title: "Real-Time Milestone Visibility",
+      stageTag: "Customer Experience",
+      title: "Progress Visibility",
       description:
-        "Active clients log into a dedicated portal to view milestone progress, verify deliverables, and communicate change requests without calling or sending anxious status emails.",
+        "Clients can see milestone progress, review completed items, and provide feedback in one organized place without chasing status updates over email.",
       uiType: "portal-preview",
       uiData: {
-        label: "Client Portal",
-        value: "Phase 3: Deployment (75%)",
-        tag: "Live Verification",
-        meta: "2 Deliverables Approved • Launch Scheduled",
+        label: "Project Status",
+        value: "Active Milestones in Progress",
+        tag: "On Track",
+        meta: "Key deliverables reviewed and next steps scheduled",
       },
-      outcome: "Zero 'Any update?' emails; client experiences complete peace of mind.",
+      outcome: "Clients always know what stage their project is at.",
     },
     bridge: {
-      protocol: "Bi-Directional Database Sync",
-      latency: "Instant Audit Log",
+      protocol: "Shared Project Updates",
+      latency: "Central Record",
     },
     business: {
-      stageTag: "Back-Stage • Operations Cockpit",
-      title: "Unified Team Dispatch Cockpit",
+      stageTag: "Internal Operations",
+      title: "Task & Milestone Management",
       description:
-        "Developers, designers, and project managers log updates directly into an operational dashboard. Completed milestones automatically prepare client invoices and schedule next sprints.",
+        "Your team tracks deliverables, reviews, and client handoffs in a unified workspace, keeping everyone aligned on schedules and expectations.",
       uiType: "cockpit-preview",
       uiData: {
-        label: "Operations Cockpit",
-        value: "Sprint Synchronized",
-        tag: "Auto-Invoicing Queued",
-        meta: "All tasks tracked in one core without status meetings",
+        label: "Milestone Tracking",
+        value: "Task Dashboard",
+        tag: "Synchronized",
+        meta: "Deliverables and next steps organized in one place",
       },
-      outcome: "Management maintains 100% operational control across all accounts.",
+      outcome: "Projects move forward smoothly without endless status check meetings.",
     },
   },
 ];
@@ -287,7 +287,7 @@ export default function TwoSidesSection() {
                   fontWeight: 600,
                 }}
               >
-                The Dual-Sided Engine
+                Two Sides of Every Build
               </Typography>
             </Box>
 
@@ -326,7 +326,7 @@ export default function TwoSidesSection() {
                 fontWeight: 400,
               }}
             >
-              Most technology agencies build only for the front-end &mdash; giving you a shiny public website while leaving your internal team to struggle with disconnected spreadsheets and WhatsApp chaos. Aetibar engineers both halves into one synchronized machine.
+              A website can look great, but if customer inquiries, quotes, and project updates are scattered across messy spreadsheets and unread messages, things quickly fall apart. We build the public face and internal workflows together so your business actually runs smoothly.
             </Typography>
           </Box>
         </motion.div>
@@ -374,7 +374,7 @@ export default function TwoSidesSection() {
                             color: isActive ? "#FB923C" : "#EA580C",
                           }}
                         >
-                          Phase {stage.step}
+                          Step {stage.step}
                         </Typography>
                         {isActive && (
                           <Box
@@ -483,7 +483,7 @@ export default function TwoSidesSection() {
                             {current.customer.stageTag}
                           </Typography>
                           <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#18181B" }}>
-                            What Your Buyer Experiences
+                            What Your Customer Sees
                           </Typography>
                         </Box>
                       </Box>
@@ -655,7 +655,7 @@ export default function TwoSidesSection() {
                             {current.business.stageTag}
                           </Typography>
                           <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#FFFFFF" }}>
-                            What Your Operations Team Controls
+                            What Your Team Manages
                           </Typography>
                         </Box>
                       </Box>
@@ -674,7 +674,7 @@ export default function TwoSidesSection() {
                           textTransform: "uppercase",
                         }}
                       >
-                        Internal Core
+                        Team Side
                       </Box>
                     </Box>
 
@@ -799,10 +799,10 @@ export default function TwoSidesSection() {
             </Box>
             <Box>
               <Typography sx={{ fontSize: "0.75rem", fontWeight: 600, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-                Aetibar Digital Bridge &bull; {current.bridge.protocol}
+                How It Connects &bull; {current.bridge.protocol}
               </Typography>
               <Typography sx={{ fontSize: "0.875rem", fontWeight: 500, color: "#18181B" }}>
-                Synchronizing front-stage customer touchpoints directly with your back-stage execution core.
+                Connecting customer-facing tools directly with your team&apos;s day-to-day workflow.
               </Typography>
             </Box>
           </Box>
