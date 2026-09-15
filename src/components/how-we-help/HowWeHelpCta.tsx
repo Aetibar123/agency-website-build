@@ -112,7 +112,7 @@ export default function HowWeHelpCta() {
                       fontWeight: 700,
                     }}
                   >
-                    START WITH AN OPERATIONAL AUDIT
+                    WORKFLOW &amp; ARCHITECTURE CONSULTATION
                   </Typography>
                 </Box>
               </Box>
@@ -121,11 +121,11 @@ export default function HowWeHelpCta() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "2rem", sm: "2.75rem", md: "3.75rem" },
+                  fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                   fontWeight: 600,
                   color: "#FFFFFF",
-                  lineHeight: { xs: 1.2, md: 1.15 },
-                  letterSpacing: { xs: "-0.02em", md: "-0.03em" },
+                  lineHeight: { xs: 1.15, md: 1.08 },
+                  letterSpacing: "-0.035em",
                   maxWidth: 860,
                   mx: "auto",
                   textAlign: "center",
@@ -136,7 +136,7 @@ export default function HowWeHelpCta() {
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #FB923C 100%)",
+                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}
@@ -158,9 +158,9 @@ export default function HowWeHelpCta() {
                   fontWeight: 400,
                 }}
               >
-                Schedule a 30-minute diagnostic session with our systems architect. We&apos;ll map your
-                existing toolchain, identify where manual double-entry costs you revenue, and draft an
-                actionable blueprint for your business.
+                Schedule a direct consultation with our engineering team. We&apos;ll examine your current
+                workflow bottlenecks, identify integration opportunities across your systems, and discuss
+                whether custom architecture makes sense for your operational scale.
               </Typography>
 
               {/* Action Buttons */}
@@ -242,9 +242,9 @@ export default function HowWeHelpCta() {
                 }}
               >
                 {[
-                  "Direct founder-led technical review",
-                  "Actionable operational flow map provided",
-                  "Zero sales pressure, pure system engineering",
+                  "Direct founder-led technical consultation",
+                  "Actionable workflow analysis & architecture roadmap",
+                  "Zero sales pressure • Objective system guidance",
                 ].map((item, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                     <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />

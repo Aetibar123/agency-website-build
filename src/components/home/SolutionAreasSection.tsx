@@ -35,15 +35,15 @@ const zones: SolutionZone[] = [
     num: "01",
     badge: "WEB DEVELOPMENT",
     title: "Websites & Web Apps",
-    subtitle: "Modern Web Platforms",
-    headline: "Fast, well-crafted websites and web applications that clearly explain what you do.",
+    subtitle: "Custom Web Development & Modern Platforms",
+    headline: "Fast, responsive websites and custom web applications built for clarity and search visibility.",
     narrative:
-      "A good website communicates value immediately and makes it effortless for prospective clients to take the next step. We design and build responsive web applications with clean architecture, fast load times, and structured content that builds genuine trust.",
+      "A great business website or web application should explain what you solve and make taking action effortless. We provide custom web development, business websites, eCommerce platforms, and web applications built with clean code, fast loading speeds, and SEO-friendly structure that drives organic discovery.",
     capabilities: [
-      "Fast, responsive layouts optimized for mobile and desktop",
-      "Clear positioning and straightforward service explanations",
-      "Structured inquiry and project scope intake forms",
-      "Search-friendly semantic structure and clean markup",
+      "Responsive web development optimized for mobile, tablet, and desktop",
+      "Clear positioning, intuitive navigation, and high-performance design",
+      "Structured inquiry intake, quote forms, and customer onboarding",
+      "Technical SEO architecture and on-page optimization for search visibility",
     ],
     metrics: {
       primary: "Fast",
@@ -61,15 +61,15 @@ const zones: SolutionZone[] = [
     num: "02",
     badge: "INQUIRY MANAGEMENT",
     title: "Customer & Lead Systems",
-    subtitle: "Inquiry Pipelines & Client Portals",
-    headline: "Organize incoming leads and give clients a clear, professional way to stay updated.",
+    subtitle: "Lead Generation Pipelines & Client Portals",
+    headline: "Capture, route, and organize leads across web, email, and messaging channels.",
     narrative:
-      "When inquiries come in through forms, emails, and direct messages, details easily get lost. We build centralized inquiry pipelines and dedicated client portals that keep communication organized and make following up simple.",
+      "When inquiries come in through website forms, direct emails, and messaging apps, details easily slip through the cracks. We engineer centralized lead capture systems, automated notifications, and client portals that keep communication organized and speed up response times.",
     capabilities: [
-      "Centralized lead capture from websites, forms, and email",
-      "Instant team alerts and automatic confirmation messages",
-      "Client portals for milestone visibility and file sharing",
-      "Simple, focused pipelines without unnecessary complexity",
+      "Multi-channel lead intake across websites, forms, and digital campaigns",
+      "Instant team notifications and automated customer confirmations",
+      "Dedicated client portals for milestone visibility and file exchange",
+      "Seamless API and CRM integrations connecting your tools",
     ],
     metrics: {
       primary: "Centralized",
@@ -87,15 +87,15 @@ const zones: SolutionZone[] = [
     num: "03",
     badge: "INTERNAL TOOLS",
     title: "Internal Business Tools",
-    subtitle: "Custom Operations & Workflow Tools",
-    headline: "Replace tangled spreadsheets with reliable dashboards and internal tools.",
+    subtitle: "Custom Business Software & Dashboards",
+    headline: "Custom business software and operational dashboards that replace tangled spreadsheets.",
     narrative:
-      "Running day-to-day operations on messy, shared spreadsheets causes data loss, miscommunication, and wasted hours. We build custom dashboards, task trackers, and quotation tools tailored to your exact workflow.",
+      "Running day-to-day operations on fragile, disconnected spreadsheets leads to lost records and manual mistakes. We build custom software, management dashboards, and workflow tools tailored precisely to how your business operates.",
     capabilities: [
-      "Custom operational dashboards for management and team members",
-      "Task coordination, project dispatch, and status tracking",
-      "Standardized estimate calculators and proposal generators",
-      "Reliable database storage replacing fragile spreadsheets",
+      "Custom operational dashboards and management reporting tools",
+      "Job scheduling, field dispatch, and mobile task coordination",
+      "Standardized quote builders, proposal generators, and invoicing tools",
+      "Secure database architecture replacing fragile, shared spreadsheets",
     ],
     metrics: {
       primary: "Tailored",
@@ -113,15 +113,15 @@ const zones: SolutionZone[] = [
     num: "04",
     badge: "PRACTICAL AUTOMATION",
     title: "Practical AI & Automation",
-    subtitle: "Document Processing & Smart Workflows",
-    headline: "Practical AI tools and automated connections where manual data entry slows you down.",
+    subtitle: "Workflow Automation & Smart Document Processing",
+    headline: "Practical AI development and automated workflows that eliminate repetitive admin work.",
     narrative:
-      "We don't build AI for the sake of buzzwords. We implement automation and language models where repetitive administrative work wastes real hours — like organizing inbound documents, routing messages, or connecting tools that don't talk to each other.",
+      "We build custom AI applications and business process automation strictly where repetitive administrative tasks waste real hours — such as extracting structured data from documents, routing customer inquiries, or connecting separate software tools with human oversight.",
     capabilities: [
       "Automated document intake and data extraction into structured records",
       "Inbound inquiry classification and automatic team routing",
-      "Human review checkpoints before actions are taken",
-      "Reliable API bridges connecting your existing software",
+      "Human review checkpoints ensuring complete accuracy before actions are taken",
+      "Reliable API and webhook integrations connecting your software systems",
     ],
     metrics: {
       primary: "Focused",
@@ -211,7 +211,17 @@ export default function SolutionAreasSection() {
                 mb: 2.5,
               }}
             >
-              Software and digital systems built for practical business needs.
+              Software and digital systems{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                built for practical business needs.
+              </Box>
             </Typography>
 
             <Typography
@@ -223,7 +233,7 @@ export default function SolutionAreasSection() {
                 fontWeight: 400,
               }}
             >
-              We don&apos;t force your business into rigid templates. We build clean websites, custom software, and focused automation that fit how your team actually works.
+              We don&apos;t force your business into rigid templates. From custom web development and business software to mobile apps and practical AI automation, we build digital solutions tailored to how your team actually works.
             </Typography>
           </Box>
         </motion.div>

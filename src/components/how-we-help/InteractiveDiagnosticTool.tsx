@@ -26,93 +26,93 @@ interface SolutionOption {
 const solutionOptions: SolutionOption[] = [
   {
     id: "leads",
-    problemTitle: "Lost Leads on WhatsApp & Web Forms",
-    problemSummary: "Inquiries sit in personal chats or unmonitored email inboxes with no fast follow-up.",
-    impactTag: "Revenue Speed",
+    problemTitle: "Scattered Inquiries Across Multiple Channels",
+    problemSummary: "Inquiries sit across personal chats, web forms, and email without centralized tracking.",
+    impactTag: "Response Speed",
     impactColor: "#EF4444",
-    solutionTitle: "Central Lead Hub & Instant 30s Auto-Responder",
+    solutionTitle: "Centralized Inquiry Intake & Notification Hub",
     solutionSummary:
-      "We connect your website, forms, and WhatsApp into one unified inbox that answers buyers in seconds and alerts your available sales reps immediately.",
+      "We connect your website, forms, and digital communication channels into a unified workflow that organizes incoming requests and alerts the right team members.",
     deliverables: [
-      "One central dashboard tracking all WhatsApp, web form, and social inquiries",
-      "Instant automated personalized welcome reply sent in under 30 seconds",
-      "Smart routing that alerts available sales reps on their phone with full brief",
-      "Real-time pipeline tracker showing every lead from first contact to signed deal",
+      "Centralized dashboard organizing inquiries across forms and channels",
+      "Automated confirmation sent promptly to prospective clients",
+      "Structured routing that notifies team members with full project details",
+      "Clear status tracking showing every inquiry from intake to follow-up",
     ],
-    timeframe: "10–14 Days",
-    impact: "100% of leads captured • Under 45-second response time",
+    timeframe: "Iterative Sprint Delivery",
+    impact: "Centralized inquiry tracking • Prompt team follow-up",
   },
   {
     id: "quoting",
-    problemTitle: "Slow Pricing & 3-Day Quotation Delays",
-    problemSummary: "Sales reps spend days looking up PDF price lists and hand-formatting Word quotes.",
-    impactTag: "Sales Velocity",
+    problemTitle: "Slow, Inconsistent Proposal Preparation",
+    problemSummary: "Teams spend valuable time manually recalculating line items in spreadsheets and formatting documents.",
+    impactTag: "Sales Efficiency",
     impactColor: "#F97316",
-    solutionTitle: "Interactive Pricing & 1-Click Proposal Generator",
+    solutionTitle: "Standardized Estimation & Proposal Workflow",
     solutionSummary:
-      "A custom quote builder that calculates costs, enforces profit margins, and generates branded proposals with digital signing in under 2 minutes.",
+      "A tailored quotation tool that calculates costs with approved margin logic and creates clean, professional proposals ready for review and delivery.",
     deliverables: [
-      "Interactive pricing calculator tailored to your exact margin rules",
-      "Instant branded PDF proposal generation with a single click",
-      "Integrated digital e-signatures and online deposit payments",
-      "Automatic price locks that protect your company from accidental underpricing",
+      "Structured pricing tool aligned with your business and margin rules",
+      "Automated proposal generation with formatted project specifications",
+      "Integrated digital sign-off and approval tracking",
+      "Standardized pricing guidelines to ensure quote consistency",
     ],
-    timeframe: "2–3 Weeks",
-    impact: "Quotes delivered in 2 minutes instead of 3 days • Protected profit margins",
+    timeframe: "Purpose-Built Delivery",
+    impact: "Consistent pricing rules • Streamlined proposal turnaround",
   },
   {
     id: "spreadsheets",
-    problemTitle: "Staff Drowning in Manual Data Entry",
-    problemSummary: "Employees spend hours each day re-typing web orders into fulfillment sheets and accounting.",
-    impactTag: "Payroll Waste",
+    problemTitle: "Repetitive Copy-Pasting Across Separate Systems",
+    problemSummary: "Team members re-enter client and project details across spreadsheets, databases, and accounting tools.",
+    impactTag: "Operational Time",
     impactColor: "#F97316",
-    solutionTitle: "Automated Multi-Tool Sync & Central Database",
+    solutionTitle: "System Integration & Centralized Data Hub",
     solutionSummary:
-      "We link your business tools so that an order or contract in one system automatically updates your CRM, spreadsheets, and accounting with zero manual typing.",
+      "We link your core business tools so project updates and client records sync automatically across your organization without manual re-typing.",
     deliverables: [
-      "Direct real-time connection between your website, CRM, and accounting software",
-      "One centralized company database that updates everywhere in milliseconds",
-      "Clean role-based dashboards for dispatch, fulfillment, and finance",
-      "Automatic alerts for any errors, inventory shifts, or duplicate orders",
+      "API integrations connecting your website, CRM, and accounting software",
+      "Central operational database providing consistent records across tools",
+      "Role-tailored dashboards for project management and fulfillment",
+      "Validation rules to prevent duplicate records and data mismatches",
     ],
-    timeframe: "2–4 Weeks",
-    impact: "18+ hours saved weekly per employee • 100% elimination of manual re-typing",
+    timeframe: "Custom System Build",
+    impact: "Reduced manual data re-entry • Consistent cross-team records",
   },
   {
     id: "field",
-    problemTitle: "Disconnected Field Teams & Paper Clipboards",
-    problemSummary: "Field technicians call the office 10 times a day and use paper receipts that delay billing.",
-    impactTag: "Cash Flow Speed",
+    problemTitle: "Disconnected Frontline Teams & Operations",
+    problemSummary: "Frontline staff or field teams rely on scattered chats or paper notes, delaying status updates and billing.",
+    impactTag: "Workflow Sync",
     impactColor: "#EA580C",
-    solutionTitle: "Mobile Field App & Same-Day Invoicing Portal",
+    solutionTitle: "Mobile Operations Portal & Milestone Invoicing",
     solutionSummary:
-      "A simple smartphone web app for your field staff to access daily jobs, gate codes, customer notes, photo proofs, and client signatures on the road.",
+      "A mobile-friendly web application for frontline staff to record milestone completions, notes, and approvals in real time.",
     deliverables: [
-      "Lightweight mobile web app that works on any phone, even offline",
-      "Digital customer signature capture and job completion photo uploads",
-      "Turn-by-turn route notes, customer history, and gate access codes",
-      "Automated invoice staging the moment a technician taps 'Job Complete'",
+      "Mobile web interface accessible from smartphones and tablets",
+      "Digital milestone sign-off, notes, and completion verification",
+      "Shared project schedules, client requirements, and location details",
+      "Direct handoff to accounting once milestones are marked complete",
     ],
-    timeframe: "3–4 Weeks",
-    impact: "Invoices sent same-day • Zero phone tag between office and road",
+    timeframe: "Tailored Engineering",
+    impact: "Transparent milestone visibility • Reduced billing delays",
   },
   {
     id: "documents",
-    problemTitle: "Manual Invoice & Document Processing",
-    problemSummary: "Staff spend hours typing numbers from supplier PDFs, packing slips, and contracts.",
-    impactTag: "Operational Labor",
+    problemTitle: "Manual Document & Invoice Data Entry",
+    problemSummary: "Staff spend hours manually extracting line items from incoming supplier invoices, receipts, and PDFs.",
+    impactTag: "Process Efficiency",
     impactColor: "#F59E0B",
-    solutionTitle: "Automated Document Reading & Extraction Pipeline",
+    solutionTitle: "Intelligent Document Intake & Verification Pipeline",
     solutionSummary:
-      "Intelligent software that reads supplier bills and client PDFs automatically, pulling line items, totals, and invoice numbers directly into your software.",
+      "Intelligent software that reads incoming business documents, extracts key fields, and presents them for quick human verification.",
     deliverables: [
-      "Automatic parsing of incoming supplier PDFs, receipts, and order forms",
-      "Instant line-item and total extraction with 99%+ accuracy",
-      "Simple 1-click human verification screen for quick spot checks",
-      "Direct automated push into QuickBooks, Xero, or your custom ERP",
+      "Automated parsing of incoming PDFs, supplier invoices, and order forms",
+      "Extraction of key fields, totals, dates, and line items",
+      "Clean review interface for one-click verification and corrections",
+      "Direct integration into accounting or enterprise database systems",
     ],
-    timeframe: "2–3 Weeks",
-    impact: "85% reduction in paperwork data-entry • Zero human typing errors",
+    timeframe: "Targeted Integration",
+    impact: "Reduced manual paperwork • Faster document verification",
   },
 ];
 
@@ -122,10 +122,20 @@ export default function InteractiveDiagnosticTool() {
 
   const selected = solutionOptions.find((opt) => opt.id === selectedId) || solutionOptions[0];
 
-  // Calculations for interactive ROI bench (3.5 hrs/week per employee saved)
-  const weeklyHoursLost = Math.round(teamSize * 3.5);
-  const annualHoursReclaimed = Math.round(weeklyHoursLost * 48);
-  const annualValueRecovered = (annualHoursReclaimed * 38).toLocaleString();
+  // Scale assessment dynamics based on organization size
+  const workflowComplexity =
+    teamSize <= 8
+      ? "Direct Teams"
+      : teamSize <= 22
+      ? "Multi-Role Handshakes"
+      : "Cross-Department Workflows";
+
+  const automationPriority =
+    teamSize <= 8
+      ? "Intake & Proposal Automation"
+      : teamSize <= 22
+      ? "Central Operations Hub"
+      : "Enterprise Workflow Pipeline";
 
   return (
     <Box
@@ -177,7 +187,7 @@ export default function InteractiveDiagnosticTool() {
                     fontWeight: 700,
                   }}
                 >
-                  INTERACTIVE SOLUTION & SAVINGS FINDER
+                  INTERACTIVE WORKFLOW DIAGNOSTIC
                 </Typography>
               </Box>
             </Box>
@@ -192,16 +202,26 @@ export default function InteractiveDiagnosticTool() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.5rem" },
+                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                letterSpacing: "-0.03em",
-                lineHeight: 1.15,
+                lineHeight: { xs: 1.15, md: 1.08 },
+                letterSpacing: "-0.035em",
                 textAlign: "left",
                 mb: 2.5,
               }}
             >
-              What challenge does your team want to solve first?
+              What operational challenge does your team{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                want to solve first?
+              </Box>
             </Typography>
             <Typography
               sx={{
@@ -214,8 +234,7 @@ export default function InteractiveDiagnosticTool() {
                 textAlign: "left",
               }}
             >
-              Select a workflow problem below to see the custom system we engineer, how fast we deploy
-              it, and how many hours your company saves every year.
+              Select a common workflow friction point below to explore the custom system we engineer to eliminate manual data entry, connect disconnected tools, and keep your operations moving smoothly.
             </Typography>
           </motion.div>
         </Box>
@@ -369,7 +388,7 @@ export default function InteractiveDiagnosticTool() {
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                           <CalculateOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
                           <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#18181B" }}>
-                            Calculate Your Team&apos;s Savings:
+                            Workflow Scale Assessment:
                           </Typography>
                         </Box>
                         <Box
@@ -410,27 +429,27 @@ export default function InteractiveDiagnosticTool() {
                         <Grid size={{ xs: 6 }}>
                           <Box sx={{ p: 2, borderRadius: "12px", bgcolor: "#FFFFFF", border: "1px solid rgba(24, 24, 27, 0.06)" }}>
                             <Typography sx={{ fontSize: "0.725rem", color: "#71717A", fontWeight: 700, textTransform: "uppercase", mb: 0.5 }}>
-                              Hours Saved / Year:
+                              Coordination Scale:
                             </Typography>
-                            <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: 800, color: "#18181B" }}>
-                              ~{annualHoursReclaimed.toLocaleString()} hrs
+                            <Typography sx={{ fontSize: { xs: "1.05rem", sm: "1.25rem" }, fontWeight: 800, color: "#18181B" }}>
+                              {workflowComplexity}
                             </Typography>
                           </Box>
                         </Grid>
                         <Grid size={{ xs: 6 }}>
                           <Box sx={{ p: 2, borderRadius: "12px", bgcolor: "#FFFFFF", border: "1px solid rgba(24, 24, 27, 0.06)" }}>
                             <Typography sx={{ fontSize: "0.725rem", color: "#71717A", fontWeight: 700, textTransform: "uppercase", mb: 0.5 }}>
-                              Est. Value Reclaimed:
+                              Automation Focus:
                             </Typography>
-                            <Typography sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: 800, color: "#059669" }}>
-                              ${annualValueRecovered}
+                            <Typography sx={{ fontSize: { xs: "1.05rem", sm: "1.25rem" }, fontWeight: 800, color: "#059669" }}>
+                              {automationPriority}
                             </Typography>
                           </Box>
                         </Grid>
                       </Grid>
 
                       <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 1.5, lineHeight: 1.4 }}>
-                        * Based on eliminating ~3.5 hours of manual data entry, quotation paperwork, and status phone calls per team member each week.
+                        * As team size expands, disconnected spreadsheets and manual handoffs create compounding delays. Custom systems keep information moving smoothly between roles.
                       </Typography>
                     </Box>
                   </Box>

@@ -9,26 +9,26 @@ import HowWeWorkFaqSection from "../../components/how-we-work/HowWeWorkFaqSectio
 import HowWeWorkCta from "../../components/how-we-work/HowWeWorkCta";
 
 export const metadata: Metadata = {
-  title: "How We Work | 5-Stage Workflow-First Engineering Lifecycle | Aetibar",
+  title: "How We Work | Custom Software, Web Development & AI Solutions | Aetibar",
   description:
-    "We don't start with code. We shadow how your business operates, architect resilient PostgreSQL topologies, deliver bi-weekly staging previews, and execute zero-downtime cutover.",
+    "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
   keywords: [
     "How Aetibar works",
-    "Workflow engineering lifecycle",
-    "Custom business software development",
-    "Operational friction audit",
-    "Zero-downtime data migration",
-    "Next.js internal tools",
-    "PostgreSQL system architecture",
+    "software development process",
+    "custom software development Udaipur",
+    "web development company Udaipur",
+    "business automation process",
+    "web application development India",
+    "staged software development",
     "Aetibar Technologies",
   ],
   alternates: {
     canonical: "https://www.aetibar.in/how-we-work",
   },
   openGraph: {
-    title: "How We Work | 5-Stage Workflow-First Engineering Lifecycle | Aetibar",
+    title: "How We Work | Custom Software, Web Development & AI Solutions | Aetibar",
     description:
-      "We don't start with code. We shadow how your business operates, architect resilient PostgreSQL topologies, deliver bi-weekly staging previews, and execute zero-downtime cutover.",
+      "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
     url: "https://www.aetibar.in/how-we-work",
     siteName: "Aetibar",
     type: "website",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How We Work | 5-Stage Engineering Lifecycle | Aetibar",
+    title: "How We Work | Custom Software, Web Development & AI Solutions | Aetibar",
     description:
-      "We don't start with code. We shadow how your business operates, deliver bi-weekly working staging previews, and ensure zero data loss during migration.",
+      "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };

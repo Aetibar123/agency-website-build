@@ -39,137 +39,137 @@ interface ComparisonScenario {
 const scenarios: ComparisonScenario[] = [
   {
     id: "cost",
-    tabLabel: "3-Year True Cost",
+    tabLabel: "Long-Term Cost & Control",
     icon: <AttachMoneyRoundedIcon sx={{ fontSize: 18 }} />,
-    questionTitle: "How much will you actually spend over the next 3 years?",
+    questionTitle: "How do ongoing software costs and system control compare?",
     whyItMatters:
-      "Software costs don't end at launch. Per-user seat licenses, consultant fees, and required rebuilds quietly eat away tens of thousands in company profits.",
+      "Understanding long-term software commitments helps businesses choose between recurring subscription overhead and purpose-built solutions.",
     agencyVerdict: {
-      badge: "Rebuild Every 2 Years",
+      badge: "Template Maintenance",
       description:
-        "Initial $8k–$15k build, but depends on 12+ third-party WordPress plugins. Breaks on major updates and requires a complete redesign from scratch every 2–3 years.",
-      costOrSpeed: "Total 3-Yr Cost: $25,000–$40,000+",
+        "Lower initial cost, but ongoing plugin renewals and theme updates often require routine maintenance to remain secure and functional.",
+      costOrSpeed: "Ongoing plugin subscriptions & updates",
     },
     saasVerdict: {
-      badge: "Per-User Monthly Tax",
+      badge: "Per-User Subscription Model",
       description:
-        "Starts at $150/user/month. When your team grows to 15 people, you pay $2,250 every month ($81,000 over 3 years) just to access your own operational records.",
-      costOrSpeed: "Total 3-Yr Cost: $85,000–$120,000+",
+        "Monthly per-user licensing fees accumulate as your team expands, and custom workflow logic often requires expensive enterprise tiers.",
+      costOrSpeed: "Ongoing per-user monthly licensing",
     },
     aetibarVerdict: {
-      badge: "Fixed Asset You Own",
+      badge: "Custom Engineering Model",
       description:
-        "One fixed engineering investment. Zero per-seat monthly fees. Minimal serverless hosting (~$20/mo). You own the code and database permanently as a company asset.",
-      costOrSpeed: "Total 3-Yr Cost: Fixed Build + ~$720 Hosting",
-      highlight: "Saves $60,000+ compared to recurring enterprise software",
+        "Engineered specifically around your business. You maintain full control over your software and data, avoiding unnecessary per-user seat fees.",
+      costOrSpeed: "Custom development with controllable infrastructure",
+      highlight: "Avoids unnecessary per-user licensing fees as your team grows",
     },
   },
   {
     id: "speed",
-    tabLabel: "Lead Response Speed",
+    tabLabel: "Inquiry Handling",
     icon: <BoltRoundedIcon sx={{ fontSize: 18 }} />,
-    questionTitle: "How fast do new customer inquiries get an answer?",
+    questionTitle: "How are incoming customer inquiries captured and routed?",
     whyItMatters:
-      "78% of customers buy from the company that responds first. Delays of even 30 minutes slash your chance of closing a high-value project by half.",
+      "Prompt, organized responses help businesses engage prospective clients while their interest is highest.",
     agencyVerdict: {
-      badge: "Unmonitored Inbox Form",
+      badge: "Standard Contact Form",
       description:
-        "Standard website form dumps unformatted messages into a shared general email inbox. Leads sit unread for 4–6 hours while customers message your competitors.",
-      costOrSpeed: "Average Response: 4 to 24 Hours",
+        "Website forms typically send unformatted emails to a shared inbox where inquiries can sit without clear team ownership.",
+      costOrSpeed: "Unstructured email notifications",
     },
     saasVerdict: {
-      badge: "40-Field Friction Form",
+      badge: "Standardized Intake Form",
       description:
-        "Generic CRM forms ask 20 mandatory questions before letting buyers submit. 60%+ of high-intent mobile visitors abandon the page without completing it.",
-      costOrSpeed: "High Form Drop-off Rate (60%+)",
+        "Standard CRM forms often include many mandatory fields that create friction for prospective clients without capturing specific project needs.",
+      costOrSpeed: "Generic form fields",
     },
     aetibarVerdict: {
-      badge: "Instant 30s Multi-Channel Sync",
+      badge: "Structured Inbound Intake",
       description:
-        "Sub-second webhook intake sends an immediate, personalized WhatsApp confirmation to the buyer and rings the assigned sales rep with full project specifications.",
-      costOrSpeed: "Average Response: Under 45 Seconds",
-      highlight: "100% lead capture with instant automated buyer welcome",
+        "Captures detailed project requirements, triggers immediate customer confirmation, and notifies the right team members with structured briefs.",
+      costOrSpeed: "Automated intake & team notification",
+      highlight: "Organized inquiry tracking and prompt customer confirmation",
     },
   },
   {
     id: "quoting",
-    tabLabel: "Custom Quoting & Margins",
+    tabLabel: "Quoting & Pricing Logic",
     icon: <CalculateOutlinedIcon sx={{ fontSize: 18 }} />,
     questionTitle: "Can the system calculate complex pricing and generate proposals?",
     whyItMatters:
-      "When quoting takes 3 days, sales momentum dies. When formulas are hidden in personal spreadsheets, employees accidentally under-quote and destroy your profit margins.",
+      "When pricing calculations are manual, preparing proposals takes valuable time and creates risks of inconsistent margins.",
     agencyVerdict: {
-      badge: "Static 'Contact Us' Form",
+      badge: "Static Pricing Tables",
       description:
-        "Static pricing tables or a generic button with zero calculation logic. Your sales team must manually do math in Excel and hand-type Word documents.",
-      costOrSpeed: "Proposal Turnaround: 2 to 4 Days",
+        "Website templates provide static forms without calculation logic, requiring teams to manually compute quotes across external spreadsheets.",
+      costOrSpeed: "Manual calculations in separate files",
     },
     saasVerdict: {
-      badge: "Rigid $30k CPQ Add-On",
+      badge: "Standardized Quoting Modules",
       description:
-        "Requires expensive enterprise CPQ modules and specialized consultants to configure. Still rigid and difficult for sales reps to customize in the field.",
-      costOrSpeed: "Turnaround: 4–6 Hours (High Friction)",
+        "Pre-packaged CPQ tools can be rigid and difficult to configure around specialized service workflows and custom pricing rules.",
+      costOrSpeed: "Standardized calculation rules",
     },
     aetibarVerdict: {
-      badge: "4-Minute Automated Quoting",
+      badge: "Tailored Estimation Workflow",
       description:
-        "Dynamic margin engine tailored to your real pricing rules. Sales reps enter specifications on their phone; a branded PDF proposal is ready for client e-sign in 4 minutes.",
-      costOrSpeed: "Proposal Turnaround: Under 4 Minutes",
-      highlight: "Enforces minimum profit margins so quotes are always profitable",
+        "Quoting logic built around your approved pricing rules, generating clean proposals ready for review and delivery.",
+      costOrSpeed: "Standardized pricing calculation",
+      highlight: "Applies consistent pricing rules across team members",
     },
   },
   {
     id: "sync",
-    tabLabel: "Daily Workflow Sync",
+    tabLabel: "Workflow & Tool Integration",
     icon: <SyncAltRoundedIcon sx={{ fontSize: 18 }} />,
     questionTitle: "Does data flow automatically between your website and internal team?",
     whyItMatters:
-      "When software is disconnected, employees spend hours copying data back and forth. Typos in addresses, quantities, and phone numbers lead to costly delivery mistakes.",
+      "When tools are disconnected, staff must re-enter information manually, which slows operations and causes transcription errors.",
     agencyVerdict: {
-      badge: "Completely Disconnected",
+      badge: "Disconnected Front-End",
       description:
-        "Agencies only care about the front website. They have no interest in your accounting software, field dispatch, or inventory tracking behind the scenes.",
-      costOrSpeed: "2+ Hours Wasted Daily on Copy-Pasting",
+        "Focuses strictly on the public website with no connection to internal databases, scheduling, or accounting tools.",
+      costOrSpeed: "Manual data transfer between systems",
     },
     saasVerdict: {
-      badge: "Fragile Third-Party Connectors",
+      badge: "Third-Party Connectors",
       description:
-        "Rely on brittle third-party zaps between different software tools. When an API updates without notice, zaps break silently and corrupt your database records.",
-      costOrSpeed: "Frequent Silent Sync Failures",
+        "Often requires separate connector tools and middleware subscriptions to move data between different vendor platforms.",
+      costOrSpeed: "Dependent on multiple connector services",
     },
     aetibarVerdict: {
-      badge: "Unified Automated Pipeline",
+      badge: "Direct System Integration",
       description:
-        "Direct webhook bridges connect website inquiries, team WhatsApp groups, project management, and invoicing into one single source of truth.",
-      costOrSpeed: "Zero Manual Re-Typing (Real-Time Sync)",
-      highlight: "Eliminates human error across customer intake and operations",
+        "Direct integrations link your web forms, CRM, project tracking, and invoicing into a cohesive operational workflow.",
+      costOrSpeed: "Direct data synchronization",
+      highlight: "Reduces duplicate entry across customer touchpoints and operations",
     },
   },
   {
     id: "ownership",
-    tabLabel: "Code & Data Ownership",
+    tabLabel: "System Control & Flexibility",
     icon: <LockOutlinedIcon sx={{ fontSize: 18 }} />,
-    questionTitle: "Who actually owns the software, database, and intellectual property?",
+    questionTitle: "How much control does your business maintain over its software and data?",
     whyItMatters:
-      "Renting your core business engine leaves you vulnerable. If a SaaS provider raises prices 40% or closes your account, your entire business operations grind to a halt.",
+      "Businesses need the flexibility to adapt their tools as their processes evolve, without being locked into rigid third-party platforms.",
     agencyVerdict: {
-      badge: "Plugin Dependency Trap",
+      badge: "Theme & Plugin Dependencies",
       description:
-        "You own design layout files, but depend on 15+ external commercial plugins with separate renewal licenses that can conflict and crash your website.",
-      costOrSpeed: "Vendor & Plugin Lock-in",
+        "Dependent on third-party themes and commercial plugins with varying update cycles and licensing requirements.",
+      costOrSpeed: "Dependent on external plugin ecosystems",
     },
     saasVerdict: {
-      badge: "Zero Ownership (Permanent Rental)",
+      badge: "Proprietary Platform",
       description:
-        "You own nothing. You rent access to their servers. If you cancel your subscription, your historical analytics, workflows, and tools are instantly locked.",
-      costOrSpeed: "100% Locked Inside Their Platform",
+        "Workflows, data models, and features are hosted on a vendor's proprietary system, limiting customization and export flexibility.",
+      costOrSpeed: "Hosted within vendor ecosystem",
     },
     aetibarVerdict: {
-      badge: "100% Permanent Company IP",
+      badge: "Custom Operational Control",
       description:
-        "Full intellectual property ownership from day one. Clean TypeScript and PostgreSQL code running on your private cloud. You can modify or host it anywhere forever.",
-      costOrSpeed: "100% Owned Business Asset",
-      highlight: "Builds tangible equity and valuation into your company",
+        "Tailored software architecture built on modern technologies like Next.js and TypeScript, giving your business full control over data and workflows.",
+      costOrSpeed: "High flexibility and system control",
+      highlight: "Gives your business greater control over how data and workflows are managed",
     },
   },
 ];
@@ -228,7 +228,7 @@ export default function ComparisonSection() {
                     fontWeight: 700,
                   }}
                 >
-                  THE ARCHITECTURAL DIFFERENCE
+                  STRATEGIC SYSTEM APPROACH
                 </Typography>
               </Box>
             </Box>
@@ -243,16 +243,26 @@ export default function ComparisonSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.4rem" },
+                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                letterSpacing: "-0.03em",
-                lineHeight: 1.18,
+                lineHeight: { xs: 1.15, md: 1.08 },
+                letterSpacing: "-0.035em",
                 textAlign: "left",
                 mb: 2.5,
               }}
             >
-              Why custom connected systems beat marketing agencies and rented SaaS
+              When off-the-shelf tools aren't enough for{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                your operations.
+              </Box>
             </Typography>
             <Typography
               sx={{
@@ -265,9 +275,9 @@ export default function ComparisonSection() {
                 textAlign: "left",
               }}
             >
-              Most companies get stuck between a marketing agency that only designs a pretty brochure,
-              or bloated enterprise software that charges thousands in monthly seat taxes.
-              Here is how purpose-built connected architecture changes everything.
+              Templates and generic SaaS are great for standard early-stage needs. But as operations mature,
+              disconnected tools create data silos and manual workarounds.
+              Here is how purpose-built connected architecture delivers long-term operational leverage.
             </Typography>
           </motion.div>
         </Box>
@@ -298,7 +308,7 @@ export default function ComparisonSection() {
                 {/* Header Badge */}
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
                   <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", letterSpacing: "0.06em" }}>
-                    OPTION 01 &bull; SURFACE ONLY
+                    OPTION 01 &bull; SURFACE-LEVEL SITES
                   </Typography>
                   <Box
                     sx={{
@@ -316,20 +326,20 @@ export default function ComparisonSection() {
                 </Box>
 
                 <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#18181B", mb: 1.2 }}>
-                  Marketing &amp; Web Agencies
+                  Website Templates &amp; Basic Portfolios
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65, mb: 3 }}>
-                  Focus solely on visual graphics and copywriting. Once design mockups are approved,
-                  they disappear — leaving your internal team with the same manual chaos.
+                  Focus primarily on front-facing visual presentation. Effective for basic online visibility,
+                  but completely disconnected from internal business processes and workflow tools.
                 </Typography>
 
                 {/* Reality Check Bullets */}
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8, mb: 3.5 }}>
                   {[
-                    "Website is an isolated brochure that doesn't talk to your tools",
-                    "Customer leads get dumped into an unmonitored general email inbox",
-                    "Zero understanding of pricing margins, quoting logic, or dispatch",
-                    "Breaks when WordPress plugins conflict on routine updates",
+                    "Standalone marketing pages that do not communicate with internal software",
+                    "Customer inquiries require manual re-entry across spreadsheets and messaging apps",
+                    "Limited capacity to reflect specialized pricing tiers, logic, or scheduling rules",
+                    "Frequent reliance on conflicting third-party plugins that require regular maintenance",
                   ].map((pt, i) => (
                     <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                       <CloseRoundedIcon sx={{ fontSize: 18, color: "#DC2626", mt: 0.2, flexShrink: 0 }} />
@@ -344,10 +354,10 @@ export default function ComparisonSection() {
               {/* Bottom Cost & Verdict */}
               <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 24, 27, 0.08)" }}>
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase", mb: 0.5 }}>
-                  3-YEAR FINANCIAL REALITY:
+                  PRACTICAL TRADE-OFF:
                 </Typography>
                 <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 1.5 }}>
-                  $8k–$15k build + $250/mo in fragile plugins (Rebuilt every 2 yrs)
+                  Low initial setup cost &bull; High ongoing manual coordination
                 </Typography>
                 <Box
                   sx={{
@@ -358,7 +368,7 @@ export default function ComparisonSection() {
                   }}
                 >
                   <Typography sx={{ fontSize: "0.8rem", color: "#DC2626", fontWeight: 600, lineHeight: 1.4 }}>
-                    Verdict: A pretty digital face, but zero relief for daily operations.
+                    Verdict: Good for initial visibility, but leaves internal operations dependent on manual labor.
                   </Typography>
                 </Box>
               </Box>
@@ -389,7 +399,7 @@ export default function ComparisonSection() {
                 {/* Header Badge */}
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
                   <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", letterSpacing: "0.06em" }}>
-                    OPTION 02 &bull; RENTED SOFTWARE
+                    OPTION 02 &bull; STANDARDIZED SAAS
                   </Typography>
                   <Box
                     sx={{
@@ -401,26 +411,26 @@ export default function ComparisonSection() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.68rem", fontWeight: 700, color: "#EA580C" }}>
-                      RECURRING TAX
+                      STANDARDIZED
                     </Typography>
                   </Box>
                 </Box>
 
                 <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#18181B", mb: 1.2 }}>
-                  Off-The-Shelf SaaS Platforms
+                  Generic SaaS &amp; Subscription Platforms
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65, mb: 3 }}>
-                  Pre-packaged software packed with 200 bloated features you never touch.
-                  Charges heavy per-user monthly fees while forcing staff into rigid software rules.
+                  Standardized platforms built for general market workflows. Fast to deploy, but can
+                  become inflexible and cost-heavy when your business operates with proprietary rules.
                 </Typography>
 
                 {/* Reality Check Bullets */}
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8, mb: 3.5 }}>
                   {[
-                    "$150–$250/user/month seat fees that escalate every time you hire",
-                    "Clunky menus staff hate, causing them to secretly revert to Excel",
-                    "Rigid workflows that cannot be adapted to your unique pricing rules",
-                    "Zero ownership: cancel your monthly subscription and data is locked",
+                    "Recurring monthly seat fees that scale continuously as team headcount grows",
+                    "Rigid software workflows that force your staff into generic, one-size-fits-all processes",
+                    "Data fragmented across multiple disparate subscription tools with separate silos",
+                    "Complete reliance on vendor roadmaps, policy changes, and export limitations",
                   ].map((pt, i) => (
                     <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                       <CloseRoundedIcon sx={{ fontSize: 18, color: "#DC2626", mt: 0.2, flexShrink: 0 }} />
@@ -435,10 +445,10 @@ export default function ComparisonSection() {
               {/* Bottom Cost & Verdict */}
               <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 24, 27, 0.08)" }}>
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase", mb: 0.5 }}>
-                  3-YEAR FINANCIAL REALITY:
+                  PRACTICAL TRADE-OFF:
                 </Typography>
                 <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 1.5 }}>
-                  $27k–$45k/year for a team of 15 ($85k–$120k+ over 3 years)
+                  Fast deployment &bull; Ongoing subscription overhead &amp; rigid constraints
                 </Typography>
                 <Box
                   sx={{
@@ -449,7 +459,7 @@ export default function ComparisonSection() {
                   }}
                 >
                   <Typography sx={{ fontSize: "0.8rem", color: "#EA580C", fontWeight: 600, lineHeight: 1.4 }}>
-                    Verdict: Expensive recurring monthly tax with low internal adoption.
+                    Verdict: Excellent for generic workflows, but restrictive when operational differentiation matters.
                   </Typography>
                 </Box>
               </Box>
@@ -493,7 +503,7 @@ export default function ComparisonSection() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.68rem", fontWeight: 700 }}>
-                      RECOMMENDED
+                      PURPOSE-BUILT
                     </Typography>
                   </Box>
                 </Box>
@@ -502,17 +512,17 @@ export default function ComparisonSection() {
                   Aetibar Connected Architecture
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65, mb: 3 }}>
-                  A unified system connecting your customer front door directly into your internal operations.
-                  Tailored strictly around your workflow with zero monthly seat fees.
+                  A unified system engineered specifically around your operating model, connecting
+                  customer touchpoints directly into your internal execution workflows.
                 </Typography>
 
                 {/* Reality Check Bullets */}
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8, mb: 3.5 }}>
                   {[
-                    "100% purpose-built for your company's exact quoting and delivery rules",
-                    "Instant WhatsApp & CRM qualification within 30 seconds of an inquiry",
-                    "Direct automatic sync between customer orders, field dispatch, and invoices",
-                    "Zero per-seat recurring fees: you own 100% of the code and database",
+                    "Engineered specifically around your company's quoting rules and operational handoffs",
+                    "Immediate customer intake routing and automated team notifications",
+                    "Direct synchronization between intake, project delivery, and billing milestones",
+                    "Full system ownership: complete control of your codebase, data schema, and business logic",
                   ].map((pt, i) => (
                     <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                       <CheckRoundedIcon sx={{ fontSize: 18, color: "#16A34A", mt: 0.2, flexShrink: 0 }} />
@@ -527,10 +537,10 @@ export default function ComparisonSection() {
               {/* Bottom Cost & Verdict */}
               <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 24, 27, 0.08)" }}>
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", mb: 0.5 }}>
-                  3-YEAR FINANCIAL REALITY:
+                  LONG-TERM VALUE:
                 </Typography>
                 <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 1.5 }}>
-                  Fixed one-time build &bull; ~$20/mo hosting &bull; Permanent company equity
+                  Tailored architecture &bull; Full system control &bull; Permanent company asset
                 </Typography>
                 <Box
                   sx={{
@@ -541,7 +551,7 @@ export default function ComparisonSection() {
                   }}
                 >
                   <Typography sx={{ fontSize: "0.8rem", color: "#15803D", fontWeight: 600, lineHeight: 1.4 }}>
-                    &check; Verdict: A permanent asset that saves 15+ hours weekly and grows your valuation.
+                    &check; Verdict: A durable operational asset designed for workflow clarity, efficiency, and scale.
                   </Typography>
                 </Box>
               </Box>
@@ -811,11 +821,11 @@ export default function ComparisonSection() {
                 mb: 1,
               }}
             >
-              Ready to replace disconnected tools with a permanent company asset?
+              Ready to connect your customer touchpoints and internal operations?
             </Typography>
             <Typography sx={{ fontSize: "0.95rem", color: "#52525B", lineHeight: 1.65 }}>
-              We build custom software that your company owns completely. No monthly user licensing fees,
-              no forced templates, and no software vendor lock-in.
+              We engineer custom software and workflow integrations tailored to how your business actually runs.
+              Enjoy complete system ownership, direct database control, and solutions built for long-term reliability.
             </Typography>
           </Box>
 

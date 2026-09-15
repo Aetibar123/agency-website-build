@@ -29,72 +29,72 @@ interface ProjectArchetype {
 const archetypes: ProjectArchetype[] = [
   {
     id: "lead-system",
-    name: "Customer Lead System",
-    badge: "2–3 Weeks Base",
-    tagline: "A fast website connected directly to WhatsApp and your CRM so no inquiry is ever lost.",
+    name: "Customer & Lead Systems",
+    badge: "Typical Scope: 2–3 Weeks",
+    tagline: "A fast website and structured intake forms connected directly to your messaging and team inboxes.",
     baseWeeks: 3,
     icon: <BoltRoundedIcon sx={{ fontSize: 22 }} />,
-    team: "3 Specialists (Lead Architect, Next.js Engineer, UI Designer)",
+    team: "Engineering Team (Full-Stack Developer, UI Designer)",
     stages: [
-      { period: "Week 1", title: "Inquiry Review & Simple Buyer Forms", output: "Clear lead capture forms designed for high mobile conversion" },
-      { period: "Week 2", title: "Fast Website Build & WhatsApp Alerts", output: "Private staging link where you can test real inquiry submissions" },
-      { period: "Week 3", title: "Lead Routing Verification & Live Launch", output: "Live platform with automated WhatsApp confirmations enabled" },
+      { period: "Stage 1", title: "Inquiry Review & Form Layouts", output: "Clear lead capture forms designed for mobile responsiveness" },
+      { period: "Stage 2", title: "System Build & Notification Routing", output: "Working staging preview to test live inquiry submissions" },
+      { period: "Stage 3", title: "Testing, Routing Verification & Launch", output: "Production deployment with automated team alerts" },
     ],
-    keyBenefit: "Captures 100% of customer inquiries within 30 seconds so leads never slip away to competitors.",
-    expectedRoi: "Zero lost leads across WhatsApp, website, and email with instant automated replies.",
-    hoursSaved: "12+ hours saved every week across sales",
+    keyBenefit: "Organizes customer inquiries from your website and forms directly into your team's workflow.",
+    expectedRoi: "Centralized lead capture and automated notifications keep prospective clients from falling through the cracks.",
+    hoursSaved: "Direct routing to your team",
   },
   {
     id: "internal-portal",
-    name: "Team Quoting Portal",
-    badge: "4–5 Weeks Base",
-    tagline: "A private web app where sales can create quotes in 4 minutes and staff track daily jobs.",
+    name: "Quoting & Operations Portal",
+    badge: "Typical Scope: 4–5 Weeks",
+    tagline: "A tailored web app where sales create standardized estimates and staff coordinate daily jobs.",
     baseWeeks: 5,
     icon: <BuildCircleOutlinedIcon sx={{ fontSize: 22 }} />,
-    team: "3 Specialists (Principal Architect, Full-Stack Engineer, Database Specialist)",
+    team: "Engineering Team (Systems Architect, Full-Stack Developer)",
     stages: [
-      { period: "Week 1", title: "Spreadsheet & Pricing Rules Audit", output: "A clear plan detailing your exact pricing formulas and quoting steps" },
-      { period: "Week 2", title: "Database Setup & Role Permissions", output: "Secure company database with custom access for sales and operations" },
-      { period: "Weeks 3–4", title: "Dynamic Quoting Tool & Testing Sprints", output: "Working quoting tool tested with your real products and services" },
-      { period: "Week 5", title: "Data Import, Staff Video Guides & Live Switch", output: "All past customer files safely imported and short staff video guides" },
+      { period: "Stage 1", title: "Pricing Logic & Workflow Mapping", output: "Clear specification of your pricing formulas and calculation rules" },
+      { period: "Stage 2", title: "Database Architecture & Access Controls", output: "Secure database structure with distinct roles for sales and operations" },
+      { period: "Stage 3", title: "Quoting Tools & Staging Reviews", output: "Working quote generator tested with your real products and services" },
+      { period: "Stage 4", title: "Testing, Staff Walkthroughs & Launch", output: "Data migration check and team walkthrough videos" },
     ],
-    keyBenefit: "Staff stop copy-pasting numbers between spreadsheets. Client proposals take minutes, not days.",
-    expectedRoi: "Quote delivery cut from 72 hours down to 4 minutes, protecting your profit margins from human errors.",
-    hoursSaved: "20+ hours saved every week per employee",
+    keyBenefit: "Standardizes quoting logic and replaces messy spreadsheets with a dependable web portal.",
+    expectedRoi: "Reduces quoting mistakes, standardizes pricing, and speeds up turnaround times for clients.",
+    hoursSaved: "Standardized estimate calculation",
   },
   {
     id: "ops-core",
-    name: "Complete Operations Engine",
-    badge: "6–7 Weeks Base",
-    tagline: "One central system connecting customer intake, job scheduling, inventory, and invoices.",
+    name: "Operations Software & Dashboards",
+    badge: "Typical Scope: 6–7 Weeks",
+    tagline: "A centralized platform connecting customer intake, job dispatch, task tracking, and billing.",
     baseWeeks: 7,
     icon: <CalendarTodayOutlinedIcon sx={{ fontSize: 22 }} />,
-    team: "4 Specialists (Solutions Architect, 2 Senior Engineers, Integrator)",
+    team: "Engineering Team (Lead Architect, 2 Full-Stack Engineers)",
     stages: [
-      { period: "Weeks 1–2", title: "Company Workflow Mapping", output: "A complete step-by-step roadmap showing how work flows across departments" },
-      { period: "Weeks 3–4", title: "Central Database & Real-Time Data Sync", output: "Automatic background sync between customer inquiries, jobs, and invoices" },
-      { period: "Weeks 5–6", title: "Departmental Portals & Team Testing", output: "Private testing links for sales, field dispatch, and accounting staff" },
-      { period: "Week 7", title: "Safe Parallel Launch & Staff Training", output: "7-day safe transition running side-by-side with your old tools" },
+      { period: "Stage 1", title: "Operational Workflow Mapping", output: "Comprehensive technical roadmap of departmental workflows and data flows" },
+      { period: "Stage 2", title: "Central Database & API Connections", output: "Structured database connecting customer records, jobs, and records" },
+      { period: "Stage 3", title: "Management Dashboards & Staging Testing", output: "Private previews for dispatchers, managers, and administrative staff" },
+      { period: "Stage 4", title: "Staged Rollout & Team Onboarding", output: "Controlled cutover with thorough testing and team guides" },
     ],
-    keyBenefit: "Replaces 5+ disconnected monthly software subscriptions with one central platform you own forever.",
-    expectedRoi: "Total business clarity from a single dashboard with zero per-user monthly software fees.",
-    hoursSaved: "45+ hours saved every week across all departments",
+    keyBenefit: "Provides a single operational source of truth tailored to how your business actually runs.",
+    expectedRoi: "Clear visibility across departments and a dedicated digital asset tailored to your workflow.",
+    hoursSaved: "Unified operational dashboard",
   },
   {
     id: "api-bridge",
-    name: "Connect Existing Tools",
-    badge: "1–2 Weeks Base",
-    tagline: "An automatic background bridge that syncs data between your CRM, WhatsApp, and accounting.",
+    name: "Software Integration & Automation",
+    badge: "Typical Scope: 1–2 Weeks",
+    tagline: "Reliable API bridges and automated pipelines that connect your existing software tools.",
     baseWeeks: 2,
     icon: <AutoAwesomeOutlinedIcon sx={{ fontSize: 22 }} />,
-    team: "2 Specialists (Integration Architect, Backend Engineer)",
+    team: "Engineering Team (Integration Engineer, Backend Developer)",
     stages: [
-      { period: "Week 1", title: "Software Connections & Data Rules", output: "A clear map of how data will automatically pass between your tools" },
-      { period: "Week 2", title: "Background Sync Testing & Live Activation", output: "Live automatic data flow with error-prevention guards in place" },
+      { period: "Stage 1", title: "Integration Mapping & Data Rules", output: "Detailed schema mapping how data passes between your tools" },
+      { period: "Stage 2", title: "API Integration & Safeguard Testing", output: "Live automated data sync with error-handling checkpoints" },
     ],
-    keyBenefit: "Connects your existing software tools so customer data moves automatically without manual re-typing.",
-    expectedRoi: "Eliminates 100% of administrative copy-pasting between your CRM, WhatsApp, and accounting.",
-    hoursSaved: "15+ hours saved every week on manual re-typing",
+    keyBenefit: "Connects your separate software tools so customer and operational data sync reliably.",
+    expectedRoi: "Removes manual re-typing and keeps records consistent across all your applications.",
+    hoursSaved: "Automated multi-tool synchronization",
   },
 ];
 
@@ -170,7 +170,7 @@ export default function InteractiveSprintSimulator() {
                   fontWeight: 700,
                 }}
               >
-                PROJECT ROADMAP ESTIMATOR
+                TYPICAL PROJECT PATHS &bull; ESTIMATOR
               </Typography>
             </Box>
           </motion.div>
@@ -192,7 +192,7 @@ export default function InteractiveSprintSimulator() {
                 mb: 2.5,
               }}
             >
-              See how fast we can build{" "}
+              Explore a typical{" "}
               <Box
                 component="span"
                 sx={{
@@ -202,7 +202,7 @@ export default function InteractiveSprintSimulator() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                and launch your system.
+                project path and timeline.
               </Box>
             </Typography>
             <Typography
@@ -214,8 +214,7 @@ export default function InteractiveSprintSimulator() {
                 mx: "auto",
               }}
             >
-              Pick what your business needs below. We will show you the exact timeline, what happens each
-              week, and how many hours your team gets back.
+              Project timelines depend on scope, integrations, data requirements, and feedback. These examples offer starting points for understanding how different types of projects can be structured.
             </Typography>
           </motion.div>
         </Box>
@@ -233,7 +232,7 @@ export default function InteractiveSprintSimulator() {
               mb: 2.5,
             }}
           >
-            1. WHAT DOES YOUR BUSINESS NEED?
+            1. EXPLORE PROJECT TYPES
           </Typography>
 
           <Grid container spacing={{ xs: 2, md: 2.5 }}>
@@ -442,9 +441,9 @@ export default function InteractiveSprintSimulator() {
                 {/* Projected Weeks */}
                 <Box>
                   <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 0.5 }}>
-                    PROJECTED TIMELINE TO LAUNCH:
+                    ESTIMATED TIMELINE GUIDE:
                   </Typography>
-                  <Box sx={{ display: "flex", alignItems: "baseline", gap: 1.5 }}>
+                  <Box sx={{ display: "baseline", alignItems: "baseline", gap: 1.5 }}>
                     <Typography
                       sx={{
                         fontSize: { xs: "2.4rem", sm: "3.2rem" },
@@ -457,7 +456,7 @@ export default function InteractiveSprintSimulator() {
                       {calculatedWeeks} Weeks
                     </Typography>
                     <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#16A34A" }}>
-                      &bull; Fixed Scope Guarantee
+                      &bull; Illustrative Planning Estimate
                     </Typography>
                   </Box>
                 </Box>
@@ -473,7 +472,7 @@ export default function InteractiveSprintSimulator() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                      Time Saved for Staff:
+                      Primary Value:
                     </Typography>
                     <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#15803D" }}>
                       {currentArchetype.hoursSaved}
@@ -489,7 +488,7 @@ export default function InteractiveSprintSimulator() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                      Your Dedicated Team:
+                      Team Collaboration:
                     </Typography>
                     <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
                       {currentArchetype.team}
@@ -505,10 +504,10 @@ export default function InteractiveSprintSimulator() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                      Software Ownership:
+                      Asset Ownership:
                     </Typography>
                     <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#EA580C" }}>
-                      100% Yours (Zero Seat Fees)
+                      Defined in Agreement
                     </Typography>
                   </Box>
                 </Box>
@@ -611,10 +610,10 @@ export default function InteractiveSprintSimulator() {
               >
                 <Box>
                   <Typography sx={{ fontSize: "0.95rem", fontWeight: 600, color: "#18181B" }}>
-                    Want to see the exact timeline for your business?
+                    Want to discuss a realistic timeline for your project?
                   </Typography>
                   <Typography sx={{ fontSize: "0.85rem", color: "#71717A" }}>
-                    Book a 20-minute call. We will review your workflow and give you a confirmed timeline in 48 hours.
+                    Tell us what you&apos;re building. After understanding your requirements, we provide a realistic scope, milestones, and timeline.
                   </Typography>
                 </Box>
 
@@ -638,7 +637,7 @@ export default function InteractiveSprintSimulator() {
                       },
                     }}
                   >
-                    Book a Free Discovery Call
+                    Start a Conversation
                   </Button>
                 </Link>
               </Box>

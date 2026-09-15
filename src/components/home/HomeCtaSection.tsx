@@ -115,7 +115,17 @@ export default function HomeCtaSection() {
                   mb: 3,
                 }}
               >
-                Have an idea or problem you want to build for?
+                Have an idea or problem{" "}
+                <Box
+                  component="span"
+                  sx={{
+                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  you want to build for?
+                </Box>
               </Typography>
 
               <Typography
@@ -123,13 +133,13 @@ export default function HomeCtaSection() {
                   fontSize: { xs: "1.05rem", md: "1.2rem" },
                   color: "rgba(255, 255, 255, 0.82)",
                   lineHeight: 1.75,
-                  maxWidth: 680,
+                  maxWidth: 720,
                   mx: "auto",
                   mb: 5,
                   fontWeight: 400,
                 }}
               >
-                Tell us what you&apos;re working on. We&apos;ll help you figure out what to build, what can be simplified, and where to start.
+                Based in Udaipur, Rajasthan, our team works with businesses across India and beyond. Whether you need custom web development, mobile apps, business software, or practical AI automation, tell us what you&apos;re working on and we&apos;ll help you figure out the best place to start.
               </Typography>
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center", alignItems: "center", mb: 5 }}>

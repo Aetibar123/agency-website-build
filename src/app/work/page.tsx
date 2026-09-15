@@ -2,22 +2,35 @@ import React from "react";
 import { Metadata } from "next";
 import { Box, Container, Typography, Grid } from "@mui/material";
 import WorkPageClient from "../../components/work/WorkPageClient";
-import VerifiedRoundedIcon from "@mui/icons-material/VerifiedRounded";
-import SpeedRoundedIcon from "@mui/icons-material/SpeedRounded";
+import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
+import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import ShieldRoundedIcon from "@mui/icons-material/ShieldRounded";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 export const metadata: Metadata = {
-  title: "Our Work | Production Architectures & Case Studies | Aetibar",
+  title: "Our Work: Web Development, Custom Software & AI Systems | Aetibar",
   description:
-    "Explore practical digital systems and production architectures engineered by Aetibar. Real project case studies structured by the business bottleneck, technical approach, and honest commercial outcomes.",
+    "Explore selected web development projects, custom software applications, internal business tools, and AI automation systems built by Aetibar. Based in Udaipur, Rajasthan, serving businesses across India and globally.",
+  keywords: [
+    "Aetibar portfolio",
+    "web development projects",
+    "custom software development projects",
+    "web application development",
+    "workflow automation",
+    "custom business software",
+    "internal business tools",
+    "API integrations",
+    "software development company in Udaipur",
+    "web development company in Rajasthan",
+    "software development company in India",
+  ],
   alternates: {
     canonical: "https://www.aetibar.in/work",
   },
   openGraph: {
-    title: "Our Work | Production Architectures & Case Studies | Aetibar",
+    title: "Our Work: Web Development, Custom Software & AI Systems | Aetibar",
     description:
-      "Explore practical digital systems and production architectures engineered by Aetibar. Real project case studies structured by the business bottleneck, technical approach, and honest commercial outcomes.",
+      "Explore selected web development projects, custom software applications, internal business tools, and AI automation systems built by Aetibar.",
     url: "https://www.aetibar.in/work",
     siteName: "Aetibar",
     type: "website",
@@ -26,9 +39,16 @@ export const metadata: Metadata = {
         url: "https://www.aetibar.in/images/home/hero-agency-showcase.jpg",
         width: 1200,
         height: 630,
-        alt: "Aetibar - Our Work & Case Studies",
+        alt: "Aetibar - Selected Work and Systems",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Work: Web Development, Custom Software & AI Systems | Aetibar",
+    description:
+      "Explore selected web development projects, custom software applications, internal business tools, and AI automation systems built by Aetibar.",
+    images: ["https://www.aetibar.in/images/home/hero-agency-showcase.jpg"],
   },
 };
 
@@ -109,7 +129,7 @@ export default function WorkPage() {
                   fontFamily: "monospace",
                 }}
               >
-                OUR WORK // PRODUCTION ARCHITECTURES
+                SELECTED WORK &bull; SYSTEMS &amp; EXPLORATIONS
               </Typography>
             </Box>
 
@@ -117,24 +137,24 @@ export default function WorkPage() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.3rem", sm: "3.2rem", md: "4rem", lg: "4.5rem" },
+                fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.15, sm: 1.1, md: 1.06 },
+                letterSpacing: { xs: "-0.03em", md: "-0.035em" },
+                lineHeight: { xs: 1.15, md: 1.12 },
                 mb: 3,
               }}
             >
-              Systems engineered for real{" "}
+              Selected work, systems,{" "}
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                operational leverage.
+                and product builds.
               </Box>
             </Typography>
 
@@ -150,9 +170,9 @@ export default function WorkPage() {
                 mb: 6,
               }}
             >
-              No hypothetical agency mockups or Figma illusions. Below are verified production platforms, custom internal
-              tools, and automated pipelines we&apos;ve deployed—structured by the business bottleneck, technical approach, and
-              verifiable commercial outcomes.
+              A selection of websites, web applications, internal business tools, and product explorations
+              we&apos;ve built and engineered. Focused on practical functionality, clean code architecture,
+              and solving real operational challenges for growing businesses.
             </Typography>
 
             {/* Trust & Proof Metrics Strip */}
@@ -162,25 +182,25 @@ export default function WorkPage() {
                   icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
                   val: "100%",
                   label: "Code & DB Ownership",
-                  desc: "Complete GitHub & schema handover",
+                  desc: "Complete GitHub & database handover",
                 },
                 {
-                  icon: <SpeedRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
-                  val: "< 300ms",
-                  label: "Server Latency SLA",
-                  desc: "Sub-second edge API response times",
+                  icon: <CodeRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+                  val: "Modern",
+                  label: "Full-Stack Architecture",
+                  desc: "Next.js, React, Node.js & PostgreSQL",
+                },
+                {
+                  icon: <HubOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+                  val: "Connected",
+                  label: "Workflow Integration",
+                  desc: "Customer touchpoints to internal operations",
                 },
                 {
                   icon: <ShieldRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
-                  val: "0 Drift",
-                  label: "Dual-Run Migration Net",
-                  desc: "100% historical data verified",
-                },
-                {
-                  icon: <VerifiedRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
-                  val: "$0 / Mo",
-                  label: "Per-Seat User Taxes",
-                  desc: "Zero ongoing SaaS license fees",
+                  val: "Zero",
+                  label: "Vendor Lock-In",
+                  desc: "Self-hosted with zero recurring seat royalties",
                 },
               ].map((m, idx) => (
                 <Grid size={{ xs: 6, sm: 3 }} key={idx}>

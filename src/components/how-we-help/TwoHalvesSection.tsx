@@ -40,22 +40,22 @@ const scenarios: WorkflowScenario[] = [
   {
     id: "inquiries",
     tabLabel: "1. Inbound Leads & Inquiries",
-    headline: "How a customer inquiry turns into an instant action plan",
+    headline: "How customer inquiries connect directly to team action",
     summary:
-      "Instead of leads sitting in an unread inbox or lost in personal WhatsApp chats, the website captures exact requirements and alerts your team within seconds.",
+      "Instead of inquiries sitting unread in individual inboxes or scattered chats, a structured web presence captures requirements and notifies the right team member promptly.",
     step1: {
       badge: "STEP 1 // WHAT CUSTOMER DOES",
       badgeColor: "#EA580C",
       badgeBg: "rgba(234, 88, 12, 0.1)",
-      title: "Customer Configures Scope",
-      subtitle: "On your public Next.js website",
+      title: "Customer Specifies Project Needs",
+      subtitle: "Through your business web portal",
       points: [
-        "Visits a fast, modern website that answers their buying questions.",
-        "Selects project needs and budget through an intuitive configurator.",
-        "Receives an instant, professional confirmation receipt.",
+        "Visits a clear, modern website that explains your services.",
+        "Submits project needs or inquiries through a structured intake form.",
+        "Receives an immediate confirmation that their inquiry was received.",
       ],
-      highlightMetric: "< 0.4s",
-      highlightLabel: "Fast page load on any phone",
+      highlightMetric: "Clear Scope",
+      highlightLabel: "Structured requirements",
       icon: <LanguageIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
     },
     step2: {
@@ -63,38 +63,38 @@ const scenarios: WorkflowScenario[] = [
       badgeColor: "#F97316",
       badgeBg: "rgba(249, 115, 22, 0.12)",
       title: "Data Connects Automatically",
-      subtitle: "Without human copy-pasting",
+      subtitle: "Without manual copy-pasting",
       points: [
-        "Lead data is checked, formatted, and categorized automatically.",
-        "High-priority inquiries trigger instant team alerts via Slack or SMS.",
-        "Zero data gets lost, forgotten, or stuck in personal email inboxes.",
+        "Inquiry information is formatted and categorized automatically.",
+        "Notifications route directly to team communication channels.",
+        "Reduces duplicate entry and the risk of overlooked messages.",
       ],
-      highlightMetric: "< 2 sec",
-      highlightLabel: "Automatic handoff time",
+      highlightMetric: "Automated",
+      highlightLabel: "Direct system handoff",
       icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
     },
     step3: {
       badge: "STEP 3 // WHAT YOUR TEAM GETS",
       badgeColor: "#18181B",
       badgeBg: "rgba(24, 24, 27, 0.08)",
-      title: "Your Team Gets Instant Action Brief",
-      subtitle: "Inside your private operations dashboard",
+      title: "Your Team Gets an Organized Brief",
+      subtitle: "Inside your operations dashboard",
       points: [
-        "Assigned team member sees the exact customer brief ready to go.",
-        "Customer record is automatically saved in your central database.",
-        "A follow-up countdown begins so no prospect is ever left waiting.",
+        "Assigned team members see the complete customer context in one place.",
+        "Customer records are saved directly in your database or CRM.",
+        "Enables prompt, consistent follow-up across your team.",
       ],
-      highlightMetric: "100%",
-      highlightLabel: "Accountability & zero lost leads",
+      highlightMetric: "Organized",
+      highlightLabel: "Centralized inquiry tracking",
       icon: <StorageIcon sx={{ fontSize: 24, color: "#18181B" }} />,
     },
   },
   {
     id: "quoting",
     tabLabel: "2. Quotations & Pricing",
-    headline: "How proposals get created in 5 minutes instead of 3 days",
+    headline: "How custom software streamlines proposal generation",
     summary:
-      "Stop searching across three spreadsheets to calculate margins. Your system computes dynamic costs, protects your profit margin, and prepares a client-ready proposal with one click.",
+      "Instead of searching across disconnected spreadsheets to calculate pricing, a custom quoting workflow applies consistent margin rules and prepares clear proposals.",
     step1: {
       badge: "STEP 1 // WHAT CUSTOMER DOES",
       badgeColor: "#EA580C",
@@ -102,94 +102,94 @@ const scenarios: WorkflowScenario[] = [
       title: "Customer Selects Requirements",
       subtitle: "Through an interactive estimate builder",
       points: [
-        "Customer selects features, volume, or services they need.",
-        "Gets transparent, clear ballpark numbers upfront.",
-        "Avoids waiting 3 business days just to understand general pricing.",
+        "Customer selects features, volume, or services required.",
+        "Receives transparent, upfront scope specifications.",
+        "Reduces unnecessary back-and-forth emails to clarify baseline requirements.",
       ],
-      highlightMetric: "Instant",
-      highlightLabel: "Ballpark pricing clarity",
+      highlightMetric: "Transparent",
+      highlightLabel: "Upfront scope clarity",
       icon: <CalculateOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
     },
     step2: {
       badge: "STEP 2 // THE AUTOMATIC SYNC",
       badgeColor: "#F97316",
       badgeBg: "rgba(249, 115, 22, 0.12)",
-      title: "Pricing & Margins Calculated",
-      subtitle: "Enforcing minimum profit rules",
+      title: "Pricing & Margin Rules Applied",
+      subtitle: "Standardizing pricing logic",
       points: [
-        "System calculates real cost items and checks your profit floor.",
-        "Prevents sales reps from offering unauthorized discounts.",
-        "Prepares a customized, branded PDF quote with digital sign-off.",
+        "Applies predefined pricing and margin rules automatically.",
+        "Maintains consistent pricing across different sales team members.",
+        "Prepares a customized proposal document for internal review.",
       ],
-      highlightMetric: "100%",
-      highlightLabel: "Margin protection guaranteed",
+      highlightMetric: "Consistent",
+      highlightLabel: "Standardized pricing rules",
       icon: <BoltRoundedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
     },
     step3: {
       badge: "STEP 3 // WHAT YOUR TEAM GETS",
       badgeColor: "#18181B",
       badgeBg: "rgba(24, 24, 27, 0.08)",
-      title: "1-Click Proposal Dispatch",
-      subtitle: "Sent to client while they are still warm",
+      title: "Structured Proposal Dispatch",
+      subtitle: "Ready for client review and sign-off",
       points: [
-        "Sales rep reviews the pre-calculated quote and adds custom notes.",
-        "Sends a branded PDF proposal with digital signature link in 1 click.",
-        "When signed, the project is automatically created in your system.",
+        "Sales team reviews pre-calculated figures and adds project-specific notes.",
+        "Dispatches a clean proposal with digital approval links.",
+        "When approved, project details transition directly into operations.",
       ],
-      highlightMetric: "< 5 min",
-      highlightLabel: "Proposal turnaround speed",
+      highlightMetric: "Streamlined",
+      highlightLabel: "Faster proposal turnaround",
       icon: <SendRoundedIcon sx={{ fontSize: 24, color: "#18181B" }} />,
     },
   },
   {
     id: "delivery",
     tabLabel: "3. Project Delivery & Invoicing",
-    headline: "How work completion triggers immediate billing",
+    headline: "How completed milestones connect directly to billing",
     summary:
-      "When technicians or team members finish work, status is verified with photos or digital signatures, and accounting receives a completed invoice automatically.",
+      "When project deliverables or milestones are finished, status updates verify the work and stage invoices for accounting without manual delays.",
     step1: {
       badge: "STEP 1 // WHAT CUSTOMER DOES",
       badgeColor: "#EA580C",
       badgeBg: "rgba(234, 88, 12, 0.1)",
-      title: "Customer Signs Off On Work",
-      subtitle: "On mobile screen or customer portal",
+      title: "Customer or Team Milestone Sign-Off",
+      subtitle: "On mobile screen or client portal",
       points: [
-        "Reviews completed work milestones or job deliverables.",
-        "Signs their approval directly on a phone or client portal.",
-        "Receives instant digital proof and warranty receipt.",
+        "Reviews completed project milestones or work deliverables.",
+        "Provides digital approval or feedback through an intuitive interface.",
+        "Receives clear confirmation and documentation of delivered work.",
       ],
-      highlightMetric: "0 Calls",
-      highlightLabel: "No 'what is the status?' calls",
+      highlightMetric: "Clear Status",
+      highlightLabel: "Transparent milestone tracking",
       icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
     },
     step2: {
       badge: "STEP 2 // THE AUTOMATIC SYNC",
       badgeColor: "#F97316",
       badgeBg: "rgba(249, 115, 22, 0.12)",
-      title: "Verified Completion Triggers Invoice",
-      subtitle: "Without office staff chasing receipts",
+      title: "Completion Triggers Billing Workflow",
+      subtitle: "Without office staff chasing updates",
       points: [
-        "Timestamped photo proof and customer signature are verified.",
-        "System marks the job completed across all internal schedules.",
-        "Completed work orders compile directly into accounting entries.",
+        "Verified milestone sign-off updates schedules and project tracking.",
+        "Reduces internal back-and-forth to confirm project completion.",
+        "Prepares draft billing entries directly for accounting.",
       ],
-      highlightMetric: "Real-time",
-      highlightLabel: "Cross-system synchronization",
+      highlightMetric: "Connected",
+      highlightLabel: "System synchronization",
       icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
     },
     step3: {
       badge: "STEP 3 // WHAT YOUR TEAM GETS",
       badgeColor: "#18181B",
       badgeBg: "rgba(24, 24, 27, 0.08)",
-      title: "Same-Day Invoicing & Paid Faster",
-      subtitle: "Healthy cash flow without spreadsheet delays",
+      title: "Prompt Invoicing & Visibility",
+      subtitle: "Smooth cash flow without spreadsheet delays",
       points: [
-        "Accounting sends the invoice the same day work is finished.",
-        "Management sees complete job history and profit margins.",
-        "Staff save 15+ hours weekly previously spent chasing paperwork.",
+        "Accounting can review and issue invoices promptly upon milestone completion.",
+        "Leadership maintains full visibility into delivery progress and project margins.",
+        "Reduces hours spent manually reconciling timesheets and spreadsheets.",
       ],
-      highlightMetric: "Same-Day",
-      highlightLabel: "Billing vs 2-week delay",
+      highlightMetric: "Timely Billing",
+      highlightLabel: "Reduced invoice turnaround lag",
       icon: <AssignmentTurnedInOutlinedIcon sx={{ fontSize: 24, color: "#18181B" }} />,
     },
   },
@@ -258,16 +258,26 @@ export default function TwoHalvesSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "3.85rem" },
+                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                lineHeight: { xs: 1.15, md: 1.08 },
                 letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.15, md: 1.1 },
                 textAlign: "left",
                 mb: 2.5,
               }}
             >
-              The Two Connected Halves of Modern Business
+              The two connected halves of{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                modern business.
+              </Box>
             </Typography>
 
             <Typography
@@ -721,10 +731,10 @@ export default function TwoHalvesSection() {
         >
           <Box sx={{ maxWidth: 720 }}>
             <Typography sx={{ fontSize: "1.1rem", fontWeight: 600, color: "#18181B", mb: 0.5 }}>
-              The Result: No dropped leads, no spreadsheet chaos, and faster revenue.
+              The Result: Better organization, reduced manual work, and faster delivery.
             </Typography>
             <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65 }}>
-              When both halves of your business run on one synchronized architecture, your team saves 15+ hours every week and your customers get instantaneous, professional service.
+              When the customer-facing side of your business and your internal operations work together, your team spends less time on manual administration and customers experience smoother, more reliable service.
             </Typography>
           </Box>
 

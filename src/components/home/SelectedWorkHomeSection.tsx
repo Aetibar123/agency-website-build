@@ -115,7 +115,17 @@ export default function SelectedWorkHomeSection() {
                   mb: 2.5,
                 }}
               >
-                Examples of our work and internal prototypes.
+                Examples of our work{" "}
+                <Box
+                  component="span"
+                  sx={{
+                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  and internal prototypes.
+                </Box>
               </Typography>
 
               <Typography
@@ -1267,7 +1277,7 @@ export default function SelectedWorkHomeSection() {
                 Looking for a digital solution tailored to your business?
               </Typography>
               <Typography sx={{ fontSize: "0.925rem", color: "#52525B", lineHeight: 1.6 }}>
-                We design and build custom websites, internal operations tools, customer lead pipelines, and practical automated systems.
+                We design and build custom business websites, web applications, internal operational tools, and practical automated workflows.
               </Typography>
             </Box>
 

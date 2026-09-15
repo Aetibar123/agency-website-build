@@ -173,7 +173,17 @@ export default function HowWeWorkHomeSection() {
                   mb: 2.5,
                 }}
               >
-                From initial conversation to launch and ongoing support.
+                From initial conversation to{" "}
+                <Box
+                  component="span"
+                  sx={{
+                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  launch and ongoing support.
+                </Box>
               </Typography>
 
               <Typography

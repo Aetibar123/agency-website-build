@@ -49,109 +49,109 @@ interface WorkflowDemo {
 const workflowDemos: WorkflowDemo[] = [
   {
     id: "lead-intake",
-    tabLabel: "Inbound Lead Intake",
+    tabLabel: "Customer Inquiry Intake",
     icon: <HubOutlinedIcon sx={{ fontSize: 18 }} />,
     frontStage: {
-      badge: "FRONT-STAGE &bull; CUSTOMER INTAKE",
-      title: "Guided Scope Configurator",
-      tag: "Next.js Edge Storefront",
-      metrics: "0.38s First Contentful Paint",
-      snippetTitle: "Inbound Payload Captured",
+      badge: "CUSTOMER TOUCHPOINT • INTAKE",
+      title: "Structured Inquiry Form",
+      tag: "Web Application",
+      metrics: "Responsive Intake Flow",
+      snippetTitle: "Incoming Inquiry Details",
       snippetData: [
-        { label: "Client Intent", value: "Workflow Automation & Portal" },
-        { label: "Channel", value: "WhatsApp API + Web Hook" },
-        { label: "Estimated Scope", value: "4-Week Growth Tier" },
-        { label: "Qualification", value: "High Intent &bull; Verified" },
+        { label: "Project Interest", value: "Custom Operations System" },
+        { label: "Contact Channel", value: "Direct Web Intake" },
+        { label: "Project Scope", value: "Internal Tools & Automation" },
+        { label: "Intake Status", value: "Complete Requirements Captured" },
       ],
     },
     eventBus: {
-      protocol: "Real-Time Webhook Bus",
-      latency: "142ms Ingestion",
-      status: "Parameters Validated &bull; Zero Re-entry",
+      protocol: "Direct System Integration",
+      latency: "Automated Data Flow",
+      status: "Transfers data without manual copy-pasting",
     },
     backStage: {
-      badge: "BACK-STAGE &bull; OPERATIONAL DISPATCH",
-      title: "Automated Routing & Triage",
-      tag: "Centralized Lead Core",
-      metrics: "0 Dropped Inquiries &bull; Full SLA",
-      snippetTitle: "Operational Actions Triggered",
+      badge: "INTERNAL OPERATIONS • TEAM DISPATCH",
+      title: "Inquiry Organization & Routing",
+      tag: "Centralized Operations Hub",
+      metrics: "Prompt Notifications & Team Assignment",
+      snippetTitle: "Workflow Actions Triggered",
       snippetData: [
-        { label: "Assigned Lead", value: "Alex V. (Lead Architect)" },
-        { label: "Team Alerts", value: "Instant Slack & SMS Dispatched" },
-        { label: "Client Auto-Reply", value: "Personalized WhatsApp Sent" },
-        { label: "Database Status", value: "PostgreSQL Record #8491 Logged" },
+        { label: "Assigned Team", value: "Project Lead Notified" },
+        { label: "Team Alert", value: "Notification routed to team channel" },
+        { label: "Client Receipt", value: "Automated confirmation sent" },
+        { label: "Record Status", value: "Saved to central company database" },
       ],
     },
   },
   {
     id: "quoting",
-    tabLabel: "Margin-Aware Quoting",
+    tabLabel: "Consistent Project Quoting",
     icon: <CalculateOutlinedIcon sx={{ fontSize: 18 }} />,
     frontStage: {
-      badge: "FRONT-STAGE &bull; SALES PORTAL",
-      title: "Dynamic Spec Intake",
-      tag: "Interactive Configurator",
-      metrics: "Instant Ballpark Estimates",
-      snippetTitle: "Project Specification",
+      badge: "CLIENT REQUEST • SCOPE INTAKE",
+      title: "Project Specification Intake",
+      tag: "Quoting Portal",
+      metrics: "Clear Scope Selection",
+      snippetTitle: "Selected Deliverables",
       snippetData: [
-        { label: "Modules Selected", value: "ERP Core + Mobile Dispatch" },
-        { label: "Users / Seats", value: "24 Operational Staff" },
-        { label: "Deployment", value: "Dedicated Cloud Instance" },
-        { label: "Service SLA", value: "99.9% Uptime Agreement" },
+        { label: "Deliverables", value: "Operations Portal + Team Tracking" },
+        { label: "Team Access", value: "Multi-Role User Permissions" },
+        { label: "Hosting / Setup", value: "Secure Cloud Deployment" },
+        { label: "Integration", value: "CRM & Accounting Connection" },
       ],
     },
     eventBus: {
-      protocol: "Margin Guard Engine",
-      latency: "86ms Calculation",
-      status: "Floor Enforced: 34.5% Net Margin",
+      protocol: "Margin & Pricing Rules",
+      latency: "Standardized Calculation",
+      status: "Applies approved pricing guidelines consistently",
     },
     backStage: {
-      badge: "BACK-STAGE &bull; ESTIMATION ENGINE",
-      title: "Client-Ready PDF Generator",
-      tag: "Automated Quotation Tool",
-      metrics: "Turnaround Cut from 72h to 4m",
+      badge: "ESTIMATION WORKFLOW • PROPOSALS",
+      title: "Document & Proposal Generation",
+      tag: "Proposal Workflow",
+      metrics: "Fast Turnaround Without Guesswork",
       snippetTitle: "Generated Proposal Output",
       snippetData: [
-        { label: "Price Calculated", value: "$14,800 Flat Implementation" },
-        { label: "Margin Verified", value: "35.2% (Approved Floor)" },
-        { label: "PDF Proposal", value: "Branded Document Staged" },
-        { label: "E-Sign Link", value: "DocuSign Ready to Send" },
+        { label: "Pricing Rules", value: "Standardized margin rules applied" },
+        { label: "Review Status", value: "Ready for team review and approval" },
+        { label: "Proposal Doc", value: "Formatted proposal staged for client" },
+        { label: "Sign-Off Link", value: "Prepared for digital signature" },
       ],
     },
   },
   {
     id: "field-dispatch",
-    tabLabel: "Field Dispatch & Invoicing",
+    tabLabel: "Milestone Tracking & Invoicing",
     icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 18 }} />,
     frontStage: {
-      badge: "FRONT-STAGE &bull; MOBILE PWA",
-      title: "Technician Field Portal",
-      tag: "Offline-Ready Mobile Web",
-      metrics: "100% Offline Caching Enabled",
-      snippetTitle: "Job Sign-Off Captured",
+      badge: "TEAM INTERFACE • PROJECT TRACKING",
+      title: "Milestone & Delivery Portal",
+      tag: "Mobile-Friendly Web App",
+      metrics: "Clear Completion Records",
+      snippetTitle: "Milestone Completed",
       snippetData: [
-        { label: "Job ID", value: "#WO-9204 (Commercial Retrofit)" },
-        { label: "Sign-Off Proof", value: "Customer Digital Signature" },
-        { label: "Site Photos", value: "4 Geo-Tagged Proofs Uploaded" },
-        { label: "Status", value: "Work Completed & Verified" },
+        { label: "Milestone Item", value: "Deliverable Phase Sign-Off" },
+        { label: "Verification", value: "Client or Manager Sign-Off" },
+        { label: "Documentation", value: "Completion notes and files attached" },
+        { label: "Delivery Status", value: "Marked complete across schedules" },
       ],
     },
     eventBus: {
-      protocol: "Instant Billing Webhook",
-      latency: "198ms Sync",
-      status: "Zero Phone Tag &bull; Auto Staged",
+      protocol: "Accounting & Billing Integration",
+      latency: "Automated Status Sync",
+      status: "Stages billing details as milestones finish",
     },
     backStage: {
-      badge: "BACK-STAGE &bull; OPERATIONS & BILLING",
-      title: "Automated Invoice Staging",
-      tag: "Accounting Synchronization",
-      metrics: "Same-Day Invoicing vs 7-Day Lag",
-      snippetTitle: "Billing & ERP Actions",
+      badge: "OPERATIONS & FINANCE • BILLING",
+      title: "Automated Invoice Preparation",
+      tag: "Accounting Sync",
+      metrics: "Eliminates Billing Delays",
+      snippetTitle: "Billing & Operational Actions",
       snippetData: [
-        { label: "Invoice Created", value: "#INV-4410 Generated" },
-        { label: "Accounting Sync", value: "Stripe / QuickBooks Synced" },
-        { label: "Dispatch Updated", value: "Technician Marked Available" },
-        { label: "Manager Review", value: "Approved Without Status Call" },
+        { label: "Invoice Draft", value: "Draft invoice prepared in accounting" },
+        { label: "Financial Records", value: "Synced to accounting software" },
+        { label: "Project Status", value: "Next milestone unlocked on board" },
+        { label: "Manager Review", value: "Status verified without manual calls" },
       ],
     },
   },
@@ -273,7 +273,7 @@ export default function HowWeHelpHero() {
                   textTransform: "uppercase",
                 }}
               >
-                SYSTEM DIAGNOSTIC &bull; TOUCHPOINT TO OPERATIONS ARCHITECTURE
+                TOUCHPOINT TO OPERATIONS ARCHITECTURE &bull; SYSTEM DEMO
               </Typography>
             </Box>
           </motion.div>
@@ -288,10 +288,10 @@ export default function HowWeHelpHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4rem", lg: "4.65rem" },
+                fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.12, sm: 1.08, md: 1.04 },
+                lineHeight: { xs: 1.15, md: 1.12 },
                 letterSpacing: { xs: "-0.03em", md: "-0.035em" },
                 textAlign: "left",
                 mb: { xs: 3, md: 3.5 },
@@ -301,7 +301,7 @@ export default function HowWeHelpHero() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -331,9 +331,7 @@ export default function HowWeHelpHero() {
                 fontWeight: 400,
               }}
             >
-              We help ambitious businesses replace disconnected tools, manual copy-pasting, and
-              communication black holes with coherent digital systems — bridging how customers
-              interact with you and how your team fulfills work.
+              We help ambitious businesses connect customer touchpoints with behind-the-scenes operations — building custom software, web applications, and automated workflows that eliminate manual copy-pasting and disconnected tools.
             </Typography>
           </motion.div>
 
@@ -428,9 +426,9 @@ export default function HowWeHelpHero() {
               }}
             >
               {[
-                "Purpose-Built Architecture",
-                "Zero Disconnected Silos",
-                "Direct Founder Collaboration",
+                "Custom Software & Web Development",
+                "Business Workflow Automation",
+                "Engineering Studio Based in Udaipur, India",
               ].map((text, i) => (
                 <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                   <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
@@ -516,7 +514,7 @@ export default function HowWeHelpHero() {
                       ml: 1,
                     }}
                   >
-                    AETIBAR WORKFLOW COCKPIT &bull; LIVE ARCHITECTURE
+                    AETIBAR WORKFLOW ARCHITECTURE &bull; SYSTEM DEMONSTRATION
                   </Typography>
                 </Box>
 
@@ -648,7 +646,7 @@ export default function HowWeHelpHero() {
 
                           <Box sx={{ pt: 2.5, mt: 2, borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
                             <Typography sx={{ fontSize: "0.75rem", color: "#34D399", fontWeight: 600 }}>
-                              &check; Sub-second Edge Rendering &bull; 100% Mobile Optimized
+                              &check; Fast Web Experience &bull; Mobile Responsive
                             </Typography>
                           </Box>
                         </Box>
@@ -786,7 +784,7 @@ export default function HowWeHelpHero() {
 
                           <Box sx={{ pt: 2.5, mt: 2, borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
                             <Typography sx={{ fontSize: "0.75rem", color: "#34D399", fontWeight: 600 }}>
-                              &check; Single Source of Truth &bull; Zero Manual Double-Entry
+                              &check; Single Source of Truth &bull; Reduced Manual Data Entry
                             </Typography>
                           </Box>
                         </Box>
@@ -820,10 +818,10 @@ export default function HowWeHelpHero() {
                     />
                     <Typography sx={{ fontSize: "0.8rem", color: "#D4D4D8", fontWeight: 500 }}>
                       {isSimulating
-                        ? `Traversing Pipeline (${simStep}/3) &bull; Synchronizing Webhook Event...`
+                        ? `Traversing Pipeline (${simStep}/3) &bull; Synchronizing Workflow Event...`
                         : simStep === 4
-                        ? "✓ Verified Event Handshake Completed in 0.38s"
-                        : "Ready: Click to trigger an interactive pipeline test"}
+                        ? "✓ Illustrative Event Handshake Completed"
+                        : "Ready: Click to see how data flows through connected tools"}
                     </Typography>
                   </Box>
 
@@ -851,7 +849,7 @@ export default function HowWeHelpHero() {
                       },
                     }}
                   >
-                    {isSimulating ? "Transmitting..." : "Simulate Live Event"}
+                    {isSimulating ? "Transmitting..." : "Simulate Workflow Flow"}
                   </Button>
                 </Box>
               </Box>

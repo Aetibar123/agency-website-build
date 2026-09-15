@@ -35,145 +35,145 @@ interface Stage {
 const stages: Stage[] = [
   {
     num: "01",
-    tabLabel: "Discovery Audit",
-    timeframe: "Week 1",
-    name: "Operational Shadowing & Friction Audit",
-    headline: "We learn how your business actually runs before writing a single line of code.",
+    tabLabel: "Discovery",
+    timeframe: "Stage 01",
+    name: "Understanding Your Business & Workflows",
+    headline: "We learn how your business works before writing a single line of code.",
     story:
-      "Most software projects fail because developers start coding before understanding how your team actually works. In week one, we shadow your daily workflow, see how customer messages arrive on WhatsApp and email, and map where manual copy-pasting slows your staff down.",
+      "Every successful project starts by understanding the business first. We map how inquiries, customer requests, and tasks currently move through your business today — whether across email, messaging apps, or existing tools — and pinpoint where manual copy-pasting and disconnected tools slow your team down.",
     whatHappens: [
       {
-        title: "Workflow Shadowing",
-        desc: "We observe your team's real daily tasks to understand where manual bottlenecks and delays happen.",
+        title: "Understand Current Workflows",
+        desc: "We review how work moves through your business today — from customer inquiries and sales to internal operations, reporting, and billing.",
       },
       {
-        title: "Intake & Message Mapping",
-        desc: "We trace how inquiries flow across your website, WhatsApp, and email to ensure no customer inquiry is ever lost.",
+        title: "Identify Bottlenecks & Duplicate Work",
+        desc: "We look for repetitive manual tasks, duplicate data entry, disconnected tools, and places where information gets lost or delayed.",
       },
       {
-        title: "Friction Tax Calculation",
-        desc: "We quantify exactly how many hours your staff loses each week to repetitive copy-pasting and spreadsheet maintenance.",
+        title: "Define Clear Improvement Goals",
+        desc: "We separate genuine operational needs from non-essential features, ensuring we focus on what will create the most immediate value.",
       },
     ],
-    deliverable: "Complete Workflow Map & Bottleneck Report detailing every manual friction point and its automated fix.",
-    timeCommitment: "Two 45-minute conversations with you and your key team member.",
-    outcome: "Zero guesswork. You see the entire operational plan clearly before any code is written.",
+    deliverable: "Comprehensive Discovery Summary with mapped workflow steps, prioritized requirements, and recommended solutions.",
+    timeCommitment: "One or two focused discovery conversations with you and key operational team members.",
+    outcome: "A clear, shared understanding of what needs to be built and why before any development starts.",
     image: "/images/home/editorial-client-consultation.jpg",
     imageAlt: "Aetibar operational discovery session auditing business workflows",
     icon: <SearchOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "02",
-    tabLabel: "The Blueprint",
-    timeframe: "Weeks 2–3",
-    name: "System Architecture & Interactive Wireframes",
-    headline: "We design the complete system and interactive wireframes for your approval.",
+    tabLabel: "Planning",
+    timeframe: "Stage 02",
+    name: "System Architecture & Solution Blueprint",
+    headline: "We turn findings into a clear technical scope, interface wireframes, and data flows.",
     story:
-      "Before building, we create interactive clickable wireframes and map the database architecture. You get to click through the screens, see how your team will use the software, and verify that every feature matches your exact business rules.",
+      "Before jumping into code, we create interactive wireframes and plan the data architecture. You can click through screen layouts, verify how your team will navigate the platform, and ensure that every feature matches your exact business rules.",
     whatHappens: [
       {
-        title: "Clickable Screen Wireframes",
-        desc: "Interactive prototypes showing every screen your customers and staff will interact with.",
+        title: "Interface Layouts & Wireframes",
+        desc: "Clean, intuitive UI layouts showing how customers, staff, and administrators will interact with the system.",
       },
       {
-        title: "Database & Webhook Design",
-        desc: "Engineering a secure PostgreSQL database and fail-safe webhook pipelines that connect your tools.",
+        title: "Data Models & API Integrations",
+        desc: "Designing secure database structures and API connections that tie your existing software and tools together.",
       },
       {
-        title: "Role-Based Team Permissions",
-        desc: "Defining clear access rules so sales, operations, and management each see only what they need.",
+        title: "Role Permissions & Security",
+        desc: "Defining access controls so team members, managers, and external clients each see only what they need.",
       },
     ],
-    deliverable: "Clickable Prototypes & Technical Blueprint signed off by you with zero architectural ambiguity.",
-    timeCommitment: "One 45-minute prototype review call to share your feedback and approve the design.",
-    outcome: "You approve the exact look, feel, and business logic before sprint engineering begins.",
+    deliverable: "Documented Project Blueprint and wireframe layouts approved by both sides before engineering begins.",
+    timeCommitment: "One collaborative review session to walk through layouts and approve the scope.",
+    outcome: "Complete clarity on look, feel, user flow, and business logic before building begins.",
     image: "/images/home/hero-architecture.jpg",
     imageAlt: "Aetibar technical architecture blueprint and relational schema design",
     icon: <AccountTreeOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "03",
-    tabLabel: "Working Sprints",
-    timeframe: "Weeks 4–6",
-    name: "Bi-Weekly Working Sprints & Staging Previews",
-    headline: "You test real working software every 14 days on a private staging link.",
+    tabLabel: "Development",
+    timeframe: "Stage 03",
+    name: "Staged Development & Working Previews",
+    headline: "You see the product while it is being built, with regular working previews.",
     story:
-      "We never disappear into a dark room for months. Every two weeks, you receive a private, password-protected link where you and your team can test working software with your own real business data. You see continuous progress and give feedback at every milestone.",
+      "Instead of waiting until the end of the project to see the result, you can review working parts of the software during development. This makes it easy to give feedback, catch misunderstandings early, and keep the build strictly aligned with your goals.",
     whatHappens: [
       {
-        title: "14-Day Working Releases",
-        desc: "Functional software deployed to private staging every 2 weeks so you watch progress in real time.",
+        title: "Visible Milestone Previews",
+        desc: "Functional software deployed to private staging environments so you can test features as they are built.",
       },
       {
-        title: "Sub-Second Speed Engineering",
-        desc: "Engineered on modern Next.js so pages open instantaneously on mobile phones, tablets, and desktops.",
+        title: "Performance-Focused Engineering",
+        desc: "Engineered with modern frameworks ensuring fast load times and responsive behavior across phones, tablets, and desktops.",
       },
       {
-        title: "Real Business Data Testing",
-        desc: "We test with your actual service categories and quotes so the software feels familiar from day one.",
+        title: "Realistic Workflow Testing",
+        desc: "We populate staging with representative business data so interactions, forms, and workflows feel familiar.",
       },
     ],
-    deliverable: "Live Working Staging Environments updated every 14 days for your team to test and verify.",
-    timeCommitment: "A 15-minute review of the working preview every two weeks at your convenience.",
-    outcome: "Zero surprises. You verify working features at every step of development.",
+    deliverable: "Working Staging Previews deployed at scheduled milestones for your team to test and verify.",
+    timeCommitment: "Short periodic reviews of working features at your convenience.",
+    outcome: "Continuous visibility and feedback, eliminating surprises at final delivery.",
     image: "/images/home/hero-agency-showcase.jpg",
-    imageAlt: "Live working Next.js software staging preview",
+    imageAlt: "Live working software staging preview",
     icon: <CodeOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "04",
-    tabLabel: "Safe Cutover",
-    timeframe: "Week 7",
-    name: "Zero-Disruption Migration & Team Training",
-    headline: "We run the old and new systems in parallel so your business never misses a beat.",
+    tabLabel: "Testing & Launch",
+    timeframe: "Stage 04",
+    name: "Thorough Testing & Controlled Rollout",
+    headline: "We test thoroughly and plan the transition in stages so operations run smoothly.",
     story:
-      "Switching software should never cause panic or business downtime. We run your existing tools and the new platform side-by-side for 7 days. Your team receives short, friendly video tutorials, and we verify that 100% of your historical customer records are safely imported.",
+      "Switching to a new digital system should never disrupt your daily business operations. Before going live, we test critical user paths, validate important data records, and plan the transition carefully so your team feels completely confident on day one.",
     whatHappens: [
       {
-        title: "Dual-Run Parallel Execution",
-        desc: "Existing tools and the new platform run side-by-side for 7 days with zero operational risk.",
+        title: "Careful Data Migration",
+        desc: "We map existing records, validate customer data, and verify database integrity before switching over.",
       },
       {
-        title: "100% Data Migration Audit",
-        desc: "Automated scripts verify that every past customer, quote, and invoice is imported with zero lost records.",
+        title: "End-to-End Workflow Testing",
+        desc: "Comprehensive testing of forms, inquiries, notifications, APIs, and security rules across devices.",
       },
       {
-        title: "3-Minute Staff Video Guides",
-        desc: "Custom, easy-to-follow Loom video tutorials showing each team member their exact daily steps.",
+        title: "Team Onboarding & Walkthroughs",
+        desc: "Easy-to-follow video walkthroughs and documentation showing each team member their exact daily steps.",
       },
     ],
-    deliverable: "100% Verified Data Migration Audit & Custom Staff Video Training Library.",
-    timeCommitment: "Normal business as usual while we manage the background cutover.",
-    outcome: "Zero downtime, zero lost inquiries, and total staff confidence on day one.",
+    deliverable: "Tested Production System, validated data migration, and complete team training guides.",
+    timeCommitment: "Your team conducts normal business while we manage deployment and migration in stages.",
+    outcome: "A smooth launch with tested workflows and confident team adoption.",
     image: "/images/home/editorial-operations-facility.jpg",
-    imageAlt: "Safe dual-run cutover and operational team training",
+    imageAlt: "Safe cutover and operational team training",
     icon: <RocketLaunchOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "05",
     tabLabel: "Ongoing Support",
-    timeframe: "Ongoing",
-    name: "Dedicated Architect Line & System Evolution",
-    headline: "Direct Slack or WhatsApp line to the engineers who built your platform.",
+    timeframe: "Stage 05",
+    name: "Support, Maintenance & System Evolution",
+    headline: "Direct communication with the team that designed and built your software.",
     story:
-      "Launch day is the start of our partnership, not the end. We monitor system speed, error alerts, and database backups 24/7. When you want to add a new service or expand your team, the senior engineers who built your system are ready to evolve it.",
+      "Launch day is the start of ongoing utility. We monitor system health, error logs, and security updates. When your business grows, adds new services, or needs new integrations, the engineers who built your platform are available to maintain and expand it.",
     whatHappens: [
       {
-        title: "Direct Architect Access",
-        desc: "A direct WhatsApp or Slack line with the engineers who designed your system — no junior helpdesks.",
+        title: "Direct Engineering Communication",
+        desc: "Communicate directly with the developers who built your platform — no confusing helpdesk layers.",
       },
       {
-        title: "24/7 Automated Health Checks",
-        desc: "Continuous automated monitoring of webhook connections, server speeds, and database uptime.",
+        title: "Monitoring & Maintenance",
+        desc: "Ongoing health checks, framework updates, security patches, and database backup monitoring.",
       },
       {
-        title: "Proactive Workflow Upgrades",
-        desc: "Quarterly reviews analyzing your operations to find new ways to shave minutes off daily tasks.",
+        title: "Feature Improvements & Scaling",
+        desc: "Periodic reviews to refine workflows, optimize performance, and introduce new capabilities as your business scales.",
       },
     ],
-    deliverable: "Live Performance Dashboard, Guaranteed Response SLA, and Permanent Code Ownership.",
-    timeCommitment: "Zero overhead. Peace of mind knowing your core engine is actively monitored.",
-    outcome: "A permanent business asset that scales effortlessly as your revenue grows.",
+    deliverable: "Documented handover, defined support channels, and access to all code and credentials.",
+    timeCommitment: "Peace of mind knowing your core digital systems have dependable technical backing.",
+    outcome: "A reliable digital asset that continues to support your business as it grows.",
     image: "/images/home/editorial-craft-operations.jpg",
     imageAlt: "Continuous support and system evolution with Aetibar engineers",
     icon: <MonitorHeartOutlinedIcon sx={{ fontSize: 20 }} />,
@@ -247,7 +247,7 @@ export default function MethodologyDeepDiveSection() {
                   fontWeight: 700,
                 }}
               >
-                HOW WE DELIVER &bull; 5 TRANSPARENT STAGES
+                OUR METHODOLOGY &bull; 5 TRANSPARENT STAGES
               </Typography>
             </Box>
           </motion.div>
@@ -269,7 +269,7 @@ export default function MethodologyDeepDiveSection() {
                 mb: 2.5,
               }}
             >
-              From first audit to live launch{" "}
+              From first conversation to live launch{" "}
               <Box
                 component="span"
                 sx={{
@@ -291,8 +291,7 @@ export default function MethodologyDeepDiveSection() {
                 mx: "auto",
               }}
             >
-              No disappearing developers or mysterious black boxes. Here is the exact, step-by-step
-              process we follow to take your operations from manual chaos to a calm, automated system.
+              A structured, collaborative process designed to keep everyone aligned. Here is the step-by-step approach we use to take projects from initial concept to a dependable production system.
             </Typography>
           </motion.div>
         </Box>
