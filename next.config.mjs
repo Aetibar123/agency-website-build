@@ -16,6 +16,21 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/solutions/business-websites',
+        destination: '/solutions/business-website-development',
+        permanent: true,
+      },
+      {
+        source: '/solutions/internal-business-tools',
+        destination: '/solutions/custom-business-software',
+        permanent: true,
+      },
+      {
+        source: '/solutions/customer-lead-systems',
+        destination: '/solutions/crm-lead-management',
+        permanent: true,
+      },
+      {
         source: '/services/app-development',
         destination: '/services/mobile-app-development',
         permanent: true,

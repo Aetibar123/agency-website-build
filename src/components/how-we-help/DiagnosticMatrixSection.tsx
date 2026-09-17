@@ -57,7 +57,7 @@ const diagnosticPaths: DiagnosticPath[] = [
     timeline: "Streamlined Implementation",
     complexity: "Targeted Integration",
     roiHighlight: "Reduces repetitive manual copy-pasting across tools",
-    link: "/solutions/customer-lead-systems",
+    link: "/solutions/crm-lead-management",
   },
   {
     id: "frontdoor",
@@ -81,7 +81,7 @@ const diagnosticPaths: DiagnosticPath[] = [
     timeline: "Purpose-Built Delivery",
     complexity: "Custom Web Application",
     roiHighlight: "Higher-quality inquiries with clear project specifications",
-    link: "/solutions/business-websites",
+    link: "/solutions/business-website-development",
   },
   {
     id: "operations",
@@ -105,7 +105,7 @@ const diagnosticPaths: DiagnosticPath[] = [
     timeline: "Tailored Development",
     complexity: "Custom Web Application",
     roiHighlight: "Consistent proposal generation and clear operational status",
-    link: "/solutions/internal-business-tools",
+    link: "/solutions/custom-business-software",
   },
   {
     id: "ai",

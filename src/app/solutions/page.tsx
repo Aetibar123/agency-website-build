@@ -61,24 +61,24 @@ export default function SolutionsPage() {
     hasPart: [
       {
         "@type": "Service",
-        name: "Business Websites",
-        url: "https://www.aetibar.in/solutions/business-websites",
+        name: "Custom Business Website Development",
+        url: "https://www.aetibar.in/solutions/business-website-development",
         description:
-          "Sub-second Next.js web applications engineered for instant credibility and conversion.",
+          "Custom business websites engineered to attract customers, generate enquiries, and support operations.",
       },
       {
         "@type": "Service",
-        name: "Customer & Lead Systems",
-        url: "https://www.aetibar.in/solutions/customer-lead-systems",
+        name: "Custom CRM & Lead Management Systems",
+        url: "https://www.aetibar.in/solutions/crm-lead-management",
         description:
           "Turn scattered inquiries across web, email, and WhatsApp into accountable revenue pipelines.",
       },
       {
         "@type": "Service",
-        name: "Internal Business Tools",
-        url: "https://www.aetibar.in/solutions/internal-business-tools",
+        name: "Custom Business Software",
+        url: "https://www.aetibar.in/solutions/custom-business-software",
         description:
-          "Replace fragile spreadsheets with role-based operational dispatch and quoting engines.",
+          "Replace fragile spreadsheets with custom operational dashboards, dispatch systems, and workflow applications.",
       },
       {
         "@type": "Service",

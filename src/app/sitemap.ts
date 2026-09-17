@@ -31,19 +31,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/business-websites`,
+      url: `${baseUrl}/solutions/business-website-development`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/solutions/customer-lead-systems`,
+      url: `${baseUrl}/solutions/crm-lead-management`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/solutions/internal-business-tools`,
+      url: `${baseUrl}/solutions/custom-business-software`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,

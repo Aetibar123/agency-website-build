@@ -7,40 +7,39 @@ import ServiceBackButton from "../../../components/services/ServiceBackButton";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Web Development Company | Custom Website Development | Aetibar",
+    absolute: "Web Application Development & Custom Software Engineering | Aetibar",
   },
 
   description:
-    "Aetibar is a professional web development company offering custom website development, business websites, eCommerce websites, web applications, and scalable digital solutions for businesses.",
+    "Aetibar engineers full-stack web applications, custom web platforms, scalable APIs, and cloud software built for complex operational workflows and enterprise performance.",
 
   keywords: [
-    // Primary Keywords
-    "Web Development Company",
-    "Website Development Company",
-    "Professional Web Development Services",
-    "Custom Website Development",
-
-    // Service Keywords
-    "Business Website Development",
-    "Custom Web Development",
-    "Responsive Website Development",
-    "Corporate Website Development",
-    "Ecommerce Website Development",
+    // Primary Web App Keywords
     "Web Application Development",
     "Custom Web Application Development",
-    "Website Design and Development",
-
-    // Technology / Solution Keywords
-    "Modern Web Development",
-    "Scalable Web Applications",
     "Full Stack Web Development",
-    "Frontend and Backend Development",
+    "Web Software Engineering",
+    "Custom Web Platforms",
+
+    // Technical Architecture Keywords
+    "SaaS Application Development",
+    "Cloud Web Applications",
+    "Frontend and Backend Engineering",
+    "Database Architecture and APIs",
+    "Custom Client Portals",
+    "API Development and Integration",
+
+    // Technology Stack Keywords
+    "Next.js Application Development",
+    "React Web Applications",
+    "Node.js Backend Development",
+    "TypeScript Engineering",
+    "Scalable Web Architecture",
 
     // Local / Brand Keywords
-    "Web Development Company in Udaipur",
-    "Website Development Company in Udaipur",
-    "Web Development Services in Udaipur",
-    "Aetibar Web Development",
+    "Web Application Development Company in Udaipur",
+    "Custom Software Engineering Udaipur",
+    "Aetibar Web Engineering",
   ],
 
   alternates: {
@@ -48,10 +47,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Web Development Company | Custom Website Development | Aetibar",
+    title: "Web Application Development & Custom Software Engineering | Aetibar",
 
     description:
-      "Get professional web development services from Aetibar. We build custom business websites, eCommerce platforms, web applications, and scalable digital solutions.",
+      "Aetibar engineers full-stack web applications, custom web platforms, scalable APIs, and cloud software built for complex operational workflows.",
 
     url: "https://www.aetibar.in/services/web-development",
 
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
         url: "https://www.aetibar.in/logo.jpeg",
         width: 512,
         height: 512,
-        alt: "Aetibar Web Development Services",
+        alt: "Aetibar Web Application Development",
       },
     ],
   },
@@ -72,10 +71,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Web Development Company | Aetibar",
+    title: "Web Application Development & Custom Software | Aetibar",
 
     description:
-      "Professional custom website development, web application development, business websites, and scalable web solutions.",
+      "Full-stack web application development, custom software platforms, and scalable cloud systems.",
 
     images: ["https://www.aetibar.in/logo.jpeg"],
   },

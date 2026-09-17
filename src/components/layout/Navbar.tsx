@@ -30,19 +30,19 @@ const solutionItems = [
   {
     title: "Digital Presence",
     desc: "Websites designed around customer discovery and action",
-    path: "/solutions/business-websites",
+    path: "/solutions/business-website-development",
     icon: <LanguageIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
-    title: "Customer & Lead Systems",
-    desc: "Intake pipelines, customer portals, and follow-up flows",
-    path: "/solutions/customer-lead-systems",
+    title: "CRM & Lead Systems",
+    desc: "Intake pipelines, sales pipelines, and follow-up flows",
+    path: "/solutions/crm-lead-management",
     icon: <HubOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
-    title: "Internal Business Tools",
+    title: "Custom Business Software",
     desc: "Custom operational dashboards and workflow applications",
-    path: "/solutions/internal-business-tools",
+    path: "/solutions/custom-business-software",
     icon: <DashboardCustomizeOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {

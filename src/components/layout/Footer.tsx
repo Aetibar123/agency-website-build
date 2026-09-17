@@ -9,9 +9,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 const solutionLinks = [
-  { name: "Digital Presence & Web", href: "/solutions/business-websites" },
-  { name: "Customer & Lead Systems", href: "/solutions/customer-lead-systems" },
-  { name: "Internal Business Tools", href: "/solutions/internal-business-tools" },
+  { name: "Digital Presence & Web", href: "/solutions/business-website-development" },
+  { name: "CRM & Lead Systems", href: "/solutions/crm-lead-management" },
+  { name: "Custom Business Software", href: "/solutions/custom-business-software" },
   { name: "Practical AI & Automation", href: "/solutions/ai-automation" },
 ];
 
