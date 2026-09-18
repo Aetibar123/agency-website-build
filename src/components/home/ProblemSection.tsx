@@ -266,7 +266,7 @@ export default function ProblemSection() {
               borderRadius: { xs: "22px", sm: "28px", md: "32px" },
               border: "1px solid",
               borderColor: isConnected ? "rgba(249, 115, 22, 0.35)" : "rgba(255, 255, 255, 0.1)",
-              p: { xs: 3, sm: 4.5, md: 5.5 },
+              p: { xs: 2.2, sm: 4, md: 5.5 },
               boxShadow: isConnected
                 ? "0 25px 80px -15px rgba(234, 88, 12, 0.2), 0 0 0 1px rgba(249, 115, 22, 0.2)"
                 : "0 25px 70px -15px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05)",
@@ -554,6 +554,8 @@ export default function ProblemSection() {
                               display: "flex",
                               justifyContent: "space-between",
                               alignItems: "center",
+                              flexWrap: "wrap",
+                              gap: 1,
                             }}
                           >
                             <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
@@ -596,13 +598,13 @@ export default function ProblemSection() {
               sx={{
                 position: "relative",
                 zIndex: 2,
-                p: { xs: 2.5, sm: 3.5 },
+                p: { xs: 2, sm: 3.5 },
                 borderRadius: "20px",
                 bgcolor: "rgba(255, 255, 255, 0.03)",
                 border: "1px solid rgba(255, 255, 255, 0.08)",
                 display: "grid",
                 gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" },
-                gap: 3,
+                gap: 2.5,
                 mb: 3.5,
               }}
             >
@@ -659,7 +661,7 @@ export default function ProblemSection() {
                 display: "flex",
                 flexDirection: { xs: "column", sm: "row" },
                 justifyContent: "space-between",
-                alignItems: { xs: "flex-start", sm: "center" },
+                alignItems: { xs: "stretch", sm: "center" },
                 gap: 2.5,
               }}
             >
@@ -676,10 +678,11 @@ export default function ProblemSection() {
                   : "When tools stay disconnected, your team ends up spending hours copying notes, following up manually, and sorting out confusion."}
               </Typography>
 
-              <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                <Link href="/how-we-help" style={{ textDecoration: "none" }}>
+              <Box sx={{ display: "flex", alignItems: "center", width: { xs: "100%", sm: "auto" }, flexShrink: 0 }}>
+                <Link href="/how-we-help" style={{ textDecoration: "none", width: "100%", display: "block" }}>
                   <Button
                     variant="contained"
+                    fullWidth
                     endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                     sx={{
                       background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
@@ -691,7 +694,8 @@ export default function ProblemSection() {
                       borderRadius: "9999px",
                       textTransform: "none",
                       boxShadow: "0 4px 15px rgba(234, 88, 12, 0.35)",
-                      whiteSpace: "nowrap",
+                      width: { xs: "100%", sm: "auto" },
+                      whiteSpace: { xs: "normal", sm: "nowrap" },
                       transition: "all 0.25s ease",
                       "&:hover": {
                         background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",

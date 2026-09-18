@@ -1,7 +1,27 @@
-"use client";
 import React from "react";
+import { Metadata } from "next";
 import { Box, Container, Typography } from "@mui/material";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Aetibar",
+  description:
+    "Read the official Privacy Policy of Aetibar. Learn how we collect, handle, and protect client and visitor information.",
+  alternates: {
+    canonical: "https://www.aetibar.in/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Privacy Policy | Aetibar",
+    description: "Read the official Privacy Policy of Aetibar.",
+    url: "https://www.aetibar.in/privacy-policy",
+    siteName: "Aetibar",
+    type: "website",
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

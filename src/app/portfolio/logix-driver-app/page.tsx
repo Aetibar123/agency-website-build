@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     "Discover how Aetibar built a cross-platform fleet management mobile app with offline mode, GPS tracking, route management, and digital proof of delivery.",
 
   keywords: [
+    "Mobile App Development",
+    "Mobile App Development Case Study",
     "Fleet Management Mobile App",
     "Driver Application Development",
     "Offline First Mobile App",
@@ -20,10 +22,28 @@ export const metadata: Metadata = {
     "GPS Tracking Mobile Application",
     "Digital Proof of Delivery App",
     "Cross-Platform App Development",
-    "Mobile App Development Case Study",
+    "Web Development",
+    "Custom Software Engineering",
     "Aetibar Work",
     "Aetibar Case Study",
   ],
+
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Mobile App Development Case Study",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 
   alternates: {
     canonical: "https://www.aetibar.in/portfolio/logix-driver-app",
@@ -35,7 +55,7 @@ export const metadata: Metadata = {
       "Cross-platform fleet and driver mobile application built for offline reliability, real-time GPS tracking, and delivery operations.",
     url: "https://www.aetibar.in/portfolio/logix-driver-app",
     siteName: "Aetibar",
-    type: "website",
+    type: "article",
     images: [
       {
         url: "https://www.aetibar.in/images/portfolio/logix.png",
@@ -53,6 +73,38 @@ export const metadata: Metadata = {
       "Cross-platform fleet and driver mobile application built for offline reliability, real-time GPS tracking, and delivery operations.",
     images: ["https://www.aetibar.in/images/portfolio/logix.png"],
   },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
+};
+
+const caseStudySchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Fleet Management Driver Mobile App Case Study",
+  description:
+    "Discover how Aetibar built a cross-platform fleet management mobile app with offline mode, GPS tracking, route management, and digital proof of delivery.",
+  image: "https://www.aetibar.in/images/portfolio/logix.png",
+  author: {
+    "@type": "Organization",
+    name: "Aetibar Technologies",
+    url: "https://www.aetibar.in",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Aetibar",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.aetibar.in/logo.jpeg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.aetibar.in/portfolio/logix-driver-app",
+  },
 };
 
 export default function Page() {
@@ -63,6 +115,12 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(caseStudySchema),
+        }}
+      />
       <PortfolioBackButton />
       <PortfolioDetailClient project={project} />
     </>

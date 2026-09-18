@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 
   keywords: [
     // Primary Keywords
+    "AI Automation",
     "AI Automation Services in Udaipur",
     "AI Automation Company in Udaipur",
     "AI Automation Agency in Udaipur",
@@ -76,6 +77,23 @@ export const metadata: Metadata = {
     "Aetibar AI Automation Services",
   ],
 
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Artificial Intelligence and Automation",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   alternates: {
     canonical: "https://www.aetibar.in/services/ai-automation",
   },
@@ -112,9 +130,31 @@ export const metadata: Metadata = {
 
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
 };
 
-
+const aiServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "AI Automation Services",
+  serviceType: "Artificial Intelligence & Workflow Automation",
+  provider: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Udaipur, Rajasthan, India",
+  },
+  description:
+    "Custom AI automation, autonomous AI agents, workflow intelligence, and business process automation by Aetibar.",
+};
 
 export default function Page() {
   const service = getServiceBySlug("ai-automation");
@@ -124,6 +164,12 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aiServiceSchema),
+        }}
+      />
       <ServiceBackButton />
       <AiAutomationPage service={service} />
     </>

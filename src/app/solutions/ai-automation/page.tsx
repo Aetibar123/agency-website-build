@@ -13,19 +13,46 @@ import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 import SolutionsCta from "../../../components/solutions/SolutionsCta";
 
 export const metadata: Metadata = {
-  title: "AI & Practical Automation | Pragmatic Problem-First Workflow Engineering | Aetibar",
+  title: "Practical AI & Workflow Automation for Business | Aetibar",
   description:
-    "AI should solve a real problem before it becomes part of your workflow. We engineer targeted document parsers, webhook bridges, and human-verified automation.",
+    "Aetibar delivers practical AI automation, document data extraction, and webhook integrations with human verification checkpoints in Udaipur, India.",
+  keywords: [
+    "practical AI automation",
+    "AI automation for business",
+    "workflow automation services",
+    "document data extraction",
+    "custom AI solutions Udaipur",
+    "business process automation",
+    "AI agent development",
+    "Aetibar Technologies",
+  ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "AI Automation, Workflow Engineering",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/solutions/ai-automation",
   },
   openGraph: {
-    title: "AI & Practical Automation | Aetibar",
+    title: "Practical AI & Workflow Automation for Business | Aetibar",
     description:
-      "Targeted language models and webhook bridges where manual administrative friction drains hours. 99.4% precision and human verification gates.",
+      "Targeted language models and webhook bridges where manual administrative friction drains hours. Reliable automation with human verification gates.",
     url: "https://www.aetibar.in/solutions/ai-automation",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -34,6 +61,20 @@ export const metadata: Metadata = {
         alt: "Aetibar AI & Automation",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Practical AI & Workflow Automation for Business | Aetibar",
+    description:
+      "Targeted language models and webhook bridges where manual administrative friction drains hours. Reliable automation with human verification gates.",
+    creator: "@Aetibar_",
+    images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
   },
 };
 

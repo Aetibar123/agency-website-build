@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 
   keywords: [
     // Primary Keywords
+    "Search Engine Optimization",
+    "Digital Marketing",
     "SEO Services in Udaipur",
     "SEO Company in Udaipur",
     "SEO Agency in Udaipur",
@@ -53,8 +55,25 @@ export const metadata: Metadata = {
     "Aetibar SEO Company",
   ],
 
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "marketing",
+  classification: "Search Engine Optimization",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   alternates: {
-    canonical: "https://www.aetibar.in/services/seo",
+    canonical: "https://www.aetibar.in/services/search-engine-optimization",
   },
 
   openGraph: {
@@ -63,7 +82,7 @@ export const metadata: Metadata = {
     description:
       "Grow your online visibility with Aetibar's SEO services. We help businesses improve search rankings, increase organic traffic, and reach more customers.",
 
-    url: "https://www.aetibar.in/services/seo",
+    url: "https://www.aetibar.in/services/search-engine-optimization",
 
     siteName: "Aetibar",
 
@@ -89,9 +108,31 @@ export const metadata: Metadata = {
 
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
 };
 
-
+const seoSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Search Engine Optimization Services",
+  serviceType: "SEO Services",
+  provider: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Udaipur, Rajasthan, India",
+  },
+  description:
+    "Comprehensive search engine optimization, technical SEO audits, on-page optimization, and organic growth services by Aetibar in Udaipur.",
+};
 
 export default function Page() {
   const service = getServiceBySlug("search-engine-optimization");
@@ -101,6 +142,12 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(seoSchema),
+        }}
+      />
       <ServiceBackButton />
       <SeoPage service={service} />
     </>

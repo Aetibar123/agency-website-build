@@ -27,20 +27,48 @@ import SolutionsCta from "../../../components/solutions/SolutionsCta";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Custom Business Website Development | Aetibar",
+    absolute: "Custom Business Website Development | Web Development in Udaipur | Aetibar",
   },
   description:
-    "Aetibar builds custom business websites designed to attract customers, generate enquiries, communicate your services clearly, and support your business workflows.",
+    "Aetibar delivers custom business website development, responsive web design, and high-performance web platforms in Udaipur, India, built for fast loading, SEO ranking, and lead conversion.",
+  keywords: [
+    "business website development",
+    "web development company in Udaipur",
+    "custom website development",
+    "responsive web design Udaipur",
+    "eCommerce website development",
+    "SEO friendly website design",
+    "Next.js web development",
+    "web application development",
+    "Aetibar Technologies",
+  ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Web Development",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/solutions/business-website-development",
   },
   openGraph: {
     title: "Custom Business Website Development | Aetibar",
     description:
-      "Aetibar builds custom business websites designed to attract customers, generate enquiries, communicate your services clearly, and support your business workflows.",
+      "Aetibar builds custom business websites designed to attract customers, rank in search engines, and support your business workflows.",
     url: "https://www.aetibar.in/solutions/business-website-development",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -54,8 +82,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Custom Business Website Development | Aetibar",
     description:
-      "Aetibar builds custom business websites designed to attract customers, generate enquiries, communicate your services clearly, and support your business workflows.",
+      "Aetibar builds custom business websites designed to attract customers, generate enquiries, and convert visitors.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
   },
 };
 

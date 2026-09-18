@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   // Enable native Next.js image optimization with AVIF and WebP support
   images: {
     formats: ['image/avif', 'image/webp'],

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Box, Container, Typography, Button, Grid, IconButton } from "@mui/material";
+import { Box, Container, Typography, Button, Grid } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -15,15 +15,16 @@ import { motion, AnimatePresence } from "framer-motion";
 interface WorkFilterCategory {
   id: string;
   label: string;
+  mobileLabel?: string;
   count: number;
 }
 
 const filterCategories: WorkFilterCategory[] = [
-  { id: "all", label: "All Projects", count: 4 },
-  { id: "digital-presence", label: "Websites & Apps", count: 1 },
-  { id: "internal-tools", label: "Internal Tools", count: 1 },
-  { id: "ai-automation", label: "AI & Automation", count: 1 },
-  { id: "customer-leads", label: "Lead Systems", count: 1 },
+  { id: "all", label: "All Projects", mobileLabel: "All", count: 4 },
+  { id: "digital-presence", label: "Websites & Apps", mobileLabel: "Web & Apps", count: 1 },
+  { id: "internal-tools", label: "Internal Tools", mobileLabel: "Internal Tools", count: 1 },
+  { id: "ai-automation", label: "AI & Automation", mobileLabel: "AI & Auto", count: 1 },
+  { id: "customer-leads", label: "Lead Systems", mobileLabel: "Lead Systems", count: 1 },
 ];
 
 export default function SelectedWorkHomeSection() {
@@ -170,19 +171,21 @@ export default function SelectedWorkHomeSection() {
             </Link>
           </Box>
 
-          {/* Interactive Domain Filter Rail */}
+          {/* Interactive Domain Filter Rail — Responsive Wrap, All Tabs Visible Without Scroll */}
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
+              justifyContent: { xs: "flex-start", sm: "center", md: "flex-start" },
               flexWrap: "wrap",
-              gap: 1.2,
-              p: 0.8,
-              borderRadius: "9999px",
+              gap: { xs: 0.8, sm: 1.2 },
+              p: { xs: 0.8, sm: 1 },
+              borderRadius: { xs: "16px", md: "9999px" },
               bgcolor: "#FAF8F5",
               border: "1px solid rgba(228, 228, 231, 0.8)",
-              width: "fit-content",
-              mb: { xs: 6, md: 7 },
+              width: { xs: "100%", md: "fit-content" },
+              maxWidth: "100%",
+              mb: { xs: 5, md: 7 },
             }}
           >
             {filterCategories.map((cat) => {
@@ -193,16 +196,18 @@ export default function SelectedWorkHomeSection() {
                   onClick={() => setActiveCategory(cat.id)}
                   sx={{
                     position: "relative",
-                    px: { xs: 2, sm: 2.5 },
-                    py: 1,
-                    borderRadius: "9999px",
+                    px: { xs: 1.2, sm: 2.2, md: 2.5 },
+                    py: { xs: 0.75, sm: 1 },
+                    borderRadius: { xs: "10px", md: "9999px" },
                     cursor: "pointer",
                     display: "flex",
                     alignItems: "center",
-                    gap: 1,
+                    justifyContent: "center",
+                    gap: { xs: 0.6, sm: 1 },
                     color: isSelected ? "#FFFFFF" : "#52525B",
                     transition: "color 0.2s ease",
                     zIndex: 1,
+                    flex: { xs: "1 1 auto", md: "initial" },
                   }}
                 >
                   {isSelected && (
@@ -213,7 +218,7 @@ export default function SelectedWorkHomeSection() {
                       sx={{
                         position: "absolute",
                         inset: 0,
-                        borderRadius: "9999px",
+                        borderRadius: { xs: "10px", md: "9999px" },
                         bgcolor: "#18181B",
                         boxShadow: "0 6px 18px -3px rgba(24, 24, 27, 0.3)",
                         zIndex: -1,
@@ -222,19 +227,26 @@ export default function SelectedWorkHomeSection() {
                   )}
                   <Typography
                     sx={{
-                      fontSize: "0.85rem",
+                      fontSize: { xs: "0.78rem", sm: "0.85rem" },
                       fontWeight: 600,
                       letterSpacing: "-0.01em",
+                      whiteSpace: "nowrap",
                     }}
                   >
-                    {cat.label}
+                    <Box component="span" sx={{ display: { xs: "inline", sm: "none" } }}>
+                      {cat.mobileLabel || cat.label}
+                    </Box>
+                    <Box component="span" sx={{ display: { xs: "none", sm: "inline" } }}>
+                      {cat.label}
+                    </Box>
                   </Typography>
                   <Typography
                     sx={{
                       fontFamily: "monospace",
-                      fontSize: "0.75rem",
+                      fontSize: { xs: "0.7rem", sm: "0.75rem" },
                       fontWeight: 700,
                       color: isSelected ? "#FB923C" : "#A1A1AA",
+                      flexShrink: 0,
                     }}
                   >
                     ({cat.count})
@@ -952,6 +964,7 @@ export default function SelectedWorkHomeSection() {
                             position: "absolute",
                             top: 12,
                             right: 12,
+                            maxWidth: "calc(100% - 24px)",
                             px: 1.4,
                             py: 0.6,
                             borderRadius: "8px",
@@ -962,6 +975,9 @@ export default function SelectedWorkHomeSection() {
                             fontSize: "0.72rem",
                             fontFamily: "monospace",
                             fontWeight: 700,
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
                           }}
                         >
                           AUTOMATED CLASSIFICATION DEMO
@@ -1281,31 +1297,36 @@ export default function SelectedWorkHomeSection() {
               </Typography>
             </Box>
 
-            <Link href="/work" style={{ textDecoration: "none" }}>
-              <Button
-                variant="contained"
-                endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
-                sx={{
-                  background: "linear-gradient(135deg, #18181B 0%, #27272A 100%)",
-                  color: "#FFFFFF",
-                  px: 3.8,
-                  py: 1.4,
-                  fontSize: "0.9rem",
-                  fontWeight: 600,
-                  borderRadius: "9999px",
-                  whiteSpace: "nowrap",
-                  boxShadow: "0 8px 20px rgba(24, 24, 27, 0.2)",
-                  transition: "all 0.2s ease",
-                  "&:hover": {
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                    boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
-                    transform: "translateY(-1px)",
-                  },
-                }}
-              >
-                View All Projects &amp; Prototypes
-              </Button>
-            </Link>
+            <Box sx={{ width: { xs: "100%", md: "auto" }, flexShrink: 0 }}>
+              <Link href="/work" style={{ textDecoration: "none", width: "100%", display: "block" }}>
+                <Button
+                  variant="contained"
+                  fullWidth
+                  endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+                  sx={{
+                    background: "linear-gradient(135deg, #18181B 0%, #27272A 100%)",
+                    color: "#FFFFFF",
+                    px: { xs: 2.5, sm: 3.8 },
+                    py: 1.4,
+                    fontSize: { xs: "0.85rem", sm: "0.9rem" },
+                    fontWeight: 600,
+                    borderRadius: "9999px",
+                    width: { xs: "100%", md: "auto" },
+                    whiteSpace: { xs: "normal", sm: "nowrap" },
+                    textAlign: "center",
+                    boxShadow: "0 8px 20px rgba(24, 24, 27, 0.2)",
+                    transition: "all 0.2s ease",
+                    "&:hover": {
+                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
+                      transform: "translateY(-1px)",
+                    },
+                  }}
+                >
+                  View All Projects &amp; Prototypes
+                </Button>
+              </Link>
+            </Box>
           </Box>
         </motion.div>
       </Container>

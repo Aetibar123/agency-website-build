@@ -8,32 +8,47 @@ import ShieldRoundedIcon from "@mui/icons-material/ShieldRounded";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 export const metadata: Metadata = {
-  title: "Our Work: Web Development, Custom Software & AI Systems | Aetibar",
+  title: "Our Work | Web Development, Mobile Apps & Digital Marketing Portfolio | Aetibar",
   description:
-    "Explore selected web development projects, custom software applications, internal business tools, and AI automation systems built by Aetibar. Based in Udaipur, Rajasthan, serving businesses across India and globally.",
+    "Explore selected case studies across custom web development, mobile app development, digital marketing, and business software systems built by Aetibar in Udaipur, India.",
   keywords: [
     "Aetibar portfolio",
-    "web development projects",
+    "web development portfolio",
+    "mobile app development case study",
+    "digital marketing portfolio",
     "custom software development projects",
     "web application development",
-    "workflow automation",
     "custom business software",
-    "internal business tools",
-    "API integrations",
     "software development company in Udaipur",
-    "web development company in Rajasthan",
-    "software development company in India",
+    "Aetibar Technologies",
   ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Web Development, Mobile App Development, Digital Marketing",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/work",
   },
   openGraph: {
-    title: "Our Work: Web Development, Custom Software & AI Systems | Aetibar",
+    title: "Our Work | Web Development, Mobile Apps & Digital Marketing Portfolio | Aetibar",
     description:
-      "Explore selected web development projects, custom software applications, internal business tools, and AI automation systems built by Aetibar.",
+      "Explore selected web development projects, mobile applications, digital marketing results, and custom software systems built by Aetibar.",
     url: "https://www.aetibar.in/work",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/images/home/hero-agency-showcase.jpg",
@@ -45,16 +60,43 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Work: Web Development, Custom Software & AI Systems | Aetibar",
+    title: "Our Work | Web Development, Mobile Apps & Digital Marketing Portfolio | Aetibar",
     description:
-      "Explore selected web development projects, custom software applications, internal business tools, and AI automation systems built by Aetibar.",
+      "Explore selected web development projects, mobile applications, digital marketing results, and custom software systems built by Aetibar.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/images/home/hero-agency-showcase.jpg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
+};
+
+const workPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Our Work - Aetibar Portfolio",
+  url: "https://www.aetibar.in/work",
+  description:
+    "Explore case studies in web development, mobile app development, digital marketing, and custom business software by Aetibar.",
+  publisher: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
   },
 };
 
 export default function WorkPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(workPageSchema),
+        }}
+      />
       {/* Editorial Premium Hero */}
       <Box
         component="section"

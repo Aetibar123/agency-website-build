@@ -342,11 +342,12 @@ export default function TwoSidesSection() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     transition={{ duration: 0.2 }}
+                    style={{ height: "100%" }}
                   >
                     <Box
                       onClick={() => setActiveIdx(idx)}
                       sx={{
-                        p: { xs: 2, sm: 2.4 },
+                        p: { xs: 1.8, sm: 2.4 },
                         borderRadius: "18px",
                         bgcolor: isActive ? "#18181B" : "#FFFFFF",
                         border: "1.5px solid",
@@ -359,6 +360,8 @@ export default function TwoSidesSection() {
                         display: "flex",
                         flexDirection: "column",
                         gap: 0.5,
+                        height: "100%",
+                        justifyContent: "space-between",
                         "&:hover": {
                           borderColor: isActive ? "#18181B" : "#EA580C",
                         },
@@ -391,7 +394,7 @@ export default function TwoSidesSection() {
 
                       <Typography
                         sx={{
-                          fontSize: { xs: "0.88rem", sm: "0.95rem" },
+                          fontSize: { xs: "0.85rem", sm: "0.95rem" },
                           fontWeight: 600,
                           color: isActive ? "#FFFFFF" : "#18181B",
                           lineHeight: 1.3,
@@ -402,7 +405,7 @@ export default function TwoSidesSection() {
 
                       <Typography
                         sx={{
-                          fontSize: "0.75rem",
+                          fontSize: "0.72rem",
                           color: isActive ? "rgba(255, 255, 255, 0.65)" : "#71717A",
                           fontWeight: 400,
                         }}
@@ -435,7 +438,7 @@ export default function TwoSidesSection() {
                     bgcolor: "#FFFFFF",
                     borderRadius: { xs: "24px", md: "30px" },
                     border: "1.5px solid rgba(249, 115, 22, 0.25)",
-                    p: { xs: 3.5, sm: 4.5, md: 5 },
+                    p: { xs: 2.5, sm: 4, md: 5 },
                     boxShadow: "0 20px 50px -12px rgba(234, 88, 12, 0.08)",
                     display: "flex",
                     flexDirection: "column",
@@ -451,14 +454,15 @@ export default function TwoSidesSection() {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
+                        gap: 1.5,
                         mb: 3,
                       }}
                     >
-                      <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                      <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, minWidth: 0, flex: 1 }}>
                         <Box
                           sx={{
-                            width: 42,
-                            height: 42,
+                            width: { xs: 38, sm: 42 },
+                            height: { xs: 38, sm: 42 },
                             borderRadius: "12px",
                             bgcolor: "rgba(249, 115, 22, 0.08)",
                             border: "1px solid rgba(249, 115, 22, 0.25)",
@@ -466,23 +470,27 @@ export default function TwoSidesSection() {
                             alignItems: "center",
                             justifyContent: "center",
                             color: "#EA580C",
+                            flexShrink: 0,
                           }}
                         >
-                          <LanguageIcon sx={{ fontSize: 22 }} />
+                          <LanguageIcon sx={{ fontSize: { xs: 20, sm: 22 } }} />
                         </Box>
-                        <Box>
+                        <Box sx={{ minWidth: 0 }}>
                           <Typography
                             sx={{
-                              fontSize: "0.725rem",
+                              fontSize: { xs: "0.68rem", sm: "0.725rem" },
                               fontWeight: 600,
                               letterSpacing: "0.08em",
                               textTransform: "uppercase",
                               color: "#EA580C",
+                              overflow: "hidden",
+                              textOverflow: "ellipsis",
+                              whiteSpace: "nowrap",
                             }}
                           >
                             {current.customer.stageTag}
                           </Typography>
-                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#18181B" }}>
+                          <Typography sx={{ fontSize: { xs: "0.8rem", sm: "0.85rem" }, fontWeight: 600, color: "#18181B", whiteSpace: "nowrap" }}>
                             What Your Customer Sees
                           </Typography>
                         </Box>
@@ -499,6 +507,8 @@ export default function TwoSidesSection() {
                           color: "#EA580C",
                           letterSpacing: "0.04em",
                           textTransform: "uppercase",
+                          whiteSpace: "nowrap",
+                          flexShrink: 0,
                         }}
                       >
                         Client Side
@@ -524,7 +534,7 @@ export default function TwoSidesSection() {
                       sx={{
                         fontSize: "0.95rem",
                         color: "#52525B",
-                        lineHeight: 1.75,
+                        lineHeight: 1.7,
                         mb: 3.5,
                       }}
                     >
@@ -596,7 +606,7 @@ export default function TwoSidesSection() {
                     bgcolor: "#111218",
                     borderRadius: { xs: "24px", md: "30px" },
                     border: "1.5px solid rgba(255, 255, 255, 0.1)",
-                    p: { xs: 3.5, sm: 4.5, md: 5 },
+                    p: { xs: 2.5, sm: 4, md: 5 },
                     boxShadow: "0 25px 60px -12px rgba(0, 0, 0, 0.45)",
                     display: "flex",
                     flexDirection: "column",
@@ -623,14 +633,15 @@ export default function TwoSidesSection() {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
+                        gap: 1.5,
                         mb: 3,
                       }}
                     >
-                      <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                      <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, minWidth: 0, flex: 1 }}>
                         <Box
                           sx={{
-                            width: 42,
-                            height: 42,
+                            width: { xs: 38, sm: 42 },
+                            height: { xs: 38, sm: 42 },
                             borderRadius: "12px",
                             bgcolor: "rgba(249, 115, 22, 0.12)",
                             border: "1px solid rgba(249, 115, 22, 0.35)",
@@ -638,23 +649,27 @@ export default function TwoSidesSection() {
                             alignItems: "center",
                             justifyContent: "center",
                             color: "#FB923C",
+                            flexShrink: 0,
                           }}
                         >
-                          <StorageIcon sx={{ fontSize: 22 }} />
+                          <StorageIcon sx={{ fontSize: { xs: 20, sm: 22 } }} />
                         </Box>
-                        <Box>
+                        <Box sx={{ minWidth: 0 }}>
                           <Typography
                             sx={{
-                              fontSize: "0.725rem",
+                              fontSize: { xs: "0.68rem", sm: "0.725rem" },
                               fontWeight: 600,
                               letterSpacing: "0.08em",
                               textTransform: "uppercase",
                               color: "#FB923C",
+                              overflow: "hidden",
+                              textOverflow: "ellipsis",
+                              whiteSpace: "nowrap",
                             }}
                           >
                             {current.business.stageTag}
                           </Typography>
-                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#FFFFFF" }}>
+                          <Typography sx={{ fontSize: { xs: "0.8rem", sm: "0.85rem" }, fontWeight: 600, color: "#FFFFFF", whiteSpace: "nowrap" }}>
                             What Your Team Manages
                           </Typography>
                         </Box>
@@ -672,6 +687,8 @@ export default function TwoSidesSection() {
                           color: "rgba(255, 255, 255, 0.8)",
                           letterSpacing: "0.04em",
                           textTransform: "uppercase",
+                          whiteSpace: "nowrap",
+                          flexShrink: 0,
                         }}
                       >
                         Team Side

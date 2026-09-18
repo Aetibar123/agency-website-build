@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 
   keywords: [
     // Primary Keywords
+    "Graphic Design",
     "Graphic Design Services in Udaipur",
     "Graphic Design Company in Udaipur",
     "Graphic Design Agency in Udaipur",
@@ -75,6 +76,23 @@ export const metadata: Metadata = {
     "Aetibar Design Services",
   ],
 
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "design",
+  classification: "Graphic Design",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   alternates: {
     canonical: "https://www.aetibar.in/services/graphic-design",
   },
@@ -111,9 +129,31 @@ export const metadata: Metadata = {
 
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
 };
 
-
+const graphicDesignSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Graphic Design & Branding Services",
+  serviceType: "Graphic Design",
+  provider: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Udaipur, Rajasthan, India",
+  },
+  description:
+    "Professional graphic design, brand identity systems, corporate logos, UI graphics, and marketing collaterals by Aetibar in Udaipur.",
+};
 
 export default function Page() {
   const service = getServiceBySlug("graphic-design");
@@ -123,6 +163,12 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(graphicDesignSchema),
+        }}
+      />
       <ServiceBackButton />
       <GraphicsDesigningPage service={service} />
     </>

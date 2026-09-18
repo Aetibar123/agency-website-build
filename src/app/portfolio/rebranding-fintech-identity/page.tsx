@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     "How Aetibar built a modern brand identity, scalable Figma design system, and multi-channel creative system for fintech platform Vault Finance, boosting conversions by 24%.",
 
   keywords: [
+    "Graphic Design",
+    "Brand Identity Design",
+    "Digital Marketing",
+    "Web Development",
     "Fintech Brand Identity",
     "Design System Development",
     "Corporate Rebranding Case Study",
@@ -25,6 +29,23 @@ export const metadata: Metadata = {
     "Aetibar Case Study",
   ],
 
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "design",
+  classification: "Brand Design Case Study",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   alternates: {
     canonical: "https://www.aetibar.in/portfolio/rebranding-fintech-identity",
   },
@@ -35,7 +56,7 @@ export const metadata: Metadata = {
       "Complete fintech visual identity and reusable design system that cut UI development time by 40% and boosted conversions by 24%.",
     url: "https://www.aetibar.in/portfolio/rebranding-fintech-identity",
     siteName: "Aetibar",
-    type: "website",
+    type: "article",
     images: [
       {
         url: "https://www.aetibar.in/images/portfolio/rebrand.png",
@@ -53,6 +74,38 @@ export const metadata: Metadata = {
       "Complete fintech visual identity and reusable design system that cut UI development time by 40% and boosted conversions by 24%.",
     images: ["https://www.aetibar.in/images/portfolio/rebrand.png"],
   },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
+};
+
+const caseStudySchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Fintech Brand Identity & Design System Case Study",
+  description:
+    "How Aetibar built a modern brand identity, scalable Figma design system, and multi-channel creative system for fintech platform Vault Finance, boosting conversions by 24%.",
+  image: "https://www.aetibar.in/images/portfolio/rebrand.png",
+  author: {
+    "@type": "Organization",
+    name: "Aetibar Technologies",
+    url: "https://www.aetibar.in",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Aetibar",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.aetibar.in/logo.jpeg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.aetibar.in/portfolio/rebranding-fintech-identity",
+  },
 };
 
 export default function Page() {
@@ -63,6 +116,12 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(caseStudySchema),
+        }}
+      />
       <PortfolioBackButton />
       <PortfolioDetailClient project={project} />
     </>

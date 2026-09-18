@@ -16,12 +16,14 @@ export const metadata: Metadata = {
 
   keywords: [
     // Primary Keywords
+    "Digital Marketing",
     "Digital Marketing Agency in Udaipur",
     "Digital Marketing Company in Udaipur",
     "Digital Marketing Services in Udaipur",
     "Digital Marketing Agency",
     "Digital Marketing Services",
     "Online Marketing Services",
+    "Performance Marketing Agency",
 
     // Social Media Marketing
     "Social Media Marketing Services",
@@ -69,6 +71,23 @@ export const metadata: Metadata = {
     "Aetibar Digital Marketing Agency",
   ],
 
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "marketing",
+  classification: "Digital Marketing",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   alternates: {
     canonical: "https://www.aetibar.in/services/digital-marketing",
   },
@@ -105,8 +124,31 @@ export const metadata: Metadata = {
 
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
 };
 
+const digitalMarketingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Digital Marketing Services",
+  serviceType: "Digital Marketing",
+  provider: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Udaipur, Rajasthan, India",
+  },
+  description:
+    "Performance digital marketing, SEO, Google Ads management, social media marketing, and lead generation services by Aetibar in Udaipur.",
+};
 
 export default function Page() {
   const service = getServiceBySlug("digital-marketing");
@@ -116,6 +158,12 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(digitalMarketingSchema),
+        }}
+      />
       <ServiceBackButton />
       <DigitalMarketingPage service={service} />
     </>

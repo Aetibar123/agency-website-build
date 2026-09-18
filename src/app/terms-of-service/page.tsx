@@ -1,7 +1,27 @@
-"use client";
 import React from "react";
+import { Metadata } from "next";
 import { Box, Container, Typography } from "@mui/material";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | Aetibar",
+  description:
+    "Read the terms and conditions governing the use of Aetibar's website, services, and digital solutions.",
+  alternates: {
+    canonical: "https://www.aetibar.in/terms-of-service",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Terms of Service | Aetibar",
+    description: "Read the terms and conditions governing the use of Aetibar's website and services.",
+    url: "https://www.aetibar.in/terms-of-service",
+    siteName: "Aetibar",
+    type: "website",
+  },
+};
 
 export default function TermsOfServicePage() {
   return (

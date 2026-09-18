@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
 
   keywords: [
+    "Web Development",
+    "Mobile App Development",
+    "Digital Marketing",
+    "Web Development Company in Udaipur",
+    "Mobile App Development Company in Udaipur",
+    "Digital Marketing Agency Udaipur",
+    "Custom Software Engineering",
     "Business workflow solutions",
     "Custom business websites",
     "Customer and lead systems",
@@ -33,6 +40,22 @@ export const metadata: Metadata = {
     "Software engineering studio",
     "Aetibar Technologies",
   ],
+
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 
   icons: {
     icon: "/logo.jpeg",

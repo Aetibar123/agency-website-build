@@ -29,20 +29,47 @@ import CrmFaqAccordion, { FaqItem } from "../../../components/solutions/CrmFaqAc
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Custom CRM & Lead Management Systems | Aetibar",
+    absolute: "Custom CRM & Lead Management Systems | Pipeline Automation | Aetibar",
   },
   description:
-    "Aetibar builds custom CRM and lead management systems that organize enquiries, automate follow-ups, track sales pipelines, and fit the way your business works.",
+    "Aetibar builds custom CRM and lead management systems in Udaipur, India, that organize multi-channel inquiries, automate follow-ups, and track sales pipelines accurately.",
+  keywords: [
+    "custom CRM development",
+    "lead management system",
+    "sales pipeline management",
+    "lead intake automation",
+    "inquiry tracking software",
+    "digital marketing lead management",
+    "custom business software Udaipur",
+    "Aetibar Technologies",
+  ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "CRM & Lead Management, Custom Software",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/solutions/crm-lead-management",
   },
   openGraph: {
     title: "Custom CRM & Lead Management Systems | Aetibar",
     description:
-      "Aetibar builds custom CRM and lead management systems that organize enquiries, automate follow-ups, track sales pipelines, and fit the way your business works.",
+      "Aetibar builds custom CRM and lead management systems that organize enquiries, automate follow-ups, and track sales pipelines.",
     url: "https://www.aetibar.in/solutions/crm-lead-management",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -56,8 +83,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Custom CRM & Lead Management Systems | Aetibar",
     description:
-      "Aetibar builds custom CRM and lead management systems that organize enquiries, automate follow-ups, track sales pipelines, and fit the way your business works.",
+      "Aetibar builds custom CRM and lead management systems that organize enquiries, automate follow-ups, and track sales pipelines.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
   },
 };
 

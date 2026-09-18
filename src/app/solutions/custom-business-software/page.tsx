@@ -25,20 +25,47 @@ import CustomSoftwareFaqAccordion, { FaqItem } from "../../../components/solutio
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Custom Business Software Development | Aetibar",
+    absolute: "Custom Business Software Development | Internal Tools & Dashboards | Aetibar",
   },
   description:
-    "Aetibar builds custom business software, operational dashboards, workflow systems, scheduling tools and internal platforms designed around how your business works.",
+    "Aetibar builds custom business software, operational dashboards, workflow systems, and internal platforms in Udaipur, India, designed to replace fragmented spreadsheets.",
+  keywords: [
+    "custom business software",
+    "custom software development company Udaipur",
+    "internal business tools",
+    "operational dashboard development",
+    "business workflow software",
+    "spreadsheet replacement software",
+    "enterprise software development India",
+    "Aetibar Technologies",
+  ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Custom Business Software",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/solutions/custom-business-software",
   },
   openGraph: {
     title: "Custom Business Software Development | Aetibar",
     description:
-      "Aetibar builds custom business software, operational dashboards, workflow systems, scheduling tools and internal platforms designed around how your business works.",
+      "Aetibar builds custom business software, operational dashboards, workflow systems, and internal platforms designed around how your business works.",
     url: "https://www.aetibar.in/solutions/custom-business-software",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -52,8 +79,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Custom Business Software Development | Aetibar",
     description:
-      "Aetibar builds custom business software, operational dashboards, workflow systems, scheduling tools and internal platforms designed around how your business works.",
+      "Aetibar builds custom business software, operational dashboards, workflow systems, and internal platforms.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
   },
 };
 

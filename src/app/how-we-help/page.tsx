@@ -9,32 +9,48 @@ import ComparisonSection from "../../components/how-we-help/ComparisonSection";
 import HowWeHelpCta from "../../components/how-we-help/HowWeHelpCta";
 
 export const metadata: Metadata = {
-  title: "How We Help | Custom Software, Web Apps & Workflow Automation | Aetibar",
+  title: "How We Help | Web Development, Mobile Apps & Custom Software | Aetibar",
   description:
-    "Technology should fit your business — not the other way around. Aetibar develops custom software, web applications, and system integrations that connect customer touchpoints with internal operations.",
+    "Technology should fit your business — not the other way around. Aetibar provides custom web development, mobile app development, digital marketing, and business software solutions.",
   keywords: [
-    "How Aetibar helps",
-    "Custom software development",
-    "Business workflow automation",
-    "Web application development",
-    "Internal business tools",
-    "System integration",
-    "API integration",
-    "Custom business software",
-    "Software development company in Udaipur",
-    "Software development company in India",
+    "how Aetibar helps",
+    "web development solutions",
+    "mobile app development",
+    "digital marketing lead systems",
+    "custom software development Udaipur",
+    "business workflow automation",
+    "internal business tools",
+    "web application development",
+    "custom business software",
     "Aetibar Technologies",
   ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Web Development, Mobile App Development, Digital Marketing",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/how-we-help",
   },
   openGraph: {
-    title: "How We Help | Custom Software, Web Apps & Workflow Automation | Aetibar",
+    title: "How We Help | Web Development, Mobile Apps & Custom Software | Aetibar",
     description:
-      "Technology should fit your business — not the other way around. We build custom software and connected systems around how your business actually works.",
+      "Technology should fit your business — not the other way around. We build custom software, web applications, and connected systems around how your business actually works.",
     url: "https://www.aetibar.in/how-we-help",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -49,13 +65,40 @@ export const metadata: Metadata = {
     title: "How We Help | Aetibar",
     description:
       "Technology should fit your business — not the other way around. We build practical digital systems and software around how your business actually works.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
+};
+
+const howWeHelpSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "How We Help - Aetibar",
+  url: "https://www.aetibar.in/how-we-help",
+  description:
+    "Aetibar develops custom software, web applications, mobile apps, and system integrations that connect customer touchpoints with internal operations.",
+  publisher: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
   },
 };
 
 export default function HowWeHelpPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(howWeHelpSchema),
+        }}
+      />
       {/* 1. Page Hero with Flowing Topology Diagram */}
       <HowWeHelpHero />
 
