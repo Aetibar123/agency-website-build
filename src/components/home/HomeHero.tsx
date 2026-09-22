@@ -57,13 +57,14 @@ export default function HomeHero() {
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 1.5,
-                px: 2.2,
-                py: 0.8,
-                borderRadius: "9999px",
+                px: { xs: 1.8, sm: 2.2 },
+                py: { xs: 0.6, sm: 0.8 },
+                borderRadius: { xs: "16px", sm: "9999px" },
                 bgcolor: "rgba(249, 115, 22, 0.08)",
                 border: "1px solid rgba(249, 115, 22, 0.25)",
                 boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
                 backdropFilter: "blur(12px)",
+                maxWidth: "100%",
                 mb: { xs: 3, md: 3.5 },
               }}
             >
@@ -74,18 +75,22 @@ export default function HomeHero() {
                   borderRadius: "50%",
                   bgcolor: "#F97316",
                   boxShadow: "0 0 10px #F97316",
+                  flexShrink: 0,
+                  display: { xs: "none", sm: "block" },
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: { xs: "0.75rem", sm: "0.825rem" },
+                  fontSize: { xs: "0.72rem", sm: "0.825rem" },
                   fontWeight: 700,
-                  letterSpacing: "0.06em",
+                  letterSpacing: "0.05em",
                   color: "#EA580C",
                   textTransform: "uppercase",
+                  lineHeight: 1.35,
+                  textAlign: "center",
                 }}
               >
-                Websites &bull; Web &amp; Mobile Apps &bull; Practical AI &bull; Digital Systems
+                Web &amp; App Development &bull; AI Automation &bull; Digital Marketing
               </Typography>
             </Box>
           </motion.div>
@@ -107,17 +112,7 @@ export default function HomeHero() {
                 mb: { xs: 3, md: 3.5 },
               }}
             >
-              We build websites, apps, and digital products{" "}
-              <Box
-                component="span"
-                sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                that solve real problems.
-              </Box>
+              Websites, Mobile Apps, AI Automation &amp; Digital Marketing for Your Business
             </Typography>
           </motion.div>
 
@@ -137,7 +132,8 @@ export default function HomeHero() {
                 fontWeight: 400,
               }}
             >
-              Based in Udaipur, Aetibar is a technology company building modern websites, custom software, web applications, and practical AI automation designed around how your business actually runs.
+             We help businesses build websites and apps, automate everyday work with AI, and reach more customers through digital marketing.
+
             </Typography>
           </motion.div>
 
@@ -158,7 +154,7 @@ export default function HomeHero() {
               }}
             >
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/how-we-help" style={{ textDecoration: "none" }}>
+                <Link href="/contact" style={{ textDecoration: "none" }}>
                   <Button
                     variant="contained"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
@@ -178,13 +174,13 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    See Our Work
+                    Discuss Your Project
                   </Button>
                 </Link>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact" style={{ textDecoration: "none" }}>
+                <Link href="#services" style={{ textDecoration: "none" }}>
                   <Button
                     variant="outlined"
                     sx={{
@@ -206,7 +202,7 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    Start a Conversation
+                    Explore Our Services
                   </Button>
                 </Link>
               </motion.div>
@@ -332,13 +328,15 @@ export default function HomeHero() {
                 <Box
                   sx={{
                     position: "absolute",
-                    top: { xs: 14, sm: 20, md: 24 },
-                    left: { xs: 14, sm: 20, md: 24 },
+                    top: { xs: 12, sm: 20, md: 24 },
+                    left: { xs: 12, sm: 20, md: 24 },
+                    right: { xs: 12, sm: "auto" },
+                    maxWidth: { xs: "calc(100% - 24px)", sm: 420 },
                     bgcolor: "rgba(255, 255, 255, 0.92)",
                     backdropFilter: "blur(14px)",
                     borderRadius: "16px",
-                    px: { xs: 1.8, sm: 2.4 },
-                    py: { xs: 1.2, sm: 1.4 },
+                    px: { xs: 1.5, sm: 2.4 },
+                    py: { xs: 1, sm: 1.4 },
                     border: "1px solid rgba(255, 255, 255, 0.8)",
                     boxShadow: "0 12px 30px rgba(0, 0, 0, 0.08)",
                     display: "flex",
@@ -353,25 +351,28 @@ export default function HomeHero() {
                       borderRadius: "50%",
                       bgcolor: "#F97316",
                       boxShadow: "0 0 0 3px rgba(249, 115, 22, 0.25)",
+                      flexShrink: 0,
                     }}
                   />
-                  <Box>
+                  <Box sx={{ minWidth: 0 }}>
                     <Typography
                       sx={{
-                        fontSize: { xs: "0.7rem", sm: "0.75rem" },
+                        fontSize: { xs: "0.68rem", sm: "0.75rem" },
                         fontWeight: 700,
                         color: "#EA580C",
                         letterSpacing: "0.04em",
                         textTransform: "uppercase",
+                        lineHeight: 1.2,
                       }}
                     >
                       Practical Engineering
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: { xs: "0.8rem", sm: "0.875rem" },
+                        fontSize: { xs: "0.78rem", sm: "0.875rem" },
                         fontWeight: 700,
                         color: "#18181B",
+                        lineHeight: 1.3,
                       }}
                     >
                       Software designed around how work actually happens

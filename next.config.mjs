@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   // Enable native Next.js image optimization with AVIF and WebP support
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -16,18 +13,48 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/services/app-development',
-        destination: '/services/mobile-app-development',
+        source: '/solutions/business-websites',
+        destination: '/solutions/business-website-development',
         permanent: true,
       },
       {
-        source: '/services/seo',
-        destination: '/services/search-engine-optimization',
+        source: '/solutions/internal-business-tools',
+        destination: '/solutions/custom-business-software',
+        permanent: true,
+      },
+      {
+        source: '/solutions/customer-lead-systems',
+        destination: '/solutions/crm-lead-management',
+        permanent: true,
+      },
+      {
+        source: '/services/mobile-app-development',
+        destination: '/services/app-development',
+        permanent: true,
+      },
+      {
+        source: '/services/search-engine-optimization',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
+        source: '/services/digital-marketing',
+        destination: '/services/paid-advertising',
         permanent: true,
       },
       {
         source: '/services/graphics-designing',
-        destination: '/services/graphic-design',
+        destination: '/services/web-development',
+        permanent: true,
+      },
+      {
+        source: '/services/graphic-design',
+        destination: '/services/social-media-marketing',
+        permanent: true,
+      },
+      {
+        source: '/portfolio',
+        destination: '/work',
         permanent: true,
       },
     ];

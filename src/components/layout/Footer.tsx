@@ -8,20 +8,21 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-const solutionLinks = [
-  { name: "Digital Presence & Web", href: "/solutions/business-websites" },
-  { name: "Customer & Lead Systems", href: "/solutions/customer-lead-systems" },
-  { name: "Internal Business Tools", href: "/solutions/internal-business-tools" },
-  { name: "Practical AI & Automation", href: "/solutions/ai-automation" },
+const serviceLinks = [
+  { name: "Web Development", href: "/services/web-development" },
+  { name: "App Development", href: "/services/app-development" },
+  { name: "AI Automation & Integration", href: "/services/ai-automation" },
+  { name: "SEO Services", href: "/services/seo" },
+  { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+  { name: "Paid Advertising", href: "/services/paid-advertising" },
 ];
 
 const companyLinks = [
-  { name: "Selected Work", href: "/work" },
+  { name: "Our Work", href: "/work" },
   { name: "How We Work", href: "/how-we-work" },
-  { name: "How We Help", href: "/how-we-help" },
-  { name: "Technical Journal", href: "/blog" },
-  { name: "About Aetibar", href: "/about" },
-  { name: "Careers", href: "/careers" },
+  { name: "About Us", href: "/about" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const socialLinks = [
@@ -143,7 +144,7 @@ export default function Footer() {
             </Box>
           </Grid>
 
-          {/* Col 2: Solutions */}
+          {/* Col 2: Services */}
           <Grid size={{ xs: 6, sm: 4, md: 2.5, lg: 2.3 }}>
             <Typography
               sx={{
@@ -156,11 +157,11 @@ export default function Footer() {
                 mb: 2.5,
               }}
             >
-              SOLUTIONS
+              SERVICES
             </Typography>
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1.6 }}>
-              {solutionLinks.map((item) => (
+              {serviceLinks.map((item) => (
                 <Typography
                   key={item.name}
                   component={Link}

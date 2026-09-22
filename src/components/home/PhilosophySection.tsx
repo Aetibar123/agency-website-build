@@ -209,7 +209,7 @@ export default function PhilosophySection() {
                   <Box
                     sx={{
                       width: "100%",
-                      p: { xs: 3.5, sm: 4, md: 4.5 },
+                      p: { xs: 2.5, sm: 3.8, md: 4.5 },
                       borderRadius: { xs: "22px", md: "28px" },
                       bgcolor: item.isFeatured ? "#FFFBF7" : "#FAF8F5",
                       border: "1.5px solid",
@@ -468,10 +468,11 @@ export default function PhilosophySection() {
               </Typography>
             </Box>
 
-            <Box sx={{ position: "relative", zIndex: 1 }}>
-              <Link href="/how-we-work" style={{ textDecoration: "none" }}>
+            <Box sx={{ position: "relative", zIndex: 1, width: { xs: "100%", md: "auto" } }}>
+              <Link href="/how-we-work" style={{ textDecoration: "none", width: "100%", display: "block" }}>
                 <Button
                   variant="outlined"
+                  fullWidth
                   endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                   sx={{
                     color: "#FFFFFF",
@@ -484,7 +485,8 @@ export default function PhilosophySection() {
                     fontWeight: 600,
                     borderRadius: "9999px",
                     textTransform: "none",
-                    whiteSpace: "nowrap",
+                    width: { xs: "100%", md: "auto" },
+                    whiteSpace: { xs: "normal", sm: "nowrap" },
                     transition: "all 0.25s ease",
                     "&:hover": {
                       borderColor: "#F97316",

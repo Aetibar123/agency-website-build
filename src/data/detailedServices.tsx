@@ -24,38 +24,38 @@ export interface ServiceDetail {
 export const detailedServices: Record<string, ServiceDetail> = {
   "web-development": {
     slug: "web-development",
-    title: "Web Development",
-    subtitle: "Scalable web solutions built for performance and long-term growth.",
+    title: "Web Engineering & Applications",
+    subtitle: "Custom web applications, portals, and full-stack software platforms.",
     description:
-      "We design and develop fast, secure, and scalable websites and web applications tailored to your business goals. Every solution is engineered for performance, maintainability, and an exceptional user experience.",
+      "We engineer robust web applications, custom business portals, and cloud software platforms tailored to complex operational workflows. Built for high performance, deep integrations, and enterprise reliability.",
 
     detailedContent: [
       {
         heading: "Building the Right Foundation",
         paragraphs: [
-          "Your website is more than an online presence—it's an essential part of how your business attracts customers, builds trust, and drives growth. We create custom web solutions that combine modern technology with thoughtful user experiences to help businesses operate more efficiently and grow with confidence.",
-          "Rather than relying on generic templates, we build every project with clean architecture, reusable components, and scalable technologies. The result is a fast, reliable website that's easy to maintain and ready to evolve alongside your business."
+          "Your web application is the operational backbone of your digital business. We create custom full-stack solutions that combine modern technology with thoughtful user experiences to help organizations automate complex logic, manage data, and scale with confidence.",
+          "Rather than relying on brittle generic templates or unmaintainable plugins, we engineer every application with clean component architecture, modular services, and scalable cloud technologies. The result is a fast, reliable web platform that's easy to maintain and ready to evolve."
         ]
       },
       {
         heading: "Modern Technologies That Scale",
         paragraphs: [
-          "We use trusted technologies including Next.js, React, Node.js, and TypeScript to develop responsive, high-performance applications that deliver a seamless experience across desktop, tablet, and mobile devices.",
-          "From optimized page speed and technical SEO to secure backend systems and cloud-ready deployments, every project is designed with long-term reliability, performance, and scalability in mind."
+          "We use trusted technologies including Next.js, React, Node.js, TypeScript, and PostgreSQL to develop responsive, high-performance applications that deliver a seamless experience across desktop, tablet, and mobile devices.",
+          "From optimized edge performance and secure authentication to resilient backend APIs and cloud-ready deployments, every platform is designed with long-term reliability and data integrity in mind."
         ]
       },
       {
         heading: "Flexible Architecture for Future Growth",
         paragraphs: [
-          "As your business grows, your digital platform should grow with it. Our development approach focuses on modular architecture, API-first integrations, and scalable systems that make future enhancements faster and more cost-effective.",
-          "Whether you need additional features, third-party integrations, or expanding functionality, your platform remains adaptable without requiring a complete rebuild."
+          "As your operations expand, your digital platform should grow with it. Our development approach focuses on modular architecture, API-first integrations, and scalable database schemas that make future feature enhancements faster and more cost-effective.",
+          "Whether you need additional third-party integrations, complex multi-tenant permissions, or expanding reporting tools, your platform remains adaptable without requiring a complete rebuild."
         ]
       },
       {
         heading: "Reliable Deployment & Ongoing Improvement",
         paragraphs: [
-          "Our development workflow includes version control, automated deployments, and thorough testing to ensure every release is stable and reliable. Updates are delivered efficiently while minimizing disruption to your business.",
-          "After launch, we continue to support your website with performance monitoring, maintenance, security updates, and feature enhancements, helping your digital platform remain fast, secure, and aligned with your business objectives."
+          "Our engineering workflow includes version control, automated CI/CD deployments, and thorough integration testing to ensure every release is stable and secure. Updates are shipped smoothly with zero downtime.",
+          "After launch, we support your application with performance monitoring, security patching, database optimization, and feature enhancements to ensure your digital system stays resilient."
         ]
       }
     ],
@@ -73,16 +73,16 @@ export const detailedServices: Record<string, ServiceDetail> = {
 
     domains: [
       {
-        name: "Business Websites",
-        desc: "Professional, responsive websites designed to strengthen your online presence."
+        name: "Web Applications & SaaS",
+        desc: "Custom web applications with secure authentication, multi-tenant databases, and role-based workflows."
       },
       {
-        name: "E-Commerce",
-        desc: "Scalable online stores focused on performance, security, and seamless shopping experiences."
+        name: "Client & Partner Portals",
+        desc: "Dedicated self-service portals with real-time data sync, document sharing, and workflow management."
       },
       {
-        name: "SaaS Platforms",
-        desc: "Custom web applications with secure authentication, dashboards, and scalable architecture."
+        name: "APIs & System Integrations",
+        desc: "Resilient microservices, REST/GraphQL endpoints, and middleware connecting your core business tools."
       }
     ],
 

@@ -148,6 +148,28 @@ export default function WebDevelopmentPage({ service }: { service: ServiceDetail
                   Explore Methodology
                 </Button>
               </Box>
+
+              {/* Cross-Link Callout to Business Website Development */}
+              <Box
+                sx={{
+                  mt: 3.5,
+                  p: 2,
+                  borderRadius: "8px",
+                  bgcolor: "rgba(14, 116, 144, 0.05)",
+                  border: "1px solid rgba(14, 116, 144, 0.15)",
+                }}
+              >
+                <Typography sx={{ fontSize: "0.85rem", color: "#334155", lineHeight: 1.6 }}>
+                  <strong>Looking for a commercial company website?</strong> If you need a customer-facing business website engineered for marketing, brand authority, and inquiry conversion, visit our{" "}
+                  <Link
+                    href="/solutions/business-website-development"
+                    style={{ color: "#0E7490", fontWeight: 700, textDecoration: "underline" }}
+                  >
+                    Custom Business Website Development
+                  </Link>{" "}
+                  solution.
+                </Typography>
+              </Box>
             </Grid>
 
             <Grid size={{ xs: 12, lg: 5 }}>

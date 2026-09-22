@@ -70,6 +70,31 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${blog.title} | Aetibar Journal`,
     description: blog.excerpt || "Read this technical insight and architectural analysis on Aetibar Journal.",
+    keywords: [
+      ...(blog.tags || []),
+      blog.category,
+      "Web Development",
+      "Mobile App Development",
+      "Digital Marketing",
+      "Aetibar Journal",
+      "Software Engineering",
+      "Web Architecture",
+    ],
+    authors: [{ name: blog.author || "Aetibar Editorial Team", url: "https://www.aetibar.in" }],
+    creator: blog.author || "Aetibar Editorial Team",
+    publisher: "Aetibar Technologies",
+    category: "technology",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     alternates: {
       canonical: `https://www.aetibar.in/blog/${blog.slug}`,
     },
@@ -95,6 +120,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: `${blog.title} | Aetibar Journal`,
       description: blog.excerpt,
       images: [blog.coverImage.startsWith("http") ? blog.coverImage : `https://www.aetibar.in${blog.coverImage}`],
+    },
+    other: {
+      "geo.region": "IN-RJ",
+      "geo.placename": "Udaipur",
+      "geo.position": "24.5854;73.7125",
+      "ICBM": "24.5854, 73.7125",
     },
   };
 }
@@ -292,8 +323,41 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     });
   };
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blog.title,
+    description: blog.excerpt,
+    image: blog.coverImage.startsWith("http")
+      ? blog.coverImage
+      : `https://www.aetibar.in${blog.coverImage}`,
+    datePublished: blog.publishedAt,
+    author: {
+      "@type": "Person",
+      name: blog.author || "Aetibar Team",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Aetibar",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.aetibar.in/logo.jpeg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.aetibar.in/blog/${blog.slug}`,
+    },
+  };
+
   return (
     <Box sx={{ bgcolor: "#FAF8F5", minHeight: "100vh", color: "#18181B" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <ScrollProgress />
 
       {/* ========================================================================= */}

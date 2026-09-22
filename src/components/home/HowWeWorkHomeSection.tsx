@@ -199,32 +199,36 @@ export default function HowWeWorkHomeSection() {
               </Typography>
             </Box>
 
-            <Link href="/how-we-work" style={{ textDecoration: "none" }}>
-              <Button
-                variant="outlined"
-                endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
-                sx={{
-                  color: "#18181B",
-                  borderColor: "rgba(24, 24, 27, 0.25)",
-                  bgcolor: "#FFFFFF",
-                  px: 3.5,
-                  py: 1.35,
-                  fontSize: "0.9rem",
-                  fontWeight: 600,
-                  borderRadius: "9999px",
-                  whiteSpace: "nowrap",
-                  boxShadow: "0 2px 6px rgba(24, 24, 27, 0.03)",
-                  transition: "all 0.2s ease",
-                  "&:hover": {
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
-                    bgcolor: "rgba(249, 115, 22, 0.04)",
-                  },
-                }}
-              >
-                See Our Full Process
-              </Button>
-            </Link>
+            <Box sx={{ width: { xs: "100%", md: "auto" }, flexShrink: 0 }}>
+              <Link href="/how-we-work" style={{ textDecoration: "none", width: "100%", display: "block" }}>
+                <Button
+                  variant="outlined"
+                  fullWidth
+                  endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+                  sx={{
+                    color: "#18181B",
+                    borderColor: "rgba(24, 24, 27, 0.25)",
+                    bgcolor: "#FFFFFF",
+                    px: 3.5,
+                    py: 1.35,
+                    fontSize: "0.9rem",
+                    fontWeight: 600,
+                    borderRadius: "9999px",
+                    whiteSpace: { xs: "normal", sm: "nowrap" },
+                    boxShadow: "0 2px 6px rgba(24, 24, 27, 0.03)",
+                    transition: "all 0.2s ease",
+                    width: { xs: "100%", md: "auto" },
+                    "&:hover": {
+                      borderColor: "#EA580C",
+                      color: "#EA580C",
+                      bgcolor: "rgba(249, 115, 22, 0.04)",
+                    },
+                  }}
+                >
+                  See Our Full Process
+                </Button>
+              </Link>
+            </Box>
           </Box>
         </motion.div>
 

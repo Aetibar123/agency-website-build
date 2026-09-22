@@ -29,10 +29,10 @@ export default function HomeCtaSection() {
               mx: "auto",
               textAlign: "center",
               border: "1px solid rgba(255, 255, 255, 0.12)",
-              p: { xs: 4, sm: 6, md: 9 },
+              p: { xs: 2.5, sm: 6, md: 9 },
               background:
                 "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
-              borderRadius: { xs: "24px", md: "36px" },
+              borderRadius: { xs: "20px", md: "36px" },
               boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
               position: "relative",
               overflow: "hidden",
@@ -100,64 +100,72 @@ export default function HomeCtaSection() {
                     fontWeight: 700,
                   }}
                 >
-                  Start a Conversation
+                  Get in Touch
                 </Typography>
               </Box>
 
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.25rem" },
+                  fontSize: { xs: "1.9rem", sm: "3.25rem", md: "4.25rem" },
                   fontWeight: 600,
                   color: "#FFFFFF",
-                  lineHeight: { xs: 1.1, md: 1.05 },
+                  lineHeight: { xs: 1.15, md: 1.05 },
                   letterSpacing: "-0.035em",
                   mb: 3,
                 }}
               >
-                Have an idea or problem{" "}
-                <Box
-                  component="span"
-                  sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  you want to build for?
-                </Box>
+                Have a Project in Mind?
               </Typography>
 
               <Typography
                 sx={{
-                  fontSize: { xs: "1.05rem", md: "1.2rem" },
+                  fontSize: { xs: "0.95rem", md: "1.2rem" },
                   color: "rgba(255, 255, 255, 0.82)",
                   lineHeight: 1.75,
                   maxWidth: 720,
                   mx: "auto",
-                  mb: 5,
+                  mb: 4.5,
                   fontWeight: 400,
                 }}
               >
-                Based in Udaipur, Rajasthan, our team works with businesses across India and beyond. Whether you need custom web development, mobile apps, business software, or practical AI automation, tell us what you&apos;re working on and we&apos;ll help you figure out the best place to start.
+                Tell us what your business needs. We&apos;ll discuss your goals and the right approach for your project.
               </Typography>
 
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center", alignItems: "center", mb: 5 }}>
-                <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-                  <Link href="/contact" style={{ textDecoration: "none" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: { xs: "column", sm: "row" },
+                  flexWrap: "wrap",
+                  gap: 2,
+                  justifyContent: "center",
+                  alignItems: "center",
+                  mb: 5,
+                  width: "100%",
+                }}
+              >
+                <Box
+                  component={motion.div}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  sx={{ width: { xs: "100%", sm: "auto" } }}
+                >
+                  <Link href="/contact" style={{ textDecoration: "none", width: "100%", display: "block" }}>
                     <Button
                       variant="contained"
+                      fullWidth
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                       sx={{
                         background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
                         color: "#18181B",
-                        px: 4.5,
+                        px: { xs: 3, sm: 4.5 },
                         py: 1.6,
                         fontSize: "0.95rem",
-                        fontWeight: 600,
+                        fontWeight: 700,
                         borderRadius: "9999px",
                         boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
                         transition: "all 0.25s ease",
+                        width: { xs: "100%", sm: "auto" },
                         "&:hover": {
                           background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
                           color: "#FFFFFF",
@@ -165,24 +173,31 @@ export default function HomeCtaSection() {
                         },
                       }}
                     >
-                      Start a Conversation
+                      Contact Us
                     </Button>
                   </Link>
-                </motion.div>
+                </Box>
 
-                <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-                  <Link href="/how-we-work" style={{ textDecoration: "none" }}>
+                <Box
+                  component={motion.div}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  sx={{ width: { xs: "100%", sm: "auto" } }}
+                >
+                  <Link href="#services" style={{ textDecoration: "none", width: "100%", display: "block" }}>
                     <Button
                       variant="outlined"
+                      fullWidth
                       sx={{
                         color: "#FFFFFF",
                         borderColor: "rgba(255, 255, 255, 0.3)",
-                        px: 4,
+                        px: { xs: 3, sm: 4 },
                         py: 1.55,
                         fontSize: "0.95rem",
                         fontWeight: 600,
                         borderRadius: "9999px",
                         transition: "all 0.25s ease",
+                        width: { xs: "100%", sm: "auto" },
                         "&:hover": {
                           borderColor: "#FB923C",
                           color: "#FB923C",
@@ -193,7 +208,7 @@ export default function HomeCtaSection() {
                       See How We Work
                     </Button>
                   </Link>
-                </motion.div>
+                </Box>
               </Box>
 
               <Box

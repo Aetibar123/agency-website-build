@@ -1,11 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { Box, Container, Typography, Grid, Button, IconButton } from "@mui/material";
+import { Box, Container, Typography, Grid, Button } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import WebAssetOutlinedIcon from "@mui/icons-material/WebAssetOutlined";
@@ -18,6 +16,7 @@ interface SolutionZone {
   num: string;
   badge: string;
   title: string;
+  shortTitle?: string;
   subtitle: string;
   headline: string;
   narrative: string;
@@ -35,6 +34,7 @@ const zones: SolutionZone[] = [
     num: "01",
     badge: "WEB DEVELOPMENT",
     title: "Websites & Web Apps",
+    shortTitle: "Web & Apps",
     subtitle: "Custom Web Development & Modern Platforms",
     headline: "Fast, responsive websites and custom web applications built for clarity and search visibility.",
     narrative:
@@ -53,15 +53,16 @@ const zones: SolutionZone[] = [
     },
     badgeFloatTop: "Mobile & Desktop Optimized",
     badgeFloatBottom: "Modern React & Next.js Architecture",
-    path: "/solutions/business-websites",
+    path: "/solutions/business-website-development",
     image: "/images/portfolio/ecommerce.png",
     icon: <WebAssetOutlinedIcon sx={{ fontSize: 20 }} />,
   },
   {
     num: "02",
     badge: "INQUIRY MANAGEMENT",
-    title: "Customer & Lead Systems",
-    subtitle: "Lead Generation Pipelines & Client Portals",
+    title: "CRM & Lead Systems",
+    shortTitle: "CRM & Leads",
+    subtitle: "Custom CRM Software & Sales Pipelines",
     headline: "Capture, route, and organize leads across web, email, and messaging channels.",
     narrative:
       "When inquiries come in through website forms, direct emails, and messaging apps, details easily slip through the cracks. We engineer centralized lead capture systems, automated notifications, and client portals that keep communication organized and speed up response times.",
@@ -79,7 +80,7 @@ const zones: SolutionZone[] = [
     },
     badgeFloatTop: "Organized Intake",
     badgeFloatBottom: "Instant Email & Notification Dispatch",
-    path: "/solutions/customer-lead-systems",
+    path: "/solutions/crm-lead-management",
     image: "/images/portfolio/aiCostomer.png",
     icon: <HubOutlinedIcon sx={{ fontSize: 20 }} />,
   },
@@ -87,6 +88,7 @@ const zones: SolutionZone[] = [
     num: "03",
     badge: "INTERNAL TOOLS",
     title: "Internal Business Tools",
+    shortTitle: "Internal Tools",
     subtitle: "Custom Business Software & Dashboards",
     headline: "Custom business software and operational dashboards that replace tangled spreadsheets.",
     narrative:
@@ -105,7 +107,7 @@ const zones: SolutionZone[] = [
     },
     badgeFloatTop: "Structured Database",
     badgeFloatBottom: "Custom Workflows & Role-Based Access",
-    path: "/solutions/internal-business-tools",
+    path: "/solutions/custom-business-software",
     image: "/images/portfolio/fintechDashboard.png",
     icon: <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 20 }} />,
   },
@@ -113,6 +115,7 @@ const zones: SolutionZone[] = [
     num: "04",
     badge: "PRACTICAL AUTOMATION",
     title: "Practical AI & Automation",
+    shortTitle: "AI Automation",
     subtitle: "Workflow Automation & Smart Document Processing",
     headline: "Practical AI development and automated workflows that eliminate repetitive admin work.",
     narrative:
@@ -140,14 +143,6 @@ const zones: SolutionZone[] = [
 export default function SolutionAreasSection() {
   const [activeIdx, setActiveIdx] = useState<number>(0);
   const current = zones[activeIdx];
-
-  const handleNext = () => {
-    setActiveIdx((prev) => (prev + 1) % zones.length);
-  };
-
-  const handlePrev = () => {
-    setActiveIdx((prev) => (prev - 1 + zones.length) % zones.length);
-  };
 
   return (
     <Box
@@ -238,28 +233,27 @@ export default function SolutionAreasSection() {
           </Box>
         </motion.div>
 
-        {/* Top Control Rail: Real-time Synchronized Domain Pills + Next/Prev Arrows */}
+        {/* Top Control Rail: Real-time Synchronized Domain Pills */}
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-            gap: 2,
+            justifyContent: "flex-start",
             mb: 4,
           }}
         >
-          {/* Domain Pills with Fluid Synchronized Spring Bubble */}
+          {/* Domain Pills: 2x2 Grid on Mobile (all 4 tabs visible without scrolling), Capsule Rail on Desktop */}
           <Box
             sx={{
-              display: "flex",
+              display: { xs: "grid", md: "flex" },
+              gridTemplateColumns: { xs: "repeat(2, 1fr)", md: "none" },
               alignItems: "center",
-              flexWrap: "wrap",
-              gap: 1.2,
-              p: 0.8,
-              borderRadius: "9999px",
+              gap: { xs: 0.8, sm: 1.2 },
+              p: { xs: 0.8, sm: 1 },
+              borderRadius: { xs: "16px", md: "9999px" },
               bgcolor: "#FAF8F5",
               border: "1px solid rgba(228, 228, 231, 0.8)",
+              width: { xs: "100%", md: "auto" },
             }}
           >
             {zones.map((item, idx) => {
@@ -270,13 +264,14 @@ export default function SolutionAreasSection() {
                   onClick={() => setActiveIdx(idx)}
                   sx={{
                     position: "relative",
-                    px: 2.6,
-                    py: 1.2,
-                    borderRadius: "9999px",
+                    px: { xs: 1.2, sm: 2.2, md: 2.6 },
+                    py: { xs: 1.1, sm: 1.2 },
+                    borderRadius: { xs: "12px", md: "9999px" },
                     cursor: "pointer",
                     display: "flex",
                     alignItems: "center",
-                    gap: 1.2,
+                    justifyContent: { xs: "center", md: "flex-start" },
+                    gap: { xs: 0.8, sm: 1.2 },
                     color: isSelected ? "#FFFFFF" : "#52525B",
                     transition: "color 0.2s ease",
                     zIndex: 1,
@@ -291,7 +286,7 @@ export default function SolutionAreasSection() {
                       sx={{
                         position: "absolute",
                         inset: 0,
-                        borderRadius: "9999px",
+                        borderRadius: { xs: "12px", md: "9999px" },
                         bgcolor: "#18181B",
                         boxShadow: "0 8px 22px -4px rgba(24, 24, 27, 0.35)",
                         zIndex: -1,
@@ -302,75 +297,35 @@ export default function SolutionAreasSection() {
                   <Typography
                     sx={{
                       fontFamily: "monospace",
-                      fontSize: "0.75rem",
+                      fontSize: { xs: "0.72rem", sm: "0.75rem" },
                       fontWeight: 700,
                       color: isSelected ? "#FB923C" : "#A1A1AA",
                       transition: "color 0.2s ease",
+                      flexShrink: 0,
                     }}
                   >
                     {item.num}
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: "0.875rem",
+                      fontSize: { xs: "0.78rem", sm: "0.85rem", md: "0.875rem" },
                       fontWeight: 600,
+                      lineHeight: 1.25,
+                      textAlign: { xs: "center", md: "left" },
                       transition: "color 0.2s ease",
+                      whiteSpace: { xs: "normal", md: "nowrap" },
                     }}
                   >
-                    {item.title}
+                    <Box component="span" sx={{ display: { xs: "inline", sm: "none" } }}>
+                      {item.shortTitle || item.title}
+                    </Box>
+                    <Box component="span" sx={{ display: { xs: "none", sm: "inline" } }}>
+                      {item.title}
+                    </Box>
                   </Typography>
                 </Box>
               );
             })}
-          </Box>
-
-          {/* Navigation Arrows */}
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
-            <IconButton
-              onClick={handlePrev}
-              aria-label="Previous domain"
-              sx={{
-                width: 44,
-                height: 44,
-                borderRadius: "50%",
-                bgcolor: "#FFFFFF",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
-                color: "#18181B",
-                transition: "all 0.2s ease",
-                boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
-                "&:hover": {
-                  borderColor: "#EA580C",
-                  color: "#EA580C",
-                  bgcolor: "rgba(249, 115, 22, 0.05)",
-                  transform: "translateX(-2px)",
-                },
-              }}
-            >
-              <ArrowBackIosNewIcon sx={{ fontSize: 16 }} />
-            </IconButton>
-
-            <IconButton
-              onClick={handleNext}
-              aria-label="Next domain"
-              sx={{
-                width: 44,
-                height: 44,
-                borderRadius: "50%",
-                bgcolor: "#FFFFFF",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
-                color: "#18181B",
-                transition: "all 0.2s ease",
-                boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
-                "&:hover": {
-                  borderColor: "#EA580C",
-                  color: "#EA580C",
-                  bgcolor: "rgba(249, 115, 22, 0.05)",
-                  transform: "translateX(2px)",
-                },
-              }}
-            >
-              <ArrowForwardIosIcon sx={{ fontSize: 16 }} />
-            </IconButton>
           </Box>
         </Box>
 
@@ -390,7 +345,7 @@ export default function SolutionAreasSection() {
         >
           <Box
             key={activeIdx}
-            sx={{ padding: "clamp(28px, 5vw, 52px)" }}
+            sx={{ padding: "clamp(20px, 4vw, 52px)" }}
           >
             <Grid container spacing={{ xs: 5, lg: 7 }} sx={{ alignItems: "center" }}>
               {/* Left Column: Cascading Optical Stagger Animation */}
@@ -528,30 +483,35 @@ export default function SolutionAreasSection() {
                       borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                     }}
                   >
-                    <Link href={current.path} style={{ textDecoration: "none" }}>
-                      <Button
-                        variant="contained"
-                        endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
-                        sx={{
-                          background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                          color: "#FFFFFF",
-                          px: 3.8,
-                          py: 1.45,
-                          fontSize: "0.925rem",
-                          fontWeight: 600,
-                          borderRadius: "9999px",
-                          boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
-                          transition: "all 0.2s ease",
-                          "&:hover": {
-                            background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                            boxShadow: "0 14px 30px rgba(234, 88, 12, 0.45)",
-                            transform: "translateY(-1px)",
-                          },
-                        }}
-                      >
-                        Explore {current.title}
-                      </Button>
-                    </Link>
+                    <Box sx={{ width: { xs: "100%", sm: "auto" } }}>
+                      <Link href={current.path} style={{ textDecoration: "none", width: "100%", display: "block" }}>
+                        <Button
+                          variant="contained"
+                          fullWidth
+                          endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+                          sx={{
+                            background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                            color: "#FFFFFF",
+                            px: 3.8,
+                            py: 1.45,
+                            fontSize: "0.925rem",
+                            fontWeight: 600,
+                            borderRadius: "9999px",
+                            boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
+                            width: { xs: "100%", sm: "auto" },
+                            whiteSpace: { xs: "normal", sm: "nowrap" },
+                            transition: "all 0.2s ease",
+                            "&:hover": {
+                              background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                              boxShadow: "0 14px 30px rgba(234, 88, 12, 0.45)",
+                              transform: "translateY(-1px)",
+                            },
+                          }}
+                        >
+                          Explore {current.title}
+                        </Button>
+                      </Link>
+                    </Box>
 
                     {/* Verified Metrics */}
                     <Box sx={{ display: "flex", alignItems: "center", gap: 3.5 }}>
@@ -677,6 +637,7 @@ export default function SolutionAreasSection() {
                           position: "absolute",
                           top: 16,
                           right: 16,
+                          maxWidth: "calc(100% - 32px)",
                           px: 1.8,
                           py: 0.8,
                           borderRadius: "10px",

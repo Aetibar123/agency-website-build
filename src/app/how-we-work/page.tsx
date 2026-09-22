@@ -9,29 +9,46 @@ import HowWeWorkFaqSection from "../../components/how-we-work/HowWeWorkFaqSectio
 import HowWeWorkCta from "../../components/how-we-work/HowWeWorkCta";
 
 export const metadata: Metadata = {
-  title: "How We Work | Custom Software, Web Development & AI Solutions | Aetibar",
+  title: "How We Work | Web Development, Mobile Apps & Software Process | Aetibar",
   description:
-    "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
+    "Explore our 5-stage development process for custom web development, mobile apps, digital marketing systems, and business software—from discovery to deployment and support.",
   keywords: [
-    "How Aetibar works",
     "software development process",
+    "web development methodology",
+    "mobile app development process",
     "custom software development Udaipur",
+    "digital systems engineering process",
     "web development company Udaipur",
-    "business automation process",
-    "web application development India",
     "staged software development",
     "Aetibar Technologies",
   ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Web Development, Mobile App Development, Digital Marketing",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/how-we-work",
   },
   openGraph: {
-    title: "How We Work | Custom Software, Web Development & AI Solutions | Aetibar",
+    title: "How We Work | Web Development, Mobile Apps & Software Process | Aetibar",
     description:
       "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
     url: "https://www.aetibar.in/how-we-work",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -43,16 +60,43 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How We Work | Custom Software, Web Development & AI Solutions | Aetibar",
+    title: "How We Work | Web Development, Mobile Apps & Software Process | Aetibar",
     description:
-      "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
+      "Explore how Aetibar delivers technology projects with regular staged previews, automated testing, and dedicated support.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
+  },
+};
+
+const howWeWorkSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "How We Work - Aetibar",
+  url: "https://www.aetibar.in/how-we-work",
+  description:
+    "Explore Aetibar's 5-stage software engineering methodology: Discovery, Architecture, Development, Launch, and Ongoing Support.",
+  publisher: {
+    "@type": "Organization",
+    name: "Aetibar",
+    url: "https://www.aetibar.in",
   },
 };
 
 export default function HowWeWorkPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(howWeWorkSchema),
+        }}
+      />
       {/* 1. Hero Section with Interactive 5-Stage Pipeline Preview & Trust Metrics Strip */}
       <HowWeWorkHero />
 

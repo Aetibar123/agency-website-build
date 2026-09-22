@@ -3,29 +3,46 @@ import { Metadata } from "next";
 import SolutionsHubClient from "../../components/solutions/SolutionsHubClient";
 
 export const metadata: Metadata = {
-  title: "Solutions | Purpose-Built Digital Systems & Workflows | Aetibar",
+  title: "Solutions | Web Development, CRM, Custom Software & AI | Aetibar",
   description:
-    "Explore Aetibar's 4 core solution domains: High-performance business websites, unified customer & lead pipelines, custom internal operational tools, and practical AI automation.",
+    "Explore Aetibar's solution domains: Custom web development, CRM & lead systems, internal business software, and practical AI automation engineered in Udaipur, India.",
   keywords: [
-    "Business workflow solutions",
-    "Custom business websites",
-    "Customer and lead systems",
-    "Internal operational tools",
-    "Practical AI automation",
-    "Next.js web platforms",
-    "Digital problem solving",
+    "web development solutions",
+    "custom business software",
+    "CRM and lead management",
+    "internal business tools",
+    "practical AI automation",
+    "custom software development company Udaipur",
+    "web application development",
     "Aetibar Technologies",
   ],
+  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
+  creator: "Aetibar Technologies",
+  publisher: "Aetibar Technologies",
+  category: "technology",
+  classification: "Web Development, Mobile App Development, Digital Marketing",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "https://www.aetibar.in/solutions",
   },
   openGraph: {
-    title: "Solutions | Purpose-Built Digital Systems & Workflows | Aetibar",
+    title: "Solutions | Web Development, CRM, Custom Software & AI | Aetibar",
     description:
-      "Different business problems need different digital systems. Aetibar engineers custom business websites, customer pipelines, internal operational tools, and practical automation.",
+      "Aetibar engineers custom business websites, CRM lead pipelines, internal operational tools, and practical automation.",
     url: "https://www.aetibar.in/solutions",
     siteName: "Aetibar",
     type: "website",
+    locale: "en_IN",
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -37,10 +54,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solutions | Purpose-Built Digital Systems & Workflows | Aetibar",
+    title: "Solutions | Web Development, CRM, Custom Software & AI | Aetibar",
     description:
-      "Different business problems need different digital systems. Aetibar engineers custom business websites, customer pipelines, internal operational tools, and practical automation.",
+      "Aetibar engineers custom business websites, CRM lead pipelines, internal operational tools, and practical automation.",
+    creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
+  },
+  other: {
+    "geo.region": "IN-RJ",
+    "geo.placename": "Udaipur",
+    "geo.position": "24.5854;73.7125",
+    "ICBM": "24.5854, 73.7125",
   },
 };
 
@@ -61,24 +85,24 @@ export default function SolutionsPage() {
     hasPart: [
       {
         "@type": "Service",
-        name: "Business Websites",
-        url: "https://www.aetibar.in/solutions/business-websites",
+        name: "Custom Business Website Development",
+        url: "https://www.aetibar.in/solutions/business-website-development",
         description:
-          "Sub-second Next.js web applications engineered for instant credibility and conversion.",
+          "Custom business websites engineered to attract customers, generate enquiries, and support operations.",
       },
       {
         "@type": "Service",
-        name: "Customer & Lead Systems",
-        url: "https://www.aetibar.in/solutions/customer-lead-systems",
+        name: "Custom CRM & Lead Management Systems",
+        url: "https://www.aetibar.in/solutions/crm-lead-management",
         description:
           "Turn scattered inquiries across web, email, and WhatsApp into accountable revenue pipelines.",
       },
       {
         "@type": "Service",
-        name: "Internal Business Tools",
-        url: "https://www.aetibar.in/solutions/internal-business-tools",
+        name: "Custom Business Software",
+        url: "https://www.aetibar.in/solutions/custom-business-software",
         description:
-          "Replace fragile spreadsheets with role-based operational dispatch and quoting engines.",
+          "Replace fragile spreadsheets with custom operational dashboards, dispatch systems, and workflow applications.",
       },
       {
         "@type": "Service",
