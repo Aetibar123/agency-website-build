@@ -90,7 +90,7 @@ export default function HomeHero() {
                   textAlign: "center",
                 }}
               >
-                Web Development &bull; Mobile App Development &bull; Digital Marketing &bull; Custom Software
+                Web &amp; App Development &bull; AI Automation &bull; Digital Marketing
               </Typography>
             </Box>
           </motion.div>
@@ -112,17 +112,7 @@ export default function HomeHero() {
                 mb: { xs: 3, md: 3.5 },
               }}
             >
-              We build websites, apps, and digital products{" "}
-              <Box
-                component="span"
-                sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                that solve real problems.
-              </Box>
+              Websites, Mobile Apps, AI Automation &amp; Digital Marketing for Your Business
             </Typography>
           </motion.div>
 
@@ -142,7 +132,8 @@ export default function HomeHero() {
                 fontWeight: 400,
               }}
             >
-              Based in Udaipur, Aetibar is a technology company building modern websites, custom software, web applications, and practical AI automation designed around how your business actually runs.
+             We help businesses build websites and apps, automate everyday work with AI, and reach more customers through digital marketing.
+
             </Typography>
           </motion.div>
 
@@ -163,7 +154,7 @@ export default function HomeHero() {
               }}
             >
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/how-we-help" style={{ textDecoration: "none" }}>
+                <Link href="/contact" style={{ textDecoration: "none" }}>
                   <Button
                     variant="contained"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
@@ -183,13 +174,13 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    See Our Work
+                    Discuss Your Project
                   </Button>
                 </Link>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact" style={{ textDecoration: "none" }}>
+                <Link href="#services" style={{ textDecoration: "none" }}>
                   <Button
                     variant="outlined"
                     sx={{
@@ -211,7 +202,7 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    Start a Conversation
+                    Explore Our Services
                   </Button>
                 </Link>
               </motion.div>

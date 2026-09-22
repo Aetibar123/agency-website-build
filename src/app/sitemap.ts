@@ -4,11 +4,11 @@ import { workProjects } from "../data/workData";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.aetibar.in";
 
-  const workPages = workProjects.map((project) => ({
-    url: `${baseUrl}/work`,
+  const projectRoutes: MetadataRoute.Sitemap = workProjects.map((project) => ({
+    url: `${baseUrl}/work/${project.slug}`,
     lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
+    changeFrequency: "monthly",
+    priority: 0.7,
   }));
 
   const coreRoutes: MetadataRoute.Sitemap = [
@@ -16,40 +16,52 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 1,
+      priority: 1.0,
     },
     {
-      url: `${baseUrl}/how-we-help`,
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions`,
+      url: `${baseUrl}/services/web-development`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/business-website-development`,
+      url: `${baseUrl}/services/app-development`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/crm-lead-management`,
+      url: `${baseUrl}/services/ai-automation`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/custom-business-software`,
+      url: `${baseUrl}/services/seo`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/ai-automation`,
+      url: `${baseUrl}/services/social-media-marketing`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/services/paid-advertising`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/work`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
@@ -59,12 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/work`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,
@@ -98,5 +104,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...coreRoutes, ...workPages];
+  return [...coreRoutes, ...projectRoutes];
 }

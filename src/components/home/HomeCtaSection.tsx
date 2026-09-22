@@ -100,7 +100,7 @@ export default function HomeCtaSection() {
                     fontWeight: 700,
                   }}
                 >
-                  Start a Conversation
+                  Get in Touch
                 </Typography>
               </Box>
 
@@ -115,17 +115,7 @@ export default function HomeCtaSection() {
                   mb: 3,
                 }}
               >
-                Have an idea or problem{" "}
-                <Box
-                  component="span"
-                  sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  you want to build for?
-                </Box>
+                Have a Project in Mind?
               </Typography>
 
               <Typography
@@ -139,7 +129,7 @@ export default function HomeCtaSection() {
                   fontWeight: 400,
                 }}
               >
-                Based in Udaipur, Rajasthan, our team works with businesses across India and beyond. Whether you need custom web development, mobile apps, business software, or practical AI automation, tell us what you&apos;re working on and we&apos;ll help you figure out the best place to start.
+                Tell us what your business needs. We&apos;ll discuss your goals and the right approach for your project.
               </Typography>
 
               <Box
@@ -171,7 +161,7 @@ export default function HomeCtaSection() {
                         px: { xs: 3, sm: 4.5 },
                         py: 1.6,
                         fontSize: "0.95rem",
-                        fontWeight: 600,
+                        fontWeight: 700,
                         borderRadius: "9999px",
                         boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
                         transition: "all 0.25s ease",
@@ -183,7 +173,7 @@ export default function HomeCtaSection() {
                         },
                       }}
                     >
-                      Start a Conversation
+                      Contact Us
                     </Button>
                   </Link>
                 </Box>
@@ -194,7 +184,7 @@ export default function HomeCtaSection() {
                   whileTap={{ scale: 0.97 }}
                   sx={{ width: { xs: "100%", sm: "auto" } }}
                 >
-                  <Link href="/how-we-work" style={{ textDecoration: "none", width: "100%", display: "block" }}>
+                  <Link href="#services" style={{ textDecoration: "none", width: "100%", display: "block" }}>
                     <Button
                       variant="outlined"
                       fullWidth

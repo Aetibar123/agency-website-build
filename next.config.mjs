@@ -28,18 +28,33 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/services/app-development',
-        destination: '/services/mobile-app-development',
+        source: '/services/mobile-app-development',
+        destination: '/services/app-development',
         permanent: true,
       },
       {
-        source: '/services/seo',
-        destination: '/services/search-engine-optimization',
+        source: '/services/search-engine-optimization',
+        destination: '/services/seo',
+        permanent: true,
+      },
+      {
+        source: '/services/digital-marketing',
+        destination: '/services/paid-advertising',
         permanent: true,
       },
       {
         source: '/services/graphics-designing',
-        destination: '/services/graphic-design',
+        destination: '/services/web-development',
+        permanent: true,
+      },
+      {
+        source: '/services/graphic-design',
+        destination: '/services/social-media-marketing',
+        permanent: true,
+      },
+      {
+        source: '/portfolio',
+        destination: '/work',
         permanent: true,
       },
     ];

@@ -22,41 +22,55 @@ import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import LanguageIcon from "@mui/icons-material/Language";
-import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
-import DashboardCustomizeOutlinedIcon from "@mui/icons-material/DashboardCustomizeOutlined";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
+import SearchIcon from "@mui/icons-material/Search";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import AdsClickOutlinedIcon from "@mui/icons-material/AdsClickOutlined";
 
-const solutionItems = [
+const serviceItems = [
   {
-    title: "Digital Presence",
-    desc: "Websites designed around customer discovery and action",
-    path: "/solutions/business-website-development",
+    title: "Web Development",
+    desc: "Business websites, e-commerce, and custom web apps",
+    path: "/services/web-development",
     icon: <LanguageIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
-    title: "CRM & Lead Systems",
-    desc: "Intake pipelines, sales pipelines, and follow-up flows",
-    path: "/solutions/crm-lead-management",
-    icon: <HubOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+    title: "App Development",
+    desc: "Mobile applications for iOS & Android",
+    path: "/services/app-development",
+    icon: <PhoneIphoneIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
-    title: "Custom Business Software",
-    desc: "Custom operational dashboards and workflow applications",
-    path: "/solutions/custom-business-software",
-    icon: <DashboardCustomizeOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
-  },
-  {
-    title: "AI & Automation",
-    desc: "Practical workflow automation and data integrations",
-    path: "/solutions/ai-automation",
+    title: "AI Automation & Integration",
+    desc: "Workflow automation and smart system integrations",
+    path: "/services/ai-automation",
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+  },
+  {
+    title: "SEO Services",
+    desc: "Technical SEO and organic search visibility",
+    path: "/services/seo",
+    icon: <SearchIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+  },
+  {
+    title: "Social Media Marketing",
+    desc: "Content planning and active social management",
+    path: "/services/social-media-marketing",
+    icon: <ShareOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+  },
+  {
+    title: "Paid Advertising",
+    desc: "Google Ads & Meta Ads campaign management",
+    path: "/services/paid-advertising",
+    icon: <AdsClickOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [solutionsAnchor, setSolutionsAnchor] = useState<null | HTMLElement>(null);
+  const [servicesAnchor, setServicesAnchor] = useState<null | HTMLElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -76,15 +90,15 @@ export default function Navbar() {
     setMobileOpen((prev) => !prev);
   };
 
-  const handleOpenSolutions = (event: React.MouseEvent<HTMLElement>) => {
-    setSolutionsAnchor(event.currentTarget);
+  const handleOpenServices = (event: React.MouseEvent<HTMLElement>) => {
+    setServicesAnchor(event.currentTarget);
   };
 
-  const handleCloseSolutions = () => {
-    setSolutionsAnchor(null);
+  const handleCloseServices = () => {
+    setServicesAnchor(null);
   };
 
-  const isSolutionsActive = pathname.startsWith("/solutions");
+  const isServicesActive = pathname.startsWith("/services");
 
   return (
     <>
@@ -151,29 +165,26 @@ export default function Navbar() {
                 gap: { md: 2, lg: 3.2, xl: 4.5 },
               }}
             >
-              {/* Solutions Dropdown Trigger */}
+              {/* Services Dropdown Trigger */}
               <Box
-                onMouseEnter={handleOpenSolutions}
+                onMouseEnter={handleOpenServices}
                 sx={{ position: "relative", display: "inline-block" }}
               >
                 <Button
                   component={Link}
-                  href="/solutions"
-                  onClick={(e) => {
-                    // allows click navigation to /solutions overview
-                  }}
+                  href="/services"
                   endIcon={
                     <KeyboardArrowDownIcon
                       sx={{
                         fontSize: "1.1rem !important",
                         transition: "transform 0.2s",
-                        transform: Boolean(solutionsAnchor) ? "rotate(180deg)" : "none",
+                        transform: Boolean(servicesAnchor) ? "rotate(180deg)" : "none",
                       }}
                     />
                   }
                   sx={{
-                    color: isSolutionsActive ? "#0E172A" : "#525760",
-                    fontWeight: isSolutionsActive ? 700 : 500,
+                    color: isServicesActive ? "#0E172A" : "#525760",
+                    fontWeight: isServicesActive ? 700 : 500,
                     fontSize: { md: "0.875rem", lg: "0.9375rem" },
                     textTransform: "none",
                     p: 0,
@@ -185,16 +196,16 @@ export default function Navbar() {
                     },
                   }}
                 >
-                  Solutions
+                  Services
                 </Button>
 
                 <Menu
-                  anchorEl={solutionsAnchor}
-                  open={Boolean(solutionsAnchor)}
-                  onClose={handleCloseSolutions}
+                  anchorEl={servicesAnchor}
+                  open={Boolean(servicesAnchor)}
+                  onClose={handleCloseServices}
                   slotProps={{
                     list: {
-                      onMouseLeave: handleCloseSolutions,
+                      onMouseLeave: handleCloseServices,
                       sx: { p: 1.5, minWidth: 320 },
                     },
                     paper: {
@@ -223,16 +234,16 @@ export default function Navbar() {
                         fontSize: "0.7rem",
                       }}
                     >
-                      Solution Areas
+                      Our Services
                     </Typography>
                   </Box>
 
-                  {solutionItems.map((item) => (
+                  {serviceItems.map((item) => (
                     <MenuItem
                       key={item.path}
                       component={Link}
                       href={item.path}
-                      onClick={handleCloseSolutions}
+                      onClick={handleCloseServices}
                       sx={{
                         borderRadius: "8px",
                         py: 1.25,
@@ -275,8 +286,8 @@ export default function Navbar() {
 
                   <MenuItem
                     component={Link}
-                    href="/solutions"
-                    onClick={handleCloseSolutions}
+                    href="/services"
+                    onClick={handleCloseServices}
                     sx={{
                       borderRadius: "8px",
                       py: 1,
@@ -288,7 +299,7 @@ export default function Navbar() {
                       fontSize: "0.825rem",
                     }}
                   >
-                    <span>Overview: All Solution Areas</span>
+                    <span>Overview: All Services</span>
                     <ArrowForwardIcon sx={{ fontSize: 14 }} />
                   </MenuItem>
                 </Menu>
@@ -296,11 +307,10 @@ export default function Navbar() {
 
               {/* Core Nav Links */}
               {[
-                { name: "How We Help", path: "/how-we-help" },
-                { name: "How We Work", path: "/how-we-work" },
                 { name: "Our Work", path: "/work" },
-                { name: "Insights", path: "/blog" },
+                { name: "How We Work", path: "/how-we-work" },
                 { name: "About", path: "/about" },
+                { name: "Blog", path: "/blog" },
               ].map((item) => {
                 const isActive =
                   item.path === "/"
@@ -361,6 +371,7 @@ export default function Navbar() {
                   boxShadow: "0 4px 14px rgba(234, 88, 12, 0.28)",
                   whiteSpace: "nowrap",
                   transition: "all 0.25s ease",
+                  textTransform: "none",
                   "&:hover": {
                     background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
                     boxShadow: "0 6px 20px rgba(234, 88, 12, 0.4)",
@@ -368,7 +379,7 @@ export default function Navbar() {
                   },
                 }}
               >
-                Let&apos;s Talk
+                Discuss Your Project
               </Button>
 
               <IconButton
@@ -470,7 +481,7 @@ export default function Navbar() {
           <List disablePadding sx={{ pt: 2, display: "flex", flexDirection: "column", gap: 0.25 }}>
             <ListItem
               component={Link}
-              href="/solutions"
+              href="/services"
               onClick={handleDrawerToggle}
               sx={{
                 textDecoration: "none",
@@ -486,14 +497,14 @@ export default function Navbar() {
               }}
             >
               <Typography sx={{ fontSize: { xs: "0.95rem", sm: "1.05rem" }, fontWeight: 700, color: "#0E172A" }}>
-                Solutions
+                Services
               </Typography>
               <ArrowForwardIcon sx={{ fontSize: { xs: 14, sm: 16 }, color: "#94A3B8" }} />
             </ListItem>
 
-            {/* Sub items for Solutions in mobile */}
+            {/* Sub items for Services in mobile */}
             <Box sx={{ pl: { xs: 1.25, sm: 2 }, pr: 0.5, pb: 0.5, display: "flex", flexDirection: "column", gap: 0.4 }}>
-              {solutionItems.map((sub) => (
+              {serviceItems.map((sub) => (
                 <Typography
                   key={sub.path}
                   component={Link}
@@ -520,11 +531,10 @@ export default function Navbar() {
             <Divider sx={{ my: 0.75, borderColor: "rgba(17, 18, 21, 0.06)" }} />
 
             {[
-              { name: "How We Help", path: "/how-we-help" },
-              { name: "How We Work", path: "/how-we-work" },
               { name: "Our Work", path: "/work" },
-              { name: "Insights", path: "/blog" },
+              { name: "How We Work", path: "/how-we-work" },
               { name: "About", path: "/about" },
+              { name: "Blog", path: "/blog" },
             ].map((item) => {
               const isActive =
                 item.path === "/"
@@ -582,12 +592,14 @@ export default function Navbar() {
               background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
               color: "#FFFFFF",
               borderRadius: "9999px",
-              mb: 1.75,
-              boxShadow: "0 4px 14px rgba(234, 88, 12, 0.3)",
-              whiteSpace: "nowrap",
+              boxShadow: "0 4px 12px rgba(234, 88, 12, 0.25)",
+              textTransform: "none",
+              "&:hover": {
+                background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+              },
             }}
           >
-            Let&apos;s Talk
+            Discuss Your Project
           </Button>
 
           <Typography
