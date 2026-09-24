@@ -5,9 +5,9 @@ import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "AI Workflow Automation & Integration Services for Businesses | Aetibar",
+  title: "AI Development Company | Custom AI Solutions & Automation | Aetibar",
   description:
-    "Practical AI workflow automation and business process integration services. We eliminate repetitive data entry, connect disconnected software, and automate customer inquiry triage.",
+    "Aetibar develops custom AI solutions, intelligent applications and automation systems that help businesses reduce manual work and improve efficiency.",
   keywords: [
     "AI Automation Services",
     "Business Process Automation",
