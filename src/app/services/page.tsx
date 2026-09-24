@@ -12,7 +12,7 @@ import AdsClickOutlinedIcon from "@mui/icons-material/AdsClickOutlined";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 
 export const metadata: Metadata = {
-  title: "Digital Services for Businesses | Web, App, AI & Marketing | Aetibar",
+  title: "Aetibar Services | Web, App, AI & Marketing ",
   description:
     "Explore Aetibar's core digital services for businesses: Custom Web Development, Mobile App Development, AI Workflow Automation, SEO Services, Social Media Marketing, and Paid Advertising.",
   keywords: [
