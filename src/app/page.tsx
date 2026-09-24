@@ -9,9 +9,9 @@ import HomeWhyAetibar from "../components/home/HomeWhyAetibar";
 import HomeCtaSection from "../components/home/HomeCtaSection";
 
 export const metadata: Metadata = {
-  title: "Aetibar | Websites, Apps, AI & Digital Marketing for Your Business",
+  title: "Aetibar | AI, Web & Mobile App Development Company",
   description:
-    "We help businesses build websites and apps, use AI to simplify work, and reach more customers through digital marketing.",
+    "Aetibar builds high-performance websites, custom software, AI automation and digital systems designed around real business needs.",
   keywords: [
     "web development",
     "mobile app development",
