@@ -5,9 +5,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "Search Engine Optimization (SEO) Services for Businesses | Aetibar",
+  title: "SEO Services for Businesses | Aetibar",
   description:
-    "Honest, technical and on-page SEO services for businesses. We optimize your website speed, crawlability, and search content to improve Google rankings and attract qualified organic inquiries.",
+    "Grow your organic visibility with Aetibar's SEO services, including technical SEO, keyword research, on-page optimization, content and local SEO.",
   keywords: [
     "SEO Services",
     "Search Engine Optimization Services",
