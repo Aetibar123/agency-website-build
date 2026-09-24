@@ -5,9 +5,9 @@ import LanguageIcon from "@mui/icons-material/Language";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "Custom Web Development Services for Businesses | Aetibar",
+  title: "Web Development Company | Aetibar",
   description:
-    "Custom web development company building fast, mobile-friendly business websites, e-commerce stores, and secure web portals designed to generate inquiries and drive sales.",
+    "Aetibar is a web development company building fast, secure and scalable websites and web applications tailored to your business goals.",
   keywords: [
     "Web Development Company",
     "Custom Web Development Services",
