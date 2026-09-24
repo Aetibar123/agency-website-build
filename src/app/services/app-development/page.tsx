@@ -5,9 +5,9 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Services for Businesses | iOS & Android Apps | Aetibar",
+  title: "Aetibar | Mobile App Development Services.",
   description:
-    "Custom mobile app development company for businesses. We build practical iOS and Android applications with offline-first reliability, clear interfaces, and smooth backend synchronization.",
+    " Aetibar Build scalable and user-friendly mobile applications with Aetibar's mobile app development company, delivering custom Android and iOS solutions.",
   keywords: [
     "Mobile App Development Services",
     "Mobile App Development Company",
