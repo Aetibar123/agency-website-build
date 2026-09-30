@@ -121,14 +121,15 @@ export default function HowWeHelpCta() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
+                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
                   color: "#FFFFFF",
-                  lineHeight: { xs: 1.15, md: 1.08 },
+                  lineHeight: { xs: 1.25, md: 1.18 },
                   letterSpacing: "-0.035em",
-                  maxWidth: 860,
+                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
                   mx: "auto",
                   textAlign: "center",
+                  textWrap: "balance",
                   mb: 2.5,
                 }}
               >

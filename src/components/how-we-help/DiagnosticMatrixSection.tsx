@@ -219,12 +219,14 @@ export default function DiagnosticMatrixSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.08 },
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2.5,
               }}
             >
@@ -232,6 +234,7 @@ export default function DiagnosticMatrixSection() {
               <Box
                 component="span"
                 sx={{
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -434,7 +437,8 @@ export default function DiagnosticMatrixSection() {
                           fontSize: { xs: "1.15rem", sm: "1.25rem" },
                           fontWeight: 600,
                           color: "#18181B",
-                          lineHeight: 1.4,
+                          lineHeight: 1.35,
+                          textWrap: "balance",
                           mb: 2.5,
                         }}
                       >
@@ -627,7 +631,7 @@ export default function DiagnosticMatrixSection() {
                       <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em" }}>
                         {currentPath.badge}
                       </Typography>
-                      <Typography variant="h3" sx={{ fontSize: { xs: "1.4rem", md: "1.8rem" }, fontWeight: 600, color: "#18181B" }}>
+                      <Typography variant="h3" sx={{ fontSize: { xs: "1.25rem", md: "1.6rem" }, fontWeight: 600, color: "#18181B", textWrap: "balance", lineHeight: 1.25 }}>
                         {currentPath.ruleTitle}
                       </Typography>
                     </Box>
@@ -880,6 +884,7 @@ export default function DiagnosticMatrixSection() {
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                textWrap: "balance",
                 mb: 1,
               }}
             >

@@ -482,11 +482,14 @@ export default function SolutionsHubClient() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "2.4rem", sm: "3.5rem", md: "4.5rem", lg: "5.2rem" },
+                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
                   color: "#18181B",
-                  lineHeight: { xs: 1.12, md: 1.05 },
+                  lineHeight: { xs: 1.18, md: 1.2 },
                   letterSpacing: { xs: "-0.03em", md: "-0.04em" },
+                  textWrap: "balance",
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
+                  mx: "auto",
                   mb: { xs: 3, md: 3.5 },
                 }}
               >
@@ -494,6 +497,7 @@ export default function SolutionsHubClient() {
                 <Box
                   component="span"
                   sx={{
+                    display: "inline",
                     background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
@@ -812,11 +816,14 @@ export default function SolutionsHubClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem", md: "3.2rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
-                lineHeight: 1.18,
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2.5,
               }}
             >
@@ -956,11 +963,14 @@ export default function SolutionsHubClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "3.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.08 },
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >
@@ -1154,11 +1164,12 @@ export default function SolutionsHubClient() {
                     <Typography
                       variant="h2"
                       sx={{
-                        fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
+                        fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                         fontWeight: 600,
                         color: "#FFFFFF",
-                        lineHeight: 1.15,
+                        lineHeight: { xs: 1.18, md: 1.2 },
                         letterSpacing: "-0.03em",
+                        textWrap: "balance",
                         mb: 2,
                       }}
                     >
@@ -1516,10 +1527,14 @@ export default function SolutionsHubClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.75rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.03em",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >
@@ -1776,10 +1791,14 @@ export default function SolutionsHubClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.75rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.03em",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >
@@ -1912,10 +1931,14 @@ export default function SolutionsHubClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.75rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.03em",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >
@@ -1986,10 +2009,14 @@ export default function SolutionsHubClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.6rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >

@@ -1,12 +1,11 @@
 import React from "react";
 import { Metadata } from "next";
-import { Box, Container, Typography } from "@mui/material";
 import WorkPageClient from "../../components/work/WorkPageClient";
 
 export const metadata: Metadata = {
   title: "Our Work | Web Development, Mobile Apps & Digital Marketing Portfolio | Aetibar",
   description:
-    "Explore selected case studies across custom web development, mobile app development, digital marketing, and business software systems built by Aetibar in Udaipur, India.",
+    "Explore selected case studies across custom web development, mobile app development, digital marketing, and business software systems built by Aetibar.",
   keywords: [
     "Aetibar portfolio",
     "web development portfolio",
@@ -86,85 +85,14 @@ const workPageSchema = {
 
 export default function WorkPage() {
   return (
-    <main>
+    <main style={{ backgroundColor: "#FFFFFF" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(workPageSchema),
         }}
       />
-      {/* Simple, Clean & Focused Hero */}
-      <Box
-        component="section"
-        sx={{
-          pt: { xs: 15, sm: 17, md: 21 },
-          pb: { xs: 3, sm: 4, md: 5 },
-          bgcolor: "#FAF8F5",
-          textAlign: "center",
-        }}
-      >
-        <Container maxWidth="xl">
-          <Box sx={{ maxWidth: 840, mx: "auto" }}>
-            {/* Status Pill Badge */}
-            <Box
-              sx={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 1,
-                px: 2,
-                py: 0.5,
-                borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2.5,
-              }}
-            >
-              <Typography
-                sx={{
-                  fontSize: "0.8rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.05em",
-                  color: "#EA580C",
-                  textTransform: "uppercase",
-                }}
-              >
-                Client Work &bull; Real Case Studies
-              </Typography>
-            </Box>
-
-            {/* Main Title */}
-            <Typography
-              variant="h1"
-              sx={{
-                fontSize: { xs: "2.2rem", sm: "3rem", md: "3.75rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.2, md: 1.15 },
-                mb: 2.5,
-              }}
-            >
-              Explore Our Work &amp; What We Build for Businesses
-            </Typography>
-
-            {/* Clear Explanation */}
-            <Typography
-              variant="body1"
-              sx={{
-                fontSize: { xs: "1.05rem", sm: "1.18rem" },
-                color: "#52525B",
-                lineHeight: 1.8,
-                maxWidth: 760,
-                mx: "auto",
-              }}
-            >
-              This page showcases real websites, mobile applications, AI workflows, and digital marketing systems we build and manage for businesses.
-            </Typography>
-          </Box>
-        </Container>
-      </Box>
-
-      {/* Interactive Project Showcase */}
+      {/* Interactive Project Showcase with Home Page Fonts, Colors, and Animations */}
       <WorkPageClient />
     </main>
   );

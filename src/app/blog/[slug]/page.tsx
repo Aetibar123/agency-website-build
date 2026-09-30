@@ -162,6 +162,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               fontSize: { xs: "1.55rem", sm: "1.95rem", md: "2.15rem" },
               letterSpacing: "-0.025em",
               lineHeight: 1.25,
+              textWrap: "balance",
             }}
           >
             {trimmed.replace("## ", "")}
@@ -182,6 +183,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               fontSize: { xs: "1.25rem", sm: "1.45rem", md: "1.55rem" },
               letterSpacing: "-0.015em",
               lineHeight: 1.35,
+              textWrap: "balance",
             }}
           >
             {trimmed.replace("### ", "")}
@@ -466,11 +468,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "2rem", sm: "2.75rem", md: "3.4rem" },
+              fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
               fontWeight: 700,
               color: "#18181B",
               lineHeight: 1.18,
               letterSpacing: "-0.03em",
+              textWrap: "balance",
+              maxWidth: { xs: "100%", md: 1040, lg: 1160 },
               mb: 4,
             }}
           >

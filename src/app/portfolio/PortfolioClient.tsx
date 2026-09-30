@@ -133,15 +133,16 @@ export default function PortfolioClient() {
                 variant="h1"
                 sx={{
                   color: "#0E172A",
-                  fontSize: { xs: "2.35rem", sm: "3.5rem", md: "4.4rem" },
+                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
                   letterSpacing: "-0.03em",
-                  lineHeight: { xs: 1.1, md: 1.05 },
+                  lineHeight: { xs: 1.25, md: 1.18 },
                   textTransform: "uppercase",
+                  textWrap: "balance",
                   mb: 3,
                 }}
               >
-                Selected Work. <br />
+                Selected Work.{" "}
                 <Box component="span" sx={{ color: "#0E7490" }}>
                   Engineered for Impact.
                 </Box>

@@ -1,32 +1,33 @@
 "use client";
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { motion } from "framer-motion";
 
 const steps = [
   {
     num: "01",
-    title: "Understand your needs",
-    desc: "We discuss your business goals, target customers, and existing workflows to determine what is genuinely needed before writing any code.",
+    title: "Discovery & Honest Advice",
+    desc: "We discuss your business goals, target customers, and operational bottlenecks. We give you honest, practical recommendations before you spend a single rupee.",
   },
   {
     num: "02",
-    title: "Plan the solution",
-    desc: "We define the project scope, choose the right tools and technologies, and outline a straightforward timeline and delivery plan.",
+    title: "Fixed Scope & Clear Plan",
+    desc: "You receive a transparent project proposal with clearly defined deliverables, fixed pricing, and realistic timeline milestones. No hidden surprises.",
   },
   {
     num: "03",
-    title: "Design and build",
-    desc: "We create user-friendly designs and develop your website, app, or automation with clean, maintainable code and regular progress updates.",
+    title: "Design & Live Previews",
+    desc: "We craft modern, mobile-friendly layouts and share interactive previews so you can test the user experience and share feedback before final development.",
   },
   {
     num: "04",
-    title: "Test and launch",
-    desc: "We test responsiveness across devices, check security and loading speed, and ensure everything functions smoothly before going live.",
+    title: "Rigorous Speed & Form Testing",
+    desc: "We test across real phones, tablets, and computers, ensuring fast loading speed, working WhatsApp/enquiry forms, and rock-solid security before launch.",
   },
   {
     num: "05",
-    title: "Support and improve",
-    desc: "After launch, we provide ongoing maintenance, help with questions, and make improvements as your business needs evolve.",
+    title: "Launch, Handover & Support",
+    desc: "We connect your domain, deploy to live hosting, hand over 100% code ownership, and stay by your side with dependable ongoing maintenance.",
   },
 ];
 
@@ -38,117 +39,185 @@ export default function HomeProcess() {
       sx={{
         py: { xs: 12, md: 16 },
         bgcolor: "#FFFFFF",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      <Container maxWidth="xl">
-        <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 1,
-              px: 2,
-              py: 0.5,
-              borderRadius: "9999px",
-              bgcolor: "rgba(249, 115, 22, 0.08)",
-              border: "1px solid rgba(249, 115, 22, 0.25)",
-              mb: 2.5,
-            }}
-          >
-            <Typography
+      {/* Background Decorative Ambient Warm Glow */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: "15%",
+          left: "5%",
+          width: 600,
+          height: 600,
+          background: "radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, rgba(255, 255, 255, 0) 70%)",
+          filter: "blur(60px)",
+          pointerEvents: "none",
+        }}
+      />
+
+      <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 45 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <Box sx={{ maxWidth: { xs: "100%", md: 960, lg: 1080 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box
               sx={{
-                fontSize: "0.8rem",
-                fontWeight: 700,
-                letterSpacing: "0.05em",
-                color: "#EA580C",
-                textTransform: "uppercase",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1.2,
+                px: 2.2,
+                py: 0.6,
+                borderRadius: "9999px",
+                bgcolor: "rgba(249, 115, 22, 0.08)",
+                border: "1px solid rgba(249, 115, 22, 0.25)",
+                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                backdropFilter: "blur(12px)",
+                mb: 2.5,
               }}
             >
-              Our Process
+              <Box
+                component={motion.div}
+                animate={{ scale: [1, 1.3, 1] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+              />
+              <Typography
+                sx={{
+                  fontSize: "0.8rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.06em",
+                  color: "#EA580C",
+                  textTransform: "uppercase",
+                }}
+              >
+                HOW WE WORK TOGETHER &bull; TRANSPARENT STAGES
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              sx={{
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                fontWeight: 600,
+                color: "#18181B",
+                lineHeight: { xs: 1.25, md: 1.18 },
+                letterSpacing: "-0.035em",
+                textWrap: "balance",
+                mb: 2.5,
+              }}
+            >
+              A Straightforward Process With{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Zero Surprises.
+              </Box>
+            </Typography>
+
+            <Typography
+              sx={{
+                fontSize: { xs: "1.05rem", md: "1.2rem" },
+                lineHeight: 1.75,
+                color: "#52525B",
+                fontWeight: 400,
+                maxWidth: 860,
+                mx: "auto",
+              }}
+            >
+              No confusing tech jargon, no unexpected invoices, and no disappearing developers. Here is our step-by-step roadmap to taking your project live smoothly.
             </Typography>
           </Box>
-
-          <Typography
-            variant="h2"
-            sx={{
-              fontSize: { xs: "2rem", sm: "2.75rem", md: "3.25rem" },
-              fontWeight: 700,
-              color: "#18181B",
-              lineHeight: 1.2,
-              letterSpacing: "-0.03em",
-              mb: 2.5,
-            }}
-          >
-            A Clear Process
-          </Typography>
-
-          <Typography
-            sx={{
-              fontSize: { xs: "1.05rem", sm: "1.15rem" },
-              lineHeight: 1.8,
-              color: "#52525B",
-              fontWeight: 400,
-            }}
-          >
-            We keep our process transparent and easy to follow at every stage of your project.
-          </Typography>
-        </Box>
+        </motion.div>
 
         <Grid container spacing={3}>
           {steps.map((step, idx) => (
             <Grid size={{ xs: 12, sm: 6, md: 4, lg: 2.4 }} key={idx}>
-              <Box
-                sx={{
-                  bgcolor: "#FAF8F5",
-                  p: { xs: 3, sm: 3.5 },
-                  borderRadius: "16px",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  position: "relative",
-                  transition: "transform 0.2s ease, border-color 0.2s ease",
-                  "&:hover": {
-                    transform: "translateY(-3px)",
-                    borderColor: "#EA580C",
-                  },
-                }}
+              <motion.div
+                initial={{ opacity: 0, y: 55 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.85, delay: idx * 0.18, ease: [0.22, 1, 0.36, 1] }}
+                style={{ height: "100%" }}
               >
-                <Typography
+                <Box
                   sx={{
-                    fontFamily: "monospace",
-                    fontSize: "1.5rem",
-                    fontWeight: 800,
-                    color: "#EA580C",
-                    mb: 1.5,
+                    bgcolor: "#FAF8F5",
+                    p: { xs: 3, sm: 3.5 },
+                    borderRadius: { xs: "20px", md: "24px" },
+                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    position: "relative",
+                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "translateY(-4px)",
+                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                      borderColor: "rgba(234, 88, 12, 0.4)",
+                    },
                   }}
                 >
-                  {step.num}
-                </Typography>
+                  <Box
+                    sx={{
+                      width: 38,
+                      height: 38,
+                      borderRadius: "10px",
+                      bgcolor: "rgba(249, 115, 22, 0.1)",
+                      color: "#EA580C",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "0.95rem",
+                      fontWeight: 800,
+                      fontFamily: "monospace",
+                      letterSpacing: "-0.02em",
+                      mb: 2,
+                    }}
+                  >
+                    {step.num}
+                  </Box>
 
-                <Typography
-                  variant="h3"
-                  sx={{
-                    fontSize: "1.1rem",
-                    fontWeight: 700,
-                    color: "#18181B",
-                    mb: 1.2,
-                    lineHeight: 1.35,
-                  }}
-                >
-                  {step.title}
-                </Typography>
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
+                      fontWeight: 600,
+                      letterSpacing: "-0.02em",
+                      color: "#18181B",
+                      mb: 1.2,
+                      lineHeight: 1.35,
+                      textWrap: "balance",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {step.title}
+                  </Typography>
 
-                <Typography
-                  sx={{
-                    fontSize: "0.875rem",
-                    lineHeight: 1.65,
-                    color: "#52525B",
-                  }}
-                >
-                  {step.desc}
-                </Typography>
-              </Box>
+                  <Typography
+                    sx={{
+                      fontSize: "0.875rem",
+                      lineHeight: 1.65,
+                      color: "#52525B",
+                    }}
+                  >
+                    {step.desc}
+                  </Typography>
+                </Box>
+              </motion.div>
             </Grid>
           ))}
         </Grid>

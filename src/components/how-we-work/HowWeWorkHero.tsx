@@ -15,27 +15,27 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const heroMetrics = [
   {
-    value: "Scope",
-    title: "Clear Project Plan",
-    desc: "Detailed technical plan, milestones, and deliverables agreed upon before development starts.",
+    value: "Fixed",
+    title: "Upfront Scope & Pricing",
+    desc: "Detailed project deliverables, timeline milestones, and fixed pricing agreed upon before work begins.",
     icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Visible",
-    title: "Regular Previews",
-    desc: "Working development previews so you can test features and give feedback as we build.",
+    value: "Live",
+    title: "Interactive Previews",
+    desc: "Working development previews so you can test features on real devices and guide progress as we build.",
     icon: <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Direct",
-    title: "Code & Data Ownership",
-    desc: "Full transfer of repositories, credentials, documentation, and assets as defined in our agreement.",
+    value: "100%",
+    title: "Full Code Ownership",
+    desc: "Complete transfer of source code, domains, database access, and documentation without proprietary lock-ins.",
     icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Careful",
-    title: "Controlled Launch",
-    desc: "Staged cutover, data validation, and post-launch monitoring to protect day-to-day operations.",
+    value: "Zero",
+    title: "Disruption Launch",
+    desc: "Rigorous testing of forms, speed, and customer data before going live so your daily operations stay smooth.",
     icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
 ];
@@ -47,29 +47,29 @@ const showcaseTabs = [
     image: "/images/home/editorial-client-consultation.jpg",
     alt: "Operational discovery session auditing business intake and workflow bottlenecks",
     phaseTag: "Phase 01 &bull; Discovery",
-    headline: "Understanding Daily Workflows Before Writing Code",
-    metric1: "Workflow Clarity",
-    metric2: "Clear Requirements",
+    headline: "Understanding Your Real Business Needs Before Writing Any Code",
+    metric1: "Zero Guesswork",
+    metric2: "Clear Business Goals",
   },
   {
     id: "architecture",
-    label: "02. Architecture",
+    label: "02. Planning",
     image: "/images/home/hero-architecture.jpg",
     alt: "Aetibar system architecture blueprint and relational schema visualization",
     phaseTag: "Phase 02 &bull; Solution Blueprint",
-    headline: "Clean Data Architecture, APIs & Practical Workflows",
-    metric1: "Performance-Focused",
-    metric2: "Scalable Architecture",
+    headline: "Clean Layouts, Simple User Flows & Approved Project Roadmap",
+    metric1: "Mobile-First Design",
+    metric2: "Approved Before Build",
   },
   {
     id: "staging",
-    label: "03. Development",
+    label: "03. Building",
     image: "/images/home/hero-agency-showcase.jpg",
     alt: "Private staging engine with real client operational workflows",
-    phaseTag: "Phase 03 &bull; Staged Development",
-    headline: "Working Software Previews Delivered Throughout Development",
-    metric1: "Modern Web Standards",
-    metric2: "Continuous Visibility",
+    phaseTag: "Phase 03 &bull; Staged Building",
+    headline: "Regular Working Previews So You See Progress In Real Time",
+    metric1: "Fast Loading Speed",
+    metric2: "Continuous Feedback",
   },
 ];
 
@@ -177,7 +177,7 @@ export default function HowWeWorkHero() {
                   textTransform: "uppercase",
                 }}
               >
-                OUR APPROACH &bull; UNDERSTAND &bull; PLAN &bull; BUILD &bull; LAUNCH
+                OUR DEVELOPMENT PROCESS &bull; TRANSPARENT &bull; RELIABLE &bull; ON TIME
               </Typography>
             </Box>
           </motion.div>
@@ -191,28 +191,29 @@ export default function HowWeWorkHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.1rem", sm: "2.9rem", md: "3.6rem", lg: "4.25rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
                 letterSpacing: { xs: "-0.02em", md: "-0.03em" },
                 textAlign: "center",
-                maxWidth: { xs: "100%", sm: 860, md: 1020, lg: 1140 },
+                maxWidth: { xs: "100%", sm: 860, md: 1040, lg: 1160 },
                 mx: "auto",
+                textWrap: "balance",
                 mb: { xs: 3, md: 3.5 },
               }}
             >
-              We understand the work{" "}
+              We take the mystery out of technology projects —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: { xs: "inline", sm: "block" },
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                before we build the software.
+                with clear plans, live demos &amp; zero jargon.
               </Box>
             </Typography>
           </motion.div>
@@ -235,7 +236,7 @@ export default function HowWeWorkHero() {
                 fontWeight: 400,
               }}
             >
-              We start by understanding your business, your existing tools, and the problems slowing your team down. Then we plan, build, test, and launch a solution around the way your business actually works — whether that means custom software, a modern web app, or practical automation.
+              Building a custom website, mobile app, or AI automation shouldn&apos;t feel stressful or complicated. We listen to your business goals first, establish a transparent fixed plan, let you test working features as we build, and hand over 100% code ownership on launch day.
             </Typography>
           </motion.div>
 

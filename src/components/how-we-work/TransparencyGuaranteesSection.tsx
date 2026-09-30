@@ -265,11 +265,14 @@ export default function TransparencyGuaranteesSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "3.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.1 },
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2.5,
               }}
             >
@@ -277,6 +280,7 @@ export default function TransparencyGuaranteesSection() {
               <Box
                 component="span"
                 sx={{
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -563,10 +567,16 @@ export default function TransparencyGuaranteesSection() {
                       <Typography
                         variant="h3"
                         sx={{
-                          fontSize: { xs: "1.35rem", sm: "1.6rem" },
+                          fontSize: { xs: "1.2rem", sm: "1.45rem" },
                           fontWeight: 700,
                           color: "#18181B",
                           letterSpacing: "-0.02em",
+                          lineHeight: 1.3,
+                          textWrap: "balance",
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
                           mb: 1.2,
                         }}
                       >
@@ -860,10 +870,11 @@ export default function TransparencyGuaranteesSection() {
                   <Typography
                     variant="h3"
                     sx={{
-                      fontSize: { xs: "1.85rem", sm: "2.5rem", md: "2.8rem" },
+                      fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.5rem" },
                       fontWeight: 700,
-                      lineHeight: 1.15,
+                      lineHeight: { xs: 1.18, md: 1.2 },
                       letterSpacing: "-0.03em",
+                      textWrap: "balance",
                       mb: 2,
                     }}
                   >
@@ -871,6 +882,7 @@ export default function TransparencyGuaranteesSection() {
                     <Box
                       component="span"
                       sx={{
+                        display: "inline",
                         background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",

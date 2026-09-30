@@ -9,17 +9,19 @@ import HowWeWorkFaqSection from "../../components/how-we-work/HowWeWorkFaqSectio
 import HowWeWorkCta from "../../components/how-we-work/HowWeWorkCta";
 
 export const metadata: Metadata = {
-  title: "How We Work | Web Development, Mobile Apps & Software Process | Aetibar",
+  title: "How We Work | Transparent Web & Mobile App Development Process | Aetibar",
   description:
-    "Explore our 5-stage development process for custom web development, mobile apps, digital marketing systems, and business software—from discovery to deployment and support.",
+    "Discover our simple, transparent 5-stage process for website development, mobile apps, and AI automation. Learn how we deliver projects on time with working previews, zero jargon, and 100% code ownership.",
   keywords: [
-    "software development process",
-    "web development methodology",
+    "web development process",
+    "website development stages",
     "mobile app development process",
-    "custom software development Udaipur",
-    "digital systems engineering process",
-    "web development company Udaipur",
-    "staged software development",
+    "custom software development process",
+    "AI automation implementation",
+    "transparent development process",
+    "agile web development methodology",
+    "business software development",
+    "web development company process",
     "Aetibar Technologies",
   ],
   authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
@@ -42,9 +44,9 @@ export const metadata: Metadata = {
     canonical: "https://www.aetibar.in/how-we-work",
   },
   openGraph: {
-    title: "How We Work | Web Development, Mobile Apps & Software Process | Aetibar",
+    title: "How We Work | Transparent Web & Mobile App Development Process | Aetibar",
     description:
-      "Explore how Aetibar delivers technology projects. We understand your business workflow, create a clear plan, build with visible previews, test thoroughly, and provide ongoing support.",
+      "See how Aetibar delivers projects smoothly: we understand your business needs, share clear plans and live previews, test thoroughly, and give you 100% code ownership.",
     url: "https://www.aetibar.in/how-we-work",
     siteName: "Aetibar",
     type: "website",
@@ -60,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How We Work | Web Development, Mobile Apps & Software Process | Aetibar",
+    title: "How We Work | Transparent Web & Mobile App Development Process | Aetibar",
     description:
-      "Explore how Aetibar delivers technology projects with regular staged previews, automated testing, and dedicated support.",
+      "See how Aetibar delivers projects smoothly with regular working previews, zero jargon, and reliable post-launch support.",
     creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
@@ -80,7 +82,7 @@ const howWeWorkSchema = {
   name: "How We Work - Aetibar",
   url: "https://www.aetibar.in/how-we-work",
   description:
-    "Explore Aetibar's 5-stage software engineering methodology: Discovery, Architecture, Development, Launch, and Ongoing Support.",
+    "Explore Aetibar's human-friendly 5-stage development process: Discovery, Planning, Staged Building, Testing & Launch, and Dedicated Support.",
   publisher: {
     "@type": "Organization",
     name: "Aetibar",

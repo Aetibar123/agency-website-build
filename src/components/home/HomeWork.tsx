@@ -4,6 +4,7 @@ import { Box, Container, Grid, Typography, Button, Chip } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { motion } from "framer-motion";
 import { workProjects } from "../../data/workData";
 
 // Featured selection representing client work, internal systems, and prototypes
@@ -17,87 +18,138 @@ export default function HomeWork() {
       sx={{
         py: { xs: 12, md: 16 },
         bgcolor: "#FAF8F5",
-        borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-        borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+        position: "relative",
+        overflow: "hidden",
+        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
       }}
     >
-      <Container maxWidth="xl">
-        <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 1,
-              px: 2,
-              py: 0.5,
-              borderRadius: "9999px",
-              bgcolor: "rgba(249, 115, 22, 0.08)",
-              border: "1px solid rgba(249, 115, 22, 0.25)",
-              mb: 2.5,
-            }}
-          >
-            <Typography
+      {/* Background Decorative Ambient Warm Glow */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: "10%",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: 850,
+          height: 480,
+          background: "radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
+          filter: "blur(70px)",
+          pointerEvents: "none",
+        }}
+      />
+
+      <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 45 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <Box sx={{ maxWidth: { xs: "100%", md: 960, lg: 1080 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box
               sx={{
-                fontSize: "0.8rem",
-                fontWeight: 700,
-                letterSpacing: "0.05em",
-                color: "#EA580C",
-                textTransform: "uppercase",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1.2,
+                px: 2.2,
+                py: 0.6,
+                borderRadius: "9999px",
+                bgcolor: "rgba(249, 115, 22, 0.08)",
+                border: "1px solid rgba(249, 115, 22, 0.25)",
+                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                backdropFilter: "blur(12px)",
+                mb: 2.5,
               }}
             >
-           What We Have Worked On
+              <Box
+                component={motion.div}
+                animate={{ scale: [1, 1.3, 1] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+              />
+              <Typography
+                sx={{
+                  fontSize: "0.8rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.06em",
+                  color: "#EA580C",
+                  textTransform: "uppercase",
+                }}
+              >
+                PROVEN CLIENT WORK &bull; MEASURABLE RESULTS
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              sx={{
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                fontWeight: 600,
+                color: "#18181B",
+                lineHeight: { xs: 1.25, md: 1.18 },
+                letterSpacing: "-0.035em",
+                textWrap: "balance",
+                mb: 2.5,
+              }}
+            >
+              Real Projects That Delivered{" "}
+              <Box
+                component="span"
+                sx={{
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Real Business Growth.
+              </Box>
+            </Typography>
+
+            <Typography
+              sx={{
+                fontSize: { xs: "1.05rem", md: "1.2rem" },
+                lineHeight: 1.75,
+                color: "#52525B",
+                maxWidth: 860,
+                mx: "auto",
+                fontWeight: 400,
+              }}
+            >
+              See how we have helped businesses modernize outdated websites, automate everyday manual workflows, and capture high-intent customers through custom web development, mobile apps, and search optimization.
             </Typography>
           </Box>
-
-          <Typography
-            variant="h2"
-            sx={{
-              fontSize: { xs: "2rem", sm: "2.75rem", md: "3.25rem" },
-              fontWeight: 700,
-              color: "#18181B",
-              lineHeight: 1.2,
-              letterSpacing: "-0.03em",
-              mb: 2,
-            }}
-          >
-           A Look At What We Do
-          </Typography>
-
-          <Typography
-            sx={{
-              fontSize: { xs: "1.05rem", sm: "1.15rem" },
-              lineHeight: 1.75,
-              color: "#52525B",
-              maxWidth: 720,
-              mx: "auto",
-            }}
-          >
-           Explore examples of the websites, apps, AI automation, SEO, social media, and advertising work we create to help businesses grow online and work more efficiently.
-          </Typography>
-        </Box>
+        </motion.div>
 
         <Grid container spacing={3.5}>
-          {featuredProjects.map((project) => {
+          {featuredProjects.map((project, idx) => {
             const isProduction = project.projectType === "Production Build" || project.projectType === "Client Project";
             const isPrototype = project.projectType === "Prototype" || project.projectType === "Product Exploration";
 
             return (
               <Grid size={{ xs: 12, md: 6, lg: 4 }} key={project.slug}>
-                <Box
-                  sx={{
+                <motion.div
+                  initial={{ opacity: 0, y: 55 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.85, delay: (idx % 3) * 0.16 + Math.floor(idx / 3) * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                  style={{ height: "100%" }}
+                >
+                  <Box
+                    sx={{
                     bgcolor: "#FFFFFF",
-                    borderRadius: "16px",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    borderRadius: { xs: "20px", md: "24px" },
+                    border: "1px solid rgba(24, 24, 27, 0.08)",
                     overflow: "hidden",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    transition: "transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease",
+                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    transition: "all 0.3s ease",
                     "&:hover": {
                       transform: "translateY(-4px)",
-                      boxShadow: "0 14px 30px -8px rgba(24, 24, 27, 0.08)",
-                      borderColor: "#EA580C",
+                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                      borderColor: "rgba(234, 88, 12, 0.4)",
                     },
                   }}
                 >
@@ -138,6 +190,8 @@ export default function HomeWork() {
                               : "#4B5563",
                             color: "#FFFFFF",
                             fontWeight: 700,
+                            fontFamily: "monospace",
+                            letterSpacing: "0.04em",
                             fontSize: "0.72rem",
                             boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                           }}
@@ -155,6 +209,7 @@ export default function HomeWork() {
                           fontSize: "0.75rem",
                           letterSpacing: "0.06em",
                           textTransform: "uppercase",
+                          fontFamily: "monospace",
                           display: "block",
                           mb: 1,
                         }}
@@ -165,11 +220,17 @@ export default function HomeWork() {
                       <Typography
                         variant="h3"
                         sx={{
-                          fontSize: "1.2rem",
-                          fontWeight: 700,
+                          fontSize: { xs: "1.05rem", sm: "1.1rem", md: "1.15rem" },
+                          fontWeight: 600,
+                          letterSpacing: "-0.02em",
                           color: "#18181B",
                           lineHeight: 1.35,
                           mb: 1.5,
+                          textWrap: "balance",
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
                         }}
                       >
                         {project.title}
@@ -200,6 +261,7 @@ export default function HomeWork() {
                               color: "#52525B",
                               fontSize: "0.75rem",
                               fontWeight: 600,
+                              fontFamily: "monospace",
                             }}
                           >
                             {tech}
@@ -244,12 +306,19 @@ export default function HomeWork() {
                     </Link>
                   </Box>
                 </Box>
-              </Grid>
-            );
-          })}
-        </Grid>
+              </motion.div>
+            </Grid>
+          );
+        })}
+      </Grid>
 
-        {/* Centered Action Button */}
+      {/* Centered Action Button */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <Box sx={{ mt: { xs: 6, md: 8 }, textAlign: "center" }}>
           <Link href="/work" style={{ textDecoration: "none" }}>
             <Button
@@ -276,6 +345,7 @@ export default function HomeWork() {
             </Button>
           </Link>
         </Box>
+      </motion.div>
       </Container>
     </Box>
   );

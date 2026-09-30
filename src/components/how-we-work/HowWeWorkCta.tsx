@@ -102,22 +102,25 @@ export default function HowWeWorkCta() {
                     fontWeight: 700,
                   }}
                 >
-                  START A CONVERSATION
+                  LET&apos;S TALK ABOUT YOUR PROJECT
                 </Typography>
               </Box>
 
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.25rem" },
+                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
                   color: "#FFFFFF",
-                  lineHeight: { xs: 1.1, md: 1.05 },
+                  lineHeight: { xs: 1.25, md: 1.18 },
                   letterSpacing: "-0.035em",
+                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  mx: "auto",
+                  textWrap: "balance",
                   mb: 3,
                 }}
               >
-                Let&apos;s understand{" "}
+                Ready to Build a Website, Mobile App or{" "}
                 <Box
                   component="span"
                   sx={{
@@ -126,7 +129,7 @@ export default function HowWeWorkCta() {
                     WebkitTextFillColor: "transparent",
                   }}
                 >
-                  what your business needs.
+                  AI System for Your Business?
                 </Box>
               </Typography>
 
@@ -135,13 +138,13 @@ export default function HowWeWorkCta() {
                   fontSize: { xs: "1.05rem", md: "1.2rem" },
                   color: "rgba(255, 255, 255, 0.82)",
                   lineHeight: 1.75,
-                  maxWidth: 680,
+                  maxWidth: 720,
                   mx: "auto",
                   mb: 5,
                   fontWeight: 400,
                 }}
               >
-                Tell us how your current process works, what is slowing your team down, and what you want to improve. We&apos;ll help you determine whether a website, custom software, automation, integration, or another digital solution makes sense.
+                Tell us what your business needs, what is slowing your team down, and what you want to achieve. We&apos;ll give you honest, practical recommendations, a fixed quote, and a transparent roadmap with zero high-pressure sales tactics.
               </Typography>
 
               {/* Button Row */}
@@ -167,7 +170,7 @@ export default function HowWeWorkCta() {
                         },
                       }}
                     >
-                      Start a Conversation
+                      Book a Free Strategy Call
                     </Button>
                   </Link>
                 </motion.div>

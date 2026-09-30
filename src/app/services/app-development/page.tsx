@@ -5,9 +5,9 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "Aetibar | Mobile App Development Services.",
+  title: "Mobile App Development Services for Businesses | Aetibar",
   description:
-    " Aetibar Build scalable and user-friendly mobile applications with Aetibar's mobile app development company, delivering custom Android and iOS solutions.",
+    "Build smooth, reliable mobile applications for iPhone and Android with Aetibar. Custom mobile app development, field operations tools, and customer apps that drive results.",
   keywords: [
     "Mobile App Development Services",
     "Mobile App Development Company",
@@ -80,187 +80,184 @@ export default function AppDevelopmentServicePage() {
       />
       <ServicePageLayout
         badge="Mobile App Development"
-        title="Mobile App Development Services for Businesses"
-        tagline="Practical iOS and Android mobile applications designed to streamline daily operations and engage your customers."
-        description="Whether you need to empower on-the-ground field staff, replace messy paper slips and WhatsApp groups, or give your clients a simple mobile app to book appointments and track orders, we build practical mobile applications that run smoothly on iPhones and Android devices alike."
+        title="Custom Mobile Apps Built for iPhone & Android —"
+        titleHighlight="Apps Your Customers Love."
+        tagline="Smooth iOS and Android mobile apps that keep your clients connected and your team organized, with zero technical headaches."
+        description="Whether you want to put your business right inside your customer's pocket, or you need an easy mobile tool for your field staff to log jobs and capture signatures, we build practical mobile apps for iPhones and Android phones that just work—even when there's zero mobile internet signal."
         icon={<PhoneIphoneIcon sx={{ fontSize: 20, color: "#EA580C" }} />}
         whoIsItFor={[
           {
-            title: "Logistics & Field Service Teams",
-            desc: "Businesses managing drivers, technicians, or inspectors who need fast mobile tools to log work, capture signatures, and upload photos on-site.",
+            title: "Field Teams & Drivers",
+            desc: "Technicians, inspectors, and drivers who need simple mobile screens to log work, take photo proofs, and collect signatures on-site.",
           },
           {
-            title: "Customer Brands & Retailers",
-            desc: "Companies wanting to give their customers a convenient smartphone app to browse catalogs, place recurring orders, make payments, and track delivery status.",
+            title: "Retailers & Consumer Brands",
+            desc: "Businesses wanting a convenient smartphone app for easy customer reordering, instant push notifications, and quick UPI checkout.",
           },
           {
-            title: "Operations Replacing Paper Chaos",
-            desc: "Businesses currently struggling with lost physical receipts, unorganized photo updates across messaging groups, and constant phone check-ins from the field.",
+            title: "Businesses Drowning in Paper Slips",
+            desc: "Companies struggling with lost paper receipts, messy photo updates across WhatsApp groups, and constant check-in phone calls.",
           },
           {
-            title: "B2B Portals & Product Founders",
-            desc: "Companies providing corporate clients with branded mobile dashboards to track jobs, or founders launching a cross-platform mobile application from scratch.",
+            title: "Founders Launching an App Idea",
+            desc: "Entrepreneurs who want to launch their startup on both Apple App Store and Google Play Store without paying double the development cost.",
           },
         ]}
         problemsAddressed={[
           {
-            problem: "Losing data and progress when field staff lose cellular connection",
+            problem: "Apps stop working and lose customer data when there is no mobile signal",
             howWeHelp:
-              "Field teams frequently work in basements, warehouses, or transit areas with poor network reception. We build offline-first apps that store form entries, digital signatures, and photos locally on the device and sync automatically with your office database the moment connection returns.",
+              "Staff frequently work in basements or remote transit spots. We build offline-first apps that save photos, forms, and signatures safely on the phone and auto-sync the second internet returns.",
           },
           {
-            problem: "Paying double the cost to build separate apps for Apple and Android",
+            problem: "Paying double the price to build separate apps for iPhone and Android",
             howWeHelp:
-              "Building separate native apps for iPhone and Android requires two different development teams and doubles maintenance costs. We use industry-standard cross-platform frameworks to build both apps from a single codebase, delivering native responsiveness at a fraction of the cost.",
+              "Building two completely separate native apps doubles your cost and maintenance. We build one unified, high-performance app that runs natively on both Apple and Android devices at half the price.",
           },
           {
-            problem: "Lost paperwork, missing delivery receipts, and unverified work",
+            problem: "Lost paper receipts and unverified job status",
             howWeHelp:
-              "Our mobile applications replace loose paper manifests with digital signature capture, photo proofs with timestamping, and instant status updates that immediately reflect on your central office dashboard.",
+              "Our apps replace messy paperwork with digital signature collection, instant photo proofs with timestamps, and live status updates that immediately reflect on your central office screen.",
           },
           {
-            problem: "Complex interfaces that employees resist using",
+            problem: "Overcomplicated screens that staff resist using",
             howWeHelp:
-              "Many enterprise apps are overly complicated. We design high-contrast, large-button interfaces tailored for fast, minimal-tap usage, making it simple for non-technical workers to complete tasks in seconds even under bright sunlight.",
+              "Many enterprise apps are confusing. We design big, clear buttons and simple 2-tap screens that non-technical workers can use in seconds, even while walking outside in the sun.",
           },
         ]}
         deliverables={[
           {
-            title: "Cross-Platform iOS & Android Mobile Apps",
-            desc: "High-performance smartphone applications developed from a single, unified codebase that feels native and responsive on both Apple iPhones and Android devices.",
+            title: "iPhone & Android Mobile App (One Unified Codebase)",
+            desc: "A smooth, responsive smartphone app that feels completely native on both Apple iPhones and Android devices.",
             items: [
-              "Unified cross-platform architecture for iPhone and Android",
-              "Smooth touch navigation and responsive gestures",
-              "Access to device features (camera, GPS location, local storage)",
-              "Optimized battery and storage consumption",
+              "Runs fast on both iOS and Android from a single unified codebase",
+              "Smooth touch navigation and simple screen transitions",
+              "Camera, GPS location, and offline local storage support",
+              "Low battery usage and fast startup times",
             ],
           },
           {
-            title: "Field Service & Operational Mobile Tools",
-            desc: "Purpose-built mobile applications engineered for delivery drivers, field technicians, warehouse staff, and inspectors.",
+            title: "Field Operations & Driver Mobile Tools",
+            desc: "Practical mobile apps designed for delivery drivers, field technicians, warehouse workers, and on-site staff.",
             items: [
-              "Offline data queueing with automatic background sync",
-              "Digital signature capture and photo delivery verification",
-              "Milestone status check-ins and GPS route logging",
-              "Instant push notifications and urgent job alerts",
+              "Works 100% offline with automatic background sync when online",
+              "Digital signature collection and photo delivery verification",
+              "Job status milestone check-ins with GPS timestamping",
+              "Urgent push notifications and daily dispatch alerts",
             ],
           },
           {
             title: "Customer-Facing & Self-Service Mobile Apps",
-            desc: "Engaging, user-friendly mobile applications that make it easy for your clients to access your services directly from their home screen.",
+            desc: "A convenient smartphone app that makes it effortless for your clients to order, book, and pay right from their home screen.",
             items: [
-              "Simple mobile onboarding and secure profile management",
-              "Interactive service booking, catalog browsing, and ordering",
-              "Integration with secure mobile payment gateways (UPI, cards)",
-              "Real-time order tracking and shipment milestone updates",
+              "Quick phone number or OTP login with profile management",
+              "Fast product catalog, appointment booking, and ordering",
+              "Safe, one-tap mobile payments (UPI, Google Pay, cards)",
+              "Live order tracking and delivery progress notifications",
             ],
           },
           {
-            title: "Central Database & Backend System Synchronization",
-            desc: "Connecting your mobile applications securely to your existing website, CRM, warehouse management system, or accounting software.",
+            title: "Connecting with Your Office Database & CRM",
+            desc: "We connect your mobile app directly to your website, inventory, accounting software, or CRM so everything stays updated.",
             items: [
-              "Secure data synchronization between mobile devices and office servers",
-              "Role-based access controls to protect sensitive customer data",
-              "Automated alerts sent to office dispatchers when jobs are completed",
-              "Fail-safe data queues that prevent lost records during network drops",
+              "Instant data sync between mobile phones and office computers",
+              "Role-based staff logins so sensitive company data stays private",
+              "Automatic alerts sent to office dispatchers when jobs finish",
+              "Fail-safe local storage so no customer order is ever lost",
             ],
           },
           {
-            title: "App Store Publishing & Release Support",
-            desc: "Navigating the complete submission, compliance, and approval process for both the Apple App Store and Google Play Store.",
+            title: "App Store & Google Play Publishing",
+            desc: "We handle the entire approval and submission process for the Apple App Store and Google Play Store until your app is live.",
             items: [
-              "Guidance on setting up your own Apple & Google developer accounts",
-              "Preparation of store screenshots, privacy policies, and app descriptions",
-              "Internal beta testing distribution for your team prior to launch",
-              "Handling store compliance requirements and approval reviews",
+              "We help you set up your official Apple & Google developer accounts",
+              "App Store graphics, icons, screenshots, and privacy policy preparation",
+              "Private beta testing so your team can try the app before launch",
+              "We handle compliance reviews until your app is officially approved",
             ],
           },
         ]}
         benefits={[
           {
             title: "Cut Development & Maintenance Costs in Half",
-            desc: "By building for iOS and Android simultaneously from one unified codebase, you save months of development time and drastically reduce long-term maintenance costs.",
+            desc: "One unified app for iPhone and Android saves you months of work and cuts ongoing maintenance bills in half.",
           },
           {
-            title: "Reliable Operation Anywhere, Even Without Signal",
-            desc: "Your staff or customers won't be blocked by poor cellular coverage. The app stores entries locally and syncs automatically when internet returns, eliminating lost work.",
+            title: "Works Anywhere, Even Without Internet",
+            desc: "Your staff won't get stuck. The app saves everything locally on the device and syncs automatically when signal returns.",
           },
           {
-            title: "Immediate Operational Visibility for Managers",
-            desc: "Eliminate constant check-in phone calls. As soon as a delivery is made or a job is completed on-site, managers and dispatchers see the update on their central dashboard.",
+            title: "Know Exactly What's Happening in Real Time",
+            desc: "No more phone tag. When a technician finishes a job or a delivery is made, you see it on your office screen instantly.",
           },
           {
-            title: "100% Code & App Store Account Ownership",
-            desc: "You own all mobile source code, backend scripts, and store listings. The app is published under your company's own Apple and Google accounts with zero proprietary lock-in.",
+            title: "You Own 100% of Your App & Store Accounts",
+            desc: "Everything is published under your company name, and all source code belongs to you from day one.",
           },
         ]}
         processSteps={[
           {
             num: "01",
-            title: "Operational Workflow Review",
-            desc: "We review your business processes, team roles, field challenges, and data requirements to define the exact functionality your app needs.",
+            title: "Workflow & Needs Review",
+            desc: "We discuss what your business does, what problems your team or customers face, and what screens your app needs.",
           },
           {
             num: "02",
-            title: "User Experience & Screen Design",
-            desc: "We design simple, high-contrast screen mockups for every step, ensuring clear buttons and straightforward navigation before writing code.",
+            title: "Simple Screen Mockups",
+            desc: "We design simple, high-contrast screens for every step so you can tap through and approve the design before we code.",
           },
           {
             num: "03",
-            title: "Cross-Platform Development",
-            desc: "We build the mobile application with offline data storage, camera and location integration, and secure synchronization to your backend system.",
+            title: "Building the App",
+            desc: "We code the mobile app with offline storage, camera and location tools, and seamless connection to your office database.",
           },
           {
             num: "04",
-            title: "Real-Device & Offline Testing",
-            desc: "We test the application on physical iPhones and Android smartphones under poor connectivity conditions to verify that data queues and syncs flawlessly.",
+            title: "Testing on Real Phones",
+            desc: "We install the app on real iPhones and Android devices and test it in low-signal spots to guarantee zero lost data.",
           },
           {
             num: "05",
-            title: "App Store Launch & Staff Rollout",
-            desc: "We guide the app through Apple and Google approval, deploy the production release, and assist your team with internal staff onboarding.",
+            title: "App Store Launch & Training",
+            desc: "We submit your app to Apple and Google for approval, get it live, and guide your team on how to use it effortlessly.",
           },
         ]}
         relevantProjects={relevantProjects}
         faqs={[
           {
-            question: "Do you build separate apps for iPhone and Android, or one cross-platform app?",
+            question: "Do you build separate apps for iPhone and Android?",
             answer:
-              "We primarily build cross-platform mobile apps using React Native. This allows your business to launch on both the Apple App Store (iOS) and Google Play Store (Android) using a single codebase. It looks, feels, and performs like a native application while cutting initial development costs and future maintenance in half.",
+              "We build using React Native, which means one clean, high-performance app runs smoothly on both Apple iPhones and Android devices. This cuts your upfront development cost and future maintenance in half while feeling 100% native.",
           },
           {
-            question: "Will the mobile app work in basements or remote locations without internet?",
+            question: "Will the app work when my team has no mobile signal?",
             answer:
-              "Yes. We specialize in offline-first mobile applications. If a field technician, driver, or customer loses cellular signal, the app continues to function locally. Data entries, signatures, and photos are saved securely on the phone and automatically synced to your servers once connectivity is restored.",
+              "Yes! We specialize in offline-first apps. Your staff can fill out forms, take photos, and collect signatures in basements or remote spots. Everything is saved safely on the phone and uploads automatically the moment signal returns.",
           },
           {
-            question: "How do you handle the Apple App Store and Google Play Store approval process?",
+            question: "Who handles getting the app onto the Apple App Store and Google Play Store?",
             answer:
-              "Apple and Google have strict security, design, and privacy guidelines. We handle the entire technical preparation—including creating required store assets, configuring privacy declarations, setting up beta testing, and resolving review feedback until your app is officially approved and live.",
+              "We handle everything. Apple and Google have strict security and design rules. We create the store screenshots, write the descriptions, configure the privacy policies, and resolve all review questions until your app is approved and live.",
           },
           {
-            question: "Who owns the mobile application and the developer accounts?",
+            question: "Who owns the code and store accounts?",
             answer:
-              "You own 100% of the mobile application source code and design assets. We help you create and configure your own Apple Developer and Google Play Console accounts, ensuring that your app is published directly under your company's official name.",
+              "You do, 100%. We help you set up your own Apple Developer and Google Play Console accounts, so the app is published directly under your company's name. You own all the source code forever.",
           },
           {
-            question: "Can the mobile app connect with our existing website, database, or CRM?",
+            question: "Can the mobile app connect to our existing website or software?",
             answer:
-              "Yes. We build secure communication bridges (APIs) that connect the mobile app directly to your existing business systems. Whether you use a custom database, a web portal, or third-party CRM tools, data flows seamlessly between mobile and desktop.",
+              "Yes. We build secure bridges (APIs) so data flows automatically between your mobile app and your website, CRM, Excel sheets, or accounting software.",
           },
           {
-            question: "How long does it take to develop a custom business mobile application?",
+            question: "How long does it take to build a custom mobile app?",
             answer:
-              "A focused business or field operations app typically takes 6 to 10 weeks from initial workflow mapping to app store launch. More extensive customer portals with complex marketplace or catalog features may take 10 to 14 weeks depending on scope.",
-          },
-          {
-            question: "What happens when Apple or Android release new operating system updates?",
-            answer:
-              "Mobile operating systems update regularly. Because we write clean, standard-compliant code, apps generally continue running smoothly. We also offer ongoing maintenance retainers to test and update your app whenever major iOS or Android updates are released.",
+              "A focused business tool or field operations app typically takes 6 to 10 weeks from concept to App Store launch. Larger customer apps with extensive catalogs or marketplaces take 10 to 14 weeks.",
           },
         ]}
-        ctaTitle="Ready to Build a Mobile App for Your Business?"
-        ctaDescription="Tell us about your team's operational needs or app concept. We'll provide honest advice, outline realistic timelines, and design a practical development plan."
+        ctaTitle="Ready to Build a Mobile App That"
+        ctaTitleHighlight="Makes Your Business Run Smoother?"
+        ctaDescription="Tell us about your team's operational challenges or app concept. We'll give you honest advice, outline realistic timelines, and build a practical plan."
       />
     </main>
   );

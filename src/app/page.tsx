@@ -7,11 +7,12 @@ import HomeWork from "../components/home/HomeWork";
 import HomeProcess from "../components/home/HomeProcess";
 import HomeWhyAetibar from "../components/home/HomeWhyAetibar";
 import HomeCtaSection from "../components/home/HomeCtaSection";
+import HomeScrollProgress from "../components/home/HomeScrollProgress";
 
 export const metadata: Metadata = {
-  title: "Aetibar | AI, Web & Mobile App Development Company",
+  title: "Aetibar | Custom Websites, Mobile Apps, AI Automation & Digital Marketing",
   description:
-    "Aetibar builds high-performance websites, custom software, AI automation and digital systems designed around real business needs.",
+    "Grow your business with high-converting websites, custom mobile apps, practical AI workflow automation, and targeted SEO & paid advertising from Aetibar.",
   keywords: [
     "web development",
     "mobile app development",
@@ -51,9 +52,9 @@ export const metadata: Metadata = {
     canonical: "https://www.aetibar.in/",
   },
   openGraph: {
-    title: "Aetibar | Websites, Apps, AI & Digital Marketing for Your Business",
+    title: "Aetibar | Custom Websites, Mobile Apps, AI Automation & Digital Marketing",
     description:
-      "We help businesses build websites and apps, use AI to simplify work, and reach more customers through digital marketing.",
+      "Grow your business with high-converting websites, custom mobile apps, practical AI workflow automation, and targeted SEO & paid advertising from Aetibar.",
     url: "https://www.aetibar.in/",
     siteName: "Aetibar",
     type: "website",
@@ -63,15 +64,15 @@ export const metadata: Metadata = {
         url: "https://www.aetibar.in/logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "Aetibar - Websites, Apps, AI & Digital Marketing",
+        alt: "Aetibar - Custom Websites, Mobile Apps, AI Automation & Digital Marketing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aetibar | Websites, Apps, AI & Digital Marketing for Your Business",
+    title: "Aetibar | Custom Websites, Mobile Apps, AI Automation & Digital Marketing",
     description:
-      "We help businesses build websites and apps, use AI to simplify work, and reach more customers through digital marketing.",
+      "Grow your business with high-converting websites, custom mobile apps, practical AI workflow automation, and targeted SEO & paid advertising from Aetibar.",
     creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
@@ -92,7 +93,7 @@ const homePageSchema = {
       "url": "https://www.aetibar.in/",
       "name": "Aetibar",
       "description":
-        "We help businesses build websites and apps, use AI to simplify work, and reach more customers through digital marketing.",
+        "Grow your business with high-converting websites, custom mobile apps, practical AI workflow automation, and targeted SEO & paid advertising from Aetibar.",
       "publisher": {
         "@id": "https://www.aetibar.in/#organization",
       },
@@ -106,7 +107,7 @@ const homePageSchema = {
       "logo": "https://www.aetibar.in/logo.jpeg",
       "image": "https://www.aetibar.in/logo.jpeg",
       "description":
-        "Aetibar helps businesses build websites and apps, use AI to simplify work, and reach more customers through digital marketing.",
+        "Aetibar helps businesses build high-converting websites and mobile apps, automate everyday workflows with AI, and win more customers through targeted SEO and digital marketing.",
       "email": "hello.aetibar@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -211,6 +212,9 @@ const homePageSchema = {
 export default function HomePage() {
   return (
     <main>
+      {/* High-Performance Sunset Scroll Progress Bar */}
+      <HomeScrollProgress />
+
       {/* Schema.org Structured Data for Search Engines */}
       <script
         type="application/ld+json"

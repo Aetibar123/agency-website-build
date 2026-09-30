@@ -24,14 +24,15 @@ export default function MissionSection() {
           sx={{
             color: "#0E172A",
             mb: 5,
-            fontSize: { xs: "2rem", md: "2.75rem" },
+            fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem" },
             fontWeight: 800,
-            lineHeight: 1.2,
+            lineHeight: { xs: 1.25, md: 1.2 },
             letterSpacing: "-0.03em",
             textTransform: "uppercase",
+            textWrap: "balance",
           }}
         >
-          Accelerating Innovation Through <br />
+          Accelerating Innovation Through{" "}
           <Box component="span" sx={{ color: "#0E7490" }}>
             Disciplined Technology.
           </Box>

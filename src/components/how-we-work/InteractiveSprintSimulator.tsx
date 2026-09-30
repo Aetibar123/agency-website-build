@@ -184,11 +184,14 @@ export default function InteractiveSprintSimulator() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "3.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.15, md: 1.1 },
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2.5,
               }}
             >
@@ -196,7 +199,7 @@ export default function InteractiveSprintSimulator() {
               <Box
                 component="span"
                 sx={{
-                  display: { xs: "inline", sm: "block" },
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",

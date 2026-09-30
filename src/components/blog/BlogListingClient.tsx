@@ -165,7 +165,7 @@ export default function BlogListingClient() {
         />
 
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
-          <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center" }}>
+          <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1140 }, mx: "auto", textAlign: "center" }}>
             {/* Status Pill Badge */}
             <Box
               sx={{
@@ -207,11 +207,14 @@ export default function BlogListingClient() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: { xs: "-0.03em", md: "-0.035em" },
-                lineHeight: { xs: 1.15, md: 1.12 },
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 1040, lg: 1140 },
+                mx: "auto",
                 mb: 2.5,
               }}
             >
@@ -219,6 +222,7 @@ export default function BlogListingClient() {
               <Box
                 component="span"
                 sx={{
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -617,6 +621,11 @@ export default function BlogListingClient() {
                               color: "#18181B",
                               lineHeight: 1.3,
                               letterSpacing: "-0.025em",
+                              textWrap: "balance",
+                              display: "-webkit-box",
+                              WebkitLineClamp: 2,
+                              WebkitBoxOrient: "vertical",
+                              overflow: "hidden",
                               mb: 1.8,
                             }}
                           >
@@ -1041,11 +1050,14 @@ export default function BlogListingClient() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.85rem", sm: "2.4rem", md: "2.8rem" },
+                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                   fontWeight: 600,
                   color: "#FFFFFF",
                   letterSpacing: "-0.03em",
-                  lineHeight: 1.2,
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  textWrap: "balance",
+                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  mx: "auto",
                   mb: 2,
                 }}
               >

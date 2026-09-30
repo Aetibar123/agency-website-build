@@ -288,12 +288,14 @@ export default function HowWeHelpHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.12 },
-                letterSpacing: { xs: "-0.03em", md: "-0.035em" },
+                lineHeight: { xs: 1.25, md: 1.18 },
+                letterSpacing: { xs: "-0.02em", md: "-0.035em" },
                 textAlign: "left",
+                maxWidth: { xs: "100%", md: 1040, lg: 1160 },
+                textWrap: "balance",
                 mb: { xs: 3, md: 3.5 },
               }}
             >
