@@ -243,12 +243,14 @@ export default function ComparisonSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.08 },
+                lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2.5,
               }}
             >
@@ -256,6 +258,7 @@ export default function ComparisonSection() {
               <Box
                 component="span"
                 sx={{
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -575,6 +578,7 @@ export default function ComparisonSection() {
                 fontSize: { xs: "1.35rem", sm: "1.7rem", md: "2rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                textWrap: "balance",
                 mb: 1.2,
                 textAlign: "left",
               }}
@@ -818,6 +822,7 @@ export default function ComparisonSection() {
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 fontWeight: 600,
                 color: "#18181B",
+                textWrap: "balance",
                 mb: 1,
               }}
             >

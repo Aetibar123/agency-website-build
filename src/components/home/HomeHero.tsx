@@ -1,17 +1,48 @@
 "use client";
 import React from "react";
-import { Box, Container, Typography, Button } from "@mui/material";
+import { Box, Container, Typography, Button, Grid } from "@mui/material";
 import Link from "next/link";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Image from "next/image";
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
+import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
+import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 const ThreeHeroCanvas = dynamic(() => import("./ThreeHeroCanvas"), {
   ssr: false,
   loading: () => null,
 });
+
+const heroMetrics = [
+  {
+    value: "Fixed",
+    title: "Upfront Scope & Pricing",
+    desc: "Detailed project deliverables, timeline milestones, and fixed pricing agreed upon before work begins.",
+    icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+  },
+  {
+    value: "Live",
+    title: "Interactive Previews",
+    desc: "Working development previews so you can test features on real devices and guide progress as we build.",
+    icon: <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+  },
+  {
+    value: "100%",
+    title: "Full Code Ownership",
+    desc: "Complete transfer of source code, domains, database access, and documentation without proprietary lock-ins.",
+    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+  },
+  {
+    value: "Zero",
+    title: "Disruption Launch",
+    desc: "Rigorous testing of forms, speed, and customer data before going live so your daily operations stay smooth.",
+    icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+  },
+];
 
 export default function HomeHero() {
   return (
@@ -28,8 +59,41 @@ export default function HomeHero() {
         background:
           "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.08) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
         overflow: "hidden",
+        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
       }}
     >
+      {/* Ambient subtle warm lighting */}
+      <Box
+        component={motion.div}
+        animate={{ scale: [1, 1.15, 1], opacity: [0.25, 0.4, 0.25] }}
+        transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
+        sx={{
+          position: "absolute",
+          top: "-10%",
+          right: "-5%",
+          width: "500px",
+          height: "500px",
+          background: "radial-gradient(circle, rgba(249, 115, 22, 0.14) 0%, transparent 70%)",
+          filter: "blur(70px)",
+          pointerEvents: "none",
+        }}
+      />
+      <Box
+        component={motion.div}
+        animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.35, 0.2] }}
+        transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 1 }}
+        sx={{
+          position: "absolute",
+          top: "15%",
+          left: "-10%",
+          width: "460px",
+          height: "460px",
+          background: "radial-gradient(circle, rgba(251, 146, 60, 0.12) 0%, transparent 70%)",
+          filter: "blur(70px)",
+          pointerEvents: "none",
+        }}
+      />
+
       {/* Three.js Flowing 3D Silk Wave Background */}
       <ThreeHeroCanvas />
 
@@ -37,7 +101,7 @@ export default function HomeHero() {
         {/* Centered Hero Typographic Core with Smooth Stagger */}
         <Box
           sx={{
-            maxWidth: "960px",
+            maxWidth: { xs: "100%", md: 1040, lg: 1140 },
             mx: "auto",
             textAlign: "center",
             display: "flex",
@@ -48,9 +112,9 @@ export default function HomeHero() {
         >
           {/* Status Pill */}
           <motion.div
-            initial={{ opacity: 0, y: -18, scale: 0.95 }}
+            initial={{ opacity: 0, y: -24, scale: 0.94 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
           >
             <Box
               sx={{
@@ -69,6 +133,9 @@ export default function HomeHero() {
               }}
             >
               <Box
+                component={motion.div}
+                animate={{ scale: [1, 1.35, 1] }}
+                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 sx={{
                   width: 8,
                   height: 8,
@@ -83,7 +150,7 @@ export default function HomeHero() {
                 sx={{
                   fontSize: { xs: "0.72rem", sm: "0.825rem" },
                   fontWeight: 700,
-                  letterSpacing: "0.05em",
+                  letterSpacing: "0.06em",
                   color: "#EA580C",
                   textTransform: "uppercase",
                   lineHeight: 1.35,
@@ -97,51 +164,62 @@ export default function HomeHero() {
 
           {/* Main Headline with Sunset Orange Accent */}
           <motion.div
-            initial={{ opacity: 0, y: 22 }}
+            initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.9, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
           >
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
+                fontSize: { xs: "1.65rem", sm: "2.35rem", md: "3rem", lg: "3.4rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.12 },
-                letterSpacing: { xs: "-0.03em", md: "-0.035em" },
+                lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
+                letterSpacing: { xs: "-0.02em", md: "-0.035em" },
+                textWrap: "balance",
                 mb: { xs: 3, md: 3.5 },
               }}
             >
-              Websites, Mobile Apps, AI Automation &amp; Digital Marketing for Your Business
+              Custom Websites, Mobile Apps &amp; AI Systems —{" "}
+              <Box
+                component="span"
+                sx={{
+                  display: "inline",
+                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Built to Grow Your Business.
+              </Box>
             </Typography>
           </motion.div>
 
           {/* Subtitle */}
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           >
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", sm: "1.2rem", md: "1.25rem" },
-                lineHeight: 1.75,
+                fontSize: { xs: "1.05rem", sm: "1.18rem", md: "1.25rem" },
+                lineHeight: 1.8,
                 color: "#52525B",
-                maxWidth: 760,
+                maxWidth: 820,
                 mb: { xs: 4, md: 5 },
                 fontWeight: 400,
               }}
             >
-             We help businesses build websites and apps, automate everyday work with AI, and reach more customers through digital marketing.
-
+              Stop losing potential customers to slow websites and manual busywork. We design high-converting business websites, develop smooth mobile apps, automate repetitive workflows with AI, and run targeted marketing campaigns that bring qualified inquiries straight to your phone.
             </Typography>
           </motion.div>
 
           {/* High-Impact CTA Button Group */}
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
             <Box
               sx={{
@@ -174,7 +252,7 @@ export default function HomeHero() {
                       },
                     }}
                   >
-                    Discuss Your Project
+                    Get a Free Consultation
                   </Button>
                 </Link>
               </motion.div>
@@ -225,13 +303,13 @@ export default function HomeHero() {
               }}
             >
               {[
-                "Thoughtful Design & Engineering",
-                "Practical Problem Solving",
-                "Clear, Honest Communication",
+                "100% Code & Domain Ownership",
+                "Fixed Pricing & Clear Timelines",
+                "Direct Access to Dedicated Builders",
               ].map((text, i) => (
                 <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                   <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                  <Typography sx={{ fontSize: "0.85rem", color: "#71717A", fontWeight: 500 }}>
+                  <Typography sx={{ fontSize: "0.85rem", color: "#52525B", fontWeight: 500 }}>
                     {text}
                   </Typography>
                 </Box>
@@ -242,9 +320,9 @@ export default function HomeHero() {
 
         {/* Centerpiece Showcase Image Frame — Stable, Rock-Solid with Smooth Lift & Glow on Hover */}
         <motion.div
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ opacity: 0, y: 45, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 1.05, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
         >
           <Box
             sx={{
@@ -326,6 +404,9 @@ export default function HomeHero() {
 
                 {/* Floating Glassmorphic Pill 1 (Top Left) */}
                 <Box
+                  component={motion.div}
+                  animate={{ y: [0, -6, 0] }}
+                  transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
                   sx={{
                     position: "absolute",
                     top: { xs: 12, sm: 20, md: 24 },
@@ -360,12 +441,13 @@ export default function HomeHero() {
                         fontSize: { xs: "0.68rem", sm: "0.75rem" },
                         fontWeight: 700,
                         color: "#EA580C",
-                        letterSpacing: "0.04em",
+                        letterSpacing: "0.06em",
                         textTransform: "uppercase",
                         lineHeight: 1.2,
+                        fontFamily: "monospace",
                       }}
                     >
-                      Practical Engineering
+                      Practical Results
                     </Typography>
                     <Typography
                       sx={{
@@ -375,13 +457,16 @@ export default function HomeHero() {
                         lineHeight: 1.3,
                       }}
                     >
-                      Software designed around how work actually happens
+                      Websites &amp; apps built to convert visitors into clients
                     </Typography>
                   </Box>
                 </Box>
 
                 {/* Floating Glassmorphic Pill 2 (Bottom Right) */}
                 <Box
+                  component={motion.div}
+                  animate={{ y: [0, 6, 0] }}
+                  transition={{ repeat: Infinity, duration: 5, delay: 0.6, ease: "easeInOut" }}
                   sx={{
                     position: "absolute",
                     bottom: { xs: 14, sm: 20, md: 24 },
@@ -406,14 +491,15 @@ export default function HomeHero() {
                         fontSize: "0.725rem",
                         fontWeight: 700,
                         color: "#FB923C",
-                        letterSpacing: "0.05em",
+                        letterSpacing: "0.06em",
                         textTransform: "uppercase",
+                        fontFamily: "monospace",
                       }}
                     >
-                      Connected Systems
+                      Automated Workflows
                     </Typography>
                     <Typography sx={{ fontSize: "0.85rem", fontWeight: 600 }}>
-                      Less repetitive data entry &bull; Clear team visibility
+                      Instant lead capture &bull; Zero manual busywork
                     </Typography>
                   </Box>
                 </Box>
@@ -421,6 +507,90 @@ export default function HomeHero() {
             </Box>
           </Box>
         </motion.div>
+
+        {/* 4-Item Executive Trust & Performance Strip with Staggered Cascading Reveal */}
+        <Box sx={{ mt: { xs: 6, md: 8 } }}>
+          <Grid container spacing={2.5}>
+            {heroMetrics.map((metric, idx) => (
+              <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={idx}>
+                <motion.div
+                  initial={{ opacity: 0, y: 35 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.65 + idx * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                  style={{ height: "100%" }}
+                >
+                  <Box
+                    sx={{
+                      p: 2.8,
+                      borderRadius: "20px",
+                      bgcolor: "#FFFFFF",
+                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                      height: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                      transition: "all 0.3s ease",
+                      "&:hover": {
+                        borderColor: "rgba(234, 88, 12, 0.4)",
+                        transform: "translateY(-3px)",
+                        boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                      },
+                    }}
+                  >
+                    <Box>
+                      <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1.5 }}>
+                        <Typography
+                          sx={{
+                            fontSize: "1.75rem",
+                            fontWeight: 800,
+                            color: "#EA580C",
+                            letterSpacing: "-0.03em",
+                            fontFamily: "monospace",
+                          }}
+                        >
+                          {metric.value}
+                        </Typography>
+                        <Box
+                          sx={{
+                            width: 32,
+                            height: 32,
+                            borderRadius: "8px",
+                            bgcolor: "rgba(249, 115, 22, 0.08)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          {metric.icon}
+                        </Box>
+                      </Box>
+                      <Typography
+                        sx={{
+                          fontSize: "0.95rem",
+                          fontWeight: 700,
+                          color: "#18181B",
+                          mb: 0.8,
+                        }}
+                      >
+                        {metric.title}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: "0.825rem",
+                          color: "#52525B",
+                          lineHeight: 1.6,
+                        }}
+                      >
+                        {metric.desc}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </motion.div>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Container>
     </Box>
   );

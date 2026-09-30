@@ -11,18 +11,14 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  TextField,
   Chip,
 } from "@mui/material";
 import Link from "next/link";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ShieldOutlinedIcon from "@mui/icons-material/ShieldOutlined";
 import EngineeringOutlinedIcon from "@mui/icons-material/EngineeringOutlined";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
@@ -30,47 +26,27 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 import BoltOutlinedIcon from "@mui/icons-material/BoltOutlined";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
-import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-import TuneOutlinedIcon from "@mui/icons-material/TuneOutlined";
-import { motion, AnimatePresence } from "framer-motion";
+import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
+import { motion } from "framer-motion";
 
 const BRIEF_TEMPLATE = `Hi Aetibar Team,
 
 1. Company & Industry: [e.g., Logistics / B2B Services / FinTech]
 2. Primary Operational Problem: [Describe the manual work, system bottleneck, or new platform needed]
-3. Current Stack & Tools: [e.g., Google Sheets, WhatsApp, PostgreSQL, legacy portal]
+3. Current Stack & Tools: [e.g., Google Sheets, custom software, PostgreSQL, legacy portal]
 4. Key Desired Outcomes: [e.g., Automate lead intake, rebuild customer portal, sub-second load speeds]
 5. Target Timeline: [e.g., 4–8 weeks / Next Quarter]`;
-
-const improvementOptions = [
-  "Lead Intake & Multi-Channel Inquiries",
-  "Internal Operations & Task Tracking",
-  "High-Performance Business Website",
-  "Repetitive Data Entry & Document AI",
-  "Quote & Estimate Calculation Engines",
-  "Legacy Software / Sheet Migration",
-];
-
-const currentManagementOptions = [
-  "WhatsApp & Direct Phone Calls",
-  "Shared Spreadsheets (Excel / Sheets)",
-  "Scattered Email Inboxes",
-  "Multiple Disconnected SaaS Apps",
-  "Pen, Paper & Clipboards",
-  "Existing Custom Software",
-];
 
 const faqs = [
   {
     q: "How fast do you respond to direct inquiries?",
-    a: "Every email and WhatsApp message goes straight to our senior engineering lead. You will receive a technical response with 2–3 targeted clarifying questions within 24 business hours—never an automated sales drip.",
+    a: "Every email goes straight to our senior engineering lead. You will receive a technical response with 2–3 targeted clarifying questions within 24 business hours—never an automated sales drip.",
   },
   {
     q: "We don't have a formal technical specification yet. Can we still reach out?",
-    a: "Absolutely. In fact, most of our best client partnerships start with an operational problem rather than a formal spec. Send us a quick bulleted outline or loom video of what's broken in your current workflow, and we will help you architect the technical roadmap.",
+    a: "Absolutely. In fact, most of our best client partnerships start with an operational problem rather than a formal spec. Send us a quick bulleted outline or loom video of what's broken in your current workflow over email, and we will help you architect the technical roadmap.",
   },
   {
     q: "Can we sign a Non-Disclosure Agreement (NDA) before sharing proprietary workflow details?",
@@ -78,7 +54,7 @@ const faqs = [
   },
   {
     q: "How do you handle collaboration across different time zones?",
-    a: "Our core studio is based in Udaipur, India (IST / UTC+5:30). We structure our schedules with overlapping working windows for North American, European, and Gulf time zones. All work is documented asynchronously with private clickable staging previews.",
+    a: "We collaborate with clients across India, North America, Europe, and the Gulf. All communication and project delivery are handled asynchronously via email and private staging previews, with scheduled video syncs during mutually agreed overlapping windows.",
   },
   {
     q: "Who actually builds our systems?",
@@ -91,13 +67,13 @@ const processSteps = [
     step: "01",
     title: "Senior Technical Review",
     timeframe: "Within 24 Hours",
-    desc: "Your email or brief is reviewed by an experienced system architect—not a junior sales SDR.",
+    desc: "Your email or brief is reviewed directly by an experienced system architect—not a junior sales SDR.",
   },
   {
     step: "02",
     title: "Clarifying Diagnosis",
     timeframe: "Day 1 – 2",
-    desc: "We reply with 2–3 targeted questions to stress-test constraints, database scale, and existing tools.",
+    desc: "We reply via email with 2–3 targeted questions to stress-test constraints, database scale, and existing tools.",
   },
   {
     step: "03",
@@ -117,17 +93,6 @@ export default function ContactPageClient() {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedBrief, setCopiedBrief] = useState(false);
 
-  // Form State
-  const [activeTab, setActiveTab] = useState<"quick" | "diagnostic">("quick");
-  const [selectedImprovement, setSelectedImprovement] = useState<string[]>([]);
-  const [selectedManagement, setSelectedManagement] = useState<string[]>([]);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [company, setCompany] = useState("");
-  const [details, setDetails] = useState("");
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("hello.aetibar@gmail.com");
     setCopiedEmail(true);
@@ -138,23 +103,6 @@ export default function ContactPageClient() {
     navigator.clipboard.writeText(BRIEF_TEMPLATE);
     setCopiedBrief(true);
     setTimeout(() => setCopiedBrief(false), 2500);
-  };
-
-  const toggleImprovement = (opt: string) => {
-    setSelectedImprovement((prev) =>
-      prev.includes(opt) ? prev.filter((i) => i !== opt) : [...prev, opt]
-    );
-  };
-
-  const toggleManagement = (opt: string) => {
-    setSelectedManagement((prev) =>
-      prev.includes(opt) ? prev.filter((i) => i !== opt) : [...prev, opt]
-    );
-  };
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormSubmitted(true);
   };
 
   const prefilledMailto = `mailto:hello.aetibar@gmail.com?subject=${encodeURIComponent(
@@ -227,7 +175,7 @@ export default function ContactPageClient() {
                     textTransform: "uppercase",
                   }}
                 >
-                  DIRECT SENIOR ACCESS &bull; ZERO SALES BUREAUCRACY
+                  DIRECT EMAIL ACCESS &bull; ZERO SALES BUREAUCRACY
                 </Typography>
               </Box>
             </motion.div>
@@ -241,24 +189,28 @@ export default function ContactPageClient() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "2.4rem", sm: "3.4rem", md: "4.4rem" },
+                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
                   letterSpacing: { xs: "-0.03em", md: "-0.04em" },
-                  lineHeight: { xs: 1.12, md: 1.06 },
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
+                  mx: "auto",
+                  textWrap: "balance",
                   color: "#18181B",
                   mb: 3,
                 }}
               >
-                Talk directly to the engineers building{" "}
+                Reach our software engineers directly via{" "}
                 <Box
                   component="span"
                   sx={{
                     background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
+                    display: "inline",
                   }}
                 >
-                  your digital systems.
+                  email.
                 </Box>
               </Typography>
             </motion.div>
@@ -281,8 +233,7 @@ export default function ContactPageClient() {
                 }}
               >
                 No junior sales representatives. No aggressive automated sequences.
-                Whether you need a sub-second web platform, a unified WhatsApp lead queue, or a custom operational ERP,
-                connect directly with our engineering founders.
+                Send your specifications, RFP documents, or workflow challenges directly to our engineering team.
               </Typography>
             </motion.div>
 
@@ -327,40 +278,10 @@ export default function ContactPageClient() {
                   Email hello.aetibar@gmail.com
                 </Button>
 
-                <Button
-                  component="a"
-                  href="https://wa.me/?text=Hi%20Aetibar%20team,%20I'd%20like%20to%20discuss%20a%20project."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="outlined"
-                  size="large"
-                  startIcon={<WhatsAppIcon sx={{ color: "#25D366" }} />}
-                  sx={{
-                    bgcolor: "rgba(255, 255, 255, 0.9)",
-                    color: "#18181B",
-                    borderColor: "rgba(24, 24, 27, 0.18)",
-                    px: 3.2,
-                    py: 1.6,
-                    fontSize: "0.95rem",
-                    fontWeight: 700,
-                    borderRadius: "9999px",
-                    backdropFilter: "blur(8px)",
-                    transition: "all 0.25s ease",
-                    "&:hover": {
-                      bgcolor: "#FAF8F5",
-                      borderColor: "#25D366",
-                      color: "#15803D",
-                      transform: "translateY(-2px)",
-                    },
-                  }}
-                >
-                  Chat on WhatsApp
-                </Button>
-
                 <Tooltip title={copiedEmail ? "Copied to clipboard!" : "Copy direct email"}>
                   <Button
                     onClick={handleCopyEmail}
-                    variant="text"
+                    variant="outlined"
                     startIcon={
                       copiedEmail ? (
                         <CheckCircleRoundedIcon sx={{ color: "#EA580C" }} />
@@ -369,28 +290,56 @@ export default function ContactPageClient() {
                       )
                     }
                     sx={{
-                      color: copiedEmail ? "#EA580C" : "#52525B",
+                      color: copiedEmail ? "#EA580C" : "#18181B",
+                      borderColor: copiedEmail ? "#EA580C" : "rgba(24, 24, 27, 0.2)",
                       fontWeight: 600,
                       fontSize: "0.9rem",
-                      px: 2.2,
-                      py: 1.6,
+                      px: 3,
+                      py: 1.5,
                       borderRadius: "9999px",
-                      "&:hover": { bgcolor: "rgba(249, 115, 22, 0.06)" },
+                      bgcolor: "rgba(255, 255, 255, 0.9)",
+                      backdropFilter: "blur(8px)",
+                      "&:hover": {
+                        bgcolor: "#FAF8F5",
+                        borderColor: "#EA580C",
+                        color: "#EA580C",
+                      },
                     }}
                   >
                     {copiedEmail ? "Email Copied!" : "Copy Email"}
                   </Button>
                 </Tooltip>
+
+                <Button
+                  component="a"
+                  href="#brief-template"
+                  variant="text"
+                  endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
+                  sx={{
+                    color: "#52525B",
+                    fontWeight: 600,
+                    fontSize: "0.9rem",
+                    px: 2.5,
+                    py: 1.5,
+                    borderRadius: "9999px",
+                    "&:hover": {
+                      color: "#EA580C",
+                      bgcolor: "rgba(249, 115, 22, 0.06)",
+                    },
+                  }}
+                >
+                  Use 1-Click Brief
+                </Button>
               </Box>
             </motion.div>
           </Box>
         </Container>
       </Box>
 
-      {/* 2. PRIMARY DIRECT CHANNELS (3 High-Contrast Bento Cards) */}
+      {/* 2. PRIMARY DIRECT EMAIL CHANNEL */}
       <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: "#FFFFFF" }}>
         <Container maxWidth="xl">
-          <Box sx={{ mb: 6, textAlign: "center", maxWidth: 760, mx: "auto" }}>
+          <Box sx={{ mb: 6, textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto" }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -413,20 +362,28 @@ export default function ContactPageClient() {
                   color: "#EA580C",
                 }}
               >
-                DIRECT COMMUNICATION CHANNELS
+                EXCLUSIVE DIRECT CONTACT
               </Typography>
             </Box>
 
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", md: "2.5rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                textWrap: "balance",
+                mx: "auto",
                 color: "#18181B",
+                mb: 1.5,
               }}
             >
-              Pick the channel that fits your speed.
+              One direct inbox. Straight to senior engineering.
+            </Typography>
+            <Typography sx={{ color: "#52525B", fontSize: "1rem", lineHeight: 1.7 }}>
+              We collaborate asynchronously with leaders worldwide through direct email. No phone queues, gatekeepers, or sales funnels.
             </Typography>
           </Box>
 
@@ -471,7 +428,7 @@ export default function ContactPageClient() {
                   </Box>
 
                   <Chip
-                    label="Primary Channel"
+                    label="Official Contact Method"
                     size="small"
                     sx={{
                       bgcolor: "rgba(249, 115, 22, 0.1)",
@@ -571,141 +528,7 @@ export default function ContactPageClient() {
               </Box>
             </Grid>
 
-            {/* Card 2: WhatsApp Instant Chat */}
-            <Grid size={{ xs: 12, md: 4 }}>
-              <Box
-                sx={{
-                  p: { xs: 3.5, sm: 4.5 },
-                  borderRadius: "24px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(37, 211, 102, 0.3)",
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                  boxShadow: "0 6px 20px rgba(24, 24, 27, 0.03)",
-                  "&:hover": {
-                    transform: "translateY(-4px)",
-                    boxShadow: "0 16px 36px rgba(37, 211, 102, 0.15)",
-                    borderColor: "#25D366",
-                  },
-                }}
-              >
-                <Box>
-                  <Box
-                    sx={{
-                      width: 52,
-                      height: 52,
-                      borderRadius: "14px",
-                      bgcolor: "rgba(37, 211, 102, 0.12)",
-                      border: "1px solid rgba(37, 211, 102, 0.25)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      mb: 2.5,
-                      color: "#16A34A",
-                    }}
-                  >
-                    <WhatsAppIcon sx={{ fontSize: 28, color: "#16A34A" }} />
-                  </Box>
-
-                  <Chip
-                    label="Fastest Response"
-                    size="small"
-                    sx={{
-                      bgcolor: "rgba(37, 211, 102, 0.12)",
-                      color: "#15803D",
-                      fontWeight: 700,
-                      fontSize: "0.7rem",
-                      letterSpacing: "0.04em",
-                      textTransform: "uppercase",
-                      mb: 1.5,
-                      borderRadius: "6px",
-                    }}
-                  />
-
-                  <Typography
-                    variant="h5"
-                    sx={{
-                      fontWeight: 700,
-                      fontSize: "1.3rem",
-                      color: "#18181B",
-                      mb: 0.5,
-                    }}
-                  >
-                    Instant WhatsApp
-                  </Typography>
-
-                  <Typography
-                    sx={{
-                      fontSize: "1.05rem",
-                      fontWeight: 700,
-                      color: "#16A34A",
-                      mb: 2,
-                    }}
-                  >
-                    Direct Senior Line
-                  </Typography>
-
-                  <Typography
-                    sx={{
-                      fontSize: "0.9rem",
-                      color: "#52525B",
-                      lineHeight: 1.65,
-                      mb: 3,
-                    }}
-                  >
-                    Fast triage, quick feasibility checks, audio notes, or informal project explorations.
-                    Skip formalities when speed is critical.
-                  </Typography>
-                </Box>
-
-                <Box>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 1,
-                      p: 1.5,
-                      borderRadius: "10px",
-                      bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
-                      mb: 2,
-                    }}
-                  >
-                    <AccessTimeOutlinedIcon sx={{ fontSize: 16, color: "#16A34A" }} />
-                    <Typography sx={{ fontSize: "0.8rem", color: "#18181B", fontWeight: 600 }}>
-                      Response SLA: Within a few hours
-                    </Typography>
-                  </Box>
-
-                  <Button
-                    component="a"
-                    href="https://wa.me/?text=Hi%20Aetibar%20team,%20I'd%20like%20to%20discuss%20a%20project."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    fullWidth
-                    variant="contained"
-                    endIcon={<OpenInNewRoundedIcon sx={{ fontSize: 16 }} />}
-                    sx={{
-                      bgcolor: "#16A34A",
-                      color: "#FFFFFF",
-                      py: 1.35,
-                      borderRadius: "9999px",
-                      fontWeight: 700,
-                      fontSize: "0.9rem",
-                      boxShadow: "0 8px 20px rgba(22, 163, 74, 0.25)",
-                      "&:hover": { bgcolor: "#15803D" },
-                    }}
-                  >
-                    Chat on WhatsApp
-                  </Button>
-                </Box>
-              </Box>
-            </Grid>
-
-            {/* Card 3: Studio Headquarters */}
+            {/* Card 2: Direct Senior Engineer Review */}
             <Grid size={{ xs: 12, md: 4 }}>
               <Box
                 sx={{
@@ -740,11 +563,11 @@ export default function ContactPageClient() {
                       color: "#18181B",
                     }}
                   >
-                    <LocationOnOutlinedIcon sx={{ fontSize: 26 }} />
+                    <EngineeringOutlinedIcon sx={{ fontSize: 26 }} />
                   </Box>
 
                   <Chip
-                    label="Studio Location"
+                    label="Zero Sales Bureaucracy"
                     size="small"
                     sx={{
                       bgcolor: "rgba(24, 24, 27, 0.06)",
@@ -767,7 +590,7 @@ export default function ContactPageClient() {
                       mb: 0.5,
                     }}
                   >
-                    Studio Headquarters
+                    Senior Engineering Review
                   </Typography>
 
                   <Typography
@@ -778,7 +601,7 @@ export default function ContactPageClient() {
                       mb: 2,
                     }}
                   >
-                    Udaipur, Rajasthan, India
+                    No junior sales gatekeepers
                   </Typography>
 
                   <Typography
@@ -789,8 +612,8 @@ export default function ContactPageClient() {
                       mb: 3,
                     }}
                   >
-                    Serving domestic leaders across India and international clients in North America,
-                    Europe, and the Gulf with seamless async coordination.
+                    Your message is reviewed directly by system architects who build production software.
+                    We reply with targeted engineering insights and feasibility parameters.
                   </Typography>
                 </Box>
 
@@ -807,13 +630,147 @@ export default function ContactPageClient() {
                       mb: 2,
                     }}
                   >
-                    <PublicOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                    <CodeRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
                     <Typography sx={{ fontSize: "0.8rem", color: "#18181B", fontWeight: 600 }}>
-                      Hours: 9:30 AM – 7:30 PM IST (UTC+5:30)
+                      100% In-House Software Architects
                     </Typography>
                   </Box>
 
-                  <Link href="/how-we-work" style={{ textDecoration: "none" }}>
+                  <Button
+                    component="a"
+                    href="#brief-template"
+                    fullWidth
+                    variant="outlined"
+                    endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
+                    sx={{
+                      color: "#18181B",
+                      borderColor: "rgba(24, 24, 27, 0.2)",
+                      py: 1.35,
+                      borderRadius: "9999px",
+                      fontWeight: 700,
+                      fontSize: "0.9rem",
+                      "&:hover": {
+                        borderColor: "#EA580C",
+                        color: "#EA580C",
+                        bgcolor: "rgba(249, 115, 22, 0.05)",
+                      },
+                    }}
+                  >
+                    View Brief Format
+                  </Button>
+                </Box>
+              </Box>
+            </Grid>
+
+            {/* Card 3: Asynchronous Collaboration & NDAs */}
+            <Grid size={{ xs: 12, md: 4 }}>
+              <Box
+                sx={{
+                  p: { xs: 3.5, sm: 4.5 },
+                  borderRadius: "24px",
+                  bgcolor: "#FAF8F5",
+                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+                  boxShadow: "0 6px 20px rgba(24, 24, 27, 0.03)",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: "0 16px 36px rgba(24, 24, 27, 0.08)",
+                    borderColor: "#EA580C",
+                  },
+                }}
+              >
+                <Box>
+                  <Box
+                    sx={{
+                      width: 52,
+                      height: 52,
+                      borderRadius: "14px",
+                      bgcolor: "rgba(24, 24, 27, 0.06)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      mb: 2.5,
+                      color: "#18181B",
+                    }}
+                  >
+                    <ShieldOutlinedIcon sx={{ fontSize: 26 }} />
+                  </Box>
+
+                  <Chip
+                    label="Strict Confidentiality"
+                    size="small"
+                    sx={{
+                      bgcolor: "rgba(24, 24, 27, 0.06)",
+                      color: "#18181B",
+                      fontWeight: 700,
+                      fontSize: "0.7rem",
+                      letterSpacing: "0.04em",
+                      textTransform: "uppercase",
+                      mb: 1.5,
+                      borderRadius: "6px",
+                    }}
+                  />
+
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontWeight: 700,
+                      fontSize: "1.3rem",
+                      color: "#18181B",
+                      mb: 0.5,
+                    }}
+                  >
+                    Confidential &amp; Async
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      fontSize: "1.05rem",
+                      fontWeight: 700,
+                      color: "#52525B",
+                      mb: 2,
+                    }}
+                  >
+                    Mutual NDAs on request
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      fontSize: "0.9rem",
+                      color: "#52525B",
+                      lineHeight: 1.65,
+                      mb: 3,
+                    }}
+                  >
+                    We regularly handle proprietary enterprise data. Share system bottlenecks freely
+                    or request our mutual NDA before diving into architectural specifics.
+                  </Typography>
+                </Box>
+
+                <Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      p: 1.5,
+                      borderRadius: "10px",
+                      bgcolor: "#FFFFFF",
+                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      mb: 2,
+                    }}
+                  >
+                    <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                    <Typography sx={{ fontSize: "0.8rem", color: "#18181B", fontWeight: 600 }}>
+                      Global Asynchronous Delivery
+                    </Typography>
+                  </Box>
+
+                  <Link href="/work" style={{ textDecoration: "none" }}>
                     <Button
                       fullWidth
                       variant="outlined"
@@ -832,7 +789,7 @@ export default function ContactPageClient() {
                         },
                       }}
                     >
-                      Our Delivery Process
+                      Explore Our Work
                     </Button>
                   </Link>
                 </Box>
@@ -844,6 +801,7 @@ export default function ContactPageClient() {
 
       {/* 3. THE 1-CLICK COPYABLE BRIEF (Zero-Form Alternative) */}
       <Box
+        id="brief-template"
         component="section"
         sx={{
           py: { xs: 10, md: 16 },
@@ -869,6 +827,7 @@ export default function ContactPageClient() {
                   mb: 2.5,
                 }}
               >
+                <AssignmentOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
                 <Typography
                   sx={{
                     fontSize: "0.75rem",
@@ -878,28 +837,30 @@ export default function ContactPageClient() {
                     color: "#EA580C",
                   }}
                 >
-                  FRICTIONLESS ONBOARDING
+                  DIRECT EMAIL BRIEF
                 </Typography>
               </Box>
 
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "2rem", md: "2.8rem" },
+                  fontSize: { xs: "1.55rem", sm: "2rem", md: "2.4rem" },
                   fontWeight: 600,
                   letterSpacing: "-0.03em",
                   color: "#18181B",
-                  lineHeight: 1.15,
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  textWrap: "balance",
                   mb: 2.5,
                 }}
               >
-                Not sure what to write? <br />
+                Not sure what to write?{" "}
                 <Box
                   component="span"
                   sx={{
                     background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
+                    display: "inline",
                   }}
                 >
                   Use our 1-click project brief.
@@ -914,8 +875,8 @@ export default function ContactPageClient() {
                   mb: 3.5,
                 }}
               >
-                Instead of forcing you through a restrictive 20-question form, copy this structured
-                template directly into your email or WhatsApp message. It gives us exactly what we need
+                Instead of filling out repetitive online forms, copy this structured
+                template directly into your email. It gives us exactly what we need
                 to run a senior feasibility diagnosis.
               </Typography>
 
@@ -1091,288 +1052,16 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 4. OPTIONAL INTERACTIVE ARCHITECTURE SCOPING FORM */}
-      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FFFFFF" }}>
-        <Container maxWidth="lg">
-          <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
-            <Box
-              sx={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 1,
-                px: 2,
-                py: 0.6,
-                borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2,
-              }}
-            >
-              <TuneOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-              <Typography
-                sx={{
-                  fontSize: "0.75rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase",
-                  color: "#EA580C",
-                }}
-              >
-                INTERACTIVE SCOPE INTAKE
-              </Typography>
-            </Box>
-
-            <Typography
-              variant="h2"
-              sx={{
-                fontSize: { xs: "2rem", sm: "2.75rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
-                mb: 2,
-              }}
-            >
-              Prefer submitting directly on this page?
-            </Typography>
-            <Typography sx={{ fontSize: "1.05rem", color: "#52525B" }}>
-              Select your requirements below. This sends structured scope parameters directly to our senior engineering queue.
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              maxWidth: 880,
-              mx: "auto",
-              bgcolor: "#FAF8F5",
-              borderRadius: "28px",
-              p: { xs: 3.5, sm: 6 },
-              border: "1px solid rgba(228, 228, 231, 0.9)",
-              boxShadow: "0 16px 40px rgba(24, 24, 27, 0.04)",
-            }}
-          >
-            {formSubmitted ? (
-              <Box sx={{ py: 6, textAlign: "center" }}>
-                <Box
-                  sx={{
-                    width: 64,
-                    height: 64,
-                    borderRadius: "50%",
-                    bgcolor: "rgba(234, 88, 12, 0.1)",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    mb: 2.5,
-                  }}
-                >
-                  <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 36 }} />
-                </Box>
-                <Typography variant="h3" sx={{ fontSize: "1.8rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
-                  Scope Request Dispatched.
-                </Typography>
-                <Typography sx={{ color: "#52525B", maxWidth: 520, mx: "auto", mb: 4, lineHeight: 1.75 }}>
-                  Thank you, <strong>{name || "there"}</strong>. Your technical parameters have been routed directly to our
-                  senior systems engineer. Expect a response with 2–3 clarifying questions within 24 business hours.
-                </Typography>
-                <Button
-                  onClick={() => setFormSubmitted(false)}
-                  variant="outlined"
-                  sx={{
-                    color: "#18181B",
-                    borderColor: "rgba(24, 24, 27, 0.2)",
-                    borderRadius: "9999px",
-                    px: 3,
-                    fontWeight: 600,
-                  }}
-                >
-                  Submit Another Scope
-                </Button>
-              </Box>
-            ) : (
-              <form onSubmit={handleFormSubmit}>
-                {/* Step 1: Friction Area */}
-                <Box sx={{ mb: 4.5 }}>
-                  <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em", textTransform: "uppercase", mb: 1 }}>
-                    1. Primary Area of Focus
-                  </Typography>
-                  <Typography sx={{ fontSize: "1.1rem", fontWeight: 600, color: "#18181B", mb: 2 }}>
-                    What system are you looking to engineer?
-                  </Typography>
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.2 }}>
-                    {improvementOptions.map((opt) => {
-                      const isSelected = selectedImprovement.includes(opt);
-                      return (
-                        <Box
-                          key={opt}
-                          onClick={() => toggleImprovement(opt)}
-                          sx={{
-                            px: 2.2,
-                            py: 1,
-                            borderRadius: "9999px",
-                            cursor: "pointer",
-                            fontSize: "0.85rem",
-                            fontWeight: 600,
-                            bgcolor: isSelected ? "#18181B" : "#FFFFFF",
-                            color: isSelected ? "#FB923C" : "#52525B",
-                            border: isSelected ? "1px solid #EA580C" : "1px solid rgba(228, 228, 231, 0.9)",
-                            transition: "all 0.2s ease",
-                            "&:hover": {
-                              borderColor: "#EA580C",
-                            },
-                          }}
-                        >
-                          {opt} {isSelected && "✓"}
-                        </Box>
-                      );
-                    })}
-                  </Box>
-                </Box>
-
-                {/* Step 2: Current Tools */}
-                <Box sx={{ mb: 4.5 }}>
-                  <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em", textTransform: "uppercase", mb: 1 }}>
-                    2. Current Workflow
-                  </Typography>
-                  <Typography sx={{ fontSize: "1.1rem", fontWeight: 600, color: "#18181B", mb: 2 }}>
-                    How is this work currently handled in your team?
-                  </Typography>
-                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.2 }}>
-                    {currentManagementOptions.map((opt) => {
-                      const isSelected = selectedManagement.includes(opt);
-                      return (
-                        <Box
-                          key={opt}
-                          onClick={() => toggleManagement(opt)}
-                          sx={{
-                            px: 2.2,
-                            py: 1,
-                            borderRadius: "9999px",
-                            cursor: "pointer",
-                            fontSize: "0.85rem",
-                            fontWeight: 600,
-                            bgcolor: isSelected ? "#18181B" : "#FFFFFF",
-                            color: isSelected ? "#FB923C" : "#52525B",
-                            border: isSelected ? "1px solid #EA580C" : "1px solid rgba(228, 228, 231, 0.9)",
-                            transition: "all 0.2s ease",
-                            "&:hover": {
-                              borderColor: "#EA580C",
-                            },
-                          }}
-                        >
-                          {opt} {isSelected && "✓"}
-                        </Box>
-                      );
-                    })}
-                  </Box>
-                </Box>
-
-                {/* Step 3: Contact Inputs */}
-                <Box sx={{ mb: 4 }}>
-                  <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em", textTransform: "uppercase", mb: 1 }}>
-                    3. Your Details
-                  </Typography>
-                  <Typography sx={{ fontSize: "1.1rem", fontWeight: 600, color: "#18181B", mb: 2.5 }}>
-                    Where should we send our architectural response?
-                  </Typography>
-
-                  <Grid container spacing={2.5}>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <TextField
-                        required
-                        fullWidth
-                        label="Your Name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        variant="outlined"
-                        sx={{ bgcolor: "#FFFFFF", borderRadius: "10px" }}
-                      />
-                    </Grid>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <TextField
-                        required
-                        fullWidth
-                        type="email"
-                        label="Work Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        variant="outlined"
-                        sx={{ bgcolor: "#FFFFFF", borderRadius: "10px" }}
-                      />
-                    </Grid>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <TextField
-                        fullWidth
-                        label="Company / Business Name"
-                        value={company}
-                        onChange={(e) => setCompany(e.target.value)}
-                        variant="outlined"
-                        sx={{ bgcolor: "#FFFFFF", borderRadius: "10px" }}
-                      />
-                    </Grid>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <TextField
-                        fullWidth
-                        label="Phone / WhatsApp (Optional)"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        variant="outlined"
-                        sx={{ bgcolor: "#FFFFFF", borderRadius: "10px" }}
-                      />
-                    </Grid>
-                    <Grid size={{ xs: 12 }}>
-                      <TextField
-                        fullWidth
-                        multiline
-                        rows={3}
-                        label="Brief Overview of the Bottleneck (Optional)"
-                        placeholder="Tell us what is causing friction or what features you need..."
-                        value={details}
-                        onChange={(e) => setDetails(e.target.value)}
-                        variant="outlined"
-                        sx={{ bgcolor: "#FFFFFF", borderRadius: "10px" }}
-                      />
-                    </Grid>
-                  </Grid>
-                </Box>
-
-                <Button
-                  type="submit"
-                  variant="contained"
-                  size="large"
-                  endIcon={<SendOutlinedIcon />}
-                  sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                    color: "#FFFFFF",
-                    px: 4.5,
-                    py: 1.6,
-                    fontSize: "0.95rem",
-                    fontWeight: 700,
-                    borderRadius: "9999px",
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
-                    "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                      transform: "translateY(-2px)",
-                    },
-                  }}
-                >
-                  Dispatch Scope to Engineering Lead
-                </Button>
-              </form>
-            )}
-          </Box>
-        </Container>
-      </Box>
-
-      {/* 5. TRANSPARENT TURNAROUND PROTOCOL (4-Stage Process) */}
+      {/* 4. TRANSPARENT TURNAROUND PROTOCOL (4-Stage Process) */}
       <Box
         component="section"
         sx={{
           py: { xs: 10, md: 16 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#FFFFFF",
         }}
       >
         <Container maxWidth="xl">
-          <Box sx={{ textAlign: "center", maxWidth: 760, mx: "auto", mb: { xs: 6, md: 9 } }}>
+          <Box sx={{ textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto", mb: { xs: 6, md: 9 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -1402,9 +1091,13 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", md: "2.75rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                textWrap: "balance",
+                mx: "auto",
                 color: "#18181B",
                 mb: 2,
               }}
@@ -1424,13 +1117,18 @@ export default function ContactPageClient() {
                   sx={{
                     p: 3.5,
                     borderRadius: "20px",
-                    bgcolor: "#FFFFFF",
+                    bgcolor: "#FAF8F5",
                     border: "1px solid rgba(228, 228, 231, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     position: "relative",
                     boxShadow: "0 4px 16px rgba(24, 24, 27, 0.02)",
+                    transition: "all 0.25s ease",
+                    "&:hover": {
+                      transform: "translateY(-3px)",
+                      borderColor: "#EA580C",
+                    },
                   }}
                 >
                   <Typography
@@ -1482,7 +1180,7 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 6. STUDIO GUARANTEES (Home Page Dark Zinc Luxury Container) */}
+      {/* 5. STUDIO GUARANTEES (Home Page Dark Zinc Luxury Container) */}
       <Box
         component="section"
         sx={{
@@ -1508,7 +1206,7 @@ export default function ContactPageClient() {
         />
 
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
-          <Box sx={{ textAlign: "center", maxWidth: 740, mx: "auto", mb: { xs: 6, md: 8 } }}>
+          <Box sx={{ textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto", mb: { xs: 6, md: 8 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -1539,9 +1237,13 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", md: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                textWrap: "balance",
+                mx: "auto",
                 color: "#FFFFFF",
               }}
             >
@@ -1632,10 +1334,10 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 7. FREQUENTLY ASKED QUESTIONS */}
+      {/* 6. FREQUENTLY ASKED QUESTIONS */}
       <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FFFFFF" }}>
         <Container maxWidth="md">
-          <Box sx={{ textAlign: "center", mb: 6 }}>
+          <Box sx={{ textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto", mb: 6 }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -1665,9 +1367,13 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", md: "2.6rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                textWrap: "balance",
+                mx: "auto",
                 color: "#18181B",
               }}
             >
@@ -1718,7 +1424,7 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 8. SOCIAL & EXPLORATION FOOTER */}
+      {/* 7. SOCIAL & EXPLORATION FOOTER */}
       <Box
         component="section"
         sx={{
@@ -1833,7 +1539,7 @@ export default function ContactPageClient() {
                 </Typography>
 
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
-                  <Link href="/portfolio" style={{ textDecoration: "none" }}>
+                  <Link href="/work" style={{ textDecoration: "none" }}>
                     <Button
                       fullWidth
                       variant="text"
@@ -1858,7 +1564,7 @@ export default function ContactPageClient() {
                     </Button>
                   </Link>
 
-                  <Link href="/solutions" style={{ textDecoration: "none" }}>
+                  <Link href="/services" style={{ textDecoration: "none" }}>
                     <Button
                       fullWidth
                       variant="text"
@@ -1879,7 +1585,7 @@ export default function ContactPageClient() {
                         },
                       }}
                     >
-                      Explore 4 Solution Engines
+                      Explore Our Engineering Services
                     </Button>
                   </Link>
                 </Box>

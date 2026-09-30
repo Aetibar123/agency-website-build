@@ -144,7 +144,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         sx={{
           pt: { xs: 14, sm: 16, md: 20 },
           pb: { xs: 8, md: 12 },
-          bgcolor: "#FAF8F5",
+          bgcolor: "#FAFAFA",
           borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
           position: "relative",
           overflow: "hidden",
@@ -210,11 +210,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.1rem", sm: "3rem", md: "3.6rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 700,
                 color: "#18181B",
-                lineHeight: { xs: 1.2, md: 1.15 },
+                lineHeight: { xs: 1.25, md: 1.18 },
                 letterSpacing: "-0.03em",
+                maxWidth: { xs: "100%", md: 1000, lg: 1100 },
+                mx: "auto",
+                textWrap: "balance",
                 mb: 2.5,
               }}
             >
@@ -387,7 +390,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3.5, sm: 4.5 },
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#FAFAFA",
                     border: "1px solid rgba(228, 228, 231, 0.9)",
                     height: "100%",
                     display: "flex",
@@ -415,7 +418,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3.5, sm: 4.5 },
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#FAFAFA",
                     border: "1px solid rgba(228, 228, 231, 0.9)",
                     height: "100%",
                     display: "flex",
@@ -463,7 +466,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 3. SECTION 3: THE SITUATION BEFORE                                        */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAF8F5", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -596,7 +599,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "18px",
-                  bgcolor: "#FAF8F5",
+                  bgcolor: "#FAFAFA",
                   border: "1px solid rgba(228, 228, 231, 0.9)",
                   height: "100%",
                 }}
@@ -622,7 +625,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "18px",
-                  bgcolor: "#FAF8F5",
+                  bgcolor: "#FAFAFA",
                   border: "1px solid rgba(228, 228, 231, 0.9)",
                   height: "100%",
                 }}
@@ -648,7 +651,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "18px",
-                  bgcolor: "#FAF8F5",
+                  bgcolor: "#FAFAFA",
                   border: "1px solid rgba(249, 115, 22, 0.3)",
                   height: "100%",
                 }}
@@ -674,7 +677,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 5. SECTION 5: WHAT WE BUILT                                               */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAF8F5", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -821,7 +824,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "16px",
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#FAFAFA",
                     border: "1px solid rgba(228, 228, 231, 0.9)",
                     height: "100%",
                     display: "flex",
@@ -854,7 +857,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 7. SECTION 7: BEFORE VS AFTER                                             */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAF8F5", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -1034,7 +1037,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "18px",
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#FAFAFA",
                     border: "1px solid rgba(228, 228, 231, 0.9)",
                     height: "100%",
                   }}
@@ -1058,7 +1061,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 9. SECTION 9: PROJECT OUTCOME                                             */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAF8F5", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -1154,7 +1157,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   key={idx}
                   label={tech}
                   sx={{
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#FAFAFA",
                     color: "#27272A",
                     fontSize: "0.85rem",
                     fontWeight: 600,
@@ -1173,7 +1176,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 11. SECTION 11: RELATED SERVICES                                          */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 12 }, bgcolor: "#FAF8F5", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 12 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center" }}>
             <Box

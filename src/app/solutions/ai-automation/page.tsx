@@ -179,11 +179,13 @@ export default function AiAutomationPage() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.4rem", sm: "3.4rem", md: "4.2rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.15, md: 1.08 },
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                 mb: 3,
               }}
             >
@@ -191,6 +193,7 @@ export default function AiAutomationPage() {
               <Box
                 component="span"
                 sx={{
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
@@ -341,10 +344,14 @@ export default function AiAutomationPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >
@@ -463,10 +470,14 @@ export default function AiAutomationPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                mx: "auto",
                 mb: 2,
               }}
             >

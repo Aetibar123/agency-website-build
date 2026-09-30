@@ -34,7 +34,7 @@ export default function PerksSection() {
     <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: '#ffffff' }}>
       <Container maxWidth="xl">
         <Box sx={{ textAlign: 'center', mb: 10 }}>
-          <Typography variant="h2" sx={{ color: '#0B0F19', mb: 3, fontWeight: 900, fontSize: { xs: '2rem', md: '3rem' }, letterSpacing: '-0.02em' }}>
+          <Typography variant="h2" sx={{ color: '#0B0F19', mb: 3, fontWeight: 900, fontSize: { xs: '1.55rem', sm: '2.15rem', md: '2.65rem', lg: '3rem' }, letterSpacing: '-0.02em', lineHeight: { xs: 1.18, md: 1.2 }, textWrap: 'balance' }}>
             Why Aetibar?
           </Typography>
           <Typography variant="body1" sx={{ color: '#666', maxWidth: 600, mx: 'auto', fontSize: { xs: '1rem', md: '1.15rem' }, lineHeight: 1.9 }}>

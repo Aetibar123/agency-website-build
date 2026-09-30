@@ -5,9 +5,9 @@ import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "AI Automation | Custom AI Solutions & Automation | Aetibar",
+  title: "AI Automation & System Integration Services for Businesses | Aetibar",
   description:
-    "Automate repetitive business processes with Aetibar's AI automation services. Build intelligent workflows that save time, reduce errors and improve efficiency.",
+    "Automate repetitive daily office tasks and connect your business tools with practical AI workflow automation. Eliminate manual data entry and route leads to WhatsApp instantly.",
   keywords: [
     "AI Automation Services",
     "Business Process Automation",
@@ -79,187 +79,179 @@ export default function AiAutomationServicePage() {
       />
       <ServicePageLayout
         badge="AI &amp; Workflow Automation"
-        title="AI Automation & Integration Services for Businesses"
-        tagline="Practical automation that eliminates repetitive data entry, connects your software, and speeds up customer response."
-        description="Most businesses do not need confusing, expensive AI experiments—they need practical solutions that stop leads from getting lost, eliminate hours of manual copy-pasting between spreadsheets, and automate repetitive office tasks. We build reliable workflow automations and targeted AI integrations that connect your existing business tools, always keeping human review and strict data security in place."
+        title="AI Automation & System Integration —"
+        titleHighlight="Eliminate Boring Busywork."
+        tagline="Practical automation that connects your software, routes new leads in seconds, and saves your team 10+ hours of manual data entry every week."
+        description="Most businesses do not need confusing, expensive AI experiments—they need practical tools that stop customer inquiries from getting lost, eliminate hours of manual copy-pasting between spreadsheets, and automate repetitive office chores. We connect your website, WhatsApp, email, and billing software so everything runs smoothly, with a human always in control."
         icon={<SmartToyOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />}
         whoIsItFor={[
           {
             title: "Sales & Support Teams",
-            desc: "Teams receiving customer inquiries across WhatsApp, email, and website forms who need a single centralized pipeline with instant alerts and draft response assistance.",
+            desc: "Teams receiving customer inquiries across WhatsApp, email, and website forms who want every lead organized in one place with instant phone alerts.",
           },
           {
-            title: "Invoice & Document Operations",
-            desc: "Companies processing dozens of vendor bills, purchase orders, delivery notes, or customer applications that want structured data extracted automatically into clean spreadsheets.",
+            title: "Offices Processing Invoices",
+            desc: "Companies dealing with dozens of vendor bills, receipts, or PDF order forms who want line-item data typed into Excel automatically.",
           },
           {
-            title: "Teams with Disconnected Tools",
-            desc: "Organizations using separate software for accounting, customer records, inventory, and messaging that currently require employees to manually retype data between them.",
+            title: "Teams Juggling Disconnected Tools",
+            desc: "Businesses using separate tools for accounting, inventory, WhatsApp, and email where staff spend hours retyping data back and forth.",
           },
           {
-            title: "Operations & Business Leaders",
-            desc: "Business leaders looking to eliminate repetitive quotation drafting and administrative bottlenecks, saving 15+ employee hours every week for core business growth.",
+            title: "Owners Wanting to Free Up Time",
+            desc: "Founders and managers who want their staff focused on closing deals and talking to customers instead of filing routine paperwork.",
           },
         ]}
         problemsAddressed={[
           {
-            problem: "Customer inquiries sitting unaddressed across multiple inboxes for hours",
+            problem: "Customer inquiries sit unanswered for hours because nobody noticed them",
             howWeHelp:
-              "Prospective clients often reach out to several providers and buy from the one that answers first. We build automated lead capture workflows that immediately parse new inquiries, categorize urgency, alert the right staff member via WhatsApp, and prepare instant confirmation messages.",
+              "When a customer asks for a quote, they contact several companies and buy from whoever answers first. We build automated lead workflows that ping your phone via WhatsApp immediately, categorize the request, and draft a quick confirmation so you never miss a sale.",
           },
           {
-            problem: "Fear of AI making embarrassing mistakes or giving wrong pricing to clients",
+            problem: "Worry that AI will say something embarrassing or give the wrong price",
             howWeHelp:
-              "We follow a strict 'human-in-the-loop' framework: AI is never permitted to send unverified messages directly to customers. Instead, it prepares intelligent drafts based strictly on your official documents, leaving final review and one-click sending to your qualified team members.",
+              "We never let an unsupervised bot talk to your clients. Our automations prepare smart suggested replies based strictly on your official price lists and FAQs. A human on your team does a quick 1-second review and clicks send.",
           },
           {
-            problem: "Hours wasted every day manually copy-pasting data between spreadsheets and CRM",
+            problem: "Wasting 2 to 3 hours every day copy-pasting data between spreadsheets",
             howWeHelp:
-              "We build custom, automated bridges between your forms, spreadsheets, email inboxes, and accounting software. When a new order, payment, or inquiry happens, all systems update automatically without human intervention.",
+              "We connect your forms, Google Sheets, WhatsApp, and accounting tools together. When an order or payment comes in, every spreadsheet and ledger updates automatically in the background.",
           },
           {
-            problem: "Overpriced enterprise software and concerns about proprietary data privacy",
+            problem: "Expensive software subscriptions and concerns about company data privacy",
             howWeHelp:
-              "Instead of expensive enterprise platforms, we connect the software you already use (Google Sheets, WhatsApp, Gmail, Tally, Zoho) using lightweight custom connectors with strict enterprise privacy guarantees—your data is never used to train public models.",
+              "Instead of forcing you onto expensive enterprise software, we connect the tools you already use (Google Sheets, WhatsApp, Gmail, Tally, Zoho). Your company numbers and client contacts stay 100% private and are never shared.",
           },
         ]}
         deliverables={[
           {
-            title: "Automated Lead Capture & Instant Inquiry Triage",
-            desc: "Centralizing leads from website forms, WhatsApp chats, and emails into a single manageable pipeline with instant routing.",
+            title: "Instant Lead Alerts on WhatsApp & Email",
+            desc: "Centralize every website inquiry, form submission, and message into one clean spreadsheet with instant notifications to your phone.",
             items: [
-              "Instant lead parsing and classification by service type and urgency",
-              "Automated WhatsApp and email alerts sent directly to sales reps",
-              "Pre-drafted customer greeting messages and appointment links",
-              "Centralized Google Sheets or CRM lead tracking table",
+              "Instant lead alerts sent to your sales team's WhatsApp and phone",
+              "Auto-organizes leads into a shared Google Sheet or simple CRM",
+              "Pre-drafts quick friendly greetings and appointment booking links",
+              "Tags urgent inquiries so high-value clients are handled first",
             ],
           },
           {
-            title: "Routine Business Process & Workflow Automation",
-            desc: "Automating repetitive multi-step operational tasks across your business software without requiring human data entry.",
+            title: "Automatic PDF & Invoice Data Extraction",
+            desc: "Turn messy vendor bills, delivery notes, and purchase orders into clean, organized spreadsheet rows without manual typing.",
             items: [
-              "Automated customer confirmation emails and order milestone updates",
-              "Cross-platform data synchronization between billing and operations",
-              "Scheduled automated status reports delivered to company management",
-              "Fail-safe error logging with automatic retry mechanisms",
+              "Automatically extracts bill numbers, vendor names, dates, and amounts",
+              "Works on scanned PDFs, camera photos of receipts, and email attachments",
+              "Direct export into organized Google Sheets or Excel files",
+              "Flags any missing numbers or discrepancies for quick human review",
             ],
           },
           {
-            title: "AI-Powered Document & Invoice Data Processing",
-            desc: "Extracting critical business information from PDFs, scanned receipts, and invoices into organized spreadsheets and database records.",
+            title: "Connecting Everyday Business Software (APIs)",
+            desc: "Make your existing business tools talk to each other so information moves automatically between systems.",
             items: [
-              "Automatic line-item, tax, date, and vendor extraction from PDF invoices",
-              "Customer onboarding form processing and field verification",
-              "Direct export into organized Google Sheets or accounting databases",
-              "Flagging of discrepancies or missing fields for human inspection",
+              "Official WhatsApp Business messaging integration",
+              "Payment gateway alerts (Razorpay, Stripe, UPI payments)",
+              "Syncing website forms with Google Sheets, Gmail, and Tally/Zoho",
+              "Prevents duplicate customer entries and misplaced records",
             ],
           },
           {
-            title: "Internal Knowledge Search & Smart Support Drafting",
-            desc: "Equipping your customer support team with instant answers derived strictly from your verified company documents.",
+            title: "Smart Customer Support Drafting",
+            desc: "Equip your customer support staff with instant, verified answers drafted strictly from your company's own price lists and FAQs.",
             items: [
-              "Private knowledge base search across company manuals and FAQs",
-              "Assisted response drafts prepared for team review in seconds",
-              "Strict guardrails preventing the generation of unauthorized info",
-              "Consistent, professional brand tone across all customer communications",
+              "Private search across your official company manuals, policies, and prices",
+              "Drafts friendly answers for your team to review and send in one tap",
+              "Strict rules prevent the system from ever guessing or inventing info",
+              "Ensures consistent, polite answers across all your staff members",
             ],
           },
           {
-            title: "Software System & Third-Party API Integrations",
-            desc: "Connecting your business tools together so information moves automatically between platforms without manual export/import.",
+            title: "Automated Daily & Weekly Business Reports",
+            desc: "Receive clear summary reports delivered straight to your WhatsApp or inbox every evening without compiling sheets.",
             items: [
-              "Official WhatsApp Cloud API messaging integration",
-              "Payment gateway webhook synchronization (Razorpay, Stripe)",
-              "CRM integrations (Zoho, HubSpot, Google Workspace, custom DBs)",
-              "End-to-end data validation to prevent duplicate entries",
+              "Daily inquiry, sales, and completed job summaries",
+              "Automated weekly performance roundups for management",
+              "Instant alerts if any connection goes down or needs attention",
+              "Zero manual number-crunching needed at the end of the day",
             ],
           },
         ]}
         benefits={[
           {
-            title: "Reclaim 10+ Hours per Week of Employee Time",
-            desc: "Eliminating manual data transfer, document scanning, and status checking allows your staff to focus on customer relationships and core business tasks.",
+            title: "Save 10+ Hours of Busywork Every Week",
+            desc: "Free your team from repetitive spreadsheet typing so they can spend their time talking to customers and generating revenue.",
           },
           {
-            title: "Cut Customer Response Time to Seconds",
-            desc: "Inquiries are routed and pre-drafted immediately upon receipt, allowing your team to respond to potential clients before your competitors even open the email.",
+            title: "Reply to Potential Clients in Seconds",
+            desc: "Answer inquiries while they are still warm on your website, drastically increasing your chances of winning the project.",
           },
           {
-            title: "Eliminate Human Data Entry Mistakes",
-            desc: "Automated data flow between forms, spreadsheets, and databases removes typographical errors, misplaced phone numbers, and lost customer orders.",
+            title: "Zero Typos and Zero Lost Leads",
+            desc: "When computers move the data between forms and sheets, misplaced phone numbers and spelling errors vanish completely.",
           },
           {
-            title: "100% Control with Human Review & Strict Privacy",
-            desc: "You never have to worry about an AI bot saying the wrong thing. Your team stays in command, and your private company data is never used to train public machine learning models.",
+            title: "You Stay in 100% Control with Strict Privacy",
+            desc: "No rogue bots, no surprise bills, and your private company financial figures are never used to train public AI models.",
           },
         ]}
         processSteps={[
           {
             num: "01",
-            title: "Bottleneck & Workflow Audit",
-            desc: "We analyze your team's day-to-day routine, identifying repetitive tasks, spreadsheet copy-pasting, and communication delays where automation will provide immediate ROI.",
+            title: "Spot the Bottlenecks",
+            desc: "We look at your team's daily routine to identify which tasks, copy-pasting, and spreadsheet chores eat up the most time.",
           },
           {
             num: "02",
-            title: "Process Mapping & Guardrail Design",
-            desc: "We design the step-by-step automated workflow, define exact business rules, establish human review checkpoints, and ensure data privacy protections.",
+            title: "Map the Simple Workflow",
+            desc: "We design a clear step-by-step automation map, set up safety checks, and make sure a human stays in control.",
           },
           {
             num: "03",
-            title: "Connector & Automation Build",
-            desc: "We configure the APIs, connectors, and parsing logic, integrating your existing tools (email, WhatsApp, spreadsheets, CRM) into a unified system.",
+            title: "Connect Your Tools",
+            desc: "We connect your everyday tools—like WhatsApp, Google Sheets, Gmail, and CRM—using secure, reliable links.",
           },
           {
             num: "04",
-            title: "Testing with Real-World Data",
-            desc: "We run the automated flow on sample historical inquiries and documents in a test environment to verify accuracy and ensure error-free data formatting.",
+            title: "Test with Real Data",
+            desc: "We run test inquiries and sample invoices through the system to guarantee 100% accuracy and zero glitches.",
           },
           {
             num: "05",
-            title: "Live Deployment & Staff Onboarding",
-            desc: "We launch the automations, conduct a walkthrough session with your team, and provide simple operating guidelines and monitoring support.",
+            title: "Go Live & Show Your Team",
+            desc: "We launch the automation, show your team how easy it is to use in a 15-minute walkthrough, and provide ongoing support.",
           },
         ]}
         relevantProjects={relevantProjects}
         faqs={[
           {
-            question: "Does our business actually need AI, or is simple automation enough?",
+            question: "Does my business actually need AI, or is simple automation enough?",
             answer:
-              "In many cases, simple, robust automation (like connecting a form directly to WhatsApp or Google Sheets) is all you need. We only introduce AI when unstructured data needs interpretation—such as extracting data from messy PDF invoices or drafting replies to complex customer inquiries. If a simpler rule-based automation solves your problem, we will always recommend that first.",
+              "In many cases, simple automation (like sending a website form directly to your WhatsApp and Google Sheets) is all you need! We only add AI when unstructured information needs reading—like extracting text from a photo of an invoice. If a simple, cheaper rule solves your problem, we will always recommend that first.",
           },
           {
-            question: "Could an AI automated system say something incorrect or offensive to our clients?",
+            question: "Can the system say something wrong or offensive to my customers?",
             answer:
-              "We eliminate this risk by implementing a 'human-in-the-loop' framework. We do not set up fully autonomous AI agents that converse with customers unsupervised. Instead, the AI prepares an intelligent draft based strictly on your verified price lists and FAQs. A member of your team reviews the draft, makes any adjustments if needed, and clicks send.",
+              "No! We never build unsupervised bots that converse freely with clients. The system simply prepares a suggested draft based on your verified price list. A human on your team glances at it, makes any tweaks if needed, and clicks send.",
           },
           {
-            question: "Is our proprietary business and customer data kept private?",
+            question: "Is our company data kept private and confidential?",
             answer:
-              "Yes. We configure all AI integrations using secure enterprise APIs that legally guarantee your company data will not be used to train public machine learning models. Your client contact information and financial figures remain strictly confidential.",
+              "Yes, absolutely. We use secure enterprise connections that legally guarantee your company data, client phone numbers, and financial details are never shared or used to train public AI models.",
           },
           {
-            question: "Can you connect the software tools we already use, like WhatsApp and Excel?",
+            question: "Can you connect with tools we already use, like WhatsApp and Excel?",
             answer:
-              "Yes. Our goal is to connect the tools you already rely on every day—including Google Sheets, Excel, WhatsApp Business, Gmail, Outlook, Tally, Zoho, and Razorpay—so your staff doesn't have to learn complicated new software.",
+              "Yes! The whole point is to connect what you already use every day—Google Sheets, WhatsApp Business, Gmail, Outlook, Tally, Zoho, and Razorpay—so your staff doesn't have to learn complicated new software.",
           },
           {
-            question: "How long does it take to implement a custom automation workflow?",
+            question: "How long does it take to set up an automation?",
             answer:
-              "Targeted lead routing automations (such as sending web inquiries to WhatsApp and Google Sheets) can typically be completed in 1 to 2 weeks. More complex workflows involving PDF document extraction or multi-system synchronization generally take 3 to 5 weeks.",
-          },
-          {
-            question: "What happens if an API or software tool changes in the future?",
-            answer:
-              "We engineer automations with comprehensive error logging and failure alerts. If a third-party service updates their connection or temporarily goes down, the system queues pending items and alerts our team so nothing is lost.",
-          },
-          {
-            question: "What is the return on investment (ROI) of business process automation?",
-            answer:
-              "Most businesses save between 10 to 25 staff hours every week by eliminating manual data entry, inquiry forwarding, and status checking. In addition, responding to customer inquiries in minutes rather than hours directly increases closing rates on new business leads.",
+              "Simple automations (like routing web leads to WhatsApp and Google Sheets) take just 1 to 2 weeks. Workflows involving PDF invoice reading or multiple office systems usually take 3 to 4 weeks.",
           },
         ]}
-        ctaTitle="Ready to Automate Repetitive Work in Your Business?"
-        ctaDescription="Tell us about the manual tasks, spreadsheet copy-pasting, or disconnected tools slowing your team down. We'll outline practical, cost-effective automation options."
+        ctaTitle="Ready to Automate Repetitive Work in"
+        ctaTitleHighlight="Your Business?"
+        ctaDescription="Tell us about the manual tasks, spreadsheet copy-pasting, or disconnected software slowing your team down. We'll outline practical, cost-effective automation options."
       />
     </main>
   );

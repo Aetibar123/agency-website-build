@@ -8,7 +8,7 @@ export default function OpeningsSection() {
   return (
     <Box sx={{ py: { xs: 12, md: 15 }, bgcolor: '#fcfcfc' }}>
       <Container maxWidth="md">
-        <Typography variant="h3" sx={{ color: '#0B0F19', mb: 6, fontWeight: 900, letterSpacing: '-0.02em', textAlign: 'center', fontSize: { xs: '2rem', md: '3rem' } }}>
+        <Typography variant="h3" sx={{ color: '#0B0F19', mb: 6, fontWeight: 900, letterSpacing: '-0.02em', textAlign: 'center', fontSize: { xs: '1.55rem', sm: '2.15rem', md: '2.65rem', lg: '3rem' }, lineHeight: { xs: 1.18, md: 1.2 }, textWrap: 'balance' }}>
           Open Positions
         </Typography>
 

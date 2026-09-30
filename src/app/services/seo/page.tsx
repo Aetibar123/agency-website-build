@@ -5,9 +5,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "SEO Services for Businesses | Aetibar",
+  title: "SEO Services for Businesses | Search Engine Optimization | Aetibar",
   description:
-    "Grow your organic visibility with Aetibar's SEO services, including technical SEO, keyword research, on-page optimization, content and local SEO.",
+    "Grow your organic visibility and rank high on Google with Aetibar's SEO services. Honest technical SEO, keyword optimization, and Google Maps ranking to win local buyers.",
   keywords: [
     "SEO Services",
     "Search Engine Optimization Services",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     canonical: "https://www.aetibar.in/services/seo",
   },
   openGraph: {
-    title: "Search Engine Optimization (SEO) Services for Businesses | Aetibar",
+    title: "SEO Services for Businesses | Aetibar",
     description:
-      "Technical SEO audits, on-page optimization, and local search improvements to help your business gain sustainable visibility on Google.",
+      "Grow your organic Google search rankings with honest, data-driven SEO services. Technical SEO, on-page optimization, and local search visibility.",
     url: "https://www.aetibar.in/services/seo",
     siteName: "Aetibar",
     type: "website",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Search Engine Optimization (SEO) Services for Businesses | Aetibar",
+    title: "SEO Services for Businesses | Aetibar",
     description:
-      "Technical SEO, on-page optimization, and structured search improvements to grow your organic visibility on Google.",
+      "Honest, technical search engine optimization that connects your website with paying clients on Google.",
     creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
@@ -55,14 +55,14 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Search Engine Optimization (SEO) Services for Businesses",
+  name: "SEO Services for Businesses",
   provider: {
     "@type": "Organization",
     name: "Aetibar",
     url: "https://www.aetibar.in",
   },
   description:
-    "Technical SEO audits, on-page content optimization, local search enhancement, and search performance reporting for growing businesses.",
+    "Search engine optimization services including technical crawl audits, on-page optimization, local Google Business Profile ranking, and keyword research.",
   url: "https://www.aetibar.in/services/seo",
 };
 
@@ -79,197 +79,174 @@ export default function SeoServicePage() {
       />
       <ServicePageLayout
         badge="Search Engine Optimization"
-        title="SEO Services to Grow Your Organic Website Visibility"
-        tagline="Honest, data-driven search engine optimization that connects your business with customers actively looking for your services on Google."
-        description="Search engine optimization is not about secret tricks, keyword stuffing, or impossible overnight guarantees. It is about ensuring Google and other search engines can crawl, index, and understand your website—and that your pages provide clear, trustworthy answers when prospective clients search for the services you offer. We provide transparent technical SEO, on-page optimization, and local search improvements."
+        title="SEO Services for Businesses —"
+        titleHighlight="Rank High on Google Without Paying for Clicks."
+        tagline="Honest, practical search engine optimization that connects your website with local customers actively searching for your services."
+        description="Search engine optimization isn't about secret tricks, keyword spam, or overnight guarantees. It's about making sure Google can easily read and trust your website, and that your pages answer the exact questions prospective clients search for when looking to hire. We fix technical errors, speed up your pages, and help your business show up at the top of Google Search and Google Maps."
         icon={<SearchIcon sx={{ fontSize: 20, color: "#EA580C" }} />}
         whoIsItFor={[
           {
-            title: "Service Businesses & B2B Companies",
-            desc: "Companies wanting a steady, predictable flow of qualified customer inquiries directly from Google Search without relying solely on recurring monthly ad spend.",
+            title: "Local Businesses & Clinics",
+            desc: "You want people in your city or neighborhood to find you on Google Maps and call your phone when searching for what you do.",
           },
           {
-            title: "Local & Regional Service Providers",
-            desc: "Businesses serving specific cities or geographical territories who need prominent Google Maps visibility and Local Business Profile optimization to capture nearby clients.",
+            title: "B2B Companies & Providers",
+            desc: "You want a steady stream of incoming quote inquiries every month without having to rely solely on expensive daily ad spend.",
           },
           {
-            title: "Websites Launching or Undergoing Redesign",
-            desc: "Companies launching a new site or redesigning an existing one who must protect established search equity, preserve backlink authority, and ensure error-free indexing.",
+            title: "Websites Launching or Redesigning",
+            desc: "You are launching or updating your website and want to make sure you protect your established Google rankings and traffic.",
           },
           {
-            title: "Businesses Frustrated with Vague SEO Retainers",
-            desc: "Business owners who previously paid for opaque agency retainers that delivered confusing vanity metrics, zero transparency, and no tangible commercial search improvements.",
+            title: "Owners Burned by Shady SEO",
+            desc: "You previously paid for confusing monthly reports full of jargon and vanity graphs, but never saw genuine customer phone calls.",
           },
         ]}
         problemsAddressed={[
           {
-            problem: "Your website is invisible on Google when potential clients search for your services",
+            problem: "Your business is completely invisible when people search Google for your services",
             howWeHelp:
-              "We audit technical indexing issues, inspect Google Search Console for crawl errors, configure proper XML sitemaps, and ensure search engines can discover and index your key service pages.",
+              "We check why Google isn't showing your pages, fix crawl errors, set up clean sitemaps, and optimize your key service pages so search engines index and rank them properly.",
           },
           {
-            problem: "Losing hard-earned search equity after redesigns or URL changes",
+            problem: "Losing hard-earned Google rankings after redesigning your website",
             howWeHelp:
-              "When redesigning or restructuring websites, broken URLs cause sudden ranking drops. We map comprehensive 301 redirects and preserve canonical structures so your established authority is preserved.",
+              "When you change page links, Google gets confused and rankings drop. We set up 301 redirects so Google passes all your old search authority straight to your new website without any traffic loss.",
           },
           {
-            problem: "Slow page load speeds and mobile issues hurting Google rankings",
+            problem: "Slow loading speeds and mobile glitches pushing your site down the page",
             howWeHelp:
-              "Google prioritizes fast, responsive websites. We optimize Core Web Vitals, server response times, image formatting, and code execution to ensure your site passes Google's mobile performance benchmarks.",
+              "Google hates slow websites. We speed up your site, fix mobile display issues, and optimize images so your pages pass Google's official speed test (Core Web Vitals).",
           },
           {
-            problem: "Vague search reports filled with vanity metrics instead of real inquiries",
+            problem: "Confusing monthly SEO reports with vanity numbers instead of real inquiries",
             howWeHelp:
-              "We provide transparent monthly reports sourced directly from official Google Search Console data, showing you the exact search queries bringing visitors to your site and how your rankings progress.",
+              "No confusing agency smoke and mirrors. We send simple, honest monthly reports showing what people actually typed into Google to find you, and how many calls and form leads came in.",
           },
         ]}
         deliverables={[
           {
-            title: "Comprehensive Technical SEO Audits",
-            desc: "Thorough inspection of your website's underlying technical health, crawlability, mobile performance, and indexing status.",
+            title: "Google Search Health & Technical Fixes",
+            desc: "We fix the hidden technical problems stopping Google search bots from reading and ranking your website pages.",
             items: [
-              "XML sitemap and robots.txt file inspection and optimization",
-              "Fixing crawl errors, broken links, and redirect loops",
-              "Mobile responsiveness and Core Web Vitals speed audit",
-              "SSL security, canonical tags, and duplicate content resolution",
+              "Fixing broken links, missing pages, and Google crawl errors",
+              "Google speed test pass guarantee for mobile phones",
+              "Clean XML sitemaps and search engine robots setup",
+              "SSL security verification and clean canonical page tags",
             ],
           },
           {
-            title: "On-Page SEO & Content Intent Optimization",
-            desc: "Aligning your page titles, headings, and service copy with the actual questions and keywords your potential clients search for.",
+            title: "Local SEO & Google Business Profile (Google Maps)",
+            desc: "Get your business into the top 3 spots on Google Maps when local customers search nearby.",
             items: [
-              "Unique, compelling meta titles and descriptions for all core pages",
-              "Logical heading hierarchy (H1, H2, H3) structured around user intent",
-              "Descriptive image alt text and asset name optimization",
-              "Strategic internal linking architecture to distribute authority",
+              "Google Business Profile setup and complete profile verification",
+              "Optimizing local business category, address, phone, and hours",
+              "Local keyword targeting for your city, town, and service areas",
+              "Customer review guidance to boost your local reputation and rank",
             ],
           },
           {
-            title: "Commercial Keyword & Competitor Research",
-            desc: "Identifying high-value search queries used by prospective buyers actively looking to hire or purchase your services.",
+            title: "High-Intent Keyword Research & Content Setup",
+            desc: "We identify the exact search words paying customers type when they are ready to hire someone or buy products.",
             items: [
-              "High-relevance commercial intent keyword identification",
-              "Search query difficulty and volume assessment",
-              "Competitor organic search footprint analysis",
-              "Recommendations for service page content expansion",
+              "Researching keywords that commercial buyers actually search",
+              "Optimizing page titles, descriptions, and headlines (H1-H3)",
+              "Writing clear, helpful service descriptions that answer buyer questions",
+              "Internal page linking so visitors easily navigate to your contact page",
             ],
           },
           {
-            title: "Local SEO & Google Business Profile Optimization",
-            desc: "Helping local customers find your business when searching for services in your city or regional service territory.",
+            title: "Safe Website Redesign SEO Migration",
+            desc: "Protecting your existing Google rankings and traffic when you launch a brand new website design.",
             items: [
-              "Google Business Profile setup, category selection, and verification",
-              "Consistent NAP (Business Name, Address, Phone) citations",
-              "Service area specification and local landing page structure",
-              "Practical guidance on collecting authentic customer reviews",
+              "Mapping every single old URL to your new pages (301 redirects)",
+              "Preserving backlinks and authority built over past years",
+              "Submitting updated sitemaps to Google Search Console immediately",
+              "Daily monitoring after launch to catch and fix any ranking dips",
             ],
           },
           {
-            title: "Structured Schema.org Data Implementation",
-            desc: "Implementing search engine schema code so Google displays your company information, FAQs, and services accurately in rich search results.",
+            title: "Simple, Honest Monthly Search Reports",
+            desc: "Crystal-clear monthly reporting pulled straight from official Google Search Console data.",
             items: [
-              "Organization, LocalBusiness, and Service JSON-LD schema",
-              "FAQPage structured data markup for expanded search snippets",
-              "BreadcrumbList schema for intuitive navigation trails",
-              "Validation via Google's official Rich Results Test",
-            ],
-          },
-          {
-            title: "Transparent Performance Reporting & Tracking",
-            desc: "Clear, jargon-free monthly reporting that shows exactly how your search visibility, impressions, and organic clicks are growing over time.",
-            items: [
-              "Google Search Console data analysis (impressions, clicks, rankings)",
-              "Tracking top commercial search queries bringing qualified visitors",
-              "Identification of new keyword opportunities and content gaps",
-              "Actionable, prioritized recommendations for the following month",
+              "Exact search phrases people typed into Google to find you",
+              "Number of real clicks, impressions, and phone calls received",
+              "Tracking your keyword ranking improvements month over month",
+              "Plain English summary of what we did and what we recommend next",
             ],
           },
         ]}
         benefits={[
           {
-            title: "Sustainable Inquiries Without Constant Ad Spend",
-            desc: "Unlike paid advertising that stops delivering visitors the moment your budget runs out, strong organic search visibility continues generating qualified leads month after month.",
+            title: "Steady Inquiries Without Paying for Clicks",
+            desc: "Once you rank on Google, every customer click and phone call is 100% free organic traffic that doesn't cost you advertising money.",
           },
           {
-            title: "Reach Customers at the Exact Moment of Intent",
-            desc: "People searching on Google have active commercial intent—they are looking for a solution right now. Organic ranking puts your business in front of buyers at decision time.",
+            title: "Attract People Who Are Ready to Buy Today",
+            desc: "When someone searches for what you do on Google, they are looking to hire right now—meaning much higher closing rates.",
           },
           {
-            title: "Fast, Frictionless Mobile Experience",
-            desc: "Because technical SEO focuses heavily on Core Web Vitals and clean responsive layouts, your human visitors enjoy a faster, more trustworthy, and high-converting browsing experience.",
+            title: "Dominate Local Google Maps in Your City",
+            desc: "When people search on their smartphones, Google shows the top 3 local businesses. We help put your company in that coveted spot.",
           },
           {
-            title: "Zero Penalty Risk with White-Hat Methods",
-            desc: "We follow Google's official Search Essentials guidelines strictly. We never employ deceptive tactics or spam link schemes that put your website at risk of search penalties.",
+            title: "Honest, Transparent Results with Zero Fluff",
+            desc: "We don't make fake promises like 'rank #1 tomorrow'. We build real, long-term search authority that lasts for years.",
           },
         ]}
         processSteps={[
           {
             num: "01",
-            title: "Technical Audit & Baseline Benchmarking",
-            desc: "We perform an in-depth audit of your current website, check indexing status on Google Search Console, and benchmark current rankings and search visibility.",
+            title: "Full Website & Competitor Audit",
+            desc: "We check your current website speed, test mobile responsiveness, and see what search terms your competitors are winning.",
           },
           {
             num: "02",
-            title: "Search Intent & Keyword Strategy",
-            desc: "We identify the exact search queries prospective clients use when looking for your services, mapping high-value keywords to specific pages on your site.",
+            title: "Keyword & Customer Research",
+            desc: "We find the exact high-value phrases real buyers in your city search for when looking to hire or purchase.",
           },
           {
             num: "03",
-            title: "Technical Fixes & On-Page Optimization",
-            desc: "We resolve crawl errors, speed up page load times, update meta titles and descriptions, structure headings, and implement Schema.org markup.",
+            title: "Fixing Code & Speed Bottlenecks",
+            desc: "We fix technical crawl errors, speed up image delivery, and structure your page headings so Google can index them easily.",
           },
           {
             num: "04",
-            title: "Google Indexing & Verification",
-            desc: "We submit updated XML sitemaps to Google Search Console, request re-indexing for updated pages, and verify clean mobile rendering.",
+            title: "Local Maps & Content Optimization",
+            desc: "We optimize your Google Business Profile and polish page copy to answer customer questions and build trust.",
           },
           {
             num: "05",
-            title: "Monthly Monitoring & Continuous Refinement",
-            desc: "We track search impressions, organic clicks, and keyword rankings every month, refining page copy and expanding content based on real user search trends.",
+            title: "Tracking & Transparent Reporting",
+            desc: "We monitor your rankings on Google Search Console and send simple, plain-English monthly updates showing your progress.",
           },
         ]}
         relevantProjects={relevantProjects}
         faqs={[
           {
-            question: "Can you guarantee a number-one ranking on Google?",
+            question: "How long does it take to see real results from SEO?",
             answer:
-              "No, and you should be extremely cautious of any agency that promises guaranteed top rankings. Google's search algorithms evaluate hundreds of factors, and no external agency controls Google. What we do guarantee is proven, white-hat best practices: resolving technical crawl errors, optimizing page load speed, structuring headings, implementing schema, and crafting relevant content that gives your business the highest possible opportunity to rank well.",
+              "SEO is a sustainable, long-term investment. While technical speed fixes and Google Maps updates can show improvements in 4 to 8 weeks, significant competitive rankings usually take 3 to 6 months. Anyone promising you #1 rankings overnight is using risky spam tricks that will get your site banned by Google.",
           },
           {
-            question: "How long does it take to see tangible results from SEO?",
+            question: "Can you guarantee that my website will be #1 on Google?",
             answer:
-              "SEO is a medium- to long-term digital strategy. Technical fixes—such as resolving crawl errors, fixing broken redirects, and adding structured schema—are typically recognized by Google within 2 to 4 weeks. Meaningful improvements in keyword rankings, search impressions, and organic leads usually take 3 to 6 months of consistent optimization.",
+              "No legitimate agency can guarantee #1 rankings because Google's algorithm is independent and updates frequently. What we do guarantee is strict adherence to Google's official best practices, transparent monthly reporting, and proven optimization methods that reliably improve your search rankings.",
           },
           {
-            question: "What is the difference between technical SEO and on-page SEO?",
+            question: "What is the difference between Google SEO and Google Ads?",
             answer:
-              "Technical SEO focuses on the behind-the-scenes infrastructure of your website—such as server speed, mobile responsiveness, XML sitemaps, and SSL security—ensuring search engine bots can crawl and index your site without errors. On-page SEO focuses on the visible content—such as meta titles, headings, commercial keywords, and answering the questions prospective customers search for.",
+              "With Google Ads, you pay Google every time someone clicks on your link, and the traffic stops the minute you stop paying. With SEO, we build your website's authority so Google ranks your pages naturally. Every visitor and call you get from organic search is 100% free.",
           },
           {
-            question: "How is SEO different from Paid Advertising (Google Ads)?",
+            question: "Do I need local SEO if I have a physical shop or office?",
             answer:
-              "With Google Ads, you pay every time someone clicks on your ad. Traffic starts immediately, but stops the moment your budget runs out. With SEO, you earn organic visibility naturally. While it takes time to build ranking authority, the visitors and customer inquiries you receive do not incur per-click costs, providing long-term compound ROI.",
-          },
-          {
-            question: "Do you follow Google's official search quality guidelines?",
-            answer:
-              "Yes, strictly. We adhere to Google's Search Essentials guidelines. We never use black-hat shortcuts, automated link spam, or hidden keyword tricks that risk algorithmic penalties or de-indexing by Google.",
-          },
-          {
-            question: "Can Local SEO help my business get found on Google Maps?",
-            answer:
-              "Yes. For regional and local service companies, Local SEO is critical. We optimize your Google Business Profile, align your business name, address, and phone number (NAP) across citations, and structure your website's location data so nearby customers find you on Google Maps and localized searches.",
-          },
-          {
-            question: "What kind of reports will I receive each month?",
-            answer:
-              "We provide clear, easy-to-understand monthly reports based directly on Google Search Console data. You will see total search impressions, organic clicks, your top-performing search queries, and specific recommendations on what we plan to improve next.",
+              "Yes, absolutely! Over 80% of people look up nearby services on Google Maps before visiting or calling. Local SEO optimizes your Google Business Profile, address, reviews, and city keywords so you appear right at the top of local map searches.",
           },
         ]}
-        ctaTitle="Want to Grow Your Organic Google Search Visibility?"
-        ctaDescription="Tell us about your website and target market. We'll conduct an honest initial review and outline practical steps to improve your search visibility."
+        ctaTitle="Ready to Rank on Google &amp;"
+        ctaTitleHighlight="Win More Organic Leads?"
+        ctaDescription="Tell us about your business and target location. We'll perform a free initial search audit and give you an honest assessment of your ranking opportunities."
       />
     </main>
   );

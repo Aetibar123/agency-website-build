@@ -26,44 +26,44 @@ const disciplineCards: DisciplineCard[] = [
   {
     number: "01",
     category: "PROJECT VISIBILITY",
-    title: "Visible Progress Throughout Development",
+    title: "No Waiting in the Dark — Live Previews Every 2 Weeks",
     icon: <VisibilityOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Challenge",
+    riskTitle: "The Common Agency Trap",
     riskDescription:
-      "Requirements are collected once, followed by months of silence without previews. When the system is finally revealed, misunderstandings are expensive and stressful to fix.",
-    solutionBadge: "OUR APPROACH",
-    solutionTitle: "Regular Working Previews",
+      "Most agencies collect a deposit, vanish for 3 to 6 months with zero updates, and then present a final product that doesn't match your expectations.",
+    solutionBadge: "THE AETIBAR WAY",
+    solutionTitle: "Interactive Working Previews at Every Milestone",
     solutionDescription:
-      "You receive private, working preview links throughout development. Your team can test actual screens, try workflows with representative data, and provide direct feedback as features are built.",
+      "You receive private, clickable links throughout development. You and your team can test actual screens, verify inquiry forms on mobile phones, and provide feedback as features are built.",
     keyTakeaway: "Review working features early and guide development as it happens.",
   },
   {
     number: "02",
-    category: "TRANSITION SAFETY",
-    title: "Careful Staged Transition",
+    category: "ZERO RISK LAUNCH",
+    title: "Smooth, Safe Rollout Without Disrupting Business",
     icon: <ShieldOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Challenge",
+    riskTitle: "The Common Agency Trap",
     riskDescription:
-      "Rushing into an abrupt overnight cutover can cause missing records, disrupted customer inquiries, and employee confusion on launch day.",
-    solutionBadge: "OUR APPROACH",
-    solutionTitle: "Planned Migration & Thorough Testing",
+      "A rushed, uncoordinated launch day where broken links, lost customer leads, and technical bugs interrupt your daily business operations.",
+    solutionBadge: "THE AETIBAR WAY",
+    solutionTitle: "Thorough Pre-Launch Testing & Phased Rollout",
     solutionDescription:
-      "We test important workflows, validate historical data, and plan the rollout in stages so your everyday business operations continue smoothly during switchover.",
-    keyTakeaway: "A controlled rollout designed to protect day-to-day business operations.",
+      "We test all contact forms, WhatsApp links, payment gateways, and databases before launch. Your daily business continues running smoothly with zero downtime.",
+    keyTakeaway: "Zero lost customer inquiries and zero operational downtime.",
   },
   {
     number: "03",
-    category: "PRACTICAL ARCHITECTURE",
-    title: "Purpose-Built Systems & Direct Ownership",
+    category: "FULL OWNERSHIP",
+    title: "100% Code, Domain & Asset Ownership",
     icon: <KeyOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Challenge",
+    riskTitle: "The Common Agency Trap",
     riskDescription:
-      "Off-the-shelf tools work well for standard tasks, but rigid templates and mounting per-user fees can force your business into clumsy workarounds when workflows require custom logic.",
-    solutionBadge: "OUR APPROACH",
-    solutionTitle: "Custom Systems Built Around Your Workflow",
+      "Agencies withholding admin logins, or locking your business into closed platforms where you must pay ongoing licensing fees just to access your own data.",
+    solutionBadge: "THE AETIBAR WAY",
+    solutionTitle: "Complete Ownership Transferred Upon Completion",
     solutionDescription:
-      "We design websites, applications, and tools tailored to how your team operates, with source code, database access, and documentation clearly transferred as defined in our agreement.",
-    keyTakeaway: "A dedicated digital asset built to serve how your business runs.",
+      "You own every line of code, design file, database schema, and hosting login. You have complete freedom to host, modify, and expand your digital assets whenever you want.",
+    keyTakeaway: "Your business owns its digital assets forever — no lock-in fees.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function WhyWorkflowFirstSection() {
                     fontWeight: 700,
                   }}
                 >
-                  OUR APPROACH &bull; BUILT FOR RELIABILITY
+                  THE AETIBAR ADVANTAGE &bull; BUILT FOR TRUST
                 </Typography>
               </Box>
             </Box>
@@ -140,16 +140,19 @@ export default function WhyWorkflowFirstSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "3.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
-                lineHeight: { xs: 1.15, md: 1.1 },
+                lineHeight: { xs: 1.25, md: 1.18 },
                 letterSpacing: "-0.035em",
                 textAlign: "center",
+                maxWidth: { xs: "100%", md: 1000, lg: 1100 },
+                mx: "auto",
+                textWrap: "balance",
                 mb: 2.5,
               }}
             >
-              Why technology projects need a clear process —{" "}
+              Why traditional development projects fail —{" "}
               <Box
                 component="span"
                 sx={{
@@ -158,7 +161,7 @@ export default function WhyWorkflowFirstSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                and how we build with visibility.
+                and how we protect your business.
               </Box>
             </Typography>
 
@@ -168,12 +171,12 @@ export default function WhyWorkflowFirstSection() {
                 color: "#52525B",
                 lineHeight: 1.75,
                 fontWeight: 400,
-                maxWidth: 820,
+                maxWidth: 860,
                 mx: "auto",
                 textAlign: "center",
               }}
             >
-              Great digital products succeed when teams understand the actual workflow before writing code. Here is how we keep projects visible, reliable, and aligned with your real business needs.
+              Most digital projects run over budget and miss deadlines because developers rush to write code before understanding the business. Here is how we eliminate risk and keep you in full control every step of the way.
             </Typography>
           </motion.div>
         </Box>

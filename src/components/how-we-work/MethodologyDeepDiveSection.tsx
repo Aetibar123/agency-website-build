@@ -37,26 +37,26 @@ const stages: Stage[] = [
     num: "01",
     tabLabel: "Discovery",
     timeframe: "Stage 01",
-    name: "Understanding Your Business & Workflows",
-    headline: "We learn how your business works before writing a single line of code.",
+    name: "Understanding Your Business, Goals & Customers",
+    headline: "We learn how your business actually operates before suggesting any solution.",
     story:
-      "Every successful project starts by understanding the business first. We map how inquiries, customer requests, and tasks currently move through your business today — whether across email, messaging apps, or existing tools — and pinpoint where manual copy-pasting and disconnected tools slow your team down.",
+      "Every great website, mobile app, or automation starts by listening. We look at how customer inquiries reach you, how your team manages daily orders, and where roadblocks slow you down. This ensures we build only what directly helps you win more clients and save time — never pushing unnecessary features.",
     whatHappens: [
       {
-        title: "Understand Current Workflows",
-        desc: "We review how work moves through your business today — from customer inquiries and sales to internal operations, reporting, and billing.",
+        title: "Listen to Your Business Needs",
+        desc: "We discuss your current sales process, target customer types, and everyday operational challenges.",
       },
       {
-        title: "Identify Bottlenecks & Duplicate Work",
-        desc: "We look for repetitive manual tasks, duplicate data entry, disconnected tools, and places where information gets lost or delayed.",
+        title: "Identify Time-Wasting Tasks",
+        desc: "We spot repetitive manual busywork, lost inquiries, and disconnected tools that slow your team down.",
       },
       {
-        title: "Define Clear Improvement Goals",
-        desc: "We separate genuine operational needs from non-essential features, ensuring we focus on what will create the most immediate value.",
+        title: "Define Clear Project Goals",
+        desc: "We set realistic business objectives — like capturing more WhatsApp inquiries, ranking higher on Google, or speeding up order intake.",
       },
     ],
-    deliverable: "Comprehensive Discovery Summary with mapped workflow steps, prioritized requirements, and recommended solutions.",
-    timeCommitment: "One or two focused discovery conversations with you and key operational team members.",
+    deliverable: "Comprehensive Discovery Plan with mapped customer journeys, prioritized deliverables, and a fixed timeline.",
+    timeCommitment: "1 to 2 focused discovery conversations at your convenience.",
     outcome: "A clear, shared understanding of what needs to be built and why before any development starts.",
     image: "/images/home/editorial-client-consultation.jpg",
     imageAlt: "Aetibar operational discovery session auditing business workflows",
@@ -64,27 +64,27 @@ const stages: Stage[] = [
   },
   {
     num: "02",
-    tabLabel: "Planning",
+    tabLabel: "Planning & Design",
     timeframe: "Stage 02",
-    name: "System Architecture & Solution Blueprint",
-    headline: "We turn findings into a clear technical scope, interface wireframes, and data flows.",
+    name: "Clear Roadmap, UI Layouts & Business Logic",
+    headline: "You review and approve interactive visual layouts before any code is written.",
     story:
-      "Before jumping into code, we create interactive wireframes and plan the data architecture. You can click through screen layouts, verify how your team will navigate the platform, and ensure that every feature matches your exact business rules.",
+      "Before development begins, we design modern, intuitive screen layouts and plan the workflow logic. You can click through interactive mockups on your phone or computer, verify how customers will navigate your services, and make adjustments until you love the look and feel.",
     whatHappens: [
       {
-        title: "Interface Layouts & Wireframes",
-        desc: "Clean, intuitive UI layouts showing how customers, staff, and administrators will interact with the system.",
+        title: "Mobile-First Design & Layouts",
+        desc: "Clean, intuitive UI layouts designed for effortless customer navigation and high conversions on smartphones and desktops.",
       },
       {
-        title: "Data Models & API Integrations",
-        desc: "Designing secure database structures and API connections that tie your existing software and tools together.",
+        title: "Customer Journey & Action Flows",
+        desc: "Placing prominent WhatsApp buttons, quick inquiry forms, and easy checkout pathways so you never lose a buyer.",
       },
       {
-        title: "Role Permissions & Security",
-        desc: "Defining access controls so team members, managers, and external clients each see only what they need.",
+        title: "Tool & System Connections",
+        desc: "Mapping how new inquiries, customer data, and alerts will sync directly to your WhatsApp, email, or spreadsheets.",
       },
     ],
-    deliverable: "Documented Project Blueprint and wireframe layouts approved by both sides before engineering begins.",
+    deliverable: "Interactive Design Prototypes and detailed scope document approved by you before coding.",
     timeCommitment: "One collaborative review session to walk through layouts and approve the scope.",
     outcome: "Complete clarity on look, feel, user flow, and business logic before building begins.",
     image: "/images/home/hero-architecture.jpg",
@@ -93,24 +93,24 @@ const stages: Stage[] = [
   },
   {
     num: "03",
-    tabLabel: "Development",
+    tabLabel: "Building & Previews",
     timeframe: "Stage 03",
-    name: "Staged Development & Working Previews",
-    headline: "You see the product while it is being built, with regular working previews.",
+    name: "Staged Development with Regular Live Previews",
+    headline: "You see the product take shape with regular working previews every two weeks.",
     story:
-      "Instead of waiting until the end of the project to see the result, you can review working parts of the software during development. This makes it easy to give feedback, catch misunderstandings early, and keep the build strictly aligned with your goals.",
+      "We don't believe in disappearing for months and surprising you at the end. We build your website, mobile app, or automation in clean milestones and share private, live preview links so you can test real features and guide progress as we build.",
     whatHappens: [
       {
-        title: "Visible Milestone Previews",
-        desc: "Functional software deployed to private staging environments so you can test features as they are built.",
+        title: "Live Milestone Demos",
+        desc: "Functional pages and features deployed to private staging links so you can test them on your own phone and computer.",
       },
       {
-        title: "Performance-Focused Engineering",
-        desc: "Engineered with modern frameworks ensuring fast load times and responsive behavior across phones, tablets, and desktops.",
+        title: "Fast, High-Performance Code",
+        desc: "Built with modern frameworks ensuring lightning-fast load times, solid security, and top Google SEO ranking compatibility.",
       },
       {
-        title: "Realistic Workflow Testing",
-        desc: "We populate staging with representative business data so interactions, forms, and workflows feel familiar.",
+        title: "Real Business Data Testing",
+        desc: "We test pages with your actual services, product details, and real content so the experience feels 100% authentic.",
       },
     ],
     deliverable: "Working Staging Previews deployed at scheduled milestones for your team to test and verify.",
@@ -124,26 +124,26 @@ const stages: Stage[] = [
     num: "04",
     tabLabel: "Testing & Launch",
     timeframe: "Stage 04",
-    name: "Thorough Testing & Controlled Rollout",
-    headline: "We test thoroughly and plan the transition in stages so operations run smoothly.",
+    name: "Rigorous Testing, Speed Audits & Safe Launch",
+    headline: "We test thoroughly across all devices so day one runs with zero disruption.",
     story:
-      "Switching to a new digital system should never disrupt your daily business operations. Before going live, we test critical user paths, validate important data records, and plan the transition carefully so your team feels completely confident on day one.",
+      "Switching to a new digital system should never disrupt your daily business operations. Before going live, we test all forms, WhatsApp links, payment gateways, and loading speeds across iPhones, Android devices, and laptops so you can launch with absolute confidence.",
     whatHappens: [
       {
-        title: "Careful Data Migration",
-        desc: "We map existing records, validate customer data, and verify database integrity before switching over.",
+        title: "Thorough Device & Speed Audits",
+        desc: "Verifying mobile responsiveness, Google search compliance, SSL security, and sub-second load times.",
       },
       {
-        title: "End-to-End Workflow Testing",
-        desc: "Comprehensive testing of forms, inquiries, notifications, APIs, and security rules across devices.",
+        title: "End-to-End Form & Lead Testing",
+        desc: "Submitting live test inquiries to ensure team WhatsApp and email alerts trigger instantly every single time.",
       },
       {
-        title: "Team Onboarding & Walkthroughs",
-        desc: "Easy-to-follow video walkthroughs and documentation showing each team member their exact daily steps.",
+        title: "Simple Team Video Guides",
+        desc: "Short, easy-to-follow video walkthroughs showing you and your staff how to edit content, manage inquiries, and track leads.",
       },
     ],
-    deliverable: "Tested Production System, validated data migration, and complete team training guides.",
-    timeCommitment: "Your team conducts normal business while we manage deployment and migration in stages.",
+    deliverable: "Tested Production System, validated forms and data, and complete team training guides.",
+    timeCommitment: "Your team conducts normal business while we manage domain setup and live deployment.",
     outcome: "A smooth launch with tested workflows and confident team adoption.",
     image: "/images/home/editorial-operations-facility.jpg",
     imageAlt: "Safe cutover and operational team training",
@@ -151,27 +151,27 @@ const stages: Stage[] = [
   },
   {
     num: "05",
-    tabLabel: "Ongoing Support",
+    tabLabel: "Support & Growth",
     timeframe: "Stage 05",
-    name: "Support, Maintenance & System Evolution",
+    name: "Ongoing Maintenance, Upgrades & Direct Support",
     headline: "Direct communication with the team that designed and built your software.",
     story:
-      "Launch day is the start of ongoing utility. We monitor system health, error logs, and security updates. When your business grows, adds new services, or needs new integrations, the engineers who built your platform are available to maintain and expand it.",
+      "Launch day is the start of a long-term partnership. When you have questions, want to add new service pages, or need updates, you reach the exact engineers who built your product. We monitor system health, keep security tight, and help your digital presence expand.",
     whatHappens: [
       {
-        title: "Direct Engineering Communication",
-        desc: "Communicate directly with the developers who built your platform — no confusing helpdesk layers.",
+        title: "Direct Engineer Access",
+        desc: "Communicate directly with the developers who built your platform — no confusing helpdesk layers or ticket queues.",
       },
       {
-        title: "Monitoring & Maintenance",
-        desc: "Ongoing health checks, framework updates, security patches, and database backup monitoring.",
+        title: "Security & Speed Monitoring",
+        desc: "Proactive health checks, framework updates, daily backups, and security monitoring to prevent any downtime.",
       },
       {
-        title: "Feature Improvements & Scaling",
-        desc: "Periodic reviews to refine workflows, optimize performance, and introduce new capabilities as your business scales.",
+        title: "Continuous Improvements & SEO",
+        desc: "Periodic reviews to refine page content, optimize for new Google search queries, and add features as your business grows.",
       },
     ],
-    deliverable: "Documented handover, defined support channels, and access to all code and credentials.",
+    deliverable: "Documented handover, defined support channels, and complete ownership of all code and credentials.",
     timeCommitment: "Peace of mind knowing your core digital systems have dependable technical backing.",
     outcome: "A reliable digital asset that continues to support your business as it grows.",
     image: "/images/home/editorial-craft-operations.jpg",
@@ -247,7 +247,7 @@ export default function MethodologyDeepDiveSection() {
                   fontWeight: 700,
                 }}
               >
-                OUR METHODOLOGY &bull; 5 TRANSPARENT STAGES
+                OUR 5-STAGE DEVELOPMENT METHODOLOGY
               </Typography>
             </Box>
           </motion.div>
@@ -261,25 +261,28 @@ export default function MethodologyDeepDiveSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "3.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.15, md: 1.1 },
+                lineHeight: { xs: 1.25, md: 1.18 },
+                maxWidth: { xs: "100%", md: 1000, lg: 1100 },
+                mx: "auto",
+                textWrap: "balance",
                 mb: 2.5,
               }}
             >
-              From first conversation to live launch{" "}
+              From first conversation to live launch —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: { xs: "inline", sm: "block" },
+                  display: "inline",
                   background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                in 5 transparent stages.
+                in 5 simple, transparent steps.
               </Box>
             </Typography>
             <Typography
@@ -287,11 +290,11 @@ export default function MethodologyDeepDiveSection() {
                 fontSize: { xs: "1.05rem", md: "1.2rem" },
                 color: "#52525B",
                 lineHeight: 1.75,
-                maxWidth: 760,
+                maxWidth: 780,
                 mx: "auto",
               }}
             >
-              A structured, collaborative process designed to keep everyone aligned. Here is the step-by-step approach we use to take projects from initial concept to a dependable production system.
+              A structured, collaborative process designed to keep you informed and confident. Here is our step-by-step roadmap to taking your project from concept to a dependable, high-converting digital asset.
             </Typography>
           </motion.div>
         </Box>

@@ -55,14 +55,15 @@ export default function AboutHeroSection() {
               sx={{
                 color: "#0E172A",
                 mb: 3,
-                fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 800,
-                lineHeight: { xs: 1.1, md: 1.05 },
+                lineHeight: { xs: 1.25, md: 1.18 },
                 letterSpacing: "-0.03em",
                 textTransform: "uppercase",
+                textWrap: "balance",
               }}
             >
-              Building Digital Solutions That <br />
+              Building Digital Solutions That{" "}
               <Box component="span" sx={{ color: "#0E7490" }}>
                 Drive Real Growth.
               </Box>

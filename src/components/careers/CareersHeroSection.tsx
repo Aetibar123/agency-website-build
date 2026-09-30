@@ -21,7 +21,7 @@ export default function CareersHeroSection() {
                 JOIN OUR TEAM
               </Typography>
             </Box>
-            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.9rem', md: '3rem' }, fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+            <Typography variant="h1" sx={{ color: '#0B0F19', mb: 4, fontSize: { xs: '1.65rem', sm: '2.25rem', md: '2.85rem', lg: '3.25rem' }, fontWeight: 900, lineHeight: { xs: 1.18, md: 1.2 }, letterSpacing: '-0.02em', textWrap: 'balance' }}>
               Build the <Box component="span" sx={{ color: 'primary.main', display: 'inline-block', position: 'relative' }}>
                 Future With Us
 

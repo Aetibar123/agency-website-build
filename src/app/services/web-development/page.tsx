@@ -5,14 +5,15 @@ import LanguageIcon from "@mui/icons-material/Language";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "Web Development Company | Aetibar",
+  title: "Custom Web Development Services for Businesses | Aetibar",
   description:
-    "Aetibar is a web development company building fast, secure and scalable websites and web applications tailored to your business goals.",
+    "Custom web development services for modern businesses. We build fast, responsive websites, e-commerce stores, and web portals tailored to your company.",
   keywords: [
     "Web Development Company",
     "Custom Web Development Services",
     "Business Website Development",
     "E-commerce Website Development",
+    "Website Development Services",
     "Custom Web Portal Development",
     "Business Website Redesign",
     "Mobile-Friendly Web Design",
@@ -79,188 +80,190 @@ export default function WebDevelopmentServicePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <ServicePageLayout
-        badge="Web Engineering &amp; Development"
-        title="Custom Web Development Services for Businesses"
-        tagline="Fast, mobile-friendly websites and web applications built to win customer trust and generate real inquiries."
-        description="Your website is often the very first place prospective clients, partners, and buyers evaluate your credibility. We build custom business websites, online stores, and customer web portals that load instantly on mobile phones, look polished across every screen, and make it effortless for visitors to reach out on WhatsApp, call your office, or submit an inquiry."
+        badge="Custom Web Development"
+        title="Modern Websites for"
+        titleHighlight="Your Business."
+        tagline="Custom websites, online stores, and web apps built cleanly without heavy templates or complicated tools."
+        description="We build websites that give your visitors the right information quickly and make it simple to reach out. Every site is built from scratch for your business, works smoothly on all mobile devices, and gives you complete ownership of your domain, files, and logins."
         icon={<LanguageIcon sx={{ fontSize: 20, color: "#EA580C" }} />}
         whoIsItFor={[
           {
-            title: "Growing Businesses & B2B Companies",
-            desc: "Organizations and ventures that need a modern, credible digital presence that clearly presents their services, case studies, certifications, and capabilities to win clients.",
+            title: "Local Business Owners & Shops",
+            desc: "You want nearby customers in your city to find you, see your work, and message you directly on WhatsApp or call your office.",
           },
           {
-            title: "Retail Stores & E-Commerce Brands",
-            desc: "Product businesses that need fast-loading online storefronts with clear catalog browsing, secure checkout, and instant order notifications on WhatsApp and email.",
+            title: "Companies with an Old, Slow Site",
+            desc: "Your current website looks outdated on smartphones, takes 5+ seconds to open, or constantly breaks whenever plugins update.",
           },
           {
-            title: "Service Providers Needing Portals",
-            desc: "Companies wanting to give clients secure online accounts to view quotes, download invoices, track project progress, or submit service requests without manual back-and-forth.",
+            title: "Brands Selling Products Online",
+            desc: "You want a clean, fast e-commerce store where customers can easily browse products and pay securely with UPI, cards, or net banking.",
           },
           {
-            title: "Companies with Outdated Websites",
-            desc: "Businesses losing leads because their current site is slow on smartphones, built on rigid outdated templates, or constantly breaking after plugin updates.",
+            title: "Service Providers Needing Inquiries",
+            desc: "You want a trustworthy online presence that delivers qualified quotation requests and client questions straight to your phone and email.",
           },
         ]}
         problemsAddressed={[
           {
-            problem: "Slow loading speeds causing mobile visitors to leave immediately",
+            problem: "Visitors leave your website because it takes too long to load on phones",
             howWeHelp:
-              "Most website visitors leave if a page takes more than three seconds to load. We engineer lightweight, high-performance websites that load in under a second on mobile data connections, keeping prospective buyers engaged.",
+              "Most people tap the back button if a page takes more than 3 seconds to open. We build lightweight, ultra-fast websites that open in under 1 second on mobile internet, so you never lose a customer to a blank loading screen.",
           },
           {
-            problem: "Customer inquiries slipping through the cracks without notice",
+            problem: "Customer inquiries get lost in junk folders or forgotten",
             howWeHelp:
-              "We configure reliable lead capture systems that instantly forward every form submission to your team's email and WhatsApp, ensuring no potential customer is left waiting for a response.",
+              "We link your contact forms directly to your WhatsApp and phone. Whenever a prospective client asks for a quote, your team gets an instant alert so you can reply before competitors do.",
           },
           {
-            problem: "Generic templates that fail to explain what your business actually does",
+            problem: "Generic templates that look confusing and cheap",
             howWeHelp:
-              "Off-the-shelf templates force your business into generic layouts. We design custom page structures tailored specifically to your service offerings, customer questions, and conversion points.",
+              "Ready-made templates look cookie-cutter and confuse visitors. We build custom designs tailored to your business, with clear buttons, easy menus, and genuine trust factors that win clients.",
           },
           {
-            problem: "Fragile plugins and recurring platform builder lock-in",
+            problem: "Trapped in monthly website builder fees and fragile plugins",
             howWeHelp:
-              "We write clean, modern code without stacking dozens of bloated third-party plugins or trapping you in expensive proprietary builders. Your website stays fast, secure, and 100% owned by your company.",
+              "You own 100% of your website code, domain, and digital assets forever. No recurring platform builder fees, and no bloated WordPress plugins that break every few months.",
           },
         ]}
         deliverables={[
           {
             title: "Custom Business Website Development",
-            desc: "Professional corporate and service websites designed to build trust, showcase your offerings, and convert visitors into qualified business inquiries.",
+            desc: "A clean, modern website designed to make your company look professional, earn customer trust, and generate calls.",
             items: [
-              "Custom homepage, service landing pages, and company profile",
-              "Direct WhatsApp chat and click-to-call integration",
-              "Mobile-first responsive design tested across all modern smartphones",
-              "Fast server-side rendering for instant page transitions",
+              "Custom homepage, dedicated service pages, and company about page",
+              "Click-to-call button and direct WhatsApp chat integration",
+              "Looks great and works smoothly on iPhones and Android phones",
+              "Fast page loading speed with zero clunky lag",
             ],
           },
           {
-            title: "E-Commerce Website Development",
-            desc: "High-speed online shopping storefronts engineered for smooth catalog navigation, simple product discovery, and friction-free payment processing.",
+            title: "Online Stores & E-Commerce Websites",
+            desc: "A fast online shop where customers can easily browse your catalog, add items to cart, and pay in seconds.",
             items: [
-              "Organized product catalogs with intuitive category filters and search",
-              "Integration with secure payment gateways (Razorpay, Stripe, UPI)",
-              "Instant automated order confirmations via email and WhatsApp",
-              "Customer account management and order history tracking",
+              "Simple product catalogs with clean filters and search",
+              "Safe, instant payments via UPI, Google Pay, cards, and net banking",
+              "Instant automated order alerts sent to your WhatsApp and email",
+              "Customer account login and simple order tracking",
             ],
           },
           {
-            title: "Custom Web Portals & Dashboards",
-            desc: "Secure, password-protected web portals that streamline client interactions, document sharing, and internal business operations.",
+            title: "Client Portals & Booking Dashboards",
+            desc: "Secure private areas where your customers can log in to view quotes, download invoices, or submit service requests.",
             items: [
-              "Secure client login and role-based permissions",
-              "Interactive quote request forms and cost calculators",
-              "Document sharing, invoice viewing, and service status tracking",
-              "Direct synchronization with your existing office databases or CRM",
+              "Secure customer login with private password access",
+              "Online quote calculator and custom inquiry forms",
+              "Download invoices, receipts, and project updates",
+              "Syncs automatically with your office spreadsheet or CRM",
             ],
           },
           {
-            title: "Website Redesign & Modernization",
-            desc: "Upgrading legacy or poorly performing websites to contemporary standards while safeguarding your existing Google rankings and web traffic.",
+            title: "Website Redesign & Upgrades",
+            desc: "Give your outdated website a fresh modern makeover while protecting your existing Google rankings and traffic.",
             items: [
-              "Comprehensive 1:1 redirect mapping to protect existing SEO rankings",
-              "Modern typography, high-contrast layouts, and clean visual hierarchy",
-              "Core Web Vitals speed optimization to pass Google's performance tests",
-              "Simplified content management so your team can easily update information",
+              "Keep your existing Google ranking with proper page redirects",
+              "Modern, high-contrast layouts that look sharp on any screen",
+              "Google speed test pass guarantee (Core Web Vitals)",
+              "Easy for your team to update pictures, text, and pricing later",
             ],
           },
           {
-            title: "Web Performance & Technical SEO Readiness",
-            desc: "Building a rock-solid technical foundation so search engines can easily crawl, index, and rank your website pages.",
+            title: "Built-In Google Search Readiness",
+            desc: "We build your site the right way so Google can easily read your pages and show your business to local searchers.",
             items: [
-              "Semantic HTML structure and clean heading hierarchies (H1-H4)",
-              "Automated XML sitemaps and search engine robots configuration",
-              "Optimized modern image formatting (WebP/AVIF) for lightweight delivery",
-              "Structured JSON-LD schema markup for rich search engine snippets",
+              "Clean code structure that Google search bots love to read",
+              "Proper titles, meta descriptions, and Google sitemap setup",
+              "Fast loading images that don't eat up your visitors' mobile data",
+              "Google Business Profile connection for local maps visibility",
             ],
           },
         ]}
         benefits={[
           {
-            title: "Turn Casual Visitors into Inquiries",
-            desc: "With clear service explanations, prominent WhatsApp buttons, and fast contact forms, prospective clients can easily reach you the moment they decide to take action.",
+            title: "More Phone Calls & WhatsApp Inquiries",
+            desc: "Visitors don't have to hunt for your contact details. A simple tap connects them straight to your phone so you can close deals quickly.",
           },
           {
-            title: "Lightning-Fast Mobile Experience",
-            desc: "Over 70% of web traffic happens on smartphones. Our websites load instantly even on standard 4G mobile connections, cutting bounce rates and keeping visitors reading.",
+            title: "Opens in a Flash on Any Smartphone",
+            desc: "Over 75% of your buyers use phones. Your website opens instantly even on normal 4G mobile connections, keeping visitors reading.",
           },
           {
-            title: "Built-In Google Search Readiness",
-            desc: "From semantic code structure to fast server response times, your website is engineered to meet Google's technical requirements from day one, helping your business get discovered organically.",
+            title: "You Own Everything 100% Forever",
+            desc: "The domain, the source code, the design files—they are 100% yours. You are never trapped or locked into expensive recurring fees.",
           },
           {
-            title: "100% Code & Asset Ownership",
-            desc: "You own all code, images, and content from day one. You are never locked into proprietary hosting, and you can host your site wherever you choose with total independence.",
+            title: "Google-Friendly from Day One",
+            desc: "Built using clean modern code that search engines love, giving your business a strong foundation to rank on Google without gimmicks.",
           },
         ]}
         processSteps={[
           {
             num: "01",
-            title: "Discovery & Requirements",
-            desc: "We discuss your business model, target clientele, core services, and lead generation goals to plan the exact structure your website needs.",
+            title: "Friendly Chat & Planning",
+            desc: "We sit down for a quick call to understand what your business sells, who your buyers are, and what pages you need.",
           },
           {
             num: "02",
-            title: "Structure & Content Architecture",
-            desc: "We organize the sitemap, design clear page wireframes, plan user journeys, and guide you on what content and images are needed.",
+            title: "Blueprint & Layout",
+            desc: "We sketch out the structure and design so you can see exactly how every page will look and feel before we write code.",
           },
           {
             num: "03",
-            title: "Design & Custom Development",
-            desc: "We build responsive, fast-loading pages with clean code, setting up contact forms, WhatsApp links, and sharing staging links for your review.",
+            title: "Building with Live Preview",
+            desc: "We build your website with clean code and give you a private preview link to test on your phone as we build.",
           },
           {
             num: "04",
-            title: "Testing & Mobile Optimization",
-            desc: "We rigorously test your site across iPhones, Android devices, tablets, and desktop browsers, verifying loading speed, form delivery, and SEO tags.",
+            title: "Testing on Real Phones",
+            desc: "We test every button, contact form, and speed score on iPhones, Android phones, and tablets to make sure everything works perfectly.",
           },
           {
             num: "05",
-            title: "Launch & Handover Support",
-            desc: "We deploy your website to production hosting, connect your custom domain, set up SSL security, and provide complete documentation and handover.",
+            title: "Launch & Hand Over the Keys",
+            desc: "We connect your domain, turn on SSL security, take your website live, and hand over all passwords and source code to you.",
           },
         ]}
         relevantProjects={relevantProjects}
         faqs={[
           {
-            question: "Do you use ready-made WordPress templates or build custom websites?",
+            question: "Do I need to be a tech expert to work with you?",
             answer:
-              "We build custom websites using modern web frameworks like Next.js and React. We avoid bloated off-the-shelf WordPress themes that come loaded with hundreds of unnecessary files and fragile plugins. This ensures your website loads significantly faster, remains secure against automated attacks, and provides a unique design tailored specifically to your company.",
+              "Not at all. We handle all the hosting, technical code, security certificates, and mobile testing. We explain everything in simple, plain English and keep you updated every step of the way.",
           },
           {
             question: "Will my website work properly on smartphones and tablets?",
             answer:
-              "Yes. Every single page is designed and tested mobile-first. We verify typography, button sizing, touch menus, and image scaling across various Android and Apple iPhone screens to guarantee that phone visitors have a frictionless experience.",
+              "Yes, 100%. We design mobile-first because most of your visitors are on their phones. We test button sizes, touch menus, and reading comfort across various iPhones and Android screens.",
           },
           {
-            question: "How do customer inquiries reach my team?",
+            question: "How do customer inquiries reach me?",
             answer:
-              "We connect your website forms directly to your company email inboxes and can also configure instant WhatsApp lead routing. When a prospective client fills out an inquiry form or clicks a chat button, your sales or support team receives notification immediately.",
+              "Whenever someone fills out a form or clicks your WhatsApp button, you receive an instant alert on your phone and email. You won't miss a single potential lead.",
           },
           {
-            question: "Who owns the website and domain after the project is finished?",
+            question: "Do I own my website and domain name?",
             answer:
-              "You own 100% of the website, source code, design files, and domain. We never hold your digital assets hostage or charge proprietary licensing fees. Once the project is complete, all credentials and code repositories are handed over to you.",
+              "Yes. You own 100% of your website code, design, and domain from day one. We never hold your assets hostage or charge proprietary monthly licensing fees.",
           },
           {
-            question: "Can we update text, images, and services on the website later?",
+            question: "Can I change text, images, and prices later?",
             answer:
-              "Yes. We build clean, modular architectures that make content updates straightforward. For clients who require regular content updates, we can integrate user-friendly content dashboards or provide ongoing maintenance support so you never have to worry about technical upkeep.",
+              "Yes! We build clean, modular websites so updating photos, phone numbers, or services is straightforward. We can also provide simple management tools or handle ongoing updates for you.",
           },
           {
             question: "How long does it take to develop a business website?",
             answer:
-              "A standard business website with 5 to 10 pages typically takes 3 to 5 weeks from initial planning to live launch. More comprehensive e-commerce platforms or custom web portals generally take 6 to 10 weeks depending on custom feature requirements.",
+              "A standard business website with 5 to 10 pages usually takes 2 to 4 weeks from our first chat to live launch. E-commerce shops with custom payment gateways usually take 4 to 6 weeks.",
           },
           {
-            question: "Can you help redesign our old website without losing our Google rankings?",
+            question: "Can you help redesign our old website without losing our Google rank?",
             answer:
-              "Yes. When redesigning an existing website, we perform careful URL audits and implement proper 301 redirects for every old page URL. This preserves your accumulated Google search authority and backlinks while giving your visitors a vastly faster, modernized website.",
+              "Yes. When updating an existing website, we carefully set up 301 redirects for every old page. This preserves your hard-earned Google search authority while giving your customers a fresh, lightning-fast new design.",
           },
         ]}
-        ctaTitle="Ready to Build a Website That Drives Inquiries?"
-        ctaDescription="Tell us about your business goals and service offerings. We'll give you honest, practical recommendations and a clear roadmap for your web project."
+        ctaTitle="Ready to Build a Better Website for"
+        ctaTitleHighlight="Your Business?"
+        ctaDescription="Tell us what your company needs. We'll share honest guidance, clear timelines, and a simple fixed quote without any pushy sales."
       />
     </main>
   );

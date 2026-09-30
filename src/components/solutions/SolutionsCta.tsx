@@ -115,12 +115,13 @@ export default function SolutionsCta({
           <Typography
             variant="h2"
             sx={{
-              fontSize: { xs: "2rem", sm: "2.8rem", md: "3.5rem" },
+              fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
               fontWeight: 600,
               color: "#FFFFFF",
               letterSpacing: "-0.03em",
-              lineHeight: { xs: 1.2, md: 1.12 },
-              maxWidth: 820,
+              lineHeight: { xs: 1.18, md: 1.2 },
+              textWrap: "balance",
+              maxWidth: { xs: "100%", md: 980, lg: 1100 },
               mx: "auto",
               mb: 3,
             }}

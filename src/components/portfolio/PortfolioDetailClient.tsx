@@ -103,10 +103,12 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               variant="h1"
               sx={{
                 color: "#0E172A",
-                fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4.2rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.1, md: 1.05 },
+                lineHeight: { xs: 1.18, md: 1.2 },
+                maxWidth: { xs: "100%", md: 1040, lg: 1160 },
+                textWrap: "balance",
                 textTransform: "uppercase",
                 mb: 2.5,
               }}
@@ -287,6 +289,8 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   letterSpacing: "-0.02em",
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  textWrap: "balance",
                 }}
               >
                 The Challenge &amp; Problem Statement
@@ -331,6 +335,8 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   letterSpacing: "-0.02em",
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  textWrap: "balance",
                 }}
               >
                 Our Strategic &amp; Technical Approach
@@ -394,6 +400,8 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   letterSpacing: "-0.02em",
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  textWrap: "balance",
                 }}
               >
                 The Solution &amp; Long-Term Impact
@@ -627,6 +635,13 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                     color: "#0E172A",
                     fontWeight: 600,
                     fontSize: { xs: "1.15rem", md: "1.3rem" },
+                    lineHeight: 1.25,
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    textWrap: "balance",
                     mb: 1,
                   }}
                 >
@@ -687,6 +702,13 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                     color: "#0E172A",
                     fontWeight: 600,
                     fontSize: { xs: "1.15rem", md: "1.3rem" },
+                    lineHeight: 1.25,
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    textWrap: "balance",
                     mb: 1,
                   }}
                 >

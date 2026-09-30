@@ -27,12 +27,12 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: '"Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-    h1: { fontWeight: 600, letterSpacing: "-0.03em", lineHeight: 1.08 },
-    h2: { fontWeight: 600, letterSpacing: "-0.025em", lineHeight: 1.15 },
-    h3: { fontWeight: 600, letterSpacing: "-0.02em", lineHeight: 1.25 },
-    h4: { fontWeight: 500, letterSpacing: "-0.015em" },
-    h5: { fontWeight: 500, letterSpacing: "-0.01em" },
-    h6: { fontWeight: 500 },
+    h1: { fontWeight: 600, letterSpacing: "-0.03em", lineHeight: 1.18, textWrap: "balance" as any },
+    h2: { fontWeight: 600, letterSpacing: "-0.025em", lineHeight: 1.2, textWrap: "balance" as any },
+    h3: { fontWeight: 600, letterSpacing: "-0.02em", lineHeight: 1.3, textWrap: "balance" as any },
+    h4: { fontWeight: 500, letterSpacing: "-0.015em", textWrap: "balance" as any },
+    h5: { fontWeight: 500, letterSpacing: "-0.01em", textWrap: "balance" as any },
+    h6: { fontWeight: 500, textWrap: "balance" as any },
     body1: { fontSize: "1.0625rem", lineHeight: 1.75, letterSpacing: "-0.005em" },
     body2: { fontSize: "0.9375rem", lineHeight: 1.65 },
     caption: { letterSpacing: "0.08em", textTransform: "uppercase" },
@@ -41,6 +41,22 @@ export const theme = createTheme({
     borderRadius: 14,
   },
   components: {
+    MuiTypography: {
+      styleOverrides: {
+        h1: {
+          textWrap: "balance",
+        },
+        h2: {
+          textWrap: "balance",
+        },
+        h3: {
+          textWrap: "balance",
+        },
+        h4: {
+          textWrap: "balance",
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {

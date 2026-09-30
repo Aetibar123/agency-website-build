@@ -512,11 +512,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "2.3rem", sm: "3.2rem", md: "4rem" },
+                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.15, md: 1.1 },
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                 mb: 2,
               }}
             >
@@ -532,6 +534,8 @@ export default function CrmLeadManagementPage() {
                 color: "#18181B",
                 letterSpacing: "-0.02em",
                 lineHeight: 1.3,
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 3,
               }}
             >
@@ -692,10 +696,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.9rem", sm: "2.6rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -822,10 +829,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.6rem", sm: "2rem", md: "2.3rem" },
+                fontSize: { xs: "1.55rem", sm: "2rem", md: "2.3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2.5,
               }}
             >
@@ -897,10 +907,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -1004,11 +1017,13 @@ export default function CrmLeadManagementPage() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "2rem", sm: "2.6rem" },
+                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                   fontWeight: 600,
                   color: "#18181B",
                   letterSpacing: "-0.03em",
-                  lineHeight: 1.2,
+                  lineHeight: { xs: 1.18, md: 1.2 },
+                  textWrap: "balance",
+                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
                   mb: 2.5,
                 }}
               >
@@ -1185,10 +1200,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -1298,10 +1316,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.9rem", sm: "2.6rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -1387,10 +1408,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -1480,10 +1504,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.8rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -1687,10 +1714,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.9rem", sm: "2.6rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
@@ -1774,10 +1804,13 @@ export default function CrmLeadManagementPage() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "2rem", sm: "2.6rem" },
+                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
                 color: "#18181B",
                 letterSpacing: "-0.03em",
+                lineHeight: { xs: 1.18, md: 1.2 },
+                textWrap: "balance",
+                maxWidth: { xs: "100%", md: 980, lg: 1100 },
                 mb: 2,
               }}
             >
