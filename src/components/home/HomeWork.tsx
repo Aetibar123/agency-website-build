@@ -45,7 +45,7 @@ export default function HomeWork() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Box sx={{ maxWidth: { xs: "100%", md: 960, lg: 1080 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 7.5 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -83,13 +83,13 @@ export default function HomeWork() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
+                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
+                fontWeight: 700,
                 color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.18 },
-                letterSpacing: "-0.035em",
+                lineHeight: { xs: 1.25, md: 1.2 },
+                letterSpacing: "-0.03em",
                 textWrap: "balance",
-                mb: 2.5,
+                mb: 2.2,
               }}
             >
               Real Projects That Delivered{" "}
@@ -107,15 +107,15 @@ export default function HomeWork() {
 
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", md: "1.2rem" },
-                lineHeight: 1.75,
+                fontSize: { xs: "1rem", sm: "1.05rem", md: "1.125rem" },
+                lineHeight: 1.7,
                 color: "#52525B",
-                maxWidth: 860,
+                maxWidth: { xs: "100%", md: 740, lg: 780 },
                 mx: "auto",
                 fontWeight: 400,
               }}
             >
-              See how we have helped businesses modernize outdated websites, automate everyday manual workflows, and capture high-intent customers through custom web development, mobile apps, and search optimization.
+              See how we help businesses modernize outdated websites, rank higher on Google, capture qualified client inquiries, and automate repetitive office operations with proven return on investment.
             </Typography>
           </Box>
         </motion.div>

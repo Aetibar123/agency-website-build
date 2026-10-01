@@ -28,28 +28,68 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/services/web-development',
+        destination: '/services/web-development-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/web-dev-company-in-udaipur',
+        destination: '/services/web-development-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/app-development',
+        destination: '/services/app-development-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/app-dev-company-in-udaipur',
+        destination: '/services/app-development-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/ai-automation',
+        destination: '/services/ai-automation-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/seo',
+        destination: '/services/seo-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/social-media-marketing',
+        destination: '/services/social-media-marketing-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/paid-advertising',
+        destination: '/services/paid-advertising-company-in-udaipur',
+        permanent: true,
+      },
+      {
         source: '/services/mobile-app-development',
-        destination: '/services/app-development',
+        destination: '/services/app-development-company-in-udaipur',
         permanent: true,
       },
       {
         source: '/services/search-engine-optimization',
-        destination: '/services/seo',
+        destination: '/services/seo-company-in-udaipur',
         permanent: true,
       },
       {
         source: '/services/digital-marketing',
-        destination: '/services/paid-advertising',
+        destination: '/services/paid-advertising-company-in-udaipur',
         permanent: true,
       },
       {
         source: '/services/graphics-designing',
-        destination: '/services/web-development',
+        destination: '/services/web-development-company-in-udaipur',
         permanent: true,
       },
       {
         source: '/services/graphic-design',
-        destination: '/services/social-media-marketing',
+        destination: '/services/social-media-marketing-company-in-udaipur',
         permanent: true,
       },
       {

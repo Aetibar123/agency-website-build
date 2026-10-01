@@ -4,20 +4,22 @@ import AboutPageClient from "../../components/about/AboutPageClient";
 import HomeScrollProgress from "../../components/home/HomeScrollProgress";
 
 export const metadata: Metadata = {
-  title: "About Aetibar | Web Development, Mobile Apps, SEO & Digital Marketing Agency",
+  title: "About Aetibar | Trusted Web Development & Digital Marketing Agency in Udaipur",
   description:
-    "Learn about Aetibar, a trusted digital agency in Udaipur, India. We deliver high-converting business websites, custom mobile apps, SEO, targeted paid ads, and practical AI automation.",
+    "Discover Aetibar, a trusted web development company and digital marketing agency in Udaipur, India. We deliver high-converting business websites, custom mobile apps, Google SEO, targeted paid ads, and smart automation to help businesses get more customers.",
   keywords: [
     "about Aetibar",
     "web development company in Udaipur",
     "digital marketing agency in Udaipur",
     "SEO company in Udaipur",
+    "website design in Udaipur",
     "custom web development company",
     "mobile app development company",
     "Google ads agency Udaipur",
     "social media marketing agency",
-    "graphic design and branding",
-    "AI automation services",
+    "business branding and logo design",
+    "WhatsApp automation for business",
+    "affordable digital agency India",
     "trusted digital agency India",
     "Aetibar Technologies",
   ],
@@ -41,9 +43,9 @@ export const metadata: Metadata = {
     canonical: "https://www.aetibar.in/about",
   },
   openGraph: {
-    title: "About Aetibar | Web Development, Mobile Apps, SEO & Digital Marketing",
+    title: "About Aetibar | Trusted Web Development & Digital Marketing Agency",
     description:
-      "Learn about Aetibar, a trusted digital agency in Udaipur, India. We deliver high-converting business websites, custom mobile apps, SEO, targeted paid ads, and practical AI automation.",
+      "Learn about Aetibar, a trusted digital agency in Udaipur, India. We help business owners get more customers with fast websites, mobile apps, Google SEO, targeted ads, and smart automation.",
     url: "https://www.aetibar.in/about",
     siteName: "Aetibar",
     type: "website",
@@ -59,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Aetibar | Web Development, Mobile Apps, SEO & Digital Marketing",
+    title: "About Aetibar | Trusted Web Development & Digital Marketing Agency",
     description:
-      "Learn about Aetibar, a trusted digital agency in Udaipur, India. We deliver high-converting business websites, custom mobile apps, SEO, targeted paid ads, and practical AI automation.",
+      "Learn about Aetibar, a trusted digital agency in Udaipur, India. We deliver high-converting business websites, custom mobile apps, SEO, targeted ads, and practical automation.",
     creator: "@Aetibar_",
     images: ["https://www.aetibar.in/images/home/editorial-craft-operations.jpg"],
   },
@@ -79,7 +81,7 @@ const aboutPageSchema = {
   name: "About Aetibar",
   url: "https://www.aetibar.in/about",
   description:
-    "Learn about Aetibar, a trusted digital agency in Udaipur delivering high-converting business websites, custom mobile apps, SEO, paid advertising, and AI automation.",
+    "Learn about Aetibar, a trusted web development company and digital marketing agency in Udaipur delivering high-converting business websites, custom mobile apps, SEO, paid advertising, and smart business automation.",
   mainEntity: {
     "@type": "Organization",
     name: "Aetibar",
@@ -92,12 +94,12 @@ const aboutPageSchema = {
       addressCountry: "IN",
     },
     knowsAbout: [
-      "Custom Web Development",
-      "Mobile App Development",
-      "Search Engine Optimization (SEO)",
-      "Targeted Paid Advertising (Google & Meta Ads)",
+      "Custom Web Development & E-Commerce",
+      "Mobile App Development (Android & iOS)",
+      "Search Engine Optimization (SEO) & Google Ranking",
+      "Targeted Paid Advertising (Google Ads & Meta Ads)",
       "Social Media Marketing & Brand Design",
-      "AI Workflow Automation",
+      "WhatsApp & Business Workflow Automation",
     ],
   },
 };

@@ -120,18 +120,18 @@ export default function HomeCtaSection() {
                 <Typography
                   variant="h2"
                   sx={{
-                    fontSize: { xs: "1.65rem", sm: "2.35rem", md: "3rem", lg: "3.4rem" },
-                    fontWeight: 600,
+                    fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.85rem" },
+                    fontWeight: 700,
                     color: "#FFFFFF",
-                    lineHeight: { xs: 1.25, md: 1.18 },
-                    letterSpacing: "-0.035em",
-                    maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                    lineHeight: { xs: 1.25, md: 1.2 },
+                    letterSpacing: "-0.03em",
+                    maxWidth: { xs: "100%", sm: 800, md: 880 },
                     mx: "auto",
                     textWrap: "balance",
-                    mb: 3,
+                    mb: 2.5,
                   }}
                 >
-                  Ready to Upgrade Your Website &amp;{" "}
+                  Ready to Attract More Customers &amp;{" "}
                   <Box
                     component="span"
                     sx={{
@@ -140,7 +140,7 @@ export default function HomeCtaSection() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    Attract More Customers?
+                    Grow Your Business?
                   </Box>
                 </Typography>
               </motion.div>
@@ -153,16 +153,16 @@ export default function HomeCtaSection() {
               >
                 <Typography
                   sx={{
-                    fontSize: { xs: "0.95rem", md: "1.2rem" },
-                    color: "rgba(255, 255, 255, 0.82)",
-                    lineHeight: 1.75,
-                    maxWidth: 760,
+                    fontSize: { xs: "1rem", sm: "1.05rem", md: "1.125rem" },
+                    color: "rgba(255, 255, 255, 0.85)",
+                    lineHeight: 1.7,
+                    maxWidth: { xs: "100%", md: 740, lg: 780 },
                     mx: "auto",
                     mb: 4.5,
                     fontWeight: 400,
                   }}
                 >
-                  Whether you need a high-converting website, a custom mobile app, smart AI workflow automation, or qualified customer leads—we&apos;ll give you honest guidance, transparent pricing, and a clear project roadmap. No high-pressure sales.
+                  Whether you need a fresh brand identity, a fast business website, page-1 Google rankings, profitable ads, or time-saving AI automation—we&apos;ll give you honest guidance, fixed pricing, and a clear project roadmap. No high-pressure sales.
                 </Typography>
               </motion.div>
 
@@ -224,7 +224,7 @@ export default function HomeCtaSection() {
                   whileTap={{ scale: 0.97 }}
                   sx={{ width: { xs: "100%", sm: "auto" } }}
                 >
-                  <Link href="/work" style={{ textDecoration: "none", width: "100%", display: "block" }}>
+                  <Link href="/services" style={{ textDecoration: "none", width: "100%", display: "block" }}>
                     <Button
                       variant="outlined"
                       fullWidth
@@ -247,7 +247,7 @@ export default function HomeCtaSection() {
                         },
                       }}
                     >
-                      Explore Our Work
+                      Explore All Services
                     </Button>
                   </Link>
                 </Box>
@@ -271,7 +271,7 @@ export default function HomeCtaSection() {
                   gap: { xs: 2, sm: 4 },
                 }}
               >
-                {["Free 30-Minute Strategy Session", "100% Code & Asset Ownership", "Direct Response Within 24 Hours"].map((badge, idx) => (
+                {["Free 30-Minute Business Strategy", "100% Asset & Code Ownership", "Direct WhatsApp Reply Within 24h"].map((badge, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                     <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
                     <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.82)", fontWeight: 500 }}>

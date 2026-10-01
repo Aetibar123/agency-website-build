@@ -54,7 +54,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Memorable logos, brand colors, UI/UX design & marketing graphics",
     simpleExplanation:
       "First impressions happen in seconds. We design eye-catching logos, professional color palettes, social media graphics, product packaging, and clean UI/UX designs that make your business look established, premium, and trustworthy to buyers.",
-    href: "/services/social-media-marketing",
+    href: "/services/social-media-marketing-company-in-udaipur",
     icon: <PaletteOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "Custom logo design with complete brand color and font guidelines",
@@ -72,7 +72,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Keep your Instagram, Facebook & LinkedIn active, modern, and engaging",
     simpleExplanation:
       "Before hiring you or buying from you, customers check your social media to see if your company is active and genuine. We plan, write, and design attractive posts and reels every month so your brand looks modern while you focus on your business.",
-    href: "/services/social-media-marketing",
+    href: "/services/social-media-marketing-company-in-udaipur",
     icon: <ShareOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "Monthly post and reel calendar planned and approved by you in advance",
@@ -90,7 +90,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Rank on the first page of Google when buyers search for your services",
     simpleExplanation:
       "When people in your city or anywhere in the world search on Google for what you sell, your business should show up right at the top. We optimize your website content and Google Maps profile so prospective clients discover you easily without you paying for each click.",
-    href: "/services/seo",
+    href: "/services/seo-company-in-udaipur",
     icon: <SearchIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "Top rankings on Google Maps and local search results in your city",
@@ -108,7 +108,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Google & Instagram ads focused on real phone calls and inquiries",
     simpleExplanation:
       "Advertising shouldn't feel like gambling your hard-earned money. We set up precise Google Search Ads and Instagram/Facebook campaigns that show your business only to people who want to buy right now, with strict daily budgets so you never overspend.",
-    href: "/services/paid-advertising",
+    href: "/services/paid-advertising-company-in-udaipur",
     icon: <AdsClickOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "Show your ads only to ready-to-buy customers in your chosen areas",
@@ -126,7 +126,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Fast, mobile-friendly business websites, online stores & portals",
     simpleExplanation:
       "Your website is your 24/7 digital office or showroom. We build modern business websites and e-commerce stores that open in less than a second on mobile phones, explain your services clearly, and let visitors contact you directly on WhatsApp or place an order with one tap.",
-    href: "/services/web-development",
+    href: "/services/web-development-company-in-udaipur",
     icon: <LanguageIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "Opens instantly on smartphones, tablets, and desktop computers",
@@ -144,7 +144,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Simple iPhone & Android apps for your customers and team",
     simpleExplanation:
       "Put your business directly in your customer's pocket. We create custom mobile applications that are simple to tap, quick to respond, and work smoothly even when internet signal is weak or offline.",
-    href: "/services/app-development",
+    href: "/services/app-development-company-in-udaipur",
     icon: <PhoneIphoneIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "One single app that works smoothly on both Apple iPhone and Android phones",
@@ -162,7 +162,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Save hours by letting smart tools handle repetitive daily office work",
     simpleExplanation:
       "Stop wasting valuable hours copying customer details into spreadsheets or replying to the exact same routine questions. We connect your daily business tools—like WhatsApp, Gmail, and Google Sheets—so tasks happen automatically in the background.",
-    href: "/services/ai-automation",
+    href: "/services/ai-automation-company-in-udaipur",
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "New customer inquiries sent straight to your personal WhatsApp automatically",

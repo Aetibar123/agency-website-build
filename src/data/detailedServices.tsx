@@ -502,8 +502,11 @@ export const detailedServices: Record<string, ServiceDetail> = {
 export const getAllServices = () => Object.values(detailedServices);
 
 export const getServiceBySlug = (slug: string): ServiceDetail | undefined => {
-  if (slug === 'app-development') return detailedServices['mobile-app-development'];
-  if (slug === 'seo') return detailedServices['search-engine-optimization'];
-  if (slug === 'graphics-designing') return detailedServices['graphic-design'];
+  if (slug === 'app-development' || slug === 'app-development-company-in-udaipur') return detailedServices['mobile-app-development'];
+  if (slug === 'seo' || slug === 'seo-company-in-udaipur') return detailedServices['search-engine-optimization'];
+  if (slug === 'graphics-designing' || slug === 'social-media-marketing-company-in-udaipur' || slug === 'social-media-marketing') return detailedServices['graphic-design'];
+  if (slug === 'web-development-company-in-udaipur') return detailedServices['web-development'];
+  if (slug === 'ai-automation-company-in-udaipur') return detailedServices['ai-automation'];
+  if (slug === 'paid-advertising-company-in-udaipur' || slug === 'paid-advertising') return detailedServices['digital-marketing'];
   return detailedServices[slug];
 };

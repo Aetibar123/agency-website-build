@@ -78,9 +78,7 @@ export default function AboutHeroSection() {
                 maxWidth: 600,
               }}
             >
-              Aetibar combines software engineering, AI automation, and visual design to help
-              businesses launch resilient digital products. We engineer high-performance platforms
-              designed to solve real operational bottlenecks and scale seamlessly.
+              Aetibar helps businesses grow with fast business websites, custom mobile apps, Google SEO, and targeted digital marketing. We build simple, reliable digital solutions that turn online visitors into paying customers.
             </Typography>
           </Grid>
 

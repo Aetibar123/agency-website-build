@@ -9,12 +9,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 const serviceLinks = [
-  { name: "Web Development", href: "/services/web-development" },
-  { name: "App Development", href: "/services/app-development" },
-  { name: "AI Automation & Integration", href: "/services/ai-automation" },
-  { name: "SEO Services", href: "/services/seo" },
-  { name: "Social Media Marketing", href: "/services/social-media-marketing" },
-  { name: "Paid Advertising", href: "/services/paid-advertising" },
+  { name: "Web Development", href: "/services/web-development-company-in-udaipur" },
+  { name: "App Development", href: "/services/app-development-company-in-udaipur" },
+  { name: "AI Automation & Integration", href: "/services/ai-automation-company-in-udaipur" },
+  { name: "SEO Services", href: "/services/seo-company-in-udaipur" },
+  { name: "Social Media Marketing", href: "/services/social-media-marketing-company-in-udaipur" },
+  { name: "Paid Advertising", href: "/services/paid-advertising-company-in-udaipur" },
 ];
 
 const companyLinks = [

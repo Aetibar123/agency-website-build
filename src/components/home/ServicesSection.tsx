@@ -28,7 +28,7 @@ interface ServiceItem {
 const servicesData: ServiceItem[] = [
   {
     num: "01",
-    slug: "web-development",
+    slug: "web-development-company-in-udaipur",
     title: "Web Development & Engineering",
     category: "ENGINEERING",
     categoryLabel: "WEB & CLOUD PLATFORMS",
@@ -47,7 +47,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "02",
-    slug: "mobile-app-development",
+    slug: "app-development-company-in-udaipur",
     title: "Mobile Application Development",
     category: "ENGINEERING",
     categoryLabel: "IOS & ANDROID APPS",
@@ -66,7 +66,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "03",
-    slug: "ai-automation",
+    slug: "ai-automation-company-in-udaipur",
     title: "Applied AI & Workflow Automation",
     category: "INTELLIGENCE",
     categoryLabel: "SMART AI TOOLS",
@@ -85,7 +85,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "04",
-    slug: "search-engine-optimization",
+    slug: "seo-company-in-udaipur",
     title: "Technical SEO & Search Growth",
     category: "GROWTH",
     categoryLabel: "GOOGLE VISIBILITY",
@@ -104,7 +104,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "05",
-    slug: "digital-marketing",
+    slug: "paid-advertising-company-in-udaipur",
     title: "Performance Marketing & Growth",
     category: "GROWTH",
     categoryLabel: "TARGETED CUSTOMER ACQUISITION",
@@ -123,7 +123,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "06",
-    slug: "graphic-design",
+    slug: "social-media-marketing-company-in-udaipur",
     title: "Brand Systems & UI/UX Design",
     category: "DESIGN",
     categoryLabel: "BRAND & UI/UX DESIGN",

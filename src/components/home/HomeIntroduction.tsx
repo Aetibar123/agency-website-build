@@ -1,32 +1,40 @@
 "use client";
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import CodeIcon from "@mui/icons-material/Code";
+import PaletteOutlinedIcon from "@mui/icons-material/PaletteOutlined";
+import LanguageIcon from "@mui/icons-material/Language";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import { motion } from "framer-motion";
 
 const pillars = [
   {
-    icon: <CodeIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
+    icon: <PaletteOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
+    tag: "Problem: Outdated Look & Low Brand Trust",
+    title: "Professional Branding & Visual Trust",
+    desc: "When prospective clients discover your business, amateur visuals or an outdated logo create instant doubts. We design distinctive emblems, cohesive brand palettes, sales brochures, and polished UI/UX layouts that give your company immediate credibility.",
+    highlights: ["Bespoke logo design & visual standards", "High-impact social & advertising creatives", "Print-ready brochures & executive cards", "Intuitive user interfaces for web & mobile"],
+  },
+  {
+    icon: <LanguageIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     tag: "Problem: Website Not Bringing Inquiries",
-    title: "Custom Web & Mobile App Development",
-    desc: "If your website is slow, hard to use on mobile phones, or fails to generate leads, potential clients simply go to competitors. We build fast, responsive business websites, e-commerce stores, and mobile applications designed specifically to establish instant trust and turn visitors into phone calls, WhatsApp chats, and booked clients.",
-    highlights: ["Mobile-first design", "WhatsApp & call action buttons", "Fast loading speed", "100% code ownership"],
+    title: "Performance Web & Mobile Experiences",
+    desc: "If your online platform loads sluggishly or feels clumsy on mobile phones, 80% of interested buyers bounce to competitors. We build lightning-fast web storefronts, customer portals, and smartphone applications engineered to turn casual visits into direct consultations.",
+    highlights: ["Sub-second mobile loading speed", "Instant contact & direct chat routing", "Frictionless catalog browsing & bookings", "100% full transfer of domains & code"],
+  },
+  {
+    icon: <CampaignOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
+    tag: "Problem: Invisible on Google & Wasted Ads",
+    title: "Organic Search & Customer Acquisition",
+    desc: "Being invisible when local buyers search on Google—or burning capital on unfocused campaigns with no qualified leads—drains your budget. We secure prime organic visibility across search engines and launch focused pay-per-click campaigns that target buyers at the exact moment of intent.",
+    highlights: ["Prominent local search & map positioning", "High-intent buyer keyword targeting", "Strict daily budget controls you dictate", "Verified incoming calls & quote requests"],
   },
   {
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     tag: "Problem: Hours Lost to Manual Busywork",
-    title: "Practical AI Automation & Workflow Integration",
-    desc: "When staff spend hours copying data from forms into spreadsheets, manually sending quotes, or answering repetitive customer questions, growth stalls. We connect your existing business tools with practical AI automation—so customer inquiries are captured instantly, orders sync automatically, and your team saves hours every week.",
-    highlights: ["Instant WhatsApp lead alerts", "Spreadsheet & CRM syncing", "Automated follow-ups", "Zero manual busywork"],
-  },
-  {
-    icon: <CampaignOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
-    tag: "Problem: Invisible on Google & Wasted Ad Spend",
-    title: "Targeted SEO Services & High-ROI Advertising",
-    desc: "Spending money on ads that bring no real customers or being invisible when people search Google for your services is costly. Our search engine optimization (SEO) and targeted Google Ads & Meta advertising put your business in front of customers actively searching to buy, delivering real inquiries instead of empty clicks.",
-    highlights: ["Top Google search visibility", "Local SEO optimization", "High-conversion Google Ads", "Transparent ROI tracking"],
+    title: "Intelligent Process & Operations Automation",
+    desc: "When staff spend hours copying data from forms into spreadsheets, manually sending quotes, or answering repetitive customer questions, growth stalls. We connect your daily business tools—like WhatsApp, Gmail, and cloud spreadsheets—so routines run seamlessly on autopilot.",
+    highlights: ["Real-time lead notifications on mobile", "Automated spreadsheet & database syncing", "24/7 intelligent FAQ auto-replies", "Reclaim 10 to 15 productive team hours weekly"],
   },
 ];
 
@@ -65,7 +73,7 @@ export default function HomeIntroduction() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Box sx={{ maxWidth: { xs: "100%", md: 960, lg: 1060 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 7.5 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -96,23 +104,23 @@ export default function HomeIntroduction() {
                   textTransform: "uppercase",
                 }}
               >
-                REAL PROBLEMS WE SOLVE &bull; MEASURABLE SOLUTIONS
+                COMMON BUSINESS CHALLENGES &bull; HOW AETIBAR HELPS
               </Typography>
             </Box>
 
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
+                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
+                fontWeight: 700,
                 color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.18 },
-                letterSpacing: "-0.035em",
+                lineHeight: { xs: 1.25, md: 1.2 },
+                letterSpacing: "-0.03em",
                 textWrap: "balance",
-                mb: 2.5,
+                mb: 2.2,
               }}
             >
-              Are Outdated Systems &amp; Low Visibility{" "}
+              Is Your Digital Presence Failing to{" "}
               <Box
                 component="span"
                 sx={{
@@ -121,168 +129,164 @@ export default function HomeIntroduction() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Costing You Customers?
+                Bring In Paying Clients?
               </Box>
             </Typography>
 
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", md: "1.2rem" },
-                lineHeight: 1.75,
+                fontSize: { xs: "1rem", sm: "1.05rem", md: "1.125rem" },
+                lineHeight: 1.7,
                 color: "#52525B",
                 fontWeight: 400,
-                maxWidth: 860,
+                maxWidth: { xs: "100%", md: 740, lg: 780 },
                 mx: "auto",
               }}
             >
-              Most business owners struggle with websites that look okay but don&apos;t generate calls, staff bogged down in repetitive manual tasks, and marketing budgets spent without measurable return. At Aetibar (&quot;Trust&quot;), we replace guesswork with practical digital systems that win clients and simplify daily operations.
+              Most business owners struggle with websites that look okay but don&apos;t generate calls, marketing budgets spent without measurable return, and staff bogged down in repetitive manual paperwork. At Aetibar (&quot;Trust&quot;), we replace guesswork with practical digital systems that win customers and save time.
             </Typography>
           </Box>
         </motion.div>
 
         <Grid container spacing={3.5}>
           {pillars.map((pillar, idx) => (
-            <Grid size={{ xs: 12, md: 4 }} key={idx}>
+            <Grid size={{ xs: 12, md: 6 }} key={idx}>
               <motion.div
                 initial={{ opacity: 0, y: 55 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.85, delay: idx * 0.18, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.85, delay: idx * 0.16, ease: [0.22, 1, 0.36, 1] }}
                 style={{ height: "100%" }}
               >
                 <Box
                   sx={{
-                  bgcolor: "#FFFFFF",
-                  p: { xs: 3.5, sm: 4 },
-                  borderRadius: { xs: "20px", md: "24px" },
-                  border: "1px solid rgba(24, 24, 27, 0.08)",
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
-                  transition: "all 0.3s ease",
-                  "&:hover": {
-                    transform: "translateY(-3px)",
-                    boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
-                    borderColor: "rgba(234, 88, 12, 0.4)",
-                  },
-                }}
-              >
-                <Box
-                  sx={{
+                    bgcolor: "#FFFFFF",
+                    p: { xs: 3.5, sm: 4 },
+                    borderRadius: { xs: "20px", md: "24px" },
+                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    height: "100%",
                     display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    mb: 2.5,
+                    flexDirection: "column",
+                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    transition: "all 0.3s ease",
+                    "&:hover": {
+                      transform: "translateY(-3px)",
+                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                      borderColor: "rgba(234, 88, 12, 0.4)",
+                    },
                   }}
                 >
                   <Box
                     sx={{
-                      width: 44,
-                      height: 44,
-                      borderRadius: "12px",
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      color: "#EA580C",
                       display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
+                      justifyContent: "space-between",
+                      mb: 2.5,
                     }}
                   >
-                    {pillar.icon}
+                    <Box
+                      sx={{
+                        width: 44,
+                        height: 44,
+                        borderRadius: "12px",
+                        bgcolor: "rgba(249, 115, 22, 0.1)",
+                        color: "#EA580C",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {pillar.icon}
+                    </Box>
+                    <Typography
+                      sx={{
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        fontFamily: "monospace",
+                        letterSpacing: "0.05em",
+                        textTransform: "uppercase",
+                        color: "#DC2626",
+                        bgcolor: "rgba(239, 68, 68, 0.08)",
+                        border: "1px solid rgba(239, 68, 68, 0.2)",
+                        px: 1.6,
+                        py: 0.5,
+                        borderRadius: "9999px",
+                      }}
+                    >
+                      {pillar.tag}
+                    </Typography>
                   </Box>
+
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontSize: { xs: "1.15rem", sm: "1.2rem", md: "1.25rem" },
+                      fontWeight: 700,
+                      letterSpacing: "-0.02em",
+                      color: "#18181B",
+                      mb: 1.5,
+                      lineHeight: 1.35,
+                      textWrap: "balance",
+                    }}
+                  >
+                    {pillar.title}
+                  </Typography>
+
                   <Typography
                     sx={{
-                      fontSize: "0.72rem",
-                      fontWeight: 700,
-                      fontFamily: "monospace",
-                      letterSpacing: "0.05em",
-                      textTransform: "uppercase",
-                      color: "#DC2626",
-                      bgcolor: "rgba(239, 68, 68, 0.08)",
-                      border: "1px solid rgba(239, 68, 68, 0.2)",
-                      px: 1.6,
-                      py: 0.5,
-                      borderRadius: "9999px",
+                      fontSize: "0.925rem",
+                      lineHeight: 1.7,
+                      color: "#52525B",
+                      mb: 3,
+                      flexGrow: 1,
                     }}
                   >
-                    {pillar.tag}
+                    {pillar.desc}
                   </Typography>
-                </Box>
 
-                <Typography
-                  variant="h3"
-                  sx={{
-                    fontSize: { xs: "1.1rem", sm: "1.15rem", md: "1.2rem" },
-                    fontWeight: 600,
-                    letterSpacing: "-0.02em",
-                    color: "#18181B",
-                    mb: 1.5,
-                    lineHeight: 1.35,
-                    textWrap: "balance",
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                    overflow: "hidden",
-                  }}
-                >
-                  {pillar.title}
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontSize: "0.95rem",
-                    lineHeight: 1.7,
-                    color: "#52525B",
-                    mb: 3,
-                    flexGrow: 1,
-                  }}
-                >
-                  {pillar.desc}
-                </Typography>
-
-                <Box
-                  sx={{
-                    pt: 2.5,
-                    borderTop: "1px solid rgba(24, 24, 27, 0.06)",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 1.2,
-                  }}
-                >
-                  {pillar.highlights.map((item, hIdx) => (
-                    <Box key={hIdx} sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
-                      <Box
-                        sx={{
-                          width: 18,
-                          height: 18,
-                          borderRadius: "50%",
-                          bgcolor: "rgba(234, 88, 12, 0.1)",
-                          color: "#EA580C",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          fontSize: "0.75rem",
-                          fontWeight: 800,
-                          flexShrink: 0,
-                        }}
-                      >
-                        ✓
+                  <Box
+                    sx={{
+                      pt: 2.5,
+                      borderTop: "1px solid rgba(24, 24, 27, 0.06)",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 1.2,
+                    }}
+                  >
+                    {pillar.highlights.map((item, hIdx) => (
+                      <Box key={hIdx} sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
+                        <Box
+                          sx={{
+                            width: 18,
+                            height: 18,
+                            borderRadius: "50%",
+                            bgcolor: "rgba(234, 88, 12, 0.1)",
+                            color: "#EA580C",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "0.75rem",
+                            fontWeight: 800,
+                            flexShrink: 0,
+                          }}
+                        >
+                          ✓
+                        </Box>
+                        <Typography
+                          sx={{
+                            fontSize: "0.85rem",
+                            color: "#3F3F46",
+                            fontWeight: 600,
+                          }}
+                        >
+                          {item}
+                        </Typography>
                       </Box>
-                      <Typography
-                        sx={{
-                          fontSize: "0.85rem",
-                          color: "#3F3F46",
-                          fontWeight: 600,
-                        }}
-                      >
-                        {item}
-                      </Typography>
-                    </Box>
-                  ))}
+                    ))}
+                  </Box>
                 </Box>
-              </Box>
-            </motion.div>
-          </Grid>
+              </motion.div>
+            </Grid>
           ))}
         </Grid>
       </Container>
