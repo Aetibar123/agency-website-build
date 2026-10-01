@@ -50,7 +50,7 @@ export default function MissionSection() {
               borderLeft: "3px solid #0E7490",
             }}
           >
-            Our mission is to help ambitious companies unlock sustainable growth through bespoke digital solutions. We don&apos;t just build websites or launch one-off campaigns—we engineer interconnected digital ecosystems powered by modern full-stack architectures, automated AI pipelines, and deterministic search performance.
+            Our mission is to help business owners grow with confidence through dependable digital solutions. We don&apos;t just build websites or launch random ads—we create complete digital setups that combine fast mobile-friendly websites, Google search visibility, targeted ads, and automated customer follow-ups that consistently bring you real leads.
           </Typography>
 
           <Typography
@@ -62,7 +62,7 @@ export default function MissionSection() {
               pl: 3.5,
             }}
           >
-            Radical transparency, technical rigor, and zero compromise on code quality guide every repository we touch. We believe software should simplify operational complexity and serve as an enduring commercial asset for your business.
+            Total transparency, honest advice, and 100% client ownership guide everything we do. We believe technology should make running your business easier, not more complicated, serving as a reliable asset that brings long-term profit.
           </Typography>
         </Box>
       </Container>

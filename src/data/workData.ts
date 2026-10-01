@@ -208,7 +208,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Web Development",
-      href: "/services/web-development",
+      href: "/services/web-development-company-in-udaipur",
       description: "Custom business websites and web platforms built for speed, clear communication, and customer conversion.",
     },
   },
@@ -343,7 +343,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Web Development",
-      href: "/services/web-development",
+      href: "/services/web-development-company-in-udaipur",
       description: "High-performance e-commerce storefronts and web applications engineered for speed and conversion.",
     },
   },
@@ -478,7 +478,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "App Development",
-      href: "/services/app-development",
+      href: "/services/app-development-company-in-udaipur",
       description: "Cross-platform mobile applications for iOS and Android engineered for performance, convenience, and reliability.",
     },
   },
@@ -613,7 +613,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "App Development",
-      href: "/services/app-development",
+      href: "/services/app-development-company-in-udaipur",
       description: "Reliable mobile applications and field operational tools built for real-world business workflows.",
     },
   },
@@ -748,7 +748,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "AI Automation & Integration",
-      href: "/services/ai-automation",
+      href: "/services/ai-automation-company-in-udaipur",
       description: "Practical AI features and system automations designed to eliminate repetitive work and connect existing tools.",
     },
   },
@@ -883,7 +883,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "AI Automation & Integration",
-      href: "/services/ai-automation",
+      href: "/services/ai-automation-company-in-udaipur",
       description: "Custom AI assistants and automated knowledge workflows connected safely to your business data.",
     },
   },
@@ -1017,7 +1017,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "SEO Services",
-      href: "/services/seo",
+      href: "/services/seo-company-in-udaipur",
       description: "Technical search engine optimization and local search visibility to help customers find your business on Google.",
     },
   },
@@ -1151,7 +1151,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "SEO Services",
-      href: "/services/seo",
+      href: "/services/seo-company-in-udaipur",
       description: "Comprehensive technical audits, on-page optimization, and structured search markup for sustainable organic growth.",
     },
   },
@@ -1285,7 +1285,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Social Media Marketing",
-      href: "/services/social-media-marketing",
+      href: "/services/social-media-marketing-company-in-udaipur",
       description: "Structured content calendars, custom branded graphics, and ongoing management to keep your audience engaged.",
     },
   },
@@ -1419,7 +1419,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Social Media Marketing",
-      href: "/services/social-media-marketing",
+      href: "/services/social-media-marketing-company-in-udaipur",
       description: "Content planning and audience engagement strategies built to turn social attention into genuine business inquiries.",
     },
   },
@@ -1553,7 +1553,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Paid Advertising",
-      href: "/services/paid-advertising",
+      href: "/services/paid-advertising-company-in-udaipur",
       description: "Targeted Google Ads and Meta Ads campaigns managed with conversion tracking and disciplined budget control.",
     },
   },
@@ -1687,7 +1687,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Paid Advertising",
-      href: "/services/paid-advertising",
+      href: "/services/paid-advertising-company-in-udaipur",
       description: "Data-driven advertising campaigns across Google and Meta platforms managed with transparent performance reporting.",
     },
   },

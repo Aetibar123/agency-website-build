@@ -6,28 +6,28 @@ import { motion } from "framer-motion";
 
 const points = [
   {
-    title: "Honest, Practical Advice — No Unnecessary Costs",
-    desc: "We never sell you an expensive custom build or bloated software if a simpler, faster tool achieves your goal. We give you honest recommendations focused strictly on your business ROI.",
+    title: "All Digital Services Under One Roof",
+    desc: "You don't need to juggle a graphic designer, website developer, SEO specialist, and ad manager. We coordinate your branding, website, marketing, and automation seamlessly.",
   },
   {
-    title: "100% Code & Asset Ownership — No Lock-Ins",
-    desc: "You own 100% of your website, app, domain, database, and source code upon completion. No proprietary lock-in, no hidden monthly licensing traps, and no hostage fees ever.",
+    title: "Honest Advice & Practical Budgets",
+    desc: "We never recommend expensive or complex setups if a simpler, affordable approach solves your problem and brings better return on investment.",
   },
   {
-    title: "Direct Access to Dedicated Builders",
-    desc: "You collaborate directly with senior designers and engineers who actually build your product—not junior middlemen or sales reps who cannot answer your technical questions.",
+    title: "100% Asset & Code Ownership",
+    desc: "You own all design files, logos, ad accounts, domains, website code, and database logins from day one. No monthly hostage fees or proprietary lock-ins ever.",
   },
   {
-    title: "Mobile-First & Engineered to Convert Visitors",
-    desc: "Over 75% of your customers browse on smartphones. We design clean, responsive pages with instant load speeds and clear WhatsApp, call, and enquiry buttons to capture every lead.",
+    title: "Direct WhatsApp & Phone Communication",
+    desc: "You speak directly with the real designers, marketers, and developers working on your project—not a remote call center or junior account manager.",
   },
   {
-    title: "Practical AI with Privacy & Human Oversight",
-    desc: "We apply AI automation only where it saves real team hours and operational cost—like instant lead triage and order syncing—keeping your company data private and fully secure.",
+    title: "Focused on Real Inquiries, Not Vanity Metrics",
+    desc: "We measure success by phone calls, WhatsApp messages, and paying customers received—not vanity metrics or empty clicks that don't pay your bills.",
   },
   {
-    title: "Dependable Post-Launch Support & Partnership",
-    desc: "We never disappear after launch day. We provide dependable ongoing maintenance, security updates, and technical troubleshooting as your business grows.",
+    title: "Dependable Support & Long-Term Partnership",
+    desc: "We never disappear after launch day. We provide reliable ongoing maintenance, security updates, and marketing guidance as your business grows.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function HomeWhyAetibar() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Box sx={{ maxWidth: { xs: "100%", md: 960, lg: 1080 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 7.5 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -104,13 +104,13 @@ export default function HomeWhyAetibar() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
+                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
+                fontWeight: 700,
                 color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.18 },
-                letterSpacing: "-0.035em",
+                lineHeight: { xs: 1.25, md: 1.2 },
+                letterSpacing: "-0.03em",
                 textWrap: "balance",
-                mb: 2.5,
+                mb: 2.2,
               }}
             >
               Why Business Owners Choose Us as Their{" "}
@@ -128,15 +128,15 @@ export default function HomeWhyAetibar() {
 
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", md: "1.2rem" },
-                lineHeight: 1.75,
+                fontSize: { xs: "1rem", sm: "1.05rem", md: "1.125rem" },
+                lineHeight: 1.7,
                 color: "#52525B",
-                maxWidth: 860,
+                maxWidth: { xs: "100%", md: 740, lg: 780 },
                 mx: "auto",
                 fontWeight: 400,
               }}
             >
-              In Urdu and Hindi, &quot;Aetibar&quot; means Trust and Reliability. We started our company because too many business owners were let down by agencies that overpromised, overcharged, and delivered fragile software. Here is how we do things differently:
+              In Urdu and Hindi, &quot;Aetibar&quot; means Trust and Reliability. We started our company because too many business owners were burned by agencies that overpromised, charged hidden fees, and delivered fragile results. Here is how we do things differently:
             </Typography>
           </Box>
         </motion.div>

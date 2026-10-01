@@ -29,99 +29,99 @@ const studioPrinciples = [
     num: "01",
     tag: "HONEST ADVICE",
     title: "Honest Advice First — No Wasteful Spending",
-    headline: "We recommend what actually grows your revenue, never selling services you don't need.",
+    headline: "We recommend what actually brings you customers, never selling services you don't need.",
     narrative:
-      "Most agency traps begin when salespeople pitch expensive packages before understanding your business. We audit your operations, how leads currently arrive, and where money is being lost. Whether you need a high-converting website, local SEO, targeted ads, or automation, we advise you honestly on what will deliver the fastest return.",
+      "Many agencies try to sell you expensive, complicated packages right away. We take time to understand your business first: who your customers are and how they find you. Whether you need a simple business website, local Google Maps ranking (Local SEO), or targeted social media ads, we advise you honestly on what will bring the fastest return on investment.",
     icon: TerminalRoundedIcon,
-    metric: "100% Practical Recommendations",
+    metric: "100% Practical & Honest Advice",
   },
   {
     num: "02",
     tag: "FULL OWNERSHIP",
-    title: "100% Ownership of Code, Ads & Assets",
-    headline: "You own every line of code, ad campaign account, and graphic design from day one.",
+    title: "You Own 100% of Your Website, Ads & Data",
+    headline: "Every file, ad account, graphic design, and password belongs completely to you.",
     narrative:
-      "We transfer complete GitHub repositories, raw database credentials, Google & Meta ad accounts, and branding design files directly to your business. No proprietary agency locks, no hostage passwords, and zero monthly per-seat licensing taxes to access your own digital property.",
+      "Unlike other agencies that keep control of your assets, we hand over everything directly to your business: your website files, Google & Meta (Facebook/Instagram) ad accounts, logos, and passwords. You have full freedom with no locked accounts, no hostage fees, and no monthly charges just to access your own property.",
     icon: LockOutlinedIcon,
-    metric: "100% Client Asset Ownership",
+    metric: "100% Client Ownership Guaranteed",
   },
   {
     num: "03",
     tag: "DIRECT ACCESS",
-    title: "Direct Access to Real Specialists",
-    headline: "You collaborate directly with the engineers and marketers doing the work.",
+    title: "Direct Access to the People Doing the Work",
+    headline: "Speak directly with the web designers, developers, and marketers handling your project.",
     narrative:
-      "You will never be pitched by slick salespeople only to have your project handed off to junior interns playing telephone. You speak directly with the senior developers writing your code and the marketing strategists managing your campaigns via WhatsApp and scheduled calls.",
+      "You will never have to deal with pushy salespeople or account managers who don't have the answers. You get direct WhatsApp and phone access to the actual team designing your website and managing your marketing campaigns, making communication quick, clear, and easy.",
     icon: EngineeringOutlinedIcon,
-    metric: "Direct WhatsApp & Call Access",
+    metric: "Direct WhatsApp & Phone Support",
   },
   {
     num: "04",
-    tag: "CLEAR MILESTONES",
-    title: "Live Previews & Clear Reporting Every 14 Days",
-    headline: "Test real features as they are built and review transparent ROI reports.",
+    tag: "REGULAR UPDATES",
+    title: "Live Working Demos Every 14 Days",
+    headline: "Test your website or app on your phone as it gets built, with zero surprises.",
     narrative:
-      "We never disappear behind closed doors. Every two weeks, you receive private, clickable preview links to test new screens, alongside plain-English marketing reports showing real customer inquiries, phone calls, and conversions generated.",
+      "We never leave you wondering what is happening behind the scenes. Every two weeks, we send you a private, clickable link to test your new website or mobile app on your own mobile phone, alongside easy-to-read marketing reports showing real customer inquiries, phone calls, and progress.",
     icon: SpeedRoundedIcon,
-    metric: "14-Day Milestone Releases",
+    metric: "Live Previews Every 14 Days",
   },
   {
     num: "05",
-    tag: "CONVERSION-FIRST",
-    title: "Engineered to Win Real Paying Clients",
-    headline: "Clean layouts, fast loading, and targeted traffic that drives inquiries.",
+    tag: "BUILT FOR SALES",
+    title: "Designed to Win Real Paying Customers",
+    headline: "Fast mobile design and easy WhatsApp triggers that turn visitors into inquiries.",
     narrative:
-      "Having a website or running ads means nothing if visitors don't reach out. We engineer fast mobile-first layouts, prominent WhatsApp and call triggers, and laser-targeted SEO and ad campaigns designed specifically to turn curious browsers into paying customers.",
+      "A website is only valuable if it brings you customers. We design every page to open instantly on mobile devices, with clear phone call buttons, instant WhatsApp chat links, and easy contact forms. When people find you on Google or click your ads, reaching out to you is effortless.",
     icon: TrendingUpRoundedIcon,
-    metric: "< 1s Mobile Load & High Conversion",
+    metric: "Fast Loading & High Inquiry Rates",
   },
   {
     num: "06",
-    tag: "ZERO DISRUPTION",
-    title: "Safe Launches with Zero Business Disruption",
-    headline: "Rigorous testing and smooth transitions so your daily sales never stop.",
+    tag: "HASSLE-FREE LAUNCH",
+    title: "Smooth Launches with Zero Business Interruption",
+    headline: "Thorough testing before launch so your daily sales and customer inquiries never stop.",
     narrative:
-      "Switching to a new website, launching an app, or scaling advertising should never cause customer confusion or downtime. We thoroughly test every contact form, payment gateway, tracking pixel, and WhatsApp link before going live, guaranteeing zero lost leads.",
+      "Switching to a new website or scaling your advertising should never cause customer confusion or downtime. We thoroughly test every contact form, payment system, WhatsApp link, and mobile screen before going live, guaranteeing a smooth transition and zero lost leads.",
     icon: ShieldRoundedIcon,
-    metric: "Zero Operational Downtime",
+    metric: "Zero Downtime & Thorough Testing",
   },
 ];
 
 const fullServiceCapabilities = [
   {
     category: "CUSTOM WEB & E-COMMERCE",
-    title: "High-Speed Business Websites & Online Stores",
-    desc: "Mobile-first, lightning-fast business websites and customer portals built with Next.js and React. Engineered for sub-second load times and high visitor-to-lead conversion.",
+    title: "Fast Business Websites & Online Stores That Sell",
+    desc: "Mobile-friendly, modern business websites and e-commerce stores designed to look professional on every phone and computer. Built for fast loading and optimized to turn visitors into paying customers.",
     icon: <LanguageRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
   },
   {
     category: "MOBILE APP DEVELOPMENT",
-    title: "Cross-Platform iOS & Android Apps",
-    desc: "Intuitive mobile applications for booking, shopping, and client engagement. Built with React Native and Flutter for seamless performance and offline reliability.",
+    title: "Custom Android & iPhone (iOS) Mobile Apps",
+    desc: "User-friendly mobile apps for client bookings, online shopping, customer loyalty, or internal business operations—delivering a smooth, reliable experience for your users.",
     icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
   },
   {
     category: "SEARCH ENGINE OPTIMIZATION (SEO)",
-    title: "Google First-Page Organic Rankings",
-    desc: "Local Udaipur SEO and national search ranking strategies that bring steady organic inquiries without having to pay for every single click.",
+    title: "First-Page Google Search & Local SEO Rankings",
+    desc: "Local SEO in Udaipur and national Google ranking strategies that help your business get found by customers who are actively searching for what you offer, bringing consistent, free inquiries.",
     icon: <SearchRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
   },
   {
     category: "TARGETED PAID ADVERTISING (PPC)",
-    title: "High-ROI Google & Meta (Instagram/Facebook) Ads",
-    desc: "Laser-focused paid ad campaigns paired with conversion-optimized landing pages. Every marketing rupee is tracked to genuine phone calls and qualified inquiries.",
+    title: "High-ROI Google Ads & Social Media Advertising",
+    desc: "Laser-targeted Google Ads and Meta (Facebook & Instagram) ads designed to reach ready-to-buy customers. Every rupee is tracked so you see exact phone calls, WhatsApp inquiries, and sales leads.",
     icon: <AdsClickRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
   },
   {
     category: "SOCIAL MEDIA MARKETING & BRANDING",
-    title: "Brand Identity, Graphic Design & Social Growth",
-    desc: "Professional branding, logo identity, and engaging monthly social media content that builds genuine customer credibility and industry authority.",
+    title: "Brand Identity, Logo Design & Social Media Growth",
+    desc: "Professional logo design, brand graphics, and engaging social media posts that establish credibility, build customer trust, and make your business stand out from competitors.",
     icon: <PaletteOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
   },
   {
-    category: "PRACTICAL AI & AUTOMATED WORKFLOWS",
-    title: "WhatsApp Automation & CRM Integrations",
-    desc: "Instant lead notifications straight to WhatsApp, automated customer follow-ups, and CRM syncs that eliminate repetitive manual busywork for your team.",
+    category: "SMART BUSINESS AUTOMATION",
+    title: "WhatsApp Lead Automation & Customer Systems",
+    desc: "Instant customer notifications sent to WhatsApp, automated replies for new inquiries, and simple customer management systems that save your team hours of manual work every week.",
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
   },
 ];
@@ -220,7 +220,7 @@ export default function AboutPageClient() {
                     fontFamily: "monospace",
                   }}
                 >
-                  ABOUT AETIBAR &bull; ROOTED IN TRUST &bull; BUILT FOR GROWTH
+                  ABOUT AETIBAR &bull; TRUSTED DIGITAL AGENCY IN UDAIPUR
                 </Typography>
               </Box>
             </motion.div>
@@ -278,7 +278,7 @@ export default function AboutPageClient() {
                   fontWeight: 400,
                 }}
               >
-                No hidden costs, no confusing jargon, and full asset ownership. From high-converting websites and mobile apps to SEO, paid advertising, and AI automation—we help business owners acquire more customers and scale with confidence.
+                Looking for a dependable digital partner to grow your business online? At Aetibar, we help business owners get more customers with fast business websites, custom mobile apps, Google SEO ranking, and targeted online advertising. No confusing tech jargon, no hidden fees—just honest guidance and real business growth.
               </Typography>
             </motion.div>
 
@@ -368,7 +368,7 @@ export default function AboutPageClient() {
             >
               <Image
                 src="/images/home/editorial-craft-operations.jpg"
-                alt="Aetibar digital engineering team in Udaipur reviewing software architecture and conversion workflows"
+                alt="Aetibar web development and digital marketing team in Udaipur helping businesses grow online"
                 fill
                 priority
                 style={{ objectFit: "cover", objectPosition: "center center" }}
@@ -416,7 +416,7 @@ export default function AboutPageClient() {
                     fontWeight: 600,
                   }}
                 >
-                  STUDIO // UDAIPUR, RAJASTHAN &bull; SERVING CLIENTS WORLDWIDE
+                  UDAIPUR, RAJASTHAN &bull; SERVING CLIENTS ACROSS INDIA &amp; GLOBALLY
                 </Typography>
               </Box>
 
@@ -451,7 +451,7 @@ export default function AboutPageClient() {
                     letterSpacing: "0.04em",
                   }}
                 >
-                  100% CODE &amp; ASSET OWNERSHIP
+                  100% OWNERSHIP OF YOUR WEBSITE &amp; ACCOUNTS
                 </Typography>
               </Box>
             </Box>
@@ -462,26 +462,26 @@ export default function AboutPageClient() {
                 {
                   icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
                   val: "100%",
-                  label: "Code & Asset Ownership",
-                  desc: "Complete transfer of code, ad accounts, designs & logins",
+                  label: "Complete Ownership",
+                  desc: "You fully own your website, ad accounts, design files, and login details",
                 },
                 {
                   icon: <SpeedRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
                   val: "14 Days",
-                  label: "Live Working Milestones",
-                  desc: "Interactive builds and weekly marketing performance updates",
+                  label: "Live Working Demos",
+                  desc: "Test your website or app on your phone every 2 weeks with clear updates",
                 },
                 {
                   icon: <SearchRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
-                  val: "Top SEO",
-                  label: "Google Search Visibility",
-                  desc: "Optimized for first-page rankings & lightning-fast speed",
+                  val: "Page 1 SEO",
+                  label: "Google Search Ranking",
+                  desc: "Get found by local and national customers searching for your services",
                 },
                 {
                   icon: <TrendingUpRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
-                  val: "Real ROI",
-                  label: "Measurable Business Growth",
-                  desc: "Laser-focused campaigns designed to win paying customers",
+                  val: "Real Results",
+                  label: "More Calls & Leads",
+                  desc: "Everything we build is designed to generate phone calls, WhatsApp messages, and sales",
                 },
               ].map((m, idx) => (
                 <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={idx}>
@@ -615,7 +615,7 @@ export default function AboutPageClient() {
                       fontFamily: "monospace",
                     }}
                   >
-                    WHY AETIBAR EXISTS &bull; THE STORY BEHIND OUR NAME
+                    WHY AETIBAR EXISTS &bull; THE MEANING OF TRUST
                   </Typography>
                 </Box>
 
@@ -645,18 +645,18 @@ export default function AboutPageClient() {
                 </Typography>
 
                 <Typography sx={{ color: "#52525B", lineHeight: 1.8, fontSize: "1.05rem", mb: 2.5 }}>
-                  We founded <strong>Aetibar</strong> after watching countless business owners waste lakhs on agencies that overpromised and underdelivered. Whether it was software companies building sluggish websites that broke on mobile, or marketing agencies burning ad budgets on empty clicks and vanity likes without delivering a single paying customer.
+                  The word <strong>Aetibar</strong> means <em>Trust</em> (ऐतबार / اعتبار). We started this company after seeing so many business owners waste hard-earned money on digital agencies that overpromised and underdelivered. Many businesses paid lakhs for slow websites that didn&apos;t work properly on mobile phones, or hired marketing agencies that wasted ad budgets on fake likes and vanity clicks without generating a single phone call or paying customer.
                 </Typography>
 
                 <Typography sx={{ color: "#52525B", lineHeight: 1.8, fontSize: "1.05rem", mb: 4 }}>
-                  Even worse, many agencies hold client ad accounts, passwords, and source code hostage, locking companies into expensive retainers just to make basic updates. We believe digital partnerships should be built on trust, total clarity, and measurable return on investment across development and marketing.
+                  To make matters worse, traditional agencies often keep your website logins and ad accounts locked, forcing you to pay heavy monthly retainer fees just to make simple edits. We started Aetibar to change this. We believe every business deserves a trusted partner who speaks plain language, provides honest advice, and focuses on one clear goal: helping you grow your revenue.
                 </Typography>
 
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
                   {[
-                    "Honest, practical guidance before you spend a single rupee on development or ads.",
-                    "Mobile-first websites, apps, and marketing funnels engineered to convert visitors into inquiries.",
-                    "You own 100% of your source code, ad accounts, creative assets, and logins forever.",
+                    "Honest advice before spending: We tell you clearly what your business actually needs—never pushing complicated tools or services you don't.",
+                    "Built to win paying clients: Fast mobile websites, Google SEO, and targeted ads designed specifically to generate customer inquiries and sales.",
+                    "100% complete ownership: All website files, Google & Meta ad accounts, creative designs, and login details belong entirely to you.",
                   ].map((pt, pIdx) => (
                     <Box key={pIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.4 }}>
                       <CheckCircleRoundedIcon sx={{ color: "#16A34A", fontSize: 20, mt: 0.3, flexShrink: 0 }} />
@@ -706,10 +706,10 @@ export default function AboutPageClient() {
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.4 }}>
                       {[
-                        "Disappears for months with zero updates, leaving you in the dark on tech and ad spend.",
-                        "Salespeople make grand promises, then hand your account to junior interns playing telephone.",
-                        "Holds your code, domain, and ad accounts hostage, charging recurring fees to access your own assets.",
-                        "Vanity metrics and rushed launch days where broken forms and empty clicks waste your budget.",
+                        "Disappears for weeks with zero updates, leaving you in the dark about your project and ad spend.",
+                        "Salespeople make grand promises, then hand you off to junior staff who do not understand your business.",
+                        "Holds your website passwords, domain, and ad accounts hostage, charging monthly fees just to make minor edits.",
+                        "Reports meaningless vanity metrics (like impressions and page clicks) instead of actual phone calls and customer sales.",
                       ].map((trap, tIdx) => (
                         <Box key={tIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                           <Typography sx={{ color: "#DC2626", fontWeight: 700, fontSize: "0.85rem", mt: 0.1 }}>&bull;</Typography>
@@ -741,10 +741,10 @@ export default function AboutPageClient() {
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.4 }}>
                       {[
-                        "Interactive working previews and transparent marketing reporting delivered every 14 days.",
-                        "Direct phone and WhatsApp communication with the dedicated developers and marketing specialists.",
-                        "100% full source code, database access, ad accounts, and design assets transferred to you.",
-                        "Rigorous testing and conversion tracking, ensuring steady customer inquiries with zero downtime.",
+                        "Live clickable previews and simple, easy-to-read progress reports delivered directly to you every 14 days.",
+                        "Direct WhatsApp and phone access to the actual web developers and marketing experts working on your project.",
+                        "Complete handover of all website files, ad accounts, logos, and passwords—you have 100% total control.",
+                        "Thorough quality testing and conversion focus, ensuring steady customer leads without technical headaches.",
                       ].map((pact, pIdx) => (
                         <Box key={pIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                           <Typography sx={{ color: "#16A34A", fontWeight: 700, fontSize: "0.85rem", mt: 0.1 }}>&bull;</Typography>
@@ -823,7 +823,7 @@ export default function AboutPageClient() {
                     fontFamily: "monospace",
                   }}
                 >
-                  OUR OPERATIONAL STANDARDS &bull; SIX CORE PROMISES
+                  OUR CORE VALUES &bull; SIX PROMISES TO YOU
                 </Typography>
               </Box>
 
@@ -841,7 +841,7 @@ export default function AboutPageClient() {
                   mb: 2.5,
                 }}
               >
-                Six Principles That Protect Your Business at{" "}
+                Six Simple Principles That Protect Your Business at{" "}
                 <Box
                   component="span"
                   sx={{
@@ -864,7 +864,7 @@ export default function AboutPageClient() {
                   mx: "auto",
                 }}
               >
-                These are not marketing slogans. They are strict operating standards that protect your investment, keep you in control of your digital assets, and guarantee that what we build actually delivers business revenue.
+                These are not empty marketing slogans. They are our daily operating standards that protect your investment, keep you in complete control of your digital assets, and guarantee that what we build delivers real customer inquiries and measurable growth.
               </Typography>
             </Box>
           </motion.div>
@@ -1041,7 +1041,7 @@ export default function AboutPageClient() {
                 >
                   <Image
                     src="/images/home/editorial-client-consultation.jpg"
-                    alt="Aetibar software engineers collaborating on system design in Udaipur studio"
+                    alt="Aetibar web design and digital marketing team in Udaipur"
                     fill
                     style={{ objectFit: "cover" }}
                     sizes="(max-width: 1200px) 100vw, 50vw"
@@ -1085,7 +1085,7 @@ export default function AboutPageClient() {
                       </Typography>
                     </Box>
                     <Typography sx={{ fontSize: "0.85rem", color: "#D4D4D8", lineHeight: 1.6 }}>
-                      We operate proudly from Udaipur, Rajasthan, engineering custom websites, mobile apps, and workflow systems for ambitious businesses across India, North America, the UK, and the UAE.
+                      Operating from Udaipur, Rajasthan, Aetibar is a trusted web development and digital marketing agency serving business owners across India, the USA, the UK, Canada, and the UAE. We help local businesses and global brands get found online, attract quality leads, and scale smoothly.
                     </Typography>
                   </Box>
                 </Box>
@@ -1125,7 +1125,7 @@ export default function AboutPageClient() {
                       fontFamily: "monospace",
                     }}
                   >
-                    OUR FULL-SERVICE CAPABILITIES
+                    WHAT WE DO &bull; FULL-SERVICE DIGITAL AGENCY
                   </Typography>
                 </Box>
 
@@ -1155,7 +1155,7 @@ export default function AboutPageClient() {
                 </Typography>
 
                 <Typography sx={{ color: "#52525B", lineHeight: 1.75, fontSize: "1.05rem", mb: 4 }}>
-                  No more juggling five different freelancers or disconnected agencies. From high-speed web and app engineering to Google SEO, targeted advertising, branding, and smart automations—we align your technology and marketing to deliver real business growth:
+                  No more coordinating between separate freelancers for website design, coding, Google rankings, and social media. As a full-service web development and digital marketing company in Udaipur, we provide complete, easy-to-understand solutions that work together to bring you real business results:
                 </Typography>
 
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -1295,7 +1295,7 @@ export default function AboutPageClient() {
                           fontWeight: 700,
                         }}
                       >
-                        LET&apos;S BUILD SOMETHING RELIABLE TOGETHER
+                        LET&apos;S GROW YOUR BUSINESS TOGETHER
                       </Typography>
                     </Box>
                   </motion.div>
@@ -1348,7 +1348,7 @@ export default function AboutPageClient() {
                         mb: { xs: 3, lg: 0 },
                       }}
                     >
-                      Tell us about your business goals, target customers, and operational bottlenecks. We will give you honest, practical guidance, a transparent proposal, and a realistic launch timeline for websites, mobile apps, marketing, or AI automation. No high-pressure sales.
+                      Tell us about your business goals, target customers, and what you want to achieve online. We will give you honest, plain-English guidance, a transparent proposal, and a realistic timeline—whether you need a custom business website, mobile app, Google SEO, targeted ads, or smart WhatsApp automation. No pushy sales talk, just practical solutions to grow your business.
                     </Typography>
                   </motion.div>
                 </Grid>
@@ -1409,7 +1409,7 @@ export default function AboutPageClient() {
                               },
                             }}
                           >
-                            Explore How We Work
+                            See How We Work Step-by-Step
                           </Button>
                         </Link>
                       </motion.div>
@@ -1436,7 +1436,7 @@ export default function AboutPageClient() {
                     gap: { xs: 2, sm: 4 },
                   }}
                 >
-                  {["Free 30-Minute Consultation", "100% Code & Ad Account Ownership", "Direct Response Within 24 Hours"].map((badge, idx) => (
+                  {["Free 30-Minute Consultation", "100% Website & Ad Account Ownership", "Direct Response Within 24 Hours"].map((badge, idx) => (
                     <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                       <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
                       <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.82)", fontWeight: 500 }}>

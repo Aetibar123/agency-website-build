@@ -7,27 +7,27 @@ const steps = [
   {
     num: "01",
     title: "Discovery & Honest Advice",
-    desc: "We discuss your business goals, target customers, and operational bottlenecks. We give you honest, practical recommendations before you spend a single rupee.",
+    desc: "We discuss your business goals, target customers, and operational bottlenecks. We provide honest, practical recommendations before you spend a single rupee.",
   },
   {
     num: "02",
-    title: "Fixed Scope & Clear Plan",
-    desc: "You receive a transparent project proposal with clearly defined deliverables, fixed pricing, and realistic timeline milestones. No hidden surprises.",
+    title: "Fixed Scope & Clear Pricing",
+    desc: "You receive a transparent project proposal with clearly defined deliverables, guaranteed fixed pricing, and realistic timeline milestones. No hidden surprises.",
   },
   {
     num: "03",
     title: "Design & Live Previews",
-    desc: "We craft modern, mobile-friendly layouts and share interactive previews so you can test the user experience and share feedback before final development.",
+    desc: "We craft modern, mobile-friendly layouts, logos, or campaign mockups and share live previews so you can test the customer experience and give feedback.",
   },
   {
     num: "04",
-    title: "Rigorous Speed & Form Testing",
-    desc: "We test across real phones, tablets, and computers, ensuring fast loading speed, working WhatsApp/enquiry forms, and rock-solid security before launch.",
+    title: "Lead & Speed Testing",
+    desc: "We test across real phones, tablets, and computers, ensuring fast loading speed, working WhatsApp and call buttons, and rock-solid reliability before launch.",
   },
   {
     num: "05",
     title: "Launch, Handover & Support",
-    desc: "We connect your domain, deploy to live hosting, hand over 100% code ownership, and stay by your side with dependable ongoing maintenance.",
+    desc: "We deploy your project live, transfer 100% full asset and code ownership, and stay right by your side with dependable ongoing maintenance and support.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function HomeProcess() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Box sx={{ maxWidth: { xs: "100%", md: 960, lg: 1080 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 7.5 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -102,13 +102,13 @@ export default function HomeProcess() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
+                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
+                fontWeight: 700,
                 color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.18 },
-                letterSpacing: "-0.035em",
+                lineHeight: { xs: 1.25, md: 1.2 },
+                letterSpacing: "-0.03em",
                 textWrap: "balance",
-                mb: 2.5,
+                mb: 2.2,
               }}
             >
               A Straightforward Process With{" "}
@@ -126,15 +126,15 @@ export default function HomeProcess() {
 
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", md: "1.2rem" },
-                lineHeight: 1.75,
+                fontSize: { xs: "1rem", sm: "1.05rem", md: "1.125rem" },
+                lineHeight: 1.7,
                 color: "#52525B",
                 fontWeight: 400,
-                maxWidth: 860,
+                maxWidth: { xs: "100%", md: 740, lg: 780 },
                 mx: "auto",
               }}
             >
-              No confusing tech jargon, no unexpected invoices, and no disappearing developers. Here is our step-by-step roadmap to taking your project live smoothly.
+              No confusing tech jargon, no unexpected invoices, and no disappearing developers. Here is our straightforward step-by-step roadmap from your first consultation to live results:
             </Typography>
           </Box>
         </motion.div>

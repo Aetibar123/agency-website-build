@@ -124,7 +124,7 @@ const servicesPageSchema = {
               "name": "Graphic Design & Brand Identity",
               "description":
                 "Professional logo design, brand guidelines, UI/UX designs, social media templates, and marketing graphics.",
-              "url": "https://www.aetibar.in/services/social-media-marketing",
+              "url": "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
             },
           },
           {
@@ -134,7 +134,7 @@ const servicesPageSchema = {
               "name": "Social Media Marketing & Management",
               "description":
                 "Monthly content planning, branded graphic posts, customer engagement, and trust building on Instagram, Facebook, and LinkedIn.",
-              "url": "https://www.aetibar.in/services/social-media-marketing",
+              "url": "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
             },
           },
           {
@@ -144,7 +144,7 @@ const servicesPageSchema = {
               "name": "SEO & Google Search Optimization",
               "description":
                 "Local SEO and Google ranking optimization to attract qualified buyers without high advertising costs.",
-              "url": "https://www.aetibar.in/services/seo",
+              "url": "https://www.aetibar.in/services/seo-company-in-udaipur",
             },
           },
           {
@@ -154,7 +154,7 @@ const servicesPageSchema = {
               "name": "Targeted Paid Advertising (Google & Meta Ads)",
               "description":
                 "High-ROI Google Search Ads and Meta campaigns focused on verified customer calls and direct WhatsApp inquiries.",
-              "url": "https://www.aetibar.in/services/paid-advertising",
+              "url": "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
             },
           },
           {
@@ -164,7 +164,7 @@ const servicesPageSchema = {
               "name": "Custom Web Development",
               "description":
                 "Fast, mobile-friendly business websites and e-commerce stores designed to capture inquiries and sell products.",
-              "url": "https://www.aetibar.in/services/web-development",
+              "url": "https://www.aetibar.in/services/web-development-company-in-udaipur",
             },
           },
           {
@@ -174,7 +174,7 @@ const servicesPageSchema = {
               "name": "Mobile App Development",
               "description":
                 "Simple iOS and Android applications for customers, bookings, deliveries, and team operations.",
-              "url": "https://www.aetibar.in/services/app-development",
+              "url": "https://www.aetibar.in/services/app-development-company-in-udaipur",
             },
           },
           {
@@ -184,7 +184,7 @@ const servicesPageSchema = {
               "name": "AI & Smart Workflow Automation",
               "description":
                 "Practical automated tools connecting WhatsApp, email, and spreadsheets to save 10+ hours of team busywork weekly.",
-              "url": "https://www.aetibar.in/services/ai-automation",
+              "url": "https://www.aetibar.in/services/ai-automation-company-in-udaipur",
             },
           },
         ],

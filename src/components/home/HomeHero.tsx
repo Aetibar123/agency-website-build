@@ -10,6 +10,7 @@ import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
 import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 const ThreeHeroCanvas = dynamic(() => import("./ThreeHeroCanvas"), {
@@ -20,26 +21,26 @@ const ThreeHeroCanvas = dynamic(() => import("./ThreeHeroCanvas"), {
 const heroMetrics = [
   {
     value: "Fixed",
-    title: "Upfront Scope & Pricing",
-    desc: "Detailed project deliverables, timeline milestones, and fixed pricing agreed upon before work begins.",
+    title: "Upfront Budget Guarantee",
+    desc: "Itemized scope specifications and fixed project investment agreed upon before kickoff. Zero surprise bills.",
     icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Live",
-    title: "Interactive Previews",
-    desc: "Working development previews so you can test features on real devices and guide progress as we build.",
-    icon: <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    value: "All-in-1",
+    title: "Integrated Growth Suite",
+    desc: "Visual identity, digital platforms, audience acquisition, and back-office tools coordinated under one roof.",
+    icon: <CampaignOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
     value: "100%",
-    title: "Full Code Ownership",
-    desc: "Complete transfer of source code, domains, database access, and documentation without proprietary lock-ins.",
+    title: "Total Asset Sovereignty",
+    desc: "Transfer of all creative master files, source code, ad platforms, and live hosting credentials to you from day one.",
     icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Zero",
-    title: "Disruption Launch",
-    desc: "Rigorous testing of forms, speed, and customer data before going live so your daily operations stay smooth.",
+    value: "Direct",
+    title: "Dedicated Specialist Access",
+    desc: "Collaborate directly with the senior creators and strategists actively building your commercial solution.",
     icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
 ];
@@ -101,7 +102,7 @@ export default function HomeHero() {
         {/* Centered Hero Typographic Core with Smooth Stagger */}
         <Box
           sx={{
-            maxWidth: { xs: "100%", md: 1040, lg: 1140 },
+            maxWidth: { xs: "100%", sm: 840, md: 960 },
             mx: "auto",
             textAlign: "center",
             display: "flex",
@@ -157,7 +158,7 @@ export default function HomeHero() {
                   textAlign: "center",
                 }}
               >
-                Web &amp; App Development &bull; AI Automation &bull; Digital Marketing
+                FULL-SERVICE DIGITAL AGENCY &bull; BRANDING &bull; MARKETING &bull; WEBSITES &bull; AI
               </Typography>
             </Box>
           </motion.div>
@@ -171,16 +172,16 @@ export default function HomeHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.35rem", md: "3rem", lg: "3.4rem" },
-                fontWeight: 600,
+                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem", lg: "3.25rem" },
+                fontWeight: 700,
                 color: "#18181B",
                 lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
-                letterSpacing: { xs: "-0.02em", md: "-0.035em" },
+                letterSpacing: { xs: "-0.02em", md: "-0.03em" },
                 textWrap: "balance",
-                mb: { xs: 3, md: 3.5 },
+                mb: { xs: 2.5, md: 3 },
               }}
             >
-              Custom Websites, Mobile Apps &amp; AI Systems —{" "}
+              Websites, Marketing, Branding &amp; AI —{" "}
               <Box
                 component="span"
                 sx={{
@@ -203,15 +204,15 @@ export default function HomeHero() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", sm: "1.18rem", md: "1.25rem" },
-                lineHeight: 1.8,
+                fontSize: { xs: "1.025rem", sm: "1.125rem", md: "1.2rem" },
+                lineHeight: 1.75,
                 color: "#52525B",
-                maxWidth: 820,
-                mb: { xs: 4, md: 5 },
+                maxWidth: { xs: "100%", md: 760, lg: 800 },
+                mb: { xs: 4, md: 4.5 },
                 fontWeight: 400,
               }}
             >
-              Stop losing potential customers to slow websites and manual busywork. We design high-converting business websites, develop smooth mobile apps, automate repetitive workflows with AI, and run targeted marketing campaigns that bring qualified inquiries straight to your phone.
+              Stop losing potential clients to outdated branding, invisible Google rankings, and slow websites. We craft memorable brand designs, build fast business websites and mobile apps, run high-ROI Google and social ads, and automate repetitive office tasks with AI—delivering real customer inquiries straight to your phone.
             </Typography>
           </motion.div>
 
@@ -303,9 +304,9 @@ export default function HomeHero() {
               }}
             >
               {[
-                "100% Code & Domain Ownership",
-                "Fixed Pricing & Clear Timelines",
-                "Direct Access to Dedicated Builders",
+                "Comprehensive Digital Capabilities",
+                "Guaranteed Fixed Budgets",
+                "Complete Asset Sovereignty",
               ].map((text, i) => (
                 <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                   <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
@@ -447,7 +448,7 @@ export default function HomeHero() {
                         fontFamily: "monospace",
                       }}
                     >
-                      Practical Results
+                      COMMERCIAL RESULTS
                     </Typography>
                     <Typography
                       sx={{
@@ -457,7 +458,7 @@ export default function HomeHero() {
                         lineHeight: 1.3,
                       }}
                     >
-                      Websites &amp; apps built to convert visitors into clients
+                      Turning web visitors into verified customer inquiries
                     </Typography>
                   </Box>
                 </Box>
@@ -496,10 +497,10 @@ export default function HomeHero() {
                         fontFamily: "monospace",
                       }}
                     >
-                      Automated Workflows
+                      MULTI-DISCIPLINARY CRAFT
                     </Typography>
                     <Typography sx={{ fontSize: "0.85rem", fontWeight: 600 }}>
-                      Instant lead capture &bull; Zero manual busywork
+                      Design systems &bull; Web platforms &bull; Search media &bull; Automations
                     </Typography>
                   </Box>
                 </Box>

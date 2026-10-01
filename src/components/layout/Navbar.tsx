@@ -32,37 +32,37 @@ const serviceItems = [
   {
     title: "Web Development",
     desc: "Business websites, e-commerce, and custom web apps",
-    path: "/services/web-development",
+    path: "/services/web-development-company-in-udaipur",
     icon: <LanguageIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
     title: "App Development",
     desc: "Mobile applications for iOS & Android",
-    path: "/services/app-development",
+    path: "/services/app-development-company-in-udaipur",
     icon: <PhoneIphoneIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
     title: "AI Automation & Integration",
     desc: "Workflow automation and smart system integrations",
-    path: "/services/ai-automation",
+    path: "/services/ai-automation-company-in-udaipur",
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
     title: "SEO Services",
     desc: "Technical SEO and organic search visibility",
-    path: "/services/seo",
+    path: "/services/seo-company-in-udaipur",
     icon: <SearchIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
     title: "Social Media Marketing",
     desc: "Content planning and active social management",
-    path: "/services/social-media-marketing",
+    path: "/services/social-media-marketing-company-in-udaipur",
     icon: <ShareOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
     title: "Paid Advertising",
     desc: "Google Ads & Meta Ads campaign management",
-    path: "/services/paid-advertising",
+    path: "/services/paid-advertising-company-in-udaipur",
     icon: <AdsClickOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
 ];
