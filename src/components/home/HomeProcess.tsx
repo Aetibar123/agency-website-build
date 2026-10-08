@@ -6,30 +6,41 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "01",
-    title: "Discovery & Honest Advice",
-    desc: "We discuss your business goals, target customers, and operational bottlenecks. We provide honest, practical recommendations before you spend a single rupee.",
+    title: "Understand Your Business",
+    desc:
+      "We start by understanding your business, goals, customers, current setup, and the problem you want to solve before recommending what you actually need.",
   },
+
   {
     num: "02",
-    title: "Fixed Scope & Clear Pricing",
-    desc: "You receive a transparent project proposal with clearly defined deliverables, guaranteed fixed pricing, and realistic timeline milestones. No hidden surprises.",
+    title: "Plan the Right Approach",
+    desc:
+      "We define the scope, deliverables, timeline, and pricing based on your requirements, along with the tools and approach that make sense for the project.",
   },
+
   {
     num: "03",
-    title: "Design & Live Previews",
-    desc: "We craft modern, mobile-friendly layouts, logos, or campaign mockups and share live previews so you can test the customer experience and give feedback.",
+    title: "Build & Implement",
+    desc:
+      "We develop your website or app, set up your marketing activities, or build your automation workflows while keeping you involved at the relevant stages.",
   },
+
   {
     num: "04",
-    title: "Lead & Speed Testing",
-    desc: "We test across real phones, tablets, and computers, ensuring fast loading speed, working WhatsApp and call buttons, and rock-solid reliability before launch.",
+    title: "Review & Refine",
+    desc:
+      "We test the relevant parts of the project, review the work with you, make the agreed changes, and ensure everything is ready for launch or ongoing use.",
   },
+
   {
     num: "05",
-    title: "Launch, Handover & Support",
-    desc: "We deploy your project live, transfer 100% full asset and code ownership, and stay right by your side with dependable ongoing maintenance and support.",
+    title: "Launch & Ongoing Support",
+    desc:
+      "Once everything is ready, we launch the project, provide the relevant access and handover, and can continue supporting your website, marketing, app, or automation as needed.",
   },
 ];
+
+
 
 export default function HomeProcess() {
   return (
@@ -134,7 +145,8 @@ export default function HomeProcess() {
                 mx: "auto",
               }}
             >
-              No confusing tech jargon, no unexpected invoices, and no disappearing developers. Here is our straightforward step-by-step roadmap from your first consultation to live results:
+             No confusing technical jargon, unclear project details, or unnecessary complexity. We keep the process straightforward—from understanding your business and planning the right approach to building, reviewing, and launching your project.
+
             </Typography>
           </Box>
         </motion.div>

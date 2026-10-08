@@ -45,115 +45,180 @@ const clientPromises: ClientPromise[] = [
     num: "01",
     category: "PROJECT VISIBILITY",
     filterCategory: "visibility",
-    title: "Visible Progress Throughout Development",
-    headline: "Working software previews you can review as features are built.",
+    title: "Clear Progress Throughout the Work",
+    headline: "Stay informed about what is happening at every important stage.",
+
     promise:
-      "Instead of waiting months to see what has been built, you receive working preview links throughout development. You and your team can test actual screens, try workflows with representative data, and provide direct feedback so the final product aligns with your expectations.",
-    trapTitle: "The Multi-Month Black Box",
+      "You should not have to wonder what is happening after a project starts. We share relevant progress, discuss important decisions, and give you opportunities to review the work and provide feedback throughout the process.",
+
+    trapTitle: "The Black Box Project",
     trapText:
-      "Development happens behind closed doors for months with little to no visibility until launch day, making adjustments stressful and expensive.",
+      "Work continues for weeks with limited communication, leaving you unsure about progress until the final delivery.",
+
     slaClause:
-      "Standard Practice — Regular working previews throughout development with clear demo walkthroughs.",
-    artifactType: "STAGING ENVIRONMENT PREVIEW",
-    artifactDetail: "Active Staging Environment Preview Link",
-    artifactStatus: "Working Preview • Ready for Review",
+      "Standard Practice — Regular progress updates and relevant reviews throughout the agreed work.",
+
+    artifactType: "PROJECT PROGRESS",
+    artifactDetail: "Progress Updates & Review Points",
+    artifactStatus: "Clear Progress • Ready for Review",
+
     icon: VisibilityOutlinedIcon,
-    metrics: ["Working Staging Previews", "Video Walkthroughs", "Continuous Alignment"],
+
+    metrics: [
+      "Regular Progress Updates",
+      "Clear Review Points",
+      "Ongoing Communication",
+    ],
   },
+
   {
     num: "02",
-    category: "CODE & ASSET ACCESS",
+    category: "OWNERSHIP & ACCESS",
     filterCategory: "ownership",
     title: "Clear Ownership and Access",
-    headline: "Source code, database access, and credentials clearly transferred.",
+    headline: "Keep access to the digital assets connected to your business.",
+
     promise:
-      "We believe your software should belong to your business. We provide clear handover of code repositories, database access, documentation, and deployment configurations as defined in our project agreement, giving you complete long-term control over your digital assets.",
-    trapTitle: "Proprietary Lock-in & Withheld Code",
+      "Your website, advertising accounts, social media profiles, analytics, files, and other digital assets should remain accessible to your business. Where applicable, we provide the agreed access, files, credentials, and handover as defined in the project agreement.",
+
+    trapTitle: "Unclear Access & Ownership",
     trapText:
-      "Agencies or vendors holding code or database access hostage, or forcing you into closed proprietary systems where you cannot easily modify your own tools.",
+      "Important accounts, files, or digital assets remain difficult to access because ownership and handover were never clearly discussed.",
+
     slaClause:
-      "Standard Agreement — Full handover of designated source repositories, database access, and technical documentation upon milestone completion.",
-    artifactType: "CODEBASE & CREDENTIALS HANDOVER",
-    artifactDetail: "github.com/your-business/platform (Full Access Handover)",
-    artifactStatus: "Documented Handover • Complete Access",
+      "Standard Agreement — Agreed digital assets, account access, and handover requirements are clearly defined before completion.",
+
+    artifactType: "ACCESS & HANDOVER",
+    artifactDetail: "Agreed Accounts, Files & Digital Assets",
+    artifactStatus: "Documented Handover • Clear Access",
+
     icon: LockOutlinedIcon,
-    metrics: ["Full Code Handover", "Database Access", "Clear Technical Documentation"],
+
+    metrics: [
+      "Clear Account Access",
+      "Digital Asset Handover",
+      "Documented Ownership",
+    ],
   },
+
   {
     num: "03",
-    category: "TEAM ACCESS",
+    category: "COMMUNICATION",
     filterCategory: "visibility",
-    title: "Direct Access to Engineers",
-    headline: "Direct communication with the people designing and building your software.",
+    title: "Direct & Simple Communication",
+    headline: "Discuss requirements, feedback, and questions with the people working on your project.",
+
     promise:
-      "You can communicate directly with the developers and designers working on your project. Questions, suggestions, and feedback don't have to pass through unnecessary layers or non-technical intermediaries, keeping communication fast and precise.",
-    trapTitle: "The Layered Telephone Game",
+      "Good communication should be simple. You can discuss requirements, suggestions, questions, and feedback directly with the relevant people working on your website, marketing, app, or automation project.",
+
+    trapTitle: "Too Many Communication Layers",
     trapText:
-      "Briefings and feedback passing through multiple intermediaries who don't understand the underlying technical nuances, leading to misunderstandings and delayed answers.",
+      "Information passes through multiple people, making simple questions harder to answer and feedback easier to misunderstand.",
+
     slaClause:
-      "Direct Collaboration — Dedicated communication channel connecting your stakeholders directly with our development team.",
-    artifactType: "COLLABORATIVE WORKSPACE CHANNEL",
-    artifactDetail: "Direct Slack / WhatsApp Channel (Engineering Team Available)",
-    artifactStatus: "Direct Collaboration • Responsive Support",
+      "Direct Collaboration — Clear communication channels with the relevant project team.",
+
+    artifactType: "COMMUNICATION CHANNEL",
+    artifactDetail: "Direct Project Communication",
+    artifactStatus: "Open Communication • Clear Feedback",
+
     icon: EngineeringOutlinedIcon,
-    metrics: ["Direct Team Access", "Clear Communication Channels", "Fast Feedback Loops"],
+
+    metrics: [
+      "Direct Communication",
+      "Clear Feedback",
+      "Fewer Communication Gaps",
+    ],
   },
+
   {
     num: "04",
-    category: "LAUNCH SAFETY",
+    category: "QUALITY & DELIVERY",
     filterCategory: "ownership",
-    title: "Controlled & Careful Launch",
-    headline: "Staged rollout, data validation, and rollback planning.",
+    title: "Review Before Delivery",
+    headline: "The agreed work is reviewed before it is considered complete.",
+
     promise:
-      "Switching to a new digital system should never disrupt daily business. We plan migrations carefully, validate historical customer records, and test all critical workflows. Where appropriate, we use staged deployment and rollback preparations to minimize risk when going live.",
-    trapTitle: "The Rushed, Unplanned Cutover",
+      "Before delivery, we review the important parts of the work based on the type of project or service. We address agreed changes, check the relevant details, and make sure the required access, setup, content, or other deliverables are ready for the next stage.",
+
+    trapTitle: "Rushed Final Delivery",
     trapText:
-      "Rushed overnight launches with untested data imports, leading to corrupted customer records, dropped inquiries, and Monday morning operational chaos.",
+      "Work is marked complete without enough review, leaving small issues, missing details, or unfinished items to be discovered later.",
+
     slaClause:
-      "Launch Protocol — Thorough pre-launch staging verification, data validation check, and staged deployment protocol.",
-    artifactType: "DATA VALIDATION PROTOCOL",
-    artifactDetail: "All Key Business Records & Workflows Verified Pre-Launch",
-    artifactStatus: "Pre-Launch Audited • Rollback Planned",
+      "Review Standard — Agreed work is reviewed and relevant changes are addressed before completion.",
+
+    artifactType: "DELIVERY REVIEW",
+    artifactDetail: "Agreed Work Reviewed Before Completion",
+    artifactStatus: "Reviewed • Ready for Delivery",
+
     icon: ShieldOutlinedIcon,
-    metrics: ["Staged Deployment", "Data Validation Checks", "Rollback Planning"],
+
+    metrics: [
+      "Delivery Review",
+      "Agreed Changes Addressed",
+      "Ready for Handover",
+    ],
   },
+
   {
     num: "05",
     category: "SCOPE & PRICING",
     filterCategory: "performance",
     title: "Clear Scope and Transparent Pricing",
-    headline: "Agreed deliverables, clear milestones, and transparent change handling.",
+    headline: "Know what is included, what it costs, and how changes are handled.",
+
     promise:
-      "We define the project scope, milestones, and deliverables clearly before development begins. If your team identifies new requirements along the way, we evaluate their impact on timeline and cost openly, ensuring you are never surprised by unexpected invoices.",
-    trapTitle: "Unclear Scope & Surprise Change Orders",
+      "We define the agreed scope, deliverables, timeline, and pricing before work begins. If new requirements come up, we discuss how they may affect the scope, timeline, or cost before proceeding with the additional work.",
+
+    trapTitle: "Unclear Scope & Unexpected Costs",
     trapText:
-      "Vague initial proposals followed by surprise invoices and disputes whenever minor adjustments are required during the build.",
+      "Important details are left open at the beginning, leading to confusion about what is included and unexpected costs when requirements change.",
+
     slaClause:
-      "Transparent Billing — Clear milestone deliverables with upfront scope agreement and collaborative priority management.",
-    artifactType: "MILESTONE SCOPE AGREEMENT",
-    artifactDetail: "Agreed Deliverables & Milestone Breakdown",
-    artifactStatus: "Transparent Scope • No Hidden Fees",
+      "Transparent Pricing — Scope, deliverables, pricing, and relevant changes are discussed clearly before work proceeds.",
+
+    artifactType: "PROJECT SCOPE",
+    artifactDetail: "Agreed Deliverables, Timeline & Pricing",
+    artifactStatus: "Clear Scope • Transparent Pricing",
+
     icon: ReceiptLongOutlinedIcon,
-    metrics: ["Documented Deliverables", "Clear Milestones", "Upfront Scope Alignment"],
+
+    metrics: [
+      "Documented Deliverables",
+      "Clear Pricing",
+      "Transparent Change Handling",
+    ],
   },
+
   {
     num: "06",
-    category: "PERFORMANCE FOCUS",
+    category: "PRACTICAL QUALITY",
     filterCategory: "performance",
-    title: "Performance-Focused Development",
-    headline: "Fast load times, responsive layouts, and efficient database queries.",
+    title: "Focused on Practical Results",
+    headline: "We focus on the parts of your project that matter to your business.",
+
     promise:
-      "Whether building a customer-facing website, an internal operations portal, or an automation pipeline, we engineer for speed and dependability. We optimize queries, structure clean code, and test on both mobile and desktop so your users enjoy a responsive experience.",
-    trapTitle: "Bloated, Sluggish Applications",
+      "Whether the work involves a website, mobile app, SEO, social media, advertising, or automation, we focus on the goals and customer experience that matter to your business. We avoid adding unnecessary complexity and review the relevant parts of the work before delivery.",
+
+    trapTitle: "Unnecessary Complexity",
     trapText:
-      "Heavy, bloated templates and inefficient queries that load slowly, crash under concurrent use, and degrade on mobile devices in the field.",
+      "Projects become more complicated than necessary because tools, features, or activities are added without a clear business reason.",
+
     slaClause:
-      "Quality Standard — Performance-tested routes, responsive mobile layouts, and modern architecture.",
-    artifactType: "PERFORMANCE & QUALITY CHECK",
-    artifactDetail: "Performance Audited | Responsive Across Devices",
-    artifactStatus: "Quality Audited • Production Ready",
+      "Practical Quality Standard — Recommendations and implementation are based on your requirements, priorities, and intended business use.",
+
+    artifactType: "QUALITY REVIEW",
+    artifactDetail: "Business-Focused Review of the Agreed Work",
+    artifactStatus: "Reviewed • Aligned With Requirements",
+
     icon: SpeedOutlinedIcon,
-    metrics: ["Fast Loading Speeds", "Mobile & Desktop Tested", "Clean Semantic Code"],
+
+    metrics: [
+      "Business-Focused Approach",
+      "Relevant Quality Checks",
+      "No Unnecessary Complexity",
+    ],
   },
 ];
 
@@ -250,7 +315,7 @@ export default function TransparencyGuaranteesSection() {
                   fontFamily: "monospace",
                 }}
               >
-                OUR APPROACH & COMMITMENTS // WHAT YOU CAN EXPECT
+                OUR APPROACH & COMMITMENTS
               </Typography>
             </Box>
           </motion.div>
@@ -276,7 +341,7 @@ export default function TransparencyGuaranteesSection() {
                 mb: 2.5,
               }}
             >
-              Six practical commitments you can{" "}
+              Six Practical Commitments You Can Expect From Us {" "}
               <Box
                 component="span"
                 sx={{
@@ -286,7 +351,8 @@ export default function TransparencyGuaranteesSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                expect from Aetibar.
+                Six Practical Commitments You Can Expect From Aetibar
+
               </Box>
             </Typography>
 
@@ -301,7 +367,8 @@ export default function TransparencyGuaranteesSection() {
                 mb: 4.5,
               }}
             >
-              Working with a development partner should feel predictable and transparent. We work with visible milestone previews, direct engineering communication, documented scope, and complete client ownership.
+             Working with a digital partner should feel clear and straightforward. We keep you informed with regular progress updates, direct communication, documented scope, transparent pricing, and clear access to the digital assets connected to your business.
+
             </Typography>
           </motion.div>
 
@@ -361,7 +428,8 @@ export default function TransparencyGuaranteesSection() {
                     fontWeight: 800,
                   }}
                 >
-                  COMMITMENTS
+               OUR COMMITMENTS
+
                 </Box>
               </Button>
 
@@ -388,7 +456,7 @@ export default function TransparencyGuaranteesSection() {
                 }}
               >
                 <WarningAmberRoundedIcon sx={{ fontSize: 18 }} />
-                <span>Common Project Pitfalls</span>
+                <span>COMMON PROJECT PROBLEMS</span>
                 <Box
                   sx={{
                     px: 1,
@@ -401,6 +469,7 @@ export default function TransparencyGuaranteesSection() {
                   }}
                 >
                   WHAT WE AVOID
+
                 </Box>
               </Button>
             </Box>
@@ -536,7 +605,8 @@ export default function TransparencyGuaranteesSection() {
                                 letterSpacing: "0.06em",
                               }}
                             >
-                              STANDARD {item.num}
+                             COMMITMENT {item.num}
+
                             </Typography>
                             <Typography sx={{ fontSize: "0.72rem", color: "#71717A", fontWeight: 600 }}>
                               {item.category}
@@ -611,7 +681,8 @@ export default function TransparencyGuaranteesSection() {
                             <CloseRoundedIcon sx={{ fontSize: 18, color: "#DC2626", mt: 0.2, flexShrink: 0 }} />
                             <Box>
                               <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#DC2626", mb: 0.3 }}>
-                                TYPICAL AGENCY TRAP:
+                               COMMON PROBLEM:
+
                               </Typography>
                               <Typography sx={{ fontSize: "0.85rem", color: "#52525B", lineHeight: 1.55 }}>
                                 {item.trapText}
@@ -623,7 +694,8 @@ export default function TransparencyGuaranteesSection() {
                             <CheckCircleRoundedIcon sx={{ fontSize: 18, color: "#16A34A", mt: 0.2, flexShrink: 0 }} />
                             <Box>
                               <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#16A34A", mb: 0.3 }}>
-                                THE AETIBAR PACT:
+                                THE AETIBAR COMMITMENT:
+
                               </Typography>
                               <Typography sx={{ fontSize: "0.85rem", color: "#52525B", lineHeight: 1.55 }}>
                                 {item.promise}
@@ -735,7 +807,7 @@ export default function TransparencyGuaranteesSection() {
                                       letterSpacing: "0.05em",
                                     }}
                                   >
-                                    ARTIFACT // {item.artifactType}
+                                    WHAT YOU RECEIVE: // {item.artifactType}
                                   </Typography>
                                 </Box>
                                 <Typography
@@ -787,7 +859,8 @@ export default function TransparencyGuaranteesSection() {
                                       letterSpacing: "0.04em",
                                     }}
                                   >
-                                    LEGAL ENFORCEMENT (MSA PLEDGE):
+                                   OUR COMMITMENT:
+
                                   </Typography>
                                 </Box>
                                 <Typography
@@ -863,7 +936,8 @@ export default function TransparencyGuaranteesSection() {
                         textTransform: "uppercase",
                       }}
                     >
-                      ENGINEERING ACCOUNTABILITY // OUR WORKING COMMITMENT
+                     PROJECT ACCOUNTABILITY // OUR WORKING COMMITMENT
+
                     </Typography>
                   </Box>
 
@@ -878,7 +952,7 @@ export default function TransparencyGuaranteesSection() {
                       mb: 2,
                     }}
                   >
-                    A transparent approach from{" "}
+                    A clear and transparent approach from{" "}
                     <Box
                       component="span"
                       sx={{
@@ -901,7 +975,8 @@ export default function TransparencyGuaranteesSection() {
                       mb: 3.5,
                     }}
                   >
-                    Every project is built on clear communication, documented scope, and dependable execution. You get regular milestone reviews, direct access to the engineers working on your product, and complete ownership of your codebase and digital assets upon completion.
+                  Every project is built on clear communication, a documented scope, and dependable delivery. You get regular progress updates, direct communication with the people working on your project, and clear access to the digital assets and deliverables agreed upon for your business.
+
                   </Typography>
 
                   {/* 4 Qualitative Commitment Badges */}
@@ -963,9 +1038,11 @@ export default function TransparencyGuaranteesSection() {
                   >
                     <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#FFFFFF", mb: 1 }}>
                       Ready to discuss your project?
+
                     </Typography>
                     <Typography sx={{ fontSize: "0.9rem", color: "#A1A1AA", lineHeight: 1.6, mb: 3 }}>
-                      Reach out to our team to discuss your operational workflows, current bottlenecks, and how custom software or automation can help.
+                    Reach out to our team to discuss your business goals, current challenges, and where the right digital solution or service could help.
+
                     </Typography>
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
@@ -1015,7 +1092,7 @@ export default function TransparencyGuaranteesSection() {
                             },
                           }}
                         >
-                          Explore the 5 Stages
+                          Explore the 5 Process
                         </Button>
                       </a>
                     </Box>

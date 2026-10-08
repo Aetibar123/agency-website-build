@@ -29,84 +29,223 @@ interface ProjectArchetype {
 const archetypes: ProjectArchetype[] = [
   {
     id: "lead-system",
-    name: "Customer & Lead Systems",
+
+    name: "Customer & Lead Growth",
     badge: "Typical Scope: 2–3 Weeks",
-    tagline: "A fast website and structured intake forms connected directly to your messaging and team inboxes.",
+
+    tagline:
+      "A focused setup to help your business capture enquiries, organize customer information, and respond to potential customers more efficiently.",
+
     baseWeeks: 3,
+
     icon: <BoltRoundedIcon sx={{ fontSize: 22 }} />,
-    team: "Engineering Team (Full-Stack Developer, UI Designer)",
+
+    team: "Project Team",
+
     stages: [
-      { period: "Stage 1", title: "Inquiry Review & Form Layouts", output: "Clear lead capture forms designed for mobile responsiveness" },
-      { period: "Stage 2", title: "System Build & Notification Routing", output: "Working staging preview to test live inquiry submissions" },
-      { period: "Stage 3", title: "Testing, Routing Verification & Launch", output: "Production deployment with automated team alerts" },
+      {
+        period: "Stage 1",
+        title: "Business & Customer Review",
+        output:
+          "Clear understanding of your enquiry sources, customer journey, and follow-up process",
+      },
+      {
+        period: "Stage 2",
+        title: "Setup & Implementation",
+        output:
+          "Website, forms, marketing, or automation workflows set up around your requirements",
+      },
+      {
+        period: "Stage 3",
+        title: "Review & Launch",
+        output:
+          "Reviewed customer journey with the agreed tracking, notifications, and follow-up processes in place",
+      },
     ],
-    keyBenefit: "Organizes customer inquiries from your website and forms directly into your team's workflow.",
-    expectedRoi: "Centralized lead capture and automated notifications keep prospective clients from falling through the cracks.",
-    hoursSaved: "Direct routing to your team",
+
+    keyBenefit:
+      "Brings your customer enquiries and follow-up activities into a more organized process.",
+
+    expectedRoi:
+      "Makes it easier to capture, track, and respond to enquiries without relying on scattered messages or manual follow-ups.",
+
+    hoursSaved: "More organized enquiry handling",
   },
+
   {
     id: "internal-portal",
-    name: "Quoting & Operations Portal",
+
+    name: "Business Process & Operations",
     badge: "Typical Scope: 4–5 Weeks",
-    tagline: "A tailored web app where sales create standardized estimates and staff coordinate daily jobs.",
+
+    tagline:
+      "A customized digital setup that helps your team manage everyday processes, customer information, tasks, and internal operations more efficiently.",
+
     baseWeeks: 5,
+
     icon: <BuildCircleOutlinedIcon sx={{ fontSize: 22 }} />,
-    team: "Engineering Team (Systems Architect, Full-Stack Developer)",
+
+    team: "Project Team",
+
     stages: [
-      { period: "Stage 1", title: "Pricing Logic & Workflow Mapping", output: "Clear specification of your pricing formulas and calculation rules" },
-      { period: "Stage 2", title: "Database Architecture & Access Controls", output: "Secure database structure with distinct roles for sales and operations" },
-      { period: "Stage 3", title: "Quoting Tools & Staging Reviews", output: "Working quote generator tested with your real products and services" },
-      { period: "Stage 4", title: "Testing, Staff Walkthroughs & Launch", output: "Data migration check and team walkthrough videos" },
+      {
+        period: "Stage 1",
+        title: "Workflow & Requirements Review",
+        output:
+          "Clear understanding of how your team currently manages customers, tasks, and daily operations",
+      },
+      {
+        period: "Stage 2",
+        title: "Solution Planning & Setup",
+        output:
+          "Defined workflows, access requirements, tools, and agreed project scope",
+      },
+      {
+        period: "Stage 3",
+        title: "Implementation & Review",
+        output:
+          "Working digital system or workflow reviewed around your actual business processes",
+      },
+      {
+        period: "Stage 4",
+        title: "Delivery & Team Handover",
+        output:
+          "Completed setup with relevant access, guidance, and agreed handover",
+      },
     ],
-    keyBenefit: "Standardizes quoting logic and replaces messy spreadsheets with a dependable web portal.",
-    expectedRoi: "Reduces quoting mistakes, standardizes pricing, and speeds up turnaround times for clients.",
-    hoursSaved: "Standardized estimate calculation",
+
+    keyBenefit:
+      "Turns manual or disconnected business processes into a more organized digital workflow.",
+
+    expectedRoi:
+      "Helps teams spend less time managing scattered information and more time handling their actual work.",
+
+    hoursSaved: "More organized daily operations",
   },
+
   {
     id: "ops-core",
-    name: "Operations Software & Dashboards",
+
+    name: "Complete Digital Business Setup",
     badge: "Typical Scope: 6–7 Weeks",
-    tagline: "A centralized platform connecting customer intake, job dispatch, task tracking, and billing.",
+
+    tagline:
+      "A coordinated digital setup combining the website, customer journey, marketing, business workflows, and other services your business needs.",
+
     baseWeeks: 7,
+
     icon: <CalendarTodayOutlinedIcon sx={{ fontSize: 22 }} />,
-    team: "Engineering Team (Lead Architect, 2 Full-Stack Engineers)",
+
+    team: "Project Team",
+
     stages: [
-      { period: "Stage 1", title: "Operational Workflow Mapping", output: "Comprehensive technical roadmap of departmental workflows and data flows" },
-      { period: "Stage 2", title: "Central Database & API Connections", output: "Structured database connecting customer records, jobs, and records" },
-      { period: "Stage 3", title: "Management Dashboards & Staging Testing", output: "Private previews for dispatchers, managers, and administrative staff" },
-      { period: "Stage 4", title: "Staged Rollout & Team Onboarding", output: "Controlled cutover with thorough testing and team guides" },
+      {
+        period: "Stage 1",
+        title: "Business & Digital Presence Review",
+        output:
+          "Clear view of your current website, marketing, customer journey, and business processes",
+      },
+      {
+        period: "Stage 2",
+        title: "Strategy & Project Planning",
+        output:
+          "Prioritized plan covering the services, activities, timelines, and responsibilities involved",
+      },
+      {
+        period: "Stage 3",
+        title: "Implementation Across Key Areas",
+        output:
+          "Agreed website, marketing, automation, or other digital work implemented around your priorities",
+      },
+      {
+        period: "Stage 4",
+        title: "Review, Delivery & Handover",
+        output:
+          "Reviewed work with the relevant access, setup, reporting, and handover prepared",
+      },
     ],
-    keyBenefit: "Provides a single operational source of truth tailored to how your business actually runs.",
-    expectedRoi: "Clear visibility across departments and a dedicated digital asset tailored to your workflow.",
-    hoursSaved: "Unified operational dashboard",
+
+    keyBenefit:
+      "Brings multiple digital needs together instead of managing separate providers for every part of your online presence.",
+
+    expectedRoi:
+      "Creates a more connected digital setup where your website, marketing activities, customer communication, and business workflows can support each other.",
+
+    hoursSaved: "Connected digital workflows",
   },
+
   {
     id: "api-bridge",
-    name: "Software Integration & Automation",
+
+    name: "AI Automation & Software Integration",
     badge: "Typical Scope: 1–2 Weeks",
-    tagline: "Reliable API bridges and automated pipelines that connect your existing software tools.",
+
+    tagline:
+      "Practical automation that connects the tools you already use and reduces repetitive work across everyday business processes.",
+
     baseWeeks: 2,
+
     icon: <AutoAwesomeOutlinedIcon sx={{ fontSize: 22 }} />,
-    team: "Engineering Team (Integration Engineer, Backend Developer)",
+
+    team: "Automation Team",
+
     stages: [
-      { period: "Stage 1", title: "Integration Mapping & Data Rules", output: "Detailed schema mapping how data passes between your tools" },
-      { period: "Stage 2", title: "API Integration & Safeguard Testing", output: "Live automated data sync with error-handling checkpoints" },
+      {
+        period: "Stage 1",
+        title: "Workflow Review",
+        output:
+          "Clear understanding of the repetitive tasks, tools, and information involved",
+      },
+      {
+        period: "Stage 2",
+        title: "Automation Setup & Review",
+        output:
+          "Connected workflow that moves information or completes agreed tasks with appropriate checks",
+      },
     ],
-    keyBenefit: "Connects your separate software tools so customer and operational data sync reliably.",
-    expectedRoi: "Removes manual re-typing and keeps records consistent across all your applications.",
-    hoursSaved: "Automated multi-tool synchronization",
+
+    keyBenefit:
+      "Connects separate business tools and reduces repetitive manual work.",
+
+    expectedRoi:
+      "Helps reduce repeated data entry, manual follow-ups, and the need to move information between different tools.",
+
+    hoursSaved: "Less repetitive manual work",
   },
 ];
 
 const teamScales = [
-  { id: "compact", label: "1–10 Staff", desc: "Single Location / Compact Team", multiplier: 1 },
-  { id: "growing", label: "10–50 Staff", desc: "Growing Team with Multiple Roles", multiplier: 1.15 },
-  { id: "scale", label: "50+ Staff", desc: "Multi-Branch Business", multiplier: 1.3 },
+  {
+    id: "compact",
+    label: "1–10 Staff",
+    desc: "Small Business / Compact Team",
+    multiplier: 1,
+  },
+  {
+    id: "growing",
+    label: "10–50 Staff",
+    desc: "Growing Business / Multiple Roles",
+    multiplier: 1.15,
+  },
+  {
+    id: "scale",
+    label: "50+ Staff",
+    desc: "Larger Business / Multiple Locations",
+    multiplier: 1.3,
+  },
 ];
 
 const sprintPaces = [
-  { id: "standard", label: "Standard (Every 2 Weeks)", factor: 1 },
-  { id: "accelerated", label: "Fast-Track Sprint", factor: 0.85 },
+  {
+    id: "standard",
+    label: "Standard Pace",
+    factor: 1,
+  },
+  {
+    id: "accelerated",
+    label: "Priority Delivery",
+    factor: 0.85,
+  },
 ];
 
 export default function InteractiveSprintSimulator() {
@@ -170,7 +309,8 @@ export default function InteractiveSprintSimulator() {
                   fontWeight: 700,
                 }}
               >
-                TYPICAL PROJECT PATHS &bull; ESTIMATOR
+              TYPICAL PROJECT OPTIONS • ESTIMATOR
+
               </Typography>
             </Box>
           </motion.div>
@@ -195,7 +335,7 @@ export default function InteractiveSprintSimulator() {
                 mb: 2.5,
               }}
             >
-              Explore a typical{" "}
+             Explore a Typical Project {" "}
               <Box
                 component="span"
                 sx={{
@@ -205,7 +345,7 @@ export default function InteractiveSprintSimulator() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                project path and timeline.
+                Explore a Typical Project Path & Timeline
               </Box>
             </Typography>
             <Typography
@@ -217,7 +357,8 @@ export default function InteractiveSprintSimulator() {
                 mx: "auto",
               }}
             >
-              Project timelines depend on scope, integrations, data requirements, and feedback. These examples offer starting points for understanding how different types of projects can be structured.
+              Project timelines depend on the scope, services involved, business requirements, and feedback. These examples give you a general idea of how different types of projects can be planned and delivered.
+
             </Typography>
           </motion.div>
         </Box>
@@ -235,7 +376,8 @@ export default function InteractiveSprintSimulator() {
               mb: 2.5,
             }}
           >
-            1. EXPLORE PROJECT TYPES
+          1. EXPLORE PROJECT OPTIONS
+
           </Typography>
 
           <Grid container spacing={{ xs: 2, md: 2.5 }}>
@@ -336,7 +478,7 @@ export default function InteractiveSprintSimulator() {
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
               <GroupOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
               <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B", textTransform: "uppercase" }}>
-                Your Team Size:
+               Your Business Size:
               </Typography>
             </Box>
             <Box sx={{ display: "flex", gap: 0.8, flexWrap: "wrap" }}>
@@ -375,7 +517,7 @@ export default function InteractiveSprintSimulator() {
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
               <SpeedRoundedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
               <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B", textTransform: "uppercase" }}>
-                Delivery Speed:
+                Preferred Timeline:
               </Typography>
             </Box>
             <Box sx={{ display: "flex", gap: 0.8, flexWrap: "wrap" }}>
@@ -444,7 +586,8 @@ export default function InteractiveSprintSimulator() {
                 {/* Projected Weeks */}
                 <Box>
                   <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 0.5 }}>
-                    ESTIMATED TIMELINE GUIDE:
+                    ESTIMATED PROJECT TIMELINE:
+
                   </Typography>
                   <Box sx={{ display: "baseline", alignItems: "baseline", gap: 1.5 }}>
                     <Typography
@@ -459,7 +602,8 @@ export default function InteractiveSprintSimulator() {
                       {calculatedWeeks} Weeks
                     </Typography>
                     <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#16A34A" }}>
-                      &bull; Illustrative Planning Estimate
+                     • Planning Estimate Only
+
                     </Typography>
                   </Box>
                 </Box>
@@ -475,7 +619,8 @@ export default function InteractiveSprintSimulator() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                      Primary Value:
+                      Primary Benefit:
+
                     </Typography>
                     <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#15803D" }}>
                       {currentArchetype.hoursSaved}
@@ -491,7 +636,8 @@ export default function InteractiveSprintSimulator() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                      Team Collaboration:
+                    Project Support:
+
                     </Typography>
                     <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
                       {currentArchetype.team}
@@ -507,10 +653,12 @@ export default function InteractiveSprintSimulator() {
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                      Asset Ownership:
+                      Your Digital Assets:
+
                     </Typography>
                     <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#EA580C" }}>
-                      Defined in Agreement
+                      Agreed in Writing
+
                     </Typography>
                   </Box>
                 </Box>
@@ -527,19 +675,21 @@ export default function InteractiveSprintSimulator() {
                 }}
               >
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", mb: 0.6 }}>
-                  WHY THIS HELPS YOUR BUSINESS:
+                  WHY IT MATTERS FOR YOUR BUSINESS:
+
                 </Typography>
                 <Typography sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#18181B", mb: 0.8, lineHeight: 1.5 }}>
                   {currentArchetype.keyBenefit}
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.6 }}>
-                  <strong>The bottom line:</strong> {currentArchetype.expectedRoi}
+                  <strong>THE KEY TAKEAWAY:</strong> {currentArchetype.expectedRoi}
                 </Typography>
               </Box>
 
               {/* What Happens Week by Week */}
               <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#18181B", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
-                WHAT HAPPENS WEEK BY WEEK:
+               WHAT HAPPENS AT EACH STAGE:
+
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8, mb: 4.5 }}>
@@ -584,7 +734,7 @@ export default function InteractiveSprintSimulator() {
                           {stg.title}
                         </Typography>
                         <Typography sx={{ fontSize: "0.85rem", color: "#52525B" }}>
-                          You receive: <strong>{stg.output}</strong>
+                          WHAT YOU RECEIVE: <strong>{stg.output}</strong>
                         </Typography>
                       </Box>
                     </Box>
@@ -592,7 +742,8 @@ export default function InteractiveSprintSimulator() {
                     <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, alignSelf: { xs: "flex-end", sm: "center" } }}>
                       <CheckCircleRoundedIcon sx={{ fontSize: 18, color: "#16A34A" }} />
                       <Typography sx={{ fontSize: "0.75rem", fontWeight: 600, color: "#166534" }}>
-                        Verified Milestone
+                        REVIEWED PROGRESS
+
                       </Typography>
                     </Box>
                   </Box>
@@ -613,10 +764,12 @@ export default function InteractiveSprintSimulator() {
               >
                 <Box>
                   <Typography sx={{ fontSize: "0.95rem", fontWeight: 600, color: "#18181B" }}>
-                    Want to discuss a realistic timeline for your project?
+                   Want to discuss a realistic timeline for your project?
+
                   </Typography>
                   <Typography sx={{ fontSize: "0.85rem", color: "#71717A" }}>
-                    Tell us what you&apos;re building. After understanding your requirements, we provide a realistic scope, milestones, and timeline.
+                    Tell us what your business needs. Once we understand your requirements, we’ll provide a clear scope, expected deliverables, and realistic timeline.
+
                   </Typography>
                 </Box>
 

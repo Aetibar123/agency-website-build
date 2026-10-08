@@ -25,18 +25,35 @@ import { motion } from "framer-motion";
 import { WorkProject } from "../../data/workData";
 import HomeScrollProgress from "../home/HomeScrollProgress";
 
-export interface ServicePageProps {
+export interface SubServiceSection {
+  id: string;
   badge: string;
   title: string;
   titleHighlight?: string;
   tagline: string;
   description: string;
   icon: React.ReactNode;
+  detailUrl: string;
+  detailLabel?: string;
+  metrics?: { label: string; value: string }[];
+  deliverables?: { title: string; desc: string }[];
+  benefits?: string[];
+}
+
+export interface ServicePageProps {
+  badge: string;
+  title: string;
+  titleHighlight?: string;
+  tagline: string;
+  description: string;
+  descriptionBullets?: (string | React.ReactNode)[];
+  icon: React.ReactNode;
   heroHighlights?: {
     value: string;
     title: string;
     desc: string;
   }[];
+  subServiceSections?: SubServiceSection[];
   whoIsItFor: {
     title: string;
     desc: string;
@@ -75,8 +92,10 @@ export default function ServicePageLayout({
   titleHighlight,
   tagline,
   description,
+  descriptionBullets,
   icon,
   heroHighlights,
+  subServiceSections,
   whoIsItFor,
   problemsAddressed,
   deliverables,
@@ -274,23 +293,33 @@ export default function ServicePageLayout({
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
-                  letterSpacing: { xs: "-0.02em", md: "-0.035em" },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
+                  letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
                   mb: 2.5,
                 }}
               >
-                {title}{" "}
+                <Box
+                  component="span"
+                  sx={{
+                    display: "block",
+                    whiteSpace: { xs: "normal", lg: "nowrap" },
+                  }}
+                >
+                  {title}
+                </Box>
                 {titleHighlight && (
                   <Box
                     component="span"
                     sx={{
-                      display: "inline",
+                      display: "block",
+                      whiteSpace: { xs: "normal", lg: "nowrap" },
+                      mt: { xs: 0.5, sm: 0.75 },
                       background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
@@ -323,25 +352,80 @@ export default function ServicePageLayout({
               </Typography>
             </motion.div>
 
-            {/* Friendly, Jargon-Free Description */}
+            {/* Friendly, Jargon-Free Description & Bullet Points */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
-              <Typography
-                sx={{
-                  fontSize: { xs: "1rem", sm: "1.125rem", md: "1.18rem" },
-                  lineHeight: 1.8,
-                  color: "#52525B",
-                  maxWidth: 820,
-                  mx: "auto",
-                  mb: 4.5,
-                  fontWeight: 400,
-                }}
-              >
-                {description}
-              </Typography>
+              {description && (
+                <Typography
+                  sx={{
+                    fontSize: { xs: "1rem", sm: "1.125rem", md: "1.18rem" },
+                    lineHeight: 1.8,
+                    color: "#52525B",
+                    maxWidth: 820,
+                    mx: "auto",
+                    mb: descriptionBullets && descriptionBullets.length > 0 ? 3 : 4.5,
+                    fontWeight: 400,
+                  }}
+                >
+                  {description}
+                </Typography>
+              )}
+
+              {descriptionBullets && descriptionBullets.length > 0 && (
+                <Grid
+                  container
+                  spacing={{ xs: 1.5, sm: 2 }}
+                  sx={{
+                    maxWidth: 780,
+                    mx: "auto",
+                    mb: 4.5,
+                    justifyContent: "center",
+                  }}
+                >
+                  {descriptionBullets.map((bullet, bIdx) => (
+                    <Grid size={{ xs: 12, sm: 6 }} key={bIdx}>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                          gap: 1.25,
+                          textAlign: "left",
+                          px: { xs: 0.5, sm: 1 },
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            width: 20,
+                            height: 20,
+                            borderRadius: "50%",
+                            bgcolor: "rgba(249, 115, 22, 0.12)",
+                            color: "#EA580C",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexShrink: 0,
+                            mt: 0.25,
+                          }}
+                        >
+                          <CheckCircleOutlinedIcon sx={{ fontSize: 13, color: "#EA580C" }} />
+                        </Box>
+                        <Typography
+                          sx={{
+                            fontSize: { xs: "0.88rem", sm: "0.93rem" },
+                            color: "#3F3F46",
+                            lineHeight: 1.5,
+                          }}
+                        >
+                          {bullet}
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  ))}
+                </Grid>
+              )}
             </motion.div>
 
             {/* Primary & Secondary Call to Action Buttons */}
@@ -534,6 +618,472 @@ export default function ServicePageLayout({
       </Box>
 
       {/* ========================================================================= */}
+      {/* 1.5 SUB-SERVICE SECTIONS (STICKY NAV & DETAILED CHANNEL BREAKDOWNS) */}
+      {/* ========================================================================= */}
+      {subServiceSections && subServiceSections.length > 0 && (
+        <>
+          {/* Sticky Anchor Navigation Bar */}
+          <Box
+            sx={{
+              position: "sticky",
+              top: { xs: 68, md: 80 },
+              zIndex: 90,
+              bgcolor: "rgba(255, 255, 255, 0.94)",
+              backdropFilter: "blur(16px)",
+              borderBottom: "1px solid rgba(24, 24, 27, 0.08)",
+              boxShadow: "0 2px 10px rgba(0, 0, 0, 0.03)",
+              py: 1.5,
+            }}
+          >
+            <Container maxWidth="xl">
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: { xs: "flex-start", sm: "center" },
+                  gap: { xs: 1.2, sm: 2 },
+                  overflowX: "auto",
+                  py: 0.5,
+                  "&::-webkit-scrollbar": { display: "none" },
+                  msOverflowStyle: "none",
+                  scrollbarWidth: "none",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    color: "#EA580C",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.08em",
+                    whiteSpace: "nowrap",
+                    display: { xs: "none", sm: "inline-flex" },
+                    alignItems: "center",
+                    gap: 0.5,
+                    mr: 0.5,
+                  }}
+                >
+                  Explore Channels:
+                </Typography>
+                {subServiceSections.map((sub) => (
+                  <Button
+                    key={sub.id}
+                    component="a"
+                    href={`#${sub.id}`}
+                    variant="outlined"
+                    size="small"
+                    startIcon={sub.icon}
+                    sx={{
+                      whiteSpace: "nowrap",
+                      borderRadius: "9999px",
+                      px: { xs: 2, sm: 2.75 },
+                      py: { xs: 0.75, sm: 0.9 },
+                      fontSize: { xs: "0.8rem", sm: "0.875rem" },
+                      fontWeight: 600,
+                      color: "#18181B",
+                      borderColor: "rgba(24, 24, 27, 0.12)",
+                      bgcolor: "rgba(255, 255, 255, 0.9)",
+                      boxShadow: "0 1px 3px rgba(0,0,0,0.04)",
+                      textTransform: "none",
+                      transition: "all 0.2s ease",
+                      "&:hover": {
+                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        borderColor: "#EA580C",
+                        color: "#EA580C",
+                        transform: "translateY(-1px)",
+                      },
+                    }}
+                  >
+                    {sub.title}
+                  </Button>
+                ))}
+              </Box>
+            </Container>
+          </Box>
+
+          {/* Sub-Service Showcase Sections */}
+          {subServiceSections.map((sub, idx) => (
+            <Box
+              component="section"
+              id={sub.id}
+              key={sub.id}
+              sx={{
+                py: { xs: 10, md: 14 },
+                bgcolor: idx % 2 === 0 ? "#FFFFFF" : "#FAFAFA",
+                borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+                position: "relative",
+                scrollMarginTop: { xs: 80, md: 100 },
+              }}
+            >
+              {sub.id === "paid-advertising" && (
+                <span id="paid-ads" style={{ position: "absolute", top: "-100px", left: 0 }} />
+              )}
+              <Container maxWidth="xl">
+                {/* Header for this sub-service */}
+                <motion.div
+                  initial={{ opacity: 0, y: 35 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+                    <Box
+                      sx={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: 1.2,
+                        px: 2,
+                        py: 0.6,
+                        borderRadius: "9999px",
+                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        border: "1px solid rgba(249, 115, 22, 0.25)",
+                        mb: 2.5,
+                      }}
+                    >
+                      <Box
+                        component={motion.div}
+                        animate={{ scale: [1, 1.35, 1] }}
+                        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                        sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                      />
+                      <Typography
+                        sx={{
+                          color: "#EA580C",
+                          fontWeight: 700,
+                          fontSize: "0.8rem",
+                          letterSpacing: "0.06em",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {sub.badge}
+                      </Typography>
+                    </Box>
+
+                    <Typography
+                      variant="h2"
+                      sx={{
+                        fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                        fontWeight: 700,
+                        color: "#18181B",
+                        lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
+                        letterSpacing: "-0.03em",
+                        maxWidth: { xs: "100%", md: 1040, lg: 1160 },
+                        mx: "auto",
+                        textWrap: "balance",
+                        mb: 2.5,
+                      }}
+                    >
+                      <Box
+                        component="span"
+                        sx={{
+                          display: "block",
+                          whiteSpace: { xs: "normal", lg: "nowrap" },
+                        }}
+                      >
+                        {sub.title}
+                      </Box>
+                      {sub.titleHighlight && (
+                        <Box
+                          component="span"
+                          sx={{
+                            display: "block",
+                            whiteSpace: { xs: "normal", lg: "nowrap" },
+                            mt: { xs: 0.5, sm: 0.75 },
+                            background:
+                              "linear-gradient(135deg, #EA580C 0%, #F97316 50%, #FB923C 100%)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                          }}
+                        >
+                          {sub.titleHighlight}
+                        </Box>
+                      )}
+                    </Typography>
+
+                    <Typography
+                      sx={{
+                        color: "#EA580C",
+                        fontSize: { xs: "1.05rem", sm: "1.2rem" },
+                        fontWeight: 600,
+                        lineHeight: 1.6,
+                        maxWidth: 820,
+                        mx: "auto",
+                        mb: 2,
+                      }}
+                    >
+                      {sub.tagline}
+                    </Typography>
+
+                    <Typography
+                      sx={{
+                        color: "#52525B",
+                        fontSize: { xs: "0.98rem", sm: "1.08rem" },
+                        lineHeight: 1.75,
+                        maxWidth: 780,
+                        mx: "auto",
+                      }}
+                    >
+                      {sub.description}
+                    </Typography>
+                  </Box>
+                </motion.div>
+
+                {/* Performance Metrics if provided */}
+                {sub.metrics && sub.metrics.length > 0 && (
+                  <Grid container spacing={2.5} sx={{ justifyContent: "center", mb: { xs: 6, md: 7 } }}>
+                    {sub.metrics.map((m, mIdx) => (
+                      <Grid size={{ xs: 12, sm: 4 }} key={mIdx}>
+                        <Box
+                          sx={{
+                            p: { xs: 2.5, sm: 3 },
+                            borderRadius: "16px",
+                            bgcolor: idx % 2 === 0 ? "#FAF8F5" : "#FFFFFF",
+                            border: "1px solid rgba(24, 24, 27, 0.08)",
+                            textAlign: "center",
+                            boxShadow: "0 2px 8px rgba(0,0,0,0.03)",
+                          }}
+                        >
+                          <Typography
+                            sx={{
+                              fontSize: { xs: "1.85rem", sm: "2.25rem" },
+                              fontWeight: 800,
+                              color: "#EA580C",
+                              letterSpacing: "-0.03em",
+                              lineHeight: 1.1,
+                              mb: 0.5,
+                            }}
+                          >
+                            {m.value}
+                          </Typography>
+                          <Typography
+                            sx={{
+                              fontSize: "0.85rem",
+                              fontWeight: 600,
+                              color: "#52525B",
+                            }}
+                          >
+                            {m.label}
+                          </Typography>
+                        </Box>
+                      </Grid>
+                    ))}
+                  </Grid>
+                )}
+
+                {/* Deliverables Cards Grid */}
+                {sub.deliverables && sub.deliverables.length > 0 && (
+                  <Box sx={{ mb: { xs: 6, md: 7 } }}>
+                    <Typography
+                      sx={{
+                        fontSize: { xs: "1.2rem", sm: "1.35rem" },
+                        fontWeight: 700,
+                        color: "#18181B",
+                        letterSpacing: "-0.02em",
+                        textAlign: "center",
+                        mb: 3.5,
+                      }}
+                    >
+                      What&apos;s Included in {sub.title}
+                    </Typography>
+                    <Grid container spacing={3}>
+                      {sub.deliverables.map((d, dIdx) => (
+                        <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={dIdx}>
+                          <Box
+                            sx={{
+                              p: { xs: 3, sm: 3.5 },
+                              borderRadius: "18px",
+                              bgcolor: idx % 2 === 0 ? "#FAF8F5" : "#FFFFFF",
+                              border: "1px solid rgba(24, 24, 27, 0.08)",
+                              height: "100%",
+                              display: "flex",
+                              flexDirection: "column",
+                              transition: "all 0.25s ease",
+                              "&:hover": {
+                                transform: "translateY(-4px)",
+                                borderColor: "rgba(249, 115, 22, 0.35)",
+                                boxShadow: "0 10px 25px rgba(249, 115, 22, 0.08)",
+                              },
+                            }}
+                          >
+                            <Box
+                              sx={{
+                                width: 36,
+                                height: 36,
+                                borderRadius: "10px",
+                                bgcolor: "rgba(249, 115, 22, 0.1)",
+                                color: "#EA580C",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                fontWeight: 800,
+                                fontSize: "0.85rem",
+                                mb: 2,
+                              }}
+                            >
+                              0{dIdx + 1}
+                            </Box>
+                            <Typography
+                              sx={{
+                                fontSize: "1.05rem",
+                                fontWeight: 700,
+                                color: "#18181B",
+                                mb: 1,
+                                lineHeight: 1.35,
+                              }}
+                            >
+                              {d.title}
+                            </Typography>
+                            <Typography
+                              sx={{
+                                fontSize: "0.875rem",
+                                color: "#52525B",
+                                lineHeight: 1.65,
+                                flexGrow: 1,
+                              }}
+                            >
+                              {d.desc}
+                            </Typography>
+                          </Box>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </Box>
+                )}
+
+                {/* Benefits / Outcomes Checklist */}
+                {sub.benefits && sub.benefits.length > 0 && (
+                  <Box
+                    sx={{
+                      p: { xs: 3, sm: 4 },
+                      borderRadius: "20px",
+                      bgcolor: idx % 2 === 0 ? "#FAF8F5" : "#FFFFFF",
+                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      mb: { xs: 6, md: 7 },
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: "0.95rem",
+                        fontWeight: 700,
+                        color: "#18181B",
+                        mb: 2.5,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.06em",
+                      }}
+                    >
+                      Key Business Advantages:
+                    </Typography>
+                    <Grid container spacing={2}>
+                      {sub.benefits.map((b, bIdx) => (
+                        <Grid size={{ xs: 12, sm: 6 }} key={bIdx}>
+                          <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
+                            <CheckCircleOutlinedIcon
+                              sx={{ fontSize: 20, color: "#EA580C", flexShrink: 0, mt: 0.2 }}
+                            />
+                            <Typography sx={{ fontSize: "0.92rem", color: "#3F3F46", lineHeight: 1.55 }}>
+                              {b}
+                            </Typography>
+                          </Box>
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </Box>
+                )}
+
+                {/* DETAIL LINK CTA BANNER */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <Box
+                    sx={{
+                      p: { xs: 3.5, sm: 4.5 },
+                      borderRadius: "24px",
+                      background:
+                        "linear-gradient(135deg, rgba(255, 247, 237, 0.95) 0%, rgba(254, 242, 242, 0.9) 100%)",
+                      border: "1.5px solid rgba(249, 115, 22, 0.25)",
+                      boxShadow: "0 8px 30px rgba(249, 115, 22, 0.08)",
+                      display: "flex",
+                      flexDirection: { xs: "column", md: "row" },
+                      alignItems: { xs: "flex-start", md: "center" },
+                      justifyContent: "space-between",
+                      gap: 3,
+                    }}
+                  >
+                    <Box sx={{ maxWidth: 700 }}>
+                      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
+                        <Box sx={{ color: "#EA580C", display: "flex" }}>{sub.icon}</Box>
+                        <Typography
+                          sx={{
+                            fontSize: "0.85rem",
+                            fontWeight: 700,
+                            color: "#EA580C",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.06em",
+                          }}
+                        >
+                          Deep-Dive Service Guide
+                        </Typography>
+                      </Box>
+                      <Typography
+                        sx={{
+                          fontSize: { xs: "1.2rem", sm: "1.45rem" },
+                          fontWeight: 700,
+                          color: "#18181B",
+                          letterSpacing: "-0.02em",
+                          mb: 0.75,
+                        }}
+                      >
+                        Want all technical specs & full deliverables for {sub.title}?
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: "0.92rem",
+                          color: "#52525B",
+                          lineHeight: 1.6,
+                        }}
+                      >
+                        Visit our dedicated {sub.title} page for complete audit methodologies, real-world case studies, transparent timelines, and channel-specific pricing.
+                      </Typography>
+                    </Box>
+
+                    <Button
+                      component={Link}
+                      href={sub.detailUrl}
+                      variant="contained"
+                      endIcon={<ArrowForwardIcon />}
+                      sx={{
+                        flexShrink: 0,
+                        bgcolor: "#EA580C",
+                        color: "#FFFFFF",
+                        px: { xs: 3, sm: 4 },
+                        py: 1.6,
+                        borderRadius: "9999px",
+                        fontSize: { xs: "0.92rem", sm: "1rem" },
+                        fontWeight: 700,
+                        textTransform: "none",
+                        boxShadow: "0 6px 20px rgba(234, 88, 12, 0.35)",
+                        transition: "all 0.25s ease",
+                        "&:hover": {
+                          bgcolor: "#C2410C",
+                          transform: "translateY(-2px)",
+                          boxShadow: "0 10px 25px rgba(234, 88, 12, 0.45)",
+                        },
+                      }}
+                    >
+                      {sub.detailLabel || `Explore Full ${sub.title} Details`}
+                    </Button>
+                  </Box>
+                </motion.div>
+              </Container>
+            </Box>
+          ))}
+        </>
+      )}
+
+      {/* ========================================================================= */}
       {/* 2. WHO THIS IS FOR (IS THIS RIGHT FOR YOU?) */}
       {/* ========================================================================= */}
       <Box
@@ -553,7 +1103,7 @@ export default function ServicePageLayout({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -589,15 +1139,15 @@ export default function ServicePageLayout({
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, md: 1.18 },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
-                  mb: 2,
+                  mb: 2.5,
                 }}
               >
                 Is This the Right Fit for Your Business?
@@ -702,7 +1252,7 @@ export default function ServicePageLayout({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -738,15 +1288,15 @@ export default function ServicePageLayout({
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, md: 1.18 },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
-                  mb: 2,
+                  mb: 2.5,
                 }}
               >
                 Real Problems We Solve for You
@@ -865,7 +1415,7 @@ export default function ServicePageLayout({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -901,15 +1451,15 @@ export default function ServicePageLayout({
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, md: 1.18 },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
-                  mb: 2,
+                  mb: 2.5,
                 }}
               >
                 Everything Included in Our Service
@@ -1013,7 +1563,7 @@ export default function ServicePageLayout({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -1049,15 +1599,15 @@ export default function ServicePageLayout({
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, md: 1.18 },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
-                  mb: 2,
+                  mb: 2.5,
                 }}
               >
                 How This Helps Your Business Grow &amp; Make Money
@@ -1146,7 +1696,7 @@ export default function ServicePageLayout({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+            <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -1182,15 +1732,15 @@ export default function ServicePageLayout({
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, md: 1.18 },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
-                  mb: 2,
+                  mb: 2.5,
                 }}
               >
                 How We Work Together (In 5 Simple Steps)
@@ -1277,7 +1827,7 @@ export default function ServicePageLayout({
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <Box sx={{ maxWidth: 840, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+              <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
                 <Box
                   sx={{
                     display: "inline-flex",
@@ -1313,15 +1863,15 @@ export default function ServicePageLayout({
                 <Typography
                   variant="h2"
                   sx={{
-                    fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                    fontWeight: 600,
+                    fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                    fontWeight: 700,
                     color: "#18181B",
-                    lineHeight: { xs: 1.25, md: 1.18 },
+                    lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                     letterSpacing: "-0.03em",
-                    maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                    maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                     mx: "auto",
                     textWrap: "balance",
-                    mb: 2,
+                    mb: 2.5,
                   }}
                 >
                   See What We&apos;ve Built
@@ -1523,7 +2073,7 @@ export default function ServicePageLayout({
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Box sx={{ maxWidth: 840, mx: "auto", mb: { xs: 6, md: 8 }, textAlign: "center" }}>
+            <Box sx={{ maxWidth: { xs: "100%", md: 1040, lg: 1160 }, mx: "auto", mb: { xs: 6, md: 8 }, textAlign: "center" }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -1559,15 +2109,15 @@ export default function ServicePageLayout({
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                  fontWeight: 700,
                   color: "#18181B",
-                  lineHeight: { xs: 1.25, md: 1.18 },
+                  lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
-                  mb: 2,
+                  mb: 2.5,
                 }}
               >
                 Frequently Asked Questions
@@ -1644,11 +2194,11 @@ export default function ServicePageLayout({
           >
             <Box
               sx={{
-                maxWidth: 1040,
+                maxWidth: { xs: "100%", md: 1080, lg: 1160 },
                 mx: "auto",
                 textAlign: "center",
                 border: "1px solid rgba(255, 255, 255, 0.12)",
-                p: { xs: 3.5, sm: 6, md: 9 },
+                p: { xs: 3.5, sm: 6, md: 7.5 },
                 background: "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
                 borderRadius: { xs: "24px", md: "36px" },
                 boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
@@ -1739,23 +2289,33 @@ export default function ServicePageLayout({
                   <Typography
                     variant="h2"
                     sx={{
-                      fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                      fontWeight: 600,
+                      fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
+                      fontWeight: 700,
                       color: "#FFFFFF",
-                      lineHeight: { xs: 1.25, md: 1.18 },
-                      letterSpacing: "-0.035em",
-                      maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                      lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
+                      letterSpacing: "-0.03em",
+                      maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                       mx: "auto",
                       textWrap: "balance",
-                      mb: 3,
+                      mb: 2.5,
                     }}
                   >
-                    {ctaTitle}{" "}
+                    <Box
+                      component="span"
+                      sx={{
+                        display: "block",
+                        whiteSpace: { xs: "normal", lg: "nowrap" },
+                      }}
+                    >
+                      {ctaTitle}
+                    </Box>
                     {ctaTitleHighlight && (
                       <Box
                         component="span"
                         sx={{
-                          display: "inline",
+                          display: "block",
+                          whiteSpace: { xs: "normal", lg: "nowrap" },
+                          mt: { xs: 0.5, sm: 0.75 },
                           background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",

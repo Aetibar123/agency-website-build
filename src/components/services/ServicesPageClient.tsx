@@ -144,7 +144,7 @@ const allServicesData: ServiceItem[] = [
     subtitle: "Simple iPhone & Android apps for your customers and team",
     simpleExplanation:
       "Put your business directly in your customer's pocket. We create custom mobile applications that are simple to tap, quick to respond, and work smoothly even when internet signal is weak or offline.",
-    href: "/services/app-development-company-in-udaipur",
+    href: "/services/mobile-app-development-company-in-udaipur",
     icon: <PhoneIphoneIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
     benefits: [
       "One single app that works smoothly on both Apple iPhone and Android phones",

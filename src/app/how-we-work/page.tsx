@@ -8,27 +8,29 @@ import TransparencyGuaranteesSection from "../../components/how-we-work/Transpar
 import HowWeWorkFaqSection from "../../components/how-we-work/HowWeWorkFaqSection";
 import HowWeWorkCta from "../../components/how-we-work/HowWeWorkCta";
 
+
 export const metadata: Metadata = {
-  title: "How We Work | Transparent Web & Mobile App Development Process | Aetibar",
+  title: "How We Work | Our Process for Digital Services | Aetibar",
   description:
-    "Discover our simple, transparent 5-stage process for website development, mobile apps, and AI automation. Learn how we deliver projects on time with working previews, zero jargon, and 100% code ownership.",
+    "Learn how Aetibar works across web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation—from understanding your needs to implementation, review, delivery, and ongoing support.",
   keywords: [
+    "digital services process",
     "web development process",
-    "website development stages",
     "mobile app development process",
-    "custom software development process",
-    "AI automation implementation",
-    "transparent development process",
-    "agile web development methodology",
-    "business software development",
-    "web development company process",
-    "Aetibar Technologies",
+    "SEO process",
+    "social media marketing process",
+    "paid advertising process",
+    "AI automation process",
+    "transparent project process",
+    "digital marketing process",
+    "Aetibar",
   ],
-  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
-  creator: "Aetibar Technologies",
-  publisher: "Aetibar Technologies",
+  authors: [{ name: "Aetibar", url: "https://www.aetibar.in" }],
+  creator: "Aetibar",
+  publisher: "Aetibar",
   category: "technology",
-  classification: "Web Development, Mobile App Development, Digital Marketing",
+  classification:
+    "Web Development, Mobile App Development, SEO, Social Media Marketing, Paid Advertising, AI Automation",
   robots: {
     index: true,
     follow: true,
@@ -44,9 +46,9 @@ export const metadata: Metadata = {
     canonical: "https://www.aetibar.in/how-we-work",
   },
   openGraph: {
-    title: "How We Work | Transparent Web & Mobile App Development Process | Aetibar",
+    title: "How We Work | Our Process for Digital Services | Aetibar",
     description:
-      "See how Aetibar delivers projects smoothly: we understand your business needs, share clear plans and live previews, test thoroughly, and give you 100% code ownership.",
+      "See how Aetibar works with businesses—from understanding their needs and planning the right approach to implementing, reviewing, delivering, and supporting digital projects and services.",
     url: "https://www.aetibar.in/how-we-work",
     siteName: "Aetibar",
     type: "website",
@@ -62,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How We Work | Transparent Web & Mobile App Development Process | Aetibar",
+    title: "How We Work | Our Process for Digital Services | Aetibar",
     description:
-      "See how Aetibar delivers projects smoothly with regular working previews, zero jargon, and reliable post-launch support.",
+      "See how Aetibar approaches web development, mobile apps, SEO, marketing, advertising, and AI automation with a clear and practical process.",
     creator: "@Aetibar_",
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
@@ -72,23 +74,27 @@ export const metadata: Metadata = {
     "geo.region": "IN-RJ",
     "geo.placename": "Udaipur",
     "geo.position": "24.5854;73.7125",
-    "ICBM": "24.5854, 73.7125",
+    ICBM: "24.5854, 73.7125",
   },
 };
+
+
 
 const howWeWorkSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "How We Work - Aetibar",
+  name: "How We Work | Aetibar",
   url: "https://www.aetibar.in/how-we-work",
   description:
-    "Explore Aetibar's human-friendly 5-stage development process: Discovery, Planning, Staged Building, Testing & Launch, and Dedicated Support.",
+    "Learn how Aetibar works with businesses across web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation—from understanding your needs and planning the right approach to implementation, review, delivery, and ongoing support.",
   publisher: {
     "@type": "Organization",
     name: "Aetibar",
     url: "https://www.aetibar.in",
   },
 };
+
+
 
 export default function HowWeWorkPage() {
   return (

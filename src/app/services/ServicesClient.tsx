@@ -43,428 +43,496 @@ const servicesData: ServiceData[] = [
   {
     id: "web-dev",
     num: "01",
-    slug: "web-development",
-    title: "Web Development & Engineering",
+    slug: "web-development-company-in-udaipur",
+    title: "Web Development",
     shortName: "Web Development",
     badge: "CUSTOM WEBSITES & WEB APPS",
-    tagline: "Fast, beautiful websites that turn visitors into paying clients.",
+    tagline:
+      "Custom websites, online stores, and web applications designed around your business.",
     summary:
-      "Your website is the digital front door to your business. We build lightning-fast, custom websites and web applications tailored from scratch with Next.js and React—no clunky WordPress templates or fragile page builders.",
+      "We build websites and web applications around your business requirements—from company websites and online stores to client portals, booking dashboards, and custom business tools. The focus is on clear information, practical user experiences, and a website that your business can maintain and grow.",
     icon: <LanguageIcon sx={{ fontSize: 24 }} />,
     bulletHighlights: [
-      "Sub-second page load times on mobile & desktop",
-      "100% bespoke code with full intellectual property ownership",
-      "Built-in Google SEO foundation and seamless checkout",
+      "Custom business websites and web applications",
+      "E-commerce stores with supported payment integrations",
+      "Mobile-friendly layouts and performance-focused development",
     ],
     whatWeBuild: [
       {
-        title: "Bespoke Business Websites",
-        desc: "Tailor-made from the ground up to tell your brand story and convert prospective clients.",
+        title: "Custom Business Websites",
+        desc:
+          "Business-focused websites that clearly present your company, services, work, and contact options.",
       },
       {
-        title: "Fast E-Commerce Stores",
-        desc: "Headless shopping experiences with instant page transitions and frictionless checkout.",
+        title: "Online Stores & E-Commerce",
+        desc:
+          "E-commerce websites where customers can browse products, place orders, and complete supported payments.",
       },
       {
-        title: "Custom Web Apps & Portals",
-        desc: "Interactive customer portals, internal dashboards, and scalable SaaS platforms.",
+        title: "Client Portals & Web Applications",
+        desc:
+          "Private customer areas, booking dashboards, internal tools, and other custom web applications.",
       },
       {
-        title: "High-Converting Landing Pages",
-        desc: "Focused landing experiences engineered to maximize conversion rates on paid ad campaigns.",
+        title: "Website Redesigns & Upgrades",
+        desc:
+          "Modernize an existing website while considering its content, URLs, performance, and SEO requirements.",
       },
     ],
     whyItMatters: [
       {
-        title: "Visitors Never Wait",
-        desc: "Over 50% of mobile users leave if a site takes more than 3 seconds. Ours load in under a second.",
+        title: "Make It Easier to Contact You",
+        desc:
+          "Clear calls-to-action, enquiry forms, WhatsApp links, and other contact options give visitors straightforward ways to reach your business.",
       },
       {
-        title: "You Own 100% of Your Code",
-        desc: "No monthly builder subscriptions or restrictive proprietary platforms. Your code is yours forever.",
+        title: "Create a Better Mobile Experience",
+        desc:
+          "Responsive layouts, optimized assets, and focused navigation make it easier for customers to browse your website from their phones.",
       },
       {
-        title: "Ready for Business Growth",
-        desc: "Modular architecture means you can add new features anytime without ever needing to rebuild.",
+        title: "Keep Greater Control",
+        desc:
+          "We can structure the project around your own domain, hosting, accounts, and relevant website assets.",
       },
       {
-        title: "Google Loves Clean Code",
-        desc: "Search engine bots can index your content effortlessly, giving your organic rankings a major boost.",
+        title: "Build a Strong Search Foundation",
+        desc:
+          "Clear structure, metadata, internal linking, technical SEO, and performance considerations support better organic search visibility.",
       },
     ],
     technologies: [
-      { name: "Next.js", role: "Fastest modern React framework" },
-      { name: "React", role: "Dynamic interactive components" },
-      { name: "TypeScript", role: "Bug-free strict type safety" },
-      { name: "Tailwind CSS", role: "Responsive lightweight styling" },
-      { name: "Node.js", role: "Scalable backend microservices" },
-      { name: "PostgreSQL", role: "Reliable production database" },
+      { name: "Next.js", role: "Modern React web development" },
+      { name: "React", role: "Interactive user interfaces" },
+      { name: "TypeScript", role: "Typed application development" },
+      { name: "Node.js", role: "Backend services and APIs" },
+      { name: "PostgreSQL", role: "Relational application data" },
     ],
     promise:
-      "Sub-second load times, 100% IP ownership from day one, and zero monthly template debt.",
+      "A website built around your business requirements, with practical user experiences and the technical foundations needed for ongoing growth.",
   },
+
   {
     id: "mobile-apps",
     num: "02",
-    slug: "mobile-app-development",
+    slug: "mobile-app-development-company-in-udaipur",
     title: "Mobile App Development",
     shortName: "Mobile Apps",
     badge: "IOS & ANDROID APPS",
-    tagline: "Intuitive mobile apps that your customers love to open every day.",
+    tagline:
+      "Custom mobile apps for customers, field teams, and business workflows.",
     summary:
-      "We design and develop cross-platform mobile apps for iOS and Android that feel completely native, respond instantly to touch gestures, and continue working smoothly even when your users lose internet connection.",
+      "We design and develop mobile applications for iOS and Android around your business requirements—from customer-facing apps for bookings and orders to field tools for job updates, data collection, and delivery operations.",
     icon: <PhoneIphoneIcon sx={{ fontSize: 24 }} />,
     bulletHighlights: [
-      "One codebase for both iPhone and Android devices",
-      "Offline-first sync so apps never crash without signal",
-      "Full guidance through Apple App Store and Google Play publishing",
+      "iOS and Android apps using suitable cross-platform approaches",
+      "Offline data capture and synchronization where required",
+      "Support with Apple App Store and Google Play publishing",
     ],
     whatWeBuild: [
       {
-        title: "Cross-Platform iOS & Android Apps",
-        desc: "High-performance applications built with React Native and Flutter for a consistent native feel.",
+        title: "iPhone & Android Apps",
+        desc:
+          "Custom mobile applications designed for both iOS and Android, using a suitable development approach for the project.",
       },
       {
-        title: "Offline-First Mobile Systems",
-        desc: "Local data persistence that allows users to work anywhere, smoothly syncing when back online.",
+        title: "Field Operations & Driver Tools",
+        desc:
+          "Mobile tools for job updates, photo capture, signatures, location data, and other field workflows.",
       },
       {
-        title: "Real-Time Tracking & Push Alerts",
-        desc: "Interactive maps, driver telemetry, and personalized notifications that keep users engaged.",
+        title: "Customer-Facing Apps",
+        desc:
+          "Apps that allow customers to browse, book, order, pay, and manage their interactions with your business.",
       },
       {
-        title: "App Store Publishing Governance",
-        desc: "We handle Apple App Store and Google Play review guidelines to ensure smooth, stress-free approvals.",
+        title: "Offline-Capable Mobile Workflows",
+        desc:
+          "Apps that can store required information on the device and synchronize it when connectivity becomes available.",
       },
     ],
     whyItMatters: [
       {
-        title: "Save Time & Development Costs",
-        desc: "Building cross-platform means you don't need two separate engineering teams or double the budget.",
+        title: "Support Both Major Platforms",
+        desc:
+          "A suitable cross-platform approach can allow your core application to be developed and maintained across iOS and Android.",
       },
       {
-        title: "Flawless Performance Everywhere",
-        desc: "Whether on an airplane, subway, or weak Wi-Fi, your customers can still use essential features.",
+        title: "Keep Field Work Moving",
+        desc:
+          "Offline-capable workflows can allow teams to capture relevant information even when internet connectivity is unavailable.",
       },
       {
-        title: "Delightful User Experience",
-        desc: "Smooth 60fps animations and natural gestures make using your app a genuine pleasure.",
+        title: "Connect Office & Field Teams",
+        desc:
+          "Mobile updates can flow back to your central system, giving office teams better visibility into field activity.",
       },
       {
-        title: "Biometric & Enterprise Security",
-        desc: "Face ID, fingerprint authentication, and encrypted local storage protect your users' privacy.",
+        title: "Maintain Control of Your App",
+        desc:
+          "We can publish through your own Apple and Google developer accounts and provide the agreed project files and assets.",
       },
     ],
     technologies: [
-      { name: "React Native", role: "Cross-platform mobile UI" },
-      { name: "Flutter", role: "Native compiled mobile apps" },
-      { name: "TypeScript", role: "Safe typed application logic" },
-      { name: "SQLite", role: "On-device offline database" },
-      { name: "Firebase", role: "Real-time sync & notifications" },
-      { name: "Supabase", role: "Secure cloud backend" },
+      { name: "React Native", role: "Cross-platform mobile development" },
+      { name: "TypeScript", role: "Typed application development" },
+      { name: "SQLite", role: "Local mobile data storage" },
+      { name: "Firebase", role: "Notifications and supported services" },
+      { name: "Supabase", role: "Backend and data services" },
     ],
     promise:
-      "Single codebase efficiency for iOS and Android, offline-first reliability, and full App Store launch support.",
+      "A mobile application designed around your users and workflows, with iOS and Android support and offline capabilities where required.",
   },
-  {
-    id: "ai-automation",
-    num: "03",
-    slug: "ai-automation",
-    title: "Applied AI & Workflow Automation",
-    shortName: "AI Automation",
-    badge: "SMART AI WORKFLOWS",
-    tagline: "Intelligent AI tools that take the repetitive work off your team's plate.",
-    summary:
-      "AI shouldn't be a confusing gimmick. We build practical AI assistants and automated workflows that answer customer questions 24/7, search your internal documentation, and eliminate hours of manual copy-paste work every week.",
-    icon: <AutoAwesomeIcon sx={{ fontSize: 24 }} />,
-    bulletHighlights: [
-      "24/7 instant AI customer support with zero hallucinations",
-      "Private vector search over company documents and manuals",
-      "100% private data security—your information is never shared",
-    ],
-    whatWeBuild: [
-      {
-        title: "24/7 AI Customer Support Agents",
-        desc: "Smart assistants trained strictly on your documentation that give accurate, helpful answers instantly.",
-      },
-      {
-        title: "Private Document Search (RAG)",
-        desc: "Ask questions in plain English and instantly get verified citations from your internal files and PDFs.",
-      },
-      {
-        title: "Automated Data & CRM Workflows",
-        desc: "Automatically route inbound leads, update CRM records, and trigger follow-ups without manual work.",
-      },
-      {
-        title: "Smart Content & Email Drafting",
-        desc: "AI workflows that draft personalized client responses and executive summaries in your brand voice.",
-      },
-    ],
-    whyItMatters: [
-      {
-        title: "Zero-Hallucination Safety",
-        desc: "We set strict deterministic guardrails so the AI only answers with verified company facts.",
-      },
-      {
-        title: "Your Data Remains 100% Private",
-        desc: "Your proprietary files and customer conversations are never used to train public models.",
-      },
-      {
-        title: "Hours Back for Your Team",
-        desc: "Free your team from answering the same 20 repetitive questions so they can focus on client relationships.",
-      },
-      {
-        title: "Instant Response Across Timezones",
-        desc: "Never leave an interested customer waiting overnight for an email response.",
-      },
-    ],
-    technologies: [
-      { name: "Claude 3.5 & GPT-4o", role: "Frontier LLM reasoning" },
-      { name: "Vector Databases", role: "Semantic context retrieval" },
-      { name: "LangChain", role: "Workflow agent orchestration" },
-      { name: "Python / FastAPI", role: "Fast secure API endpoints" },
-      { name: "pgvector", role: "PostgreSQL vector storage" },
-      { name: "Guardrail Filters", role: "Deterministic policy rules" },
-    ],
-    promise:
-      "Deterministic zero-hallucination accuracy, strict data privacy, and dozens of manual hours saved weekly.",
-  },
+
   {
     id: "seo",
-    num: "04",
-    slug: "search-engine-optimization",
-    title: "Technical SEO & Search Growth",
-    shortName: "Technical SEO",
-    badge: "ORGANIC GOOGLE VISIBILITY",
-    tagline: "Get found by high-intent customers when they search for what you do.",
+    num: "03",
+    slug: "seo-company-in-udaipur",
+    title: "Search Engine Optimization",
+    shortName: "SEO",
+    badge: "ORGANIC SEARCH VISIBILITY",
+    tagline:
+      "Improve your search visibility when customers look for what your business offers.",
     summary:
-      "We help your website climb Google's rankings and stay there. By resolving technical site issues, optimizing speed, and structuring your content with semantic schema, we bring you qualified leads who are already looking to buy.",
+      "We improve the technical and content foundations that help search engines understand and discover your website. Our SEO work covers technical SEO, keyword research, on-page optimization, local search, Google Business Profile optimization, and useful content.",
     icon: <SearchIcon sx={{ fontSize: 24 }} />,
     bulletHighlights: [
-      "100/100 Google Core Web Vitals speed optimization",
-      "Safe website migrations with zero lost traffic or rankings",
-      "Rich snippet Schema.org markup for maximum Google click-throughs",
+      "Technical SEO and on-page optimization",
+      "Local SEO and Google Business Profile optimization",
+      "Keyword research, content optimization, and search performance tracking",
     ],
     whatWeBuild: [
       {
-        title: "Technical SEO Audits & Code Fixes",
-        desc: "We diagnose broken redirects, duplicate metadata, indexation blocks, and code bottlenecks.",
+        title: "Technical SEO",
+        desc:
+          "Identify and address crawling, indexing, page structure, performance, and other technical SEO issues.",
       },
       {
-        title: "Safe 301 Website Migrations",
-        desc: "Relaunching or rebranding? We preserve your hard-earned rankings so you lose zero traffic.",
+        title: "Local SEO",
+        desc:
+          "Improve your local search presence across Google Search and Google Maps through relevant local optimization.",
       },
       {
-        title: "Google Core Web Vitals Speed",
-        desc: "We optimize code, images, and fonts so Google awards your platform top-tier performance scores.",
+        title: "Keyword & Content Optimization",
+        desc:
+          "Research relevant searches and improve important pages around keywords, topics, and customer search intent.",
       },
       {
-        title: "Structured Schema.org Data",
-        desc: "Rich snippet integration so your listings appear with star ratings, FAQs, and price tags on Google.",
+        title: "SEO Monitoring & Reporting",
+        desc:
+          "Track search queries, impressions, clicks, organic traffic, and other available performance signals.",
       },
     ],
     whyItMatters: [
       {
-        title: "Free, Sustainable Organic Traffic",
-        desc: "Unlike paid ads that vanish the minute you pause ad spend, organic rankings deliver leads for years.",
+        title: "Build Organic Visibility",
+        desc:
+          "SEO helps your website become more discoverable for searches relevant to your products and services.",
       },
       {
-        title: "Higher Customer Trust",
-        desc: "Potential clients naturally trust businesses that rank at the top of Google organic search.",
+        title: "Reach Relevant Search Intent",
+        desc:
+          "Targeting useful searches can help bring visitors who are actively looking for information, solutions, or businesses like yours.",
       },
       {
-        title: "Attract Ready-to-Buy Prospects",
-        desc: "Capture people who are actively searching for your exact solutions right in your target markets.",
+        title: "Strengthen Local Search",
+        desc:
+          "Local SEO can help businesses become more visible to customers searching within their service area.",
       },
       {
-        title: "Plain-English Progress Reports",
-        desc: "Clear monthly updates showing keyword ranking climbs, organic visits, and actual inbound leads.",
+        title: "Understand Search Performance",
+        desc:
+          "Clear reporting makes it easier to understand changes in search visibility and identify the next areas for improvement.",
       },
     ],
     technologies: [
-      { name: "Google Search Console", role: "Indexation & search telemetry" },
-      { name: "Schema.org JSON-LD", role: "Semantic structured markup" },
-      { name: "Core Web Vitals", role: "Speed & user experience metrics" },
-      { name: "Screaming Frog", role: "Deep crawl diagnosis" },
-      { name: "Lighthouse", role: "Performance benchmarking" },
-      { name: "Next.js Metadata", role: "Dynamic OpenGraph & SEO tags" },
+      { name: "Google Search Console", role: "Search performance monitoring" },
+      { name: "Schema.org JSON-LD", role: "Structured data implementation" },
+      { name: "Google Business Profile", role: "Local search presence" },
+      { name: "Core Web Vitals", role: "Performance and user experience" },
+      { name: "Next.js Metadata", role: "Technical SEO implementation" },
     ],
     promise:
-      "Sustainable organic search authority, 100/100 Lighthouse performance, and zero-loss site migrations.",
+      "Practical SEO focused on technical foundations, relevant search intent, local visibility, useful content, and measurable search performance.",
   },
+
   {
-    id: "marketing",
-    num: "05",
-    slug: "digital-marketing",
-    title: "Performance Marketing & Growth",
-    shortName: "Digital Marketing",
-    badge: "TARGETED CUSTOMER ACQUISITION",
-    tagline: "High-converting ad campaigns that generate real revenue, not just clicks.",
+    id: "social-media",
+    num: "04",
+    slug: "social-media-marketing-company-in-udaipur",
+    title: "Social Media Marketing",
+    shortName: "Social Media",
+    badge: "SOCIAL MEDIA CONTENT & MANAGEMENT",
+    tagline:
+      "Consistent content and branded communication that keeps your business visible online.",
     summary:
-      "We manage disciplined advertising campaigns across Google Search, Meta (Instagram & Facebook), and automated email funnels. Every dollar spent is tracked back to real revenue and margins so you know your marketing investment is working.",
+      "We plan and manage social media content around your business, audience, and brand. From content topics and branded graphics to captions, scheduling, and performance reporting, we help you maintain a professional and active presence across relevant platforms.",
     icon: <CampaignIcon sx={{ fontSize: 24 }} />,
     bulletHighlights: [
-      "Precision Google & Meta ads targeted to ready-to-buy customers",
-      "Automated email & SMS retention flows that sell on autopilot",
-      "Transparent revenue attribution—know your exact return on ad spend",
+      "Monthly content planning and scheduling",
+      "Custom branded posts and carousel designs",
+      "Platform-specific content and performance reporting",
     ],
     whatWeBuild: [
       {
-        title: "High-Intent Google Ads",
-        desc: "Capture customers the exact moment they search for your services with targeted search campaigns.",
+        title: "Branded Social Content",
+        desc:
+          "Custom posts, carousels, and other visual content based on your brand identity and communication style.",
       },
       {
-        title: "Meta & Social Advertising",
-        desc: "Scroll-stopping video and visual ads on Instagram and Facebook that turn attention into inquiries.",
+        title: "Monthly Content Planning",
+        desc:
+          "A structured content calendar covering relevant topics, captions, formats, and publishing dates.",
       },
       {
-        title: "Automated Lifecycle Email Funnels",
-        desc: "Welcome series, abandoned cart recovery, and client retention flows that nurture prospects automatically.",
+        title: "Platform-Specific Strategy",
+        desc:
+          "Content adapted to the audience and communication style of platforms such as Instagram, Facebook, and LinkedIn.",
       },
       {
-        title: "Conversion Rate Optimization (CRO)",
-        desc: "A/B testing headlines, page structure, and calls to action to get more customers from existing traffic.",
+        title: "Performance Reporting",
+        desc:
+          "Simple reporting covering reach, engagement, profile activity, website clicks, and other available metrics.",
       },
     ],
     whyItMatters: [
       {
-        title: "Profit Over Vanity Metrics",
-        desc: "We don't celebrate useless 'impressions'. We measure booked consultations, sales, and ROAS.",
+        title: "Present a More Professional Brand",
+        desc:
+          "Consistent visuals and messaging give visitors a clearer picture of your business when they research you online.",
       },
       {
-        title: "Zero Wasted Ad Budget",
-        desc: "Rigorous negative keyword filtering and audience exclusions ensure you never pay for low-intent clicks.",
+        title: "Save Time on Content",
+        desc:
+          "We handle content planning, captions, graphics, and scheduling so you don't have to manage the entire process every week.",
       },
       {
-        title: "Automated Repeat Sales",
-        desc: "Keep past customers returning with automated email campaigns that cost almost nothing to send.",
+        title: "Create More Paths to Enquiries",
+        desc:
+          "Relevant links and clear calls-to-action can make it easier for interested people to visit your website or contact your business.",
       },
       {
-        title: "Crystal-Clear Dashboards",
-        desc: "Always see exactly what was spent, how many inquiries came in, and what each customer cost.",
+        title: "Keep Your Brand Consistent",
+        desc:
+          "A consistent visual identity and tone across your selected platforms creates a more cohesive brand presence.",
       },
     ],
     technologies: [
-      { name: "Google Ads", role: "High-intent search & display" },
-      { name: "Meta Ads Manager", role: "Targeted social acquisition" },
-      { name: "Klaviyo", role: "Automated retention email flows" },
-      { name: "Google Analytics 4", role: "Conversion tracking & telemetry" },
-      { name: "Server-Side Tracking", role: "Accurate cookieless tracking" },
-      { name: "PostHog", role: "User session & funnel analysis" },
+      { name: "Instagram", role: "Visual social content" },
+      { name: "Facebook", role: "Local and consumer communication" },
+      { name: "LinkedIn", role: "B2B and professional content" },
+      { name: "Meta Business Suite", role: "Content management and publishing" },
     ],
     promise:
-      "Verified return on ad spend, conversion-focused messaging, and automated customer retention funnels.",
+      "A structured social media workflow covering content planning, branded visuals, publishing, and performance review.",
   },
+
   {
-    id: "design",
-    num: "06",
-    slug: "graphic-design",
-    title: "Brand Systems & UI/UX Design",
-    shortName: "Brand & UI/UX Design",
-    badge: "BRAND IDENTITY & FIGMA DESIGN",
-    tagline: "Memorable brand design that positions your company as an industry leader.",
+    id: "paid-advertising",
+    num: "05",
+    slug: "paid-advertising-company-in-udaipur",
+    title: "Paid Advertising",
+    shortName: "Paid Ads",
+    badge: "GOOGLE & META ADS",
+    tagline:
+      "Targeted paid campaigns with controlled budgets and clear conversion tracking.",
     summary:
-      "Thoughtful design builds immediate trust before a customer reads a single word. We create comprehensive visual brand identities, logo systems, Figma design component libraries, and marketing assets that give your business unmistakable authority.",
-    icon: <PaletteIcon sx={{ fontSize: 24 }} />,
+      "We plan, manage, and optimize paid campaigns across Google Ads and Meta Ads, including Instagram and Facebook. We focus on relevant targeting, controlled advertising spend, and tracking measurable actions such as calls, forms, website visits, and WhatsApp enquiries where available.",
+    icon: <CampaignIcon sx={{ fontSize: 24 }} />,
     bulletHighlights: [
-      "Complete visual brand identity, logos, and typography guidelines",
-      "Modular Figma design systems for rapid feature development",
-      "Interactive clickable prototypes so you experience the UI on your phone",
+      "Google Search and Meta advertising campaigns",
+      "Keyword, audience, and negative keyword management",
+      "Conversion tracking and ongoing campaign optimization",
     ],
     whatWeBuild: [
       {
-        title: "Complete Brand Identity Systems",
-        desc: "Logos, color palettes, typography hierarchies, and brand guidelines that keep you consistent everywhere.",
+        title: "Google Search Campaigns",
+        desc:
+          "Reach people searching for relevant products and services through targeted Google Search campaigns.",
       },
       {
-        title: "Figma UI/UX Design Systems",
-        desc: "Reusable component tokens that make building new pages and features fast, clean, and cohesive.",
+        title: "Instagram & Facebook Ads",
+        desc:
+          "Promote products, services, and offers across Meta platforms using relevant audience targeting.",
       },
       {
-        title: "Interactive Clickable Prototypes",
-        desc: "Experience the realistic look and feel of your app on your mobile screen before a developer writes code.",
+        title: "Conversion Tracking",
+        desc:
+          "Track measurable actions such as forms, calls, WhatsApp clicks, and other available conversions.",
       },
       {
-        title: "Marketing & Digital Assets",
-        desc: "Client pitch decks, social media templates, brochures, and digital banners tailored to your brand.",
+        title: "Campaign Optimization",
+        desc:
+          "Review campaign performance and refine keywords, audiences, ads, budgets, and settings based on available data.",
       },
     ],
     whyItMatters: [
       {
-        title: "Commands Premium Pricing",
-        desc: "Customers instinctively perceive brands with polished, high-craft design as more trustworthy and valuable.",
+        title: "Reach Potential Customers Faster",
+        desc:
+          "Paid campaigns can provide an additional channel for reaching relevant audiences soon after launch.",
       },
       {
-        title: "Consistent Brand Experience",
-        desc: "From your favicon to your client contracts, your business projects authority and attention to detail.",
+        title: "Keep Ad Spend More Focused",
+        desc:
+          "Relevant targeting, search-term management, and negative keywords can reduce spend on less relevant traffic.",
       },
       {
-        title: "Halves Development Time",
-        desc: "Having a structured Figma library allows engineers to build new screens with zero visual ambiguity.",
+        title: "Understand Campaign Performance",
+        desc:
+          "Conversion tracking helps show which campaigns, ads, keywords, and audiences contribute to measurable actions.",
       },
       {
-        title: "Accessible & Readable for Everyone",
-        desc: "Carefully calibrated color contrast and typography sizes ensure your site is easy and pleasant to navigate.",
+        title: "Keep Control of Your Accounts",
+        desc:
+          "Campaigns can be managed through your own Google and Meta accounts, keeping your advertising data and billing information accessible to you.",
       },
     ],
     technologies: [
-      { name: "Figma Enterprise", role: "Design tokens & UI components" },
-      { name: "Design Tokens", role: "Seamless code-to-design sync" },
-      { name: "Adobe Illustrator", role: "Vector branding & iconography" },
-      { name: "Photoshop", role: "High-resolution asset editing" },
-      { name: "WCAG 2.1 AA", role: "Universal accessibility compliance" },
-      { name: "Interactive Wireframes", role: "User journey mapping" },
+      { name: "Google Ads", role: "Paid search campaigns" },
+      { name: "Meta Ads Manager", role: "Instagram and Facebook advertising" },
+      { name: "Google Tag Manager", role: "Conversion tracking setup" },
+      { name: "Meta Pixel", role: "Website event tracking" },
     ],
     promise:
-      "Modular Figma component systems, clickable interactive prototypes, and timeless brand identity guidelines.",
+      "Structured paid advertising focused on relevant targeting, controlled budgets, measurable conversions, and ongoing optimization.",
+  },
+
+  {
+    id: "ai-automation",
+    num: "06",
+    slug: "ai-automation-company-in-udaipur",
+    title: "AI Automation",
+    shortName: "AI Automation",
+    badge: "AI & BUSINESS WORKFLOW AUTOMATION",
+    tagline:
+      "Automate repetitive work and connect the business tools your team already uses.",
+    summary:
+      "We build practical automation workflows that connect your existing software and reduce repetitive manual work. This can include lead routing, document data extraction, business reports, AI-assisted responses, and integrations across tools such as WhatsApp, email, spreadsheets, CRM systems, and other supported software.",
+    icon: <AutoAwesomeIcon sx={{ fontSize: 24 }} />,
+    bulletHighlights: [
+      "Automated lead alerts, routing, and follow-up workflows",
+      "AI-assisted document processing and customer support",
+      "Business software and API integrations",
+    ],
+    whatWeBuild: [
+      {
+        title: "Lead Alerts & Routing",
+        desc:
+          "Organize new enquiries and notify the right team member when leads arrive through supported channels.",
+      },
+      {
+        title: "PDF & Invoice Data Extraction",
+        desc:
+          "Extract useful information from supported invoices, receipts, PDFs, and other business documents.",
+      },
+      {
+        title: "Business Software Integrations",
+        desc:
+          "Connect tools such as WhatsApp, email, spreadsheets, CRM systems, payment platforms, and other supported software.",
+      },
+      {
+        title: "AI-Assisted Workflows",
+        desc:
+          "Use AI for tasks such as document understanding, information retrieval, response drafting, and other defined business workflows.",
+      },
+    ],
+    whyItMatters: [
+      {
+        title: "Reduce Repetitive Work",
+        desc:
+          "Automating recurring data entry, notifications, document processing, and reporting can reduce routine administrative work.",
+      },
+      {
+        title: "Handle Enquiries More Efficiently",
+        desc:
+          "Automated alerts, lead routing, and AI-assisted drafts can help teams notice and manage new enquiries more efficiently.",
+      },
+      {
+        title: "Reduce Manual Data Entry",
+        desc:
+          "Moving information between connected systems automatically can reduce repetitive copy-pasting and common manual mistakes.",
+      },
+      {
+        title: "Keep People in Control",
+        desc:
+          "Approval steps, defined permissions, and workflow rules can keep human review involved where important decisions require it.",
+      },
+    ],
+    technologies: [
+      { name: "OpenAI & Gemini", role: "AI-powered workflow capabilities" },
+      { name: "Node.js", role: "Automation services and APIs" },
+      { name: "BullMQ & Redis", role: "Background workflow processing" },
+      { name: "Supabase", role: "Database and application services" },
+      { name: "REST APIs", role: "Business software integrations" },
+    ],
+    promise:
+      "Practical automation designed around your existing workflows, with AI used where it adds value and human review where it matters.",
   },
 ];
+
+
+
 
 const faqs = [
   {
     q: "How do we get started on a new project?",
-    a: "We begin with a friendly, informal 20-minute discovery call to learn about your business goals, timeline, and current challenges. From there, we provide a clear, fixed-price scoping proposal with concrete milestones—no technical jargon or sales pressure.",
+    a: "We start by understanding your business, requirements, goals, and the problem you want to solve. We then discuss the appropriate service, project scope, development or marketing approach, estimated timeline, and pricing before moving forward.",
   },
+
   {
-    q: "Do I own all the code and design files?",
-    a: "Yes, 100%. Once project milestones are completed, you hold full intellectual property ownership of every line of code, Figma design file, database schema, and digital asset. There are zero licensing fees or platform lock-ins.",
+    q: "Which services does Aetibar provide?",
+    a: "We currently provide web development, mobile app development, search engine optimization, social media marketing, paid advertising, and AI automation services. Depending on your requirements, different services can also be combined into a broader digital solution.",
   },
+
   {
-    q: "What is your typical project timeline?",
-    a: "Most custom web platforms and design systems take between 4 to 8 weeks from initial kickoff to live launch. Mobile applications and complex AI workflows typically take 8 to 12 weeks. We provide clear weekly video updates so you always know where things stand.",
+    q: "How long does a project usually take?",
+    a: "The timeline depends on the type and scope of the project. A straightforward business website may require less time than an e-commerce platform, mobile application, or custom AI automation workflow. After understanding your requirements, we provide a project-specific timeline rather than using a fixed timeframe for every project.",
   },
+
   {
-    q: "Can you collaborate with our existing team or tools?",
-    a: "Absolutely. We routinely integrate with our clients' existing workflows in Slack, GitHub, Figma, and Jira. We can either lead your project end-to-end or work as an embedded senior engineering partner alongside your in-house team.",
+    q: "Can you work with our existing website, software, or team?",
+    a: "Yes. Where the existing technology and workflow allow it, we can work with your current website, business software, APIs, or internal team. We can also integrate supported tools such as CRMs, spreadsheets, email, WhatsApp, payment systems, and other business platforms.",
   },
+
   {
-    q: "What happens after our project goes live?",
-    a: "We don't disappear after launch. We provide full team training, a 30-day post-launch warranty period, and flexible ongoing maintenance plans to ensure your software remains lightning-fast, secure, and updated with new features as your business grows.",
+    q: "What happens after the project goes live?",
+    a: "After launch, we provide the agreed project handover, access, and relevant documentation or guidance. If you need ongoing improvements, maintenance, SEO, marketing, or further automation, we can discuss continued support based on your requirements.",
   },
 ];
+
 
 const workingSteps = [
   {
     step: "01",
-    title: "Open Discovery & Strategy",
-    desc: "We listen carefully to your business goals, target audience, and current frustrations. No confusing jargon—just honest, strategic alignment.",
+    title: "Understand Your Requirements",
+    desc:
+      "We start by understanding your business, goals, audience, existing setup, and the problem you want to solve so the project starts with a clear direction.",
   },
+
   {
     step: "02",
-    title: "Interactive Prototypes",
-    desc: "We craft clickable Figma prototypes so you can touch, test, and refine the user experience on your phone before any code is written.",
+    title: "Plan the Right Approach",
+    desc:
+      "We define the scope, key requirements, workflow, technology or marketing approach, and important deliverables based on what your business actually needs.",
   },
+
   {
     step: "03",
-    title: "Bespoke Engineering",
-    desc: "Our senior developers build clean, strictly typed code with weekly video walkthroughs so you see real progress every single sprint.",
+    title: "Build & Implement",
+    desc:
+      "We develop the required website, app, automation, or marketing setup and keep you involved through relevant reviews and feedback during the project.",
   },
+
   {
     step: "04",
-    title: "Launch & Lasting Support",
-    desc: "We test across every device, optimize for sub-second speeds, handle domain launch, and stand by you with caring ongoing maintenance.",
+    title: "Test, Launch & Improve",
+    desc:
+      "We test the relevant workflows, fix issues, launch the agreed solution, and provide the necessary handover and ongoing support based on the project scope.",
   },
 ];
+
+
 
 export default function ServicesClient() {
   const [activeServiceIndex, setActiveServiceIndex] = useState(0);
@@ -546,9 +614,8 @@ export default function ServicesClient() {
                 mb: 4,
               }}
             >
-              Whether you need a custom website that outshines competitors, a mobile app your customers
-              love using, smart AI tools that save your team dozens of hours weekly, or organic SEO that
-              brings in ready-to-buy leads—we build digital products designed for real business growth.
+            Whether you need a custom website for your business, a mobile app for your customers or field teams, practical AI automation for repetitive work, stronger visibility through SEO, consistent social media content, or targeted Google and Meta advertising—we bring the right digital services together around your business goals.
+
             </Typography>
 
             {/* Quick Interactive Jump Bar */}

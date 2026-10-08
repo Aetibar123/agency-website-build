@@ -2,6 +2,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import PaletteOutlinedIcon from "@mui/icons-material/PaletteOutlined";
+import IntegrationInstructionsOutlinedIcon from "@mui/icons-material/IntegrationInstructionsOutlined"
 import LanguageIcon from "@mui/icons-material/Language";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
@@ -9,34 +10,59 @@ import { motion } from "framer-motion";
 
 const pillars = [
   {
-    icon: <PaletteOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
-    tag: "Problem: Outdated Look & Low Brand Trust",
-    title: "Professional Branding & Visual Trust",
-    desc: "When prospective clients discover your business, amateur visuals or an outdated logo create instant doubts. We design distinctive emblems, cohesive brand palettes, sales brochures, and polished UI/UX layouts that give your company immediate credibility.",
-    highlights: ["Bespoke logo design & visual standards", "High-impact social & advertising creatives", "Print-ready brochures & executive cards", "Intuitive user interfaces for web & mobile"],
-  },
-  {
     icon: <LanguageIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
-    tag: "Problem: Website Not Bringing Inquiries",
-    title: "Performance Web & Mobile Experiences",
-    desc: "If your online platform loads sluggishly or feels clumsy on mobile phones, 80% of interested buyers bounce to competitors. We build lightning-fast web storefronts, customer portals, and smartphone applications engineered to turn casual visits into direct consultations.",
-    highlights: ["Sub-second mobile loading speed", "Instant contact & direct chat routing", "Frictionless catalog browsing & bookings", "100% full transfer of domains & code"],
+    tag: "Problem: Your Website Is Not Helping Your Business",
+    title: "Websites & Mobile Apps Built for Your Customers",
+    desc: "Your website is often the first place potential customers learn about your business. We build business websites, online stores, and mobile apps that make your services easier to understand, your business easier to contact, and important tasks easier to manage.",
+    highlights: [
+      "Business & e-commerce websites",
+      "Custom mobile apps for iOS & Android",
+      "Booking, ordering & customer workflows",
+      "Websites designed with search visibility in mind",
+    ],
   },
+
   {
     icon: <CampaignOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
-    tag: "Problem: Invisible on Google & Wasted Ads",
-    title: "Organic Search & Customer Acquisition",
-    desc: "Being invisible when local buyers search on Google—or burning capital on unfocused campaigns with no qualified leads—drains your budget. We secure prime organic visibility across search engines and launch focused pay-per-click campaigns that target buyers at the exact moment of intent.",
-    highlights: ["Prominent local search & map positioning", "High-intent buyer keyword targeting", "Strict daily budget controls you dictate", "Verified incoming calls & quote requests"],
+    tag: "Problem: People Are Not Finding or Engaging With Your Business",
+    title: "Digital Marketing That Keeps Your Business Visible",
+    desc: "Having a website is only part of building an online presence. We help businesses improve their Google visibility through SEO, maintain a consistent social media presence, and reach relevant audiences through targeted Google and Meta advertising.",
+    highlights: [
+      "Search engine optimization & local SEO",
+      "Social media content & publishing",
+      "Google Search & Meta advertising",
+      "Conversion tracking & performance reporting",
+    ],
   },
+
   {
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
-    tag: "Problem: Hours Lost to Manual Busywork",
-    title: "Intelligent Process & Operations Automation",
-    desc: "When staff spend hours copying data from forms into spreadsheets, manually sending quotes, or answering repetitive customer questions, growth stalls. We connect your daily business tools—like WhatsApp, Gmail, and cloud spreadsheets—so routines run seamlessly on autopilot.",
-    highlights: ["Real-time lead notifications on mobile", "Automated spreadsheet & database syncing", "24/7 intelligent FAQ auto-replies", "Reclaim 10 to 15 productive team hours weekly"],
+    tag: "Problem: Too Much Time Goes Into Repetitive Work",
+    title: "AI Automation for Everyday Business Tasks",
+    desc: "If your team spends time moving information between spreadsheets, emails, forms, or other business tools, there may be a simpler way to handle it. We automate repetitive workflows and use AI where it genuinely helps, while keeping important decisions under your control.",
+    highlights: [
+      "Lead notifications & follow-up workflows",
+      "Forms, spreadsheets & email automation",
+      "Document & invoice data extraction",
+      "AI-assisted customer responses",
+    ],
+  },
+
+  {
+    icon: <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 28, color: "#EA580C" }} />,
+    tag: "Problem: Your Digital Tools Do Not Work Together",
+    title: "Connected Digital Systems for Your Business",
+    desc: "Your website, customer data, marketing tools, and everyday software should support the way your business operates. We connect the relevant systems and build custom workflows where off-the-shelf tools are not enough.",
+    highlights: [
+      "CRM & business software integrations",
+      "WhatsApp, Gmail & spreadsheet workflows",
+      "Customer data & lead management",
+      "Custom tools for specific business processes",
+    ],
   },
 ];
+
+
 
 export default function HomeIntroduction() {
   return (
@@ -143,7 +169,9 @@ export default function HomeIntroduction() {
                 mx: "auto",
               }}
             >
-              Most business owners struggle with websites that look okay but don&apos;t generate calls, marketing budgets spent without measurable return, and staff bogged down in repetitive manual paperwork. At Aetibar (&quot;Trust&quot;), we replace guesswork with practical digital systems that win customers and save time.
+           Most business owners deal with websites that look fine but fail to turn visitors into enquiries, marketing efforts that are difficult to measure, and teams spending too much time on repetitive tasks. At Aetibar — meaning “Trust” — we bring web development, digital marketing, mobile apps, and AI automation together to help businesses build a stronger online presence, reach the right customers, and work more efficiently.
+
+
             </Typography>
           </Box>
         </motion.div>

@@ -31,13 +31,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/app-development-company-in-udaipur`,
+      url: `${baseUrl}/services/mobile-app-development-company-in-udaipur`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/services/ai-automation-company-in-udaipur`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/services/digital-marketing-company-in-udaipur`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

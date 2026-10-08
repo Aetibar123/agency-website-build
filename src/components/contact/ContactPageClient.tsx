@@ -33,59 +33,59 @@ import { motion } from "framer-motion";
 
 const BRIEF_TEMPLATE = `Hi Aetibar Team,
 
-1. Company & Industry: [e.g., Logistics / B2B Services / FinTech]
-2. Primary Operational Problem: [Describe the manual work, system bottleneck, or new platform needed]
-3. Current Stack & Tools: [e.g., Google Sheets, custom software, PostgreSQL, legacy portal]
-4. Key Desired Outcomes: [e.g., Automate lead intake, rebuild customer portal, sub-second load speeds]
-5. Target Timeline: [e.g., 4–8 weeks / Next Quarter]`;
+1. Business & Industry: [e.g., Healthcare / Retail / B2B Services]
+2. What You Need: [Website, mobile app, SEO, social media, advertising, AI automation, etc.]
+3. Current Situation: [Briefly describe your current setup or challenge]
+4. Your Goals: [What would you like to improve, automate, or achieve?]
+5. Preferred Timeline: [e.g., 2–4 weeks / Flexible]`;
 
 const faqs = [
   {
-    q: "How fast do you respond to direct inquiries?",
-    a: "Every email goes straight to our senior engineering lead. You will receive a technical response with 2–3 targeted clarifying questions within 24 business hours—never an automated sales drip.",
+    q: "How quickly will you respond to my inquiry?",
+    a: "We aim to respond to inquiries within 1–2 business days with relevant questions or next steps based on your requirements.",
   },
   {
-    q: "We don't have a formal technical specification yet. Can we still reach out?",
-    a: "Absolutely. In fact, most of our best client partnerships start with an operational problem rather than a formal spec. Send us a quick bulleted outline or loom video of what's broken in your current workflow over email, and we will help you architect the technical roadmap.",
+    q: "Can I contact you if I don't have a detailed plan yet?",
+    a: "Yes. You can simply explain what your business needs, what problem you are facing, or what you want to improve. We can discuss the requirements and suggest a practical approach.",
   },
   {
-    q: "Can we sign a Non-Disclosure Agreement (NDA) before sharing proprietary workflow details?",
-    a: "Yes. We treat all client business data, workflows, and operational metrics with default strict confidentiality. We are happy to countersign your mutual NDA or provide our standard studio mutual NDA prior to our initial scoping session.",
+    q: "Can I share confidential business information?",
+    a: "Yes. Please share only the information needed to discuss your requirements. If a formal NDA is required, we can discuss the appropriate arrangement before sharing sensitive details.",
   },
   {
-    q: "How do you handle collaboration across different time zones?",
-    a: "We collaborate with clients across India, North America, Europe, and the Gulf. All communication and project delivery are handled asynchronously via email and private staging previews, with scheduled video syncs during mutually agreed overlapping windows.",
+    q: "Do you work with businesses outside Udaipur?",
+    a: "Yes. We work with businesses in India and international markets. Communication and project collaboration can be handled remotely.",
   },
   {
-    q: "Who actually builds our systems?",
-    a: "You communicate and build directly with senior software engineers and system architects. We have a strict zero-intern and zero-outsourcing policy. Every database schema, edge API, and user interface is crafted in-house.",
+    q: "What happens after I contact Aetibar?",
+    a: "We first understand your requirements, current setup, and goals. If the project is a good fit, we discuss the scope, expected deliverables, timeline, and pricing before moving forward.",
   },
 ];
 
 const processSteps = [
   {
     step: "01",
-    title: "Senior Technical Review",
-    timeframe: "Within 24 Hours",
-    desc: "Your email or brief is reviewed directly by an experienced system architect—not a junior sales SDR.",
+    title: "Understand Your Needs",
+    timeframe: "Initial Discussion",
+    desc: "We review your requirements, current setup, challenges, and what you want to achieve.",
   },
   {
     step: "02",
-    title: "Clarifying Diagnosis",
-    timeframe: "Day 1 – 2",
-    desc: "We reply via email with 2–3 targeted questions to stress-test constraints, database scale, and existing tools.",
+    title: "Ask the Right Questions",
+    timeframe: "After Your Inquiry",
+    desc: "We clarify the important details so we can understand what your business actually needs.",
   },
   {
     step: "03",
-    title: "30-Min Architectural Sync",
-    timeframe: "At Your Convenience",
-    desc: "A direct video discussion where we whiteboard your system topology, risk points, and concrete timelines.",
+    title: "Recommend the Right Approach",
+    timeframe: "Based on Your Needs",
+    desc: "We suggest the relevant service, tools, and approach based on your goals and requirements.",
   },
   {
     step: "04",
-    title: "Honest Scoping & Proposal",
-    timeframe: "Within 48 Hours",
-    desc: "A fixed-scope, milestone-driven technical proposal. If an existing tool solves it cheaper, we'll tell you honestly.",
+    title: "Define the Project",
+    timeframe: "Before Work Begins",
+    desc: "We agree on the scope, deliverables, timeline, and pricing before moving forward.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function ContactPageClient() {
   };
 
   const prefilledMailto = `mailto:hello.aetibar@gmail.com?subject=${encodeURIComponent(
-    "Project Architecture Scoping | Aetibar"
+    "Project Architecture Scoping | Aetibar",
   )}&body=${encodeURIComponent(BRIEF_TEMPLATE)}`;
 
   return (
@@ -131,8 +131,10 @@ export default function ContactPageClient() {
             backgroundImage:
               "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
-            maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
-            WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
+            maskImage:
+              "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
             pointerEvents: "none",
           }}
         />
@@ -163,8 +165,18 @@ export default function ContactPageClient() {
                 <Box
                   component={motion.div}
                   animate={{ scale: [1, 1.3, 1] }}
-                  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 2,
+                    ease: "easeInOut",
+                  }}
+                  sx={{
+                    width: 8,
+                    height: 8,
+                    borderRadius: "50%",
+                    bgcolor: "#F97316",
+                    boxShadow: "0 0 10px #F97316",
+                  }}
                 />
                 <Typography
                   sx={{
@@ -175,7 +187,7 @@ export default function ContactPageClient() {
                     textTransform: "uppercase",
                   }}
                 >
-                  DIRECT EMAIL ACCESS &bull; ZERO SALES BUREAUCRACY
+                  DIRECT EMAIL ACCESS • SIMPLE COMMUNICATION
                 </Typography>
               </Box>
             </motion.div>
@@ -184,12 +196,21 @@ export default function ContactPageClient() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: 0.1,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
+                  fontSize: {
+                    xs: "1.65rem",
+                    sm: "2.25rem",
+                    md: "2.85rem",
+                    lg: "3.25rem",
+                  },
                   fontWeight: 600,
                   letterSpacing: { xs: "-0.03em", md: "-0.04em" },
                   lineHeight: { xs: 1.18, md: 1.2 },
@@ -200,11 +221,12 @@ export default function ContactPageClient() {
                   mb: 3,
                 }}
               >
-                Reach our software engineers directly via{" "}
+                Reach our team directly via {" "}
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                    background:
+                      "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     display: "inline",
@@ -219,7 +241,11 @@ export default function ContactPageClient() {
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: 0.2,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               <Typography
                 sx={{
@@ -232,8 +258,9 @@ export default function ContactPageClient() {
                   fontWeight: 400,
                 }}
               >
-                No junior sales representatives. No aggressive automated sequences.
-                Send your specifications, RFP documents, or workflow challenges directly to our engineering team.
+                No aggressive sales tactics or automated sequences. Share your
+                requirements, business challenges, or project ideas directly
+                with our team.
               </Typography>
             </motion.div>
 
@@ -241,7 +268,11 @@ export default function ContactPageClient() {
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: 0.3,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               <Box
                 sx={{
@@ -259,7 +290,8 @@ export default function ContactPageClient() {
                   size="large"
                   startIcon={<EmailOutlinedIcon />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background:
+                      "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
                     color: "#FFFFFF",
                     px: { xs: 3.5, sm: 4 },
                     py: 1.6,
@@ -269,16 +301,21 @@ export default function ContactPageClient() {
                     boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
                     transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background:
+                        "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
                       transform: "translateY(-2px)",
                       boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
                     },
                   }}
                 >
-                  Email hello.aetibar@gmail.com
+                  Email: hello.aetibar@gmail.com
                 </Button>
 
-                <Tooltip title={copiedEmail ? "Copied to clipboard!" : "Copy direct email"}>
+                <Tooltip
+                  title={
+                    copiedEmail ? "Copied to clipboard!" : "Copy direct email"
+                  }
+                >
                   <Button
                     onClick={handleCopyEmail}
                     variant="outlined"
@@ -291,7 +328,9 @@ export default function ContactPageClient() {
                     }
                     sx={{
                       color: copiedEmail ? "#EA580C" : "#18181B",
-                      borderColor: copiedEmail ? "#EA580C" : "rgba(24, 24, 27, 0.2)",
+                      borderColor: copiedEmail
+                        ? "#EA580C"
+                        : "rgba(24, 24, 27, 0.2)",
                       fontWeight: 600,
                       fontSize: "0.9rem",
                       px: 3,
@@ -337,9 +376,19 @@ export default function ContactPageClient() {
       </Box>
 
       {/* 2. PRIMARY DIRECT EMAIL CHANNEL */}
-      <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: "#FFFFFF" }}>
+      <Box
+        component="section"
+        sx={{ py: { xs: 8, md: 12 }, bgcolor: "#FFFFFF" }}
+      >
         <Container maxWidth="xl">
-          <Box sx={{ mb: 6, textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto" }}>
+          <Box
+            sx={{
+              mb: 6,
+              textAlign: "center",
+              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              mx: "auto",
+            }}
+          >
             <Box
               sx={{
                 display: "inline-flex",
@@ -369,7 +418,12 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                fontSize: {
+                  xs: "1.55rem",
+                  sm: "2.15rem",
+                  md: "2.65rem",
+                  lg: "3rem",
+                },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
@@ -382,8 +436,12 @@ export default function ContactPageClient() {
             >
               One direct inbox. Straight to senior engineering.
             </Typography>
-            <Typography sx={{ color: "#52525B", fontSize: "1rem", lineHeight: 1.7 }}>
-              We collaborate asynchronously with leaders worldwide through direct email. No phone queues, gatekeepers, or sales funnels.
+            <Typography
+              sx={{ color: "#52525B", fontSize: "1rem", lineHeight: 1.7 }}
+            >
+              We work with businesses in India and international markets through
+              direct email communication—simple, clear, and without unnecessary
+              sales layers.
             </Typography>
           </Box>
 
@@ -479,8 +537,8 @@ export default function ContactPageClient() {
                       mb: 3,
                     }}
                   >
-                    Ideal for RFPs, technical requirements, architectural sketches, loom recordings,
-                    or repository invitations.
+                    Ideal for project requirements, business challenges, ideas,
+                    documents, or reference materials.
                   </Typography>
                 </Box>
 
@@ -497,8 +555,16 @@ export default function ContactPageClient() {
                       mb: 2,
                     }}
                   >
-                    <AccessTimeOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                    <Typography sx={{ fontSize: "0.8rem", color: "#18181B", fontWeight: 600 }}>
+                    <AccessTimeOutlinedIcon
+                      sx={{ fontSize: 16, color: "#EA580C" }}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: "0.8rem",
+                        color: "#18181B",
+                        fontWeight: 600,
+                      }}
+                    >
                       Response SLA: &lt; 24 business hours
                     </Typography>
                   </Box>
@@ -510,7 +576,8 @@ export default function ContactPageClient() {
                     variant="contained"
                     endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background:
+                        "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
                       color: "#FFFFFF",
                       py: 1.35,
                       borderRadius: "9999px",
@@ -518,7 +585,8 @@ export default function ContactPageClient() {
                       fontSize: "0.9rem",
                       boxShadow: "0 8px 20px rgba(234, 88, 12, 0.25)",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                        background:
+                          "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
                       },
                     }}
                   >
@@ -590,7 +658,7 @@ export default function ContactPageClient() {
                       mb: 0.5,
                     }}
                   >
-                    Senior Engineering Review
+                    Team Review
                   </Typography>
 
                   <Typography
@@ -601,7 +669,7 @@ export default function ContactPageClient() {
                       mb: 2,
                     }}
                   >
-                    No junior sales gatekeepers
+                    Direct Team Communication
                   </Typography>
 
                   <Typography
@@ -612,8 +680,9 @@ export default function ContactPageClient() {
                       mb: 3,
                     }}
                   >
-                    Your message is reviewed directly by system architects who build production software.
-                    We reply with targeted engineering insights and feasibility parameters.
+                    Your message is reviewed by our team, and we respond with
+                    relevant questions, practical recommendations, and next
+                    steps.
                   </Typography>
                 </Box>
 
@@ -631,8 +700,14 @@ export default function ContactPageClient() {
                     }}
                   >
                     <CodeRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                    <Typography sx={{ fontSize: "0.8rem", color: "#18181B", fontWeight: 600 }}>
-                      100% In-House Software Architects
+                    <Typography
+                      sx={{
+                        fontSize: "0.8rem",
+                        color: "#18181B",
+                        fontWeight: 600,
+                      }}
+                    >
+                      Experienced In-House Team
                     </Typography>
                   </Box>
 
@@ -746,8 +821,9 @@ export default function ContactPageClient() {
                       mb: 3,
                     }}
                   >
-                    We regularly handle proprietary enterprise data. Share system bottlenecks freely
-                    or request our mutual NDA before diving into architectural specifics.
+                    We understand that business information can be sensitive.
+                    Share the details needed to discuss your requirements, or
+                    request an NDA before sharing confidential information.
                   </Typography>
                 </Box>
 
@@ -764,9 +840,17 @@ export default function ContactPageClient() {
                       mb: 2,
                     }}
                   >
-                    <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                    <Typography sx={{ fontSize: "0.8rem", color: "#18181B", fontWeight: 600 }}>
-                      Global Asynchronous Delivery
+                    <CheckCircleRoundedIcon
+                      sx={{ fontSize: 16, color: "#EA580C" }}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: "0.8rem",
+                        color: "#18181B",
+                        fontWeight: 600,
+                      }}
+                    >
+                      Remote Collaboration
                     </Typography>
                   </Box>
 
@@ -774,7 +858,9 @@ export default function ContactPageClient() {
                     <Button
                       fullWidth
                       variant="outlined"
-                      endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
+                      endIcon={
+                        <ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />
+                      }
                       sx={{
                         color: "#18181B",
                         borderColor: "rgba(24, 24, 27, 0.2)",
@@ -811,7 +897,11 @@ export default function ContactPageClient() {
         }}
       >
         <Container maxWidth="xl">
-          <Grid container spacing={{ xs: 5, lg: 8 }} sx={{ alignItems: "center" }}>
+          <Grid
+            container
+            spacing={{ xs: 5, lg: 8 }}
+            sx={{ alignItems: "center" }}
+          >
             {/* Left Description */}
             <Grid size={{ xs: 12, lg: 5 }}>
               <Box
@@ -827,7 +917,9 @@ export default function ContactPageClient() {
                   mb: 2.5,
                 }}
               >
-                <AssignmentOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                <AssignmentOutlinedIcon
+                  sx={{ fontSize: 16, color: "#EA580C" }}
+                />
                 <Typography
                   sx={{
                     fontSize: "0.75rem",
@@ -857,13 +949,14 @@ export default function ContactPageClient() {
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                    background:
+                      "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     display: "inline",
                   }}
                 >
-                  Use our 1-click project brief.
+                  Use Our Simple Project Brief
                 </Box>
               </Typography>
 
@@ -875,20 +968,38 @@ export default function ContactPageClient() {
                   mb: 3.5,
                 }}
               >
-                Instead of filling out repetitive online forms, copy this structured
-                template directly into your email. It gives us exactly what we need
-                to run a senior feasibility diagnosis.
+                Instead of filling out a long form, copy this simple template
+                into your email. It helps us quickly understand your
+                requirements and suggest the right next steps.
               </Typography>
 
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 4 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 1.5,
+                  mb: 4,
+                }}
+              >
                 {[
                   "No mandatory field validations blocking your submission.",
                   "Attach architecture diagrams, mockups, or loom recordings freely.",
                   "Directly paste into your personal or corporate email client.",
                 ].map((item, idx) => (
-                  <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                    <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 20, mt: 0.2 }} />
-                    <Typography sx={{ fontSize: "0.95rem", color: "#18181B", fontWeight: 500 }}>
+                  <Box
+                    key={idx}
+                    sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}
+                  >
+                    <CheckCircleOutlinedIcon
+                      sx={{ color: "#EA580C", fontSize: 20, mt: 0.2 }}
+                    />
+                    <Typography
+                      sx={{
+                        fontSize: "0.95rem",
+                        color: "#18181B",
+                        fontWeight: 500,
+                      }}
+                    >
                       {item}
                     </Typography>
                   </Box>
@@ -921,7 +1032,9 @@ export default function ContactPageClient() {
                     },
                   }}
                 >
-                  {copiedBrief ? "Brief Copied to Clipboard!" : "Copy Brief Template"}
+                  {copiedBrief
+                    ? "Brief Copied to Clipboard!"
+                    : "Copy Brief Template"}
                 </Button>
 
                 <Button
@@ -973,9 +1086,30 @@ export default function ContactPageClient() {
                   }}
                 >
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#EF4444" }} />
-                    <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#F59E0B" }} />
-                    <Box sx={{ width: 10, height: 10, borderRadius: "50%", bgcolor: "#10B981" }} />
+                    <Box
+                      sx={{
+                        width: 10,
+                        height: 10,
+                        borderRadius: "50%",
+                        bgcolor: "#EF4444",
+                      }}
+                    />
+                    <Box
+                      sx={{
+                        width: 10,
+                        height: 10,
+                        borderRadius: "50%",
+                        bgcolor: "#F59E0B",
+                      }}
+                    />
+                    <Box
+                      sx={{
+                        width: 10,
+                        height: 10,
+                        borderRadius: "50%",
+                        bgcolor: "#10B981",
+                      }}
+                    />
                     <Typography
                       sx={{
                         ml: 1.5,
@@ -1038,7 +1172,10 @@ export default function ContactPageClient() {
                 >
                   <Typography sx={{ fontSize: "0.8rem", color: "#A1A1AA" }}>
                     Send to:{" "}
-                    <Box component="span" sx={{ color: "#FB923C", fontWeight: 700 }}>
+                    <Box
+                      component="span"
+                      sx={{ color: "#FB923C", fontWeight: 700 }}
+                    >
                       hello.aetibar@gmail.com
                     </Box>
                   </Typography>
@@ -1061,7 +1198,14 @@ export default function ContactPageClient() {
         }}
       >
         <Container maxWidth="xl">
-          <Box sx={{ textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto", mb: { xs: 6, md: 9 } }}>
+          <Box
+            sx={{
+              textAlign: "center",
+              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              mx: "auto",
+              mb: { xs: 6, md: 9 },
+            }}
+          >
             <Box
               sx={{
                 display: "inline-flex",
@@ -1084,14 +1228,19 @@ export default function ContactPageClient() {
                   color: "#EA580C",
                 }}
               >
-                TRANSPARENT PROTOCOL
+                CLEAR PROCESS
               </Typography>
             </Box>
 
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                fontSize: {
+                  xs: "1.55rem",
+                  sm: "2.15rem",
+                  md: "2.65rem",
+                  lg: "3rem",
+                },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
@@ -1102,11 +1251,13 @@ export default function ContactPageClient() {
                 mb: 2,
               }}
             >
-              What happens after you reach out?
+              What Happens After You Contact Us?
             </Typography>
-            <Typography sx={{ fontSize: "1.05rem", color: "#52525B", lineHeight: 1.75 }}>
-              Here is our exact turnaround framework. No aggressive sales sequences, no bait-and-switch.
-              Just disciplined engineering diagnosis.
+            <Typography
+              sx={{ fontSize: "1.05rem", color: "#52525B", lineHeight: 1.75 }}
+            >
+              Here’s what you can expect after reaching out—clear communication,
+              practical questions, and straightforward next steps.
             </Typography>
           </Box>
 
@@ -1170,7 +1321,13 @@ export default function ContactPageClient() {
                     }}
                   />
 
-                  <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.65 }}>
+                  <Typography
+                    sx={{
+                      fontSize: "0.875rem",
+                      color: "#52525B",
+                      lineHeight: 1.65,
+                    }}
+                  >
                     {item.desc}
                   </Typography>
                 </Box>
@@ -1199,14 +1356,22 @@ export default function ContactPageClient() {
             right: "-10%",
             width: "500px",
             height: "500px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%)",
             filter: "blur(60px)",
             pointerEvents: "none",
           }}
         />
 
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
-          <Box sx={{ textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto", mb: { xs: 6, md: 8 } }}>
+          <Box
+            sx={{
+              textAlign: "center",
+              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              mx: "auto",
+              mb: { xs: 6, md: 8 },
+            }}
+          >
             <Box
               sx={{
                 display: "inline-flex",
@@ -1230,14 +1395,19 @@ export default function ContactPageClient() {
                   textTransform: "uppercase",
                 }}
               >
-                NON-NEGOTIABLE STUDIO COMMITMENTS
+                OUR COMMITMENTS
               </Typography>
             </Box>
 
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                fontSize: {
+                  xs: "1.55rem",
+                  sm: "2.15rem",
+                  md: "2.65rem",
+                  lg: "3rem",
+                },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
@@ -1247,7 +1417,7 @@ export default function ContactPageClient() {
                 color: "#FFFFFF",
               }}
             >
-              How we protect your time &amp; intellectual property.
+              How We Respect Your Time & Information
             </Typography>
           </Box>
 
@@ -1255,18 +1425,18 @@ export default function ContactPageClient() {
             {[
               {
                 icon: ShieldOutlinedIcon,
-                title: "Strict Confidentiality & Mutual NDAs",
-                desc: "We regularly work with proprietary ERP data, financial workflows, and sensitive customer pipelines. We execute mutual NDAs before any code or process inspection.",
+                title: "Respect for Confidential Information",
+                desc: "We understand that business information can be sensitive. If your project requires an NDA, we can discuss the appropriate arrangement before reviewing confidential details.",
               },
               {
                 icon: EngineeringOutlinedIcon,
-                title: "Zero Junior Bait-and-Switch",
-                desc: "The senior software architects who diagnose your system are the same engineers building your database schemas and edge APIs. Zero outsourced brokers.",
+                title: "Direct Team Communication",
+                desc: "We keep communication direct and simple, so you can discuss your requirements, questions, and feedback with the relevant people working on your project.",
               },
               {
                 icon: CodeRoundedIcon,
-                title: "100% Asset & Code Sovereignty",
-                desc: "You own every single line of code, GitHub repository, and database deployment from day 1. No vendor lock-in, no proprietary agency licensing fees.",
+                title: "Clear Access & Handover",
+                desc: "We provide the agreed files, accounts, access, and other digital assets as defined in the project scope and handover requirements.",
               },
             ].map((pillar, idx) => {
               const IconComp = pillar.icon;
@@ -1335,9 +1505,19 @@ export default function ContactPageClient() {
       </Box>
 
       {/* 6. FREQUENTLY ASKED QUESTIONS */}
-      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FFFFFF" }}>
+      <Box
+        component="section"
+        sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FFFFFF" }}
+      >
         <Container maxWidth="md">
-          <Box sx={{ textAlign: "center", maxWidth: { xs: "100%", md: 980, lg: 1100 }, mx: "auto", mb: 6 }}>
+          <Box
+            sx={{
+              textAlign: "center",
+              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              mx: "auto",
+              mb: 6,
+            }}
+          >
             <Box
               sx={{
                 display: "inline-flex",
@@ -1367,7 +1547,12 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                fontSize: {
+                  xs: "1.55rem",
+                  sm: "2.15rem",
+                  md: "2.65rem",
+                  lg: "3rem",
+                },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
@@ -1414,7 +1599,13 @@ export default function ContactPageClient() {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails sx={{ px: 3, pt: 0, pb: 3 }}>
-                  <Typography sx={{ color: "#52525B", lineHeight: 1.75, fontSize: "0.95rem" }}>
+                  <Typography
+                    sx={{
+                      color: "#52525B",
+                      lineHeight: 1.75,
+                      fontSize: "0.95rem",
+                    }}
+                  >
                     {faq.a}
                   </Typography>
                 </AccordionDetails>
@@ -1445,11 +1636,19 @@ export default function ContactPageClient() {
                   mb: 1.5,
                 }}
               >
-                Connect with our studio leadership
+                Connect With Our Team
+
               </Typography>
-              <Typography sx={{ color: "#52525B", fontSize: "0.95rem", lineHeight: 1.7, mb: 3 }}>
-                Follow our architectural insights, engineering breakdowns, and live case studies
-                across industry networks.
+              <Typography
+                sx={{
+                  color: "#52525B",
+                  fontSize: "0.95rem",
+                  lineHeight: 1.7,
+                  mb: 3,
+                }}
+              >
+               Follow our latest insights, project updates, and practical digital solutions across our social channels.
+
               </Typography>
 
               <Box sx={{ display: "flex", gap: 1.5 }}>
@@ -1531,19 +1730,39 @@ export default function ContactPageClient() {
                   border: "1px solid rgba(228, 228, 231, 0.9)",
                 }}
               >
-                <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", mb: 1, textTransform: "uppercase" }}>
+                <Typography
+                  sx={{
+                    fontSize: "0.8rem",
+                    fontWeight: 700,
+                    color: "#EA580C",
+                    mb: 1,
+                    textTransform: "uppercase",
+                  }}
+                >
                   Not ready to scope yet?
                 </Typography>
-                <Typography sx={{ fontWeight: 700, fontSize: "1.15rem", color: "#18181B", mb: 2 }}>
-                  Explore how we engineer production systems.
+                <Typography
+                  sx={{
+                    fontWeight: 700,
+                    fontSize: "1.15rem",
+                    color: "#18181B",
+                    mb: 2,
+                  }}
+                >
+                  Explore Our Work & Projects
+
                 </Typography>
 
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
+                <Box
+                  sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}
+                >
                   <Link href="/work" style={{ textDecoration: "none" }}>
                     <Button
                       fullWidth
                       variant="text"
-                      endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
+                      endIcon={
+                        <ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />
+                      }
                       sx={{
                         justifyContent: "space-between",
                         color: "#18181B",
@@ -1560,7 +1779,8 @@ export default function ContactPageClient() {
                         },
                       }}
                     >
-                      View Real-World Case Studies
+                      View Our Work
+
                     </Button>
                   </Link>
 
@@ -1568,7 +1788,9 @@ export default function ContactPageClient() {
                     <Button
                       fullWidth
                       variant="text"
-                      endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
+                      endIcon={
+                        <ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />
+                      }
                       sx={{
                         justifyContent: "space-between",
                         color: "#18181B",
@@ -1585,7 +1807,8 @@ export default function ContactPageClient() {
                         },
                       }}
                     >
-                      Explore Our Engineering Services
+                     Explore Our Services
+
                     </Button>
                   </Link>
                 </Box>

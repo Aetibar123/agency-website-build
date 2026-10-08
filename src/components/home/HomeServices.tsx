@@ -14,110 +14,125 @@ import { motion } from "framer-motion";
 
 const coreServices = [
   {
-    badge: "Visual Identity",
-    title: "Graphic Design & Brand Identity",
-    desc: "Create immediate market trust with distinctive logos, visual standards & sales decks.",
+    badge: "Web Development",
+    title: "Websites Built Around Your Business",
+    desc: "Professional business websites and online stores that make it easy for customers to understand what you offer and get in touch.",
     details:
-      "First impressions happen in seconds. We design memorable company logos, comprehensive brand guidelines, product packaging, and modern UI/UX design that position your business as an established industry leader.",
+      "Whether you need a simple business website, an online store, or a more customized web platform, we build it around your business requirements. We focus on clear information, easy navigation, useful customer actions, and a solid foundation for future growth.",
     bullets: [
-      "Bespoke logo design & brand style guides",
-      "High-impact social templates, banners & ads",
-      "Print-ready brochures, flyers & packaging",
-      "Intuitive UI/UX design for web & mobile apps",
-    ],
-    href: "/services/social-media-marketing-company-in-udaipur",
-    icon: <PaletteOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
-  },
-  {
-    badge: "Web Platforms",
-    title: "Custom Web Development",
-    desc: "Fast, mobile-optimized business sites and digital storefronts that turn clicks into clients.",
-    details:
-      "Your website is your 24/7 digital office or showroom. We engineer responsive company websites and e-commerce stores that load in under a second on phones, communicate your value clearly, and make contacting you effortless.",
-    bullets: [
-      "Sub-second load speeds on phones & desktops",
-      "Direct WhatsApp integration & click-to-call buttons",
-      "E-commerce catalogs with easy checkout & payments",
-      "Complete ownership of source code, domains & data",
+      "Business websites & online stores",
+      "Custom customer portals & booking systems",
+      "Clear navigation and customer enquiry paths",
+      "SEO-ready website foundations",
     ],
     href: "/services/web-development-company-in-udaipur",
     icon: <LanguageIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
   },
+
   {
-    badge: "iOS & Android",
-    title: "Mobile App Development",
-    desc: "Purpose-built iPhone & Android applications for customers and field operations.",
+    badge: "Mobile Apps",
+    title: "Mobile Apps for Customers & Teams",
+    desc: "Custom iOS and Android apps that help customers use your services and teams manage work while on the go.",
     details:
-      "Put your business directly in your customer's pocket. We create intuitive cross-platform apps with snappy user experiences, offline support, user accounts, and push notifications for appointments, orders, or service tracking.",
+      "We develop mobile applications around specific business needs, from customer-facing apps for bookings and orders to internal tools for field teams, job management, and data collection. Where required, apps can also support offline work and synchronization.",
     bullets: [
-      "Unified codebase for both Apple & Android phones",
-      "Push alerts for appointment reminders & offers",
-      "Frictionless booking, ordering & user portals",
-      "Complete launch support on App Store & Google Play",
+      "iOS & Android applications",
+      "Customer booking, ordering & service apps",
+      "Field team & job management tools",
+      "Offline data capture & synchronization",
     ],
-    href: "/services/app-development-company-in-udaipur",
+    href: "/services/mobile-app-development-company-in-udaipur",
     icon: <PhoneIphoneIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
   },
+
   {
-    badge: "Organic Search",
-    title: "SEO & Search Engine Rankings",
-    desc: "Capture ready-to-buy prospects when they search on Google for your products or services.",
+    badge: "Search Engine Optimization",
+    title: "SEO That Helps Customers Find You",
+    desc: "Improve your visibility on Google so people searching for your products or services can discover your business.",
     details:
-      "When local buyers search Google for what you offer, your company should appear first. We optimize technical website structure and Google Business profiles so prospective customers discover you organically without paying for every click.",
+      "We improve the parts of your website and online presence that help search engines understand your business. Our SEO work can include technical improvements, keyword research, local search optimization, Google Business Profile work, and useful content.",
     bullets: [
-      "Top visibility on Google Maps & local search queries",
-      "Targeted keywords focused on commercial buyer intent",
-      "Mobile speed improvements search algorithms favor",
-      "Clear monthly analytics tracking traffic & rankings",
+      "Technical & on-page SEO",
+      "Local SEO & Google Business Profile",
+      "Keyword research & content optimization",
+      "Search performance reporting",
     ],
     href: "/services/seo-company-in-udaipur",
     icon: <SearchIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
   },
+
   {
-    badge: "Paid Campaigns",
-    title: "Targeted Paid Advertising",
-    desc: "High-precision Google Search & Meta ad campaigns engineered for positive ROI.",
+    badge: "Paid Advertising",
+    title: "Google & Meta Ads for Your Business",
+    desc: "Reach relevant audiences through targeted advertising on Google, Instagram, and Facebook with controlled budgets.",
     details:
-      "Never gamble marketing capital on empty clicks. We launch targeted Google Search Ads and Instagram/Facebook campaigns shown only to active buyers in your chosen area, with strict daily budgets that keep you in complete control.",
+      "We plan and manage paid campaigns based on your business goals, target audience, location, and available budget. Campaigns are monitored and adjusted over time, with conversion tracking where the required setup is available.",
     bullets: [
-      "Targeted search ads connecting with active buyers",
-      "Precision Instagram & Facebook lead campaigns",
-      "Strict daily budget caps with zero surprise spend",
-      "Tracked conversions: verified phone calls & lead forms",
+      "Google Search & Call campaigns",
+      "Instagram & Facebook advertising",
+      "Keyword & audience targeting",
+      "Conversion tracking & performance reporting",
     ],
     href: "/services/paid-advertising-company-in-udaipur",
     icon: <AdsClickOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
   },
+
   {
-    badge: "Brand Engagement",
-    title: "Social Media Marketing & Management",
-    desc: "Build buyer confidence and community trust through active, engaging social channels.",
+    badge: "Social Media Marketing",
+    title: "A Consistent Social Media Presence",
+    desc: "Keep your business active and professional on social media with planned content, branded visuals, and clear messaging.",
     details:
-      "Before buying, prospective customers check your social pages to verify that your company is genuine and active. We plan, write, and produce attractive monthly posts and reels that tell your brand story while you focus on operations.",
+      "We handle the ongoing work behind your social media presence, including content planning, captions, branded posts, and publishing. The focus is on communicating what your business offers clearly and giving customers a reason to stay engaged.",
     bullets: [
-      "Monthly content calendar planned & approved in advance",
-      "Branded graphics, carousels & short-form video reels",
-      "Fosters customer loyalty, authority & follower growth",
-      "Content designed to turn casual scrollers into clients",
+      "Monthly content planning",
+      "Branded posts, carousels & reels",
+      "Instagram, Facebook & LinkedIn",
+      "Publishing & performance reporting",
     ],
     href: "/services/social-media-marketing-company-in-udaipur",
     icon: <ShareOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
   },
+
+  {
+    badge: "AI Automation",
+    title: "Automate Repetitive Business Work",
+    desc: "Reduce manual work by connecting your everyday tools and automating repetitive tasks where it makes sense.",
+    details:
+      "We create practical workflows that can move information between the tools your business already uses, such as WhatsApp, Gmail, Google Sheets, CRMs, and other software. AI can be added where it genuinely improves the workflow.",
+    bullets: [
+      "Lead routing & follow-up workflows",
+      "Email, spreadsheet & CRM automation",
+      "Document & invoice data extraction",
+      "AI-assisted customer support & responses",
+    ],
+    href: "/services/ai-automation-company-in-udaipur",
+    icon: <SmartToyOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+  },
 ];
 
+
+
 const automationService = {
-  badge: "Efficiency & Automation",
-  title: "AI & Smart Workflow Automation",
-  desc: "Free your team from repetitive paperwork, manual data entry, and routine customer messages.",
-  details:
-    "Stop wasting hours typing customer details into spreadsheets or replying to the exact same routine questions. We connect your daily business tools—like WhatsApp, Gmail, and Google Sheets—so customer leads are logged automatically and follow-ups happen without delay.",
-  bullets: [
-    "New inquiries routed straight to personal WhatsApp immediately",
-    "Customer details & orders auto-synced into Google Sheets",
-    "24/7 instant automated replies to common customer questions",
-    "Eliminates repetitive manual paperwork and human typing errors",
-  ],
-  href: "/services/ai-automation-company-in-udaipur",
+
+badge: "Efficiency & Automation",
+
+title: "AI & Business Workflow Automation",
+
+desc: "Reduce repetitive data entry, follow-ups, and routine customer communication so your team can focus on more important work.",
+
+details:
+  "If your team spends too much time moving customer information between forms, spreadsheets, emails, or other tools, we can automate those steps. We connect the software your business already uses—such as WhatsApp, Gmail, Google Sheets, and CRMs—so information can move between systems and routine tasks can happen automatically.",
+
+bullets: [
+  "New enquiries automatically routed to the right person or channel",
+  "Customer details synced between forms, spreadsheets, and business tools",
+  "Automated follow-ups and responses for routine customer questions",
+  "AI-assisted workflows for documents, customer support, and repetitive tasks",
+],
+
+href: "/services/ai-automation-company-in-udaipur",
+
+
   icon: <SmartToyOutlinedIcon sx={{ fontSize: 30, color: "#EA580C" }} />,
 };
 

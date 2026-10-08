@@ -20,7 +20,7 @@ import { motion, AnimatePresence } from "framer-motion";
 interface FaqItem {
   id: string;
   category: string;
-  categorySlug: "time" | "data" | "ownership" | "pricing";
+  categorySlug: "time" | "data" | "ownership" | "pricing" | "tools" | "support";
   icon: React.ElementType;
   question: string;
   quickAnswer: string;
@@ -34,86 +34,164 @@ const faqs: FaqItem[] = [
     category: "Time & Collaboration",
     categorySlug: "time",
     icon: AccessTimeRoundedIcon,
-    question: "How involved does my team need to be during the project?",
-    quickAnswer: "We need focused input during discovery and key milestones, without meeting exhaustion.",
+
+    question:
+      "How involved does my team need to be during the project?",
+
+    quickAnswer:
+      "We need focused input at important stages, while keeping the overall process simple and respectful of your time.",
+
     detailedAnswer:
-      "We structure our collaboration to respect your time while ensuring the software accurately fits your business. We spend focused time upfront understanding your workflows, tools, and goals. Once development begins, we provide regular working previews and clear progress summaries so you can review real features asynchronously, reserving meetings only for meaningful design and milestone sign-offs.",
-    takeaways: ["Collaborative Discovery Upfront", "Asynchronous Working Previews", "Respect for Your Daily Operations"],
+      "Your involvement depends on the type of project or service. We start with focused conversations to understand your business, requirements, and priorities. After that, we provide relevant progress updates and review points so you can give feedback without needing to be involved in every task or meeting.",
+
+    takeaways: [
+      "Focused Input at Important Stages",
+      "Regular Progress Updates",
+      "Respect for Your Time",
+    ],
   },
+
   {
     id: "existing-tools",
-    category: "Data Safety & Tools",
+    category: "Existing Tools & Systems",
+    categorySlug: "tools",
+    icon: SyncRoundedIcon,
+
+    question:
+      "Can we keep using the tools and software we already use?",
+
+    quickAnswer:
+      "Yes. We work around the tools that already work for your business and identify what actually needs to change.",
+
+    detailedAnswer:
+      "You do not need to replace everything just because you are starting a new project. We first understand the tools your business already uses, such as spreadsheets, email, WhatsApp, accounting software, CRM systems, or other business platforms. Where useful, we can connect relevant tools, improve the workflow, or recommend a replacement when the existing setup is creating a real problem.",
+
+    takeaways: [
+      "Review Your Existing Setup",
+      "Keep What Works Well",
+      "Connect or Improve Where Needed",
+    ],
+  },
+
+  {
+    id: "data-safety",
+    category: "Data & Business Continuity",
     categorySlug: "data",
     icon: SyncRoundedIcon,
-    question: "Can we keep using our existing software, databases, and daily tools?",
-    quickAnswer: "Yes. We connect with what works well and only replace what creates friction.",
+
+    question:
+      "How do you handle our existing data and avoid disrupting daily operations?",
+
+    quickAnswer:
+      "We plan changes carefully, review important information, and consider the impact on your day-to-day business.",
+
     detailedAnswer:
-      "We never force you to abandon software that already serves your team effectively. Whether you manage records in specialized software, spreadsheets, WhatsApp, or accounting platforms like Tally or QuickBooks, we evaluate your toolchain and build custom API connectors, automated syncs, or unified portals around your established workflows.",
-    takeaways: ["Evaluate Existing Toolchain", "Custom API & Webhook Integrations", "Preserve What Works Well"],
+      "When a project involves existing customer information, business records, accounts, or ongoing operations, we plan the transition around your business needs. We review the relevant data and processes, identify potential issues, and agree on the appropriate approach before making important changes. Where required, changes can be introduced in stages to reduce disruption.",
+
+    takeaways: [
+      "Review Existing Data & Processes",
+      "Plan Changes Carefully",
+      "Minimize Business Disruption",
+    ],
   },
+
   {
-    id: "zero-downtime",
-    category: "Data Safety & Tools",
-    categorySlug: "data",
-    icon: SyncRoundedIcon,
-    question: "How do you handle data migration and avoid disrupting live operations?",
-    quickAnswer: "We map records carefully, test in staging, and plan staged deployments with rollbacks.",
-    detailedAnswer:
-      "Transitions should never jeopardize daily business. We map data structures, audit historical records, and test migrations thoroughly in staging environments before any live switch. When deploying, we plan cutovers during low-traffic windows or run phased transitions, ensuring complete data verification and clear rollback plans are always in place.",
-    takeaways: ["Thorough Pre-Migration Audits", "Staged Deployment Windows", "Zero Disruption Cutover Planning"],
-  },
-  {
-    id: "code-ownership",
-    category: "IP & Code Ownership",
+    id: "asset-ownership",
+    category: "Ownership & Access",
     categorySlug: "ownership",
     icon: LockOutlinedIcon,
-    question: "Who owns the source code, databases, and design assets after completion?",
-    quickAnswer: "You do. Complete ownership of code, documentation, and credentials transfers to you.",
+
+    question:
+      "Who owns the website, accounts, files, and other digital assets after completion?",
+
+    quickAnswer:
+      "Your business should retain access to the digital assets agreed as part of the project.",
+
     detailedAnswer:
-      "Unlike proprietary SaaS platforms that lock your data behind recurring license fees, or vendors who hold repositories hostage, full ownership of your custom codebase, database schemas, and digital assets is transferred to your organization upon project completion as defined in our agreement. You have full freedom to host, modify, and scale your software.",
-    takeaways: ["Complete Codebase Ownership", "Full Access to Credentials & Data", "Independent Cloud Hosting"],
+      "We aim to keep important digital assets under your business's control. Depending on the project, this may include your website, advertising accounts, social media profiles, analytics, files, project accounts, or other relevant assets. The agreed ownership, access, and handover requirements are defined as part of the project agreement.",
+
+    takeaways: [
+      "Clear Asset Ownership",
+      "Relevant Account Access",
+      "Agreed Handover",
+    ],
   },
+
   {
     id: "scope-changes",
     category: "Pricing & Scope",
     categorySlug: "pricing",
     icon: ReceiptLongOutlinedIcon,
-    question: "What happens if our requirements change or new ideas emerge during development?",
-    quickAnswer: "We build in visible stages, so adjustments can be evaluated and incorporated smoothly.",
+
+    question:
+      "What happens if our requirements change or we have new ideas during the project?",
+
+    quickAnswer:
+      "We review the change with you and explain its effect on the scope, timeline, or cost before proceeding.",
+
     detailedAnswer:
-      "As you see working software come together, priorities often sharpen. Because we develop in transparent milestone stages, adjustments are expected and manageable. When new needs arise, we evaluate their impact on scope and timeline collaboratively, giving you clear choices before making any changes.",
-    takeaways: ["Transparent Milestone Reviews", "Collaborative Scope Adjustments", "Clear Timeline & Budget Visibility"],
+      "Requirements can become clearer as work progresses, and new ideas can come up along the way. When that happens, we discuss the change, assess how it affects the agreed work, and explain any impact on the timeline or pricing. Additional work is not treated as part of the original scope without discussing it with you first.",
+
+    takeaways: [
+      "Clear Scope Discussions",
+      "Transparent Change Handling",
+      "Timeline & Cost Visibility",
+    ],
   },
+
   {
-    id: "post-launch-support",
-    category: "Time & Collaboration",
-    categorySlug: "time",
+    id: "ongoing-support",
+    category: "Support & Improvements",
+    categorySlug: "support",
     icon: AccessTimeRoundedIcon,
-    question: "What happens after launch? Who maintains and updates the software?",
-    quickAnswer: "We provide post-launch stabilization, team walkthroughs, and ongoing support options.",
+
+    question:
+      "What happens after the initial project or service is complete?",
+
+    quickAnswer:
+      "We can continue supporting your website, app, marketing, or automation based on your ongoing needs.",
+
     detailedAnswer:
-      "Launch is the start of your system in the real world. Every project includes dedicated launch support, thorough team walkthroughs, and documentation to ensure smooth adoption. Afterwards, we offer tailored ongoing support, performance monitoring, security updates, and phased enhancements as your business grows.",
-    takeaways: ["Post-Launch Stabilization Window", "Staff Walkthroughs & Documentation", "Long-Term Support & Evolution"],
+      "Completion does not necessarily mean the end of our relationship. Depending on your requirements, we can continue helping with website or app updates, SEO, social media, advertising, automation improvements, maintenance, or future changes. The type and level of ongoing support can be agreed separately based on what your business needs.",
+
+    takeaways: [
+      "Ongoing Support Options",
+      "Future Improvements",
+      "Support Based on Your Needs",
+    ],
   },
+
   {
     id: "pricing-structure",
     category: "Pricing & Scope",
     categorySlug: "pricing",
     icon: ReceiptLongOutlinedIcon,
-    question: "How is project pricing determined and structured?",
-    quickAnswer: "Milestone-based pricing tied to clearly defined deliverables and transparent scope.",
+
+    question:
+      "How is project or service pricing determined?",
+
+    quickAnswer:
+      "Pricing is based on the agreed scope, requirements, deliverables, and level of work involved.",
+
     detailedAnswer:
-      "Every engagement begins with a documented scope of work outlining deliverables, technical architecture, and realistic timelines. Pricing is structured around verifiable project milestones rather than unpredictable open-ended hours, giving you budget certainty and clear accountability at every stage.",
-    takeaways: ["Documented Deliverables & Scope", "Milestone-Linked Payments", "Predictable Project Costs"],
+      "Before work begins, we discuss what you need, what is included, the expected deliverables, timeline, and pricing. For suitable projects, payments can be linked to agreed stages or milestones. If the scope changes later, we discuss the impact on pricing before carrying out additional work.",
+
+    takeaways: [
+      "Clear Scope & Deliverables",
+      "Transparent Pricing",
+      "Agreed Payment Structure",
+    ],
   },
 ];
 
 const categoryTabs = [
   { id: "all", label: "All Questions (7)" },
   { id: "time", label: "Time & Collaboration" },
-  { id: "data", label: "Data Safety & Tools" },
-  { id: "ownership", label: "IP & Code Ownership" },
+  { id: "tools", label: "Existing Tools & Systems" },
+  { id: "data", label: "Data & Business Continuity" },
+  { id: "ownership", label: "Ownership & Access" },
   { id: "pricing", label: "Pricing & Scope" },
+  { id: "support", label: "Support & Improvements" },
 ];
 
 export default function HowWeWorkFaqSection() {
@@ -227,7 +305,7 @@ export default function HowWeWorkFaqSection() {
                 mb: 2.5,
               }}
             >
-              Everything you need to know about{" "}
+              EVERYTHING YOU NEED TO KNOW ABOUT{" "}
               <Box
                 component="span"
                 sx={{
@@ -237,7 +315,8 @@ export default function HowWeWorkFaqSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                how we work together.
+                HOW WE WORK TOGETHER
+
               </Box>
             </Typography>
 
@@ -252,7 +331,7 @@ export default function HowWeWorkFaqSection() {
                 mb: 4,
               }}
             >
-              Clear answers on collaboration, working with existing tools, code ownership, and project delivery.
+Clear answers about collaboration, existing tools, ownership, pricing, support, and how we deliver our work.
             </Typography>
           </motion.div>
 
@@ -530,7 +609,7 @@ export default function HowWeWorkFaqSection() {
                                       fontFamily: "monospace",
                                     }}
                                   >
-                                    EXECUTIVE SUMMARY:
+                                    PROJECT OVERVIEW:
                                   </Typography>
                                   <Typography
                                     sx={{
@@ -665,7 +744,8 @@ export default function HowWeWorkFaqSection() {
                     mb: 1,
                   }}
                 >
-                  HAVE QUESTIONS ABOUT YOUR WORKFLOW?
+                  HAVE QUESTIONS ABOUT OUR PROCESS?
+
                 </Typography>
 
                 <Typography
@@ -679,12 +759,13 @@ export default function HowWeWorkFaqSection() {
                     mb: 1.5,
                   }}
                 >
-                  Speak directly with our team.
+                 Talk Directly With Our Team
+
                 </Typography>
 
                 <Typography sx={{ fontSize: "0.88rem", color: "#A1A1AA", lineHeight: 1.7, mb: 3 }}>
-                  No aggressive sales tactics. We discuss your operational workflows, existing software constraints, and
-                  project feasibility in a practical, honest conversation.
+                  No aggressive sales tactics. We discuss your business needs, current setup, challenges, and what would actually make sense for your project or service.
+
                 </Typography>
 
                 <Link href="/contact" style={{ textDecoration: "none" }}>
@@ -747,7 +828,8 @@ export default function HowWeWorkFaqSection() {
                   Want to review our working commitments?
                 </Typography>
                 <Typography sx={{ fontSize: "0.8rem", color: "#71717A", lineHeight: 1.6, mb: 2 }}>
-                  See how we build with regular milestone reviews, direct engineer communication, and complete client ownership.
+                 See how we work with regular progress reviews, direct communication, and clear access to the digital assets agreed for your business.
+
                 </Typography>
                 <a href="#client-promise" style={{ textDecoration: "none" }}>
                   <Typography
