@@ -4,32 +4,45 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 import { motion } from "framer-motion";
 
+
 const points = [
   {
-    title: "All Digital Services Under One Roof",
-    desc: "You don't need to juggle a graphic designer, website developer, SEO specialist, and ad manager. We coordinate your branding, website, marketing, and automation seamlessly.",
+    title: "Digital Services That Work Together",
+    desc:
+      "Web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation can be planned together when your business needs more than one service.",
   },
+
   {
-    title: "Honest Advice & Practical Budgets",
-    desc: "We never recommend expensive or complex setups if a simpler, affordable approach solves your problem and brings better return on investment.",
+    title: "Practical Advice, Not Unnecessary Complexity",
+    desc:
+      "We recommend an approach based on your actual business needs and budget. If a simpler solution can do the job, there is no reason to make it more complicated.",
   },
+
   {
-    title: "100% Asset & Code Ownership",
-    desc: "You own all design files, logos, ad accounts, domains, website code, and database logins from day one. No monthly hostage fees or proprietary lock-ins ever.",
+    title: "Clear Ownership & Access",
+    desc:
+      "We aim to keep important accounts, project access, website data, and relevant credentials under your control, with the agreed handover provided as part of the project.",
   },
+
   {
-    title: "Direct WhatsApp & Phone Communication",
-    desc: "You speak directly with the real designers, marketers, and developers working on your project—not a remote call center or junior account manager.",
+    title: "Direct Communication",
+    desc:
+      "You can communicate directly with the people working on your project, making it easier to discuss requirements, share feedback, and understand progress.",
   },
+
   {
-    title: "Focused on Real Inquiries, Not Vanity Metrics",
-    desc: "We measure success by phone calls, WhatsApp messages, and paying customers received—not vanity metrics or empty clicks that don't pay your bills.",
+    title: "Focused on Meaningful Business Outcomes",
+    desc:
+      "We look beyond surface-level numbers and focus on useful outcomes such as website enquiries, calls, customer engagement, search visibility, workflow improvements, and other goals relevant to your business.",
   },
+
   {
-    title: "Dependable Support & Long-Term Partnership",
-    desc: "We never disappear after launch day. We provide reliable ongoing maintenance, security updates, and marketing guidance as your business grows.",
+    title: "Support Beyond the Initial Launch",
+    desc:
+      "Your needs can change after a website, app, marketing campaign, or automation goes live. We can continue helping with improvements, maintenance, marketing activities, and further development when required.",
   },
 ];
+
 
 export default function HomeWhyAetibar() {
   return (
@@ -136,7 +149,8 @@ export default function HomeWhyAetibar() {
                 fontWeight: 400,
               }}
             >
-              In Urdu and Hindi, &quot;Aetibar&quot; means Trust and Reliability. We started our company because too many business owners were burned by agencies that overpromised, charged hidden fees, and delivered fragile results. Here is how we do things differently:
+             In Urdu and Hindi, “Aetibar” means trust and reliability. We built Aetibar around a simple idea: businesses deserve clear communication, practical advice, transparent pricing, and digital solutions that are built around their actual needs. Here is how we put that into practice:
+
             </Typography>
           </Box>
         </motion.div>

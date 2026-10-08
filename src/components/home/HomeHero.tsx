@@ -18,32 +18,38 @@ const ThreeHeroCanvas = dynamic(() => import("./ThreeHeroCanvas"), {
   loading: () => null,
 });
 
+
 const heroMetrics = [
   {
-    value: "Fixed",
-    title: "Upfront Budget Guarantee",
-    desc: "Itemized scope specifications and fixed project investment agreed upon before kickoff. Zero surprise bills.",
+    value: "Clear",
+    title: "Clear Project Scope",
+    desc: "We agree on the work, deliverables, timeline, and pricing before the project begins, so you know what to expect.",
     icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
+
   {
-    value: "All-in-1",
-    title: "Integrated Growth Suite",
-    desc: "Visual identity, digital platforms, audience acquisition, and back-office tools coordinated under one roof.",
+    value: "6",
+    title: "Services Under One Roof",
+    desc: "From websites and mobile apps to SEO, social media, advertising, and AI automation, you can get the right digital support in one place.",
     icon: <CampaignOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
-  {
-    value: "100%",
-    title: "Total Asset Sovereignty",
-    desc: "Transfer of all creative master files, source code, ad platforms, and live hosting credentials to you from day one.",
-    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
-  },
+
   {
     value: "Direct",
-    title: "Dedicated Specialist Access",
-    desc: "Collaborate directly with the senior creators and strategists actively building your commercial solution.",
+    title: "Direct Communication",
+    desc: "Discuss your requirements, feedback, and progress directly with the people working on your project.",
+    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+  },
+
+  {
+    value: "Practical",
+    title: "Built Around Your Business",
+    desc: "We recommend the tools and approach based on what your business actually needs, rather than adding technology for the sake of it.",
     icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
 ];
+
+
 
 export default function HomeHero() {
   return (
@@ -212,7 +218,8 @@ export default function HomeHero() {
                 fontWeight: 400,
               }}
             >
-              Stop losing potential clients to outdated branding, invisible Google rankings, and slow websites. We craft memorable brand designs, build fast business websites and mobile apps, run high-ROI Google and social ads, and automate repetitive office tasks with AI—delivering real customer inquiries straight to your phone.
+             Stop losing potential clients to outdated websites, low Google visibility, and inconsistent digital marketing. We build business websites and mobile apps, improve your search presence, manage social media and targeted advertising, and automate repetitive office tasks with AI—helping your business build a stronger online presence and generate more enquiries.
+
             </Typography>
           </motion.div>
 

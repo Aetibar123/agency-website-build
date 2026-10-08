@@ -162,7 +162,8 @@ export default function HomeCtaSection() {
                     fontWeight: 400,
                   }}
                 >
-                  Whether you need a fresh brand identity, a fast business website, page-1 Google rankings, profitable ads, or time-saving AI automation—we&apos;ll give you honest guidance, fixed pricing, and a clear project roadmap. No high-pressure sales.
+                  Whether you need a business website, mobile app, stronger Google visibility, social media marketing, targeted advertising, or AI automation, we start with honest guidance, clear pricing, and a practical project roadmap. No high-pressure sales—just a clear discussion about what your business actually needs.
+
                 </Typography>
               </motion.div>
 

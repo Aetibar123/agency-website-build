@@ -102,7 +102,8 @@ export default function HowWeWorkCta() {
                     fontWeight: 700,
                   }}
                 >
-                  LET&apos;S TALK ABOUT YOUR PROJECT
+                  LET'S TALK ABOUT YOUR BUSINESS
+
                 </Typography>
               </Box>
 
@@ -120,7 +121,7 @@ export default function HowWeWorkCta() {
                   mb: 3,
                 }}
               >
-                Ready to Build a Website, Mobile App or{" "}
+                Ready to Build a Website, Mobile App, or Grow Your Online Presence?{" "}
                 <Box
                   component="span"
                   sx={{
@@ -129,7 +130,8 @@ export default function HowWeWorkCta() {
                     WebkitTextFillColor: "transparent",
                   }}
                 >
-                  AI System for Your Business?
+                  Need AI Automation or a Smarter Business Workflow?
+
                 </Box>
               </Typography>
 
@@ -144,7 +146,8 @@ export default function HowWeWorkCta() {
                   fontWeight: 400,
                 }}
               >
-                Tell us what your business needs, what is slowing your team down, and what you want to achieve. We&apos;ll give you honest, practical recommendations, a fixed quote, and a transparent roadmap with zero high-pressure sales tactics.
+                Tell us what your business needs, what is slowing your team down, and what you want to achieve. We’ll provide honest, practical recommendations, clear pricing, and a straightforward roadmap—without high-pressure sales tactics.
+
               </Typography>
 
               {/* Button Row */}
@@ -170,7 +173,8 @@ export default function HowWeWorkCta() {
                         },
                       }}
                     >
-                      Book a Free Strategy Call
+                     Discuss Your Requirements
+
                     </Button>
                   </Link>
                 </motion.div>

@@ -4,34 +4,55 @@ import ServicePageLayout from "../../../components/services/ServicePageLayout";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import { workProjects } from "../../../data/workData";
 
+
 export const metadata: Metadata = {
-  title: "Social Media Marketing Company in Udaipur | SMM Agency | Aetibar",
+  title:
+    "Social Media Marketing Company in Udaipur | SMM Agency | Aetibar",
+
   description:
-    "Build brand authority with Aetibar, a creative social media marketing company in Udaipur. Consistent content creation, custom graphics, and audience growth.",
+    "Aetibar provides social media marketing services in Udaipur, including content planning, branded creatives, platform strategy, publishing, and performance reporting.",
+
   keywords: [
     "Social Media Marketing Company in Udaipur",
     "Social Media Marketing Agency in Udaipur",
-    "Best Social Media Marketing Company in Udaipur",
-    "SMM Company in Udaipur",
     "Social Media Management Udaipur",
+    "SMM Company in Udaipur",
     "Instagram Marketing Udaipur",
-    "Social Media Agency India",
-    "Aetibar Technologies",
+    "Facebook Marketing Udaipur",
+    "LinkedIn Marketing Udaipur",
+    "Social Media Marketing Services",
   ],
-  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
-  creator: "Aetibar Technologies",
-  publisher: "Aetibar Technologies",
+
+  authors: [
+    {
+      name: "Aetibar",
+      url: "https://www.aetibar.in",
+    },
+  ],
+
+  creator: "Aetibar",
+  publisher: "Aetibar",
+
   alternates: {
-    canonical: "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
+    canonical:
+      "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
   },
+
   openGraph: {
-    title: "Social Media Marketing Company in Udaipur | SMM Agency | Aetibar",
+    title:
+      "Social Media Marketing Company in Udaipur | SMM Agency | Aetibar",
+
     description:
-      "Consistent, professional social media management that builds company credibility and drives qualified traffic from Aetibar, Udaipur.",
+      "Professional social media marketing covering content planning, branded visuals, platform-specific strategy, publishing, and performance reporting.",
+
     url: "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
+
     siteName: "Aetibar",
+
     type: "website",
+
     locale: "en_IN",
+
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -41,27 +62,37 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Social Media Marketing Company in Udaipur | SMM Agency | Aetibar",
+
+    title:
+      "Social Media Marketing Company in Udaipur | SMM Agency | Aetibar",
+
     description:
-      "Consistent, professional social media management that builds brand credibility and drives traffic.",
+      "Social media marketing services covering content planning, branded creatives, platform strategy, publishing, and performance reporting.",
+
     creator: "@Aetibar_",
+
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };
+
+
+
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Social Media Marketing Company in Udaipur",
+  serviceType: "Social Media Marketing Services",
   provider: {
     "@type": "Organization",
     name: "Aetibar",
     url: "https://www.aetibar.in",
   },
   description:
-    "Aetibar is a top social media marketing company in Udaipur offering social media strategy, monthly editorial planning, custom branded graphic design, and performance tracking.",
+    "Aetibar provides social media marketing services in Udaipur, including content planning, branded social media creatives, platform-specific content strategy, publishing, and performance reporting.",
   url: "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
   areaServed: {
     "@type": "City",
@@ -69,9 +100,11 @@ const serviceSchema = {
   },
 };
 
+
+
 export default function SocialMediaMarketingServicePage() {
   const relevantProjects = workProjects.filter((p) =>
-    ["rebranding-fintech-identity", "dtc-brand-scaling"].includes(p.slug)
+    ["rebranding-fintech-identity", "dtc-brand-scaling"].includes(p.slug),
   );
 
   return (
@@ -81,160 +114,207 @@ export default function SocialMediaMarketingServicePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <ServicePageLayout
-        badge="Social Media Marketing Company in Udaipur"
-        title="Social Media Marketing for Businesses —"
-        titleHighlight="Look Active, Reputable & Trustworthy."
-        tagline="Consistent monthly content planning, custom branded graphics, and clear copywriting that turns casual viewers into loyal customers."
-        description="As an active social media marketing company in Udaipur, we take the hassle out of social media by handling topic planning, custom branded visuals, and clear captions so you always look like an industry leader without having to spend hours on Canva. When prospective clients look up your brand, they see a vibrant, polished company that earns immediate trust."
+        badge="Social Media Marketing Services" 
+        title="Social Media Marketing Company in Udaipur — " 
+        titleHighlight="Stay Visible & Build Trust"
+        tagline="Consistent content planning, branded visuals, and clear messaging that help your business maintain a professional and active presence across social media."
+        description="As a social media marketing company in Udaipur, we handle the planning and execution behind your social media presence — from content topics and custom branded graphics to captions and publishing. The goal is simple: keep your business visible, communicate what you offer clearly, and give potential customers a stronger reason to engage with your brand."
         icon={<ShareOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />}
         whoIsItFor={[
           {
             title: "Busy Founders & Owners",
-            desc: "You recognize the need for an active social presence, but you simply don't have weekly hours to brainstorm topics and design posts.",
+            desc: "You know your business needs a consistent social presence, but don't have the time to plan content, create posts, and manage your profiles every week.",
           },
+
           {
-            title: "B2B Companies & Firms",
-            desc: "Corporate service providers, industrial firms, and consultancies wanting to showcase client case studies and industry expertise on LinkedIn.",
+            title: "B2B Companies & Service Firms",
+            desc: "You want to communicate your expertise, share useful industry insights, showcase your work, and maintain a professional presence across the social platforms that matter to your audience.",
           },
+
           {
-            title: "Local Brands & Retail Stores",
-            desc: "Clinics, shops, and service businesses looking to engage regional buyers with educational tips, product highlights, and community updates.",
+            title: "Local Brands & Businesses",
+            desc: "Clinics, shops, restaurants, and service businesses looking to stay connected with their local audience through useful content, product or service highlights, and business updates.",
           },
+
           {
-            title: "Companies with Dormant Profiles",
-            desc: "Businesses whose profiles have sat untouched for months, making clients question whether the company is actively operating.",
+            title: "Businesses with Inactive Profiles",
+            desc: "Your social profiles have become inconsistent or inactive, and you want to bring them back with a clear content plan and a more consistent brand presence.",
           },
         ]}
         problemsAddressed={[
           {
-            problem: "Empty or inactive social media profiles make your business look closed",
+            problem:
+              "Your social profiles look inactive or haven't been updated regularly",
+
             howWeHelp:
-              "We plan a structured monthly calendar with scheduled posting dates, ensuring your brand stays consistently active, fresh, and top-of-mind all year round.",
+              "We build a practical monthly content calendar with planned topics and publishing dates, helping your profiles maintain a steady presence without requiring you to manage them every week.",
           },
+
           {
-            problem: "Amateur, mismatched graphics that hurt your company's credibility",
+            problem:
+              "Inconsistent visuals make your brand look less professional",
+
             howWeHelp:
-              "We create custom, high-resolution templates, carousel graphics, and post artwork strictly designed in your company brand colors, fonts, and style.",
+              "We create branded posts, carousels, and other visual content using your established colors, typography, imagery, and overall style so your communication feels more consistent across platforms.",
           },
+
           {
-            problem: "Wasting hours struggling to write captions and fiddle with Canva",
+            problem:
+              "You spend too much time thinking about what to post and how to present it",
+
             howWeHelp:
-              "Our team handles the research, copywriting, design, and scheduling. You only need to spend 15 minutes once a month to review and approve the posts.",
+              "We handle topic research, content writing, graphic creation, and scheduling. You can review the planned content and provide feedback before it goes live.",
           },
+
           {
-            problem: "Zero clarity on whether social media is actually helping your business",
+            problem:
+              "You aren't sure which content is getting attention or driving action",
+
             howWeHelp:
-              "We deliver simple monthly reports tracking reach, engagement, follower growth, and clicks to your website so you see exactly what's working.",
+              "We track useful performance signals such as reach, engagement, profile activity, audience growth, and website clicks where available, then summarize the key findings so you know what deserves more attention.",
           },
         ]}
         deliverables={[
           {
-            title: "Custom Branded Post Graphics & Carousels",
-            desc: "Clean, eye-catching visual designs tailored to your brand colors and style that stand out in crowded feeds.",
+            title: "Custom Branded Posts & Carousels",
+
+            desc: "Professional visual content designed around your brand identity and adapted for the platforms where your audience spends time.",
+
             items: [
-              "Custom visual design templates matching your logo and colors",
-              "High-engagement multi-slide carousels and infographics",
-              "High-resolution formatting optimized for Instagram and LinkedIn",
-              "Polished highlight covers, banners, and profile branding",
+              "Custom post and carousel designs based on your brand guidelines",
+              "Educational graphics, promotional creatives, and industry-focused visuals",
+              "Platform-appropriate formats for Instagram, Facebook, and LinkedIn",
+              "Profile elements such as banners, covers, and highlight designs",
             ],
           },
+
           {
-            title: "Monthly Content Calendar & Post Planning",
-            desc: "Every post planned, written, and scheduled 3 to 4 weeks in advance with your full approval.",
+            title: "Monthly Content Planning & Scheduling",
+
+            desc: "A structured content plan that gives your business a clear direction for what to publish throughout the month.",
+
             items: [
-              "Monthly content roadmap based on your services and seasonal events",
-              "Clear, friendly captions written in easy spoken English",
-              "Strategic hashtags and location tags for higher local reach",
-              "Full client review and easy one-click approval before posting",
+              "Monthly content calendar based on your services, audience, and relevant occasions",
+              "Clear captions written in a tone suited to your brand and customers",
+              "Relevant hashtags and location-based tags where appropriate",
+              "Content shared for review and approval before publishing",
             ],
           },
+
           {
-            title: "Platform Strategy (LinkedIn for B2B & Instagram)",
-            desc: "Focusing strictly on the platforms where your actual buyers spend their time.",
+            title: "Platform-Specific Content Strategy",
+
+            desc: "We adapt your content approach to the channels that are relevant to your audience instead of treating every platform the same way.",
+
             items: [
-              "LinkedIn profile and company page growth for B2B sales",
-              "Instagram & Facebook feed and story engagement for retail/services",
-              "Highlighting customer testimonials, behind-the-scenes, and results",
-              "Bio and profile optimization to direct viewers to your WhatsApp",
+              "LinkedIn content for B2B companies, professionals, and service firms",
+              "Instagram and Facebook content for local brands, retail, and service businesses",
+              "Showcasing products, services, customer feedback, expertise, and behind-the-scenes content",
+              "Profile and bio improvements with relevant website or enquiry links",
             ],
           },
+
           {
-            title: "Simple Monthly Growth & Traffic Reports",
-            desc: "Clear updates showing how your audience is growing and how many people clicked through to your website.",
+            title: "Monthly Performance Reporting",
+
+            desc: "Simple reporting that helps you understand how your content is performing and which topics are getting more attention.",
+
             items: [
-              "Monthly summary of post reach, likes, shares, and impressions",
-              "Tracking profile visits and click-throughs to your website and WhatsApp",
-              "Identification of top-performing post topics for future planning",
-              "No vanity nonsense—just honest data on what resonates with buyers",
+              "Monthly overview of reach, impressions, likes, comments, and shares",
+              "Profile visits and website or enquiry link clicks where available",
+              "Review of content themes and posts that performed comparatively well",
+              "Practical observations to guide the next month's content plan",
             ],
           },
         ]}
         benefits={[
           {
-            title: "Look Professional & Earn Immediate Trust",
-            desc: "When clients look you up, they see a vibrant, polished company that takes its reputation seriously.",
+            title: "Present a More Professional Brand",
+            desc: "Consistent visuals, clear messaging, and regularly updated profiles give visitors a more complete picture of your business when they research you online.",
           },
+
           {
-            title: "Only 15 Minutes of Your Time Each Month",
-            desc: "No more staring at a blank screen wondering what to post. We handle everything and you simply approve it.",
+            title: "Save Time on Content Management",
+            desc: "Instead of spending your week deciding what to post, writing captions, and preparing graphics, you have a dedicated team handling the content workflow.",
           },
+
           {
-            title: "Turn Followers into Direct WhatsApp Leads",
-            desc: "Strategic calls-to-action in posts invite interested viewers to tap your link and message your business directly.",
+            title: "Create More Paths to Customer Enquiries",
+            desc: "Clear calls-to-action and relevant links can make it easier for interested people to visit your website, contact your business, or start a conversation through WhatsApp where appropriate.",
           },
+
           {
-            title: "Consistent Brand Voice Across Every Screen",
-            desc: "Build authority in your industry with clean, consistent typography and colors that make your brand memorable.",
+            title: "Keep Your Brand Consistent Across Platforms",
+            desc: "A consistent visual identity and tone across your social profiles helps people recognize your business and creates a more cohesive brand experience.",
           },
         ]}
         processSteps={[
           {
             num: "01",
             title: "Brand & Audience Discovery",
-            desc: "We review your brand guidelines, core offerings, customer questions, and ideal client profiles.",
+            desc: "We review your brand identity, core offerings, target audience, existing profiles, and the topics that matter to your customers.",
           },
+
           {
             num: "02",
-            title: "Custom Visual Templates",
-            desc: "We design a suite of custom branded post templates, carousels, and stories matching your exact color scheme.",
+            title: "Content & Visual Direction",
+            desc: "We establish the visual style, content themes, formats, and messaging approach that fit your brand and the platforms you use.",
           },
+
           {
             num: "03",
-            title: "Monthly Content Calendar",
-            desc: "We research topics, write friendly captions, pair them with graphics, and share the monthly plan for your review.",
+            title: "Monthly Content Planning",
+            desc: "We research relevant topics, write captions, prepare the accompanying visuals, and share the monthly content plan for your review.",
           },
+
           {
             num: "04",
             title: "Publishing & Scheduling",
-            desc: "Once you approve the calendar, we schedule and publish all posts at peak engagement times.",
+            desc: "Once approved, we schedule and publish the content across the selected platforms, using suitable posting times based on the platform and available audience insights.",
           },
+
           {
             num: "05",
-            title: "Monthly Review & Insights",
-            desc: "We send a simple monthly roundup showing top-performing content and plan the next month based on real data.",
+            title: "Performance Review & Next Steps",
+            desc: "We review content performance, identify useful patterns and audience responses, and use those insights to inform the next month's content plan.",
           },
         ]}
         relevantProjects={relevantProjects}
         faqs={[
           {
-            question: "How much of my time will this take every month?",
+            question:
+              "How much of my time will social media management require each month?",
+
             answer:
-              "Only about 15 to 20 minutes! At the end of each month, we send you the complete calendar for the upcoming month with all graphics and captions ready. You review it, request any edits if needed, and give the green light.",
+              "Your involvement can stay relatively light. We prepare the content plan, captions, and visuals for your review, then make any necessary changes based on your feedback before publishing. The exact time required depends on how much input or revision your business needs.",
           },
+
           {
-            question: "Do I have to give you my personal social media passwords?",
+            question: "Do I have to share my personal social media passwords?",
+
             answer:
-              "No. You can add our team as authorized content managers or editors through official Meta Business Suite and LinkedIn Page Admin settings without sharing personal login passwords.",
+              "No. Where supported, we can use official business and page management tools to provide the appropriate access to your profiles without requiring your personal login password. The exact setup depends on the platform and account type.",
           },
+
           {
-            question: "Which platforms should my business focus on?",
+            question:
+              "Which social media platforms should my business focus on?",
+
             answer:
-              "It depends on what you sell! For B2B companies, industrial firms, and corporate consultancies, LinkedIn is king. For local retail shops, clinics, restaurants, and consumer services, Instagram and Facebook are the most effective.",
+              "There is no single platform that works best for every business. We consider your audience, industry, goals, existing presence, and the type of content you can realistically maintain. For example, LinkedIn can be useful for B2B and professional services, while Instagram and Facebook may be more relevant for many local and consumer-focused businesses.",
+          },
+
+          {
+            question:
+              "Can you manage content across multiple social platforms?",
+
+            answer:
+              "Yes. We can plan and adapt content for multiple platforms where it makes sense for your business. Rather than posting the exact same content everywhere, we consider the format, audience, and communication style of each selected channel.",
           },
         ]}
-        ctaTitle="Ready to Upgrade Your Social Media &amp;"
-        ctaTitleHighlight="Build Real Brand Authority?"
-        ctaDescription="Tell us about your brand and target audience. We'll review your current profiles and propose a custom content plan tailored to your industry."
+        ctaTitle="Ready to Strengthen Your Social"
+        ctaTitleHighlight="Media Presence?"
+        ctaDescription="Tell us about your business, audience, and current social profiles. We'll understand what you're trying to achieve and discuss a practical content approach that fits your brand."
       />
     </main>
   );

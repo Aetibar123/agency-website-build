@@ -24,9 +24,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import LanguageIcon from "@mui/icons-material/Language";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
-import SearchIcon from "@mui/icons-material/Search";
-import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
-import AdsClickOutlinedIcon from "@mui/icons-material/AdsClickOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 
 const serviceItems = [
   {
@@ -36,9 +34,9 @@ const serviceItems = [
     icon: <LanguageIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
-    title: "App Development",
+    title: "Mobile App Development",
     desc: "Mobile applications for iOS & Android",
-    path: "/services/app-development-company-in-udaipur",
+    path: "/services/mobile-app-development-company-in-udaipur",
     icon: <PhoneIphoneIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
@@ -48,22 +46,10 @@ const serviceItems = [
     icon: <SmartToyOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
   {
-    title: "SEO Services",
-    desc: "Technical SEO and organic search visibility",
-    path: "/services/seo-company-in-udaipur",
-    icon: <SearchIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
-  },
-  {
-    title: "Social Media Marketing",
-    desc: "Content planning and active social management",
-    path: "/services/social-media-marketing-company-in-udaipur",
-    icon: <ShareOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
-  },
-  {
-    title: "Paid Advertising",
-    desc: "Google Ads & Meta Ads campaign management",
-    path: "/services/paid-advertising-company-in-udaipur",
-    icon: <AdsClickOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+    title: "Digital Marketing",
+    desc: "SEO, Social Media Marketing & High-ROI Paid Ads",
+    path: "/services/digital-marketing-company-in-udaipur",
+    icon: <CampaignOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
   },
 ];
 

@@ -477,8 +477,8 @@ export const workProjects: WorkProject[] = [
       "A mobile platform that can support future customer features and services.",
     ],
     relatedService: {
-      title: "App Development",
-      href: "/services/app-development-company-in-udaipur",
+      title: "Mobile App Development",
+      href: "/services/mobile-app-development-company-in-udaipur",
       description: "Cross-platform mobile applications for iOS and Android engineered for performance, convenience, and reliability.",
     },
   },
@@ -612,8 +612,8 @@ export const workProjects: WorkProject[] = [
       "A connected workflow that reduces dependence on paper-based updates.",
     ],
     relatedService: {
-      title: "App Development",
-      href: "/services/app-development-company-in-udaipur",
+      title: "Mobile App Development",
+      href: "/services/mobile-app-development-company-in-udaipur",
       description: "Reliable mobile applications and field operational tools built for real-world business workflows.",
     },
   },

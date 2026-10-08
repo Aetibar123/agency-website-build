@@ -22,50 +22,57 @@ interface DisciplineCard {
   keyTakeaway: string;
 }
 
+
 const disciplineCards: DisciplineCard[] = [
   {
     number: "01",
     category: "PROJECT VISIBILITY",
-    title: "No Waiting in the Dark — Live Previews Every 2 Weeks",
+    title: "Know What’s Happening Throughout the Project",
     icon: <VisibilityOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Agency Trap",
+    riskTitle: "The Common Problem",
     riskDescription:
-      "Most agencies collect a deposit, vanish for 3 to 6 months with zero updates, and then present a final product that doesn't match your expectations.",
+      "It can be difficult to know what is happening after a project starts, especially when updates are limited or decisions are made without your input.",
     solutionBadge: "THE AETIBAR WAY",
-    solutionTitle: "Interactive Working Previews at Every Milestone",
+    solutionTitle: "Regular Updates & Clear Progress",
     solutionDescription:
-      "You receive private, clickable links throughout development. You and your team can test actual screens, verify inquiry forms on mobile phones, and provide feedback as features are built.",
-    keyTakeaway: "Review working features early and guide development as it happens.",
+      "We keep you informed at relevant stages, share progress, discuss important decisions, and give you opportunities to review the work and provide feedback.",
+    keyTakeaway:
+      "Stay informed, give feedback, and know how your project is progressing.",
   },
+
   {
     number: "02",
-    category: "ZERO RISK LAUNCH",
-    title: "Smooth, Safe Rollout Without Disrupting Business",
+    category: "QUALITY & DELIVERY",
+    title: "Review the Work Before It’s Completed",
     icon: <ShieldOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Agency Trap",
+    riskTitle: "The Common Problem",
     riskDescription:
-      "A rushed, uncoordinated launch day where broken links, lost customer leads, and technical bugs interrupt your daily business operations.",
+      "Small issues can be overlooked when work is rushed or there is no proper review before a website, campaign, automation, or other service is delivered.",
     solutionBadge: "THE AETIBAR WAY",
-    solutionTitle: "Thorough Pre-Launch Testing & Phased Rollout",
+    solutionTitle: "Review, Refine & Prepare for Delivery",
     solutionDescription:
-      "We test all contact forms, WhatsApp links, payment gateways, and databases before launch. Your daily business continues running smoothly with zero downtime.",
-    keyTakeaway: "Zero lost customer inquiries and zero operational downtime.",
+      "We review the agreed work, check the important details, make the required changes, and ensure the service or project is ready for launch, publishing, or ongoing use.",
+    keyTakeaway:
+      "Important details are reviewed before the agreed work is completed.",
   },
+
   {
     number: "03",
-    category: "FULL OWNERSHIP",
-    title: "100% Code, Domain & Asset Ownership",
+    category: "CLEAR OWNERSHIP",
+    title: "Keep Control of Your Digital Assets",
     icon: <KeyOutlinedIcon sx={{ fontSize: 22 }} />,
-    riskTitle: "The Common Agency Trap",
+    riskTitle: "The Common Problem",
     riskDescription:
-      "Agencies withholding admin logins, or locking your business into closed platforms where you must pay ongoing licensing fees just to access your own data.",
+      "Businesses can sometimes lose track of important accounts, files, website access, or other digital assets when everything is managed by an outside provider.",
     solutionBadge: "THE AETIBAR WAY",
-    solutionTitle: "Complete Ownership Transferred Upon Completion",
+    solutionTitle: "Clear Access & Proper Handover",
     solutionDescription:
-      "You own every line of code, design file, database schema, and hosting login. You have complete freedom to host, modify, and expand your digital assets whenever you want.",
-    keyTakeaway: "Your business owns its digital assets forever — no lock-in fees.",
+      "Where applicable, we provide the agreed website, advertising, social media, analytics, project, and other account access so you can maintain control of the digital assets connected to your business.",
+    keyTakeaway:
+      "Keep access to the digital accounts and assets that belong to your business.",
   },
 ];
+
 
 export default function WhyWorkflowFirstSection() {
   const handleScrollToLifecycle = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -124,7 +131,8 @@ export default function WhyWorkflowFirstSection() {
                     fontWeight: 700,
                   }}
                 >
-                  THE AETIBAR ADVANTAGE &bull; BUILT FOR TRUST
+                 THE AETIBAR ADVANTAGE • BUILT ON TRUST
+
                 </Typography>
               </Box>
             </Box>
@@ -152,7 +160,7 @@ export default function WhyWorkflowFirstSection() {
                 mb: 2.5,
               }}
             >
-              Why traditional development projects fail —{" "}
+             Why Digital Projects Often Go Off Track — {" "}
               <Box
                 component="span"
                 sx={{
@@ -161,7 +169,8 @@ export default function WhyWorkflowFirstSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                and how we protect your business.
+                and how our process helps keep your project on track.
+
               </Box>
             </Typography>
 
@@ -176,7 +185,8 @@ export default function WhyWorkflowFirstSection() {
                 textAlign: "center",
               }}
             >
-              Most digital projects run over budget and miss deadlines because developers rush to write code before understanding the business. Here is how we eliminate risk and keep you in full control every step of the way.
+             Digital projects can go off track when requirements are unclear, communication is limited, or work begins without a clear plan. Our process starts with understanding your business, defining what needs to be done, and keeping you informed throughout the work—so you can make decisions, share feedback, and stay in control at every stage.
+
             </Typography>
           </motion.div>
         </Box>
@@ -320,10 +330,12 @@ export default function WhyWorkflowFirstSection() {
         >
           <Box sx={{ maxWidth: 780 }}>
             <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
-              Ready to see our process in action across our full development lifecycle?
+              Ready to see how our process works from start to finish?
+
             </Typography>
             <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.6 }}>
-              Explore how we take you from initial discovery and planning to visible development, thorough testing, and ongoing support.
+              See how we move from understanding your needs and planning the right approach to implementing, reviewing, delivering, and supporting your project.
+
             </Typography>
           </Box>
 
@@ -348,7 +360,8 @@ export default function WhyWorkflowFirstSection() {
                 },
               }}
             >
-              Explore the 5 Stages
+             Explore Our 5-Step Process
+
             </Button>
           </a>
         </Box>

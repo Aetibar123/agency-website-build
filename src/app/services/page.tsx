@@ -3,48 +3,60 @@ import { Metadata } from "next";
 import HomeScrollProgress from "../../components/home/HomeScrollProgress";
 import ServicesPageClient from "../../components/services/ServicesPageClient";
 
+
 export const metadata: Metadata = {
-  title: "Digital Services | Graphic Design, Marketing, SEO, Websites & AI Automation | Aetibar",
+  title:
+    "Digital Services | Web Development, Marketing, SEO, Apps & AI | Aetibar",
+
   description:
-    "Explore Aetibar's complete digital services for growing businesses: Graphic Design & Branding, Social Media Marketing, SEO Services, Targeted Paid Advertising, Custom Web Development, Mobile Apps, and AI Automation. Clear, jargon-free solutions built for real results.",
+    "Explore Aetibar's digital services for businesses, including web development, mobile app development, SEO, social media marketing, paid advertising, and AI automation.",
+
   keywords: [
     "Digital Services for Businesses",
-    "Graphic Design Services",
-    "Brand Identity Design",
-    "Logo Design",
-    "UI UX Design",
-    "Social Media Marketing Services",
-    "Social Media Management",
+    "Web Development Services",
+    "Mobile App Development Services",
     "SEO Services",
-    "Search Engine Optimization",
-    "Local SEO Udaipur",
-    "Google Ads Management",
-    "Meta Ads Management",
+    "Social Media Marketing Services",
     "Paid Advertising Services",
-    "Custom Web Development",
-    "Website Development Services",
-    "E-commerce Website Development",
-    "Mobile App Development",
-    "iPhone and Android App Development",
     "AI Automation Services",
     "Business Workflow Automation",
-    "Digital Marketing Agency Udaipur",
-    "Aetibar Services",
+    "Web Development Company in Udaipur",
+    "Mobile App Development Company in Udaipur",
+    "SEO Company in Udaipur",
+    "Social Media Marketing Company in Udaipur",
+    "Paid Advertising Company in Udaipur",
+    "AI Automation Company in Udaipur",
   ],
-  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
-  creator: "Aetibar Technologies",
-  publisher: "Aetibar Technologies",
+
+  authors: [
+    {
+      name: "Aetibar",
+      url: "https://www.aetibar.in",
+    },
+  ],
+
+  creator: "Aetibar",
+  publisher: "Aetibar",
+
   alternates: {
     canonical: "https://www.aetibar.in/services",
   },
+
   openGraph: {
-    title: "Digital Services | Graphic Design, Marketing, SEO, Websites & AI | Aetibar",
+    title:
+      "Digital Services | Web Development, Marketing, SEO, Apps & AI | Aetibar",
+
     description:
-      "Explore Aetibar's complete digital services for growing businesses: Graphic Design & Branding, Social Media Marketing, SEO Services, Targeted Paid Advertising, Custom Web Development, Mobile Apps, and AI Automation.",
+      "Explore Aetibar's digital services for businesses, covering web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation.",
+
     url: "https://www.aetibar.in/services",
+
     siteName: "Aetibar",
+
     type: "website",
+
     locale: "en_IN",
+
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -54,14 +66,22 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Digital Services | Graphic Design, Marketing, SEO, Websites & AI | Aetibar",
+
+    title:
+      "Digital Services | Web Development, Marketing, SEO, Apps & AI | Aetibar",
+
     description:
-      "Explore Aetibar's complete digital services for growing businesses: Graphic Design, Social Media, SEO, Paid Ads, Web Development, Mobile Apps, and AI Automation.",
+      "Explore Aetibar's web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation services.",
+
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };
+
+
+
 
 const servicesPageSchema = {
   "@context": "https://schema.org",
@@ -70,9 +90,10 @@ const servicesPageSchema = {
       "@type": "WebPage",
       "@id": "https://www.aetibar.in/services#webpage",
       "url": "https://www.aetibar.in/services",
-      "name": "Digital Services | Graphic Design, Marketing, SEO, Websites & AI Automation | Aetibar",
+      "name":
+        "Digital Services | Web Development, Marketing, SEO, Apps & AI Automation | Aetibar",
       "description":
-        "Explore Aetibar's complete digital services: Graphic Design & Branding, Social Media Marketing, SEO Services, Targeted Paid Advertising, Custom Web Development, Mobile Apps, and AI Automation.",
+        "Explore Aetibar's digital services, including web development, mobile app development, SEO, social media marketing, paid advertising, and AI automation for businesses.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -97,15 +118,16 @@ const servicesPageSchema = {
         "name": "Aetibar",
       },
     },
+
     {
       "@type": "ProfessionalService",
       "@id": "https://www.aetibar.in/#organization",
-      "name": "Aetibar Technologies",
+      "name": "Aetibar",
       "url": "https://www.aetibar.in/",
       "logo": "https://www.aetibar.in/logo.jpeg",
       "image": "https://www.aetibar.in/logo.jpeg",
       "description":
-        "Aetibar helps businesses build strong brands, rank high on Google, generate qualified leads through paid advertising and social media, develop fast websites and apps, and automate daily office tasks with AI.",
+        "Aetibar helps businesses build websites and mobile applications, improve their search and social media presence, manage paid advertising, and automate repetitive business workflows with AI and software integrations.",
       "email": "hello.aetibar@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -115,56 +137,50 @@ const servicesPageSchema = {
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Aetibar Complete Digital Services",
+        "name": "Aetibar Digital Services",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Graphic Design & Brand Identity",
+              "name": "Social Media Marketing",
               "description":
-                "Professional logo design, brand guidelines, UI/UX designs, social media templates, and marketing graphics.",
-              "url": "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
+                "Social media content planning, branded creatives, platform-specific content strategy, publishing, and performance reporting.",
+              "url":
+                "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
             },
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Social Media Marketing & Management",
+              "name": "Search Engine Optimization",
               "description":
-                "Monthly content planning, branded graphic posts, customer engagement, and trust building on Instagram, Facebook, and LinkedIn.",
-              "url": "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
+                "Technical SEO, keyword research, on-page optimization, local SEO, Google Business Profile optimization, and SEO content optimization.",
+              "url":
+                "https://www.aetibar.in/services/seo-company-in-udaipur",
             },
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "SEO & Google Search Optimization",
+              "name": "Paid Advertising",
               "description":
-                "Local SEO and Google ranking optimization to attract qualified buyers without high advertising costs.",
-              "url": "https://www.aetibar.in/services/seo-company-in-udaipur",
+                "Google Ads and Meta Ads campaign management covering audience and keyword targeting, conversion tracking, budget management, and ongoing optimization.",
+              "url":
+                "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
             },
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Targeted Paid Advertising (Google & Meta Ads)",
+              "name": "Web Development",
               "description":
-                "High-ROI Google Search Ads and Meta campaigns focused on verified customer calls and direct WhatsApp inquiries.",
-              "url": "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
-            },
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Custom Web Development",
-              "description":
-                "Fast, mobile-friendly business websites and e-commerce stores designed to capture inquiries and sell products.",
-              "url": "https://www.aetibar.in/services/web-development-company-in-udaipur",
+                "Custom business websites, e-commerce websites, client portals, booking dashboards, website redesigns, and SEO-ready web development.",
+              "url":
+                "https://www.aetibar.in/services/web-development-company-in-udaipur",
             },
           },
           {
@@ -173,18 +189,20 @@ const servicesPageSchema = {
               "@type": "Service",
               "name": "Mobile App Development",
               "description":
-                "Simple iOS and Android applications for customers, bookings, deliveries, and team operations.",
-              "url": "https://www.aetibar.in/services/app-development-company-in-udaipur",
+                "Custom iOS and Android applications, cross-platform mobile development, field operations tools, customer-facing apps, and business software integrations.",
+              "url":
+                "https://www.aetibar.in/services/mobile-app-development-company-in-udaipur",
             },
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "AI & Smart Workflow Automation",
+              "name": "AI Automation",
               "description":
-                "Practical automated tools connecting WhatsApp, email, and spreadsheets to save 10+ hours of team busywork weekly.",
-              "url": "https://www.aetibar.in/services/ai-automation-company-in-udaipur",
+                "Workflow automation, AI-assisted business processes, document data extraction, lead workflows, and integrations between business software and everyday tools.",
+              "url":
+                "https://www.aetibar.in/services/ai-automation-company-in-udaipur",
             },
           },
         ],
@@ -192,6 +210,8 @@ const servicesPageSchema = {
     },
   ],
 };
+
+
 
 export default function ServicesPage() {
   return (

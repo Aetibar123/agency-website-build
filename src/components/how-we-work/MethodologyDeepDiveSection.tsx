@@ -32,153 +32,200 @@ interface Stage {
   icon: React.ReactNode;
 }
 
+
 const stages: Stage[] = [
   {
     num: "01",
-    tabLabel: "Discovery",
+    tabLabel: "Understanding",
     timeframe: "Stage 01",
-    name: "Understanding Your Business, Goals & Customers",
-    headline: "We learn how your business actually operates before suggesting any solution.",
+    name: "Understanding Your Business, Goals & Priorities",
+    headline:
+      "We understand what your business needs before recommending what to do.",
     story:
-      "Every great website, mobile app, or automation starts by listening. We look at how customer inquiries reach you, how your team manages daily orders, and where roadblocks slow you down. This ensures we build only what directly helps you win more clients and save time — never pushing unnecessary features.",
+      "Every project starts with understanding your business, customers, current setup, and the problem you want to solve. Whether you need a website, mobile app, better search visibility, social media support, advertising, or workflow automation, we first identify what matters most and where our work can make a practical difference.",
     whatHappens: [
       {
-        title: "Listen to Your Business Needs",
-        desc: "We discuss your current sales process, target customer types, and everyday operational challenges.",
+        title: "Understand Your Business Needs",
+        desc:
+          "We discuss your business, customers, current digital presence, goals, and the challenges you want to address.",
       },
       {
-        title: "Identify Time-Wasting Tasks",
-        desc: "We spot repetitive manual busywork, lost inquiries, and disconnected tools that slow your team down.",
+        title: "Identify Priorities & Opportunities",
+        desc:
+          "We look for areas that can be improved, from customer enquiries and online visibility to marketing activities and repetitive business tasks.",
       },
       {
-        title: "Define Clear Project Goals",
-        desc: "We set realistic business objectives — like capturing more WhatsApp inquiries, ranking higher on Google, or speeding up order intake.",
+        title: "Define Clear Goals",
+        desc:
+          "We agree on practical objectives that match your business, budget, and priorities instead of adding work you do not need.",
       },
     ],
-    deliverable: "Comprehensive Discovery Plan with mapped customer journeys, prioritized deliverables, and a fixed timeline.",
-    timeCommitment: "1 to 2 focused discovery conversations at your convenience.",
-    outcome: "A clear, shared understanding of what needs to be built and why before any development starts.",
+    deliverable:
+      "A clear understanding of your requirements, priorities, and recommended next steps.",
+    timeCommitment:
+      "Focused conversations based on the scope and complexity of your requirements.",
+    outcome:
+      "A shared understanding of what you need, why you need it, and what should happen next.",
     image: "/images/home/editorial-client-consultation.jpg",
-    imageAlt: "Aetibar operational discovery session auditing business workflows",
+    imageAlt:
+      "Aetibar discussing business goals, customer needs, and project requirements with a client",
     icon: <SearchOutlinedIcon sx={{ fontSize: 20 }} />,
   },
+
   {
     num: "02",
-    tabLabel: "Planning & Design",
+    tabLabel: "Planning",
     timeframe: "Stage 02",
-    name: "Clear Roadmap, UI Layouts & Business Logic",
-    headline: "You review and approve interactive visual layouts before any code is written.",
+    name: "A Clear Plan Built Around Your Business",
+    headline:
+      "We turn your requirements into a practical plan with clear priorities, scope, and pricing.",
     story:
-      "Before development begins, we design modern, intuitive screen layouts and plan the workflow logic. You can click through interactive mockups on your phone or computer, verify how customers will navigate your services, and make adjustments until you love the look and feel.",
+      "Once we understand what you need, we decide how the work should be approached. This could mean planning a website or app, creating an SEO strategy, organizing social media content, setting up an advertising campaign, or mapping an automation workflow. You know what is included before implementation begins.",
     whatHappens: [
       {
-        title: "Mobile-First Design & Layouts",
-        desc: "Clean, intuitive UI layouts designed for effortless customer navigation and high conversions on smartphones and desktops.",
+        title: "Define the Scope",
+        desc:
+          "We outline the agreed work, deliverables, priorities, timeline, and what is included in the project or service.",
       },
       {
-        title: "Customer Journey & Action Flows",
-        desc: "Placing prominent WhatsApp buttons, quick inquiry forms, and easy checkout pathways so you never lose a buyer.",
+        title: "Choose the Right Approach",
+        desc:
+          "We recommend the tools, channels, and methods that make sense for your goals rather than adding unnecessary complexity.",
       },
       {
-        title: "Tool & System Connections",
-        desc: "Mapping how new inquiries, customer data, and alerts will sync directly to your WhatsApp, email, or spreadsheets.",
+        title: "Set Clear Expectations",
+        desc:
+          "We discuss pricing, timelines, responsibilities, and important requirements so there are fewer surprises later.",
       },
     ],
-    deliverable: "Interactive Design Prototypes and detailed scope document approved by you before coding.",
-    timeCommitment: "One collaborative review session to walk through layouts and approve the scope.",
-    outcome: "Complete clarity on look, feel, user flow, and business logic before building begins.",
+    deliverable:
+      "A clear project or service plan covering the agreed scope, priorities, timeline, and pricing.",
+    timeCommitment:
+      "A review of the proposed plan before the agreed work begins.",
+    outcome:
+      "Clear expectations about what we will do, when it will happen, and how the work will be delivered.",
     image: "/images/home/hero-architecture.jpg",
-    imageAlt: "Aetibar technical architecture blueprint and relational schema design",
+    imageAlt:
+      "Aetibar planning a website, marketing, or business automation project around client requirements",
     icon: <AccountTreeOutlinedIcon sx={{ fontSize: 20 }} />,
   },
+
   {
     num: "03",
-    tabLabel: "Building & Previews",
+    tabLabel: "Implementation",
     timeframe: "Stage 03",
-    name: "Staged Development with Regular Live Previews",
-    headline: "You see the product take shape with regular working previews every two weeks.",
+    name: "Putting the Plan Into Action",
+    headline:
+      "We implement the agreed work while keeping you informed along the way.",
     story:
-      "We don't believe in disappearing for months and surprising you at the end. We build your website, mobile app, or automation in clean milestones and share private, live preview links so you can test real features and guide progress as we build.",
+      "This is where the planned work takes shape. We may develop your website or app, optimize your online presence, create and publish social media content, manage advertising campaigns, or set up business automation. The exact work depends on the service, but the approach stays the same: follow the agreed plan, share progress, and keep communication open.",
     whatHappens: [
       {
-        title: "Live Milestone Demos",
-        desc: "Functional pages and features deployed to private staging links so you can test them on your own phone and computer.",
+        title: "Implement the Agreed Work",
+        desc:
+          "We carry out the planned development, marketing, SEO, advertising, content, or automation work based on your requirements.",
       },
       {
-        title: "Fast, High-Performance Code",
-        desc: "Built with modern frameworks ensuring lightning-fast load times, solid security, and top Google SEO ranking compatibility.",
+        title: "Share Relevant Progress",
+        desc:
+          "You receive updates at appropriate stages so you can understand what has been completed and what is coming next.",
       },
       {
-        title: "Real Business Data Testing",
-        desc: "We test pages with your actual services, product details, and real content so the experience feels 100% authentic.",
+        title: "Review & Adjust",
+        desc:
+          "We discuss relevant feedback and make agreed changes as the work progresses.",
       },
     ],
-    deliverable: "Working Staging Previews deployed at scheduled milestones for your team to test and verify.",
-    timeCommitment: "Short periodic reviews of working features at your convenience.",
-    outcome: "Continuous visibility and feedback, eliminating surprises at final delivery.",
+    deliverable:
+      "Progressive delivery of the agreed website, app, marketing activity, automation, or other project work.",
+    timeCommitment:
+      "Regular communication and reviews based on the type and scope of the work.",
+    outcome:
+      "Your planned solution or service is implemented with clear progress and opportunities for feedback.",
     image: "/images/home/hero-agency-showcase.jpg",
-    imageAlt: "Live working software staging preview",
+    imageAlt:
+      "Aetibar implementing and reviewing a digital project with regular client feedback",
     icon: <CodeOutlinedIcon sx={{ fontSize: 20 }} />,
   },
+
   {
     num: "04",
-    tabLabel: "Testing & Launch",
+    tabLabel: "Review & Delivery",
     timeframe: "Stage 04",
-    name: "Rigorous Testing, Speed Audits & Safe Launch",
-    headline: "We test thoroughly across all devices so day one runs with zero disruption.",
+    name: "Review, Refine & Prepare for Delivery",
+    headline:
+      "We review the agreed work and make sure the important details are ready.",
     story:
-      "Switching to a new digital system should never disrupt your daily business operations. Before going live, we test all forms, WhatsApp links, payment gateways, and loading speeds across iPhones, Android devices, and laptops so you can launch with absolute confidence.",
+      "Before the work is considered complete, we review the relevant parts of the project or service. For a website or app, this may include forms, customer actions, and important functionality. For SEO, advertising, or social media, it may involve checking campaigns, content, tracking, and agreed deliverables. For automation, we review the workflow and its expected actions.",
     whatHappens: [
       {
-        title: "Thorough Device & Speed Audits",
-        desc: "Verifying mobile responsiveness, Google search compliance, SSL security, and sub-second load times.",
+        title: "Review the Important Details",
+        desc:
+          "We check the parts of the work that matter to your specific project, service, or business workflow.",
       },
       {
-        title: "End-to-End Form & Lead Testing",
-        desc: "Submitting live test inquiries to ensure team WhatsApp and email alerts trigger instantly every single time.",
+        title: "Make Agreed Improvements",
+        desc:
+          "We address the relevant changes identified during the review so the agreed work is ready for delivery or launch.",
       },
       {
-        title: "Simple Team Video Guides",
-        desc: "Short, easy-to-follow video walkthroughs showing you and your staff how to edit content, manage inquiries, and track leads.",
+        title: "Prepare for the Next Stage",
+        desc:
+          "We make sure the required content, access, setup, documentation, or other agreed items are ready.",
       },
     ],
-    deliverable: "Tested Production System, validated forms and data, and complete team training guides.",
-    timeCommitment: "Your team conducts normal business while we manage domain setup and live deployment.",
-    outcome: "A smooth launch with tested workflows and confident team adoption.",
+    deliverable:
+      "Reviewed and refined work prepared for launch, publishing, handover, or ongoing management.",
+    timeCommitment:
+      "A final review based on the scope and type of service being delivered.",
+    outcome:
+      "A completed service or project that is ready for its intended use.",
     image: "/images/home/editorial-operations-facility.jpg",
-    imageAlt: "Safe cutover and operational team training",
+    imageAlt:
+      "Aetibar reviewing digital work and preparing a business project for delivery",
     icon: <RocketLaunchOutlinedIcon sx={{ fontSize: 20 }} />,
   },
+
   {
     num: "05",
     tabLabel: "Support & Growth",
     timeframe: "Stage 05",
-    name: "Ongoing Maintenance, Upgrades & Direct Support",
-    headline: "Direct communication with the team that designed and built your software.",
+    name: "Ongoing Support & Improvements",
+    headline:
+      "Your business needs can change, and your digital presence can grow with them.",
     story:
-      "Launch day is the start of a long-term partnership. When you have questions, want to add new service pages, or need updates, you reach the exact engineers who built your product. We monitor system health, keep security tight, and help your digital presence expand.",
+      "Our relationship does not have to end when the initial work is complete. Depending on your needs, we can continue supporting your website or app, managing SEO and social media, optimizing advertising campaigns, improving automation workflows, or helping with future updates and new requirements.",
     whatHappens: [
       {
-        title: "Direct Engineer Access",
-        desc: "Communicate directly with the developers who built your platform — no confusing helpdesk layers or ticket queues.",
+        title: "Ongoing Support",
+        desc:
+          "Get help with agreed updates, improvements, maintenance, marketing activities, or other ongoing requirements.",
       },
       {
-        title: "Security & Speed Monitoring",
-        desc: "Proactive health checks, framework updates, daily backups, and security monitoring to prevent any downtime.",
+        title: "Review What Can Improve",
+        desc:
+          "We can review performance, customer feedback, search visibility, campaign activity, or business workflows to identify useful improvements.",
       },
       {
-        title: "Continuous Improvements & SEO",
-        desc: "Periodic reviews to refine page content, optimize for new Google search queries, and add features as your business grows.",
+        title: "Adapt as Your Business Changes",
+        desc:
+          "As your services, customers, or priorities change, we can help update your digital presence and workflows accordingly.",
       },
     ],
-    deliverable: "Documented handover, defined support channels, and complete ownership of all code and credentials.",
-    timeCommitment: "Peace of mind knowing your core digital systems have dependable technical backing.",
-    outcome: "A reliable digital asset that continues to support your business as it grows.",
+    deliverable:
+      "Ongoing support based on your requirements, with the relevant access, documentation, and handover provided for the completed work.",
+    timeCommitment:
+      "Flexible ongoing support depending on the service and level of assistance you need.",
+    outcome:
+      "Continued digital support that can adapt as your business and priorities evolve.",
     image: "/images/home/editorial-craft-operations.jpg",
-    imageAlt: "Continuous support and system evolution with Aetibar engineers",
+    imageAlt:
+      "Aetibar providing ongoing digital support and improvements for a business",
     icon: <MonitorHeartOutlinedIcon sx={{ fontSize: 20 }} />,
   },
 ];
+
+
 
 export default function MethodologyDeepDiveSection() {
   const [activeIdx, setActiveIdx] = useState<number>(0);
@@ -247,7 +294,8 @@ export default function MethodologyDeepDiveSection() {
                   fontWeight: 700,
                 }}
               >
-                OUR 5-STAGE DEVELOPMENT METHODOLOGY
+                OUR 5-STAGE PROCESS
+
               </Typography>
             </Box>
           </motion.div>
@@ -272,7 +320,7 @@ export default function MethodologyDeepDiveSection() {
                 mb: 2.5,
               }}
             >
-              From first conversation to live launch —{" "}
+             From the first conversation to completed delivery — {" "}
               <Box
                 component="span"
                 sx={{
@@ -282,7 +330,8 @@ export default function MethodologyDeepDiveSection() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                in 5 simple, transparent steps.
+               through 5 simple, transparent steps.
+
               </Box>
             </Typography>
             <Typography
@@ -294,7 +343,8 @@ export default function MethodologyDeepDiveSection() {
                 mx: "auto",
               }}
             >
-              A structured, collaborative process designed to keep you informed and confident. Here is our step-by-step roadmap to taking your project from concept to a dependable, high-converting digital asset.
+            A clear, collaborative process designed to keep you informed and involved at every stage—from understanding your needs and planning the right approach to delivering the agreed work and providing ongoing support.
+
             </Typography>
           </motion.div>
         </Box>
@@ -429,7 +479,7 @@ export default function MethodologyDeepDiveSection() {
                   </Box>
                   <Box>
                     <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em" }}>
-                      STAGE {currentStage.num} &bull; {currentStage.timeframe.toUpperCase()}
+                      PROCESS {currentStage.num} &bull; {currentStage.timeframe.toUpperCase()}
                     </Typography>
                     <Typography variant="h3" sx={{ fontSize: { xs: "1.3rem", sm: "1.6rem" }, fontWeight: 600, color: "#18181B" }}>
                       {currentStage.name}
@@ -474,7 +524,7 @@ export default function MethodologyDeepDiveSection() {
                       "&:hover": { bgcolor: "#C2410C" },
                     }}
                   >
-                    Next Stage
+                    Next Process
                   </Button>
                 </Box>
               </Box>
@@ -501,7 +551,8 @@ export default function MethodologyDeepDiveSection() {
 
                   {/* What Happens in This Stage */}
                   <Typography sx={{ fontSize: "0.78rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
-                    WHAT HAPPENS DURING THIS STAGE:
+                   WHAT HAPPENS AT THIS STAGE:
+
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8, mb: 4 }}>
@@ -535,7 +586,8 @@ export default function MethodologyDeepDiveSection() {
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
                           <Inventory2OutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
                           <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase" }}>
-                            What You Receive:
+                           WHAT YOU RECEIVE:
+
                           </Typography>
                         </Box>
                         <Typography sx={{ fontSize: "0.875rem", color: "#18181B", fontWeight: 500, lineHeight: 1.5 }}>
@@ -557,7 +609,8 @@ export default function MethodologyDeepDiveSection() {
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
                           <AccessTimeRoundedIcon sx={{ fontSize: 17, color: "#71717A" }} />
                           <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
-                            Your Time:
+                           YOUR INVOLVEMENT:
+
                           </Typography>
                         </Box>
                         <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.5 }}>
@@ -630,7 +683,8 @@ export default function MethodologyDeepDiveSection() {
                       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
                         <ShieldOutlinedIcon sx={{ fontSize: 18, color: "#16A34A" }} />
                         <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#166534", textTransform: "uppercase" }}>
-                          Guaranteed Milestone Outcome:
+                         EXPECTED OUTCOME:
+
                         </Typography>
                       </Box>
                       <Typography sx={{ fontSize: "0.9rem", color: "#18181B", fontWeight: 500, lineHeight: 1.55 }}>
@@ -669,11 +723,12 @@ export default function MethodologyDeepDiveSection() {
                 mb: 1,
               }}
             >
-              Want to see how this 5-stage roadmap applies to your business?
+             Want to see how our 5-step process can work for your business?
+
             </Typography>
             <Typography sx={{ fontSize: "0.95rem", color: "#52525B", lineHeight: 1.65 }}>
-              Book an initial 20-minute diagnostic session. We&apos;ll review your current software stack and map out
-              your custom delivery milestones with zero sales pressure.
+            Book an initial 20-minute consultation. We’ll understand your business needs, discuss your current setup, and suggest practical next steps—with no sales pressure.
+
             </Typography>
           </Box>
 
@@ -699,7 +754,8 @@ export default function MethodologyDeepDiveSection() {
                 },
               }}
             >
-              Start Discovery Session
+            Start a Conversation
+
             </Button>
           </Link>
         </Box>

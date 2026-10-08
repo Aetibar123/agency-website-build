@@ -4,6 +4,7 @@ import { Box, Container, Typography, TextField, Button, Paper, Grid } from "@mui
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import BlogContentEditor from "../../../../components/admin/BlogContentEditor";
 
 export default function CreateBlog() {
   const router = useRouter();
@@ -124,16 +125,12 @@ export default function CreateBlog() {
               </Box>
 
               <Box>
-                <TextField
-                  fullWidth
-                  label="Main Content (Markdown or plain text)"
-                  name="content"
+                <BlogContentEditor
                   value={formData.content}
-                  onChange={handleChange}
-                  required
-                  multiline
+                  onChange={(val) => setFormData((prev) => ({ ...prev, content: val }))}
+                  label="Main Content (Markdown or plain text)"
                   rows={15}
-                  variant="outlined"
+                  required
                 />
               </Box>
 

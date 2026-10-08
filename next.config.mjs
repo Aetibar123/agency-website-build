@@ -39,12 +39,17 @@ const nextConfig = {
       },
       {
         source: '/services/app-development',
-        destination: '/services/app-development-company-in-udaipur',
+        destination: '/services/mobile-app-development-company-in-udaipur',
         permanent: true,
       },
       {
         source: '/services/app-dev-company-in-udaipur',
-        destination: '/services/app-development-company-in-udaipur',
+        destination: '/services/mobile-app-development-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/services/app-development-company-in-udaipur',
+        destination: '/services/mobile-app-development-company-in-udaipur',
         permanent: true,
       },
       {
@@ -69,7 +74,7 @@ const nextConfig = {
       },
       {
         source: '/services/mobile-app-development',
-        destination: '/services/app-development-company-in-udaipur',
+        destination: '/services/mobile-app-development-company-in-udaipur',
         permanent: true,
       },
       {
@@ -79,7 +84,12 @@ const nextConfig = {
       },
       {
         source: '/services/digital-marketing',
-        destination: '/services/paid-advertising-company-in-udaipur',
+        destination: '/services/digital-marketing-company-in-udaipur',
+        permanent: true,
+      },
+      {
+        source: '/digital-marketing',
+        destination: '/services/digital-marketing-company-in-udaipur',
         permanent: true,
       },
       {

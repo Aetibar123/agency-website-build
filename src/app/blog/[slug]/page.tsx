@@ -24,6 +24,7 @@ import Blog from "../../../models/Blog";
 import { notFound } from "next/navigation";
 import ScrollProgress from "../../../components/blog/ScrollProgress";
 import { defaultBlogArticles, BlogArticle } from "../../../data/blogData";
+import { renderBlogContent, parseInlineMarkdown } from "../../../lib/blogParser";
 
 async function getArticle(slug: string): Promise<BlogArticle | null> {
   // 1. First check MongoDB if connected
@@ -143,187 +144,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     .filter((b) => b.slug !== blog.slug)
     .slice(0, 3);
 
-  // Markdown parser with clean styling
-  const renderContent = (content: string) => {
-    return content.split("\n").map((paragraph, index) => {
-      const trimmed = paragraph.trim();
-      if (!trimmed) return <Box key={index} sx={{ height: 16 }} />;
-
-      if (trimmed.startsWith("## ")) {
-        return (
-          <Typography
-            key={index}
-            variant="h2"
-            sx={{
-              color: "#18181B",
-              fontWeight: 700,
-              mt: { xs: 5, md: 7 },
-              mb: 2.5,
-              fontSize: { xs: "1.55rem", sm: "1.95rem", md: "2.15rem" },
-              letterSpacing: "-0.025em",
-              lineHeight: 1.25,
-              textWrap: "balance",
-            }}
-          >
-            {trimmed.replace("## ", "")}
-          </Typography>
-        );
-      }
-
-      if (trimmed.startsWith("### ")) {
-        return (
-          <Typography
-            key={index}
-            variant="h3"
-            sx={{
-              color: "#27272A",
-              fontWeight: 700,
-              mt: { xs: 4, md: 5 },
-              mb: 2,
-              fontSize: { xs: "1.25rem", sm: "1.45rem", md: "1.55rem" },
-              letterSpacing: "-0.015em",
-              lineHeight: 1.35,
-              textWrap: "balance",
-            }}
-          >
-            {trimmed.replace("### ", "")}
-          </Typography>
-        );
-      }
-
-      if (trimmed.startsWith("#### ")) {
-        return (
-          <Typography
-            key={index}
-            variant="h4"
-            sx={{
-              color: "#18181B",
-              fontWeight: 600,
-              mt: 3.5,
-              mb: 1.5,
-              fontSize: "1.15rem",
-              letterSpacing: "-0.01em",
-            }}
-          >
-            {trimmed.replace("#### ", "")}
-          </Typography>
-        );
-      }
-
-      // Blockquotes (> text)
-      if (trimmed.startsWith("> ")) {
-        return (
-          <Box
-            key={index}
-            sx={{
-              borderLeft: "4px solid #EA580C",
-              pl: { xs: 2.5, sm: 3.5 },
-              py: 2,
-              my: 4,
-              bgcolor: "rgba(249, 115, 22, 0.05)",
-              borderRadius: "0 14px 14px 0",
-            }}
-          >
-            <Typography
-              sx={{
-                color: "#18181B",
-                fontStyle: "italic",
-                fontWeight: 500,
-                fontSize: { xs: "1.05rem", md: "1.18rem" },
-                lineHeight: 1.7,
-              }}
-            >
-              {trimmed.replace("> ", "")}
-            </Typography>
-          </Box>
-        );
-      }
-
-      // Code blocks (```code```)
-      if (trimmed.startsWith("```")) {
-        return null; // Skip code fence markers in line-by-line fallback
-      }
-
-      // List items (- item)
-      if (trimmed.startsWith("- ") || trimmed.startsWith("* ")) {
-        const itemText = trimmed.replace(/^[-*]\s+/, "");
-        return (
-          <Box key={index} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5, mb: 1.2, pl: 1 }}>
-            <Typography sx={{ color: "#EA580C", fontWeight: 700, fontSize: "1.1rem", lineHeight: 1.6 }}>
-              &bull;
-            </Typography>
-            <Typography
-              sx={{
-                color: "#3F3F46",
-                fontSize: { xs: "0.98rem", md: "1.05rem" },
-                lineHeight: 1.75,
-              }}
-            >
-              {itemText}
-            </Typography>
-          </Box>
-        );
-      }
-
-      // Ordered list items (1. item)
-      if (/^\d+\.\s+/.test(trimmed)) {
-        const match = trimmed.match(/^(\d+)\.\s+(.*)/);
-        if (match) {
-          return (
-            <Box key={index} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5, mb: 1.4, pl: 1 }}>
-              <Box
-                sx={{
-                  minWidth: 24,
-                  height: 24,
-                  borderRadius: "50%",
-                  bgcolor: "rgba(249, 115, 22, 0.1)",
-                  color: "#EA580C",
-                  fontWeight: 700,
-                  fontSize: "0.78rem",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  mt: 0.3,
-                  flexShrink: 0,
-                }}
-              >
-                {match[1]}
-              </Box>
-              <Typography
-                sx={{
-                  color: "#3F3F46",
-                  fontSize: { xs: "0.98rem", md: "1.05rem" },
-                  lineHeight: 1.75,
-                }}
-              >
-                {match[2]}
-              </Typography>
-            </Box>
-          );
-        }
-      }
-
-      let parsedHTML = paragraph
-        .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #18181B; font-weight: 700;">$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em style="color: #EA580C; font-style: normal; font-weight: 600;">$1</em>')
-        .replace(/`([^`]+)`/g, '<code style="background: #F4F4F5; color: #EA580C; padding: 2px 6px; border-radius: 6px; font-size: 0.9em; font-family: monospace;">$1</code>');
-
-      return (
-        <Typography
-          key={index}
-          variant="body1"
-          dangerouslySetInnerHTML={{ __html: parsedHTML }}
-          sx={{
-            mb: 2.8,
-            color: "#3F3F46",
-            fontSize: { xs: "1.02rem", md: "1.12rem" },
-            lineHeight: 1.85,
-            letterSpacing: "-0.005em",
-          }}
-        />
-      );
-    });
-  };
+  // Markdown and link parser with clean styling
+  const renderContent = (content: string) => renderBlogContent(content);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -608,14 +430,45 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               >
                 EXECUTIVE SUMMARY:
               </Typography>
-              <Typography sx={{ fontSize: "1.05rem", color: "#27272A", lineHeight: 1.75, fontWeight: 500 }}>
-                {blog.excerpt}
-              </Typography>
+              <Typography
+                dangerouslySetInnerHTML={{ __html: parseInlineMarkdown(blog.excerpt) }}
+                sx={{
+                  fontSize: "1.05rem",
+                  color: "#27272A",
+                  lineHeight: 1.75,
+                  fontWeight: 500,
+                  "& a": {
+                    color: "#EA580C",
+                    fontWeight: 600,
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                  },
+                }}
+              />
             </Box>
           )}
 
           {/* Parsed Markdown Body */}
-          <Box className="article-body">
+          <Box
+            className="article-body"
+            sx={{
+              "& a": {
+                color: "#EA580C",
+                fontWeight: 600,
+                textDecoration: "underline",
+                textUnderlineOffset: "3px",
+                textDecorationColor: "rgba(234, 88, 12, 0.4)",
+                cursor: "pointer",
+                transition: "all 0.2s ease-in-out",
+                "&:hover": {
+                  color: "#C2410C",
+                  textDecorationColor: "#EA580C",
+                  bgcolor: "rgba(234, 88, 12, 0.08)",
+                  borderRadius: "3px",
+                },
+              },
+            }}
+          >
             {renderContent(blog.content)}
           </Box>
 

@@ -13,65 +13,85 @@ import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 import { motion, AnimatePresence } from "framer-motion";
 
+
+
 const heroMetrics = [
   {
-    value: "Fixed",
-    title: "Upfront Scope & Pricing",
-    desc: "Detailed project deliverables, timeline milestones, and fixed pricing agreed upon before work begins.",
+    value: "Clear",
+    title: "Scope & Pricing",
+    desc:
+      "We agree on your requirements, deliverables, timeline, and pricing before work begins, so you know exactly what is included.",
     icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Live",
-    title: "Interactive Previews",
-    desc: "Working development previews so you can test features on real devices and guide progress as we build.",
-    icon: <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    value: "Open",
+    title: "Regular Updates",
+    desc:
+      "We keep you informed throughout the project, share relevant progress, and give you opportunities to provide feedback along the way.",
+    icon: (
+      <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />
+    ),
   },
   {
-    value: "100%",
-    title: "Full Code Ownership",
-    desc: "Complete transfer of source code, domains, database access, and documentation without proprietary lock-ins.",
+    value: "Direct",
+    title: "Easy Communication",
+    desc:
+      "Discuss requirements, feedback, questions, and changes directly with the people working on your website, marketing, app, or automation project.",
     icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
   {
-    value: "Zero",
-    title: "Disruption Launch",
-    desc: "Rigorous testing of forms, speed, and customer data before going live so your daily operations stay smooth.",
+    value: "Ready",
+    title: "Review Before Delivery",
+    desc:
+      "We review the agreed work with you before completion, make the required changes, and ensure the project or service is ready for the next stage.",
     icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
   },
 ];
 
+
+
 const showcaseTabs = [
   {
-    id: "shadowing",
-    label: "01. Discovery",
+    id: "discovery",
+    label: "01. Understanding",
     image: "/images/home/editorial-client-consultation.jpg",
-    alt: "Operational discovery session auditing business intake and workflow bottlenecks",
-    phaseTag: "Phase 01 &bull; Discovery",
-    headline: "Understanding Your Real Business Needs Before Writing Any Code",
-    metric1: "Zero Guesswork",
-    metric2: "Clear Business Goals",
+    alt:
+      "Aetibar discussing business goals, customer needs, and project requirements with a client",
+    phaseTag: "Phase 01 • Understand Your Business",
+    headline:
+      "We Start by Understanding Your Business, Goals & What You Need to Improve",
+    metric1: "Clear Requirements",
+    metric2: "Practical Recommendations",
   },
+
   {
-    id: "architecture",
+    id: "planning",
     label: "02. Planning",
     image: "/images/home/hero-architecture.jpg",
-    alt: "Aetibar system architecture blueprint and relational schema visualization",
-    phaseTag: "Phase 02 &bull; Solution Blueprint",
-    headline: "Clean Layouts, Simple User Flows & Approved Project Roadmap",
-    metric1: "Mobile-First Design",
-    metric2: "Approved Before Build",
+    alt:
+      "Aetibar planning a digital project around business goals, customer needs, and requirements",
+    phaseTag: "Phase 02 • Plan the Right Approach",
+    headline:
+      "A Clear Plan That Matches Your Goals, Priorities & Budget",
+    metric1: "Defined Scope",
+    metric2: "Clear Timeline & Pricing",
   },
+
   {
-    id: "staging",
-    label: "03. Building",
+    id: "implementation",
+    label: "03. Implementation",
     image: "/images/home/hero-agency-showcase.jpg",
-    alt: "Private staging engine with real client operational workflows",
-    phaseTag: "Phase 03 &bull; Staged Building",
-    headline: "Regular Working Previews So You See Progress In Real Time",
-    metric1: "Fast Loading Speed",
-    metric2: "Continuous Feedback",
+    alt:
+      "Aetibar implementing and reviewing a digital project with regular client feedback",
+    phaseTag: "Phase 03 • Implement the Plan",
+    headline:
+      "We Put the Plan Into Action While Keeping You Involved Along the Way",
+    metric1: "Regular Progress",
+    metric2: "Ongoing Feedback",
   },
 ];
+
+
 
 export default function HowWeWorkHero() {
   const [activeTab, setActiveTab] = useState<number>(0);
@@ -177,7 +197,8 @@ export default function HowWeWorkHero() {
                   textTransform: "uppercase",
                 }}
               >
-                OUR DEVELOPMENT PROCESS &bull; TRANSPARENT &bull; RELIABLE &bull; ON TIME
+               OUR PROCESS • TRANSPARENT • PRACTICAL • RELIABLE
+
               </Typography>
             </Box>
           </motion.div>
@@ -213,7 +234,8 @@ export default function HowWeWorkHero() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                with clear plans, live demos &amp; zero jargon.
+              with clear plans, regular updates & simple communication.
+
               </Box>
             </Typography>
           </motion.div>
@@ -236,7 +258,9 @@ export default function HowWeWorkHero() {
                 fontWeight: 400,
               }}
             >
-              Building a custom website, mobile app, or AI automation shouldn&apos;t feel stressful or complicated. We listen to your business goals first, establish a transparent fixed plan, let you test working features as we build, and hand over 100% code ownership on launch day.
+             Building a website, mobile app, marketing campaign, or AI automation workflow shouldn’t feel complicated. We start by understanding your business goals, define a clear plan around your requirements, keep you informed throughout the work, and review the agreed deliverables with you before completion.
+
+
             </Typography>
           </motion.div>
 
@@ -277,7 +301,8 @@ export default function HowWeWorkHero() {
                       },
                     }}
                   >
-                    Start a Conversation
+                    Start a Conversation About Your Business
+
                   </Button>
                 </Link>
               </motion.div>
@@ -306,7 +331,8 @@ export default function HowWeWorkHero() {
                       },
                     }}
                   >
-                    Explore the 5 Stages
+                   Explore Our 5-Step Process
+
                   </Button>
                 </a>
               </motion.div>
@@ -419,7 +445,8 @@ export default function HowWeWorkHero() {
                     }}
                   />
                   <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B" }}>
-                    Development Lifecycle:
+                    Our Process:
+
                   </Typography>
                 </Box>
 
@@ -575,7 +602,8 @@ export default function HowWeWorkHero() {
                   </Box>
                   <Box>
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#22C55E", textTransform: "uppercase" }}>
-                      Working Standard
+                    Our Standards
+
                     </Typography>
                     <Typography sx={{ fontSize: "0.875rem", fontWeight: 700, color: "#FFFFFF" }}>
                       {currentTab.metric2}

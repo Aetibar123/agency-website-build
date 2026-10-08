@@ -47,7 +47,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "02",
-    slug: "app-development-company-in-udaipur",
+    slug: "mobile-app-development-company-in-udaipur",
     title: "Mobile Application Development",
     category: "ENGINEERING",
     categoryLabel: "IOS & ANDROID APPS",

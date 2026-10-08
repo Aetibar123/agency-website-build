@@ -12,42 +12,49 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aetibar.in"),
 
   title: {
-    default: "Aetibar | Build a better way for your business to work.",
+    default: "Aetibar | Websites, Software & Digital Solutions for Businesses",
     template: "%s | Aetibar",
   },
 
   description:
-    "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
+    "Aetibar helps businesses build practical websites, custom software, mobile apps, digital marketing systems, and AI-powered workflows around the way they work.",
 
   keywords: [
     "Web Development",
     "Mobile App Development",
     "Digital Marketing",
+    "AI Automation",
     "Web Development Company in Udaipur",
     "Mobile App Development Company in Udaipur",
-    "Digital Marketing Agency Udaipur",
-    "Custom Software Engineering",
-    "Business workflow solutions",
-    "Custom business websites",
-    "Customer and lead systems",
-    "Internal business tools",
-    "Practical AI automation",
-    "Digital operations consulting",
-    "Software engineering studio",
-    "Aetibar Technologies",
+    "Digital Marketing Company in Udaipur",
+    "AI Automation Company in Udaipur",
+    "Custom Software Development",
+    "Business Automation",
+    "Custom Business Websites",
+    "Business Software Solutions",
   ],
 
-  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
-  creator: "Aetibar Technologies",
-  publisher: "Aetibar Technologies",
+  authors: [
+    {
+      name: "Aetibar",
+      url: "https://www.aetibar.in",
+    },
+  ],
+
+  creator: "Aetibar",
+  publisher: "Aetibar",
+
   category: "technology",
+
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -64,28 +71,42 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Aetibar | Build a better way for your business to work.",
+    title: "Aetibar | Websites, Software & Digital Solutions for Businesses",
+
     description:
-      "We help businesses turn disconnected digital processes into practical websites, systems and workflows built around how their business actually operates.",
+      "We help businesses build practical websites, software, mobile apps, digital marketing systems, and AI-powered workflows around how they actually operate.",
+
     url: "https://www.aetibar.in",
+
     siteName: "Aetibar",
+
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
         width: 512,
         height: 512,
-        alt: "Aetibar Logo",
+        alt: "Aetibar",
       },
     ],
+
     locale: "en_IN",
+
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
+    title: "Aetibar | Websites, Software & Digital Solutions for Businesses",
+
+    description:
+      "Practical websites, software, mobile apps, digital marketing, and AI-powered workflows for businesses.",
+
     images: ["/logo.jpeg"],
   },
 };
+
+
 
 export default function RootLayout({
   children,

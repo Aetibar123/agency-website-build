@@ -4,34 +4,54 @@ import ServicePageLayout from "../../../components/services/ServicePageLayout";
 import AdsClickOutlinedIcon from "@mui/icons-material/AdsClickOutlined";
 import { workProjects } from "../../../data/workData";
 
+
 export const metadata: Metadata = {
-  title: "Paid Advertising Company in Udaipur | Google Ads & Meta Ads | Aetibar",
+  title:
+    "Paid Advertising Company in Udaipur | Google Ads & Meta Ads | Aetibar",
+
   description:
-    "Maximize your ROI with Aetibar, a premier paid advertising company in Udaipur. High-converting Google Ads and Meta campaigns engineered to generate verified leads.",
+    "Aetibar provides paid advertising services in Udaipur, including Google Ads, Meta Ads, campaign management, audience targeting, conversion tracking, and performance optimization.",
+
   keywords: [
     "Paid Advertising Company in Udaipur",
     "Google Ads Agency in Udaipur",
-    "Best Paid Advertising Company in Udaipur",
     "PPC Company in Udaipur",
     "Meta Ads Management Udaipur",
+    "Google Ads Management Udaipur",
     "Performance Marketing Udaipur",
-    "Digital Advertising Agency India",
-    "Aetibar Technologies",
+    "Paid Advertising Services",
   ],
-  authors: [{ name: "Aetibar Technologies", url: "https://www.aetibar.in" }],
-  creator: "Aetibar Technologies",
-  publisher: "Aetibar Technologies",
+
+  authors: [
+    {
+      name: "Aetibar",
+      url: "https://www.aetibar.in",
+    },
+  ],
+
+  creator: "Aetibar",
+  publisher: "Aetibar",
+
   alternates: {
-    canonical: "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
+    canonical:
+      "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
   },
+
   openGraph: {
-    title: "Paid Advertising Company in Udaipur | Google Ads & Meta Ads | Aetibar",
+    title:
+      "Paid Advertising Company in Udaipur | Google Ads & Meta Ads | Aetibar",
+
     description:
-      "Targeted Google Ads and Meta advertising campaigns engineered to deliver real customer inquiries from Aetibar, Udaipur.",
+      "Paid advertising services covering Google Ads, Meta Ads, campaign management, conversion tracking, and ongoing performance optimization.",
+
     url: "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
+
     siteName: "Aetibar",
+
     type: "website",
+
     locale: "en_IN",
+
     images: [
       {
         url: "https://www.aetibar.in/logo.jpeg",
@@ -41,33 +61,44 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Paid Advertising Company in Udaipur | Google Ads & Meta Ads | Aetibar",
+
+    title:
+      "Paid Advertising Company in Udaipur | Google Ads & Meta Ads | Aetibar",
+
     description:
-      "Targeted Google and Meta advertising campaigns engineered to deliver real customer inquiries.",
+      "Google Ads and Meta advertising services focused on targeted campaigns, conversion tracking, and ongoing optimization.",
+
     creator: "@Aetibar_",
+
     images: ["https://www.aetibar.in/logo.jpeg"],
   },
 };
+
+
+
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "Paid Advertising Company in Udaipur",
+  serviceType: "Paid Advertising Services",
   provider: {
     "@type": "Organization",
     name: "Aetibar",
     url: "https://www.aetibar.in",
   },
   description:
-    "Aetibar is a top paid advertising company in Udaipur specializing in targeted Google Search, Display, and Meta advertising campaign setup, negative keyword management, and conversion tracking.",
+    "Aetibar provides paid advertising services in Udaipur, including Google Ads, Meta Ads, campaign management, audience and keyword targeting, negative keyword management, conversion tracking, and performance optimization.",
   url: "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
   areaServed: {
     "@type": "City",
     name: "Udaipur",
   },
 };
+
 
 export default function PaidAdvertisingServicePage() {
   const relevantProjects = workProjects.filter((p) =>
@@ -81,160 +112,193 @@ export default function PaidAdvertisingServicePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <ServicePageLayout
-        badge="Paid Advertising Company in Udaipur"
-        title="Targeted Paid Advertising for Businesses —"
-        titleHighlight="Google & Meta Ads That Deliver Inquiries."
-        tagline="High-return Google Search Ads and Meta ad campaigns with strict daily budget caps, negative keyword filtering, and verified lead tracking."
-        description="As a premier paid advertising company in Udaipur, we build, manage, and continuously optimize campaigns on Google and Meta (Instagram & Facebook)—focusing strictly on people ready to buy, blocking junk clicks, and tracking every rupee to ensure a profitable return. Paid advertising allows your business to appear right at the top of Google and in customer feeds the second people search for what you offer."
+       
+badge="Paid Advertising Services"
+
+title="Paid Advertising Company in Udaipur — "
+
+titleHighlight="Google & Meta Ads for Better Enquiries"
+
+tagline="Targeted Google Search and Meta ad campaigns with controlled budgets, audience targeting, ongoing optimization, and clear conversion tracking."
+
+description="As a paid advertising company in Udaipur, we plan, manage, and optimize campaigns across Google Ads and Meta Ads, including Instagram and Facebook. We focus on reaching relevant audiences, reducing unnecessary ad spend, and tracking meaningful actions such as calls, form submissions, website visits, and other enquiries where proper tracking is available."
+
         icon={<AdsClickOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />}
-        whoIsItFor={[
-          {
-            title: "Businesses Needing Leads Today",
-            desc: "Companies that cannot wait months for organic search and need qualified phone calls and quotation requests from Google today.",
-          },
-          {
-            title: "E-Commerce Stores & Brands",
-            desc: "Online shops wanting profitable customer orders through Google Shopping and high-converting Instagram/Facebook feed ads.",
-          },
-          {
-            title: "B2B Companies & Suppliers",
-            desc: "Corporate service providers and manufacturers seeking to reach specific decision-makers, industries, and geographical cities.",
-          },
-          {
-            title: "Owners Burned by Wasted Ad Spend",
-            desc: "Businesses that previously ran ads without negative keywords or tracking and watched their budget drained on empty clicks.",
-          },
-        ]}
-        problemsAddressed={[
-          {
-            problem: "Burning your budget on accidental clicks, students, and job seekers",
-            howWeHelp:
-              "We set up strict negative keyword lists before launching—blocking search terms like 'jobs', 'salary', 'free', and 'course' so your money is only spent on paying buyers.",
-          },
-          {
-            problem: "Not knowing which ads actually produce phone calls and sales",
-            howWeHelp:
-              "We set up verified conversion tracking for every website form submission, WhatsApp click, and phone call, linking every new customer directly back to the winning ad.",
-          },
-          {
-            problem: "Sending expensive paid traffic to slow, low-converting landing pages",
-            howWeHelp:
-              "Paying for ad clicks is useless if the landing page is slow or confusing. We optimize your landing page for lightning speed, clear value propositions, and easy WhatsApp contact.",
-          },
-          {
-            problem: "Surprise credit card charges from unmanaged automated ad bidding",
-            howWeHelp:
-              "We configure hard daily and monthly spending limits inside your ad accounts. You retain 100% account ownership and pay Google/Meta directly for full financial transparency.",
-          },
-        ]}
-        deliverables={[
-          {
-            title: "Google Search & Call-Only Ad Campaigns",
-            desc: "Target people who are actively typing search queries for your services on Google right now.",
-            items: [
-              "High-intent keyword selection targeting ready-to-hire clients",
-              "Strict negative keyword lists blocking junk clicks and job seekers",
-              "Compelling ad headlines and descriptions that stand out",
-              "Direct call-only ads that ring your business phone immediately",
-            ],
-          },
-          {
-            title: "Meta (Instagram & Facebook) Visual Campaigns",
-            desc: "Engage local customers and repeat buyers with attractive visual and carousel ads in their daily feeds.",
-            items: [
-              "Laser-focused audience targeting by location, interests, and demographics",
-              "Custom branded carousel and image creatives that grab attention",
-              "Retargeting website visitors who didn't contact you on their first visit",
-              "Click-to-WhatsApp ads that initiate immediate direct chats",
-            ],
-          },
-          {
-            title: "Verified Conversion & Phone Call Tracking",
-            desc: "Know exactly which ads, keywords, and campaigns generate real money and inquiries.",
-            items: [
-              "Google Tag Manager and Meta Pixel configuration",
-              "Tracking form submissions, phone call clicks, and WhatsApp taps",
-              "Clear cost-per-lead calculation so you know your exact ROI",
-              "Continuous split-testing of ad copy to lower cost per lead",
-            ],
-          },
-          {
-            title: "Strict Daily Budget Control & Transparent Billing",
-            desc: "You retain 100% ownership of your ad accounts and pay the advertising platforms directly.",
-            items: [
-              "Hard daily spending limits preventing any accidental budget runaways",
-              "You pay Google and Meta directly on your own credit card",
-              "Zero hidden markups on media spend",
-              "Transparent monthly summary reports showing actual results",
-            ],
-          },
-        ]}
-        benefits={[
-          {
-            title: "Immediate Customer Inquiries From Day One",
-            desc: "Unlike SEO which takes months, paid advertising puts your business in front of customers within 24 hours of launch.",
-          },
-          {
-            title: "Stop Wasting Money on Useless Clicks",
-            desc: "Aggressive negative keyword blocking ensures that tire-kickers and job seekers never drain your daily budget.",
-          },
-          {
-            title: "Track Every Rupee Spent Back to a Real Customer",
-            desc: "See exactly how many calls and quote requests each campaign produced, with total clarity on your ROI.",
-          },
-          {
-            title: "100% Account Ownership & Direct Billing",
-            desc: "Your campaigns are built in your own Google and Meta accounts. You own all historical data and audiences forever.",
-          },
-        ]}
-        processSteps={[
-          {
-            num: "01",
-            title: "Target Audience & Budget Strategy",
-            desc: "We discuss your target customer, geographical service radius, and establish a comfortable daily budget.",
-          },
-          {
-            num: "02",
-            title: "Keyword Research & Negative Filtering",
-            desc: "We identify commercial buyer keywords and build comprehensive negative keyword lists to prevent wasted clicks.",
-          },
-          {
-            num: "03",
-            title: "Ad Copy & Creative Production",
-            desc: "We write persuasive headlines, design visual creatives, and set up conversion tracking on your landing page.",
-          },
-          {
-            num: "04",
-            title: "Launch & Daily Bid Optimization",
-            desc: "We launch the campaigns with strict budget caps and monitor bids daily to keep your cost per inquiry low.",
-          },
-          {
-            num: "05",
-            title: "Performance Review & Scaling",
-            desc: "We review conversion numbers, prune non-performing keywords, and scale up the winning ads that bring profitable inquiries.",
-          },
-        ]}
+    
+whoIsItFor={[
+  {
+    title: "Businesses Looking for Faster Enquiries",
+    desc: "Businesses that want to generate enquiries through paid search and social campaigns instead of relying only on organic visibility that can take time to build.",
+  },
+  {
+    title: "E-Commerce Stores & Brands",
+    desc: "Online businesses looking to promote products through Google Shopping, product-focused search campaigns, and Instagram or Facebook advertising.",
+  },
+  {
+    title: "B2B Companies & Suppliers",
+    desc: "Manufacturers, suppliers, and professional service businesses looking to reach specific industries, locations, and audience segments through targeted campaigns.",
+  },
+  {
+    title: "Businesses That Have Wasted Ad Spend",
+    desc: "Businesses that have run paid campaigns without clear targeting, conversion tracking, search-term management, or regular optimization and want a more structured approach to managing their budget.",
+  },
+]}
+
+
+       
+problemsAddressed={[
+  {
+    problem: "Your ad budget is being spent on irrelevant searches and clicks",
+    howWeHelp:
+      "We research search terms and build relevant negative keyword lists to filter out searches such as jobs, courses, free resources, and other terms that don't match your commercial offering.",
+  },
+  {
+    problem: "You don't know which campaigns are generating meaningful enquiries",
+    howWeHelp:
+      "We configure conversion tracking for important actions such as form submissions, phone calls, WhatsApp clicks, and other measurable enquiries, helping you understand which campaigns and ads are driving results.",
+  },
+  {
+    problem: "Paid traffic is reaching a landing page that isn't ready to convert",
+    howWeHelp:
+      "We review the landing page experience for speed, clarity, mobile usability, relevant messaging, and clear calls-to-action so visitors can quickly understand your offer and take the next step.",
+  },
+  {
+    problem: "Ad spending feels difficult to control or understand",
+    howWeHelp:
+      "We set appropriate campaign budgets, bidding controls, and account-level safeguards while keeping your advertising accounts under your ownership. You pay Google or Meta directly, making your media spend easier to monitor.",
+  },
+]}
+
+        
+deliverables={[
+  {
+    title: "Google Search & Call Campaigns",
+    desc: "Reach people searching for relevant products and services on Google and guide them toward calls, website visits, or other enquiries.",
+    items: [
+      "Keyword research based on relevance, search intent, and campaign goals",
+      "Negative keyword lists to reduce irrelevant searches and clicks",
+      "Ad headlines and descriptions aligned with your offers and target audience",
+      "Call-focused campaigns and call extensions where supported",
+    ],
+  },
+  {
+    title: "Meta Ads for Instagram & Facebook",
+    desc: "Promote your products, services, and offers across Instagram and Facebook using audience targeting and visual ad formats.",
+    items: [
+      "Audience targeting based on location, interests, demographics, and available platform signals",
+      "Custom image and carousel creatives adapted to your campaign objectives",
+      "Retargeting campaigns for relevant website visitors and engaged audiences",
+      "Click-to-WhatsApp campaigns where direct conversations are part of the customer journey",
+    ],
+  },
+  {
+    title: "Conversion & Campaign Tracking",
+    desc: "Measure the actions that matter to your business and understand how your paid campaigns are performing.",
+    items: [
+      "Google Tag Manager and relevant conversion tracking setup",
+      "Meta Pixel and other available tracking configurations",
+      "Tracking for form submissions, phone calls, WhatsApp clicks, and other measurable actions",
+      "Performance analysis across campaigns, ads, keywords, and audience segments",
+    ],
+  },
+  {
+    title: "Budget Management & Transparent Reporting",
+    desc: "Keep your advertising spend organized and make campaign performance easier to monitor.",
+    items: [
+      "Campaign-level budgets and bidding controls based on your advertising goals",
+      "Advertising accounts remain under your ownership and control",
+      "Google and Meta ad spend paid directly through your own billing account",
+      "Regular reports covering spend, reach, clicks, conversions, and other relevant metrics",
+    ],
+  },
+]}
+
+        
+benefits={[
+  {
+    title: "Reach Potential Customers Faster",
+    desc: "Paid campaigns can put your business in front of relevant audiences soon after launch, giving you an additional channel for generating website visits, calls, and enquiries.",
+  },
+  {
+    title: "Make Your Ad Budget More Focused",
+    desc: "Relevant targeting, search-term management, and negative keywords help reduce spend on audiences and searches that are less relevant to your products or services.",
+  },
+  {
+    title: "Understand Which Campaigns Drive Action",
+    desc: "Conversion tracking helps you see how different campaigns, ads, keywords, and audiences contribute to measurable actions such as calls, form submissions, and WhatsApp enquiries.",
+  },
+  {
+    title: "Keep Control of Your Advertising Accounts",
+    desc: "Campaigns can be managed through your own Google and Meta accounts, giving you access to your advertising data, campaign history, audiences, and billing information.",
+  },
+]}
+
+
+     
+processSteps={[
+  {
+    num: "01",
+    title: "Audience, Goals & Budget Planning",
+    desc: "We understand your target customers, service areas, offers, campaign goals, and comfortable advertising budget before deciding where and how to run your campaigns.",
+  },
+  {
+    num: "02",
+    title: "Keyword & Audience Research",
+    desc: "For Google Ads, we research relevant search terms and identify negative keywords. For Meta Ads, we define suitable audience segments based on location, interests, demographics, and available platform signals.",
+  },
+  {
+    num: "03",
+    title: "Ad Copy, Creatives & Tracking Setup",
+    desc: "We prepare search ad copy and visual creatives where required, configure the campaigns, and set up conversion tracking for important customer actions.",
+  },
+  {
+    num: "04",
+    title: "Campaign Launch & Ongoing Optimization",
+    desc: "We launch the campaigns with appropriate budgets and bidding settings, then review performance regularly to refine keywords, audiences, ads, and campaign settings based on available data.",
+  },
+  {
+    num: "05",
+    title: "Performance Review & Next Steps",
+    desc: "We review spend, traffic, conversions, and other relevant metrics to identify what is performing well, what needs adjustment, and where the next optimization opportunities lie.",
+  },
+]}
+
+
         relevantProjects={relevantProjects}
-        faqs={[
-          {
-            question: "How much budget should I spend on ads each month?",
-            answer:
-              "We recommend starting with a manageable testing budget—typically ₹10,000 to ₹25,000 per month for local businesses. This allows us to gather data on real inquiries, weed out non-performing keywords, and verify profitability before you increase your spending.",
-          },
-          {
-            question: "Who pays for the ads—Aetibar or my business?",
-            answer:
-              "You pay Google and Meta directly using your own company credit card or billing profile. We do not take a percentage markup on your ad spend. You retain 100% ownership of your advertising accounts and data forever.",
-          },
-          {
-            question: "How soon will I start receiving inquiries?",
-            answer:
-              "Paid advertising campaigns usually start generating clicks and inquiries within 24 to 48 hours of going live, making it the fastest way to test a new offer or bring in immediate customer calls.",
-          },
-        ]}
-        ctaTitle="Ready to Launch High-ROI Ads &amp;"
-        ctaTitleHighlight="Bring in New Inquiries Today?"
-        ctaDescription="Tell us about your services and target customers. We'll outline an efficient advertising strategy, keyword forecast, and recommended starting budget."
+   
+faqs={[
+  {
+    question: "How much budget should I spend on paid advertising?",
+    answer:
+      "There is no fixed budget that works for every business. It depends on your industry, target location, competition, average cost per click, offer, and campaign objective. We can help you choose a manageable starting budget that provides enough data to evaluate campaign performance before making larger changes.",
+  },
+  {
+    question: "Who pays Google and Meta for the advertising spend?",
+    answer:
+      "Your advertising spend is paid directly to Google or Meta through your own billing account. We work within your advertising accounts so you retain access to your campaign data, billing information, and account history.",
+  },
+  {
+    question: "How soon can paid advertising start generating enquiries?",
+    answer:
+      "Your campaigns can start receiving impressions and clicks soon after they are approved and launched, but the time required to generate enquiries varies by industry, targeting, offer, landing page, competition, and budget. We monitor the initial data and make adjustments based on how the campaigns perform rather than promising a fixed timeframe.",
+  },
+  {
+    question: "Can you advertise on both Google and Instagram/Facebook?",
+    answer:
+      "Yes. We can manage Google Ads and Meta Ads depending on where your potential customers are most likely to respond. Google is useful for capturing existing search demand, while Meta can help reach and retarget relevant audiences through Instagram and Facebook.",
+  },
+  {
+    question: "Can you track calls, forms, and WhatsApp enquiries?",
+    answer:
+      "Yes, where the required technical setup and platform capabilities are available. We can configure tracking for actions such as form submissions, phone calls, WhatsApp clicks, and other measurable conversions so campaign performance is easier to evaluate.",
+  },
+]}
+
+
+ctaTitle="Ready to Make Your Paid Ads"
+ctaTitleHighlight="Work More Effectively?"
+ctaDescription="Tell us about your business, target customers, and advertising goals. We'll discuss a practical campaign approach, suitable platforms, and a starting budget based on your requirements."
+
       />
     </main>
   );
