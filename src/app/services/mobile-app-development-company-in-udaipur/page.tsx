@@ -108,7 +108,7 @@ export default function AppDevelopmentServicePage() {
       />
       <ServicePageLayout
         badge="Custom Mobile App Development"
-        title="App Development Company in Udaipur — "
+        title="Mobile App Development Company in Udaipur — "
         titleHighlight="Custom Apps for iPhone & Android"
         tagline="Practical iOS and Android apps designed to help your customers stay connected with your business and your teams work more efficiently on the go."
         description="As an app development company in Udaipur, we build custom mobile applications around your business requirements—from customer-facing apps for services, bookings, and orders to internal tools for field teams, job management, and data collection. Where your workflow requires it, we can also support features such as offline data capture and synchronization."
