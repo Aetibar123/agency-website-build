@@ -26,7 +26,8 @@ export default function ScrollProgress() {
         width: '100%', 
         height: 4, 
         bgcolor: 'transparent', 
-        zIndex: 9999 
+        zIndex: 9999,
+        pointerEvents: 'none',
       }}
     >
       <Box 

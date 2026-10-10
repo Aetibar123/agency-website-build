@@ -24,6 +24,7 @@ import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import CalendarTodayRoundedIcon from "@mui/icons-material/CalendarTodayRounded";
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 import { BlogArticle, defaultBlogArticles } from "../../data/blogData";
+import { stripMarkdown } from "../../lib/blogParser";
 
 const CATEGORIES = [
   "All Articles",
@@ -645,7 +646,7 @@ export default function BlogListingClient() {
                               overflow: "hidden",
                             }}
                           >
-                            {featuredArticle.excerpt}
+                            {stripMarkdown(featuredArticle.excerpt)}
                           </Typography>
 
                           {/* Tech Tags */}
@@ -924,7 +925,7 @@ export default function BlogListingClient() {
                                   overflow: "hidden",
                                 }}
                               >
-                                {blog.excerpt}
+                                {stripMarkdown(blog.excerpt)}
                               </Typography>
                             </Box>
 
@@ -991,7 +992,7 @@ export default function BlogListingClient() {
         <Container maxWidth="xl">
           <Box
             sx={{
-              maxWidth: 1040,
+              maxWidth: 1200,
               mx: "auto",
               textAlign: "center",
               p: { xs: 4, sm: 6, md: 8 },
