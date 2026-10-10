@@ -6,10 +6,10 @@ import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
   title:
-    "App Development Company in Udaipur | Mobile App Development | Aetibar",
+    "Mobile App Development Company in Udaipur | Aetibar",
 
   description:
-    "Aetibar provides app development services in Udaipur, including custom iOS and Android apps, cross-platform development, field operations tools, and customer-facing mobile applications.",
+    "Aetibar is a trusted mobile app development company in Udaipur, building custom Android, iOS, and cross-platform apps to help businesses grow.",
 
   keywords: [
     "App Development Company in Udaipur",
