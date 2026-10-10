@@ -7,10 +7,10 @@ import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
   title:
-    "Web Development Company in Udaipur | Custom Websites | Aetibar",
+    "Web Development Company in Udaipur | Aetibar",
 
   description:
-    "Aetibar provides web development services in Udaipur, including custom business websites, e-commerce stores, client portals, web applications, and website redesigns.",
+    "Aetibar is Best web development company in Udaipur building custom business websites, e-commerce stores, and web applications to support business growth.",
 
   keywords: [
     "Web Development Company in Udaipur",
