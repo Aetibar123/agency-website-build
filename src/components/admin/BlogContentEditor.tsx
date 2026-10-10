@@ -74,12 +74,23 @@ export default function BlogContentEditor({
   };
 
   const handleInsertLink = () => {
-    const finalUrl = linkUrl.trim();
+    let finalUrl = linkUrl.trim();
     const finalText = linkText.trim() || finalUrl;
 
     if (!finalUrl) {
       alert("Please enter a valid URL.");
       return;
+    }
+
+    // Auto-prefix https:// if it looks like an external web address without protocol
+    if (
+      !/^https?:\/\//i.test(finalUrl) &&
+      !finalUrl.startsWith("/") &&
+      !finalUrl.startsWith("#") &&
+      !finalUrl.startsWith("mailto:") &&
+      !finalUrl.startsWith("tel:")
+    ) {
+      finalUrl = `https://${finalUrl}`;
     }
 
     const markdownLink = `[${finalText}](${finalUrl})`;
@@ -324,13 +335,14 @@ export default function BlogContentEditor({
             p: { xs: 3, sm: 4 },
             minHeight: 400,
             bgcolor: "#fff",
-            "& a": {
+            "& a, & .blog-link": {
               color: "#EA580C",
               fontWeight: 600,
               textDecoration: "underline",
               textUnderlineOffset: "3px",
               textDecorationColor: "rgba(234, 88, 12, 0.4)",
               cursor: "pointer",
+              pointerEvents: "auto",
               transition: "all 0.2s ease-in-out",
               "&:hover": {
                 color: "#C2410C",
@@ -343,6 +355,23 @@ export default function BlogContentEditor({
         >
           {value.trim() ? (
             <Box className="article-body">
+              <Box
+                sx={{
+                  mb: 3,
+                  p: 1.5,
+                  borderRadius: 2,
+                  bgcolor: "rgba(234, 88, 12, 0.06)",
+                  border: "1px solid rgba(234, 88, 12, 0.2)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                }}
+              >
+                <VisibilityRoundedIcon sx={{ color: "#EA580C", fontSize: "1.1rem" }} />
+                <Typography variant="caption" sx={{ color: "#4B5563", fontSize: "0.82rem" }}>
+                  <strong style={{ color: "#EA580C" }}>Interactive Preview:</strong> All links below are live and testable. Click any link to confirm it works properly!
+                </Typography>
+              </Box>
               {renderBlogContent(value)}
             </Box>
           ) : (

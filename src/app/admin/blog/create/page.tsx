@@ -50,7 +50,7 @@ export default function CreateBlog() {
 
   return (
     <Box sx={{ bgcolor: '#f8f9fa', minHeight: '100vh', py: 15 }}>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Button 
           component={Link} 
           href="/admin/blog" 
@@ -121,6 +121,7 @@ export default function CreateBlog() {
                   multiline
                   rows={2}
                   variant="outlined"
+                  helperText="Short summary. Plain URLs (e.g. aetibar.in) or Markdown links [Text](https://...) will automatically be rendered as clickable links on the article page."
                 />
               </Box>
 

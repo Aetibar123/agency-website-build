@@ -10,28 +10,98 @@ export function escapeHtml(str: string): string {
     .replace(/'/g, "&#039;");
 }
 
+const COMMON_TLDS = [
+  "com",
+  "org",
+  "net",
+  "in",
+  "io",
+  "co",
+  "ai",
+  "dev",
+  "app",
+  "tech",
+  "info",
+  "biz",
+  "me",
+  "cloud",
+  "agency",
+  "online",
+  "store",
+  "site",
+  "xyz",
+  "edu",
+  "gov",
+  "co\\.in",
+  "org\\.in",
+  "ac\\.in",
+].join("|");
+
+export function normalizeHref(href: string): string {
+  let trimmed = href.trim();
+  if (!trimmed) return "";
+
+  // If internal link or protocol-relative or anchor/mail/tel, leave as is
+  if (
+    trimmed.startsWith("/") ||
+    trimmed.startsWith("#") ||
+    trimmed.startsWith("//") ||
+    /^mailto:/i.test(trimmed) ||
+    /^tel:/i.test(trimmed)
+  ) {
+    return trimmed;
+  }
+
+  // If already starts with http:// or https://
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  // If starts with www. or looks like domain (e.g. google.com or domain.in)
+  return `https://${trimmed}`;
+}
+
+export function buildAnchorTag(href: string, anchorText: string, title?: string): string {
+  const normalizedHref = normalizeHref(href);
+  if (!normalizedHref) return anchorText;
+
+  const isExternal =
+    /^https?:\/\//i.test(normalizedHref) ||
+    normalizedHref.startsWith("//") ||
+    (!normalizedHref.startsWith("/") && !normalizedHref.startsWith("#"));
+
+  const targetAttr = isExternal ? ' target="_blank" rel="noopener noreferrer"' : "";
+  const titleAttr = title ? ` title="${escapeHtml(title)}"` : "";
+
+  return `<a href="${escapeHtml(
+    normalizedHref
+  )}"${targetAttr}${titleAttr} class="blog-link" style="color: #EA580C; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(234, 88, 12, 0.4); cursor: pointer; transition: all 0.2s ease;">${anchorText}</a>`;
+}
+
+export function stripMarkdown(text: string): string {
+  if (!text) return "";
+  return text
+    // Replace markdown links [text](url) with just text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    // Replace HTML <a> tags with inner text
+    .replace(/<a\b[^>]*>([\s\S]*?)<\/a>/gi, "$1")
+    // Remove other html tags
+    .replace(/<[^>]+>/g, "")
+    // Remove bold/italic
+    .replace(/(\*\*|__)(.*?)\1/g, "$2")
+    .replace(/(\*|_)(.*?)\1/g, "$2")
+    // Remove inline code
+    .replace(/`([^`]+)`/g, "$1")
+    // Remove strikethrough
+    .replace(/~~(.*?)~~/g, "$1")
+    .trim();
+}
+
 export function parseInlineMarkdown(text: string): string {
   if (!text) return "";
 
   const codeTokens: string[] = [];
   const linkTokens: string[] = [];
-
-  // Helper to build anchor tag
-  const buildAnchorTag = (href: string, anchorText: string, title?: string) => {
-    let trimmedHref = href.trim();
-    if (!trimmedHref) return anchorText;
-
-    // Autoprefix plain www.
-    if (/^www\./i.test(trimmedHref)) {
-      trimmedHref = `https://${trimmedHref}`;
-    }
-
-    const isExternal = /^https?:\/\//i.test(trimmedHref) || trimmedHref.startsWith("//");
-    const targetAttr = isExternal ? ' target="_blank" rel="noopener noreferrer"' : "";
-    const titleAttr = title ? ` title="${escapeHtml(title)}"` : "";
-
-    return `<a href="${escapeHtml(trimmedHref)}"${targetAttr}${titleAttr} style="color: #EA580C; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(234, 88, 12, 0.4); cursor: pointer; transition: all 0.2s ease;">${anchorText}</a>`;
-  };
 
   // 1. Extract inline code blocks: `code`
   let processed = text.replace(/`([^`]+)`/g, (_, codeContent) => {
@@ -45,9 +115,10 @@ export function parseInlineMarkdown(text: string): string {
   });
 
   // 2. Extract existing HTML <a> tags so they aren't mangled by plain URL matching
+  // Supports: <a href="...">...</a> or <a target="..." href="...">...</a>
   processed = processed.replace(
-    /<a\s+([^>]*?)href=["']([^"']+)["']([^>]*?)>(.*?)<\/a>/gi,
-    (_, before, href, after, anchorText) => {
+    /<a\s+(?:[^>]*?\s+)?href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi,
+    (_, href, _extraAttrs, anchorText) => {
       const index = linkTokens.length;
       linkTokens.push(buildAnchorTag(href, anchorText));
       return `@@LINKtok${index}END@@`;
@@ -55,8 +126,9 @@ export function parseInlineMarkdown(text: string): string {
   );
 
   // 3. Extract Markdown links: [anchor text](url) or [anchor text](url "title")
+  // Allows optional whitespace around url, e.g. [anchor text]( https://example.com )
   processed = processed.replace(
-    /\[([^\]]+)\]\((\s*(?:[^\s()]+|\([^\s()]+\))+\s*)(?:\s+["']([^"']*)["'])?\s*\)/g,
+    /\[([^\]]+)\]\(\s*([^\s)]+)(?:\s+["']([^"']*)["'])?\s*\)/g,
     (_, anchorText, url, title) => {
       const index = linkTokens.length;
       // Allow bold / italic inside anchor text
@@ -68,14 +140,14 @@ export function parseInlineMarkdown(text: string): string {
     }
   );
 
-  // 4. Extract autolinks in angle brackets: <https://...> or <mailto:...>
-  processed = processed.replace(/<(https?:\/\/[^\s>]+|mailto:[^\s>]+)>/gi, (_, url) => {
+  // 4. Extract autolinks in angle brackets: <https://...> or <mailto:...> or <tel:...>
+  processed = processed.replace(/<(https?:\/\/[^\s>]+|mailto:[^\s>]+|tel:[^\s>]+)>/gi, (_, url) => {
     const index = linkTokens.length;
     linkTokens.push(buildAnchorTag(url, escapeHtml(url)));
     return `@@LINKtok${index}END@@`;
   });
 
-  // 5. Extract raw URLs: https://... or http://... or www....
+  // 5. Extract raw full URLs: https://... or http://... or www....
   processed = processed.replace(
     /\b((?:https?:\/\/|www\.)[^\s<>"'()]+(?:\([^\s<>"']+\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))/gi,
     (match, url) => {
@@ -85,23 +157,34 @@ export function parseInlineMarkdown(text: string): string {
     }
   );
 
-  // 6. Bold: **text** or __text__
+  // 6. Extract bare domain URLs like aetibar.in, google.com, or example.org/path
+  const bareDomainRegex = new RegExp(
+    `\\b((?:[a-zA-Z0-9-]+\\.)+(?:${COMMON_TLDS})(?:\\/[^\\s<>"'()]*(?:\\([^\\s<>"']+\\)|[^\\s\`!()\\[\\]{};:'".,<>?«»“”‘’]))?)`,
+    "gi"
+  );
+  processed = processed.replace(bareDomainRegex, (match, domain) => {
+    const index = linkTokens.length;
+    linkTokens.push(buildAnchorTag(domain, escapeHtml(domain)));
+    return `@@LINKtok${index}END@@`;
+  });
+
+  // 7. Bold: **text** or __text__
   processed = processed
     .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #18181B; font-weight: 700;">$1</strong>')
     .replace(/__(.*?)__/g, '<strong style="color: #18181B; font-weight: 700;">$1</strong>');
 
-  // 7. Italic: *text* or _text_
+  // 8. Italic: *text* or _text_
   processed = processed
     .replace(/\*([^*]+)\*/g, '<em style="color: #EA580C; font-style: normal; font-weight: 600;">$1</em>')
     .replace(/\b_([^_]+)_\b/g, '<em style="color: #EA580C; font-style: normal; font-weight: 600;">$1</em>');
 
-  // 8. Strikethrough: ~~text~~
+  // 9. Strikethrough: ~~text~~
   processed = processed.replace(/~~(.*?)~~/g, '<del style="color: #71717A;">$1</del>');
 
-  // 9. Restore link tokens
+  // 10. Restore link tokens
   processed = processed.replace(/@@LINKtok(\d+)END@@/g, (_, index) => linkTokens[Number(index)] || "");
 
-  // 10. Restore code tokens
+  // 11. Restore code tokens
   processed = processed.replace(/@@CODEtok(\d+)END@@/g, (_, index) => codeTokens[Number(index)] || "");
 
   return processed;
@@ -110,7 +193,9 @@ export function parseInlineMarkdown(text: string): string {
 export function renderBlogContent(content: string): React.ReactNode {
   if (!content) return null;
 
-  const lines = content.split("\n");
+  // Normalize CRLF to LF
+  const normalized = content.replace(/\r\n/g, "\n");
+  const lines = normalized.split("\n");
   const nodes: React.ReactNode[] = [];
   let inCodeBlock = false;
   let codeBlockLines: string[] = [];

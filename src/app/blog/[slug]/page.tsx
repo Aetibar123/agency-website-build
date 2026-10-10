@@ -225,7 +225,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           }}
         />
 
-        <Container maxWidth="md" sx={{ position: "relative", zIndex: 1 }}>
+        <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
           {/* Back to Journal Button */}
           <Link href="/blog" style={{ textDecoration: "none" }}>
             <Button
@@ -366,14 +366,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* FEATURED COVER IMAGE                                                      */}
       {/* ========================================================================= */}
       {blog.coverImage && (
-        <Container maxWidth="md" sx={{ mt: { xs: 4, md: 6 }, position: "relative", zIndex: 2 }}>
+        <Container maxWidth="lg" sx={{ mt: { xs: 4, md: 6 }, position: "relative", zIndex: 2 }}>
           <Box
             sx={{
               borderRadius: "24px",
               overflow: "hidden",
               border: "1px solid rgba(228, 228, 231, 0.9)",
               boxShadow: "0 16px 40px -10px rgba(24, 24, 27, 0.08)",
-              maxHeight: { xs: 260, sm: 380, md: 480 },
+              maxHeight: { xs: 260, sm: 400, md: 520 },
               bgcolor: "#18181B",
             }}
           >
@@ -384,7 +384,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               sx={{
                 width: "100%",
                 height: "100%",
-                maxHeight: { xs: 260, sm: 380, md: 480 },
+                maxHeight: { xs: 260, sm: 400, md: 520 },
                 objectFit: "cover",
                 display: "block",
               }}
@@ -396,7 +396,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* ========================================================================= */}
       {/* ARTICLE BODY & EDITORIAL CONTENT                                          */}
       {/* ========================================================================= */}
-      <Container maxWidth="md" sx={{ py: { xs: 6, md: 9 } }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 9 } }}>
         <Box
           sx={{
             bgcolor: "#FFFFFF",
@@ -437,11 +437,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   color: "#27272A",
                   lineHeight: 1.75,
                   fontWeight: 500,
-                  "& a": {
+                  "& a, & .blog-link": {
                     color: "#EA580C",
                     fontWeight: 600,
                     textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                    textDecorationColor: "rgba(234, 88, 12, 0.4)",
                     cursor: "pointer",
+                    pointerEvents: "auto",
+                    transition: "all 0.2s ease-in-out",
+                    "&:hover": {
+                      color: "#C2410C",
+                      textDecorationColor: "#EA580C",
+                      bgcolor: "rgba(234, 88, 12, 0.08)",
+                      borderRadius: "3px",
+                    },
                   },
                 }}
               />
@@ -452,13 +462,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <Box
             className="article-body"
             sx={{
-              "& a": {
+              "& a, & .blog-link": {
                 color: "#EA580C",
                 fontWeight: 600,
                 textDecoration: "underline",
                 textUnderlineOffset: "3px",
                 textDecorationColor: "rgba(234, 88, 12, 0.4)",
                 cursor: "pointer",
+                pointerEvents: "auto",
                 transition: "all 0.2s ease-in-out",
                 "&:hover": {
                   color: "#C2410C",
