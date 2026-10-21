@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Digital Marketing Company in Udaipur | Aetibar",
 
   description:
-    "Aetibar, Best digital marketing company in Udaipur, offers SEO, SMM, and Ads to improve online visibility, boost traffic, and generate leads.",
+    "Aetibar is the Best digital marketing company in Udaipur. Offers SEO, SMM, and Ads to improve online visibility, boost traffic, and generate leads.",
 
   keywords: [
     "Digital Marketing Company in Udaipur",
