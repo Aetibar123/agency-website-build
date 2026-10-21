@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Web Development Company in Udaipur | Aetibar",
 
   description:
-    "Aetibar is a trusted web development company in Udaipur. Building custom business website and Get responsive websites, eCommerce solutions, and boost your business. ",
+    "Aetibar is a trusted web development company in Udaipur. Building custom and responsive business website, eCommerce solutions, and boost your business. ",
 
   keywords: [
     "Web Development Company in Udaipur",
