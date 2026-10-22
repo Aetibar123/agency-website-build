@@ -171,8 +171,8 @@ export default function SolutionAreasSection() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -180,14 +180,14 @@ export default function SolutionAreasSection() {
                 component={motion.div}
                 animate={{ scale: [1, 1.25, 1], opacity: [0.8, 1, 0.8] }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#EA580C" }}
+                sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#3D765D" }}
               />
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   fontWeight: 600,
                 }}
               >
@@ -200,7 +200,7 @@ export default function SolutionAreasSection() {
               sx={{
                 fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.15, md: 1.08 },
                 letterSpacing: "-0.035em",
                 mb: 2.5,
@@ -210,7 +210,7 @@ export default function SolutionAreasSection() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -251,8 +251,8 @@ export default function SolutionAreasSection() {
               gap: { xs: 0.8, sm: 1.2 },
               p: { xs: 0.8, sm: 1 },
               borderRadius: { xs: "16px", md: "9999px" },
-              bgcolor: "#FAF8F5",
-              border: "1px solid rgba(228, 228, 231, 0.8)",
+              bgcolor: "#F7F7F2",
+              border: "1px solid rgba(216, 229, 213, 0.8)",
               width: { xs: "100%", md: "auto" },
             }}
           >
@@ -287,8 +287,8 @@ export default function SolutionAreasSection() {
                         position: "absolute",
                         inset: 0,
                         borderRadius: { xs: "12px", md: "9999px" },
-                        bgcolor: "#18181B",
-                        boxShadow: "0 8px 22px -4px rgba(24, 24, 27, 0.35)",
+                        bgcolor: "#183D35",
+                        boxShadow: "0 8px 22px -4px rgba(24, 61, 53, 0.35)",
                         zIndex: -1,
                       }}
                     />
@@ -299,7 +299,7 @@ export default function SolutionAreasSection() {
                       fontFamily: "monospace",
                       fontSize: { xs: "0.72rem", sm: "0.75rem" },
                       fontWeight: 700,
-                      color: isSelected ? "#FB923C" : "#A1A1AA",
+                      color: isSelected ? "#62A486" : "#A1A1AA",
                       transition: "color 0.2s ease",
                       flexShrink: 0,
                     }}
@@ -334,7 +334,7 @@ export default function SolutionAreasSection() {
           sx={{
             borderRadius: { xs: "24px", md: "32px" },
             bgcolor: "#111218",
-            backgroundImage: `radial-gradient(ellipse at ${60 + activeIdx * 10}% 25%, rgba(234, 88, 12, 0.2) 0%, transparent 65%)`,
+            backgroundImage: `radial-gradient(ellipse at ${60 + activeIdx * 10}% 25%, rgba(61, 118, 93, 0.2) 0%, transparent 65%)`,
             border: "1px solid rgba(255, 255, 255, 0.1)",
             boxShadow: "0 30px 80px -20px rgba(0, 0, 0, 0.45)",
             overflow: "hidden",
@@ -364,8 +364,8 @@ export default function SolutionAreasSection() {
                       px: 1.6,
                       py: 0.4,
                       borderRadius: "8px",
-                      bgcolor: "rgba(234, 88, 12, 0.15)",
-                      border: "1px solid rgba(234, 88, 12, 0.3)",
+                      bgcolor: "rgba(61, 118, 93, 0.15)",
+                      border: "1px solid rgba(61, 118, 93, 0.3)",
                       mb: 2.5,
                     }}
                   >
@@ -373,7 +373,7 @@ export default function SolutionAreasSection() {
                       sx={{
                         fontSize: "0.75rem",
                         fontWeight: 700,
-                        color: "#FB923C",
+                        color: "#62A486",
                         letterSpacing: "0.06em",
                       }}
                     >
@@ -413,7 +413,7 @@ export default function SolutionAreasSection() {
                     sx={{
                       fontSize: { xs: "1.05rem", sm: "1.18rem" },
                       fontWeight: 500,
-                      color: "#FB923C",
+                      color: "#62A486",
                       lineHeight: 1.45,
                       mb: 2.5,
                     }}
@@ -450,7 +450,7 @@ export default function SolutionAreasSection() {
                     {current.capabilities.map((cap, cIdx) => (
                       <Box key={cIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                         <CheckCircleOutlinedIcon
-                          sx={{ fontSize: 18, color: "#EA580C", mt: 0.25, flexShrink: 0 }}
+                          sx={{ fontSize: 18, color: "#3D765D", mt: 0.25, flexShrink: 0 }}
                         />
                         <Typography
                           sx={{
@@ -490,20 +490,20 @@ export default function SolutionAreasSection() {
                           fullWidth
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                           sx={{
-                            background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                            background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                             color: "#FFFFFF",
                             px: 3.8,
                             py: 1.45,
                             fontSize: "0.925rem",
                             fontWeight: 600,
                             borderRadius: "9999px",
-                            boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
+                            boxShadow: "0 10px 24px rgba(61, 118, 93, 0.35)",
                             width: { xs: "100%", sm: "auto" },
                             whiteSpace: { xs: "normal", sm: "nowrap" },
                             transition: "all 0.2s ease",
                             "&:hover": {
-                              background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                              boxShadow: "0 14px 30px rgba(234, 88, 12, 0.45)",
+                              background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                              boxShadow: "0 14px 30px rgba(61, 118, 93, 0.45)",
                               transform: "translateY(-1px)",
                             },
                           }}
@@ -538,7 +538,7 @@ export default function SolutionAreasSection() {
                           sx={{
                             fontSize: { xs: "1.45rem", sm: "1.75rem" },
                             fontWeight: 700,
-                            color: "#FB923C",
+                            color: "#62A486",
                             lineHeight: 1,
                           }}
                         >
@@ -565,7 +565,7 @@ export default function SolutionAreasSection() {
                     sx={{
                       position: "relative",
                       borderRadius: "22px",
-                      bgcolor: "rgba(24, 24, 27, 0.8)",
+                      bgcolor: "rgba(24, 61, 53, 0.8)",
                       border: "1px solid rgba(255, 255, 255, 0.15)",
                       boxShadow: "0 25px 60px -15px rgba(0, 0, 0, 0.6)",
                       overflow: "hidden",
@@ -641,7 +641,7 @@ export default function SolutionAreasSection() {
                           px: 1.8,
                           py: 0.8,
                           borderRadius: "10px",
-                          bgcolor: "rgba(24, 24, 27, 0.85)",
+                          bgcolor: "rgba(24, 61, 53, 0.85)",
                           backdropFilter: "blur(12px)",
                           border: "1px solid rgba(255, 255, 255, 0.15)",
                           color: "#22C55E",
@@ -670,7 +670,7 @@ export default function SolutionAreasSection() {
                           right: 16,
                           p: 1.8,
                           borderRadius: "14px",
-                          bgcolor: "rgba(24, 24, 27, 0.85)",
+                          bgcolor: "rgba(24, 61, 53, 0.85)",
                           backdropFilter: "blur(12px)",
                           border: "1px solid rgba(255, 255, 255, 0.15)",
                           color: "#FFFFFF",

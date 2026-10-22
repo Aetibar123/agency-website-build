@@ -36,13 +36,13 @@ const autoFaqs = [
 
 export default function AiAutomationPage({ service }: { service: ServiceDetail }) {
   return (
-    <Box sx={{ bgcolor: "#FAF9F5", color: "#111215", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", color: "#183D35", minHeight: "100vh" }}>
       {/* HERO SECTION */}
       <Box
         sx={{
           pt: { xs: 16, md: 22 },
           pb: { xs: 10, md: 14 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -57,15 +57,15 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                   px: 1.8,
                   py: 0.6,
                   borderRadius: "4px",
-                  bgcolor: "rgba(14, 116, 144, 0.08)",
-                  border: "1px solid rgba(14, 116, 144, 0.18)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.18)",
                 }}
               >
-                <SmartToyOutlinedIcon sx={{ color: "#0E7490", fontSize: 18 }} />
+                <SmartToyOutlinedIcon sx={{ color: "#3D765D", fontSize: 18 }} />
                 <Typography
                   variant="caption"
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 700,
                     letterSpacing: "0.14em",
                     fontSize: "0.78rem",
@@ -78,7 +78,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
               <Typography
                 variant="h1"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
                   fontWeight: 600,
                   letterSpacing: "-0.03em",
@@ -110,14 +110,14 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                   variant="contained"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    bgcolor: "#0E172A",
+                    bgcolor: "#183D35",
                     color: "#FFFFFF",
                     px: 3.5,
                     py: 1.4,
                     fontSize: "0.92rem",
                     fontWeight: 600,
                     borderRadius: "6px",
-                    boxShadow: "0 6px 20px rgba(14, 23, 42, 0.12)",
+                    boxShadow: "0 6px 20px rgba(24, 61, 53, 0.12)",
                     "&:hover": {
                       bgcolor: "#1E293B",
                       transform: "translateY(-2px)",
@@ -132,16 +132,16 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                   href="#methodology"
                   variant="outlined"
                   sx={{
-                    borderColor: "rgba(17, 18, 21, 0.2)",
-                    color: "#0E172A",
+                    borderColor: "rgba(24, 61, 53, 0.2)",
+                    color: "#183D35",
                     px: 3,
                     py: 1.4,
                     fontSize: "0.92rem",
                     fontWeight: 600,
                     borderRadius: "6px",
                     "&:hover": {
-                      borderColor: "#0E172A",
-                      bgcolor: "rgba(14, 23, 42, 0.04)",
+                      borderColor: "#183D35",
+                      bgcolor: "rgba(24, 61, 53, 0.04)",
                     },
                   }}
                 >
@@ -158,8 +158,8 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                   bgcolor: "#FFFFFF",
                   borderRadius: "12px",
                   p: 2,
-                  border: "1px solid rgba(17, 18, 21, 0.12)",
-                  boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+                  border: "1px solid rgba(24, 61, 53, 0.12)",
+                  boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
                 }}
               >
                 {/* AI Pipeline Architecture Monitor */}
@@ -167,7 +167,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                   sx={{
                     pb: 1.5,
                     mb: 1.5,
-                    borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+                    borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -176,7 +176,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontFamily: "monospace",
                       fontWeight: 800,
                       fontSize: "0.75rem",
@@ -224,30 +224,30 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                       position: "absolute",
                       inset: 0,
                       background:
-                        "linear-gradient(180deg, rgba(14, 23, 42, 0.1) 0%, rgba(14, 23, 42, 0.45) 100%)",
+                        "linear-gradient(180deg, rgba(24, 61, 53, 0.1) 0%, rgba(24, 61, 53, 0.45) 100%)",
                     }}
                   />
                 </Box>
 
                 {/* Real-time Telemetry Metrics */}
                 <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1.5, textAlign: "center" }}>
-                  <Box sx={{ p: 1, bgcolor: "#FAF9F5", borderRadius: "6px", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1, bgcolor: "#F7F7F2", borderRadius: "6px", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#5E6068", fontSize: "0.7rem", display: "block" }}>
                       CONFIDENCE
                     </Typography>
-                    <Typography sx={{ color: "#0E7490", fontWeight: 800, fontSize: "0.95rem", fontFamily: "monospace" }}>
+                    <Typography sx={{ color: "#3D765D", fontWeight: 800, fontSize: "0.95rem", fontFamily: "monospace" }}>
                       99.4%
                     </Typography>
                   </Box>
-                  <Box sx={{ p: 1, bgcolor: "#FAF9F5", borderRadius: "6px", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1, bgcolor: "#F7F7F2", borderRadius: "6px", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#5E6068", fontSize: "0.7rem", display: "block" }}>
                       LATENCY
                     </Typography>
-                    <Typography sx={{ color: "#0E7490", fontWeight: 800, fontSize: "0.95rem", fontFamily: "monospace" }}>
+                    <Typography sx={{ color: "#3D765D", fontWeight: 800, fontSize: "0.95rem", fontFamily: "monospace" }}>
                       &lt; 350ms
                     </Typography>
                   </Box>
-                  <Box sx={{ p: 1, bgcolor: "#FAF9F5", borderRadius: "6px", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1, bgcolor: "#F7F7F2", borderRadius: "6px", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#5E6068", fontSize: "0.7rem", display: "block" }}>
                       PRIVACY
                     </Typography>
@@ -274,7 +274,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
       </Box>
 
       {/* 3. INTERACTIVE SCOPE & TIMELINE ESTIMATOR */}
-      <Box sx={{ bgcolor: "#F2F0EB", py: { xs: 10, md: 16 }, borderTop: "1px solid rgba(17, 18, 21, 0.08)", borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+      <Box sx={{ bgcolor: "#F7F7F2", py: { xs: 10, md: 16 }, borderTop: "1px solid rgba(24, 61, 53, 0.08)", borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}>
         <Container maxWidth="xl">
           <InteractiveScopeEstimator
             serviceTitle={service.title}
@@ -286,9 +286,9 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
       {/* 4. TECH STACK & INDUSTRIES SERVED */}
       <Box
         sx={{
-          bgcolor: "#FAF9F5",
+          bgcolor: "#F7F7F2",
           py: { xs: 10, md: 16 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -297,7 +297,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -311,7 +311,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                 sx={{
                   fontWeight: 600,
                   mb: 3,
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
                   letterSpacing: "-0.02em",
                 }}
@@ -326,19 +326,19 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                       bgcolor: "#FFFFFF",
                       p: 2,
                       borderRadius: "8px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       display: "flex",
                       alignItems: "center",
                       gap: 1.2,
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        borderColor: "#0E7490",
+                        borderColor: "#3D765D",
                         transform: "translateX(3px)",
                       },
                     }}
                   >
-                    <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#0E7490" }} />
-                    <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", color: "#0E172A" }}>
+                    <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#3D765D" }} />
+                    <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", color: "#183D35" }}>
                       {tech}
                     </Typography>
                   </Box>
@@ -350,7 +350,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -364,7 +364,7 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                 sx={{
                   fontWeight: 600,
                   mb: 3,
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
                   letterSpacing: "-0.02em",
                 }}
@@ -379,16 +379,16 @@ export default function AiAutomationPage({ service }: { service: ServiceDetail }
                       bgcolor: "#FFFFFF",
                       p: 2.5,
                       borderRadius: "8px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
-                      borderLeft: "3px solid #0E7490",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
+                      borderLeft: "3px solid #3D765D",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        boxShadow: "0 6px 16px rgba(17, 18, 21, 0.04)",
+                        boxShadow: "0 6px 16px rgba(24, 61, 53, 0.04)",
                       },
                     }}
                   >
                     <Typography
-                      sx={{ color: "#0E172A", mb: 0.5, fontWeight: 700, fontSize: "1.05rem" }}
+                      sx={{ color: "#183D35", mb: 0.5, fontWeight: 700, fontSize: "1.05rem" }}
                     >
                       {domain.name}
                     </Typography>

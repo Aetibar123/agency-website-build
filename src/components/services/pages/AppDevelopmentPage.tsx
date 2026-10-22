@@ -38,13 +38,13 @@ const appDevFaqs = [
 
 export default function AppDevelopmentPage({ service }: { service: ServiceDetail }) {
   return (
-    <Box sx={{ bgcolor: "#FAF9F5", color: "#111215", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", color: "#183D35", minHeight: "100vh" }}>
       {/* HERO SECTION */}
       <Box
         sx={{
           pt: { xs: 16, md: 22 },
           pb: { xs: 10, md: 14 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -59,15 +59,15 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                   px: 1.8,
                   py: 0.6,
                   borderRadius: "4px",
-                  bgcolor: "rgba(14, 116, 144, 0.08)",
-                  border: "1px solid rgba(14, 116, 144, 0.18)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.18)",
                 }}
               >
-                <SmartphoneIcon sx={{ color: "#0E7490", fontSize: 18 }} />
+                <SmartphoneIcon sx={{ color: "#3D765D", fontSize: 18 }} />
                 <Typography
                   variant="caption"
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 700,
                     letterSpacing: "0.14em",
                     fontSize: "0.78rem",
@@ -80,7 +80,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
               <Typography
                 variant="h1"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.2rem" },
                   fontWeight: 600,
                   letterSpacing: "-0.03em",
@@ -107,14 +107,14 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3, alignItems: "center", mb: 4 }}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <AppleIcon sx={{ fontSize: 24, color: "#0E172A" }} />
-                  <Typography sx={{ fontWeight: 600, fontSize: "0.9rem", color: "#0E172A" }}>
+                  <AppleIcon sx={{ fontSize: 24, color: "#183D35" }} />
+                  <Typography sx={{ fontWeight: 600, fontSize: "0.9rem", color: "#183D35" }}>
                     iOS Ready
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <AndroidIcon sx={{ fontSize: 24, color: "#0E7490" }} />
-                  <Typography sx={{ fontWeight: 600, fontSize: "0.9rem", color: "#0E172A" }}>
+                  <AndroidIcon sx={{ fontSize: 24, color: "#3D765D" }} />
+                  <Typography sx={{ fontWeight: 600, fontSize: "0.9rem", color: "#183D35" }}>
                     Android Ready
                   </Typography>
                 </Box>
@@ -127,14 +127,14 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                   variant="contained"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    bgcolor: "#0E172A",
+                    bgcolor: "#183D35",
                     color: "#FFFFFF",
                     px: 3.5,
                     py: 1.4,
                     fontSize: "0.92rem",
                     fontWeight: 600,
                     borderRadius: "6px",
-                    boxShadow: "0 6px 20px rgba(14, 23, 42, 0.12)",
+                    boxShadow: "0 6px 20px rgba(24, 61, 53, 0.12)",
                     "&:hover": {
                       bgcolor: "#1E293B",
                       transform: "translateY(-2px)",
@@ -149,16 +149,16 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                   href="#methodology"
                   variant="outlined"
                   sx={{
-                    borderColor: "rgba(17, 18, 21, 0.2)",
-                    color: "#0E172A",
+                    borderColor: "rgba(24, 61, 53, 0.2)",
+                    color: "#183D35",
                     px: 3,
                     py: 1.4,
                     fontSize: "0.92rem",
                     fontWeight: 600,
                     borderRadius: "6px",
                     "&:hover": {
-                      borderColor: "#0E172A",
-                      bgcolor: "rgba(14, 23, 42, 0.04)",
+                      borderColor: "#183D35",
+                      bgcolor: "rgba(24, 61, 53, 0.04)",
                     },
                   }}
                 >
@@ -176,8 +176,8 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                   bgcolor: "#FFFFFF",
                   borderRadius: "28px",
                   p: 1.5,
-                  border: "2px solid rgba(17, 18, 21, 0.14)",
-                  boxShadow: "0 24px 50px rgba(17, 18, 21, 0.08)",
+                  border: "2px solid rgba(24, 61, 53, 0.14)",
+                  boxShadow: "0 24px 50px rgba(24, 61, 53, 0.08)",
                 }}
               >
                 {/* Mobile Top Speaker & Camera Notch */}
@@ -194,7 +194,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                       width: 72,
                       height: 5,
                       borderRadius: "3px",
-                      bgcolor: "rgba(17, 18, 21, 0.15)",
+                      bgcolor: "rgba(24, 61, 53, 0.15)",
                     }}
                   />
                 </Box>
@@ -221,7 +221,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                       position: "absolute",
                       inset: 0,
                       background:
-                        "linear-gradient(180deg, rgba(14, 23, 42, 0.05) 0%, rgba(14, 23, 42, 0.4) 100%)",
+                        "linear-gradient(180deg, rgba(24, 61, 53, 0.05) 0%, rgba(24, 61, 53, 0.4) 100%)",
                     }}
                   />
 
@@ -236,14 +236,14 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                       backdropFilter: "blur(6px)",
                       p: 1.5,
                       borderRadius: "8px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                     }}
                   >
                     <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 0.5 }}>
                       <Typography
                         variant="caption"
                         sx={{
-                          color: "#0E7490",
+                          color: "#3D765D",
                           fontWeight: 800,
                           fontSize: "0.72rem",
                           letterSpacing: "0.06em",
@@ -265,7 +265,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                     </Box>
                     <Typography
                       sx={{
-                        color: "#0E172A",
+                        color: "#183D35",
                         fontSize: "0.78rem",
                         fontWeight: 600,
                         lineHeight: 1.3,
@@ -293,7 +293,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
       </Box>
 
       {/* 3. INTERACTIVE SCOPE & TIMELINE ESTIMATOR */}
-      <Box sx={{ bgcolor: "#F2F0EB", py: { xs: 10, md: 16 }, borderTop: "1px solid rgba(17, 18, 21, 0.08)", borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+      <Box sx={{ bgcolor: "#F7F7F2", py: { xs: 10, md: 16 }, borderTop: "1px solid rgba(24, 61, 53, 0.08)", borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}>
         <Container maxWidth="xl">
           <InteractiveScopeEstimator
             serviceTitle={service.title}
@@ -305,9 +305,9 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
       {/* 4. TECH STACK & INDUSTRIES SERVED */}
       <Box
         sx={{
-          bgcolor: "#FAF9F5",
+          bgcolor: "#F7F7F2",
           py: { xs: 10, md: 16 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -316,7 +316,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -330,7 +330,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                 sx={{
                   fontWeight: 600,
                   mb: 3,
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
                   letterSpacing: "-0.02em",
                 }}
@@ -345,19 +345,19 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                       bgcolor: "#FFFFFF",
                       p: 2,
                       borderRadius: "8px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       display: "flex",
                       alignItems: "center",
                       gap: 1.2,
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        borderColor: "#0E7490",
+                        borderColor: "#3D765D",
                         transform: "translateX(3px)",
                       },
                     }}
                   >
-                    <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#0E7490" }} />
-                    <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", color: "#0E172A" }}>
+                    <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#3D765D" }} />
+                    <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", color: "#183D35" }}>
                       {tech}
                     </Typography>
                   </Box>
@@ -369,7 +369,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -383,7 +383,7 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                 sx={{
                   fontWeight: 600,
                   mb: 3,
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.8rem", md: "2.3rem" },
                   letterSpacing: "-0.02em",
                 }}
@@ -398,16 +398,16 @@ export default function AppDevelopmentPage({ service }: { service: ServiceDetail
                       bgcolor: "#FFFFFF",
                       p: 2.5,
                       borderRadius: "8px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
-                      borderLeft: "3px solid #0E7490",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
+                      borderLeft: "3px solid #3D765D",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        boxShadow: "0 6px 16px rgba(17, 18, 21, 0.04)",
+                        boxShadow: "0 6px 16px rgba(24, 61, 53, 0.04)",
                       },
                     }}
                   >
                     <Typography
-                      sx={{ color: "#0E172A", mb: 0.5, fontWeight: 700, fontSize: "1.05rem" }}
+                      sx={{ color: "#183D35", mb: 0.5, fontWeight: 700, fontSize: "1.05rem" }}
                     >
                       {domain.name}
                     </Typography>

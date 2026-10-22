@@ -143,37 +143,37 @@ const solutionsCapabilities = [
   {
     title: "Lead Management Systems",
     tagline: "Capture, organize, assign, and track leads in one place",
-    icon: <HubOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <HubOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     desc: "A centralized triage queue that consolidates prospect inquiries across all incoming channels. Automated routing assigns ownership to specific team members, prevents duplicate records, and tracks response progress from first touch to qualification.",
   },
   {
     title: "Custom CRM Software",
     tagline: "Customer profiles built around your actual data model",
-    icon: <PeopleAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <PeopleAltOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     desc: "Instead of wrestling with generic CRM schemas, we build customer record views tracking exactly the information your business needs: interaction timelines, communication logs, quotation history, project notes, and commercial status.",
   },
   {
     title: "Sales Pipeline Management",
     tagline: "Visual stage tracking from new lead to closed deal",
-    icon: <ViewKanbanOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <ViewKanbanOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     desc: "Clear visual pipeline boards showing every deal's exact stage: New Inquiry, Qualified, Scope & Proposal, Active Follow-Up, In Negotiation, and Won or Lost. Sales reps update deals with one click, giving management real-time visibility.",
   },
   {
     title: "Automated Follow-Up Sequences",
     tagline: "Scheduled reminders that prevent proposals from going cold",
-    icon: <NotificationsActiveOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <NotificationsActiveOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     desc: "When an estimate or proposal is sent, automated reminder workflows prompt sales reps to follow up at scheduled intervals. Automated confirmation emails give prospects instant reassurance while keeping your team accountable.",
   },
   {
     title: "Multi-Channel Lead Capture",
     tagline: "Native webhook and API connections across channels",
-    icon: <SendOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SendOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     desc: "Connect website forms, WhatsApp Business, customer email accounts, phone logs, and third-party advertising leads directly into your CRM database via real-time webhooks, eliminating manual copy-pasting from inboxes.",
   },
   {
     title: "Customer & Client Portals",
     tagline: "Transparent document exchange and milestone tracking",
-    icon: <ContactSupportOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <ContactSupportOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     desc: "For service companies and recurring client relationships, secure web portals allow clients to review submitted briefs, inspect milestone statuses, download project deliverables, and exchange documents without endless email chains.",
   },
 ];
@@ -265,42 +265,42 @@ const workflowSteps = [
 const supportedIntegrations = [
   {
     category: "Website & Landing Page Forms",
-    icon: <SendOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SendOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Next.js forms, WordPress webhooks, landing pages, and interactive qualification forms feeding leads directly into your database.",
   },
   {
     category: "WhatsApp Business Integration",
-    icon: <ChatOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <ChatOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Direct WhatsApp Business API webhook listeners, click-to-chat inquiry tracking, and automated response notifications.",
   },
   {
     category: "Email Infrastructure",
-    icon: <EmailOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <EmailOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Transactional email notifications via SendGrid, Resend, or SMTP, with inbound email parsing and automated customer confirmations.",
   },
   {
     category: "Calendar & Scheduling",
-    icon: <CalendarMonthOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <CalendarMonthOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Direct synchronization with Calendly, Cal.com, or Google Calendar to schedule consultations without back-and-forth emails.",
   },
   {
     category: "Payment & Invoicing Systems",
-    icon: <PaymentOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <PaymentOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Stripe, Razorpay, or custom invoicing webhooks connecting closed deals directly to initial deposit collection and billing.",
   },
   {
     category: "Internal Operations & ERPs",
-    icon: <StorageOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <StorageOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Seamless synchronization with PostgreSQL databases, internal dispatch systems, and operational business software.",
   },
   {
     category: "Analytics & Pipeline Reporting",
-    icon: <InsightsOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <InsightsOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Real-time reporting on lead source attribution, stage progression speed, and sales conversion rates across your pipeline.",
   },
   {
     category: "Security & Role Access",
-    icon: <SecurityOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SecurityOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
     desc: "Granular role-based permissions (RBAC) ensuring sales representatives, managers, and administrators access only relevant records.",
   },
 ];
@@ -309,22 +309,22 @@ const technicalFoundations = [
   {
     title: "Next.js & TypeScript Architecture",
     desc: "Modern, type-safe fullstack web application delivering sub-second page loads, responsive design, and intuitive administrative interfaces.",
-    icon: <SpeedOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SpeedOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "PostgreSQL & Supabase Data Layer",
     desc: "Robust relational databases configured with strict relational integrity, indexed queries, and automated daily backups.",
-    icon: <StorageOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <StorageOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "REST & Webhook Event Pipelines",
     desc: "Real-time webhook handlers that ingest incoming leads instantly and distribute notifications across your team without delay.",
-    icon: <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "Role-Based Access Control (RBAC)",
     desc: "Fine-grained permissions segregating administrative settings, sensitive client data, and individual sales queues.",
-    icon: <SecurityOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SecurityOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
 ];
 
@@ -451,7 +451,7 @@ export default function CrmLeadManagementPage() {
           pt: { xs: 16, sm: 18, md: 22 },
           pb: { xs: 10, md: 14 },
           background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+            "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.09) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
           overflow: "hidden",
         }}
       >
@@ -460,7 +460,7 @@ export default function CrmLeadManagementPage() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
             maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
             WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
@@ -479,9 +479,9 @@ export default function CrmLeadManagementPage() {
                 px: 2.2,
                 py: 0.8,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: 3.5,
               }}
@@ -491,8 +491,8 @@ export default function CrmLeadManagementPage() {
                   width: 8,
                   height: 8,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#4D8F72",
+                  boxShadow: "0 0 10px #4D8F72",
                 }}
               />
               <Typography
@@ -500,7 +500,7 @@ export default function CrmLeadManagementPage() {
                   fontSize: { xs: "0.75rem", sm: "0.825rem" },
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -514,7 +514,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.035em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -531,7 +531,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.3rem", sm: "1.6rem", md: "1.9rem" },
                 fontWeight: 500,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.02em",
                 lineHeight: 1.3,
                 textWrap: "balance",
@@ -543,7 +543,7 @@ export default function CrmLeadManagementPage() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -586,18 +586,18 @@ export default function CrmLeadManagementPage() {
                   size="large"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     px: { xs: 3.5, sm: 4.5 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 700,
                     fontSize: "0.95rem",
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
+                    boxShadow: "0 10px 28px rgba(61, 118, 93, 0.35)",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       transform: "translateY(-2px)",
-                      boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
+                      boxShadow: "0 14px 34px rgba(61, 118, 93, 0.5)",
                     },
                   }}
                 >
@@ -609,18 +609,18 @@ export default function CrmLeadManagementPage() {
                 <Button
                   variant="outlined"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     px: { xs: 3, sm: 4 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: "0.95rem",
-                    border: "1px solid rgba(24, 24, 27, 0.18)",
+                    border: "1px solid rgba(24, 61, 53, 0.18)",
                     bgcolor: "rgba(255, 255, 255, 0.8)",
                     backdropFilter: "blur(8px)",
                     "&:hover": {
-                      bgcolor: "#FAF8F5",
-                      borderColor: "rgba(24, 24, 27, 0.35)",
+                      bgcolor: "#F7F7F2",
+                      borderColor: "rgba(24, 61, 53, 0.35)",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -637,18 +637,18 @@ export default function CrmLeadManagementPage() {
               sx={{
                 p: 2.5,
                 borderRadius: "20px",
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
                 textAlign: "center",
               }}
             >
               {telemetryHighlights.map((stat, idx) => (
                 <Grid size={{ xs: 6, sm: 3 }} key={idx}>
                   <Box sx={{ p: 1 }}>
-                    <Typography sx={{ fontSize: { xs: "1.25rem", sm: "1.45rem" }, fontWeight: 700, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: { xs: "1.25rem", sm: "1.45rem" }, fontWeight: 700, color: "#183D35" }}>
                       {stat.value}
                     </Typography>
-                    <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", mb: 0.5 }}>
                       {stat.label}
                     </Typography>
                     <Typography sx={{ fontSize: "0.75rem", color: "#71717A" }}>
@@ -674,19 +674,19 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <WarningAmberOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <WarningAmberOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 THE OPERATIONAL BOTTLENECK
@@ -698,7 +698,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -720,17 +720,17 @@ export default function CrmLeadManagementPage() {
                   sx={{
                     p: { xs: 3.5, sm: 4 },
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
@@ -739,7 +739,7 @@ export default function CrmLeadManagementPage() {
                       sx={{
                         fontSize: "0.8rem",
                         fontWeight: 800,
-                        color: "#EA580C",
+                        color: "#3D765D",
                         fontFamily: "monospace",
                         letterSpacing: "0.06em",
                         mb: 1.5,
@@ -752,7 +752,7 @@ export default function CrmLeadManagementPage() {
                       sx={{
                         fontSize: "1.25rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         lineHeight: 1.35,
                         mb: 2,
                       }}
@@ -766,7 +766,7 @@ export default function CrmLeadManagementPage() {
                   <Box
                     sx={{
                       pt: 2,
-                      borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                      borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                       display: "flex",
                       alignItems: "center",
                       gap: 1,
@@ -777,10 +777,10 @@ export default function CrmLeadManagementPage() {
                         width: 6,
                         height: 6,
                         borderRadius: "50%",
-                        bgcolor: "#EA580C",
+                        bgcolor: "#3D765D",
                       }}
                     />
-                    <Typography sx={{ fontSize: "0.825rem", fontWeight: 600, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "0.825rem", fontWeight: 600, color: "#183D35" }}>
                       {item.impact}
                     </Typography>
                   </Box>
@@ -792,15 +792,15 @@ export default function CrmLeadManagementPage() {
       </Box>
 
       {/* 3. HONEST PERSPECTIVE: NOT EVERY BUSINESS NEEDS A COMPLEX CRM */}
-      <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: "#FAF8F5" }}>
+      <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: "#F7F7F2" }}>
         <Container maxWidth="lg">
           <Box
             sx={{
               p: { xs: 4, sm: 6 },
               borderRadius: "24px",
               bgcolor: "#FFFFFF",
-              border: "1px solid rgba(249, 115, 22, 0.25)",
-              boxShadow: "0 10px 30px rgba(24, 24, 27, 0.04)",
+              border: "1px solid rgba(61, 118, 93, 0.25)",
+              boxShadow: "0 10px 30px rgba(24, 61, 53, 0.04)",
               position: "relative",
               overflow: "hidden",
             }}
@@ -813,8 +813,8 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                color: "#EA580C",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                color: "#3D765D",
                 fontWeight: 700,
                 fontSize: "0.75rem",
                 letterSpacing: "0.06em",
@@ -831,7 +831,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2rem", md: "2.3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -858,15 +858,15 @@ export default function CrmLeadManagementPage() {
               sx={{
                 p: 2.5,
                 borderRadius: "16px",
-                bgcolor: "rgba(249, 115, 22, 0.06)",
-                border: "1px solid rgba(249, 115, 22, 0.2)",
+                bgcolor: "rgba(61, 118, 93, 0.06)",
+                border: "1px solid rgba(61, 118, 93, 0.2)",
                 display: "inline-flex",
                 alignItems: "center",
                 gap: 1.5,
               }}
             >
-              <DoneAllOutlinedIcon sx={{ color: "#EA580C", fontSize: 22 }} />
-              <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+              <DoneAllOutlinedIcon sx={{ color: "#3D765D", fontSize: 22 }} />
+              <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                 Our goal is the right system for your business—not the biggest system available.
               </Typography>
             </Box>
@@ -886,8 +886,8 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -897,7 +897,7 @@ export default function CrmLeadManagementPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 CORE CAPABILITIES
@@ -909,7 +909,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -931,17 +931,17 @@ export default function CrmLeadManagementPage() {
                   sx={{
                     p: { xs: 3.5, sm: 4.5 },
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.06)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.06)",
                     },
                   }}
                 >
@@ -953,7 +953,7 @@ export default function CrmLeadManagementPage() {
                           height: 48,
                           borderRadius: "12px",
                           bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(249, 115, 22, 0.2)",
+                          border: "1px solid rgba(61, 118, 93, 0.2)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -963,10 +963,10 @@ export default function CrmLeadManagementPage() {
                         {item.icon}
                       </Box>
                       <Box>
-                        <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#18181B", lineHeight: 1.3 }}>
+                        <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#183D35", lineHeight: 1.3 }}>
                           {item.title}
                         </Typography>
-                        <Typography sx={{ fontSize: "0.78rem", color: "#EA580C", fontWeight: 700, mt: 0.25 }}>
+                        <Typography sx={{ fontSize: "0.78rem", color: "#3D765D", fontWeight: 700, mt: 0.25 }}>
                           {item.tagline}
                         </Typography>
                       </Box>
@@ -983,7 +983,7 @@ export default function CrmLeadManagementPage() {
       </Box>
 
       {/* 5. DEEP DIVE: UNIFIED MULTI-CHANNEL INTAKE */}
-      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Grid container spacing={6} sx={{ alignItems: "center" }}>
             <Grid size={{ xs: 12, lg: 6 }}>
@@ -995,19 +995,19 @@ export default function CrmLeadManagementPage() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
-                <HubOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                <HubOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                 <Typography
                   sx={{
                     fontSize: "0.75rem",
                     fontWeight: 700,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                   }}
                 >
                   INTAKE ARCHITECTURE
@@ -1019,7 +1019,7 @@ export default function CrmLeadManagementPage() {
                 sx={{
                   fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.18, md: 1.2 },
                   textWrap: "balance",
@@ -1043,8 +1043,8 @@ export default function CrmLeadManagementPage() {
                   "Complete source attribution: Track whether leads originated from organic search, ads, or direct referral.",
                 ].map((point, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                    <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 20, mt: 0.3, flexShrink: 0 }} />
-                    <Typography sx={{ fontSize: "0.925rem", color: "#18181B", fontWeight: 500, lineHeight: 1.6 }}>
+                    <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 20, mt: 0.3, flexShrink: 0 }} />
+                    <Typography sx={{ fontSize: "0.925rem", color: "#183D35", fontWeight: 500, lineHeight: 1.6 }}>
                       {point}
                     </Typography>
                   </Box>
@@ -1059,15 +1059,15 @@ export default function CrmLeadManagementPage() {
                   p: { xs: 3.5, sm: 4.5 },
                   borderRadius: "24px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 14px 40px rgba(24, 24, 27, 0.05)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 14px 40px rgba(24, 61, 53, 0.05)",
                 }}
               >
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     fontWeight: 700,
-                    color: "#EA580C",
+                    color: "#3D765D",
                     textTransform: "uppercase",
                     letterSpacing: "0.06em",
                     mb: 3,
@@ -1082,20 +1082,20 @@ export default function CrmLeadManagementPage() {
                     sx={{
                       p: 2,
                       borderRadius: "14px",
-                      bgcolor: "#FAF8F5",
-                      border: "1px dashed rgba(249, 115, 22, 0.35)",
+                      bgcolor: "#F7F7F2",
+                      border: "1px dashed rgba(61, 118, 93, 0.35)",
                     }}
                   >
-                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", mb: 0.5 }}>
                       INBOUND CHANNELS
                     </Typography>
-                    <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#183D35" }}>
                       Website Forms &bull; WhatsApp Business &bull; Inbound Email &bull; Phone Logs
                     </Typography>
                   </Box>
 
                   {/* Flow Arrow */}
-                  <Typography sx={{ textAlign: "center", color: "#EA580C", fontWeight: 800, fontSize: "1.1rem" }}>
+                  <Typography sx={{ textAlign: "center", color: "#3D765D", fontWeight: 800, fontSize: "1.1rem" }}>
                     &darr;
                   </Typography>
 
@@ -1104,20 +1104,20 @@ export default function CrmLeadManagementPage() {
                     sx={{
                       p: 2,
                       borderRadius: "14px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.3)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.3)",
                     }}
                   >
-                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", mb: 0.5 }}>
                       CENTRAL LEAD INBOX
                     </Typography>
-                    <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#183D35" }}>
                       Instant normalization, deduplication, and initial high-intent scoring
                     </Typography>
                   </Box>
 
                   {/* Flow Arrow */}
-                  <Typography sx={{ textAlign: "center", color: "#EA580C", fontWeight: 800, fontSize: "1.1rem" }}>
+                  <Typography sx={{ textAlign: "center", color: "#3D765D", fontWeight: 800, fontSize: "1.1rem" }}>
                     &darr;
                   </Typography>
 
@@ -1126,20 +1126,20 @@ export default function CrmLeadManagementPage() {
                     sx={{
                       p: 2,
                       borderRadius: "14px",
-                      bgcolor: "#FAF8F5",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      bgcolor: "#F7F7F2",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
                     }}
                   >
                     <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", mb: 0.5 }}>
                       ASSIGNMENT &amp; QUALIFICATION
                     </Typography>
-                    <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#183D35" }}>
                       Designated team member ownership + structured scope assessment
                     </Typography>
                   </Box>
 
                   {/* Flow Arrow */}
-                  <Typography sx={{ textAlign: "center", color: "#EA580C", fontWeight: 800, fontSize: "1.1rem" }}>
+                  <Typography sx={{ textAlign: "center", color: "#3D765D", fontWeight: 800, fontSize: "1.1rem" }}>
                     &darr;
                   </Typography>
 
@@ -1148,11 +1148,11 @@ export default function CrmLeadManagementPage() {
                     sx={{
                       p: 2,
                       borderRadius: "14px",
-                      bgcolor: "#18181B",
+                      bgcolor: "#183D35",
                       color: "#FFFFFF",
                     }}
                   >
-                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#FB923C", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#62A486", mb: 0.5 }}>
                       SALES PIPELINE &amp; AUTOMATED FOLLOW-UPS
                     </Typography>
                     <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#FFFFFF" }}>
@@ -1178,19 +1178,19 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <ViewKanbanOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <ViewKanbanOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 SALES VISIBILITY
@@ -1202,7 +1202,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1224,23 +1224,23 @@ export default function CrmLeadManagementPage() {
                   sx={{
                     p: 3.5,
                     borderRadius: "18px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       bgcolor: "#FFFFFF",
-                      boxShadow: "0 10px 25px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 10px 25px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
                   <Box>
                     <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2 }}>
-                      <Typography sx={{ fontSize: "1.25rem", fontWeight: 800, color: "#EA580C", fontFamily: "monospace" }}>
+                      <Typography sx={{ fontSize: "1.25rem", fontWeight: 800, color: "#3D765D", fontFamily: "monospace" }}>
                         STAGE {stage.num}
                       </Typography>
                       <Box
@@ -1248,8 +1248,8 @@ export default function CrmLeadManagementPage() {
                           px: 1.5,
                           py: 0.4,
                           borderRadius: "9999px",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
-                          color: "#EA580C",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
+                          color: "#3D765D",
                           fontSize: "0.725rem",
                           fontWeight: 700,
                           textTransform: "uppercase",
@@ -1264,7 +1264,7 @@ export default function CrmLeadManagementPage() {
                       sx={{
                         fontSize: "1.25rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         mb: 1.5,
                       }}
                     >
@@ -1283,7 +1283,7 @@ export default function CrmLeadManagementPage() {
       </Box>
 
       {/* 7. REALISTIC AUTOMATED FOLLOW-UPS & ALERTS */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="lg">
           <Box sx={{ maxWidth: 840, mb: { xs: 6, md: 8 } }}>
             <Box
@@ -1294,19 +1294,19 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <NotificationsActiveOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <NotificationsActiveOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 PRACTICAL AUTOMATION
@@ -1318,7 +1318,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1358,11 +1358,11 @@ export default function CrmLeadManagementPage() {
                     p: 4,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
-                  <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                  <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                     {feature.title}
                   </Typography>
                   <Typography sx={{ fontSize: "0.925rem", color: "#52525B", lineHeight: 1.75 }}>
@@ -1387,8 +1387,8 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1398,7 +1398,7 @@ export default function CrmLeadManagementPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 PRACTICAL WORKFLOW
@@ -1410,7 +1410,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1432,31 +1432,31 @@ export default function CrmLeadManagementPage() {
                   sx={{
                     p: 3.5,
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       bgcolor: "#FFFFFF",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
                   <Box>
                     <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2 }}>
-                      <Typography sx={{ fontSize: "1.25rem", fontWeight: 800, color: "#EA580C", fontFamily: "monospace" }}>
+                      <Typography sx={{ fontSize: "1.25rem", fontWeight: 800, color: "#3D765D", fontFamily: "monospace" }}>
                         {ws.step}
                       </Typography>
                       <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                         {ws.action}
                       </Typography>
                     </Box>
-                    <Typography variant="h3" sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                    <Typography variant="h3" sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                       {ws.title}
                     </Typography>
                     <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.7 }}>
@@ -1471,7 +1471,7 @@ export default function CrmLeadManagementPage() {
       </Box>
 
       {/* 9. SUPPORTED INTEGRATIONS */}
-      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 840, mb: { xs: 6, md: 8 } }}>
             <Box
@@ -1482,19 +1482,19 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 ECOSYSTEM CONNECTIVITY
@@ -1506,7 +1506,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1529,15 +1529,15 @@ export default function CrmLeadManagementPage() {
                     p: 3.5,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 10px 25px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 10px 25px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
@@ -1546,8 +1546,8 @@ export default function CrmLeadManagementPage() {
                       width: 44,
                       height: 44,
                       borderRadius: "12px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.2)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -1556,7 +1556,7 @@ export default function CrmLeadManagementPage() {
                   >
                     {item.icon}
                   </Box>
-                  <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B", mb: 1.5, lineHeight: 1.35 }}>
+                  <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35", mb: 1.5, lineHeight: 1.35 }}>
                     {item.category}
                   </Typography>
                   <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.7 }}>
@@ -1576,7 +1576,7 @@ export default function CrmLeadManagementPage() {
             sx={{
               p: { xs: 4, sm: 6 },
               borderRadius: "24px",
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
               color: "#FFFFFF",
               border: "1px solid rgba(255, 255, 255, 0.12)",
               boxShadow: "0 20px 50px rgba(0, 0, 0, 0.4)",
@@ -1591,7 +1591,7 @@ export default function CrmLeadManagementPage() {
                 right: "-20%",
                 width: "350px",
                 height: "350px",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.22) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.22) 0%, transparent 70%)",
                 filter: "blur(50px)",
                 pointerEvents: "none",
               }}
@@ -1603,7 +1603,7 @@ export default function CrmLeadManagementPage() {
                   sx={{
                     fontSize: "0.78rem",
                     fontWeight: 700,
-                    color: "#FB923C",
+                    color: "#62A486",
                     textTransform: "uppercase",
                     letterSpacing: "0.08em",
                   }}
@@ -1615,9 +1615,9 @@ export default function CrmLeadManagementPage() {
                     px: 1.5,
                     py: 0.3,
                     borderRadius: "9999px",
-                    bgcolor: "rgba(251, 146, 60, 0.15)",
-                    border: "1px solid rgba(251, 146, 60, 0.3)",
-                    color: "#FB923C",
+                    bgcolor: "rgba(216, 229, 213, 0.15)",
+                    border: "1px solid rgba(216, 229, 213, 0.3)",
+                    color: "#62A486",
                     fontSize: "0.7rem",
                     fontWeight: 700,
                   }}
@@ -1660,7 +1660,7 @@ export default function CrmLeadManagementPage() {
                   variant="contained"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     px: 3.5,
                     py: 1.4,
@@ -1668,7 +1668,7 @@ export default function CrmLeadManagementPage() {
                     fontSize: "0.9rem",
                     borderRadius: "9999px",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                     },
                   }}
                 >
@@ -1681,7 +1681,7 @@ export default function CrmLeadManagementPage() {
       </Box>
 
       {/* 11. TECHNICAL FOUNDATION */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="lg">
           <Box sx={{ maxWidth: 840, mb: { xs: 6, md: 8 } }}>
             <Box
@@ -1692,19 +1692,19 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <StorageOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <StorageOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 ENGINEERING FOUNDATIONS
@@ -1716,7 +1716,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1739,7 +1739,7 @@ export default function CrmLeadManagementPage() {
                     p: 3.5,
                     borderRadius: "18px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
@@ -1749,7 +1749,7 @@ export default function CrmLeadManagementPage() {
                         width: 40,
                         height: 40,
                         borderRadius: "10px",
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -1757,7 +1757,7 @@ export default function CrmLeadManagementPage() {
                     >
                       {tech.icon}
                     </Box>
-                    <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35" }}>
                       {tech.title}
                     </Typography>
                   </Box>
@@ -1783,8 +1783,8 @@ export default function CrmLeadManagementPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1794,7 +1794,7 @@ export default function CrmLeadManagementPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 FAQS &amp; CLARIFICATIONS
@@ -1806,7 +1806,7 @@ export default function CrmLeadManagementPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1826,13 +1826,13 @@ export default function CrmLeadManagementPage() {
       </Box>
 
       {/* 13. INTERNAL LINKING TO RELATED SOLUTION DOMAINS */}
-      <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 8, md: 12 }, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 700, mb: 5 }}>
-            <Typography sx={{ fontSize: "0.78rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 1 }}>
+            <Typography sx={{ fontSize: "0.78rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.06em", mb: 1 }}>
               EXPLORE CONNECTED SOLUTIONS
             </Typography>
-            <Typography variant="h3" sx={{ fontSize: "1.6rem", fontWeight: 600, color: "#18181B" }}>
+            <Typography variant="h3" sx={{ fontSize: "1.6rem", fontWeight: 600, color: "#183D35" }}>
               How Aetibar&apos;s 4 Solution Domains Connect
             </Typography>
           </Box>
@@ -1871,31 +1871,31 @@ export default function CrmLeadManagementPage() {
                       p: 3,
                       borderRadius: "16px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "#EA580C",
+                        borderColor: "#3D765D",
                         transform: "translateY(-3px)",
-                        boxShadow: "0 10px 25px rgba(24, 24, 27, 0.05)",
+                        boxShadow: "0 10px 25px rgba(24, 61, 53, 0.05)",
                       },
                     }}
                   >
                     <Box>
-                      <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", mb: 1 }}>
+                      <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase", mb: 1 }}>
                         {related.badge}
                       </Typography>
-                      <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B", mb: 1.25 }}>
+                      <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35", mb: 1.25 }}>
                         {related.title}
                       </Typography>
                       <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.6 }}>
                         {related.desc}
                       </Typography>
                     </Box>
-                    <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 2.5, color: "#EA580C" }}>
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 2.5, color: "#3D765D" }}>
                       <Typography sx={{ fontSize: "0.825rem", fontWeight: 700 }}>Explore</Typography>
                       <ArrowForwardIcon sx={{ fontSize: 14 }} />
                     </Box>

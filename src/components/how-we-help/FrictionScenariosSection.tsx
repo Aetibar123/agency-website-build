@@ -145,10 +145,10 @@ export default function FrictionScenariosSection() {
       id="business-transformations"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
-        borderTop: "1px solid rgba(24, 24, 27, 0.06)",
-        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+        borderTop: "1px solid rgba(24, 61, 53, 0.06)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
       }}
     >
       <Container maxWidth="xl">
@@ -169,8 +169,8 @@ export default function FrictionScenariosSection() {
                   px: 2.2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(234, 88, 12, 0.08)",
-                  border: "1px solid rgba(234, 88, 12, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -178,14 +178,14 @@ export default function FrictionScenariosSection() {
                   component={motion.div}
                   animate={{ scale: [1, 1.3, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#EA580C" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#3D765D" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                   }}
                 >
@@ -206,7 +206,7 @@ export default function FrictionScenariosSection() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
@@ -220,7 +220,7 @@ export default function FrictionScenariosSection() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -270,16 +270,16 @@ export default function FrictionScenariosSection() {
                     borderRadius: { xs: "18px", md: "22px" },
                     bgcolor: "#FFFFFF",
                     border: isExpanded
-                      ? "1.5px solid #EA580C"
-                      : "1px solid rgba(24, 24, 27, 0.09)",
+                      ? "1.5px solid #3D765D"
+                      : "1px solid rgba(24, 61, 53, 0.09)",
                     boxShadow: isExpanded
-                      ? "0 20px 48px -10px rgba(234, 88, 12, 0.14), 0 0 0 1px rgba(234, 88, 12, 0.1)"
-                      : "0 4px 18px rgba(24, 24, 27, 0.03)",
+                      ? "0 20px 48px -10px rgba(61, 118, 93, 0.14), 0 0 0 1px rgba(61, 118, 93, 0.1)"
+                      : "0 4px 18px rgba(24, 61, 53, 0.03)",
                     overflow: "hidden",
                     transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                     "&:hover": {
-                      borderColor: isExpanded ? "#EA580C" : "rgba(234, 88, 12, 0.35)",
-                      boxShadow: "0 12px 32px -8px rgba(24, 24, 27, 0.08)",
+                      borderColor: isExpanded ? "#3D765D" : "rgba(61, 118, 93, 0.35)",
+                      boxShadow: "0 12px 32px -8px rgba(24, 61, 53, 0.08)",
                     },
                   }}
                 >
@@ -296,7 +296,7 @@ export default function FrictionScenariosSection() {
                       },
                       alignItems: "center",
                       gap: { xs: 2, md: 3.5 },
-                      bgcolor: isExpanded ? "rgba(249, 115, 22, 0.02)" : "transparent",
+                      bgcolor: isExpanded ? "rgba(61, 118, 93, 0.02)" : "transparent",
                       transition: "background-color 0.2s ease",
                       userSelect: "none",
                     }}
@@ -307,11 +307,11 @@ export default function FrictionScenariosSection() {
                         width: { xs: 46, sm: 52 },
                         height: { xs: 46, sm: 52 },
                         borderRadius: "14px",
-                        bgcolor: isExpanded ? "rgba(234, 88, 12, 0.12)" : "rgba(24, 24, 27, 0.04)",
-                        color: isExpanded ? "#EA580C" : "#18181B",
+                        bgcolor: isExpanded ? "rgba(61, 118, 93, 0.12)" : "rgba(24, 61, 53, 0.04)",
+                        color: isExpanded ? "#3D765D" : "#183D35",
                         border: isExpanded
-                          ? "1px solid rgba(234, 88, 12, 0.25)"
-                          : "1px solid rgba(24, 24, 27, 0.08)",
+                          ? "1px solid rgba(61, 118, 93, 0.25)"
+                          : "1px solid rgba(24, 61, 53, 0.08)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -337,7 +337,7 @@ export default function FrictionScenariosSection() {
                             fontSize: "0.75rem",
                             fontWeight: 800,
                             fontFamily: "monospace",
-                            color: isExpanded ? "#EA580C" : "#71717A",
+                            color: isExpanded ? "#3D765D" : "#71717A",
                             letterSpacing: "0.08em",
                           }}
                         >
@@ -349,7 +349,7 @@ export default function FrictionScenariosSection() {
                         sx={{
                           fontSize: { xs: "1.1rem", sm: "1.25rem", md: "1.38rem" },
                           fontWeight: 700,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.025em",
                           lineHeight: 1.25,
                         }}
@@ -359,7 +359,7 @@ export default function FrictionScenariosSection() {
 
                       {/* Mobile Shift Tag */}
                       <Box sx={{ display: { xs: "block", md: "none" }, mt: 0.75 }}>
-                        <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#EA580C" }}>
+                        <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#3D765D" }}>
                           {story.quickShiftFrom} &rarr; {story.quickShiftTo}
                         </Typography>
                       </Box>
@@ -368,7 +368,7 @@ export default function FrictionScenariosSection() {
                     {/* Col 3: Laser-Aligned Quick Shift Metric Box */}
                     <Box
                       sx={{
-                        borderLeft: { md: "1px solid rgba(24, 24, 27, 0.08)" },
+                        borderLeft: { md: "1px solid rgba(24, 61, 53, 0.08)" },
                         pl: { md: 3 },
                         display: { xs: "none", md: "block" },
                       }}
@@ -380,7 +380,7 @@ export default function FrictionScenariosSection() {
                         <Typography sx={{ fontSize: "0.85rem", color: "#EF4444", textDecoration: "line-through", fontWeight: 600 }}>
                           {story.quickShiftFrom}
                         </Typography>
-                        <Typography sx={{ fontSize: "0.85rem", color: "#18181B", fontWeight: 700 }}>
+                        <Typography sx={{ fontSize: "0.85rem", color: "#183D35", fontWeight: 700 }}>
                           &rarr;
                         </Typography>
                         <Typography sx={{ fontSize: "0.95rem", color: "#059669", fontWeight: 800 }}>
@@ -395,11 +395,11 @@ export default function FrictionScenariosSection() {
                         width: { xs: 36, sm: 42 },
                         height: { xs: 36, sm: 42 },
                         borderRadius: "50%",
-                        bgcolor: isExpanded ? "#EA580C" : "rgba(24, 24, 27, 0.05)",
-                        color: isExpanded ? "#FFFFFF" : "#18181B",
+                        bgcolor: isExpanded ? "#3D765D" : "rgba(24, 61, 53, 0.05)",
+                        color: isExpanded ? "#FFFFFF" : "#183D35",
                         border: isExpanded
-                          ? "1px solid #EA580C"
-                          : "1px solid rgba(24, 24, 27, 0.09)",
+                          ? "1px solid #3D765D"
+                          : "1px solid rgba(24, 61, 53, 0.09)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -407,8 +407,8 @@ export default function FrictionScenariosSection() {
                         flexShrink: 0,
                         justifySelf: "end",
                         "&:hover": {
-                          bgcolor: isExpanded ? "#C2410C" : "rgba(234, 88, 12, 0.12)",
-                          color: isExpanded ? "#FFFFFF" : "#EA580C",
+                          bgcolor: isExpanded ? "#183D35" : "rgba(61, 118, 93, 0.12)",
+                          color: isExpanded ? "#FFFFFF" : "#3D765D",
                         },
                       }}
                     >
@@ -425,7 +425,7 @@ export default function FrictionScenariosSection() {
                     <Box
                       sx={{
                         p: { xs: 2.5, sm: 4, md: 5 },
-                        borderTop: "1px solid rgba(24, 24, 27, 0.08)",
+                        borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                         bgcolor: "#FFFFFF",
                       }}
                     >
@@ -437,8 +437,8 @@ export default function FrictionScenariosSection() {
                             sx={{
                               p: { xs: 3, md: 3.8 },
                               borderRadius: "18px",
-                              bgcolor: "#FAF8F5",
-                              border: "1px solid rgba(24, 24, 27, 0.08)",
+                              bgcolor: "#F7F7F2",
+                              border: "1px solid rgba(24, 61, 53, 0.08)",
                               height: "100%",
                               display: "flex",
                               flexDirection: "column",
@@ -508,8 +508,8 @@ export default function FrictionScenariosSection() {
                               p: { xs: 3, md: 3.8 },
                               borderRadius: "18px",
                               bgcolor: "#FFFBF8",
-                              border: "1.5px solid rgba(234, 88, 12, 0.3)",
-                              boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.06)",
+                              border: "1.5px solid rgba(61, 118, 93, 0.3)",
+                              boxShadow: "0 10px 25px -5px rgba(61, 118, 93, 0.06)",
                               height: "100%",
                               display: "flex",
                               flexDirection: "column",
@@ -523,19 +523,19 @@ export default function FrictionScenariosSection() {
                                     width: 26,
                                     height: 26,
                                     borderRadius: "50%",
-                                    bgcolor: "rgba(234, 88, 12, 0.15)",
+                                    bgcolor: "rgba(61, 118, 93, 0.15)",
                                     display: "flex",
                                     alignItems: "center",
                                     justifyContent: "center",
                                   }}
                                 >
-                                  <CheckCircleRoundedIcon sx={{ color: "#EA580C", fontSize: 17 }} />
+                                  <CheckCircleRoundedIcon sx={{ color: "#3D765D", fontSize: 17 }} />
                                 </Box>
                                 <Typography
                                   sx={{
                                     fontSize: "0.8rem",
                                     fontWeight: 800,
-                                    color: "#EA580C",
+                                    color: "#3D765D",
                                     textTransform: "uppercase",
                                     letterSpacing: "0.06em",
                                   }}
@@ -547,7 +547,7 @@ export default function FrictionScenariosSection() {
                               <Typography
                                 sx={{
                                   fontSize: { xs: "0.95rem", md: "1.025rem" },
-                                  color: "#18181B",
+                                  color: "#183D35",
                                   lineHeight: 1.75,
                                   fontWeight: 500,
                                   mb: 3,
@@ -578,7 +578,7 @@ export default function FrictionScenariosSection() {
                       <Box
                         sx={{
                           pt: 3.5,
-                          borderTop: "1px solid rgba(24, 24, 27, 0.08)",
+                          borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                           display: "flex",
                           flexDirection: { xs: "column", md: "row" },
                           alignItems: { xs: "flex-start", md: "center" },
@@ -591,7 +591,7 @@ export default function FrictionScenariosSection() {
                             sx={{
                               fontSize: "0.95rem",
                               fontWeight: 600,
-                              color: "#18181B",
+                              color: "#183D35",
                               lineHeight: 1.6,
                             }}
                           >
@@ -605,18 +605,18 @@ export default function FrictionScenariosSection() {
                             size="medium"
                             endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                             sx={{
-                              background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                              background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                               color: "#FFFFFF",
                               px: 3.5,
                               py: 1.2,
                               fontWeight: 700,
                               fontSize: "0.875rem",
                               borderRadius: "9999px",
-                              boxShadow: "0 6px 20px rgba(234, 88, 12, 0.28)",
+                              boxShadow: "0 6px 20px rgba(61, 118, 93, 0.28)",
                               whiteSpace: "nowrap",
                               "&:hover": {
-                                background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                                boxShadow: "0 8px 24px rgba(234, 88, 12, 0.38)",
+                                background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                                boxShadow: "0 8px 24px rgba(61, 118, 93, 0.38)",
                               },
                             }}
                           >

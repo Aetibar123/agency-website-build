@@ -45,8 +45,8 @@ const scenarios: WorkflowScenario[] = [
       "Instead of inquiries sitting unread in individual inboxes or scattered chats, a structured web presence captures requirements and notifies the right team member promptly.",
     step1: {
       badge: "STEP 1 // WHAT CUSTOMER DOES",
-      badgeColor: "#EA580C",
-      badgeBg: "rgba(234, 88, 12, 0.1)",
+      badgeColor: "#3D765D",
+      badgeBg: "rgba(61, 118, 93, 0.1)",
       title: "Customer Specifies Project Needs",
       subtitle: "Through your business web portal",
       points: [
@@ -56,12 +56,12 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Clear Scope",
       highlightLabel: "Structured requirements",
-      icon: <LanguageIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+      icon: <LanguageIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     },
     step2: {
       badge: "STEP 2 // THE AUTOMATIC SYNC",
-      badgeColor: "#F97316",
-      badgeBg: "rgba(249, 115, 22, 0.12)",
+      badgeColor: "#4D8F72",
+      badgeBg: "rgba(61, 118, 93, 0.12)",
       title: "Data Connects Automatically",
       subtitle: "Without manual copy-pasting",
       points: [
@@ -71,12 +71,12 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Automated",
       highlightLabel: "Direct system handoff",
-      icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+      icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     },
     step3: {
       badge: "STEP 3 // WHAT YOUR TEAM GETS",
-      badgeColor: "#18181B",
-      badgeBg: "rgba(24, 24, 27, 0.08)",
+      badgeColor: "#183D35",
+      badgeBg: "rgba(24, 61, 53, 0.08)",
       title: "Your Team Gets an Organized Brief",
       subtitle: "Inside your operations dashboard",
       points: [
@@ -86,7 +86,7 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Organized",
       highlightLabel: "Centralized inquiry tracking",
-      icon: <StorageIcon sx={{ fontSize: 24, color: "#18181B" }} />,
+      icon: <StorageIcon sx={{ fontSize: 24, color: "#183D35" }} />,
     },
   },
   {
@@ -97,8 +97,8 @@ const scenarios: WorkflowScenario[] = [
       "Instead of searching across disconnected spreadsheets to calculate pricing, a custom quoting workflow applies consistent margin rules and prepares clear proposals.",
     step1: {
       badge: "STEP 1 // WHAT CUSTOMER DOES",
-      badgeColor: "#EA580C",
-      badgeBg: "rgba(234, 88, 12, 0.1)",
+      badgeColor: "#3D765D",
+      badgeBg: "rgba(61, 118, 93, 0.1)",
       title: "Customer Selects Requirements",
       subtitle: "Through an interactive estimate builder",
       points: [
@@ -108,12 +108,12 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Transparent",
       highlightLabel: "Upfront scope clarity",
-      icon: <CalculateOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+      icon: <CalculateOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     },
     step2: {
       badge: "STEP 2 // THE AUTOMATIC SYNC",
-      badgeColor: "#F97316",
-      badgeBg: "rgba(249, 115, 22, 0.12)",
+      badgeColor: "#4D8F72",
+      badgeBg: "rgba(61, 118, 93, 0.12)",
       title: "Pricing & Margin Rules Applied",
       subtitle: "Standardizing pricing logic",
       points: [
@@ -123,12 +123,12 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Consistent",
       highlightLabel: "Standardized pricing rules",
-      icon: <BoltRoundedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+      icon: <BoltRoundedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     },
     step3: {
       badge: "STEP 3 // WHAT YOUR TEAM GETS",
-      badgeColor: "#18181B",
-      badgeBg: "rgba(24, 24, 27, 0.08)",
+      badgeColor: "#183D35",
+      badgeBg: "rgba(24, 61, 53, 0.08)",
       title: "Structured Proposal Dispatch",
       subtitle: "Ready for client review and sign-off",
       points: [
@@ -138,7 +138,7 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Streamlined",
       highlightLabel: "Faster proposal turnaround",
-      icon: <SendRoundedIcon sx={{ fontSize: 24, color: "#18181B" }} />,
+      icon: <SendRoundedIcon sx={{ fontSize: 24, color: "#183D35" }} />,
     },
   },
   {
@@ -149,8 +149,8 @@ const scenarios: WorkflowScenario[] = [
       "When project deliverables or milestones are finished, status updates verify the work and stage invoices for accounting without manual delays.",
     step1: {
       badge: "STEP 1 // WHAT CUSTOMER DOES",
-      badgeColor: "#EA580C",
-      badgeBg: "rgba(234, 88, 12, 0.1)",
+      badgeColor: "#3D765D",
+      badgeBg: "rgba(61, 118, 93, 0.1)",
       title: "Customer or Team Milestone Sign-Off",
       subtitle: "On mobile screen or client portal",
       points: [
@@ -160,12 +160,12 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Clear Status",
       highlightLabel: "Transparent milestone tracking",
-      icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+      icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     },
     step2: {
       badge: "STEP 2 // THE AUTOMATIC SYNC",
-      badgeColor: "#F97316",
-      badgeBg: "rgba(249, 115, 22, 0.12)",
+      badgeColor: "#4D8F72",
+      badgeBg: "rgba(61, 118, 93, 0.12)",
       title: "Completion Triggers Billing Workflow",
       subtitle: "Without office staff chasing updates",
       points: [
@@ -175,12 +175,12 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Connected",
       highlightLabel: "System synchronization",
-      icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+      icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     },
     step3: {
       badge: "STEP 3 // WHAT YOUR TEAM GETS",
-      badgeColor: "#18181B",
-      badgeBg: "rgba(24, 24, 27, 0.08)",
+      badgeColor: "#183D35",
+      badgeBg: "rgba(24, 61, 53, 0.08)",
       title: "Prompt Invoicing & Visibility",
       subtitle: "Smooth cash flow without spreadsheet delays",
       points: [
@@ -190,7 +190,7 @@ const scenarios: WorkflowScenario[] = [
       ],
       highlightMetric: "Timely Billing",
       highlightLabel: "Reduced invoice turnaround lag",
-      icon: <AssignmentTurnedInOutlinedIcon sx={{ fontSize: 24, color: "#18181B" }} />,
+      icon: <AssignmentTurnedInOutlinedIcon sx={{ fontSize: 24, color: "#183D35" }} />,
     },
   },
 ];
@@ -230,8 +230,8 @@ export default function TwoHalvesSection() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -239,14 +239,14 @@ export default function TwoHalvesSection() {
                   component={motion.div}
                   animate={{ scale: [1, 1.25, 1], opacity: [0.8, 1, 0.8] }}
                   transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#EA580C" }}
+                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#3D765D" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 600,
                   }}
                 >
@@ -260,7 +260,7 @@ export default function TwoHalvesSection() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
@@ -274,7 +274,7 @@ export default function TwoHalvesSection() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -310,10 +310,10 @@ export default function TwoHalvesSection() {
               gap: 1.2,
               p: 0.8,
               borderRadius: "9999px",
-              bgcolor: "#FAF8F5",
-              border: "1px solid rgba(228, 228, 231, 0.9)",
+              bgcolor: "#F7F7F2",
+              border: "1px solid rgba(216, 229, 213, 0.9)",
               width: "fit-content",
-              boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+              boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
             }}
           >
             {scenarios.map((sc) => {
@@ -345,8 +345,8 @@ export default function TwoHalvesSection() {
                         position: "absolute",
                         inset: 0,
                         borderRadius: "9999px",
-                        bgcolor: "#18181B",
-                        boxShadow: "0 6px 18px -3px rgba(24, 24, 27, 0.3)",
+                        bgcolor: "#183D35",
+                        boxShadow: "0 6px 18px -3px rgba(24, 61, 53, 0.3)",
                         zIndex: -1,
                       }}
                     />
@@ -384,7 +384,7 @@ export default function TwoHalvesSection() {
                 sx={{
                   fontSize: { xs: "1.35rem", sm: "1.65rem", md: "1.85rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   textWrap: "balance",
                   lineHeight: 1.25,
                   mb: 1.2,
@@ -413,16 +413,16 @@ export default function TwoHalvesSection() {
                       height: "100%",
                       p: { xs: 3, sm: 3.5 },
                       borderRadius: "22px",
-                      bgcolor: "#FAF8F5",
-                      border: "1px solid rgba(228, 228, 231, 0.95)",
+                      bgcolor: "#F7F7F2",
+                      border: "1px solid rgba(216, 229, 213, 0.95)",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                      boxShadow: "0 10px 30px -10px rgba(24, 24, 27, 0.04)",
+                      boxShadow: "0 10px 30px -10px rgba(24, 61, 53, 0.04)",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 15px 35px -10px rgba(234, 88, 12, 0.12)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 15px 35px -10px rgba(61, 118, 93, 0.12)",
                       },
                     }}
                   >
@@ -449,13 +449,13 @@ export default function TwoHalvesSection() {
                           </Typography>
                         </Box>
 
-                        <Box sx={{ width: 40, height: 40, borderRadius: "10px", bgcolor: "#FFFFFF", border: "1px solid rgba(228, 228, 231, 0.9)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                        <Box sx={{ width: 40, height: 40, borderRadius: "10px", bgcolor: "#FFFFFF", border: "1px solid rgba(216, 229, 213, 0.9)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                           {currentScenario.step1.icon}
                         </Box>
                       </Box>
 
                       <Box sx={{ minHeight: { md: 68 }, mb: 2.5 }}>
-                        <Typography sx={{ fontSize: "1.25rem", fontWeight: 600, color: "#18181B", mb: 0.5 }}>
+                        <Typography sx={{ fontSize: "1.25rem", fontWeight: 600, color: "#183D35", mb: 0.5 }}>
                           {currentScenario.step1.title}
                         </Typography>
                         <Typography sx={{ fontSize: "0.825rem", color: "#71717A", fontWeight: 500 }}>
@@ -467,7 +467,7 @@ export default function TwoHalvesSection() {
                       <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 3 }}>
                         {currentScenario.step1.points.map((pt, i) => (
                           <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                            <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C", mt: 0.25, flexShrink: 0 }} />
+                            <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#3D765D", mt: 0.25, flexShrink: 0 }} />
                             <Typography sx={{ fontSize: "0.875rem", color: "#3F3F46", lineHeight: 1.55 }}>
                               {pt}
                             </Typography>
@@ -482,7 +482,7 @@ export default function TwoHalvesSection() {
                         p: 1.8,
                         borderRadius: "14px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(228, 228, 231, 0.8)",
+                        border: "1px solid rgba(216, 229, 213, 0.8)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
@@ -491,7 +491,7 @@ export default function TwoHalvesSection() {
                       <Typography sx={{ fontSize: "0.78rem", color: "#71717A" }}>
                         {currentScenario.step1.highlightLabel}
                       </Typography>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#EA580C" }}>
+                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#3D765D" }}>
                         {currentScenario.step1.highlightMetric}
                       </Typography>
                     </Box>
@@ -514,17 +514,17 @@ export default function TwoHalvesSection() {
                       p: { xs: 3, sm: 3.5 },
                       borderRadius: "22px",
                       bgcolor: "#FFFFFF",
-                      border: "2px solid rgba(234, 88, 12, 0.4)",
+                      border: "2px solid rgba(61, 118, 93, 0.4)",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                      boxShadow: "0 12px 35px -10px rgba(234, 88, 12, 0.12)",
+                      boxShadow: "0 12px 35px -10px rgba(61, 118, 93, 0.12)",
                       position: "relative",
                       overflow: "hidden",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        boxShadow: "0 18px 40px -10px rgba(234, 88, 12, 0.2)",
+                        borderColor: "#3D765D",
+                        boxShadow: "0 18px 40px -10px rgba(61, 118, 93, 0.2)",
                       },
                     }}
                   >
@@ -539,7 +539,7 @@ export default function TwoHalvesSection() {
                         left: 0,
                         right: 0,
                         height: 4,
-                        background: "linear-gradient(90deg, #EA580C 0%, #FB923C 100%)",
+                        background: "linear-gradient(90deg, #3D765D 0%, #62A486 100%)",
                       }}
                     />
 
@@ -566,13 +566,13 @@ export default function TwoHalvesSection() {
                           </Typography>
                         </Box>
 
-                        <Box sx={{ width: 40, height: 40, borderRadius: "10px", bgcolor: "rgba(234, 88, 12, 0.08)", border: "1px solid rgba(234, 88, 12, 0.25)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                        <Box sx={{ width: 40, height: 40, borderRadius: "10px", bgcolor: "rgba(61, 118, 93, 0.08)", border: "1px solid rgba(61, 118, 93, 0.25)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                           {currentScenario.step2.icon}
                         </Box>
                       </Box>
 
                       <Box sx={{ minHeight: { md: 68 }, mb: 2.5 }}>
-                        <Typography sx={{ fontSize: "1.25rem", fontWeight: 600, color: "#18181B", mb: 0.5 }}>
+                        <Typography sx={{ fontSize: "1.25rem", fontWeight: 600, color: "#183D35", mb: 0.5 }}>
                           {currentScenario.step2.title}
                         </Typography>
                         <Typography sx={{ fontSize: "0.825rem", color: "#71717A", fontWeight: 500 }}>
@@ -584,7 +584,7 @@ export default function TwoHalvesSection() {
                       <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 3 }}>
                         {currentScenario.step2.points.map((pt, i) => (
                           <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                            <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C", mt: 0.25, flexShrink: 0 }} />
+                            <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#3D765D", mt: 0.25, flexShrink: 0 }} />
                             <Typography sx={{ fontSize: "0.875rem", color: "#3F3F46", lineHeight: 1.55 }}>
                               {pt}
                             </Typography>
@@ -598,8 +598,8 @@ export default function TwoHalvesSection() {
                       sx={{
                         p: 1.8,
                         borderRadius: "14px",
-                        bgcolor: "rgba(234, 88, 12, 0.06)",
-                        border: "1px solid rgba(234, 88, 12, 0.2)",
+                        bgcolor: "rgba(61, 118, 93, 0.06)",
+                        border: "1px solid rgba(61, 118, 93, 0.2)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
@@ -608,7 +608,7 @@ export default function TwoHalvesSection() {
                       <Typography sx={{ fontSize: "0.78rem", color: "#71717A" }}>
                         {currentScenario.step2.highlightLabel}
                       </Typography>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#EA580C" }}>
+                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#3D765D" }}>
                         {currentScenario.step2.highlightMetric}
                       </Typography>
                     </Box>
@@ -630,16 +630,16 @@ export default function TwoHalvesSection() {
                       height: "100%",
                       p: { xs: 3, sm: 3.5 },
                       borderRadius: "22px",
-                      bgcolor: "#FAF8F5",
-                      border: "1px solid rgba(228, 228, 231, 0.95)",
+                      bgcolor: "#F7F7F2",
+                      border: "1px solid rgba(216, 229, 213, 0.95)",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                      boxShadow: "0 10px 30px -10px rgba(24, 24, 27, 0.04)",
+                      boxShadow: "0 10px 30px -10px rgba(24, 61, 53, 0.04)",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "rgba(24, 24, 27, 0.35)",
-                        boxShadow: "0 15px 35px -10px rgba(24, 24, 27, 0.1)",
+                        borderColor: "rgba(24, 61, 53, 0.35)",
+                        boxShadow: "0 15px 35px -10px rgba(24, 61, 53, 0.1)",
                       },
                     }}
                   >
@@ -666,13 +666,13 @@ export default function TwoHalvesSection() {
                           </Typography>
                         </Box>
 
-                        <Box sx={{ width: 40, height: 40, borderRadius: "10px", bgcolor: "#FFFFFF", border: "1px solid rgba(228, 228, 231, 0.9)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                        <Box sx={{ width: 40, height: 40, borderRadius: "10px", bgcolor: "#FFFFFF", border: "1px solid rgba(216, 229, 213, 0.9)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                           {currentScenario.step3.icon}
                         </Box>
                       </Box>
 
                       <Box sx={{ minHeight: { md: 68 }, mb: 2.5 }}>
-                        <Typography sx={{ fontSize: "1.25rem", fontWeight: 600, color: "#18181B", mb: 0.5 }}>
+                        <Typography sx={{ fontSize: "1.25rem", fontWeight: 600, color: "#183D35", mb: 0.5 }}>
                           {currentScenario.step3.title}
                         </Typography>
                         <Typography sx={{ fontSize: "0.825rem", color: "#71717A", fontWeight: 500 }}>
@@ -684,7 +684,7 @@ export default function TwoHalvesSection() {
                       <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 3 }}>
                         {currentScenario.step3.points.map((pt, i) => (
                           <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                            <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#18181B", mt: 0.25, flexShrink: 0 }} />
+                            <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#183D35", mt: 0.25, flexShrink: 0 }} />
                             <Typography sx={{ fontSize: "0.875rem", color: "#3F3F46", lineHeight: 1.55 }}>
                               {pt}
                             </Typography>
@@ -699,7 +699,7 @@ export default function TwoHalvesSection() {
                         p: 1.8,
                         borderRadius: "14px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(228, 228, 231, 0.8)",
+                        border: "1px solid rgba(216, 229, 213, 0.8)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
@@ -708,7 +708,7 @@ export default function TwoHalvesSection() {
                       <Typography sx={{ fontSize: "0.78rem", color: "#71717A" }}>
                         {currentScenario.step3.highlightLabel}
                       </Typography>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#18181B" }}>
+                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#183D35" }}>
                         {currentScenario.step3.highlightMetric}
                       </Typography>
                     </Box>
@@ -725,8 +725,8 @@ export default function TwoHalvesSection() {
             mt: 6,
             p: { xs: 3.5, sm: 4.5 },
             borderRadius: "22px",
-            bgcolor: "#FAF8F5",
-            border: "1px solid rgba(228, 228, 231, 0.9)",
+            bgcolor: "#F7F7F2",
+            border: "1px solid rgba(216, 229, 213, 0.9)",
             display: "flex",
             flexDirection: { xs: "column", lg: "row" },
             alignItems: { xs: "flex-start", lg: "center" },
@@ -735,7 +735,7 @@ export default function TwoHalvesSection() {
           }}
         >
           <Box sx={{ maxWidth: 720 }}>
-            <Typography sx={{ fontSize: "1.1rem", fontWeight: 600, color: "#18181B", mb: 0.5 }}>
+            <Typography sx={{ fontSize: "1.1rem", fontWeight: 600, color: "#183D35", mb: 0.5 }}>
               The Result: Better organization, reduced manual work, and faster delivery.
             </Typography>
             <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65 }}>
@@ -749,18 +749,18 @@ export default function TwoHalvesSection() {
                 variant="contained"
                 endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                   color: "#FFFFFF",
                   px: 3.6,
                   py: 1.35,
                   fontSize: "0.9rem",
                   fontWeight: 600,
                   borderRadius: "9999px",
-                  boxShadow: "0 8px 22px rgba(234, 88, 12, 0.3)",
+                  boxShadow: "0 8px 22px rgba(61, 118, 93, 0.3)",
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                    boxShadow: "0 12px 26px rgba(234, 88, 12, 0.4)",
+                    background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                    boxShadow: "0 12px 26px rgba(61, 118, 93, 0.4)",
                     transform: "translateY(-1px)",
                   },
                 }}
@@ -773,8 +773,8 @@ export default function TwoHalvesSection() {
               <Button
                 variant="outlined"
                 sx={{
-                  color: "#18181B",
-                  borderColor: "rgba(24, 24, 27, 0.2)",
+                  color: "#183D35",
+                  borderColor: "rgba(24, 61, 53, 0.2)",
                   bgcolor: "#FFFFFF",
                   px: 3.2,
                   py: 1.3,
@@ -782,9 +782,9 @@ export default function TwoHalvesSection() {
                   fontWeight: 600,
                   borderRadius: "9999px",
                   "&:hover": {
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
-                    bgcolor: "rgba(249, 115, 22, 0.04)",
+                    borderColor: "#3D765D",
+                    color: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.04)",
                   },
                 }}
               >

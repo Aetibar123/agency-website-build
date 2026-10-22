@@ -13,9 +13,9 @@ const serviceLinks = [
   { name: "Mobile App Development", href: "/services/mobile-app-development-company-in-udaipur" },
   { name: "AI Automation & Integration", href: "/services/ai-automation-company-in-udaipur" },
   { name: "Digital Marketing", href: "/services/digital-marketing-company-in-udaipur" },
-  { name: "SEO Services", href: "/services/seo-company-in-udaipur" },
-  { name: "Social Media Marketing", href: "/services/social-media-marketing-company-in-udaipur" },
-  { name: "Paid Advertising", href: "/services/paid-advertising-company-in-udaipur" },
+  { name: "SEO Services", href: "/services/seo-service-in-udaipur" },
+  { name: "Social Media Marketing", href: "/services/social-media-marketing-service-in-udaipur" },
+  { name: "Paid Advertising", href: "/services/performance-marketing-company-in-udaipur" },
 ];
 
 const companyLinks = [
@@ -49,11 +49,11 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        bgcolor: "#FAF8F5",
-        color: "#18181B",
+        bgcolor: "#F7F7F2",
+        color: "#183D35",
         pt: { xs: 8, sm: 10, md: 12 },
         pb: { xs: 5, md: 6 },
-        borderTop: "1px solid rgba(228, 228, 231, 0.9)",
+        borderTop: "1px solid rgba(216, 229, 213, 0.9)",
         width: "100%",
       }}
     >
@@ -72,7 +72,7 @@ export default function Footer() {
                 sx={{
                   fontWeight: 900,
                   letterSpacing: "-0.03em",
-                  color: "#18181B",
+                  color: "#183D35",
                   textDecoration: "none",
                   fontSize: { xs: "1.35rem", md: "1.5rem" },
                   display: "inline-flex",
@@ -88,8 +88,8 @@ export default function Footer() {
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    bgcolor: "#EA580C",
-                    boxShadow: "0 0 10px rgba(234, 88, 12, 0.6)",
+                    bgcolor: "#3D765D",
+                    boxShadow: "0 0 10px rgba(61, 118, 93, 0.6)",
                     display: "inline-block",
                   }}
                 />
@@ -118,8 +118,8 @@ export default function Footer() {
                   py: 0.6,
                   borderRadius: "9999px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 1px 4px rgba(24, 24, 27, 0.02)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 1px 4px rgba(24, 61, 53, 0.02)",
                 }}
               >
                 <Box
@@ -152,7 +152,7 @@ export default function Footer() {
                 fontSize: "0.75rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
-                color: "#18181B",
+                color: "#183D35",
                 textTransform: "uppercase",
                 fontFamily: "monospace",
                 mb: 2.5,
@@ -176,7 +176,7 @@ export default function Footer() {
                     transition: "color 0.2s ease, transform 0.2s ease",
                     display: "inline-block",
                     "&:hover": {
-                      color: "#EA580C",
+                      color: "#3D765D",
                       transform: "translateX(2px)",
                     },
                   }}
@@ -194,7 +194,7 @@ export default function Footer() {
                 fontSize: "0.75rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
-                color: "#18181B",
+                color: "#183D35",
                 textTransform: "uppercase",
                 fontFamily: "monospace",
                 mb: 2.5,
@@ -218,7 +218,7 @@ export default function Footer() {
                     transition: "color 0.2s ease, transform 0.2s ease",
                     display: "inline-block",
                     "&:hover": {
-                      color: "#EA580C",
+                      color: "#3D765D",
                       transform: "translateX(2px)",
                     },
                   }}
@@ -236,7 +236,7 @@ export default function Footer() {
                 fontSize: "0.75rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
-                color: "#18181B",
+                color: "#183D35",
                 textTransform: "uppercase",
                 fontFamily: "monospace",
                 mb: 2.5,
@@ -251,13 +251,13 @@ export default function Footer() {
                 component="a"
                 href="mailto:hello.aetibar@gmail.com"
                 sx={{
-                  color: "#18181B",
+                  color: "#183D35",
                   textDecoration: "none",
                   fontSize: "0.9rem",
                   fontWeight: 600,
                   wordBreak: "break-all",
                   transition: "color 0.2s ease",
-                  "&:hover": { color: "#EA580C" },
+                  "&:hover": { color: "#3D765D" },
                 }}
               >
                 hello.aetibar@gmail.com
@@ -268,7 +268,7 @@ export default function Footer() {
                 component={Link}
                 href="/contact"
                 sx={{
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textDecoration: "none",
                   fontSize: "0.9rem",
                   fontWeight: 600,
@@ -301,7 +301,7 @@ export default function Footer() {
                       alignItems: "center",
                       transition: "color 0.2s ease, transform 0.2s ease",
                       "&:hover": {
-                        color: "#EA580C",
+                        color: "#3D765D",
                         transform: "translateY(-2px)",
                       },
                     }}
@@ -331,7 +331,7 @@ export default function Footer() {
         <Box
           sx={{
             pt: 3.5,
-            borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+            borderTop: "1px solid rgba(216, 229, 213, 0.8)",
             display: "flex",
             flexDirection: { xs: "column-reverse", sm: "row" },
             justifyContent: "space-between",
@@ -357,7 +357,7 @@ export default function Footer() {
                 fontSize: { xs: "0.78rem", sm: "0.82rem" },
                 textDecoration: "none",
                 transition: "color 0.2s ease",
-                "&:hover": { color: "#EA580C" },
+                "&:hover": { color: "#3D765D" },
               }}
             >
               Privacy Policy
@@ -373,7 +373,7 @@ export default function Footer() {
                 fontSize: { xs: "0.78rem", sm: "0.82rem" },
                 textDecoration: "none",
                 transition: "color 0.2s ease",
-                "&:hover": { color: "#EA580C" },
+                "&:hover": { color: "#3D765D" },
               }}
             >
               Terms of Service

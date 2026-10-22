@@ -36,8 +36,8 @@ const pipelineStages = [
       details: "Inquiries are gathered automatically into one shared view with the essential project details your team needs.",
       latency: "Immediate capture",
       status: "Organized",
-      color: "#F97316",
-      bg: "rgba(249, 115, 22, 0.12)",
+      color: "#4D8F72",
+      bg: "rgba(61, 118, 93, 0.12)",
     },
   },
   {
@@ -59,8 +59,8 @@ const pipelineStages = [
       details: "Inquiries reach the right team member based on the type of request, availability, and project requirements.",
       latency: "Routed automatically",
       status: "Assigned",
-      color: "#F97316",
-      bg: "rgba(249, 115, 22, 0.12)",
+      color: "#4D8F72",
+      bg: "rgba(61, 118, 93, 0.12)",
     },
   },
   {
@@ -82,8 +82,8 @@ const pipelineStages = [
       details: "Clear pricing rules and clean templates make it quick to assemble and share accurate proposals with clients.",
       latency: "Fast turnaround",
       status: "Ready to send",
-      color: "#F97316",
-      bg: "rgba(249, 115, 22, 0.12)",
+      color: "#4D8F72",
+      bg: "rgba(61, 118, 93, 0.12)",
     },
   },
   {
@@ -105,8 +105,8 @@ const pipelineStages = [
       details: "A straightforward dashboard showing ongoing work, assignments, milestones, and upcoming customer deliveries.",
       latency: "Always current",
       status: "Clear Visibility",
-      color: "#F97316",
-      bg: "rgba(249, 115, 22, 0.12)",
+      color: "#4D8F72",
+      bg: "rgba(61, 118, 93, 0.12)",
     },
   },
 ];
@@ -118,9 +118,9 @@ const telemetryData = {
     { label: "Pipeline Visibility", value: "Scattered", note: "Customer details trapped in individual chat threads", color: "#EF4444" },
   ],
   connected: [
-    { label: "Response Time", value: "Fast & Reliable", note: "Requests reach the right person as soon as they arrive", color: "#F97316" },
-    { label: "Manual Admin", value: "Significantly Reduced", note: "Information moves directly between your tools", color: "#F97316" },
-    { label: "Pipeline Visibility", value: "Clear & Centralized", note: "One shared view for your entire team", color: "#F97316" },
+    { label: "Response Time", value: "Fast & Reliable", note: "Requests reach the right person as soon as they arrive", color: "#4D8F72" },
+    { label: "Manual Admin", value: "Significantly Reduced", note: "Information moves directly between your tools", color: "#4D8F72" },
+    { label: "Pipeline Visibility", value: "Clear & Centralized", note: "One shared view for your entire team", color: "#4D8F72" },
   ],
 };
 
@@ -132,7 +132,7 @@ export default function ProblemSection() {
       component="section"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
         overflow: "hidden",
       }}
@@ -146,7 +146,7 @@ export default function ProblemSection() {
           width: 500,
           height: 500,
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.07) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.07) 0%, transparent 70%)",
           filter: "blur(60px)",
           pointerEvents: "none",
           zIndex: 0,
@@ -160,7 +160,7 @@ export default function ProblemSection() {
           width: 450,
           height: 450,
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(234, 88, 12, 0.05) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.05) 0%, transparent 70%)",
           filter: "blur(50px)",
           pointerEvents: "none",
           zIndex: 0,
@@ -185,8 +185,8 @@ export default function ProblemSection() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -195,8 +195,8 @@ export default function ProblemSection() {
                   width: 7,
                   height: 7,
                   borderRadius: "50%",
-                  bgcolor: "#EA580C",
-                  boxShadow: "0 0 8px #EA580C",
+                  bgcolor: "#3D765D",
+                  boxShadow: "0 0 8px #3D765D",
                 }}
               />
               <Typography
@@ -204,7 +204,7 @@ export default function ProblemSection() {
                   fontSize: "0.8rem",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   fontWeight: 600,
                 }}
               >
@@ -218,7 +218,7 @@ export default function ProblemSection() {
               sx={{
                 fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.12, md: 1.05 },
                 letterSpacing: "-0.035em",
                 mb: 2.5,
@@ -228,7 +228,7 @@ export default function ProblemSection() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   display: { xs: "inline", md: "inline" },
@@ -265,10 +265,10 @@ export default function ProblemSection() {
               bgcolor: "#111218",
               borderRadius: { xs: "22px", sm: "28px", md: "32px" },
               border: "1px solid",
-              borderColor: isConnected ? "rgba(249, 115, 22, 0.35)" : "rgba(255, 255, 255, 0.1)",
+              borderColor: isConnected ? "rgba(61, 118, 93, 0.35)" : "rgba(255, 255, 255, 0.1)",
               p: { xs: 2.2, sm: 4, md: 5.5 },
               boxShadow: isConnected
-                ? "0 25px 80px -15px rgba(234, 88, 12, 0.2), 0 0 0 1px rgba(249, 115, 22, 0.2)"
+                ? "0 25px 80px -15px rgba(61, 118, 93, 0.2), 0 0 0 1px rgba(61, 118, 93, 0.2)"
                 : "0 25px 70px -15px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05)",
               transition: "border-color 0.4s ease, box-shadow 0.4s ease",
               position: "relative",
@@ -310,9 +310,9 @@ export default function ProblemSection() {
                     width: 10,
                     height: 10,
                     borderRadius: "50%",
-                    bgcolor: isConnected ? "#F97316" : "#EF4444",
+                    bgcolor: isConnected ? "#4D8F72" : "#EF4444",
                     boxShadow: isConnected
-                      ? "0 0 12px #F97316, 0 0 24px rgba(249, 115, 22, 0.6)"
+                      ? "0 0 12px #4D8F72, 0 0 24px rgba(61, 118, 93, 0.6)"
                       : "0 0 12px #EF4444, 0 0 24px rgba(239, 68, 68, 0.6)",
                     transition: "all 0.3s ease",
                   }}
@@ -322,7 +322,7 @@ export default function ProblemSection() {
                     sx={{
                       fontSize: "0.75rem",
                       fontWeight: 600,
-                      color: isConnected ? "#FB923C" : "#F87171",
+                      color: isConnected ? "#62A486" : "#F87171",
                       letterSpacing: "0.08em",
                       textTransform: "uppercase",
                       lineHeight: 1.2,
@@ -392,14 +392,14 @@ export default function ProblemSection() {
                     borderRadius: "9999px",
                     textTransform: "none",
                     background: isConnected
-                      ? "linear-gradient(135deg, #EA580C 0%, #F97316 100%)"
+                      ? "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)"
                       : "transparent",
                     color: isConnected ? "#FFFFFF" : "rgba(255, 255, 255, 0.6)",
-                    boxShadow: isConnected ? "0 4px 16px rgba(234, 88, 12, 0.45)" : "none",
+                    boxShadow: isConnected ? "0 4px 16px rgba(61, 118, 93, 0.45)" : "none",
                     transition: "all 0.25s ease",
                     "&:hover": {
                       background: isConnected
-                        ? "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)"
+                        ? "linear-gradient(135deg, #183D35 0%, #3D765D 100%)"
                         : "rgba(255, 255, 255, 0.08)",
                       color: "#FFFFFF",
                     },
@@ -434,7 +434,7 @@ export default function ProblemSection() {
                             bgcolor: "rgba(255, 255, 255, 0.03)",
                             border: "1px solid",
                             borderColor: isConnected
-                              ? "rgba(249, 115, 22, 0.2)"
+                              ? "rgba(61, 118, 93, 0.2)"
                               : "rgba(239, 68, 68, 0.18)",
                             height: "100%",
                             display: "flex",
@@ -446,10 +446,10 @@ export default function ProblemSection() {
                             "&:hover": {
                               bgcolor: "rgba(255, 255, 255, 0.05)",
                               borderColor: isConnected
-                                ? "rgba(249, 115, 22, 0.45)"
+                                ? "rgba(61, 118, 93, 0.45)"
                                 : "rgba(239, 68, 68, 0.4)",
                               boxShadow: isConnected
-                                ? "0 14px 30px -10px rgba(234, 88, 12, 0.25)"
+                                ? "0 14px 30px -10px rgba(61, 118, 93, 0.25)"
                                 : "0 14px 30px -10px rgba(239, 68, 68, 0.25)",
                             },
                           }}
@@ -560,7 +560,7 @@ export default function ProblemSection() {
                           >
                             <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
                               {isConnected ? (
-                                <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+                                <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#62A486" }} />
                               ) : (
                                 <WarningAmberRoundedIcon sx={{ fontSize: 16, color: "#EF4444" }} />
                               )}
@@ -685,7 +685,7 @@ export default function ProblemSection() {
                     fullWidth
                     endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       px: 3,
                       py: 1.2,
@@ -693,13 +693,13 @@ export default function ProblemSection() {
                       fontWeight: 600,
                       borderRadius: "9999px",
                       textTransform: "none",
-                      boxShadow: "0 4px 15px rgba(234, 88, 12, 0.35)",
+                      boxShadow: "0 4px 15px rgba(61, 118, 93, 0.35)",
                       width: { xs: "100%", sm: "auto" },
                       whiteSpace: { xs: "normal", sm: "nowrap" },
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                        boxShadow: "0 8px 25px rgba(234, 88, 12, 0.5)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                        boxShadow: "0 8px 25px rgba(61, 118, 93, 0.5)",
                       },
                     }}
                   >

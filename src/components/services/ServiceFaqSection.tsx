@@ -27,8 +27,8 @@ export default function ServiceFaqSection({ faqs }: ServiceFaqSectionProps) {
       component="section"
       sx={{
         py: { xs: 12, md: 16 },
-        bgcolor: "#FAF9F5",
-        borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+        bgcolor: "#F7F7F2",
+        borderTop: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="md">
@@ -36,7 +36,7 @@ export default function ServiceFaqSection({ faqs }: ServiceFaqSectionProps) {
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.14em",
               display: "block",
@@ -51,13 +51,13 @@ export default function ServiceFaqSection({ faqs }: ServiceFaqSectionProps) {
             sx={{
               fontWeight: 800,
               letterSpacing: "-0.03em",
-              color: "#0E172A",
+              color: "#183D35",
               fontSize: { xs: "2rem", md: "2.75rem" },
               textTransform: "uppercase",
               mb: 2,
             }}
           >
-            Frequently Asked <Box component="span" sx={{ color: "#0E7490" }}>Questions</Box>
+            Frequently Asked <Box component="span" sx={{ color: "#3D765D" }}>Questions</Box>
           </Typography>
 
           <Typography
@@ -81,25 +81,25 @@ export default function ServiceFaqSection({ faqs }: ServiceFaqSectionProps) {
               elevation={0}
               sx={{
                 bgcolor: "#FFFFFF",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 borderRadius: "8px !important",
                 "&:before": { display: "none" },
                 overflow: "hidden",
                 transition: "all 0.2s ease",
                 "&:hover": {
-                  borderColor: "rgba(14, 116, 144, 0.3)",
+                  borderColor: "rgba(61, 118, 93, 0.3)",
                 },
               }}
             >
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon sx={{ color: "#0E7490" }} />}
+                expandIcon={<ExpandMoreIcon sx={{ color: "#3D765D" }} />}
                 sx={{ p: { xs: 2.5, md: 3 } }}
               >
                 <Typography
                   variant="h6"
                   sx={{
                     fontWeight: 700,
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontSize: { xs: "1.05rem", md: "1.15rem" },
                   }}
                 >

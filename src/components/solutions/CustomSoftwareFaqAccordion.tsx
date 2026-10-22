@@ -43,11 +43,11 @@ export default function CustomSoftwareFaqAccordion({ faqs }: CustomSoftwareFaqAc
               borderRadius: "16px !important",
               border: "1px solid",
               borderColor: isCurrentExpanded
-                ? "rgba(249, 115, 22, 0.4)"
-                : "rgba(228, 228, 231, 0.9)",
-              bgcolor: isCurrentExpanded ? "#FFFFFF" : "#FAF8F5",
+                ? "rgba(61, 118, 93, 0.4)"
+                : "rgba(216, 229, 213, 0.9)",
+              bgcolor: isCurrentExpanded ? "#FFFFFF" : "#F7F7F2",
               boxShadow: isCurrentExpanded
-                ? "0 10px 30px rgba(249, 115, 22, 0.06)"
+                ? "0 10px 30px rgba(61, 118, 93, 0.06)"
                 : "none",
               transition: "all 0.25s ease",
               "&:before": { display: "none" },
@@ -58,7 +58,7 @@ export default function CustomSoftwareFaqAccordion({ faqs }: CustomSoftwareFaqAc
               expandIcon={
                 <ExpandMoreIcon
                   sx={{
-                    color: isCurrentExpanded ? "#EA580C" : "#71717A",
+                    color: isCurrentExpanded ? "#3D765D" : "#71717A",
                     transition: "transform 0.2s ease, color 0.2s ease",
                   }}
                 />
@@ -79,7 +79,7 @@ export default function CustomSoftwareFaqAccordion({ faqs }: CustomSoftwareFaqAc
                 sx={{
                   fontSize: { xs: "1.05rem", sm: "1.15rem" },
                   fontWeight: 600,
-                  color: isCurrentExpanded ? "#18181B" : "#27272A",
+                  color: isCurrentExpanded ? "#183D35" : "#27272A",
                   lineHeight: 1.4,
                   pr: 2,
                 }}

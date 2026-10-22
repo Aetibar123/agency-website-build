@@ -47,7 +47,7 @@ export default function SelectedWorkHomeSection() {
           position: "absolute",
           inset: 0,
           backgroundImage:
-            "linear-gradient(to right, rgba(24, 24, 27, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.03) 1px, transparent 1px)",
+            "linear-gradient(to right, rgba(24, 61, 53, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.03) 1px, transparent 1px)",
           backgroundSize: "64px 64px",
           pointerEvents: "none",
         }}
@@ -81,8 +81,8 @@ export default function SelectedWorkHomeSection() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -90,14 +90,14 @@ export default function SelectedWorkHomeSection() {
                   component={motion.div}
                   animate={{ scale: [1, 1.25, 1], opacity: [0.8, 1, 0.8] }}
                   transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#EA580C" }}
+                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#3D765D" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 600,
                   }}
                 >
@@ -110,7 +110,7 @@ export default function SelectedWorkHomeSection() {
                 sx={{
                   fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.15, md: 1.08 },
                   letterSpacing: "-0.035em",
                   mb: 2.5,
@@ -120,7 +120,7 @@ export default function SelectedWorkHomeSection() {
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}
@@ -147,21 +147,21 @@ export default function SelectedWorkHomeSection() {
                 variant="outlined"
                 endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                 sx={{
-                  color: "#18181B",
-                  borderColor: "rgba(24, 24, 27, 0.2)",
-                  bgcolor: "#FAF8F5",
+                  color: "#183D35",
+                  borderColor: "rgba(24, 61, 53, 0.2)",
+                  bgcolor: "#F7F7F2",
                   px: 3.5,
                   py: 1.4,
                   fontSize: "0.9rem",
                   fontWeight: 600,
                   borderRadius: "9999px",
                   whiteSpace: "nowrap",
-                  boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+                  boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
-                    bgcolor: "rgba(249, 115, 22, 0.04)",
+                    borderColor: "#3D765D",
+                    color: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.04)",
                     transform: "translateY(-1px)",
                   },
                 }}
@@ -181,8 +181,8 @@ export default function SelectedWorkHomeSection() {
               gap: { xs: 0.8, sm: 1.2 },
               p: { xs: 0.8, sm: 1 },
               borderRadius: { xs: "16px", md: "9999px" },
-              bgcolor: "#FAF8F5",
-              border: "1px solid rgba(228, 228, 231, 0.8)",
+              bgcolor: "#F7F7F2",
+              border: "1px solid rgba(216, 229, 213, 0.8)",
               width: { xs: "100%", md: "fit-content" },
               maxWidth: "100%",
               mb: { xs: 5, md: 7 },
@@ -219,8 +219,8 @@ export default function SelectedWorkHomeSection() {
                         position: "absolute",
                         inset: 0,
                         borderRadius: { xs: "10px", md: "9999px" },
-                        bgcolor: "#18181B",
-                        boxShadow: "0 6px 18px -3px rgba(24, 24, 27, 0.3)",
+                        bgcolor: "#183D35",
+                        boxShadow: "0 6px 18px -3px rgba(24, 61, 53, 0.3)",
                         zIndex: -1,
                       }}
                     />
@@ -245,7 +245,7 @@ export default function SelectedWorkHomeSection() {
                       fontFamily: "monospace",
                       fontSize: { xs: "0.7rem", sm: "0.75rem" },
                       fontWeight: 700,
-                      color: isSelected ? "#FB923C" : "#A1A1AA",
+                      color: isSelected ? "#62A486" : "#A1A1AA",
                       flexShrink: 0,
                     }}
                   >
@@ -271,18 +271,18 @@ export default function SelectedWorkHomeSection() {
             >
               <Box
                 sx={{
-                  bgcolor: "#FAF8F5",
+                  bgcolor: "#F7F7F2",
                   borderRadius: { xs: "24px", md: "32px" },
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 20px 60px -15px rgba(24, 24, 27, 0.06)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 20px 60px -15px rgba(24, 61, 53, 0.06)",
                   p: "clamp(24px, 4vw, 48px)",
                   mb: { xs: 5, md: 6 },
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.35s ease",
                   "&:hover": {
-                    borderColor: "rgba(249, 115, 22, 0.35)",
-                    boxShadow: "0 30px 80px -20px rgba(234, 88, 12, 0.12)",
+                    borderColor: "rgba(61, 118, 93, 0.35)",
+                    boxShadow: "0 30px 80px -20px rgba(61, 118, 93, 0.12)",
                   },
                 }}
               >
@@ -300,15 +300,15 @@ export default function SelectedWorkHomeSection() {
                             px: 1.6,
                             py: 0.4,
                             borderRadius: "9999px",
-                            bgcolor: "rgba(234, 88, 12, 0.1)",
-                            border: "1px solid rgba(234, 88, 12, 0.25)",
+                            bgcolor: "rgba(61, 118, 93, 0.1)",
+                            border: "1px solid rgba(61, 118, 93, 0.25)",
                           }}
                         >
                           <Typography
                             sx={{
                               fontSize: "0.75rem",
                               fontWeight: 700,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "0.06em",
                               textTransform: "uppercase",
                             }}
@@ -334,7 +334,7 @@ export default function SelectedWorkHomeSection() {
                         sx={{
                           fontSize: { xs: "1.75rem", sm: "2.2rem", md: "2.4rem" },
                           fontWeight: 600,
-                          color: "#18181B",
+                          color: "#183D35",
                           lineHeight: 1.2,
                           letterSpacing: "-0.03em",
                           mb: 2,
@@ -364,12 +364,12 @@ export default function SelectedWorkHomeSection() {
                           p: 2.5,
                           borderRadius: "18px",
                           bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(228, 228, 231, 0.8)",
+                          border: "1px solid rgba(216, 229, 213, 0.8)",
                           mb: 3.5,
                         }}
                       >
                         <Box>
-                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#EA580C", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#3D765D", lineHeight: 1 }}>
                             Fast
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 0.4, fontWeight: 500 }}>
@@ -377,7 +377,7 @@ export default function SelectedWorkHomeSection() {
                           </Typography>
                         </Box>
                         <Box>
-                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#183D35", lineHeight: 1 }}>
                             Real-Time
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 0.4, fontWeight: 500 }}>
@@ -385,7 +385,7 @@ export default function SelectedWorkHomeSection() {
                           </Typography>
                         </Box>
                         <Box>
-                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.45rem", fontWeight: 700, color: "#183D35", lineHeight: 1 }}>
                             Modular
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#71717A", mt: 0.4, fontWeight: 500 }}>
@@ -404,7 +404,7 @@ export default function SelectedWorkHomeSection() {
                               py: 0.4,
                               borderRadius: "6px",
                               bgcolor: "#FFFFFF",
-                              border: "1px solid rgba(228, 228, 231, 0.9)",
+                              border: "1px solid rgba(216, 229, 213, 0.9)",
                               fontSize: "0.75rem",
                               fontWeight: 600,
                               color: "#3F3F46",
@@ -422,18 +422,18 @@ export default function SelectedWorkHomeSection() {
                             variant="contained"
                             endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                             sx={{
-                              background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                              background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                               color: "#FFFFFF",
                               px: 3.5,
                               py: 1.35,
                               fontSize: "0.9rem",
                               fontWeight: 600,
                               borderRadius: "9999px",
-                              boxShadow: "0 8px 20px rgba(234, 88, 12, 0.3)",
+                              boxShadow: "0 8px 20px rgba(61, 118, 93, 0.3)",
                               transition: "all 0.2s ease",
                               "&:hover": {
-                                background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                                boxShadow: "0 12px 26px rgba(234, 88, 12, 0.4)",
+                                background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                                boxShadow: "0 12px 26px rgba(61, 118, 93, 0.4)",
                                 transform: "translateY(-1px)",
                               },
                             }}
@@ -451,14 +451,14 @@ export default function SelectedWorkHomeSection() {
                       sx={{
                         position: "relative",
                         borderRadius: "22px",
-                        bgcolor: "#18181B",
-                        border: "1px solid rgba(24, 24, 27, 0.15)",
-                        boxShadow: "0 25px 50px -12px rgba(24, 24, 27, 0.25)",
+                        bgcolor: "#183D35",
+                        border: "1px solid rgba(24, 61, 53, 0.15)",
+                        boxShadow: "0 25px 50px -12px rgba(24, 61, 53, 0.25)",
                         overflow: "hidden",
                         transition: "transform 0.4s ease, box-shadow 0.4s ease",
                         "&:hover": {
                           transform: "translateY(-4px)",
-                          boxShadow: "0 30px 60px -10px rgba(234, 88, 12, 0.2)",
+                          boxShadow: "0 30px 60px -10px rgba(61, 118, 93, 0.2)",
                         },
                       }}
                     >
@@ -531,7 +531,7 @@ export default function SelectedWorkHomeSection() {
                             px: 1.8,
                             py: 0.8,
                             borderRadius: "10px",
-                            bgcolor: "rgba(24, 24, 27, 0.85)",
+                            bgcolor: "rgba(24, 61, 53, 0.85)",
                             backdropFilter: "blur(12px)",
                             border: "1px solid rgba(255, 255, 255, 0.15)",
                             color: "#22C55E",
@@ -561,7 +561,7 @@ export default function SelectedWorkHomeSection() {
                             px: 2,
                             py: 1.2,
                             borderRadius: "12px",
-                            bgcolor: "rgba(24, 24, 27, 0.88)",
+                            bgcolor: "rgba(24, 61, 53, 0.88)",
                             backdropFilter: "blur(12px)",
                             border: "1px solid rgba(255, 255, 255, 0.12)",
                             color: "#FFFFFF",
@@ -572,7 +572,7 @@ export default function SelectedWorkHomeSection() {
                             gap: 1,
                           }}
                         >
-                          <Typography sx={{ fontSize: "0.8rem", fontWeight: 600, color: "#FB923C" }}>
+                          <Typography sx={{ fontSize: "0.8rem", fontWeight: 600, color: "#62A486" }}>
                             Modern Web Vitals Optimized
                           </Typography>
                           <Typography sx={{ fontSize: "0.75rem", color: "#A1A1AA", fontFamily: "monospace" }}>
@@ -619,8 +619,8 @@ export default function SelectedWorkHomeSection() {
                       overflow: "hidden",
                       transition: "all 0.35s ease",
                       "&:hover": {
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 30px 70px -15px rgba(234, 88, 12, 0.15)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 30px 70px -15px rgba(61, 118, 93, 0.15)",
                       },
                     }}
                   >
@@ -632,7 +632,7 @@ export default function SelectedWorkHomeSection() {
                         right: 0,
                         width: 280,
                         height: 280,
-                        background: "radial-gradient(circle, rgba(234, 88, 12, 0.12) 0%, transparent 70%)",
+                        background: "radial-gradient(circle, rgba(61, 118, 93, 0.12) 0%, transparent 70%)",
                         pointerEvents: "none",
                       }}
                     />
@@ -645,15 +645,15 @@ export default function SelectedWorkHomeSection() {
                             px: 1.5,
                             py: 0.35,
                             borderRadius: "9999px",
-                            bgcolor: "rgba(234, 88, 12, 0.15)",
-                            border: "1px solid rgba(234, 88, 12, 0.3)",
+                            bgcolor: "rgba(61, 118, 93, 0.15)",
+                            border: "1px solid rgba(61, 118, 93, 0.3)",
                           }}
                         >
                           <Typography
                             sx={{
                               fontSize: "0.725rem",
                               fontWeight: 700,
-                              color: "#FB923C",
+                              color: "#62A486",
                               letterSpacing: "0.05em",
                             }}
                           >
@@ -705,7 +705,7 @@ export default function SelectedWorkHomeSection() {
                         }}
                       >
                         <Box>
-                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#FB923C", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#62A486", lineHeight: 1 }}>
                             Offline-Ready
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#A1A1AA", mt: 0.3 }}>
@@ -752,7 +752,7 @@ export default function SelectedWorkHomeSection() {
                             px: 1.4,
                             py: 0.6,
                             borderRadius: "8px",
-                            bgcolor: "rgba(24, 24, 27, 0.85)",
+                            bgcolor: "rgba(24, 61, 53, 0.85)",
                             backdropFilter: "blur(10px)",
                             border: "1px solid rgba(255, 255, 255, 0.12)",
                             color: "#22C55E",
@@ -803,11 +803,11 @@ export default function SelectedWorkHomeSection() {
                           size="small"
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
                           sx={{
-                            color: "#FB923C",
+                            color: "#62A486",
                             fontWeight: 600,
                             fontSize: "0.85rem",
                             p: 0,
-                            "&:hover": { bgcolor: "transparent", color: "#EA580C" },
+                            "&:hover": { bgcolor: "transparent", color: "#3D765D" },
                           }}
                         >
                           View Prototype Details
@@ -834,10 +834,10 @@ export default function SelectedWorkHomeSection() {
                 >
                   <Box
                     sx={{
-                      bgcolor: "#FAF8F5",
+                      bgcolor: "#F7F7F2",
                       borderRadius: { xs: "24px", md: "30px" },
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
-                      boxShadow: "0 20px 50px -10px rgba(24, 24, 27, 0.05)",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
+                      boxShadow: "0 20px 50px -10px rgba(24, 61, 53, 0.05)",
                       p: "clamp(24px, 3.5vw, 40px)",
                       height: "100%",
                       display: "flex",
@@ -847,8 +847,8 @@ export default function SelectedWorkHomeSection() {
                       overflow: "hidden",
                       transition: "all 0.35s ease",
                       "&:hover": {
-                        borderColor: "rgba(249, 115, 22, 0.35)",
-                        boxShadow: "0 25px 60px -15px rgba(234, 88, 12, 0.12)",
+                        borderColor: "rgba(61, 118, 93, 0.35)",
+                        boxShadow: "0 25px 60px -15px rgba(61, 118, 93, 0.12)",
                       },
                     }}
                   >
@@ -860,15 +860,15 @@ export default function SelectedWorkHomeSection() {
                             px: 1.5,
                             py: 0.35,
                             borderRadius: "9999px",
-                            bgcolor: "rgba(249, 115, 22, 0.1)",
-                            border: "1px solid rgba(249, 115, 22, 0.25)",
+                            bgcolor: "rgba(61, 118, 93, 0.1)",
+                            border: "1px solid rgba(61, 118, 93, 0.25)",
                           }}
                         >
                           <Typography
                             sx={{
                               fontSize: "0.725rem",
                               fontWeight: 700,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "0.05em",
                             }}
                           >
@@ -886,7 +886,7 @@ export default function SelectedWorkHomeSection() {
                         sx={{
                           fontSize: { xs: "1.5rem", sm: "1.85rem" },
                           fontWeight: 600,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.025em",
                           lineHeight: 1.25,
                           mb: 1.5,
@@ -915,21 +915,21 @@ export default function SelectedWorkHomeSection() {
                           p: 2,
                           borderRadius: "14px",
                           bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(228, 228, 231, 0.8)",
+                          border: "1px solid rgba(216, 229, 213, 0.8)",
                           mb: 3,
                         }}
                       >
                         <Box>
-                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#EA580C", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#3D765D", lineHeight: 1 }}>
                             Human-in-Loop
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
                             Manual Verification Check
                           </Typography>
                         </Box>
-                        <Box sx={{ width: 1, height: 28, bgcolor: "rgba(228, 228, 231, 0.8)" }} />
+                        <Box sx={{ width: 1, height: 28, bgcolor: "rgba(216, 229, 213, 0.8)" }} />
                         <Box>
-                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#183D35", lineHeight: 1 }}>
                             Structured
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
@@ -946,8 +946,8 @@ export default function SelectedWorkHomeSection() {
                           height: { xs: 220, sm: 280 },
                           borderRadius: "18px",
                           overflow: "hidden",
-                          bgcolor: "#18181B",
-                          border: "1px solid rgba(24, 24, 27, 0.12)",
+                          bgcolor: "#183D35",
+                          border: "1px solid rgba(24, 61, 53, 0.12)",
                           mb: 3,
                         }}
                       >
@@ -968,7 +968,7 @@ export default function SelectedWorkHomeSection() {
                             px: 1.4,
                             py: 0.6,
                             borderRadius: "8px",
-                            bgcolor: "rgba(24, 24, 27, 0.85)",
+                            bgcolor: "rgba(24, 61, 53, 0.85)",
                             backdropFilter: "blur(10px)",
                             border: "1px solid rgba(255, 255, 255, 0.12)",
                             color: "#22C55E",
@@ -992,7 +992,7 @@ export default function SelectedWorkHomeSection() {
                         alignItems: "center",
                         justifyContent: "space-between",
                         pt: 2,
-                        borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                        borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                         flexWrap: "wrap",
                         gap: 1.5,
                       }}
@@ -1006,7 +1006,7 @@ export default function SelectedWorkHomeSection() {
                               py: 0.3,
                               borderRadius: "6px",
                               bgcolor: "#FFFFFF",
-                              border: "1px solid rgba(228, 228, 231, 0.9)",
+                              border: "1px solid rgba(216, 229, 213, 0.9)",
                               fontSize: "0.72rem",
                               color: "#3F3F46",
                               fontWeight: 600,
@@ -1022,11 +1022,11 @@ export default function SelectedWorkHomeSection() {
                           size="small"
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
                           sx={{
-                            color: "#EA580C",
+                            color: "#3D765D",
                             fontWeight: 600,
                             fontSize: "0.85rem",
                             p: 0,
-                            "&:hover": { bgcolor: "transparent", color: "#C2410C" },
+                            "&:hover": { bgcolor: "transparent", color: "#183D35" },
                           }}
                         >
                           View Prototype Details
@@ -1054,18 +1054,18 @@ export default function SelectedWorkHomeSection() {
             >
               <Box
                 sx={{
-                  bgcolor: "#FAF8F5",
+                  bgcolor: "#F7F7F2",
                   borderRadius: { xs: "24px", md: "30px" },
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 20px 50px -10px rgba(24, 24, 27, 0.05)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 20px 50px -10px rgba(24, 61, 53, 0.05)",
                   p: "clamp(24px, 4vw, 42px)",
                   mb: { xs: 6, md: 8 },
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.35s ease",
                   "&:hover": {
-                    borderColor: "rgba(249, 115, 22, 0.35)",
-                    boxShadow: "0 25px 60px -15px rgba(234, 88, 12, 0.12)",
+                    borderColor: "rgba(61, 118, 93, 0.35)",
+                    boxShadow: "0 25px 60px -15px rgba(61, 118, 93, 0.12)",
                   },
                 }}
               >
@@ -1079,15 +1079,15 @@ export default function SelectedWorkHomeSection() {
                             px: 1.5,
                             py: 0.35,
                             borderRadius: "9999px",
-                            bgcolor: "rgba(249, 115, 22, 0.1)",
-                            border: "1px solid rgba(249, 115, 22, 0.25)",
+                            bgcolor: "rgba(61, 118, 93, 0.1)",
+                            border: "1px solid rgba(61, 118, 93, 0.25)",
                           }}
                         >
                           <Typography
                             sx={{
                               fontSize: "0.725rem",
                               fontWeight: 700,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "0.05em",
                             }}
                           >
@@ -1104,7 +1104,7 @@ export default function SelectedWorkHomeSection() {
                         sx={{
                           fontSize: { xs: "1.6rem", sm: "2rem" },
                           fontWeight: 600,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.025em",
                           lineHeight: 1.25,
                           mb: 1.5,
@@ -1133,21 +1133,21 @@ export default function SelectedWorkHomeSection() {
                           p: 2,
                           borderRadius: "14px",
                           bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(228, 228, 231, 0.8)",
+                          border: "1px solid rgba(216, 229, 213, 0.8)",
                           mb: 3,
                         }}
                       >
                         <Box>
-                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#EA580C", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#3D765D", lineHeight: 1 }}>
                             Consistent
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
                             Template-Driven Proposals
                           </Typography>
                         </Box>
-                        <Box sx={{ width: 1, height: 28, bgcolor: "rgba(228, 228, 231, 0.8)" }} />
+                        <Box sx={{ width: 1, height: 28, bgcolor: "rgba(216, 229, 213, 0.8)" }} />
                         <Box>
-                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B", lineHeight: 1 }}>
+                          <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#183D35", lineHeight: 1 }}>
                             Centralized
                           </Typography>
                           <Typography sx={{ fontSize: "0.72rem", color: "#71717A", mt: 0.3 }}>
@@ -1165,7 +1165,7 @@ export default function SelectedWorkHomeSection() {
                               py: 0.3,
                               borderRadius: "6px",
                               bgcolor: "#FFFFFF",
-                              border: "1px solid rgba(228, 228, 231, 0.9)",
+                              border: "1px solid rgba(216, 229, 213, 0.9)",
                               fontSize: "0.72rem",
                               color: "#3F3F46",
                               fontWeight: 600,
@@ -1181,17 +1181,17 @@ export default function SelectedWorkHomeSection() {
                           variant="outlined"
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 15 }} />}
                           sx={{
-                            color: "#18181B",
-                            borderColor: "rgba(24, 24, 27, 0.25)",
+                            color: "#183D35",
+                            borderColor: "rgba(24, 61, 53, 0.25)",
                             borderRadius: "9999px",
                             px: 3,
                             py: 1.1,
                             fontSize: "0.85rem",
                             fontWeight: 600,
                             "&:hover": {
-                              borderColor: "#EA580C",
-                              color: "#EA580C",
-                              bgcolor: "rgba(249, 115, 22, 0.04)",
+                              borderColor: "#3D765D",
+                              color: "#3D765D",
+                              bgcolor: "rgba(61, 118, 93, 0.04)",
                             },
                           }}
                         >
@@ -1210,9 +1210,9 @@ export default function SelectedWorkHomeSection() {
                         height: { xs: 260, sm: 340, md: 380 },
                         borderRadius: "20px",
                         overflow: "hidden",
-                        bgcolor: "#18181B",
-                        border: "1px solid rgba(24, 24, 27, 0.12)",
-                        boxShadow: "0 20px 45px -10px rgba(24, 24, 27, 0.2)",
+                        bgcolor: "#183D35",
+                        border: "1px solid rgba(24, 61, 53, 0.12)",
+                        boxShadow: "0 20px 45px -10px rgba(24, 61, 53, 0.2)",
                       }}
                     >
                       <Image
@@ -1232,7 +1232,7 @@ export default function SelectedWorkHomeSection() {
                           px: 2,
                           py: 1,
                           borderRadius: "10px",
-                          bgcolor: "rgba(24, 24, 27, 0.88)",
+                          bgcolor: "rgba(24, 61, 53, 0.88)",
                           backdropFilter: "blur(10px)",
                           border: "1px solid rgba(255, 255, 255, 0.12)",
                           color: "#FFFFFF",
@@ -1243,7 +1243,7 @@ export default function SelectedWorkHomeSection() {
                           gap: 1,
                         }}
                       >
-                        <Typography sx={{ fontSize: "0.78rem", fontWeight: 600, color: "#FB923C" }}>
+                        <Typography sx={{ fontSize: "0.78rem", fontWeight: 600, color: "#62A486" }}>
                           ● STANDARDIZED PRICING LOGIC
                         </Typography>
                         <Typography sx={{ fontSize: "0.75rem", color: "#A1A1AA", fontFamily: "monospace" }}>
@@ -1271,8 +1271,8 @@ export default function SelectedWorkHomeSection() {
             sx={{
               p: { xs: 3.5, sm: 4.5 },
               borderRadius: "22px",
-              bgcolor: "#FAF8F5",
-              border: "1px dashed rgba(24, 24, 27, 0.2)",
+              bgcolor: "#F7F7F2",
+              border: "1px dashed rgba(24, 61, 53, 0.2)",
               display: "flex",
               flexDirection: { xs: "column", md: "row" },
               alignItems: { xs: "flex-start", md: "center" },
@@ -1285,7 +1285,7 @@ export default function SelectedWorkHomeSection() {
                 sx={{
                   fontSize: "1.1rem",
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   mb: 0.8,
                   letterSpacing: "-0.01em",
                 }}
@@ -1304,7 +1304,7 @@ export default function SelectedWorkHomeSection() {
                   fullWidth
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #18181B 0%, #27272A 100%)",
+                    background: "linear-gradient(135deg, #183D35 0%, #27272A 100%)",
                     color: "#FFFFFF",
                     px: { xs: 2.5, sm: 3.8 },
                     py: 1.4,
@@ -1314,11 +1314,11 @@ export default function SelectedWorkHomeSection() {
                     width: { xs: "100%", md: "auto" },
                     whiteSpace: { xs: "normal", sm: "nowrap" },
                     textAlign: "center",
-                    boxShadow: "0 8px 20px rgba(24, 24, 27, 0.2)",
+                    boxShadow: "0 8px 20px rgba(24, 61, 53, 0.2)",
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                      boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
+                      boxShadow: "0 10px 24px rgba(61, 118, 93, 0.35)",
                       transform: "translateY(-1px)",
                     },
                   }}

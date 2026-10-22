@@ -41,9 +41,9 @@ export default function WhyAetibarSection() {
       id="why-aetibar"
       component="section"
       sx={{
-        bgcolor: "#F2F0EB",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -54,7 +54,7 @@ export default function WhyAetibarSection() {
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.14em",
                   display: "block",
@@ -67,7 +67,7 @@ export default function WhyAetibarSection() {
               <Typography
                 variant="h2"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "2rem", sm: "2.75rem", md: "3.5rem" },
                   fontWeight: 800,
                   letterSpacing: "-0.03em",
@@ -77,7 +77,7 @@ export default function WhyAetibarSection() {
               >
                 Built on Trust.{" "}
                 <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-                <Box component="span" sx={{ color: "#0E7490" }}>
+                <Box component="span" sx={{ color: "#3D765D" }}>
                   Delivered With Rigor.
                 </Box>
               </Typography>
@@ -99,15 +99,15 @@ export default function WhyAetibarSection() {
               <Box
                 sx={{
                   p: 3,
-                  bgcolor: "#FAF9F5",
+                  bgcolor: "#F7F7F2",
                   borderRadius: "8px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
-                  borderLeft: "4px solid #0E7490",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
+                  borderLeft: "4px solid #3D765D",
                 }}
               >
                 <Typography
                   sx={{
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontWeight: 700,
                     fontSize: "0.95rem",
                     mb: 0.5,
@@ -125,13 +125,13 @@ export default function WhyAetibarSection() {
 
           {/* Right Column: 5 Numbered Editorial Principles */}
           <Grid size={{ xs: 12, lg: 7 }}>
-            <Box sx={{ borderBottom: "1px solid rgba(17, 18, 21, 0.1)" }}>
+            <Box sx={{ borderBottom: "1px solid rgba(24, 61, 53, 0.1)" }}>
               {principles.map((principle) => (
                 <Box
                   key={principle.num}
                   sx={{
                     py: { xs: 4, md: 5 },
-                    borderTop: "1px solid rgba(17, 18, 21, 0.1)",
+                    borderTop: "1px solid rgba(24, 61, 53, 0.1)",
                     display: "flex",
                     flexDirection: "row",
                     gap: { xs: 2.5, sm: 4 },
@@ -140,7 +140,7 @@ export default function WhyAetibarSection() {
                 >
                   <Typography
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 800,
                       fontSize: { xs: "1.15rem", sm: "1.45rem" },
                       letterSpacing: "0.05em",
@@ -157,7 +157,7 @@ export default function WhyAetibarSection() {
                     <Typography
                       variant="h4"
                       sx={{
-                        color: "#0E172A",
+                        color: "#183D35",
                         fontSize: { xs: "1.2rem", md: "1.45rem" },
                         fontWeight: 800,
                         letterSpacing: "-0.02em",

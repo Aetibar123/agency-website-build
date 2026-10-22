@@ -49,19 +49,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/seo-company-in-udaipur`,
+      url: `${baseUrl}/services/seo-service-in-udaipur`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/social-media-marketing-company-in-udaipur`,
+      url: `${baseUrl}/services/social-media-marketing-service-in-udaipur`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/paid-advertising-company-in-udaipur`,
+      url: `${baseUrl}/services/performance-marketing-company-in-udaipur`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,

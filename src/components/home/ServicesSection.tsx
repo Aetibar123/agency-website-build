@@ -85,7 +85,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "04",
-    slug: "seo-company-in-udaipur",
+    slug: "seo-service-in-udaipur",
     title: "Technical SEO & Search Growth",
     category: "GROWTH",
     categoryLabel: "GOOGLE VISIBILITY",
@@ -104,7 +104,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "05",
-    slug: "paid-advertising-company-in-udaipur",
+    slug: "performance-marketing-company-in-udaipur",
     title: "Performance Marketing & Growth",
     category: "GROWTH",
     categoryLabel: "TARGETED CUSTOMER ACQUISITION",
@@ -123,7 +123,7 @@ const servicesData: ServiceItem[] = [
   },
   {
     num: "06",
-    slug: "social-media-marketing-company-in-udaipur",
+    slug: "social-media-marketing-service-in-udaipur",
     title: "Brand Systems & UI/UX Design",
     category: "DESIGN",
     categoryLabel: "BRAND & UI/UX DESIGN",
@@ -165,9 +165,9 @@ export default function ServicesSection() {
       id="services"
       component="section"
       sx={{
-        bgcolor: "#F2F0EB",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -176,7 +176,7 @@ export default function ServicesSection() {
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.14em",
               display: "block",
@@ -199,7 +199,7 @@ export default function ServicesSection() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.75rem", md: "3.4rem" },
                 fontWeight: 800,
                 letterSpacing: "-0.03em",
@@ -208,7 +208,7 @@ export default function ServicesSection() {
             >
               Digital Services.{" "}
               <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box component="span" sx={{ color: "#3D765D" }}>
                 Built to Scale.
               </Box>
             </Typography>
@@ -219,15 +219,15 @@ export default function ServicesSection() {
               variant="outlined"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                borderColor: "rgba(17, 18, 21, 0.2)",
-                color: "#0E172A",
+                borderColor: "rgba(24, 61, 53, 0.2)",
+                color: "#183D35",
                 px: 3,
                 py: 1.2,
                 fontWeight: 600,
                 borderRadius: "6px",
                 "&:hover": {
-                  borderColor: "#0E172A",
-                  bgcolor: "rgba(14, 23, 42, 0.04)",
+                  borderColor: "#183D35",
+                  bgcolor: "rgba(24, 61, 53, 0.04)",
                 },
               }}
             >
@@ -257,7 +257,7 @@ export default function ServicesSection() {
             gap: 1.5,
             mb: { xs: 6, md: 8 },
             pb: 2,
-            borderBottom: "1px solid rgba(17, 18, 21, 0.1)",
+            borderBottom: "1px solid rgba(24, 61, 53, 0.1)",
           }}
         >
           {filterTabs.map((tab) => {
@@ -269,8 +269,8 @@ export default function ServicesSection() {
                 onClick={() => setActiveFilter(tab.id)}
                 sx={{
                   border: "1px solid",
-                  borderColor: isSelected ? "#0E7490" : "rgba(17, 18, 21, 0.12)",
-                  bgcolor: isSelected ? "#0E7490" : "#FFFFFF",
+                  borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.12)",
+                  bgcolor: isSelected ? "#3D765D" : "#FFFFFF",
                   color: isSelected ? "#FFFFFF" : "#4A4D57",
                   px: 2.2,
                   py: 1,
@@ -284,9 +284,9 @@ export default function ServicesSection() {
                   gap: 1,
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    borderColor: "#0E7490",
-                    color: isSelected ? "#FFFFFF" : "#0E172A",
-                    bgcolor: isSelected ? "#0E7490" : "#FAF9F5",
+                    borderColor: "#3D765D",
+                    color: isSelected ? "#FFFFFF" : "#183D35",
+                    bgcolor: isSelected ? "#3D765D" : "#F7F7F2",
                   },
                 }}
               >
@@ -299,7 +299,7 @@ export default function ServicesSection() {
                     px: 0.8,
                     py: 0.2,
                     borderRadius: "4px",
-                    bgcolor: isSelected ? "rgba(255, 255, 255, 0.2)" : "rgba(17, 18, 21, 0.06)",
+                    bgcolor: isSelected ? "rgba(255, 255, 255, 0.2)" : "rgba(24, 61, 53, 0.06)",
                     color: isSelected ? "#FFFFFF" : "#5E6068",
                     fontFamily: "monospace",
                   }}
@@ -319,7 +319,7 @@ export default function ServicesSection() {
                 sx={{
                   bgcolor: "#FFFFFF",
                   borderRadius: "12px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   p: { xs: 3.5, sm: 4.5, md: 5 },
                   height: "100%",
                   display: "flex",
@@ -328,12 +328,12 @@ export default function ServicesSection() {
                   transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                   position: "relative",
                   "&:hover": {
-                    borderColor: "#0E7490",
+                    borderColor: "#3D765D",
                     transform: "translateY(-4px)",
-                    boxShadow: "0 16px 36px rgba(14, 116, 144, 0.08)",
+                    boxShadow: "0 16px 36px rgba(61, 118, 93, 0.08)",
                     "& .action-arrow": {
                       transform: "translateX(6px)",
-                      color: "#0E7490",
+                      color: "#3D765D",
                     },
                   },
                 }}
@@ -348,7 +348,7 @@ export default function ServicesSection() {
                       alignItems: { xs: "flex-start", sm: "center" },
                       gap: 1.5,
                       pb: 2.5,
-                      borderBottom: "1px solid rgba(17, 18, 21, 0.06)",
+                      borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
                       mb: 3,
                     }}
                   >
@@ -358,8 +358,8 @@ export default function ServicesSection() {
                           width: 38,
                           height: 38,
                           borderRadius: "8px",
-                          bgcolor: "rgba(14, 116, 144, 0.08)",
-                          color: "#0E7490",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
+                          color: "#3D765D",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -387,14 +387,14 @@ export default function ServicesSection() {
                         px: 1.4,
                         py: 0.4,
                         borderRadius: "4px",
-                        bgcolor: "rgba(14, 116, 144, 0.06)",
-                        border: "1px solid rgba(14, 116, 144, 0.18)",
+                        bgcolor: "rgba(61, 118, 93, 0.06)",
+                        border: "1px solid rgba(61, 118, 93, 0.18)",
                       }}
                     >
                       <Typography
                         variant="caption"
                         sx={{
-                          color: "#0E7490",
+                          color: "#3D765D",
                           fontWeight: 600,
                           fontSize: "0.72rem",
                           fontFamily: "monospace",
@@ -409,7 +409,7 @@ export default function ServicesSection() {
                   <Typography
                     variant="h3"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: { xs: "1.35rem", sm: "1.55rem", md: "1.7rem" },
                       fontWeight: 800,
                       letterSpacing: "-0.025em",
@@ -422,7 +422,7 @@ export default function ServicesSection() {
 
                   <Typography
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontSize: "0.92rem",
                       fontWeight: 600,
                       mb: 2,
@@ -478,7 +478,7 @@ export default function ServicesSection() {
                         >
                           <CheckCircleIcon
                             sx={{
-                              color: "#0E7490",
+                              color: "#3D765D",
                               fontSize: 16,
                               mt: "2px",
                               flexShrink: 0,
@@ -504,7 +504,7 @@ export default function ServicesSection() {
                 <Box
                   sx={{
                     pt: 2.5,
-                    borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+                    borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                     display: "flex",
                     flexDirection: { xs: "column", sm: "row" },
                     justifyContent: "space-between",
@@ -531,12 +531,12 @@ export default function ServicesSection() {
                       alignItems: "center",
                       gap: 1,
                       textDecoration: "none",
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontWeight: 700,
                       fontSize: "0.875rem",
                       transition: "color 0.2s ease",
                       "&:hover": {
-                        color: "#0E7490",
+                        color: "#3D765D",
                       },
                     }}
                   >
@@ -557,9 +557,9 @@ export default function ServicesSection() {
           sx={{
             mt: { xs: 8, md: 12 },
             p: { xs: 3.5, sm: 4, md: 5 },
-            bgcolor: "#FAF9F5",
+            bgcolor: "#F7F7F2",
             borderRadius: "12px",
-            border: "1px solid rgba(17, 18, 21, 0.1)",
+            border: "1px solid rgba(24, 61, 53, 0.1)",
             display: "flex",
             flexDirection: { xs: "column", lg: "row" },
             justifyContent: "space-between",
@@ -571,7 +571,7 @@ export default function ServicesSection() {
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.12em",
                 display: "block",
@@ -582,7 +582,7 @@ export default function ServicesSection() {
             </Typography>
             <Typography
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "1.1rem", md: "1.25rem" },
                 fontWeight: 800,
                 letterSpacing: "-0.02em",
@@ -603,7 +603,7 @@ export default function ServicesSection() {
             variant="contained"
             endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
             sx={{
-              bgcolor: "#0E172A",
+              bgcolor: "#183D35",
               color: "#FFFFFF",
               px: 3.5,
               py: 1.4,
@@ -611,7 +611,7 @@ export default function ServicesSection() {
               fontWeight: 600,
               borderRadius: "6px",
               flexShrink: 0,
-              boxShadow: "0 6px 20px rgba(14, 23, 42, 0.12)",
+              boxShadow: "0 6px 20px rgba(24, 61, 53, 0.12)",
               "&:hover": {
                 bgcolor: "#1E293B",
                 transform: "translateY(-2px)",

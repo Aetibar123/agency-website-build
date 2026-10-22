@@ -48,18 +48,18 @@ export default function InteractiveScopeEstimator({
         bgcolor: "#FFFFFF",
         p: { xs: 4, sm: 5, md: 6 },
         borderRadius: "16px",
-        border: "1px solid rgba(17, 18, 21, 0.08)",
-        boxShadow: "0 16px 40px rgba(17, 18, 21, 0.04)",
+        border: "1px solid rgba(24, 61, 53, 0.08)",
+        boxShadow: "0 16px 40px rgba(24, 61, 53, 0.04)",
       }}
     >
       {/* Header */}
       <Box sx={{ mb: 5, maxWidth: "700px" }}>
         <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-          <BoltIcon sx={{ color: "#0E7490", fontSize: 20 }} />
+          <BoltIcon sx={{ color: "#3D765D", fontSize: 20 }} />
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.12em",
             }}
@@ -70,7 +70,7 @@ export default function InteractiveScopeEstimator({
         <Typography
           variant="h3"
           sx={{
-            color: "#0E172A",
+            color: "#183D35",
             fontSize: { xs: "1.6rem", sm: "2rem", md: "2.3rem" },
             fontWeight: 800,
             letterSpacing: "-0.025em",
@@ -100,7 +100,7 @@ export default function InteractiveScopeEstimator({
           <Box>
             <Typography
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontWeight: 700,
                 fontSize: "0.95rem",
                 mb: 1.5,
@@ -115,7 +115,7 @@ export default function InteractiveScopeEstimator({
                   width: 20,
                   height: 20,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                   color: "#FFFFFF",
                   fontSize: "0.72rem",
                   display: "inline-flex",
@@ -140,19 +140,19 @@ export default function InteractiveScopeEstimator({
                       textAlign: "left",
                       borderRadius: "8px",
                       border: "1px solid",
-                      borderColor: isSelected ? "#0E7490" : "rgba(17, 18, 21, 0.1)",
-                      bgcolor: isSelected ? "rgba(14, 116, 144, 0.05)" : "#FAF9F5",
+                      borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.1)",
+                      bgcolor: isSelected ? "rgba(61, 118, 93, 0.05)" : "#F7F7F2",
                       cursor: "pointer",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        borderColor: "#0E7490",
-                        bgcolor: isSelected ? "rgba(14, 116, 144, 0.08)" : "#FFFFFF",
+                        borderColor: "#3D765D",
+                        bgcolor: isSelected ? "rgba(61, 118, 93, 0.08)" : "#FFFFFF",
                       },
                     }}
                   >
                     <Typography
                       sx={{
-                        color: isSelected ? "#0E7490" : "#0E172A",
+                        color: isSelected ? "#3D765D" : "#183D35",
                         fontWeight: 700,
                         fontSize: "0.88rem",
                         lineHeight: 1.3,
@@ -170,7 +170,7 @@ export default function InteractiveScopeEstimator({
           <Box>
             <Typography
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontWeight: 700,
                 fontSize: "0.95rem",
                 mb: 1.5,
@@ -185,7 +185,7 @@ export default function InteractiveScopeEstimator({
                   width: 20,
                   height: 20,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                   color: "#FFFFFF",
                   fontSize: "0.72rem",
                   display: "inline-flex",
@@ -210,19 +210,19 @@ export default function InteractiveScopeEstimator({
                       textAlign: "left",
                       borderRadius: "8px",
                       border: "1px solid",
-                      borderColor: isSelected ? "#0E7490" : "rgba(17, 18, 21, 0.1)",
-                      bgcolor: isSelected ? "rgba(14, 116, 144, 0.05)" : "#FAF9F5",
+                      borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.1)",
+                      bgcolor: isSelected ? "rgba(61, 118, 93, 0.05)" : "#F7F7F2",
                       cursor: "pointer",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        borderColor: "#0E7490",
-                        bgcolor: isSelected ? "rgba(14, 116, 144, 0.08)" : "#FFFFFF",
+                        borderColor: "#3D765D",
+                        bgcolor: isSelected ? "rgba(61, 118, 93, 0.08)" : "#FFFFFF",
                       },
                     }}
                   >
                     <Typography
                       sx={{
-                        color: isSelected ? "#0E7490" : "#0E172A",
+                        color: isSelected ? "#3D765D" : "#183D35",
                         fontWeight: 700,
                         fontSize: "0.85rem",
                         lineHeight: 1.3,
@@ -240,7 +240,7 @@ export default function InteractiveScopeEstimator({
           <Box>
             <Typography
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontWeight: 700,
                 fontSize: "0.95rem",
                 mb: 1.5,
@@ -255,7 +255,7 @@ export default function InteractiveScopeEstimator({
                   width: 20,
                   height: 20,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                   color: "#FFFFFF",
                   fontSize: "0.72rem",
                   display: "inline-flex",
@@ -280,19 +280,19 @@ export default function InteractiveScopeEstimator({
                       textAlign: "left",
                       borderRadius: "8px",
                       border: "1px solid",
-                      borderColor: isSelected ? "#0E7490" : "rgba(17, 18, 21, 0.1)",
-                      bgcolor: isSelected ? "rgba(14, 116, 144, 0.05)" : "#FAF9F5",
+                      borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.1)",
+                      bgcolor: isSelected ? "rgba(61, 118, 93, 0.05)" : "#F7F7F2",
                       cursor: "pointer",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        borderColor: "#0E7490",
-                        bgcolor: isSelected ? "rgba(14, 116, 144, 0.08)" : "#FFFFFF",
+                        borderColor: "#3D765D",
+                        bgcolor: isSelected ? "rgba(61, 118, 93, 0.08)" : "#FFFFFF",
                       },
                     }}
                   >
                     <Typography
                       sx={{
-                        color: isSelected ? "#0E7490" : "#0E172A",
+                        color: isSelected ? "#3D765D" : "#183D35",
                         fontWeight: 700,
                         fontSize: "0.85rem",
                       }}
@@ -309,10 +309,10 @@ export default function InteractiveScopeEstimator({
         {/* Right Side: Live Project Blueprint Card */}
         <Box
           sx={{
-            bgcolor: "#FAF9F5",
+            bgcolor: "#F7F7F2",
             p: { xs: 3.5, sm: 4 },
             borderRadius: "12px",
-            border: "1px solid rgba(14, 116, 144, 0.2)",
+            border: "1px solid rgba(61, 118, 93, 0.2)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
@@ -322,7 +322,7 @@ export default function InteractiveScopeEstimator({
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 800,
                 fontSize: "0.75rem",
                 letterSpacing: "0.1em",
@@ -335,7 +335,7 @@ export default function InteractiveScopeEstimator({
 
             <Typography
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: "1.3rem",
                 fontWeight: 800,
                 letterSpacing: "-0.02em",
@@ -346,36 +346,36 @@ export default function InteractiveScopeEstimator({
             </Typography>
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mb: 3.5 }}>
-              <Box sx={{ pb: 1.5, borderBottom: "1px solid rgba(17, 18, 21, 0.06)" }}>
+              <Box sx={{ pb: 1.5, borderBottom: "1px solid rgba(24, 61, 53, 0.06)" }}>
                 <Typography variant="caption" sx={{ color: "#5E6068", fontWeight: 600 }}>
                   ESTIMATED DELIVERY TIMELINE
                 </Typography>
-                <Typography sx={{ color: "#0E172A", fontWeight: 700, fontSize: "1.05rem" }}>
+                <Typography sx={{ color: "#183D35", fontWeight: 700, fontSize: "1.05rem" }}>
                   {activeTimelineObj.duration}
                 </Typography>
               </Box>
 
-              <Box sx={{ pb: 1.5, borderBottom: "1px solid rgba(17, 18, 21, 0.06)" }}>
+              <Box sx={{ pb: 1.5, borderBottom: "1px solid rgba(24, 61, 53, 0.06)" }}>
                 <Typography variant="caption" sx={{ color: "#5E6068", fontWeight: 600 }}>
                   TECHNICAL PILLAR &amp; FOCUS
                 </Typography>
-                <Typography sx={{ color: "#0E7490", fontWeight: 700, fontSize: "0.95rem" }}>
+                <Typography sx={{ color: "#3D765D", fontWeight: 700, fontSize: "0.95rem" }}>
                   {activeFocusObj.badge}
                 </Typography>
               </Box>
 
-              <Box sx={{ pb: 1.5, borderBottom: "1px solid rgba(17, 18, 21, 0.06)" }}>
+              <Box sx={{ pb: 1.5, borderBottom: "1px solid rgba(24, 61, 53, 0.06)" }}>
                 <Typography variant="caption" sx={{ color: "#5E6068", fontWeight: 600 }}>
                   DEDICATED PRACTITIONERS
                 </Typography>
-                <Typography sx={{ color: "#0E172A", fontWeight: 600, fontSize: "0.9rem" }}>
+                <Typography sx={{ color: "#183D35", fontWeight: 600, fontSize: "0.9rem" }}>
                   Direct senior engineer + dedicated UI/UX product designer
                 </Typography>
               </Box>
             </Box>
 
             <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3 }}>
-              <CheckCircleIcon sx={{ color: "#0E7490", fontSize: 18 }} />
+              <CheckCircleIcon sx={{ color: "#3D765D", fontSize: 18 }} />
               <Typography sx={{ color: "#2C2E35", fontWeight: 600, fontSize: "0.85rem" }}>
                 100% intellectual property &amp; code ownership
               </Typography>
@@ -389,13 +389,13 @@ export default function InteractiveScopeEstimator({
             fullWidth
             endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
             sx={{
-              bgcolor: "#0E172A",
+              bgcolor: "#183D35",
               color: "#FFFFFF",
               py: 1.5,
               fontSize: "0.92rem",
               fontWeight: 700,
               borderRadius: "6px",
-              boxShadow: "0 6px 20px rgba(14, 23, 42, 0.12)",
+              boxShadow: "0 6px 20px rgba(24, 61, 53, 0.12)",
               "&:hover": {
                 bgcolor: "#1E293B",
                 transform: "translateY(-2px)",

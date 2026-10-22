@@ -6,7 +6,6 @@ import Image from "next/image";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import BoltRoundedIcon from "@mui/icons-material/BoltRounded";
 import SpeedRoundedIcon from "@mui/icons-material/SpeedRounded";
 import ShieldRoundedIcon from "@mui/icons-material/ShieldRounded";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -17,13 +16,11 @@ import TerminalRoundedIcon from "@mui/icons-material/TerminalRounded";
 import PhoneIphoneRoundedIcon from "@mui/icons-material/PhoneIphoneRounded";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
-import StorageRoundedIcon from "@mui/icons-material/StorageRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import AdsClickRoundedIcon from "@mui/icons-material/AdsClickRounded";
 import PaletteOutlinedIcon from "@mui/icons-material/PaletteOutlined";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import { motion } from "framer-motion";
-
 
 const studioPrinciples = [
   {
@@ -88,70 +85,67 @@ const studioPrinciples = [
   },
 ];
 
-
-
-
 const fullServiceCapabilities = [
   {
     category: "WEB DEVELOPMENT",
     title: "Websites, Online Stores & Web Applications",
     desc: "Business websites, online stores, and custom web applications built around your needs.",
-    icon: <LanguageRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <LanguageRoundedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     category: "MOBILE APP DEVELOPMENT",
     title: "Custom Android & iPhone Apps",
     desc: "Mobile apps for customers, bookings, ordering, field teams, and internal business needs.",
-    icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <PhoneIphoneRoundedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     category: "SEARCH ENGINE OPTIMIZATION (SEO)",
     title: "SEO That Helps Customers Find You",
     desc: "Practical SEO focused on search visibility, useful content, and local search.",
-    icon: <SearchRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SearchRoundedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     category: "PAID ADVERTISING",
     title: "Google & Meta Advertising",
     desc: "Targeted campaigns with controlled budgets, tracking, and ongoing optimization.",
-    icon: <AdsClickRoundedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <AdsClickRoundedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     category: "SOCIAL MEDIA MARKETING",
     title: "Consistent Social Media Content",
     desc: "Content planning, branded visuals, captions, and publishing for your social presence.",
-    icon: <PaletteOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <PaletteOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     category: "AI AUTOMATION",
     title: "Automation for Repetitive Work",
     desc: "Connect your tools and automate routine tasks, follow-ups, data handling, and workflows.",
-    icon: <SmartToyOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SmartToyOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
 ];
-
 
 export default function AboutPageClient() {
   return (
     <Box sx={{ bgcolor: "#FFFFFF", overflow: "hidden" }}>
       {/* ========================================================================= */}
-      {/* 1. EDITORIAL HERO SECTION                                                 */}
+      {/* 1. HERO SECTION (LEFT-ALIGNED, DARK PINE #183D35)                         */}
       {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
           pt: { xs: 16, sm: 19, md: 22 },
           pb: { xs: 10, md: 15 },
-          bgcolor: "#FAF8F5",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#183D35",
+          color: "#FFFFFF",
           position: "relative",
           overflow: "hidden",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.15)",
         }}
       >
-        {/* Ambient Warm Gradient Glows */}
+        {/* Subtle Ambient Glows */}
         <Box
           component={motion.div}
-          animate={{ scale: [1, 1.15, 1], opacity: [0.25, 0.4, 0.25] }}
+          animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.35, 0.2] }}
           transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
           sx={{
             position: "absolute",
@@ -159,14 +153,14 @@ export default function AboutPageClient() {
             right: "-5%",
             width: "550px",
             height: "550px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.14) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(61, 118, 93, 0.3) 0%, transparent 70%)",
             filter: "blur(70px)",
             pointerEvents: "none",
           }}
         />
         <Box
           component={motion.div}
-          animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.35, 0.2] }}
+          animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.28, 0.15] }}
           transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 1 }}
           sx={{
             position: "absolute",
@@ -174,19 +168,19 @@ export default function AboutPageClient() {
             left: "-10%",
             width: "500px",
             height: "500px",
-            background: "radial-gradient(circle, rgba(251, 146, 60, 0.12) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(216, 229, 213, 0.15) 0%, transparent 70%)",
             filter: "blur(70px)",
             pointerEvents: "none",
           }}
         />
 
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
-          <Box sx={{ maxWidth: 960, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+          <Box sx={{ maxWidth: 960, mb: { xs: 6, md: 8 } }}>
             {/* Status Pill Badge */}
             <motion.div
-              initial={{ opacity: 0, y: -24, scale: 0.94 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
               <Box
                 sx={{
@@ -194,13 +188,13 @@ export default function AboutPageClient() {
                   alignItems: "center",
                   gap: 1.2,
                   px: 2.2,
-                  py: 0.6,
+                  py: 0.7,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(216, 229, 213, 0.12)",
+                  border: "1px solid rgba(216, 229, 213, 0.28)",
+                  boxShadow: "0 2px 12px rgba(0, 0, 0, 0.15)",
                   backdropFilter: "blur(12px)",
-                  mb: 2.5,
+                  mb: 3,
                 }}
               >
                 <Box
@@ -211,8 +205,8 @@ export default function AboutPageClient() {
                     width: 7,
                     height: 7,
                     borderRadius: "50%",
-                    bgcolor: "#F97316",
-                    boxShadow: "0 0 10px #F97316",
+                    bgcolor: "#D8E5D5",
+                    boxShadow: "0 0 10px #D8E5D5",
                   }}
                 />
                 <Typography
@@ -220,7 +214,7 @@ export default function AboutPageClient() {
                     fontSize: "0.8rem",
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#D8E5D5",
                     fontWeight: 700,
                     fontFamily: "monospace",
                   }}
@@ -232,32 +226,30 @@ export default function AboutPageClient() {
 
             {/* Main Title */}
             <motion.div
-              initial={{ opacity: 0, y: 32 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             >
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                  fontWeight: 600,
-                  color: "#18181B",
-                  letterSpacing: "-0.03em",
-                  lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
-                  maxWidth: { xs: "100%", sm: 860, md: 1040, lg: 1160 },
-                  mx: "auto",
-                  textWrap: "balance",
-                  mb: { xs: 2, md: 2.5 },
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "2.1rem", sm: "2.8rem", md: "3.5rem", lg: "4.1rem" },
+                  fontWeight: 400,
+                  color: "#FFFFFF",
+                  letterSpacing: "-0.025em",
+                  lineHeight: { xs: 1.15, sm: 1.12, md: 1.1 },
+                  maxWidth: { xs: "100%", md: 940 },
+                  mb: { xs: 2.5, md: 3 },
                 }}
               >
                 Websites, Apps &amp; Digital Marketing —{" "}
                 <Box
                   component="span"
                   sx={{
+                    fontStyle: "italic",
+                    color: "#D8E5D5",
                     display: "inline",
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
                   }}
                 >
                   Built on Trust to Grow Your Business.
@@ -267,54 +259,52 @@ export default function AboutPageClient() {
 
             {/* Narrative Subtitle */}
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.85, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.8, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
             >
               <Typography
                 variant="body1"
                 sx={{
-                  fontSize: { xs: "1.02rem", sm: "1.08rem", md: "1.15rem" },
-                  color: "#52525B",
-                  lineHeight: 1.7,
-                  maxWidth: { xs: "100%", sm: 640, md: 740 },
-                  mx: "auto",
+                  fontSize: { xs: "1.05rem", sm: "1.15rem", md: "1.2rem" },
+                  color: "rgba(255, 255, 255, 0.85)",
+                  lineHeight: 1.75,
+                  maxWidth: { xs: "100%", sm: 680, md: 780 },
                   mb: { xs: 3.5, md: 4.5 },
                   fontWeight: 400,
                 }}
               >
-             Looking for a dependable digital partner? Aetibar provides web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation—built around your business needs.
-
-
+                Looking for a dependable digital partner? Aetibar provides web development, mobile apps, SEO, social media marketing, paid advertising, and AI automation—built around your business needs.
               </Typography>
             </motion.div>
 
             {/* Action Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 2, flexWrap: "wrap", mb: 6 }}>
-                <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 2, flexWrap: "wrap", mb: 6 }}>
+                <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                   <Link href="/contact" style={{ textDecoration: "none" }}>
                     <Button
                       variant="contained"
                       endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 18 }} />}
                       sx={{
-                        py: 1.5,
+                        py: 1.6,
                         px: 3.8,
                         borderRadius: "9999px",
-                        background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                        color: "#FFFFFF",
+                        bgcolor: "#D8E5D5",
+                        color: "#183D35",
                         fontSize: "0.95rem",
                         fontWeight: 700,
                         textTransform: "none",
-                        boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.38)",
+                        boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.25)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                          boxShadow: "0 15px 30px -5px rgba(234, 88, 12, 0.5)",
+                          bgcolor: "#FFFFFF",
+                          color: "#183D35",
+                          boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.35)",
                         },
                       }}
                     >
@@ -323,25 +313,25 @@ export default function AboutPageClient() {
                   </Link>
                 </motion.div>
 
-                <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
+                <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
                   <Link href="/work" style={{ textDecoration: "none" }}>
                     <Button
                       sx={{
-                        py: 1.4,
+                        py: 1.5,
                         px: 3.5,
                         borderRadius: "9999px",
-                        bgcolor: "#FFFFFF",
-                        color: "#18181B",
+                        bgcolor: "rgba(255, 255, 255, 0.08)",
+                        backdropFilter: "blur(10px)",
+                        color: "#FFFFFF",
                         fontSize: "0.95rem",
                         fontWeight: 600,
                         textTransform: "none",
-                        border: "1px solid rgba(24, 24, 27, 0.12)",
-                        boxShadow: "0 2px 6px rgba(24, 24, 27, 0.03)",
+                        border: "1px solid rgba(216, 229, 213, 0.3)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          bgcolor: "#FAF8F5",
-                          borderColor: "#EA580C",
-                          color: "#EA580C",
+                          bgcolor: "rgba(216, 229, 213, 0.16)",
+                          borderColor: "#D8E5D5",
+                          color: "#FFFFFF",
                         },
                       }}
                     >
@@ -355,21 +345,20 @@ export default function AboutPageClient() {
 
           {/* Visual Showcase Frame with Floating Badges */}
           <motion.div
-            initial={{ opacity: 0, y: 45, scale: 0.97 }}
+            initial={{ opacity: 0, y: 35, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 1.05, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           >
             <Box
               sx={{
                 position: "relative",
                 width: "100%",
                 maxWidth: 1160,
-                mx: "auto",
                 height: { xs: 260, sm: 380, md: 480 },
                 borderRadius: { xs: "20px", md: "30px" },
                 overflow: "hidden",
-                border: "1px solid rgba(24, 24, 27, 0.08)",
-                boxShadow: "0 24px 60px -15px rgba(24, 24, 27, 0.08)",
+                border: "1px solid rgba(216, 229, 213, 0.2)",
+                boxShadow: "0 24px 60px -15px rgba(0, 0, 0, 0.4)",
                 mb: 6,
               }}
             >
@@ -388,7 +377,7 @@ export default function AboutPageClient() {
                   position: "absolute",
                   inset: 0,
                   background:
-                    "linear-gradient(to top, rgba(24, 24, 27, 0.75) 0%, rgba(24, 24, 27, 0.15) 50%, transparent 100%)",
+                    "linear-gradient(to top, rgba(24, 61, 53, 0.82) 0%, rgba(24, 61, 53, 0.2) 50%, transparent 100%)",
                 }}
               />
 
@@ -407,13 +396,13 @@ export default function AboutPageClient() {
                   px: 1.8,
                   py: 0.8,
                   borderRadius: "12px",
-                  bgcolor: "rgba(24, 24, 27, 0.88)",
+                  bgcolor: "rgba(24, 61, 53, 0.92)",
                   backdropFilter: "blur(12px)",
-                  border: "1px solid rgba(255, 255, 255, 0.15)",
-                  boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)",
+                  border: "1px solid rgba(216, 229, 213, 0.3)",
+                  boxShadow: "0 8px 24px rgba(0, 0, 0, 0.3)",
                 }}
               >
-                <LocationOnOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+                <LocationOnOutlinedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} />
                 <Typography
                   sx={{
                     fontFamily: "monospace",
@@ -442,13 +431,13 @@ export default function AboutPageClient() {
                   px: 1.8,
                   py: 0.7,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(24, 24, 27, 0.88)",
+                  bgcolor: "rgba(24, 61, 53, 0.92)",
                   backdropFilter: "blur(12px)",
-                  border: "1px solid rgba(249, 115, 22, 0.35)",
-                  boxShadow: "0 8px 24px rgba(0, 0, 0, 0.2)",
+                  border: "1px solid rgba(216, 229, 213, 0.3)",
+                  boxShadow: "0 8px 24px rgba(0, 0, 0, 0.3)",
                 }}
               >
-                <VerifiedRoundedIcon sx={{ fontSize: 16, color: "#22C55E" }} />
+                <VerifiedRoundedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} />
                 <Typography
                   sx={{
                     fontFamily: "monospace",
@@ -463,29 +452,29 @@ export default function AboutPageClient() {
               </Box>
             </Box>
 
-            {/* 4-Stat Proof Metrics Strip with Staggered Cascading Reveal */}
-            <Grid container spacing={2.5} sx={{ maxWidth: 1160, mx: "auto" }}>
+            {/* 4-Stat Proof Metrics Strip */}
+            <Grid container spacing={2.5} sx={{ maxWidth: 1160 }}>
               {[
                 {
-                  icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+                  icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
                   val: "100%",
                   label: "Complete Ownership",
                   desc: "You fully own your website, ad accounts, design files, and login details",
                 },
                 {
-                  icon: <SpeedRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+                  icon: <SpeedRoundedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
                   val: "14 Days",
                   label: "Live Working Demos",
                   desc: "Test your website or app on your phone every 2 weeks with clear updates",
                 },
                 {
-                  icon: <SearchRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+                  icon: <SearchRoundedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
                   val: "Page 1 SEO",
                   label: "Google Search Ranking",
                   desc: "Get found by local and national customers searching for your services",
                 },
                 {
-                  icon: <TrendingUpRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+                  icon: <TrendingUpRoundedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
                   val: "Real Results",
                   label: "More Calls & Leads",
                   desc: "Everything we build is designed to generate phone calls, WhatsApp messages, and sales",
@@ -493,27 +482,27 @@ export default function AboutPageClient() {
               ].map((m, idx) => (
                 <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={idx}>
                   <motion.div
-                    initial={{ opacity: 0, y: 35 }}
+                    initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.65 + idx * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ duration: 0.7, delay: 0.5 + idx * 0.12, ease: [0.16, 1, 0.3, 1] }}
                     style={{ height: "100%" }}
                   >
                     <Box
                       sx={{
                         p: { xs: 2.5, sm: 2.8 },
                         borderRadius: "20px",
-                        bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
-                        boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                        bgcolor: "rgba(255, 255, 255, 0.05)",
+                        border: "1px solid rgba(216, 229, 213, 0.18)",
+                        backdropFilter: "blur(12px)",
                         height: "100%",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
                         transition: "all 0.3s ease",
                         "&:hover": {
-                          borderColor: "rgba(234, 88, 12, 0.4)",
+                          borderColor: "rgba(216, 229, 213, 0.45)",
                           transform: "translateY(-3px)",
-                          boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                          boxShadow: "0 18px 36px -12px rgba(0, 0, 0, 0.3)",
                         },
                       }}
                     >
@@ -522,10 +511,10 @@ export default function AboutPageClient() {
                           <Typography
                             sx={{
                               fontSize: { xs: "1.45rem", sm: "1.65rem" },
-                              fontWeight: 800,
-                              color: "#EA580C",
+                              fontWeight: 700,
+                              color: "#D8E5D5",
                               letterSpacing: "-0.02em",
-                              fontFamily: "monospace",
+                              fontFamily: '"DM Serif Display", serif',
                             }}
                           >
                             {m.val}
@@ -535,7 +524,7 @@ export default function AboutPageClient() {
                               width: 32,
                               height: 32,
                               borderRadius: "8px",
-                              bgcolor: "rgba(249, 115, 22, 0.08)",
+                              bgcolor: "rgba(216, 229, 213, 0.12)",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
@@ -544,10 +533,10 @@ export default function AboutPageClient() {
                             {m.icon}
                           </Box>
                         </Box>
-                        <Typography sx={{ fontSize: "0.92rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+                        <Typography sx={{ fontSize: "0.92rem", fontWeight: 700, color: "#FFFFFF", mb: 0.5 }}>
                           {m.label}
                         </Typography>
-                        <Typography sx={{ fontSize: "0.8rem", color: "#52525B", lineHeight: 1.55 }}>
+                        <Typography sx={{ fontSize: "0.82rem", color: "rgba(255, 255, 255, 0.75)", lineHeight: 1.55 }}>
                           {m.desc}
                         </Typography>
                       </Box>
@@ -561,7 +550,7 @@ export default function AboutPageClient() {
       </Box>
 
       {/* ========================================================================= */}
-      {/* 2. THE OPERATIONAL DIAGNOSTIC: THE PROBLEM WE SOLVE                       */}
+      {/* 2. THE OPERATIONAL DIAGNOSTIC (CENTER-ALIGNED HEADER, PURE WHITE #FFFFFF) */}
       {/* ========================================================================= */}
       <Box
         component="section"
@@ -570,108 +559,93 @@ export default function AboutPageClient() {
           bgcolor: "#FFFFFF",
           position: "relative",
           overflow: "hidden",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
-        {/* Subtle Ambient Glow */}
-        <Box
-          sx={{
-            position: "absolute",
-            top: "10%",
-            left: "5%",
-            width: "500px",
-            height: "500px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, transparent 70%)",
-            filter: "blur(60px)",
-            pointerEvents: "none",
-          }}
-        />
-
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
+          {/* Centered Section Header */}
+          <Box sx={{ textAlign: "center", maxWidth: 900, mx: "auto", mb: { xs: 6, md: 9 } }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1.2,
+                px: 2.2,
+                py: 0.6,
+                borderRadius: "9999px",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
+                mb: 2.5,
+              }}
+            >
+              <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }} />
+              <Typography
+                sx={{
+                  fontSize: "0.78rem",
+                  fontWeight: 800,
+                  color: "#3D765D",
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  fontFamily: "monospace",
+                }}
+              >
+                WHY AETIBAR EXISTS &bull; THE MEANING OF TRUST
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              sx={{
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.85rem", sm: "2.35rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.025em",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                textWrap: "balance",
+                mb: 2.5,
+              }}
+            >
+              Too Many Business Owners Have Been Let Down by{" "}
+              <Box
+                component="span"
+                sx={{
+                  fontStyle: "italic",
+                  color: "#3D765D",
+                }}
+              >
+                Broken Digital Promises.
+              </Box>
+            </Typography>
+
+            <Typography sx={{ color: "#52525B", lineHeight: 1.8, fontSize: { xs: "1rem", md: "1.08rem" }, maxWidth: 780, mx: "auto" }}>
+              The word <strong>Aetibar</strong> means <em>Trust</em>. We started Aetibar with a simple belief: businesses deserve honest advice, clear communication, and digital services built around their actual needs. We keep our approach practical, transparent, and focused on building long-term trust.
+            </Typography>
+          </Box>
+
           <Grid container spacing={{ xs: 6, lg: 8 }} sx={{ alignItems: "center" }}>
             {/* Left Narrative Column */}
             <Grid size={{ xs: 12, lg: 6 }}>
               <motion.div
-                initial={{ opacity: 0, y: 45 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
               >
-                <Box
-                  sx={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 1.2,
-                    px: 2.2,
-                    py: 0.6,
-                    borderRadius: "9999px",
-                    bgcolor: "rgba(249, 115, 22, 0.08)",
-                    border: "1px solid rgba(249, 115, 22, 0.25)",
-                    boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
-                    mb: 2.5,
-                  }}
-                >
-                  <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }} />
-                  <Typography
-                    sx={{
-                      fontSize: "0.78rem",
-                      fontWeight: 800,
-                      color: "#EA580C",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                      fontFamily: "monospace",
-                    }}
-                  >
-                    WHY AETIBAR EXISTS &bull; THE MEANING OF TRUST
-                  </Typography>
-                </Box>
-
-                <Typography
-                  variant="h2"
-                  sx={{
-                    fontSize: { xs: "1.45rem", sm: "1.85rem", md: "2.2rem", lg: "2.4rem" },
-                    fontWeight: 600,
-                    color: "#18181B",
-                    letterSpacing: "-0.03em",
-                    lineHeight: { xs: 1.25, md: 1.2 },
-                    textWrap: "balance",
-                    mb: 3,
-                  }}
-                >
-                  Too Many Business Owners Have Been Let Down by{" "}
-                  <Box
-                    component="span"
-                    sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    Broken Digital Promises.
-                  </Box>
-                </Typography>
-
-                <Typography sx={{ color: "#52525B", lineHeight: 1.8, fontSize: "1.05rem", mb: 2.5 }}>
-                 The word <strong>Aetibar</strong> means <em>Trust</em>. We started Aetibar with a simple belief: businesses deserve honest advice, clear communication, and digital services built around their actual needs. We keep our approach practical, transparent, and focused on building long-term trust.
-
-                </Typography>
-
                 <Typography sx={{ color: "#52525B", lineHeight: 1.8, fontSize: "1.05rem", mb: 4 }}>
-                 We believe businesses deserve clear communication, practical guidance, and control over their digital assets. Aetibar exists to provide dependable digital services focused on what your business actually needs.
-
+                  We believe businesses deserve clear communication, practical guidance, and control over their digital assets. Aetibar exists to provide dependable digital services focused on what your business actually needs.
                 </Typography>
 
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
-                { [
-  "Honest advice before spending: We recommend what your business actually needs without pushing unnecessary services or complexity.",
-
-  "Focused on business goals: We build and manage digital services around your customers, priorities, and desired outcomes.",
-
-  "Clear ownership & access: You retain access to the agreed digital assets, accounts, files, and other project deliverables.",
-].map((pt, pIdx) => (
-                    <Box key={pIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.4 }}>
-                      <CheckCircleRoundedIcon sx={{ color: "#16A34A", fontSize: 20, mt: 0.3, flexShrink: 0 }} />
-                      <Typography sx={{ fontSize: "0.95rem", color: "#18181B", fontWeight: 600, lineHeight: 1.6 }}>
+                <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                  {[
+                    "Honest advice before spending: We recommend what your business actually needs without pushing unnecessary services or complexity.",
+                    "Focused on business goals: We build and manage digital services around your customers, priorities, and desired outcomes.",
+                    "Clear ownership & access: You retain access to the agreed digital assets, accounts, files, and other project deliverables.",
+                  ].map((pt, pIdx) => (
+                    <Box key={pIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.4, p: 2, borderRadius: "14px", bgcolor: "#F7F7F2", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
+                      <CheckCircleRoundedIcon sx={{ color: "#3D765D", fontSize: 20, mt: 0.3, flexShrink: 0 }} />
+                      <Typography sx={{ fontSize: "0.95rem", color: "#183D35", fontWeight: 600, lineHeight: 1.6 }}>
                         {pt}
                       </Typography>
                     </Box>
@@ -683,22 +657,22 @@ export default function AboutPageClient() {
             {/* Right Contrast Card: Traditional Agency vs Aetibar Standard */}
             <Grid size={{ xs: 12, lg: 6 }}>
               <motion.div
-                initial={{ opacity: 0, y: 55 }}
+                initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.85, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               >
                 <Box
                   sx={{
                     p: { xs: 3.5, sm: 5 },
                     borderRadius: { xs: "22px", md: "28px" },
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
-                    boxShadow: "0 14px 40px -10px rgba(24, 24, 27, 0.05)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(24, 61, 53, 0.1)",
+                    boxShadow: "0 14px 40px -10px rgba(24, 61, 53, 0.05)",
                   }}
                 >
                   {/* Agency Trap Block */}
-                  <Box sx={{ pb: 3.5, borderBottom: "1px solid rgba(24, 24, 27, 0.08)", mb: 3.5 }}>
+                  <Box sx={{ pb: 3.5, borderBottom: "1px solid rgba(24, 61, 53, 0.08)", mb: 3.5 }}>
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
                       <CloseRoundedIcon sx={{ color: "#DC2626", fontSize: 20 }} />
                       <Typography
@@ -712,20 +686,16 @@ export default function AboutPageClient() {
                         }}
                       >
                         THE COMMON PROBLEM
-
                       </Typography>
                     </Box>
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.4 }}>
                       {[
-  "Limited communication can leave you unsure about project progress, decisions, or how your budget is being used.",
-
-  "Too many communication layers can make it difficult to get clear answers or share feedback with the people doing the work.",
-
-  "Unclear ownership and account access can make it difficult for businesses to manage their own digital assets.",
-
-  "Reports that focus only on surface-level numbers may not clearly show how the work is supporting your actual business goals.",
-].map((trap, tIdx) => (
+                        "Limited communication can leave you unsure about project progress, decisions, or how your budget is being used.",
+                        "Too many communication layers can make it difficult to get clear answers or share feedback with the people doing the work.",
+                        "Unclear ownership and account access can make it difficult for businesses to manage their own digital assets.",
+                        "Reports that focus only on surface-level numbers may not clearly show how the work is supporting your actual business goals.",
+                      ].map((trap, tIdx) => (
                         <Box key={tIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                           <Typography sx={{ color: "#DC2626", fontWeight: 700, fontSize: "0.85rem", mt: 0.1 }}>&bull;</Typography>
                           <Typography sx={{ fontSize: "0.88rem", color: "#52525B", lineHeight: 1.6 }}>
@@ -739,12 +709,12 @@ export default function AboutPageClient() {
                   {/* The Aetibar Standard */}
                   <Box>
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
-                      <CheckCircleRoundedIcon sx={{ color: "#16A34A", fontSize: 20 }} />
+                      <CheckCircleRoundedIcon sx={{ color: "#3D765D", fontSize: 20 }} />
                       <Typography
                         sx={{
                           fontSize: "0.78rem",
                           fontWeight: 800,
-                          color: "#16A34A",
+                          color: "#3D765D",
                           letterSpacing: "0.06em",
                           fontFamily: "monospace",
                           textTransform: "uppercase",
@@ -756,17 +726,14 @@ export default function AboutPageClient() {
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.4 }}>
                       {[
-  "Regular progress updates and clear reporting so you know what is happening throughout the work.",
-
-  "Direct communication with the relevant people working on your website, app, marketing, advertising, or automation project.",
-
-  "Clear handover of the agreed files, accounts, access, and other digital assets connected to your business.",
-
-  "Relevant reviews and quality checks focused on making sure the agreed work is ready for use and aligned with your business needs.",
-].map((pact, pIdx) => (
+                        "Regular progress updates and clear reporting so you know what is happening throughout the work.",
+                        "Direct communication with the relevant people working on your website, app, marketing, advertising, or automation project.",
+                        "Clear handover of the agreed files, accounts, access, and other digital assets connected to your business.",
+                        "Relevant reviews and quality checks focused on making sure the agreed work is ready for use and aligned with your business needs.",
+                      ].map((pact, pIdx) => (
                         <Box key={pIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                          <Typography sx={{ color: "#16A34A", fontWeight: 700, fontSize: "0.85rem", mt: 0.1 }}>&bull;</Typography>
-                          <Typography sx={{ fontSize: "0.88rem", color: "#18181B", fontWeight: 600, lineHeight: 1.6 }}>
+                          <Typography sx={{ color: "#3D765D", fontWeight: 700, fontSize: "0.85rem", mt: 0.1 }}>&bull;</Typography>
+                          <Typography sx={{ fontSize: "0.88rem", color: "#183D35", fontWeight: 600, lineHeight: 1.6 }}>
                             {pact}
                           </Typography>
                         </Box>
@@ -781,41 +748,27 @@ export default function AboutPageClient() {
       </Box>
 
       {/* ========================================================================= */}
-      {/* 3. SIX CORE ENGINEERING PRINCIPLES (BENTO GRID)                           */}
+      {/* 3. SIX CORE PRINCIPLES (LEFT-ALIGNED HEADER, WARM WHITE #F7F7F2)          */}
       {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
           py: { xs: 12, md: 18 },
-          bgcolor: "#FAF8F5",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* Ambient Decorative Lighting */}
-        <Box
-          sx={{
-            position: "absolute",
-            top: "15%",
-            right: "5%",
-            width: "600px",
-            height: "600px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, transparent 70%)",
-            filter: "blur(60px)",
-            pointerEvents: "none",
-          }}
-        />
-
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
-          {/* Header */}
+          {/* Left-Aligned Header */}
           <motion.div
-            initial={{ opacity: 0, y: 45 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
           >
-            <Box sx={{ maxWidth: 860, mx: "auto", textAlign: "center", mb: { xs: 7, md: 9 } }}>
+            <Box sx={{ maxWidth: 860, mb: { xs: 6, md: 8 } }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -824,19 +777,19 @@ export default function AboutPageClient() {
                   px: 2.2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
+                  boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                   mb: 2.5,
                 }}
               >
-                <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }} />
+                <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }} />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontFamily: "monospace",
                   }}
@@ -848,24 +801,21 @@ export default function AboutPageClient() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
-                  color: "#18181B",
-                  letterSpacing: "-0.035em",
-                  lineHeight: { xs: 1.25, md: 1.18 },
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
-                  mx: "auto",
-                  textWrap: "balance",
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "1.9rem", sm: "2.4rem", md: "3rem", lg: "3.4rem" },
+                  fontWeight: 400,
+                  color: "#183D35",
+                  letterSpacing: "-0.025em",
+                  lineHeight: { xs: 1.2, md: 1.15 },
                   mb: 2.5,
                 }}
               >
-              Six Simple Principles That Guide {" "}
+                Six Simple Principles That Guide{" "}
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
+                    fontStyle: "italic",
+                    color: "#3D765D",
                   }}
                 >
                   How We Work
@@ -874,34 +824,32 @@ export default function AboutPageClient() {
 
               <Typography
                 sx={{
-                  fontSize: { xs: "1.05rem", md: "1.2rem" },
+                  fontSize: { xs: "1.05rem", md: "1.18rem" },
                   color: "#52525B",
                   lineHeight: 1.75,
                   fontWeight: 400,
                   maxWidth: 820,
-                  mx: "auto",
                 }}
               >
-               These are practical standards we follow every day to protect your investment, keep your digital assets accessible, and keep our work focused on your business goals.
-
+                These are practical standards we follow every day to protect your investment, keep your digital assets accessible, and keep our work focused on your business goals.
               </Typography>
             </Box>
           </motion.div>
 
-          {/* 6 Bento Principle Cards */}
+          {/* 6 Principle Cards */}
           <Grid container spacing={3.5}>
             {studioPrinciples.map((pr, idx) => {
               const IconComp = pr.icon;
               return (
                 <Grid size={{ xs: 12, md: 6, lg: 4 }} key={pr.num}>
                   <motion.div
-                    initial={{ opacity: 0, y: 55 }}
+                    initial={{ opacity: 0, y: 35 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.2 }}
                     transition={{
-                      duration: 0.85,
-                      delay: (idx % 3) * 0.16 + Math.floor(idx / 3) * 0.1,
-                      ease: [0.22, 1, 0.36, 1],
+                      duration: 0.7,
+                      delay: (idx % 3) * 0.12,
+                      ease: [0.16, 1, 0.3, 1],
                     }}
                     style={{ height: "100%" }}
                   >
@@ -910,17 +858,17 @@ export default function AboutPageClient() {
                         p: { xs: 3.5, sm: 4.5 },
                         borderRadius: { xs: "20px", md: "24px" },
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
-                        boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
+                        boxShadow: "0 4px 18px rgba(24, 61, 53, 0.03)",
                         height: "100%",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
-                        transition: "all 0.3s ease",
+                        transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                         "&:hover": {
                           transform: "translateY(-4px)",
-                          borderColor: "rgba(234, 88, 12, 0.4)",
-                          boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                          borderColor: "#3D765D",
+                          boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.14)",
                         },
                       }}
                     >
@@ -929,30 +877,30 @@ export default function AboutPageClient() {
                         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 3 }}>
                           <Box
                             sx={{
-                              width: 44,
-                              height: 44,
-                              borderRadius: "12px",
-                              bgcolor: "rgba(249, 115, 22, 0.1)",
-                              color: "#EA580C",
+                              width: 46,
+                              height: 46,
+                              borderRadius: "14px",
+                              bgcolor: "rgba(61, 118, 93, 0.08)",
+                              color: "#3D765D",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
                             }}
                           >
-                            <IconComp sx={{ fontSize: 22 }} />
+                            <IconComp sx={{ fontSize: 24 }} />
                           </Box>
 
                           <Box
                             sx={{
-                              px: 1.4,
-                              py: 0.4,
+                              px: 1.5,
+                              py: 0.45,
                               borderRadius: "9999px",
-                              bgcolor: "#FAF8F5",
-                              border: "1px solid rgba(24, 24, 27, 0.08)",
+                              bgcolor: "#F7F7F2",
+                              border: "1px solid rgba(24, 61, 53, 0.1)",
                               fontFamily: "monospace",
                               fontSize: "0.75rem",
                               fontWeight: 800,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "0.06em",
                             }}
                           >
@@ -964,12 +912,13 @@ export default function AboutPageClient() {
                         <Typography
                           variant="h3"
                           sx={{
-                            fontSize: { xs: "1.25rem", sm: "1.38rem" },
-                            fontWeight: 700,
-                            color: "#18181B",
-                            letterSpacing: "-0.02em",
+                            fontFamily: '"DM Serif Display", serif',
+                            fontSize: { xs: "1.35rem", sm: "1.48rem" },
+                            fontWeight: 400,
+                            color: "#183D35",
+                            letterSpacing: "-0.015em",
                             mb: 1.2,
-                            lineHeight: 1.35,
+                            lineHeight: 1.3,
                           }}
                         >
                           {pr.title}
@@ -977,9 +926,9 @@ export default function AboutPageClient() {
 
                         <Typography
                           sx={{
-                            fontSize: "0.9rem",
+                            fontSize: "0.92rem",
                             fontWeight: 600,
-                            color: "#EA580C",
+                            color: "#3D765D",
                             lineHeight: 1.5,
                             mb: 2,
                           }}
@@ -989,7 +938,7 @@ export default function AboutPageClient() {
 
                         <Typography
                           sx={{
-                            fontSize: "0.875rem",
+                            fontSize: "0.88rem",
                             color: "#52525B",
                             lineHeight: 1.7,
                             mb: 3,
@@ -1003,14 +952,14 @@ export default function AboutPageClient() {
                       <Box
                         sx={{
                           pt: 2,
-                          borderTop: "1px solid rgba(24, 24, 27, 0.06)",
+                          borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                           display: "flex",
                           alignItems: "center",
-                          gap: 0.8,
+                          gap: 1,
                         }}
                       >
-                        <CheckCircleRoundedIcon sx={{ color: "#16A34A", fontSize: 16 }} />
-                        <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#18181B" }}>
+                        <CheckCircleRoundedIcon sx={{ color: "#3D765D", fontSize: 17 }} />
+                        <Typography sx={{ fontSize: "0.82rem", fontWeight: 700, color: "#183D35" }}>
                           {pr.metric}
                         </Typography>
                       </Box>
@@ -1024,25 +973,86 @@ export default function AboutPageClient() {
       </Box>
 
       {/* ========================================================================= */}
-      {/* 4. STUDIO ROOTS, CULTURE & TECHNOLOGY STANDARDS                           */}
+      {/* 4. STUDIO ROOTS & FULL-SERVICE CAPABILITIES (CENTER-ALIGNED HEADER, WHITE) */}
       {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
           py: { xs: 12, md: 18 },
           bgcolor: "#FFFFFF",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
+          {/* Centered Section Header */}
+          <Box sx={{ textAlign: "center", maxWidth: 900, mx: "auto", mb: { xs: 7, md: 9 } }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1.2,
+                px: 2.2,
+                py: 0.6,
+                borderRadius: "9999px",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
+                mb: 2.5,
+              }}
+            >
+              <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }} />
+              <Typography
+                sx={{
+                  fontSize: "0.78rem",
+                  fontWeight: 800,
+                  color: "#3D765D",
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  fontFamily: "monospace",
+                }}
+              >
+                WHAT WE DO &bull; FULL-SERVICE DIGITAL AGENCY
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h2"
+              sx={{
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.4rem", md: "3rem", lg: "3.4rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.025em",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                textWrap: "balance",
+                mb: 2.5,
+              }}
+            >
+              The Digital Services Your Business Needs,{" "}
+              <Box
+                component="span"
+                sx={{
+                  fontStyle: "italic",
+                  color: "#3D765D",
+                }}
+              >
+                Under One Roof.
+              </Box>
+            </Typography>
+
+            <Typography sx={{ color: "#52525B", lineHeight: 1.75, fontSize: "1.05rem", maxWidth: 780, mx: "auto" }}>
+              Skip the hassle of managing multiple providers. Aetibar brings web development, marketing, advertising, and AI automation together with practical services built around your business needs:
+            </Typography>
+          </Box>
+
           <Grid container spacing={{ xs: 6, lg: 8 }} sx={{ alignItems: "stretch" }}>
             {/* Left: Studio Roots Photo & Culture */}
-            <Grid size={{ xs: 12, lg: 6 }} sx={{ display: "flex", flexDirection: "column" }}>
+            <Grid size={{ xs: 12, lg: 5 }} sx={{ display: "flex", flexDirection: "column" }}>
               <motion.div
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 35 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                 style={{ height: "100%", display: "flex", flexDirection: "column" }}
               >
                 <Box
@@ -1054,8 +1064,8 @@ export default function AboutPageClient() {
                     flex: { lg: 1 },
                     borderRadius: { xs: "22px", md: "28px" },
                     overflow: "hidden",
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
-                    boxShadow: "0 20px 50px -10px rgba(24, 24, 27, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.1)",
+                    boxShadow: "0 20px 50px -10px rgba(24, 61, 53, 0.08)",
                   }}
                 >
                   <Image
@@ -1071,7 +1081,7 @@ export default function AboutPageClient() {
                       position: "absolute",
                       inset: 0,
                       background:
-                        "linear-gradient(to top, rgba(24, 24, 27, 0.85) 0%, rgba(24, 24, 27, 0.2) 60%, transparent 100%)",
+                        "linear-gradient(to top, rgba(24, 61, 53, 0.88) 0%, rgba(24, 61, 53, 0.25) 60%, transparent 100%)",
                     }}
                   />
 
@@ -1084,19 +1094,19 @@ export default function AboutPageClient() {
                       right: { xs: 16, sm: 24 },
                       p: 2.5,
                       borderRadius: "16px",
-                      bgcolor: "rgba(24, 24, 27, 0.88)",
+                      bgcolor: "rgba(24, 61, 53, 0.92)",
                       backdropFilter: "blur(12px)",
-                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      border: "1px solid rgba(216, 229, 213, 0.25)",
                     }}
                   >
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
-                      <LocationOnOutlinedIcon sx={{ color: "#FB923C", fontSize: 18 }} />
+                      <LocationOnOutlinedIcon sx={{ color: "#D8E5D5", fontSize: 18 }} />
                       <Typography
                         sx={{
                           fontFamily: "monospace",
                           fontSize: "0.75rem",
                           fontWeight: 700,
-                          color: "#FB923C",
+                          color: "#D8E5D5",
                           letterSpacing: "0.06em",
                         }}
                       >
@@ -1104,95 +1114,36 @@ export default function AboutPageClient() {
                       </Typography>
                     </Box>
                     <Typography sx={{ fontSize: "0.85rem", color: "#D4D4D8", lineHeight: 1.6 }}>
-                     Based in Udaipur, Rajasthan, Aetibar provides web development, digital marketing, and AI automation services to businesses in India and international markets.
-
+                      Based in Udaipur, Rajasthan, Aetibar provides web development, digital marketing, and AI automation services to businesses in India and international markets.
                     </Typography>
                   </Box>
                 </Box>
               </motion.div>
             </Grid>
 
-            {/* Right: Technical Foundations & Engineering Stack */}
-            <Grid size={{ xs: 12, lg: 6 }}>
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.85, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <Box
-                  sx={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 1.2,
-                    px: 2.2,
-                    py: 0.6,
-                    borderRadius: "9999px",
-                    bgcolor: "rgba(249, 115, 22, 0.08)",
-                    border: "1px solid rgba(249, 115, 22, 0.25)",
-                    boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
-                    mb: 2.5,
-                  }}
-                >
-                  <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }} />
-                  <Typography
-                    sx={{
-                      fontSize: "0.78rem",
-                      fontWeight: 800,
-                      color: "#EA580C",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                      fontFamily: "monospace",
-                    }}
+            {/* Right: Full-Service Capabilities Grid */}
+            <Grid size={{ xs: 12, lg: 7 }}>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                {fullServiceCapabilities.map((srv, sIdx) => (
+                  <motion.div
+                    key={sIdx}
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: sIdx * 0.08 }}
                   >
-                    WHAT WE DO &bull; FULL-SERVICE DIGITAL AGENCY
-                  </Typography>
-                </Box>
-
-                <Typography
-                  variant="h2"
-                  sx={{
-                    fontSize: { xs: "1.45rem", sm: "1.85rem", md: "2.2rem", lg: "2.4rem" },
-                    fontWeight: 600,
-                    color: "#18181B",
-                    letterSpacing: "-0.03em",
-                    lineHeight: { xs: 1.25, md: 1.2 },
-                    textWrap: "balance",
-                    mb: 3,
-                  }}
-                >
-                  The Digital Services Your Business Needs,{" "}
-                  <Box
-                    component="span"
-                    sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    Under One Roof.
-                  </Box>
-                </Typography>
-
-                <Typography sx={{ color: "#52525B", lineHeight: 1.75, fontSize: "1.05rem", mb: 4 }}>
-                  Skip the hassle of managing multiple providers. Aetibar brings web development, marketing, advertising, and AI automation together with practical services built around your business needs:
-
-                </Typography>
-
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                  {fullServiceCapabilities.map((srv, sIdx) => (
                     <Box
-                      key={sIdx}
                       sx={{
                         p: 2.5,
                         borderRadius: "18px",
-                        bgcolor: "#FAF8F5",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        bgcolor: "#F7F7F2",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          borderColor: "rgba(234, 88, 12, 0.35)",
+                          borderColor: "#3D765D",
+                          bgcolor: "#FFFFFF",
                           transform: "translateY(-2px)",
-                          boxShadow: "0 10px 24px -4px rgba(24, 24, 27, 0.06)",
+                          boxShadow: "0 10px 24px -4px rgba(24, 61, 53, 0.08)",
                         },
                       }}
                     >
@@ -1202,7 +1153,7 @@ export default function AboutPageClient() {
                           sx={{
                             fontSize: "0.75rem",
                             fontWeight: 800,
-                            color: "#EA580C",
+                            color: "#3D765D",
                             fontFamily: "monospace",
                             letterSpacing: "0.06em",
                           }}
@@ -1210,48 +1161,56 @@ export default function AboutPageClient() {
                           {srv.category}
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+                      <Typography
+                        sx={{
+                          fontFamily: '"DM Serif Display", serif',
+                          fontSize: "1.15rem",
+                          fontWeight: 400,
+                          color: "#183D35",
+                          mb: 0.5,
+                        }}
+                      >
                         {srv.title}
                       </Typography>
-                      <Typography sx={{ fontSize: "0.85rem", color: "#52525B", lineHeight: 1.6 }}>
+                      <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.6 }}>
                         {srv.desc}
                       </Typography>
                     </Box>
-                  ))}
-                </Box>
-              </motion.div>
+                  </motion.div>
+                ))}
+              </Box>
             </Grid>
           </Grid>
         </Container>
       </Box>
 
       {/* ========================================================================= */}
-      {/* 5. CENTERPIECE TRUST & DIRECT ARCHITECT CTA                               */}
+      {/* 5. CENTERPIECE TRUST CTA (LEFT-ALIGNED, DARK PINE #183D35)                */}
       {/* ========================================================================= */}
-      <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: "#FAF8F5" }}>
+      <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: "#F7F7F2" }}>
         <Container maxWidth="xl">
           <motion.div
-            initial={{ opacity: 0, y: 60, scale: 0.96 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
           >
             <Box
               sx={{
                 p: { xs: 4, sm: 6, md: 8 },
                 borderRadius: { xs: "24px", md: "36px" },
-                bgcolor: "#18181B",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 position: "relative",
                 overflow: "hidden",
-                border: "1px solid rgba(255, 255, 255, 0.12)",
-                boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
+                border: "1px solid rgba(216, 229, 213, 0.2)",
+                boxShadow: "0 30px 80px -20px rgba(24, 61, 53, 0.5)",
               }}
             >
-              {/* Ambient Warm Sunset Glow Orbs */}
+              {/* Subtle Ambient Sunset Glow Orbs */}
               <Box
                 component={motion.div}
-                animate={{ scale: [1, 1.2, 1], opacity: [0.25, 0.4, 0.25] }}
+                animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.35, 0.2] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                 sx={{
                   position: "absolute",
@@ -1259,22 +1218,7 @@ export default function AboutPageClient() {
                   right: "-10%",
                   width: "440px",
                   height: "440px",
-                  background: "radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 70%)",
-                  filter: "blur(60px)",
-                  pointerEvents: "none",
-                }}
-              />
-              <Box
-                component={motion.div}
-                animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.35, 0.2] }}
-                transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 1 }}
-                sx={{
-                  position: "absolute",
-                  bottom: "-20%",
-                  left: "-10%",
-                  width: "440px",
-                  height: "440px",
-                  background: "radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, transparent 70%)",
+                  background: "radial-gradient(circle, rgba(61, 118, 93, 0.35) 0%, transparent 70%)",
                   filter: "blur(60px)",
                   pointerEvents: "none",
                 }}
@@ -1282,193 +1226,153 @@ export default function AboutPageClient() {
 
               <Grid container spacing={4} sx={{ alignItems: "center", position: "relative", zIndex: 1 }}>
                 <Grid size={{ xs: 12, lg: 8 }}>
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.92 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.7, delay: 0.15 }}
+                  <Box
+                    sx={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 1.2,
+                      px: 2.2,
+                      py: 0.6,
+                      borderRadius: "9999px",
+                      bgcolor: "rgba(216, 229, 213, 0.12)",
+                      border: "1px solid rgba(216, 229, 213, 0.3)",
+                      mb: 2.5,
+                    }}
                   >
                     <Box
-                      sx={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: 1.2,
-                        px: 2.2,
-                        py: 0.6,
-                        borderRadius: "9999px",
-                        bgcolor: "rgba(249, 115, 22, 0.2)",
-                        border: "1px solid rgba(251, 146, 60, 0.4)",
-                        mb: 2.5,
-                      }}
-                    >
-                      <Box
-                        component={motion.div}
-                        animate={{ scale: [1, 1.3, 1] }}
-                        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                        sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 10px #FB923C" }}
-                      />
-                      <Typography
-                        sx={{
-                          fontSize: "0.8rem",
-                          letterSpacing: "0.06em",
-                          textTransform: "uppercase",
-                          color: "#FB923C",
-                          fontWeight: 700,
-                        }}
-                      >
-                        LET&apos;S GROW YOUR BUSINESS TOGETHER
-                      </Typography>
-                    </Box>
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.85, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-                  >
+                      component={motion.div}
+                      animate={{ scale: [1, 1.3, 1] }}
+                      transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                      sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#D8E5D5", boxShadow: "0 0 10px #D8E5D5" }}
+                    />
                     <Typography
-                      variant="h3"
                       sx={{
-                        fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
+                        fontSize: "0.8rem",
+                        letterSpacing: "0.06em",
+                        textTransform: "uppercase",
+                        color: "#D8E5D5",
                         fontWeight: 700,
-                        lineHeight: { xs: 1.25, md: 1.18 },
-                        letterSpacing: "-0.03em",
-                        maxWidth: { xs: "100%", md: 980, lg: 1100 },
-                        mx: "auto",
-                        textWrap: "balance",
-                        mb: 2,
                       }}
                     >
-                      Ready to Partner With a Digital Agency You Can{" "}
-                      <Box
-                        component="span"
-                        sx={{
-                          background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                        }}
-                      >
-                        Actually Trust?
-                      </Box>
+                      LET&apos;S GROW YOUR BUSINESS TOGETHER
                     </Typography>
-                  </motion.div>
+                  </Box>
 
-                  <motion.div
-                    initial={{ opacity: 0, y: 25 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.85, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontFamily: '"DM Serif Display", serif',
+                      fontSize: { xs: "1.9rem", sm: "2.4rem", md: "3rem", lg: "3.4rem" },
+                      fontWeight: 400,
+                      lineHeight: { xs: 1.2, md: 1.15 },
+                      letterSpacing: "-0.025em",
+                      maxWidth: { xs: "100%", md: 880 },
+                      mb: 2,
+                    }}
                   >
-                    <Typography
+                    Ready to Partner With a Digital Agency You Can{" "}
+                    <Box
+                      component="span"
                       sx={{
-                        fontSize: { xs: "0.98rem", md: "1.12rem" },
-                        color: "rgba(255, 255, 255, 0.82)",
-                        lineHeight: 1.75,
-                        maxWidth: 720,
-                        mb: { xs: 3, lg: 0 },
+                        fontStyle: "italic",
+                        color: "#D8E5D5",
                       }}
                     >
-                    Tell us what your business needs. We’ll provide honest guidance, clear pricing, and a practical plan to move forward.
+                      Actually Trust?
+                    </Box>
+                  </Typography>
 
-                    </Typography>
-                  </motion.div>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "1rem", md: "1.15rem" },
+                      color: "rgba(255, 255, 255, 0.85)",
+                      lineHeight: 1.75,
+                      maxWidth: 720,
+                      mb: { xs: 3, lg: 0 },
+                    }}
+                  >
+                    Tell us what your business needs. We’ll provide honest guidance, clear pricing, and a practical plan to move forward.
+                  </Typography>
                 </Grid>
 
                 <Grid size={{ xs: 12, lg: 4 }}>
-                  <motion.div
-                    initial={{ opacity: 0, y: 22 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.85, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                      <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                        <Link href="/contact" style={{ textDecoration: "none" }}>
-                          <Button
-                            fullWidth
-                            variant="contained"
-                            endIcon={<ArrowForwardRoundedIcon />}
-                            sx={{
-                              py: 1.6,
-                              borderRadius: "9999px",
-                              background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
-                              fontSize: "0.95rem",
-                              fontWeight: 800,
-                              textTransform: "none",
-                              color: "#18181B",
-                              boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
-                              "&:hover": {
-                                background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                                color: "#FFFFFF",
-                                boxShadow: "0 15px 30px rgba(234, 88, 12, 0.5)",
-                              },
-                            }}
-                          >
-                           Discuss Your Business Needs
+                  <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                      <Link href="/contact" style={{ textDecoration: "none" }}>
+                        <Button
+                          fullWidth
+                          variant="contained"
+                          endIcon={<ArrowForwardRoundedIcon />}
+                          sx={{
+                            py: 1.6,
+                            borderRadius: "9999px",
+                            bgcolor: "#D8E5D5",
+                            fontSize: "0.95rem",
+                            fontWeight: 800,
+                            textTransform: "none",
+                            color: "#183D35",
+                            boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
+                            "&:hover": {
+                              bgcolor: "#FFFFFF",
+                              color: "#183D35",
+                            },
+                          }}
+                        >
+                          Discuss Your Business Needs
+                        </Button>
+                      </Link>
+                    </motion.div>
 
-                          </Button>
-                        </Link>
-                      </motion.div>
-
-                      <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                        <Link href="/how-we-work" style={{ textDecoration: "none" }}>
-                          <Button
-                            fullWidth
-                            sx={{
-                              py: 1.5,
-                              borderRadius: "9999px",
-                              bgcolor: "rgba(255, 255, 255, 0.05)",
-                              backdropFilter: "blur(10px)",
+                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                      <Link href="/how-we-work" style={{ textDecoration: "none" }}>
+                        <Button
+                          fullWidth
+                          sx={{
+                            py: 1.5,
+                            borderRadius: "9999px",
+                            bgcolor: "rgba(255, 255, 255, 0.08)",
+                            backdropFilter: "blur(10px)",
+                            color: "#FFFFFF",
+                            fontSize: "0.9rem",
+                            fontWeight: 600,
+                            textTransform: "none",
+                            border: "1px solid rgba(216, 229, 213, 0.3)",
+                            "&:hover": {
+                              borderColor: "#D8E5D5",
                               color: "#FFFFFF",
-                              fontSize: "0.9rem",
-                              fontWeight: 600,
-                              textTransform: "none",
-                              border: "1px solid rgba(255, 255, 255, 0.2)",
-                              "&:hover": {
-                                borderColor: "#FB923C",
-                                color: "#FB923C",
-                                bgcolor: "rgba(249, 115, 22, 0.12)",
-                              },
-                            }}
-                          >
-                            See How We Work Step-by-Step
-                          </Button>
-                        </Link>
-                      </motion.div>
-                    </Box>
-                  </motion.div>
+                              bgcolor: "rgba(216, 229, 213, 0.16)",
+                            },
+                          }}
+                        >
+                          See How We Work Step-by-Step
+                        </Button>
+                      </Link>
+                    </motion.div>
+                  </Box>
                 </Grid>
               </Grid>
 
               {/* Bottom Guarantee Checkpoints */}
-              <motion.div
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.75, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              <Box
+                sx={{
+                  mt: 4,
+                  pt: 3.5,
+                  borderTop: "1px solid rgba(255, 255, 255, 0.12)",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: { xs: "flex-start", sm: "center" },
+                  gap: { xs: 2, sm: 4 },
+                }}
               >
-                <Box
-                  sx={{
-                    mt: 4,
-                    pt: 3.5,
-                    borderTop: "1px solid rgba(255, 255, 255, 0.1)",
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "center",
-                    gap: { xs: 2, sm: 4 },
-                  }}
-                >
-                  {["Free 30-Minute Consultation", "100% Website & Ad Account Ownership", "Direct Response Within 24 Hours"].map((badge, idx) => (
-                    <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                      <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
-                      <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.82)", fontWeight: 500 }}>
-                        {badge}
-                      </Typography>
-                    </Box>
-                  ))}
-                </Box>
-              </motion.div>
+                {["Free 30-Minute Consultation", "100% Website & Ad Account Ownership", "Direct Response Within 24 Hours"].map((badge, idx) => (
+                  <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                    <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} />
+                    <Typography sx={{ fontSize: "0.85rem", color: "rgba(255, 255, 255, 0.85)", fontWeight: 500 }}>
+                      {badge}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
             </Box>
           </motion.div>
         </Container>

@@ -10,9 +10,9 @@ export default function AboutStorySection() {
       id="about"
       component="section"
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -22,7 +22,7 @@ export default function AboutStorySection() {
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -35,7 +35,7 @@ export default function AboutStorySection() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.75rem", md: "3.5rem" },
                 fontWeight: 800,
                 letterSpacing: "-0.03em",
@@ -45,7 +45,7 @@ export default function AboutStorySection() {
             >
               Rooted in Trust.{" "}
               <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box component="span" sx={{ color: "#3D765D" }}>
                 Committed to Craft.
               </Box>
             </Typography>
@@ -86,14 +86,14 @@ export default function AboutStorySection() {
               variant="outlined"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                borderColor: "rgba(17, 18, 21, 0.2)",
-                color: "#0E172A",
+                borderColor: "rgba(24, 61, 53, 0.2)",
+                color: "#183D35",
                 px: 3.5,
                 py: 1.3,
                 fontWeight: 600,
                 "&:hover": {
-                  borderColor: "#0E172A",
-                  bgcolor: "rgba(14, 23, 42, 0.04)",
+                  borderColor: "#183D35",
+                  bgcolor: "rgba(24, 61, 53, 0.04)",
                 },
               }}
             >
@@ -105,10 +105,10 @@ export default function AboutStorySection() {
           <Grid size={{ xs: 12, lg: 5 }}>
             <Box
               sx={{
-                bgcolor: "#F2F0EB",
+                bgcolor: "#F7F7F2",
                 p: { xs: 4, sm: 5 },
                 borderRadius: "12px",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 display: "flex",
                 flexDirection: "column",
                 gap: 4,
@@ -117,7 +117,7 @@ export default function AboutStorySection() {
               <Box>
                 <Typography
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 800,
                     fontSize: "2.2rem",
                     lineHeight: 1,
@@ -128,7 +128,7 @@ export default function AboutStorySection() {
                 </Typography>
                 <Typography
                   variant="h5"
-                  sx={{ color: "#0E172A", fontWeight: 700, fontSize: "1.15rem", mb: 0.5 }}
+                  sx={{ color: "#183D35", fontWeight: 700, fontSize: "1.15rem", mb: 0.5 }}
                 >
                   In-House Engineering
                 </Typography>
@@ -138,10 +138,10 @@ export default function AboutStorySection() {
                 </Typography>
               </Box>
 
-              <Box sx={{ pt: 3, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
                 <Typography
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 800,
                     fontSize: "2.2rem",
                     lineHeight: 1,
@@ -152,7 +152,7 @@ export default function AboutStorySection() {
                 </Typography>
                 <Typography
                   variant="h5"
-                  sx={{ color: "#0E172A", fontWeight: 700, fontSize: "1.15rem", mb: 0.5 }}
+                  sx={{ color: "#183D35", fontWeight: 700, fontSize: "1.15rem", mb: 0.5 }}
                 >
                   Template Lock-In
                 </Typography>
@@ -162,10 +162,10 @@ export default function AboutStorySection() {
                 </Typography>
               </Box>
 
-              <Box sx={{ pt: 3, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
                 <Typography
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 800,
                     fontSize: "2.2rem",
                     lineHeight: 1,
@@ -176,7 +176,7 @@ export default function AboutStorySection() {
                 </Typography>
                 <Typography
                   variant="h5"
-                  sx={{ color: "#0E172A", fontWeight: 700, fontSize: "1.15rem", mb: 0.5 }}
+                  sx={{ color: "#183D35", fontWeight: 700, fontSize: "1.15rem", mb: 0.5 }}
                 >
                   Direct Communication
                 </Typography>

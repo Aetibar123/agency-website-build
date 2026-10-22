@@ -21,7 +21,7 @@ export default function HeroSection() {
     <Box
       component="section"
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
         minHeight: { xs: "auto", lg: "92vh" },
         display: "flex",
@@ -29,7 +29,7 @@ export default function HeroSection() {
         justifyContent: "space-between",
         pt: { xs: 15, sm: 18, md: 20 },
         pb: { xs: 6, md: 8 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         overflow: "hidden",
       }}
     >
@@ -47,8 +47,8 @@ export default function HeroSection() {
                 px: 1.8,
                 py: 0.6,
                 borderRadius: "4px",
-                bgcolor: "rgba(14, 116, 144, 0.08)",
-                border: "1px solid rgba(14, 116, 144, 0.2)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.2)",
               }}
             >
               <Box
@@ -56,13 +56,13 @@ export default function HeroSection() {
                   width: 7,
                   height: 7,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                 }}
               />
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   fontSize: { xs: "0.72rem", md: "0.78rem" },
                   letterSpacing: "0.14em",
@@ -77,7 +77,7 @@ export default function HeroSection() {
               variant="h1"
               component="h1"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4rem", lg: "4.5rem" },
                 fontWeight: 800,
                 lineHeight: { xs: 1.14, sm: 1.08, md: 1.05 },
@@ -92,7 +92,7 @@ export default function HeroSection() {
               <Box
                 component="span"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                 }}
               >
                 move businesses forward.
@@ -131,18 +131,18 @@ export default function HeroSection() {
                 variant="contained"
                 endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                 sx={{
-                  bgcolor: "#0E172A",
+                  bgcolor: "#183D35",
                   color: "#FFFFFF",
                   px: { xs: 3.5, md: 4.5 },
                   py: { xs: 1.4, md: 1.6 },
                   fontSize: { xs: "0.95rem", md: "1rem" },
                   fontWeight: 600,
                   borderRadius: "6px",
-                  boxShadow: "0 8px 24px rgba(14, 23, 42, 0.12)",
+                  boxShadow: "0 8px 24px rgba(24, 61, 53, 0.12)",
                   "&:hover": {
                     bgcolor: "#1E293B",
                     transform: "translateY(-2px)",
-                    boxShadow: "0 12px 30px rgba(14, 23, 42, 0.18)",
+                    boxShadow: "0 12px 30px rgba(24, 61, 53, 0.18)",
                   },
                 }}
               >
@@ -156,7 +156,7 @@ export default function HeroSection() {
                 variant="outlined"
                 sx={{
                   borderColor: "#D5D2C9",
-                  color: "#111215",
+                  color: "#183D35",
                   bgcolor: "#FFFFFF",
                   px: { xs: 3, md: 4 },
                   py: { xs: 1.4, md: 1.6 },
@@ -164,8 +164,8 @@ export default function HeroSection() {
                   fontWeight: 600,
                   borderRadius: "6px",
                   "&:hover": {
-                    borderColor: "#0E172A",
-                    bgcolor: "#FAF9F5",
+                    borderColor: "#183D35",
+                    bgcolor: "#F7F7F2",
                     transform: "translateY(-2px)",
                   },
                 }}
@@ -192,8 +192,8 @@ export default function HeroSection() {
                   borderRadius: "14px",
                   p: 1.5,
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(17, 18, 21, 0.1)",
-                  boxShadow: "0 20px 50px rgba(17, 18, 21, 0.06)",
+                  border: "1px solid rgba(24, 61, 53, 0.1)",
+                  boxShadow: "0 20px 50px rgba(24, 61, 53, 0.06)",
                 }}
               >
                 {/* Visual Image Container */}
@@ -223,7 +223,7 @@ export default function HeroSection() {
                       position: "absolute",
                       inset: 0,
                       background:
-                        "linear-gradient(180deg, rgba(14, 23, 42, 0.02) 0%, rgba(14, 23, 42, 0.2) 100%)",
+                        "linear-gradient(180deg, rgba(24, 61, 53, 0.02) 0%, rgba(24, 61, 53, 0.2) 100%)",
                     }}
                   />
 
@@ -238,7 +238,7 @@ export default function HeroSection() {
                       backdropFilter: "blur(8px)",
                       p: 2,
                       borderRadius: "6px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
@@ -248,7 +248,7 @@ export default function HeroSection() {
                       <Typography
                         variant="caption"
                         sx={{
-                          color: "#0E7490",
+                          color: "#3D765D",
                           fontWeight: 800,
                           fontSize: "0.72rem",
                           letterSpacing: "0.1em",
@@ -259,7 +259,7 @@ export default function HeroSection() {
                       </Typography>
                       <Typography
                         sx={{
-                          color: "#0E172A",
+                          color: "#183D35",
                           fontWeight: 700,
                           fontSize: "0.85rem",
                           letterSpacing: "-0.01em",
@@ -291,7 +291,7 @@ export default function HeroSection() {
         <Box
           sx={{
             pt: 3,
-            borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+            borderTop: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             flexDirection: { xs: "column", sm: "row" },
             justifyContent: "space-between",
@@ -325,7 +325,7 @@ export default function HeroSection() {
               letterSpacing: "0.06em",
               transition: "color 0.2s ease",
               "&:hover": {
-                color: "#0E172A",
+                color: "#183D35",
               },
             }}
           >
@@ -335,7 +335,7 @@ export default function HeroSection() {
                 width: 26,
                 height: 26,
                 borderRadius: "50%",
-                border: "1px solid rgba(17, 18, 21, 0.15)",
+                border: "1px solid rgba(24, 61, 53, 0.15)",
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",

@@ -93,9 +93,9 @@ export default function TechCapabilitiesSection() {
       id="technology"
       component="section"
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -104,7 +104,7 @@ export default function TechCapabilitiesSection() {
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.14em",
               display: "block",
@@ -117,7 +117,7 @@ export default function TechCapabilitiesSection() {
           <Typography
             variant="h2"
             sx={{
-              color: "#0E172A",
+              color: "#183D35",
               fontSize: { xs: "2rem", sm: "2.75rem", md: "3.5rem" },
               fontWeight: 800,
               letterSpacing: "-0.03em",
@@ -127,7 +127,7 @@ export default function TechCapabilitiesSection() {
           >
             Engineering Rigor For{" "}
             <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-            <Box component="span" sx={{ color: "#0E7490" }}>
+            <Box component="span" sx={{ color: "#3D765D" }}>
               Intelligent Digital Systems.
             </Box>
           </Typography>
@@ -153,7 +153,7 @@ export default function TechCapabilitiesSection() {
               <Box
                 sx={{
                   pt: 2.5,
-                  borderTop: "2px solid #0E7490",
+                  borderTop: "2px solid #3D765D",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
@@ -164,7 +164,7 @@ export default function TechCapabilitiesSection() {
                   <Box sx={{ display: "flex", alignItems: "baseline", gap: 1.5, mb: 1.5 }}>
                     <Typography
                       sx={{
-                        color: "#0E7490",
+                        color: "#3D765D",
                         fontWeight: 800,
                         fontSize: "0.85rem",
                         letterSpacing: "0.08em",
@@ -188,7 +188,7 @@ export default function TechCapabilitiesSection() {
                   <Typography
                     variant="h4"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: { xs: "1.25rem", md: "1.45rem" },
                       fontWeight: 800,
                       letterSpacing: "-0.02em",
@@ -218,7 +218,7 @@ export default function TechCapabilitiesSection() {
                     flexDirection: "column",
                     gap: 1.2,
                     pt: 2,
-                    borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+                    borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                   }}
                 >
                   {track.items.map((item, idx) => (
@@ -228,7 +228,7 @@ export default function TechCapabilitiesSection() {
                           width: 5,
                           height: 5,
                           borderRadius: "50%",
-                          bgcolor: "#0E7490",
+                          bgcolor: "#3D765D",
                           mt: "7px",
                           flexShrink: 0,
                         }}
@@ -254,10 +254,10 @@ export default function TechCapabilitiesSection() {
         {/* Diagrammatic UI: Applied AI & Automation Pipeline */}
         <Box
           sx={{
-            bgcolor: "#F2F0EB",
+            bgcolor: "#F7F7F2",
             p: { xs: 3.5, sm: 4, md: 5 },
             borderRadius: "12px",
-            border: "1px solid rgba(17, 18, 21, 0.1)",
+            border: "1px solid rgba(24, 61, 53, 0.1)",
           }}
         >
           {/* Header of Diagram */}
@@ -270,14 +270,14 @@ export default function TechCapabilitiesSection() {
               gap: 2,
               mb: 4,
               pb: 3,
-              borderBottom: "1px solid rgba(17, 18, 21, 0.1)",
+              borderBottom: "1px solid rgba(24, 61, 53, 0.1)",
             }}
           >
             <Box>
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 800,
                   fontSize: "0.75rem",
                   letterSpacing: "0.12em",
@@ -290,7 +290,7 @@ export default function TechCapabilitiesSection() {
               <Typography
                 variant="h4"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.25rem", md: "1.5rem" },
                   fontWeight: 800,
                   letterSpacing: "-0.02em",
@@ -306,13 +306,13 @@ export default function TechCapabilitiesSection() {
                 py: 0.6,
                 bgcolor: "#FFFFFF",
                 borderRadius: "4px",
-                border: "1px solid rgba(17, 18, 21, 0.1)",
+                border: "1px solid rgba(24, 61, 53, 0.1)",
               }}
             >
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontFamily: "monospace",
                   fontWeight: 700,
                   fontSize: "0.75rem",
@@ -342,7 +342,7 @@ export default function TechCapabilitiesSection() {
                   bgcolor: "#FFFFFF",
                   p: 2.5,
                   borderRadius: "8px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -353,7 +353,7 @@ export default function TechCapabilitiesSection() {
                   }),
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    borderColor: "#0E7490",
+                    borderColor: "#3D765D",
                     transform: "translateY(-2px)",
                   },
                 }}
@@ -362,7 +362,7 @@ export default function TechCapabilitiesSection() {
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontFamily: "monospace",
                       fontWeight: 700,
                       fontSize: "0.72rem",
@@ -377,7 +377,7 @@ export default function TechCapabilitiesSection() {
                   <Typography
                     variant="h6"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: "0.95rem",
                       fontWeight: 700,
                       lineHeight: 1.3,
@@ -403,7 +403,7 @@ export default function TechCapabilitiesSection() {
                 <Box
                   sx={{
                     pt: 1.5,
-                    borderTop: "1px dashed rgba(17, 18, 21, 0.1)",
+                    borderTop: "1px dashed rgba(24, 61, 53, 0.1)",
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -412,7 +412,7 @@ export default function TechCapabilitiesSection() {
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontFamily: "monospace",
                       fontSize: "0.7rem",
                       fontWeight: 600,
@@ -425,7 +425,7 @@ export default function TechCapabilitiesSection() {
                     <ArrowForwardIcon
                       sx={{
                         fontSize: 14,
-                        color: "#0E7490",
+                        color: "#3D765D",
                         display: { xs: "none", lg: "block" },
                       }}
                     />

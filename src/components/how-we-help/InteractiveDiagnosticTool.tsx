@@ -47,7 +47,7 @@ const solutionOptions: SolutionOption[] = [
     problemTitle: "Slow, Inconsistent Proposal Preparation",
     problemSummary: "Teams spend valuable time manually recalculating line items in spreadsheets and formatting documents.",
     impactTag: "Sales Efficiency",
-    impactColor: "#F97316",
+    impactColor: "#4D8F72",
     solutionTitle: "Standardized Estimation & Proposal Workflow",
     solutionSummary:
       "A tailored quotation tool that calculates costs with approved margin logic and creates clean, professional proposals ready for review and delivery.",
@@ -65,7 +65,7 @@ const solutionOptions: SolutionOption[] = [
     problemTitle: "Repetitive Copy-Pasting Across Separate Systems",
     problemSummary: "Team members re-enter client and project details across spreadsheets, databases, and accounting tools.",
     impactTag: "Operational Time",
-    impactColor: "#F97316",
+    impactColor: "#4D8F72",
     solutionTitle: "System Integration & Centralized Data Hub",
     solutionSummary:
       "We link your core business tools so project updates and client records sync automatically across your organization without manual re-typing.",
@@ -83,7 +83,7 @@ const solutionOptions: SolutionOption[] = [
     problemTitle: "Disconnected Frontline Teams & Operations",
     problemSummary: "Frontline staff or field teams rely on scattered chats or paper notes, delaying status updates and billing.",
     impactTag: "Workflow Sync",
-    impactColor: "#EA580C",
+    impactColor: "#3D765D",
     solutionTitle: "Mobile Operations Portal & Milestone Invoicing",
     solutionSummary:
       "A mobile-friendly web application for frontline staff to record milestone completions, notes, and approvals in real time.",
@@ -143,10 +143,10 @@ export default function InteractiveDiagnosticTool() {
       id="solution-finder"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
         overflow: "hidden",
-        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
       }}
     >
       <Container maxWidth="xl">
@@ -167,8 +167,8 @@ export default function InteractiveDiagnosticTool() {
                   px: 2.2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(234, 88, 12, 0.08)",
-                  border: "1px solid rgba(234, 88, 12, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -176,14 +176,14 @@ export default function InteractiveDiagnosticTool() {
                   component={motion.div}
                   animate={{ scale: [1, 1.3, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#EA580C" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#3D765D" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                   }}
                 >
@@ -204,7 +204,7 @@ export default function InteractiveDiagnosticTool() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
@@ -218,7 +218,7 @@ export default function InteractiveDiagnosticTool() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -262,22 +262,22 @@ export default function InteractiveDiagnosticTool() {
                       borderRadius: "18px",
                       bgcolor: isSelected ? "#FFFFFF" : "rgba(255, 255, 255, 0.6)",
                       border: isSelected
-                        ? "2px solid #EA580C"
-                        : "1px solid rgba(24, 24, 27, 0.08)",
+                        ? "2px solid #3D765D"
+                        : "1px solid rgba(24, 61, 53, 0.08)",
                       boxShadow: isSelected
-                        ? "0 12px 28px -6px rgba(234, 88, 12, 0.16)"
-                        : "0 2px 6px rgba(24, 24, 27, 0.02)",
+                        ? "0 12px 28px -6px rgba(61, 118, 93, 0.16)"
+                        : "0 2px 6px rgba(24, 61, 53, 0.02)",
                       cursor: "pointer",
                       transition: "all 0.25s ease",
                       "&:hover": {
                         bgcolor: "#FFFFFF",
-                        borderColor: isSelected ? "#EA580C" : "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 6px 18px rgba(24, 24, 27, 0.05)",
+                        borderColor: isSelected ? "#3D765D" : "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 6px 18px rgba(24, 61, 53, 0.05)",
                       },
                     }}
                   >
                     <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 0.8 }}>
-                      <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: isSelected ? "#18181B" : "#334155" }}>
+                      <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: isSelected ? "#183D35" : "#334155" }}>
                         {opt.problemTitle}
                       </Typography>
                       <Box
@@ -320,8 +320,8 @@ export default function InteractiveDiagnosticTool() {
                     p: { xs: 3.5, sm: 4.5, md: 5 },
                     borderRadius: "24px",
                     bgcolor: "#FFFFFF",
-                    border: "1.5px solid rgba(234, 88, 12, 0.35)",
-                    boxShadow: "0 20px 48px -12px rgba(234, 88, 12, 0.12)",
+                    border: "1.5px solid rgba(61, 118, 93, 0.35)",
+                    boxShadow: "0 20px 48px -12px rgba(61, 118, 93, 0.12)",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
@@ -336,8 +336,8 @@ export default function InteractiveDiagnosticTool() {
                           width: 44,
                           height: 44,
                           borderRadius: "12px",
-                          bgcolor: "rgba(234, 88, 12, 0.1)",
-                          color: "#EA580C",
+                          bgcolor: "rgba(61, 118, 93, 0.1)",
+                          color: "#3D765D",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -347,10 +347,10 @@ export default function InteractiveDiagnosticTool() {
                         <TroubleshootOutlinedIcon sx={{ fontSize: 24 }} />
                       </Box>
                       <Box>
-                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#EA580C", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#3D765D", letterSpacing: "0.06em", textTransform: "uppercase" }}>
                           CUSTOM SYSTEM WE BUILD FOR YOU
                         </Typography>
-                        <Typography sx={{ fontSize: { xs: "1.2rem", sm: "1.35rem" }, fontWeight: 700, color: "#18181B" }}>
+                        <Typography sx={{ fontSize: { xs: "1.2rem", sm: "1.35rem" }, fontWeight: 700, color: "#183D35" }}>
                           {selected.solutionTitle}
                         </Typography>
                       </Box>
@@ -362,15 +362,15 @@ export default function InteractiveDiagnosticTool() {
                     </Typography>
 
                     {/* What is Included in this Build */}
-                    <Typography sx={{ fontSize: "0.775rem", fontWeight: 800, color: "#18181B", textTransform: "uppercase", mb: 1.5, letterSpacing: "0.05em" }}>
+                    <Typography sx={{ fontSize: "0.775rem", fontWeight: 800, color: "#183D35", textTransform: "uppercase", mb: 1.5, letterSpacing: "0.05em" }}>
                       KEY SYSTEM DELIVERABLES:
                     </Typography>
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 4 }}>
                       {selected.deliverables.map((item, idx) => (
                         <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.4 }}>
-                          <CheckCircleRoundedIcon sx={{ fontSize: 18, color: "#EA580C", mt: 0.25, flexShrink: 0 }} />
-                          <Typography sx={{ fontSize: "0.9rem", color: "#18181B", fontWeight: 500, lineHeight: 1.5 }}>
+                          <CheckCircleRoundedIcon sx={{ fontSize: 18, color: "#3D765D", mt: 0.25, flexShrink: 0 }} />
+                          <Typography sx={{ fontSize: "0.9rem", color: "#183D35", fontWeight: 500, lineHeight: 1.5 }}>
                             {item}
                           </Typography>
                         </Box>
@@ -382,15 +382,15 @@ export default function InteractiveDiagnosticTool() {
                       sx={{
                         p: 3,
                         borderRadius: "16px",
-                        bgcolor: "#FAF8F5",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        bgcolor: "#F7F7F2",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         mb: 3.5,
                       }}
                     >
                       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 1.5 }}>
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                          <CalculateOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#18181B" }}>
+                          <CalculateOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#183D35" }}>
                             Workflow Scale Assessment:
                           </Typography>
                         </Box>
@@ -399,11 +399,11 @@ export default function InteractiveDiagnosticTool() {
                             px: 1.5,
                             py: 0.4,
                             borderRadius: "9999px",
-                            bgcolor: "rgba(234, 88, 12, 0.1)",
-                            border: "1px solid rgba(234, 88, 12, 0.25)",
+                            bgcolor: "rgba(61, 118, 93, 0.1)",
+                            border: "1px solid rgba(61, 118, 93, 0.25)",
                           }}
                         >
-                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 800, color: "#EA580C" }}>
+                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 800, color: "#3D765D" }}>
                             {teamSize} Team Members
                           </Typography>
                         </Box>
@@ -416,31 +416,31 @@ export default function InteractiveDiagnosticTool() {
                         max={60}
                         step={1}
                         sx={{
-                          color: "#EA580C",
+                          color: "#3D765D",
                           height: 6,
                           mb: 1.5,
                           "& .MuiSlider-thumb": {
                             width: 18,
                             height: 18,
                             bgcolor: "#FFFFFF",
-                            border: "3px solid #EA580C",
+                            border: "3px solid #3D765D",
                           },
                         }}
                       />
 
                       <Grid container spacing={2}>
                         <Grid size={{ xs: 6 }}>
-                          <Box sx={{ p: 2, borderRadius: "12px", bgcolor: "#FFFFFF", border: "1px solid rgba(24, 24, 27, 0.06)" }}>
+                          <Box sx={{ p: 2, borderRadius: "12px", bgcolor: "#FFFFFF", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                             <Typography sx={{ fontSize: "0.725rem", color: "#71717A", fontWeight: 700, textTransform: "uppercase", mb: 0.5 }}>
                               Coordination Scale:
                             </Typography>
-                            <Typography sx={{ fontSize: { xs: "1.05rem", sm: "1.25rem" }, fontWeight: 800, color: "#18181B" }}>
+                            <Typography sx={{ fontSize: { xs: "1.05rem", sm: "1.25rem" }, fontWeight: 800, color: "#183D35" }}>
                               {workflowComplexity}
                             </Typography>
                           </Box>
                         </Grid>
                         <Grid size={{ xs: 6 }}>
-                          <Box sx={{ p: 2, borderRadius: "12px", bgcolor: "#FFFFFF", border: "1px solid rgba(24, 24, 27, 0.06)" }}>
+                          <Box sx={{ p: 2, borderRadius: "12px", bgcolor: "#FFFFFF", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                             <Typography sx={{ fontSize: "0.725rem", color: "#71717A", fontWeight: 700, textTransform: "uppercase", mb: 0.5 }}>
                               Automation Focus:
                             </Typography>
@@ -465,17 +465,17 @@ export default function InteractiveDiagnosticTool() {
                           sx={{
                             p: 2,
                             borderRadius: "12px",
-                            bgcolor: "rgba(234, 88, 12, 0.05)",
-                            border: "1px solid rgba(234, 88, 12, 0.2)",
+                            bgcolor: "rgba(61, 118, 93, 0.05)",
+                            border: "1px solid rgba(61, 118, 93, 0.2)",
                           }}
                         >
                           <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, mb: 0.5 }}>
-                            <AccessTimeRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                            <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase" }}>
+                            <AccessTimeRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
+                            <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase" }}>
                               DEPLOYMENT TIMEFRAME:
                             </Typography>
                           </Box>
-                          <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#18181B" }}>
+                          <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#183D35" }}>
                             {selected.timeframe}
                           </Typography>
                         </Box>
@@ -510,17 +510,17 @@ export default function InteractiveDiagnosticTool() {
                         fullWidth
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                         sx={{
-                          background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                          background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                           color: "#FFFFFF",
                           py: 1.6,
                           fontWeight: 700,
                           fontSize: "0.95rem",
                           borderRadius: "9999px",
-                          boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.38)",
+                          boxShadow: "0 10px 25px -5px rgba(61, 118, 93, 0.38)",
                           transition: "all 0.25s ease",
                           "&:hover": {
-                            background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                            boxShadow: "0 12px 30px -4px rgba(234, 88, 12, 0.48)",
+                            background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                            boxShadow: "0 12px 30px -4px rgba(61, 118, 93, 0.48)",
                           },
                         }}
                       >

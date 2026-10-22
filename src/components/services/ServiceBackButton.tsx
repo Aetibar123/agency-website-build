@@ -13,11 +13,11 @@ export default function ServiceBackButton() {
         onClick={() => router.push('/services')}
         aria-label="Back to Services"
         sx={{ 
-          bgcolor: '#FAF9F5', 
-          color: '#0E172A', 
-          border: '1px solid rgba(17, 18, 21, 0.1)',
-          boxShadow: '0 4px 16px rgba(17, 18, 21, 0.06)',
-          '&:hover': { bgcolor: '#0E172A', color: '#FFFFFF' },
+          bgcolor: '#F7F7F2', 
+          color: '#183D35', 
+          border: '1px solid rgba(24, 61, 53, 0.1)',
+          boxShadow: '0 4px 16px rgba(24, 61, 53, 0.06)',
+          '&:hover': { bgcolor: '#183D35', color: '#FFFFFF' },
           width: 46,
           height: 46,
           transition: 'all 0.25s ease',

@@ -62,7 +62,7 @@ export default function HomeProcess() {
           left: "5%",
           width: 600,
           height: 600,
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, rgba(255, 255, 255, 0) 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.04) 0%, rgba(255, 255, 255, 0) 70%)",
           filter: "blur(60px)",
           pointerEvents: "none",
         }}
@@ -84,9 +84,9 @@ export default function HomeProcess() {
                 px: 2.2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: 2.5,
               }}
@@ -95,14 +95,14 @@ export default function HomeProcess() {
                 component={motion.div}
                 animate={{ scale: [1, 1.3, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72", boxShadow: "0 0 10px #4D8F72" }}
               />
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -113,11 +113,12 @@ export default function HomeProcess() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.2 },
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.35rem", md: "2.8rem", lg: "3.2rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                letterSpacing: "-0.025em",
                 textWrap: "balance",
                 mb: 2.2,
               }}
@@ -126,7 +127,9 @@ export default function HomeProcess() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  display: "inline",
+                  fontStyle: "italic",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -145,7 +148,7 @@ export default function HomeProcess() {
                 mx: "auto",
               }}
             >
-             No confusing technical jargon, unclear project details, or unnecessary complexity. We keep the process straightforward—from understanding your business and planning the right approach to building, reviewing, and launching your project.
+            We keep projects simple and transparent, from understanding your business and planning the right approach to development, review, and launch.
 
             </Typography>
           </Box>
@@ -163,20 +166,20 @@ export default function HomeProcess() {
               >
                 <Box
                   sx={{
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#F7F7F2",
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: { xs: "20px", md: "24px" },
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     position: "relative",
-                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    boxShadow: "0 2px 8px rgba(24, 61, 53, 0.02)",
                     transition: "all 0.3s ease",
                     "&:hover": {
                       transform: "translateY(-4px)",
-                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
-                      borderColor: "rgba(234, 88, 12, 0.4)",
+                      boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.12)",
+                      borderColor: "rgba(61, 118, 93, 0.4)",
                     },
                   }}
                 >
@@ -185,8 +188,8 @@ export default function HomeProcess() {
                       width: 38,
                       height: 38,
                       borderRadius: "10px",
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      color: "#EA580C",
+                      bgcolor: "rgba(61, 118, 93, 0.1)",
+                      color: "#3D765D",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -203,12 +206,13 @@ export default function HomeProcess() {
                   <Typography
                     variant="h3"
                     sx={{
-                      fontSize: { xs: "1rem", sm: "1.05rem", md: "1.1rem" },
-                      fontWeight: 600,
-                      letterSpacing: "-0.02em",
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", serif',
+                      fontSize: { xs: "1.1rem", sm: "1.15rem", md: "1.2rem" },
+                      fontWeight: 400,
+                      letterSpacing: "-0.015em",
+                      color: "#183D35",
                       mb: 1.2,
-                      lineHeight: 1.35,
+                      lineHeight: 1.3,
                       textWrap: "balance",
                       display: "-webkit-box",
                       WebkitLineClamp: 2,

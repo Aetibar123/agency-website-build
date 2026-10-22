@@ -19,9 +19,9 @@ const principles = [
     subtitle: "We take time to learn how your business works before suggesting any technology.",
     summary:
       "A lot of software fails because people jump straight into writing code without understanding the day-to-day workflow. We talk with you and your team to understand where time is wasted, what tools you already use, and what actually needs fixing.",
-    badgeColor: "#EA580C",
-    badgeBg: "rgba(249, 115, 22, 0.08)",
-    badgeBorder: "rgba(249, 115, 22, 0.25)",
+    badgeColor: "#3D765D",
+    badgeBg: "rgba(61, 118, 93, 0.08)",
+    badgeBorder: "rgba(61, 118, 93, 0.25)",
     icon: TroubleshootOutlinedIcon,
     checklist: [
       "Learning how customer inquiries arrive and how work gets done",
@@ -38,9 +38,9 @@ const principles = [
     subtitle: "Less time spent copying data between spreadsheets, messages, and inboxes.",
     summary:
       "Growing businesses often pick up disorganized habits over time: re-typing customer details, answering the same status questions repeatedly, or losing track of leads across multiple channels.",
-    badgeColor: "#F97316",
-    badgeBg: "rgba(249, 115, 22, 0.12)",
-    badgeBorder: "rgba(249, 115, 22, 0.35)",
+    badgeColor: "#4D8F72",
+    badgeBg: "rgba(61, 118, 93, 0.12)",
+    badgeBorder: "rgba(61, 118, 93, 0.35)",
     icon: AccountTreeOutlinedIcon,
     checklist: [
       "Cut down on duplicate data entry across different tools",
@@ -58,9 +58,9 @@ const principles = [
     subtitle: "Software designed for your actual workflow, not bloated generic templates.",
     summary:
       "We avoid pushing complicated software packages you will never use. Instead, we build clean, fast websites and straightforward internal tools tailored to how your team actually works.",
-    badgeColor: "#EA580C",
-    badgeBg: "rgba(249, 115, 22, 0.08)",
-    badgeBorder: "rgba(249, 115, 22, 0.25)",
+    badgeColor: "#3D765D",
+    badgeBg: "rgba(61, 118, 93, 0.08)",
+    badgeBorder: "rgba(61, 118, 93, 0.25)",
     icon: TerminalRoundedIcon,
     checklist: [
       "Fast, responsive websites built with modern technologies",
@@ -96,7 +96,7 @@ export default function PhilosophySection() {
           maxWidth: "1100px",
           height: 400,
           background:
-            "radial-gradient(ellipse, rgba(249, 115, 22, 0.05) 0%, rgba(251, 146, 60, 0.02) 50%, transparent 70%)",
+            "radial-gradient(ellipse, rgba(61, 118, 93, 0.05) 0%, rgba(216, 229, 213, 0.02) 50%, transparent 70%)",
           filter: "blur(60px)",
           pointerEvents: "none",
           zIndex: 0,
@@ -121,8 +121,8 @@ export default function PhilosophySection() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -131,8 +131,8 @@ export default function PhilosophySection() {
                   width: 7,
                   height: 7,
                   borderRadius: "50%",
-                  bgcolor: "#EA580C",
-                  boxShadow: "0 0 8px #EA580C",
+                  bgcolor: "#3D765D",
+                  boxShadow: "0 0 8px #3D765D",
                 }}
               />
               <Typography
@@ -140,7 +140,7 @@ export default function PhilosophySection() {
                   fontSize: "0.8rem",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   fontWeight: 600,
                 }}
               >
@@ -154,7 +154,7 @@ export default function PhilosophySection() {
               sx={{
                 fontSize: { xs: "2.35rem", sm: "3.25rem", md: "4.2rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.12, md: 1.05 },
                 letterSpacing: "-0.035em",
                 mb: 2.5,
@@ -164,7 +164,7 @@ export default function PhilosophySection() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -211,16 +211,16 @@ export default function PhilosophySection() {
                       width: "100%",
                       p: { xs: 2.5, sm: 3.8, md: 4.5 },
                       borderRadius: { xs: "22px", md: "28px" },
-                      bgcolor: item.isFeatured ? "#FFFBF7" : "#FAF8F5",
+                      bgcolor: item.isFeatured ? "#FFFBF7" : "#F7F7F2",
                       border: "1.5px solid",
                       borderColor:
                         isHovered || item.isFeatured
-                          ? "rgba(249, 115, 22, 0.38)"
-                          : "rgba(228, 228, 231, 0.9)",
+                          ? "rgba(61, 118, 93, 0.38)"
+                          : "rgba(216, 229, 213, 0.9)",
                       boxShadow:
                         isHovered || item.isFeatured
-                          ? "0 22px 50px -12px rgba(234, 88, 12, 0.15), 0 0 0 1px rgba(249, 115, 22, 0.12)"
-                          : "0 10px 30px -10px rgba(24, 24, 27, 0.03)",
+                          ? "0 22px 50px -12px rgba(61, 118, 93, 0.15), 0 0 0 1px rgba(61, 118, 93, 0.12)"
+                          : "0 10px 30px -10px rgba(24, 61, 53, 0.03)",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
@@ -237,7 +237,7 @@ export default function PhilosophySection() {
                         right: { xs: 20, sm: 24 },
                         fontSize: "3.5rem",
                         fontWeight: 700,
-                        color: item.isFeatured ? "rgba(234, 88, 12, 0.08)" : "rgba(24, 24, 27, 0.04)",
+                        color: item.isFeatured ? "rgba(61, 118, 93, 0.08)" : "rgba(24, 61, 53, 0.04)",
                         lineHeight: 1,
                         pointerEvents: "none",
                         userSelect: "none",
@@ -262,7 +262,7 @@ export default function PhilosophySection() {
                             justifyContent: "center",
                             color: item.badgeColor,
                             boxShadow: item.isFeatured
-                              ? "0 4px 12px rgba(249, 115, 22, 0.2)"
+                              ? "0 4px 12px rgba(61, 118, 93, 0.2)"
                               : "none",
                           }}
                         >
@@ -293,7 +293,7 @@ export default function PhilosophySection() {
                         sx={{
                           fontSize: { xs: "1.45rem", sm: "1.65rem" },
                           fontWeight: 600,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.025em",
                           mb: 1.2,
                         }}
@@ -306,7 +306,7 @@ export default function PhilosophySection() {
                         sx={{
                           fontSize: "0.92rem",
                           fontWeight: 500,
-                          color: "#EA580C",
+                          color: "#3D765D",
                           mb: 2.5,
                           lineHeight: 1.5,
                         }}
@@ -335,7 +335,7 @@ export default function PhilosophySection() {
                           p: 2.2,
                           bgcolor: "#FFFFFF",
                           borderRadius: "16px",
-                          border: "1px solid rgba(228, 228, 231, 0.8)",
+                          border: "1px solid rgba(216, 229, 213, 0.8)",
                           display: "flex",
                           flexDirection: "column",
                           gap: 1.2,
@@ -347,7 +347,7 @@ export default function PhilosophySection() {
                             <CheckCircleRoundedIcon
                               sx={{
                                 fontSize: 16,
-                                color: "#EA580C",
+                                color: "#3D765D",
                                 mt: 0.3,
                                 flexShrink: 0,
                               }}
@@ -373,11 +373,11 @@ export default function PhilosophySection() {
                           alignItems: "center",
                           justifyContent: "space-between",
                           pt: 1.5,
-                          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                         }}
                       >
                         <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
-                          <BoltRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                          <BoltRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                           <Typography sx={{ fontSize: "0.76rem", fontWeight: 600, color: "#71717A" }}>
                             {item.highlightPill}
                           </Typography>
@@ -386,7 +386,7 @@ export default function PhilosophySection() {
                           sx={{
                             fontSize: "0.78rem",
                             fontWeight: 600,
-                            color: "#EA580C",
+                            color: "#3D765D",
                           }}
                         >
                           {item.metricBadge}
@@ -411,9 +411,9 @@ export default function PhilosophySection() {
             sx={{
               p: { xs: 3.5, sm: 5 },
               borderRadius: { xs: "20px", md: "26px" },
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
               border: "1px solid rgba(255, 255, 255, 0.1)",
-              boxShadow: "0 20px 50px -10px rgba(24, 24, 27, 0.25)",
+              boxShadow: "0 20px 50px -10px rgba(24, 61, 53, 0.25)",
               display: "flex",
               flexDirection: { xs: "column", md: "row" },
               justifyContent: "space-between",
@@ -433,7 +433,7 @@ export default function PhilosophySection() {
                 width: 300,
                 height: 200,
                 borderRadius: "50%",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.15) 0%, transparent 70%)",
                 filter: "blur(40px)",
                 pointerEvents: "none",
               }}
@@ -441,14 +441,14 @@ export default function PhilosophySection() {
 
             <Box sx={{ position: "relative", zIndex: 1, maxWidth: 760 }}>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1.2, mb: 1.5 }}>
-                <AutoAwesomeOutlinedIcon sx={{ fontSize: 18, color: "#FB923C" }} />
+                <AutoAwesomeOutlinedIcon sx={{ fontSize: 18, color: "#62A486" }} />
                 <Typography
                   sx={{
                     fontSize: "0.75rem",
                     fontWeight: 600,
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
-                    color: "#FB923C",
+                    color: "#62A486",
                   }}
                 >
                   What We Care About
@@ -489,9 +489,9 @@ export default function PhilosophySection() {
                     whiteSpace: { xs: "normal", sm: "nowrap" },
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#F97316",
-                      bgcolor: "rgba(249, 115, 22, 0.12)",
-                      color: "#FB923C",
+                      borderColor: "#4D8F72",
+                      bgcolor: "rgba(61, 118, 93, 0.12)",
+                      color: "#62A486",
                       transform: "translateY(-2px)",
                     },
                   }}

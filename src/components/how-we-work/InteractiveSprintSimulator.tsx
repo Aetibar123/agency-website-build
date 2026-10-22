@@ -285,33 +285,21 @@ export default function InteractiveSprintSimulator() {
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 1.2,
-                px: 2.2,
-                py: 0.6,
+                gap: 1,
+                px: 1.8,
+                py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2.5,
+                bgcolor: "#D8E5D5",
+                color: "#183D35",
+                fontSize: "0.72rem",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                fontFamily: "monospace",
+                mb: 2,
               }}
             >
-              <Box
-                component={motion.div}
-                animate={{ scale: [1, 1.3, 1] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
-              />
-              <Typography
-                sx={{
-                  fontSize: "0.8rem",
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase",
-                  color: "#EA580C",
-                  fontWeight: 700,
-                }}
-              >
               TYPICAL PROJECT OPTIONS • ESTIMATOR
-
-              </Typography>
             </Box>
           </motion.div>
 
@@ -324,28 +312,27 @@ export default function InteractiveSprintSimulator() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                letterSpacing: "-0.035em",
-                lineHeight: { xs: 1.18, md: 1.2 },
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.015em",
+                lineHeight: { xs: 1.25, md: 1.18 },
                 textWrap: "balance",
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                maxWidth: { xs: "100%", md: 980 },
                 mx: "auto",
-                mb: 2.5,
+                mb: 2,
               }}
             >
-             Explore a Typical Project {" "}
+             Explore a Typical Project —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  color: "#3D765D",
+                  fontStyle: "italic",
                 }}
               >
-                Explore a Typical Project Path & Timeline
+                Path & Timeline
               </Box>
             </Typography>
             <Typography
@@ -395,14 +382,14 @@ export default function InteractiveSprintSimulator() {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                      bgcolor: isSelected ? "#FFFFFF" : "#FAF8F5",
+                      bgcolor: isSelected ? "#FFFFFF" : "#F7F7F2",
                       border: "2px solid",
-                      borderColor: isSelected ? "#EA580C" : "rgba(24, 24, 27, 0.08)",
-                      boxShadow: isSelected ? "0 12px 28px -8px rgba(234, 88, 12, 0.22)" : "none",
+                      borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.08)",
+                      boxShadow: isSelected ? "0 12px 28px -8px rgba(61, 118, 93, 0.22)" : "none",
                       transition: "all 0.25s ease",
                       "&:hover": {
                         bgcolor: "#FFFFFF",
-                        borderColor: isSelected ? "#EA580C" : "rgba(234, 88, 12, 0.4)",
+                        borderColor: isSelected ? "#3D765D" : "rgba(61, 118, 93, 0.4)",
                         transform: "translateY(-2px)",
                       },
                     }}
@@ -414,8 +401,8 @@ export default function InteractiveSprintSimulator() {
                             width: 40,
                             height: 40,
                             borderRadius: "10px",
-                            bgcolor: isSelected ? "#EA580C" : "rgba(249, 115, 22, 0.1)",
-                            color: isSelected ? "#FFFFFF" : "#EA580C",
+                            bgcolor: isSelected ? "#3D765D" : "rgba(61, 118, 93, 0.1)",
+                            color: isSelected ? "#FFFFFF" : "#3D765D",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
@@ -428,14 +415,23 @@ export default function InteractiveSprintSimulator() {
                           sx={{
                             fontSize: "0.75rem",
                             fontWeight: 700,
-                            color: isSelected ? "#EA580C" : "#71717A",
+                            color: isSelected ? "#3D765D" : "#71717A",
                           }}
                         >
                           {arch.badge}
                         </Typography>
                       </Box>
 
-                      <Typography sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#18181B", mb: 0.8 }}>
+                      <Typography
+                        sx={{
+                          fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                          fontSize: "1.15rem",
+                          fontWeight: 400,
+                          color: "#183D35",
+                          mb: 0.8,
+                          letterSpacing: "-0.015em",
+                        }}
+                      >
                         {arch.name}
                       </Typography>
                       <Typography sx={{ fontSize: "0.85rem", color: "#52525B", lineHeight: 1.55 }}>
@@ -445,8 +441,8 @@ export default function InteractiveSprintSimulator() {
 
                     {isSelected && (
                       <Box sx={{ display: "flex", alignItems: "center", gap: 0.6, mt: 2 }}>
-                        <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#EA580C" }} />
-                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C" }}>
+                        <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#3D765D" }} />
+                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D" }}>
                           Selected
                         </Typography>
                       </Box>
@@ -463,8 +459,8 @@ export default function InteractiveSprintSimulator() {
           sx={{
             p: { xs: 2.5, sm: 3 },
             borderRadius: "18px",
-            bgcolor: "#FAF8F5",
-            border: "1px solid rgba(24, 24, 27, 0.08)",
+            bgcolor: "#F7F7F2",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             alignItems: { xs: "flex-start", md: "center" },
@@ -476,8 +472,8 @@ export default function InteractiveSprintSimulator() {
           {/* Organization Scale */}
           <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, alignItems: { sm: "center" }, gap: 1.5, width: { xs: "100%", md: "auto" } }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
-              <GroupOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-              <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B", textTransform: "uppercase" }}>
+              <GroupOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+              <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#183D35", textTransform: "uppercase" }}>
                Your Business Size:
               </Typography>
             </Box>
@@ -496,12 +492,12 @@ export default function InteractiveSprintSimulator() {
                       fontSize: "0.8rem",
                       fontWeight: 600,
                       textTransform: "none",
-                      bgcolor: isSelected ? "#18181B" : "#FFFFFF",
+                      bgcolor: isSelected ? "#183D35" : "#FFFFFF",
                       color: isSelected ? "#FFFFFF" : "#52525B",
                       border: "1px solid",
-                      borderColor: isSelected ? "#18181B" : "rgba(24, 24, 27, 0.1)",
+                      borderColor: isSelected ? "#183D35" : "rgba(24, 61, 53, 0.1)",
                       "&:hover": {
-                        bgcolor: isSelected ? "#18181B" : "rgba(24, 24, 27, 0.04)",
+                        bgcolor: isSelected ? "#183D35" : "rgba(24, 61, 53, 0.04)",
                       },
                     }}
                   >
@@ -515,8 +511,8 @@ export default function InteractiveSprintSimulator() {
           {/* Delivery Speed */}
           <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, alignItems: { sm: "center" }, gap: 1.5, width: { xs: "100%", md: "auto" } }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
-              <SpeedRoundedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-              <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B", textTransform: "uppercase" }}>
+              <SpeedRoundedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+              <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#183D35", textTransform: "uppercase" }}>
                 Preferred Timeline:
               </Typography>
             </Box>
@@ -535,12 +531,12 @@ export default function InteractiveSprintSimulator() {
                       fontSize: "0.8rem",
                       fontWeight: 600,
                       textTransform: "none",
-                      bgcolor: isSelected ? "#EA580C" : "#FFFFFF",
+                      bgcolor: isSelected ? "#3D765D" : "#FFFFFF",
                       color: isSelected ? "#FFFFFF" : "#52525B",
                       border: "1px solid",
-                      borderColor: isSelected ? "#EA580C" : "rgba(24, 24, 27, 0.1)",
+                      borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.1)",
                       "&:hover": {
-                        bgcolor: isSelected ? "#C2410C" : "rgba(24, 24, 27, 0.04)",
+                        bgcolor: isSelected ? "#183D35" : "rgba(24, 61, 53, 0.04)",
                       },
                     }}
                   >
@@ -565,9 +561,9 @@ export default function InteractiveSprintSimulator() {
               sx={{
                 p: { xs: 3.5, sm: 5, md: 6 },
                 borderRadius: { xs: "22px", md: "28px" },
-                bgcolor: "#FAF8F5",
-                border: "1.5px solid rgba(234, 88, 12, 0.3)",
-                boxShadow: "0 18px 45px -12px rgba(234, 88, 12, 0.12)",
+                bgcolor: "#F7F7F2",
+                border: "1.5px solid rgba(61, 118, 93, 0.3)",
+                boxShadow: "0 18px 45px -12px rgba(61, 118, 93, 0.12)",
               }}
             >
               {/* Top Result Banner */}
@@ -580,12 +576,12 @@ export default function InteractiveSprintSimulator() {
                   gap: 3,
                   pb: 3.5,
                   mb: 4,
-                  borderBottom: "1px solid rgba(24, 24, 27, 0.08)",
+                  borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
                 }}
               >
                 {/* Projected Weeks */}
                 <Box>
-                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 0.5 }}>
+                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.06em", mb: 0.5 }}>
                     ESTIMATED PROJECT TIMELINE:
 
                   </Typography>
@@ -594,7 +590,7 @@ export default function InteractiveSprintSimulator() {
                       sx={{
                         fontSize: { xs: "2.4rem", sm: "3.2rem" },
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         lineHeight: 1,
                         fontFamily: "monospace",
                       }}
@@ -615,7 +611,7 @@ export default function InteractiveSprintSimulator() {
                       p: 2,
                       borderRadius: "14px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
@@ -632,14 +628,14 @@ export default function InteractiveSprintSimulator() {
                       p: 2,
                       borderRadius: "14px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                     Project Support:
 
                     </Typography>
-                    <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                       {currentArchetype.team}
                     </Typography>
                   </Box>
@@ -649,14 +645,14 @@ export default function InteractiveSprintSimulator() {
                       p: 2,
                       borderRadius: "14px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                     }}
                   >
                     <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                       Your Digital Assets:
 
                     </Typography>
-                    <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#EA580C" }}>
+                    <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#3D765D" }}>
                       Agreed in Writing
 
                     </Typography>
@@ -670,15 +666,15 @@ export default function InteractiveSprintSimulator() {
                   p: 2.8,
                   borderRadius: "16px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(24, 24, 27, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   mb: 4,
                 }}
               >
-                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", mb: 0.6 }}>
+                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase", mb: 0.6 }}>
                   WHY IT MATTERS FOR YOUR BUSINESS:
 
                 </Typography>
-                <Typography sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#18181B", mb: 0.8, lineHeight: 1.5 }}>
+                <Typography sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#183D35", mb: 0.8, lineHeight: 1.5 }}>
                   {currentArchetype.keyBenefit}
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.6 }}>
@@ -687,7 +683,7 @@ export default function InteractiveSprintSimulator() {
               </Box>
 
               {/* What Happens Week by Week */}
-              <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#18181B", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
+              <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#183D35", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
                WHAT HAPPENS AT EACH STAGE:
 
               </Typography>
@@ -700,7 +696,7 @@ export default function InteractiveSprintSimulator() {
                       p: 2.4,
                       borderRadius: "16px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       display: "flex",
                       flexDirection: { xs: "column", sm: "row" },
                       alignItems: { xs: "flex-start", sm: "center" },
@@ -708,8 +704,8 @@ export default function InteractiveSprintSimulator() {
                       gap: 2,
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        boxShadow: "0 6px 18px -4px rgba(234, 88, 12, 0.1)",
+                        borderColor: "#3D765D",
+                        boxShadow: "0 6px 18px -4px rgba(61, 118, 93, 0.1)",
                       },
                     }}
                   >
@@ -719,8 +715,8 @@ export default function InteractiveSprintSimulator() {
                           px: 1.6,
                           py: 0.6,
                           borderRadius: "8px",
-                          bgcolor: "rgba(249, 115, 22, 0.1)",
-                          color: "#EA580C",
+                          bgcolor: "rgba(61, 118, 93, 0.1)",
+                          color: "#3D765D",
                           fontSize: "0.8rem",
                           fontWeight: 700,
                           fontFamily: "monospace",
@@ -730,7 +726,7 @@ export default function InteractiveSprintSimulator() {
                         {stg.period}
                       </Box>
                       <Box>
-                        <Typography sx={{ fontSize: "0.95rem", fontWeight: 600, color: "#18181B", mb: 0.3 }}>
+                        <Typography sx={{ fontSize: "0.95rem", fontWeight: 600, color: "#183D35", mb: 0.3 }}>
                           {stg.title}
                         </Typography>
                         <Typography sx={{ fontSize: "0.85rem", color: "#52525B" }}>
@@ -754,7 +750,7 @@ export default function InteractiveSprintSimulator() {
               <Box
                 sx={{
                   pt: 3,
-                  borderTop: "1px solid rgba(24, 24, 27, 0.08)",
+                  borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                   display: "flex",
                   flexDirection: { xs: "column", sm: "row" },
                   alignItems: { xs: "flex-start", sm: "center" },
@@ -763,7 +759,7 @@ export default function InteractiveSprintSimulator() {
                 }}
               >
                 <Box>
-                  <Typography sx={{ fontSize: "0.95rem", fontWeight: 600, color: "#18181B" }}>
+                  <Typography sx={{ fontSize: "0.95rem", fontWeight: 600, color: "#183D35" }}>
                    Want to discuss a realistic timeline for your project?
 
                   </Typography>
@@ -778,7 +774,7 @@ export default function InteractiveSprintSimulator() {
                     variant="contained"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      bgcolor: "#EA580C",
+                      bgcolor: "#3D765D",
                       color: "#FFFFFF",
                       px: 3.2,
                       py: 1.2,
@@ -788,8 +784,8 @@ export default function InteractiveSprintSimulator() {
                       textTransform: "none",
                       boxShadow: "none",
                       "&:hover": {
-                        bgcolor: "#C2410C",
-                        boxShadow: "0 6px 20px -4px rgba(234, 88, 12, 0.4)",
+                        bgcolor: "#183D35",
+                        boxShadow: "0 6px 20px -4px rgba(61, 118, 93, 0.4)",
                       },
                     }}
                   >

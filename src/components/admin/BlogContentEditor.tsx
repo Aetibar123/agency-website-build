@@ -141,7 +141,7 @@ export default function BlogContentEditor({
   };
 
   return (
-    <Box sx={{ border: "1px solid rgba(228, 228, 231, 0.9)", borderRadius: 3, overflow: "hidden", bgcolor: "#fff" }}>
+    <Box sx={{ border: "1px solid rgba(216, 229, 213, 0.9)", borderRadius: 3, overflow: "hidden", bgcolor: "#fff" }}>
       {/* Editor Header / Tab Bar */}
       <Box
         sx={{
@@ -151,8 +151,8 @@ export default function BlogContentEditor({
           flexWrap: "wrap",
           px: 2,
           py: 1,
-          bgcolor: "#FAF8F5",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.9)",
         }}
       >
         <Tabs
@@ -169,10 +169,10 @@ export default function BlogContentEditor({
               textTransform: "none",
             },
             "& .Mui-selected": {
-              color: "#EA580C !important",
+              color: "#3D765D !important",
             },
             "& .MuiTabs-indicator": {
-              bgcolor: "#EA580C",
+              bgcolor: "#3D765D",
             },
           }}
         >
@@ -199,8 +199,8 @@ export default function BlogContentEditor({
                 startIcon={<LinkRoundedIcon />}
                 onClick={handleOpenLinkDialog}
                 sx={{
-                  color: "#EA580C",
-                  borderColor: "rgba(234, 88, 12, 0.4)",
+                  color: "#3D765D",
+                  borderColor: "rgba(61, 118, 93, 0.4)",
                   fontWeight: 700,
                   fontSize: "0.8rem",
                   textTransform: "none",
@@ -208,8 +208,8 @@ export default function BlogContentEditor({
                   px: 1.5,
                   borderRadius: 2,
                   "&:hover": {
-                    borderColor: "#EA580C",
-                    bgcolor: "rgba(234, 88, 12, 0.05)",
+                    borderColor: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.05)",
                   },
                 }}
               >
@@ -235,7 +235,7 @@ export default function BlogContentEditor({
               <Button
                 size="small"
                 onClick={() => wrapSelection("\n## ", "\n", "Heading 2")}
-                sx={{ minWidth: 32, px: 0.8, fontWeight: 800, fontSize: "0.82rem", color: "#18181B" }}
+                sx={{ minWidth: 32, px: 0.8, fontWeight: 800, fontSize: "0.82rem", color: "#183D35" }}
               >
                 H2
               </Button>
@@ -245,7 +245,7 @@ export default function BlogContentEditor({
               <Button
                 size="small"
                 onClick={() => wrapSelection("\n### ", "\n", "Heading 3")}
-                sx={{ minWidth: 32, px: 0.8, fontWeight: 800, fontSize: "0.82rem", color: "#18181B" }}
+                sx={{ minWidth: 32, px: 0.8, fontWeight: 800, fontSize: "0.82rem", color: "#183D35" }}
               >
                 H3
               </Button>
@@ -313,16 +313,16 @@ export default function BlogContentEditor({
               mt: 1.5,
               p: 1.5,
               borderRadius: 2,
-              bgcolor: "rgba(234, 88, 12, 0.05)",
-              border: "1px solid rgba(234, 88, 12, 0.2)",
+              bgcolor: "rgba(61, 118, 93, 0.05)",
+              border: "1px solid rgba(61, 118, 93, 0.2)",
               display: "flex",
               alignItems: "flex-start",
               gap: 1.5,
             }}
           >
-            <HelpOutlineRoundedIcon sx={{ color: "#EA580C", fontSize: "1.2rem", mt: 0.2, flexShrink: 0 }} />
+            <HelpOutlineRoundedIcon sx={{ color: "#3D765D", fontSize: "1.2rem", mt: 0.2, flexShrink: 0 }} />
             <Typography variant="caption" sx={{ color: "#4B5563", fontSize: "0.82rem", lineHeight: 1.6 }}>
-              <strong style={{ color: "#EA580C" }}>Link Tips:</strong> Highlight text and click <strong>Add Link</strong>,
+              <strong style={{ color: "#3D765D" }}>Link Tips:</strong> Highlight text and click <strong>Add Link</strong>,
               or type <code>[Link Text](https://yourlink.com)</code>. Plain URLs like <code>https://yourlink.com</code> are
               also made clickable automatically. Click <strong>Live Preview</strong> above at any time to test your clickable links!
             </Typography>
@@ -336,18 +336,18 @@ export default function BlogContentEditor({
             minHeight: 400,
             bgcolor: "#fff",
             "& a, & .blog-link": {
-              color: "#EA580C",
+              color: "#3D765D",
               fontWeight: 600,
               textDecoration: "underline",
               textUnderlineOffset: "3px",
-              textDecorationColor: "rgba(234, 88, 12, 0.4)",
+              textDecorationColor: "rgba(61, 118, 93, 0.4)",
               cursor: "pointer",
               pointerEvents: "auto",
               transition: "all 0.2s ease-in-out",
               "&:hover": {
-                color: "#C2410C",
-                textDecorationColor: "#EA580C",
-                bgcolor: "rgba(234, 88, 12, 0.08)",
+                color: "#183D35",
+                textDecorationColor: "#3D765D",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
                 borderRadius: "3px",
               },
             },
@@ -360,16 +360,16 @@ export default function BlogContentEditor({
                   mb: 3,
                   p: 1.5,
                   borderRadius: 2,
-                  bgcolor: "rgba(234, 88, 12, 0.06)",
-                  border: "1px solid rgba(234, 88, 12, 0.2)",
+                  bgcolor: "rgba(61, 118, 93, 0.06)",
+                  border: "1px solid rgba(61, 118, 93, 0.2)",
                   display: "flex",
                   alignItems: "center",
                   gap: 1,
                 }}
               >
-                <VisibilityRoundedIcon sx={{ color: "#EA580C", fontSize: "1.1rem" }} />
+                <VisibilityRoundedIcon sx={{ color: "#3D765D", fontSize: "1.1rem" }} />
                 <Typography variant="caption" sx={{ color: "#4B5563", fontSize: "0.82rem" }}>
-                  <strong style={{ color: "#EA580C" }}>Interactive Preview:</strong> All links below are live and testable. Click any link to confirm it works properly!
+                  <strong style={{ color: "#3D765D" }}>Interactive Preview:</strong> All links below are live and testable. Click any link to confirm it works properly!
                 </Typography>
               </Box>
               {renderBlogContent(value)}
@@ -390,7 +390,7 @@ export default function BlogContentEditor({
         slotProps={{ paper: { sx: { borderRadius: 3, p: 1 } } }}
       >
         <DialogTitle sx={{ fontWeight: 800, pb: 1, display: "flex", alignItems: "center", gap: 1 }}>
-          <LinkRoundedIcon sx={{ color: "#EA580C" }} />
+          <LinkRoundedIcon sx={{ color: "#3D765D" }} />
           Insert Clickable Link
         </DialogTitle>
         <DialogContent sx={{ display: "flex", flexDirection: "column", gap: 2, pt: "8px !important" }}>
@@ -426,8 +426,8 @@ export default function BlogContentEditor({
               fontWeight: 700,
               borderRadius: 2,
               px: 3,
-              bgcolor: "#EA580C",
-              "&:hover": { bgcolor: "#C2410C" },
+              bgcolor: "#3D765D",
+              "&:hover": { bgcolor: "#183D35" },
             }}
           >
             Insert Link

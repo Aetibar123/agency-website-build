@@ -82,22 +82,22 @@ const practicalUseCases = [
   {
     title: "Repetitive Workflow Automation",
     desc: "Connecting disconnected business software via webhooks and APIs to automatically transfer customer data, sync invoice line-items, and trigger team notifications without manual copying.",
-    icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Unstructured Information Processing",
     desc: "Extracting structured data from PDF estimates, supplier spec sheets, scanned receipts, and multi-page contracts directly into database fields for instant review.",
-    icon: <DynamicFeedOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <DynamicFeedOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Inbound Inquiry & Ticket Triage",
     desc: "Analyzing incoming support or quotation emails to extract customer intent, score urgency, and prepare suggested answers for a human team member to approve with one click.",
-    icon: <SmartToyOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SmartToyOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Internal Knowledge Retrieval",
     desc: "Equipping operations and customer service reps with a private assistant that searches company procedures, product catalogs, and historical projects to surface instant, verified answers.",
-    icon: <SecurityOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SecurityOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
 ];
 
@@ -119,7 +119,7 @@ export default function AiAutomationPage() {
           pt: { xs: 16, sm: 18, md: 22 },
           pb: { xs: 10, md: 14 },
           background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+            "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.09) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
           overflow: "hidden",
         }}
       >
@@ -128,7 +128,7 @@ export default function AiAutomationPage() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
             maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
             WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
@@ -147,9 +147,9 @@ export default function AiAutomationPage() {
                 px: 2.2,
                 py: 0.8,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: 3.5,
               }}
@@ -159,8 +159,8 @@ export default function AiAutomationPage() {
                   width: 8,
                   height: 8,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#4D8F72",
+                  boxShadow: "0 0 10px #4D8F72",
                 }}
               />
               <Typography
@@ -168,7 +168,7 @@ export default function AiAutomationPage() {
                   fontSize: { xs: "0.75rem", sm: "0.825rem" },
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -181,7 +181,7 @@ export default function AiAutomationPage() {
               sx={{
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.035em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -194,7 +194,7 @@ export default function AiAutomationPage() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -234,18 +234,18 @@ export default function AiAutomationPage() {
                   size="large"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     px: { xs: 3.5, sm: 4.5 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 700,
                     fontSize: "0.95rem",
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
+                    boxShadow: "0 10px 28px rgba(61, 118, 93, 0.35)",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       transform: "translateY(-2px)",
-                      boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
+                      boxShadow: "0 14px 34px rgba(61, 118, 93, 0.5)",
                     },
                   }}
                 >
@@ -257,18 +257,18 @@ export default function AiAutomationPage() {
                 <Button
                   variant="outlined"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     px: { xs: 3, sm: 4 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: "0.95rem",
-                    border: "1px solid rgba(24, 24, 27, 0.18)",
+                    border: "1px solid rgba(24, 61, 53, 0.18)",
                     bgcolor: "rgba(255, 255, 255, 0.8)",
                     backdropFilter: "blur(8px)",
                     "&:hover": {
-                      bgcolor: "#FAF8F5",
-                      borderColor: "rgba(24, 24, 27, 0.35)",
+                      bgcolor: "#F7F7F2",
+                      borderColor: "rgba(24, 61, 53, 0.35)",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -285,18 +285,18 @@ export default function AiAutomationPage() {
               sx={{
                 p: 2.5,
                 borderRadius: "20px",
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
                 textAlign: "center",
               }}
             >
               {telemetryStats.map((stat, idx) => (
                 <Grid size={{ xs: 6, sm: 3 }} key={idx}>
                   <Box sx={{ p: 1 }}>
-                    <Typography sx={{ fontSize: { xs: "1.3rem", sm: "1.6rem" }, fontWeight: 700, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: { xs: "1.3rem", sm: "1.6rem" }, fontWeight: 700, color: "#183D35" }}>
                       {stat.value}
                     </Typography>
-                    <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", mb: 0.5 }}>
                       {stat.label}
                     </Typography>
                     <Typography sx={{ fontSize: "0.75rem", color: "#71717A" }}>
@@ -322,19 +322,19 @@ export default function AiAutomationPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <AutoAwesomeOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <AutoAwesomeOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 OUR HONEST AI CODE OF ETHICS
@@ -346,7 +346,7 @@ export default function AiAutomationPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -370,14 +370,14 @@ export default function AiAutomationPage() {
                 sx={{
                   p: { xs: 3.5, sm: 5 },
                   borderRadius: "20px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(249, 115, 22, 0.3)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(61, 118, 93, 0.3)",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 3 }}>
-                  <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 26 }} />
-                  <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B" }}>
+                  <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 26 }} />
+                  <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#183D35" }}>
                     When AI is the Right Tool
                   </Typography>
                 </Box>
@@ -389,7 +389,7 @@ export default function AiAutomationPage() {
                     "When AI acts as an assistant preparing drafts with human approval before sending",
                   ].map((item, idx) => (
                     <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                      <Box sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#EA580C", mt: 0.8, flexShrink: 0 }} />
+                      <Box sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#3D765D", mt: 0.8, flexShrink: 0 }} />
                       <Typography sx={{ fontSize: "0.925rem", color: "#27272A", lineHeight: 1.6, fontWeight: 500 }}>
                         {item}
                       </Typography>
@@ -412,7 +412,7 @@ export default function AiAutomationPage() {
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 3 }}>
                   <CancelOutlinedIcon sx={{ color: "#DC2626", fontSize: 26 }} />
-                  <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B" }}>
+                  <Typography sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#183D35" }}>
                     When AI is the Wrong Tool
                   </Typography>
                 </Box>
@@ -438,7 +438,7 @@ export default function AiAutomationPage() {
       </Box>
 
       {/* 3. Practical Automations We Build */}
-      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 16 }, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 840, mb: { xs: 6, md: 8 } }}>
             <Box
@@ -449,8 +449,8 @@ export default function AiAutomationPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -460,7 +460,7 @@ export default function AiAutomationPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 PROVEN IMPLEMENTATIONS
@@ -472,7 +472,7 @@ export default function AiAutomationPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -496,13 +496,13 @@ export default function AiAutomationPage() {
                     p: 4,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
@@ -511,8 +511,8 @@ export default function AiAutomationPage() {
                       width: 48,
                       height: 48,
                       borderRadius: "12px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.2)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -521,7 +521,7 @@ export default function AiAutomationPage() {
                   >
                     {item.icon}
                   </Box>
-                  <Typography sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                  <Typography sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                     {item.title}
                   </Typography>
                   <Typography sx={{ fontSize: "0.925rem", color: "#52525B", lineHeight: 1.7 }}>

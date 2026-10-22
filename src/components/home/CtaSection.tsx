@@ -11,10 +11,10 @@ export default function CtaSection() {
       id="contact"
       component="section"
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         py: { xs: 14, md: 20 },
-        borderTop: "1px solid rgba(17, 18, 21, 0.08)",
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderTop: "1px solid rgba(24, 61, 53, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
@@ -22,7 +22,7 @@ export default function CtaSection() {
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.14em",
               display: "block",
@@ -35,7 +35,7 @@ export default function CtaSection() {
           <Typography
             variant="h2"
             sx={{
-              color: "#0E172A",
+              color: "#183D35",
               fontSize: { xs: "2.2rem", sm: "3rem", md: "3.8rem" },
               fontWeight: 800,
               letterSpacing: "-0.03em",
@@ -46,7 +46,7 @@ export default function CtaSection() {
           >
             Have a project in mind?{" "}
             <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-            <Box component="span" sx={{ color: "#0E7490" }}>
+            <Box component="span" sx={{ color: "#3D765D" }}>
               Let&apos;s build something enduring.
             </Box>
           </Typography>
@@ -81,18 +81,18 @@ export default function CtaSection() {
               variant="contained"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
               sx={{
-                bgcolor: "#0E172A",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 px: 4.5,
                 py: 1.6,
                 fontSize: "1rem",
                 fontWeight: 600,
                 borderRadius: "6px",
-                boxShadow: "0 8px 24px rgba(14, 23, 42, 0.12)",
+                boxShadow: "0 8px 24px rgba(24, 61, 53, 0.12)",
                 "&:hover": {
                   bgcolor: "#1E293B",
                   transform: "translateY(-2px)",
-                  boxShadow: "0 12px 30px rgba(14, 23, 42, 0.18)",
+                  boxShadow: "0 12px 30px rgba(24, 61, 53, 0.18)",
                 },
               }}
             >
@@ -106,7 +106,7 @@ export default function CtaSection() {
               startIcon={<EmailOutlinedIcon sx={{ fontSize: 18 }} />}
               sx={{
                 borderColor: "#D5D2C9",
-                color: "#0E172A",
+                color: "#183D35",
                 bgcolor: "#FFFFFF",
                 px: 3.5,
                 py: 1.6,
@@ -114,8 +114,8 @@ export default function CtaSection() {
                 fontWeight: 600,
                 borderRadius: "6px",
                 "&:hover": {
-                  borderColor: "#0E172A",
-                  bgcolor: "#FAF9F5",
+                  borderColor: "#183D35",
+                  bgcolor: "#F7F7F2",
                   transform: "translateY(-2px)",
                 },
               }}

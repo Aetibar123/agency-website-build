@@ -187,7 +187,7 @@ const servicesData: ServiceData[] = [
   {
     id: "seo",
     num: "03",
-    slug: "seo-company-in-udaipur",
+    slug: "seo-service-in-udaipur",
     title: "Search Engine Optimization",
     shortName: "SEO",
     badge: "ORGANIC SEARCH VISIBILITY",
@@ -259,7 +259,7 @@ const servicesData: ServiceData[] = [
   {
     id: "social-media",
     num: "04",
-    slug: "social-media-marketing-company-in-udaipur",
+    slug: "social-media-marketing-service-in-udaipur",
     title: "Social Media Marketing",
     shortName: "Social Media",
     badge: "SOCIAL MEDIA CONTENT & MANAGEMENT",
@@ -328,10 +328,10 @@ const servicesData: ServiceData[] = [
   },
 
   {
-    id: "paid-advertising",
+    id: "performance-marketing",
     num: "05",
-    slug: "paid-advertising-company-in-udaipur",
-    title: "Paid Advertising",
+    slug: "performance-marketing-company-in-udaipur",
+    title: "Performance Marketing",
     shortName: "Paid Ads",
     badge: "GOOGLE & META ADS",
     tagline:
@@ -476,28 +476,38 @@ const servicesData: ServiceData[] = [
 
 const faqs = [
   {
-    q: "How do we get started on a new project?",
-    a: "We start by understanding your business, requirements, goals, and the problem you want to solve. We then discuss the appropriate service, project scope, development or marketing approach, estimated timeline, and pricing before moving forward.",
+    q: "How do we get started with Aetibar?",
+    a: "We start by understanding your business goals, requirements, and budget. Then we recommend suitable services, define the project scope, and discuss the timeline and pricing before moving forward.",
   },
 
   {
-    q: "Which services does Aetibar provide?",
-    a: "We currently provide web development, mobile app development, search engine optimization, social media marketing, paid advertising, and AI automation services. Depending on your requirements, different services can also be combined into a broader digital solution.",
+    q: "Which digital services does Aetibar provide?",
+    a: "Aetibar provides website development, mobile app development, SEO, social media marketing, paid advertising, and AI automation services. We can combine these services to meet your business needs.",
   },
 
   {
-    q: "How long does a project usually take?",
-    a: "The timeline depends on the type and scope of the project. A straightforward business website may require less time than an e-commerce platform, mobile application, or custom AI automation workflow. After understanding your requirements, we provide a project-specific timeline rather than using a fixed timeframe for every project.",
+    q: "How long does a website, app, or digital marketing project take?",
+    a: "Timelines depend on your project's scope, complexity, and requirements. After reviewing your needs, we provide an estimated timeline tailored to your project.",
   },
 
   {
-    q: "Can you work with our existing website, software, or team?",
-    a: "Yes. Where the existing technology and workflow allow it, we can work with your current website, business software, APIs, or internal team. We can also integrate supported tools such as CRMs, spreadsheets, email, WhatsApp, payment systems, and other business platforms.",
+    q: "Can Aetibar improve our existing website or business systems?",
+    a: "Yes. We can help improve existing websites, integrate APIs, and connect supported tools such as CRMs, payment systems, email platforms, and WhatsApp to streamline business workflows.",
   },
 
   {
-    q: "What happens after the project goes live?",
-    a: "After launch, we provide the agreed project handover, access, and relevant documentation or guidance. If you need ongoing improvements, maintenance, SEO, marketing, or further automation, we can discuss continued support based on your requirements.",
+    q: "Does Aetibar provide digital services to businesses in Udaipur?",
+    a: "Yes. Aetibar provides website development, SEO, digital marketing, mobile app development, and AI automation services for businesses in Udaipur and beyond.",
+  },
+
+  {
+    q: "What support is available after project launch?",
+    a: "We provide the agreed handover, access, and relevant documentation after launch. Ongoing maintenance, SEO, marketing, and further development can be discussed according to your business requirements.",
+  },
+
+  {
+    q: "How can I choose the right digital solutions company in Udaipur?",
+    a: "Look for a company that understands your business goals, explains its approach clearly, and recommends services based on your actual needs. Review relevant work, communication, project scope, and ongoing support before deciding.",
   },
 ];
 
@@ -541,13 +551,13 @@ export default function ServicesClient() {
   const activeService = servicesData[activeServiceIndex];
 
   return (
-    <Box sx={{ bgcolor: "#FAF9F5", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", minHeight: "100vh" }}>
       {/* 1. Human-Friendly Editorial Hero */}
       <Box
         sx={{
           pt: { xs: 16, md: 22 },
           pb: { xs: 8, md: 12 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -561,8 +571,8 @@ export default function ServicesClient() {
                 px: 1.8,
                 py: 0.6,
                 borderRadius: "4px",
-                bgcolor: "rgba(14, 116, 144, 0.08)",
-                border: "1px solid rgba(14, 116, 144, 0.18)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.18)",
               }}
             >
               <Box
@@ -570,13 +580,13 @@ export default function ServicesClient() {
                   width: 6,
                   height: 6,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                 }}
               />
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.14em",
                   fontSize: "0.78rem",
@@ -589,7 +599,7 @@ export default function ServicesClient() {
             <Typography
               variant="h1"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2.35rem", sm: "3.4rem", md: "4.4rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
@@ -600,7 +610,7 @@ export default function ServicesClient() {
             >
               We help ambitious businesses{" "}
               <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box component="span" sx={{ color: "#3D765D" }}>
                 build, automate &amp; scale.
               </Box>
             </Typography>
@@ -655,8 +665,8 @@ export default function ServicesClient() {
                     py: 0.8,
                     borderRadius: "6px",
                     border: "1px solid",
-                    borderColor: activeServiceIndex === idx ? "#0E7490" : "rgba(17, 18, 21, 0.12)",
-                    bgcolor: activeServiceIndex === idx ? "#0E7490" : "#FFFFFF",
+                    borderColor: activeServiceIndex === idx ? "#3D765D" : "rgba(24, 61, 53, 0.12)",
+                    bgcolor: activeServiceIndex === idx ? "#3D765D" : "#FFFFFF",
                     color: activeServiceIndex === idx ? "#FFFFFF" : "#2C2E35",
                     fontSize: "0.82rem",
                     fontWeight: 600,
@@ -666,9 +676,9 @@ export default function ServicesClient() {
                     gap: 0.8,
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      borderColor: "#0E7490",
-                      color: activeServiceIndex === idx ? "#FFFFFF" : "#0E7490",
-                      bgcolor: activeServiceIndex === idx ? "#0E7490" : "#FAF9F5",
+                      borderColor: "#3D765D",
+                      color: activeServiceIndex === idx ? "#FFFFFF" : "#3D765D",
+                      bgcolor: activeServiceIndex === idx ? "#3D765D" : "#F7F7F2",
                       transform: "translateY(-1px)",
                     },
                   }}
@@ -685,9 +695,9 @@ export default function ServicesClient() {
       <Box
         id="interactive-showcase"
         sx={{
-          bgcolor: "#F2F0EB",
+          bgcolor: "#F7F7F2",
           py: { xs: 10, md: 16 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -695,7 +705,7 @@ export default function ServicesClient() {
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -707,7 +717,7 @@ export default function ServicesClient() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "1.8rem", sm: "2.4rem", md: "2.8rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.025em",
@@ -736,10 +746,10 @@ export default function ServicesClient() {
                         borderRadius: "10px",
                         bgcolor: isSelected ? "#FFFFFF" : "rgba(255, 255, 255, 0.6)",
                         border: "1px solid",
-                        borderColor: isSelected ? "#0E7490" : "rgba(17, 18, 21, 0.08)",
-                        borderLeft: isSelected ? "4px solid #0E7490" : "1px solid rgba(17, 18, 21, 0.08)",
+                        borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.08)",
+                        borderLeft: isSelected ? "4px solid #3D765D" : "1px solid rgba(24, 61, 53, 0.08)",
                         cursor: "pointer",
-                        boxShadow: isSelected ? "0 8px 24px rgba(14, 116, 144, 0.08)" : "none",
+                        boxShadow: isSelected ? "0 8px 24px rgba(61, 118, 93, 0.08)" : "none",
                         transition: "all 0.25s ease",
                         display: "flex",
                         alignItems: "center",
@@ -747,7 +757,7 @@ export default function ServicesClient() {
                         gap: 2,
                         "&:hover": {
                           bgcolor: "#FFFFFF",
-                          borderColor: isSelected ? "#0E7490" : "rgba(14, 116, 144, 0.3)",
+                          borderColor: isSelected ? "#3D765D" : "rgba(61, 118, 93, 0.3)",
                           transform: "translateX(4px)",
                         },
                       }}
@@ -758,8 +768,8 @@ export default function ServicesClient() {
                             width: 44,
                             height: 44,
                             borderRadius: "8px",
-                            bgcolor: isSelected ? "rgba(14, 116, 144, 0.1)" : "#F2F0EB",
-                            color: isSelected ? "#0E7490" : "#5E6068",
+                            bgcolor: isSelected ? "rgba(61, 118, 93, 0.1)" : "#F7F7F2",
+                            color: isSelected ? "#3D765D" : "#5E6068",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
@@ -773,7 +783,7 @@ export default function ServicesClient() {
                         <Box>
                           <Typography
                             sx={{
-                              color: isSelected ? "#0E7490" : "#5E6068",
+                              color: isSelected ? "#3D765D" : "#5E6068",
                               fontWeight: 700,
                               fontSize: "0.72rem",
                               fontFamily: "monospace",
@@ -785,7 +795,7 @@ export default function ServicesClient() {
                           </Typography>
                           <Typography
                             sx={{
-                              color: "#0E172A",
+                              color: "#183D35",
                               fontWeight: isSelected ? 800 : 700,
                               fontSize: "1.05rem",
                               letterSpacing: "-0.01em",
@@ -800,7 +810,7 @@ export default function ServicesClient() {
                       <ArrowForwardIcon
                         sx={{
                           fontSize: 18,
-                          color: isSelected ? "#0E7490" : "#94A3B8",
+                          color: isSelected ? "#3D765D" : "#94A3B8",
                           transition: "transform 0.2s ease",
                           transform: isSelected ? "translateX(3px)" : "none",
                         }}
@@ -817,9 +827,9 @@ export default function ServicesClient() {
                 sx={{
                   bgcolor: "#FFFFFF",
                   borderRadius: "14px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   p: { xs: 3.5, sm: 4.5, md: 5 },
-                  boxShadow: "0 12px 32px rgba(17, 18, 21, 0.04)",
+                  boxShadow: "0 12px 32px rgba(24, 61, 53, 0.04)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -836,7 +846,7 @@ export default function ServicesClient() {
                       alignItems: "center",
                       gap: 2,
                       pb: 2.5,
-                      borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+                      borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
                       mb: 3,
                     }}
                   >
@@ -845,14 +855,14 @@ export default function ServicesClient() {
                         px: 1.5,
                         py: 0.5,
                         borderRadius: "4px",
-                        bgcolor: "rgba(14, 116, 144, 0.08)",
-                        border: "1px solid rgba(14, 116, 144, 0.2)",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
+                        border: "1px solid rgba(61, 118, 93, 0.2)",
                       }}
                     >
                       <Typography
                         variant="caption"
                         sx={{
-                          color: "#0E7490",
+                          color: "#3D765D",
                           fontWeight: 700,
                           fontSize: "0.75rem",
                           letterSpacing: "0.1em",
@@ -879,7 +889,7 @@ export default function ServicesClient() {
                   <Typography
                     variant="h3"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.1rem" },
                       fontWeight: 600,
                       letterSpacing: "-0.025em",
@@ -909,7 +919,7 @@ export default function ServicesClient() {
                       gap: 1,
                       mb: 3.5,
                       p: 0.6,
-                      bgcolor: "#F2F0EB",
+                      bgcolor: "#F7F7F2",
                       borderRadius: "8px",
                       width: "fit-content",
                     }}
@@ -923,11 +933,11 @@ export default function ServicesClient() {
                         borderRadius: "6px",
                         border: "none",
                         bgcolor: activeTab === "what" ? "#FFFFFF" : "transparent",
-                        color: activeTab === "what" ? "#0E172A" : "#5E6068",
+                        color: activeTab === "what" ? "#183D35" : "#5E6068",
                         fontWeight: activeTab === "what" ? 700 : 600,
                         fontSize: "0.85rem",
                         cursor: "pointer",
-                        boxShadow: activeTab === "what" ? "0 2px 8px rgba(17, 18, 21, 0.06)" : "none",
+                        boxShadow: activeTab === "what" ? "0 2px 8px rgba(24, 61, 53, 0.06)" : "none",
                         transition: "all 0.2s ease",
                       }}
                     >
@@ -942,11 +952,11 @@ export default function ServicesClient() {
                         borderRadius: "6px",
                         border: "none",
                         bgcolor: activeTab === "why" ? "#FFFFFF" : "transparent",
-                        color: activeTab === "why" ? "#0E172A" : "#5E6068",
+                        color: activeTab === "why" ? "#183D35" : "#5E6068",
                         fontWeight: activeTab === "why" ? 700 : 600,
                         fontSize: "0.85rem",
                         cursor: "pointer",
-                        boxShadow: activeTab === "why" ? "0 2px 8px rgba(17, 18, 21, 0.06)" : "none",
+                        boxShadow: activeTab === "why" ? "0 2px 8px rgba(24, 61, 53, 0.06)" : "none",
                         transition: "all 0.2s ease",
                       }}
                     >
@@ -961,11 +971,11 @@ export default function ServicesClient() {
                         borderRadius: "6px",
                         border: "none",
                         bgcolor: activeTab === "tools" ? "#FFFFFF" : "transparent",
-                        color: activeTab === "tools" ? "#0E172A" : "#5E6068",
+                        color: activeTab === "tools" ? "#183D35" : "#5E6068",
                         fontWeight: activeTab === "tools" ? 700 : 600,
                         fontSize: "0.85rem",
                         cursor: "pointer",
-                        boxShadow: activeTab === "tools" ? "0 2px 8px rgba(17, 18, 21, 0.06)" : "none",
+                        boxShadow: activeTab === "tools" ? "0 2px 8px rgba(24, 61, 53, 0.06)" : "none",
                         transition: "all 0.2s ease",
                       }}
                     >
@@ -989,13 +999,13 @@ export default function ServicesClient() {
                           sx={{
                             p: 2.2,
                             borderRadius: "8px",
-                            bgcolor: "#FAF9F5",
-                            border: "1px solid rgba(17, 18, 21, 0.06)",
+                            bgcolor: "#F7F7F2",
+                            border: "1px solid rgba(24, 61, 53, 0.06)",
                           }}
                         >
                           <Typography
                             sx={{
-                              color: "#0E172A",
+                              color: "#183D35",
                               fontWeight: 700,
                               fontSize: "0.92rem",
                               mb: 0.6,
@@ -1034,15 +1044,15 @@ export default function ServicesClient() {
                           sx={{
                             p: 2.2,
                             borderRadius: "8px",
-                            bgcolor: "#FAF9F5",
-                            border: "1px solid rgba(17, 18, 21, 0.06)",
+                            bgcolor: "#F7F7F2",
+                            border: "1px solid rgba(24, 61, 53, 0.06)",
                           }}
                         >
                           <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.6 }}>
-                            <CheckCircleIcon sx={{ color: "#0E7490", fontSize: 18 }} />
+                            <CheckCircleIcon sx={{ color: "#3D765D", fontSize: 18 }} />
                             <Typography
                               sx={{
-                                color: "#0E172A",
+                                color: "#183D35",
                                 fontWeight: 700,
                                 fontSize: "0.92rem",
                               }}
@@ -1081,8 +1091,8 @@ export default function ServicesClient() {
                           sx={{
                             p: 2.2,
                             borderRadius: "8px",
-                            bgcolor: "#FAF9F5",
-                            border: "1px solid rgba(17, 18, 21, 0.06)",
+                            bgcolor: "#F7F7F2",
+                            border: "1px solid rgba(24, 61, 53, 0.06)",
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
@@ -1090,7 +1100,7 @@ export default function ServicesClient() {
                         >
                           <Typography
                             sx={{
-                              color: "#0E172A",
+                              color: "#183D35",
                               fontWeight: 700,
                               fontSize: "0.92rem",
                               fontFamily: "monospace",
@@ -1101,7 +1111,7 @@ export default function ServicesClient() {
                           <Typography
                             variant="caption"
                             sx={{
-                              color: "#0E7490",
+                              color: "#3D765D",
                               fontWeight: 600,
                               fontSize: "0.78rem",
                             }}
@@ -1120,8 +1130,8 @@ export default function ServicesClient() {
                     sx={{
                       p: 2.2,
                       borderRadius: "8px",
-                      bgcolor: "rgba(14, 116, 144, 0.05)",
-                      border: "1px solid rgba(14, 116, 144, 0.15)",
+                      bgcolor: "rgba(61, 118, 93, 0.05)",
+                      border: "1px solid rgba(61, 118, 93, 0.15)",
                       mb: 3.5,
                       display: "flex",
                       alignItems: "center",
@@ -1131,13 +1141,13 @@ export default function ServicesClient() {
                     <Typography
                       variant="body2"
                       sx={{
-                        color: "#0E172A",
+                        color: "#183D35",
                         fontWeight: 600,
                         fontSize: "0.88rem",
                         lineHeight: 1.5,
                       }}
                     >
-                      <Box component="span" sx={{ color: "#0E7490", fontWeight: 700 }}>
+                      <Box component="span" sx={{ color: "#3D765D", fontWeight: 700 }}>
                         The Aetibar Standard:{" "}
                       </Box>
                       {activeService.promise}
@@ -1158,14 +1168,14 @@ export default function ServicesClient() {
                       variant="contained"
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                       sx={{
-                        bgcolor: "#0E172A",
+                        bgcolor: "#183D35",
                         color: "#FFFFFF",
                         px: 3.5,
                         py: 1.4,
                         fontSize: "0.92rem",
                         fontWeight: 600,
                         borderRadius: "6px",
-                        boxShadow: "0 4px 16px rgba(14, 23, 42, 0.12)",
+                        boxShadow: "0 4px 16px rgba(24, 61, 53, 0.12)",
                         "&:hover": {
                           bgcolor: "#1E293B",
                           transform: "translateY(-2px)",
@@ -1180,16 +1190,16 @@ export default function ServicesClient() {
                       href="/contact"
                       variant="outlined"
                       sx={{
-                        borderColor: "rgba(17, 18, 21, 0.2)",
-                        color: "#0E172A",
+                        borderColor: "rgba(24, 61, 53, 0.2)",
+                        color: "#183D35",
                         px: 3,
                         py: 1.4,
                         fontSize: "0.92rem",
                         fontWeight: 600,
                         borderRadius: "6px",
                         "&:hover": {
-                          borderColor: "#0E172A",
-                          bgcolor: "rgba(14, 23, 42, 0.04)",
+                          borderColor: "#183D35",
+                          bgcolor: "rgba(24, 61, 53, 0.04)",
                         },
                       }}
                     >
@@ -1204,13 +1214,13 @@ export default function ServicesClient() {
       </Box>
 
       {/* 3. All 6 Services At A Glance (Clean 3-Column Cards) */}
-      <Box sx={{ py: { xs: 12, md: 16 }, borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+      <Box sx={{ py: { xs: 12, md: 16 }, borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}>
         <Container maxWidth="xl">
           <Box sx={{ textAlign: "center", maxWidth: "780px", mx: "auto", mb: { xs: 8, md: 10 } }}>
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -1222,7 +1232,7 @@ export default function ServicesClient() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
@@ -1244,7 +1254,7 @@ export default function ServicesClient() {
                   sx={{
                     bgcolor: "#FFFFFF",
                     borderRadius: "12px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     p: { xs: 3.5, sm: 4 },
                     height: "100%",
                     display: "flex",
@@ -1252,12 +1262,12 @@ export default function ServicesClient() {
                     justifyContent: "space-between",
                     transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                     "&:hover": {
-                      borderColor: "#0E7490",
+                      borderColor: "#3D765D",
                       transform: "translateY(-4px)",
-                      boxShadow: "0 16px 36px rgba(14, 116, 144, 0.08)",
+                      boxShadow: "0 16px 36px rgba(61, 118, 93, 0.08)",
                       "& .svc-arrow": {
                         transform: "translateX(4px)",
-                        color: "#0E7490",
+                        color: "#3D765D",
                       },
                     },
                   }}
@@ -1276,8 +1286,8 @@ export default function ServicesClient() {
                           width: 44,
                           height: 44,
                           borderRadius: "8px",
-                          bgcolor: "rgba(14, 116, 144, 0.08)",
-                          color: "#0E7490",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
+                          color: "#3D765D",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -1288,7 +1298,7 @@ export default function ServicesClient() {
                       <Typography
                         sx={{
                           fontFamily: "monospace",
-                          color: "#0E7490",
+                          color: "#3D765D",
                           fontWeight: 700,
                           fontSize: "0.85rem",
                         }}
@@ -1300,7 +1310,7 @@ export default function ServicesClient() {
                     <Typography
                       variant="h4"
                       sx={{
-                        color: "#0E172A",
+                        color: "#183D35",
                         fontSize: { xs: "1.25rem", md: "1.4rem" },
                         fontWeight: 800,
                         letterSpacing: "-0.015em",
@@ -1326,7 +1336,7 @@ export default function ServicesClient() {
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, mb: 3.5 }}>
                       {service.bulletHighlights.map((highlight, idx) => (
                         <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                          <CheckCircleIcon sx={{ color: "#0E7490", fontSize: 16, mt: "2px", flexShrink: 0 }} />
+                          <CheckCircleIcon sx={{ color: "#3D765D", fontSize: 16, mt: "2px", flexShrink: 0 }} />
                           <Typography
                             variant="caption"
                             sx={{
@@ -1348,17 +1358,17 @@ export default function ServicesClient() {
                     href={`/services/${service.slug}`}
                     sx={{
                       pt: 2.5,
-                      borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+                      borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "space-between",
                       textDecoration: "none",
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontWeight: 700,
                       fontSize: "0.875rem",
                       transition: "color 0.2s ease",
                       "&:hover": {
-                        color: "#0E7490",
+                        color: "#3D765D",
                       },
                     }}
                   >
@@ -1376,13 +1386,13 @@ export default function ServicesClient() {
       </Box>
 
       {/* 4. Human-Centered Collaboration: How Working With Us Feels */}
-      <Box sx={{ bgcolor: "#F2F0EB", py: { xs: 12, md: 16 }, borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+      <Box sx={{ bgcolor: "#F7F7F2", py: { xs: 12, md: 16 }, borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: "800px", mb: { xs: 6, md: 10 } }}>
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -1394,7 +1404,7 @@ export default function ServicesClient() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
@@ -1417,13 +1427,13 @@ export default function ServicesClient() {
                     bgcolor: "#FFFFFF",
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "10px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     height: "100%",
                   }}
                 >
                   <Typography
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 800,
                       fontSize: "1.6rem",
                       fontFamily: "monospace",
@@ -1436,7 +1446,7 @@ export default function ServicesClient() {
                   <Typography
                     variant="h5"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontWeight: 700,
                       fontSize: "1.15rem",
                       mb: 1.2,
@@ -1455,13 +1465,13 @@ export default function ServicesClient() {
       </Box>
 
       {/* 5. Interactive Questions & Answers (FAQ) */}
-      <Box sx={{ py: { xs: 12, md: 16 }, borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+      <Box sx={{ py: { xs: 12, md: 16 }, borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}>
         <Container maxWidth="lg">
           <Box sx={{ textAlign: "center", maxWidth: "700px", mx: "auto", mb: { xs: 6, md: 8 } }}>
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -1473,7 +1483,7 @@ export default function ServicesClient() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
@@ -1494,19 +1504,19 @@ export default function ServicesClient() {
                 defaultExpanded={idx === 0}
                 sx={{
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   borderRadius: "8px !important",
                   boxShadow: "none",
                   "&:before": { display: "none" },
                   transition: "all 0.2s ease",
                   "&.Mui-expanded": {
-                    borderColor: "#0E7490",
-                    boxShadow: "0 8px 24px rgba(14, 116, 144, 0.06)",
+                    borderColor: "#3D765D",
+                    boxShadow: "0 8px 24px rgba(61, 118, 93, 0.06)",
                   },
                 }}
               >
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: "#0E7490" }} />}
+                  expandIcon={<ExpandMoreIcon sx={{ color: "#3D765D" }} />}
                   sx={{
                     px: { xs: 2.5, md: 3.5 },
                     py: 1,
@@ -1515,7 +1525,7 @@ export default function ServicesClient() {
                 >
                   <Typography
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontWeight: 700,
                       fontSize: { xs: "1rem", md: "1.1rem" },
                     }}

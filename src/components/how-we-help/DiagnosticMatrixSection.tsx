@@ -184,8 +184,8 @@ export default function DiagnosticMatrixSection() {
                   px: 2.2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -193,14 +193,14 @@ export default function DiagnosticMatrixSection() {
                   component={motion.div}
                   animate={{ scale: [1, 1.3, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                   }}
                 >
@@ -221,7 +221,7 @@ export default function DiagnosticMatrixSection() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
@@ -235,7 +235,7 @@ export default function DiagnosticMatrixSection() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -265,8 +265,8 @@ export default function DiagnosticMatrixSection() {
               mt: 4,
               p: { xs: 2, sm: 2.5 },
               borderRadius: "16px",
-              bgcolor: "#FAF8F5",
-              border: "1px solid rgba(24, 24, 27, 0.07)",
+              bgcolor: "#F7F7F2",
+              border: "1px solid rgba(24, 61, 53, 0.07)",
               display: "flex",
               flexWrap: "wrap",
               alignItems: "center",
@@ -275,20 +275,20 @@ export default function DiagnosticMatrixSection() {
             }}
           >
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <ShieldOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-              <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B" }}>
+              <ShieldOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+              <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35" }}>
                 Never replace what already works
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <TrendingUpRoundedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-              <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B" }}>
+              <TrendingUpRoundedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+              <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35" }}>
                 Built strictly around practical business value
               </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <LightbulbOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-              <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B" }}>
+              <LightbulbOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+              <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35" }}>
                 Zero gimmicks or unnecessary complexity
               </Typography>
             </Box>
@@ -320,13 +320,13 @@ export default function DiagnosticMatrixSection() {
               textTransform: "none",
               whiteSpace: "nowrap",
               transition: "all 0.25s ease",
-              bgcolor: activeTab === "all" ? "#18181B" : "rgba(24, 24, 27, 0.04)",
+              bgcolor: activeTab === "all" ? "#183D35" : "rgba(24, 61, 53, 0.04)",
               color: activeTab === "all" ? "#FFFFFF" : "#52525B",
               border: "1px solid",
-              borderColor: activeTab === "all" ? "#18181B" : "rgba(24, 24, 27, 0.08)",
+              borderColor: activeTab === "all" ? "#183D35" : "rgba(24, 61, 53, 0.08)",
               "&:hover": {
-                bgcolor: activeTab === "all" ? "#18181B" : "rgba(24, 24, 27, 0.08)",
-                color: activeTab === "all" ? "#FFFFFF" : "#18181B",
+                bgcolor: activeTab === "all" ? "#183D35" : "rgba(24, 61, 53, 0.08)",
+                color: activeTab === "all" ? "#FFFFFF" : "#183D35",
               },
             }}
           >
@@ -348,13 +348,13 @@ export default function DiagnosticMatrixSection() {
                   textTransform: "none",
                   whiteSpace: "nowrap",
                   transition: "all 0.25s ease",
-                  bgcolor: isSelected ? "#EA580C" : "rgba(24, 24, 27, 0.04)",
+                  bgcolor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.04)",
                   color: isSelected ? "#FFFFFF" : "#52525B",
                   border: "1px solid",
-                  borderColor: isSelected ? "#EA580C" : "rgba(24, 24, 27, 0.08)",
+                  borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.08)",
                   "&:hover": {
-                    bgcolor: isSelected ? "#C2410C" : "rgba(24, 24, 27, 0.08)",
-                    color: isSelected ? "#FFFFFF" : "#18181B",
+                    bgcolor: isSelected ? "#183D35" : "rgba(24, 61, 53, 0.08)",
+                    color: isSelected ? "#FFFFFF" : "#183D35",
                   },
                 }}
               >
@@ -381,15 +381,15 @@ export default function DiagnosticMatrixSection() {
                       height: "100%",
                       p: { xs: 3.5, sm: 4.5 },
                       borderRadius: { xs: "20px", md: "24px" },
-                      bgcolor: "#FAF8F5",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      bgcolor: "#F7F7F2",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
                       transition: "all 0.3s ease",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                        borderColor: "#3D765D",
+                        boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.12)",
                         transform: "translateY(-3px)",
                       },
                     }}
@@ -403,8 +403,8 @@ export default function DiagnosticMatrixSection() {
                               width: 44,
                               height: 44,
                               borderRadius: "12px",
-                              bgcolor: "rgba(249, 115, 22, 0.1)",
-                              color: "#EA580C",
+                              bgcolor: "rgba(61, 118, 93, 0.1)",
+                              color: "#3D765D",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
@@ -417,13 +417,13 @@ export default function DiagnosticMatrixSection() {
                               sx={{
                                 fontSize: "0.72rem",
                                 fontWeight: 700,
-                                color: "#EA580C",
+                                color: "#3D765D",
                                 letterSpacing: "0.06em",
                               }}
                             >
                               {path.badge}
                             </Typography>
-                            <Typography sx={{ fontSize: "1.2rem", fontWeight: 600, color: "#18181B" }}>
+                            <Typography sx={{ fontSize: "1.2rem", fontWeight: 600, color: "#183D35" }}>
                               {path.ruleTitle}
                             </Typography>
                           </Box>
@@ -436,7 +436,7 @@ export default function DiagnosticMatrixSection() {
                         sx={{
                           fontSize: { xs: "1.15rem", sm: "1.25rem" },
                           fontWeight: 600,
-                          color: "#18181B",
+                          color: "#183D35",
                           lineHeight: 1.35,
                           textWrap: "balance",
                           mb: 2.5,
@@ -451,7 +451,7 @@ export default function DiagnosticMatrixSection() {
                           p: 2.5,
                           borderRadius: "14px",
                           bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(24, 24, 27, 0.06)",
+                          border: "1px solid rgba(24, 61, 53, 0.06)",
                           mb: 2.5,
                         }}
                       >
@@ -486,18 +486,18 @@ export default function DiagnosticMatrixSection() {
                         sx={{
                           p: 2.5,
                           borderRadius: "14px",
-                          bgcolor: "rgba(249, 115, 22, 0.04)",
-                          border: "1px solid rgba(249, 115, 22, 0.2)",
+                          bgcolor: "rgba(61, 118, 93, 0.04)",
+                          border: "1px solid rgba(61, 118, 93, 0.2)",
                           mb: 3,
                         }}
                       >
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
-                          <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                          <CheckCircleRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                           <Typography
                             sx={{
                               fontSize: "0.75rem",
                               fontWeight: 700,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "0.04em",
                               textTransform: "uppercase",
                             }}
@@ -508,7 +508,7 @@ export default function DiagnosticMatrixSection() {
                         <Typography
                           sx={{
                             fontSize: "0.92rem",
-                            color: "#18181B",
+                            color: "#183D35",
                             fontWeight: 500,
                             lineHeight: 1.65,
                           }}
@@ -528,7 +528,7 @@ export default function DiagnosticMatrixSection() {
                                 py: 0.5,
                                 borderRadius: "6px",
                                 bgcolor: "#FFFFFF",
-                                border: "1px solid rgba(24, 24, 27, 0.08)",
+                                border: "1px solid rgba(24, 61, 53, 0.08)",
                               }}
                             >
                               <Typography sx={{ fontSize: "0.78rem", fontWeight: 600, color: "#3F3F46" }}>
@@ -544,14 +544,14 @@ export default function DiagnosticMatrixSection() {
                     <Box
                       sx={{
                         pt: 2.5,
-                        borderTop: "1px solid rgba(24, 24, 27, 0.08)",
+                        borderTop: "1px solid rgba(24, 61, 53, 0.08)",
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
                       }}
                     >
                       <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
-                        <AccessTimeRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                        <AccessTimeRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                         <Typography sx={{ fontSize: "0.825rem", fontWeight: 600, color: "#71717A" }}>
                           {path.timeline}
                         </Typography>
@@ -562,12 +562,12 @@ export default function DiagnosticMatrixSection() {
                         onClick={() => setActiveTab(path.id)}
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
                         sx={{
-                          color: "#EA580C",
+                          color: "#3D765D",
                           fontWeight: 700,
                           fontSize: "0.825rem",
                           p: 0,
                           textTransform: "none",
-                          "&:hover": { bgcolor: "transparent", color: "#C2410C" },
+                          "&:hover": { bgcolor: "transparent", color: "#183D35" },
                         }}
                       >
                         Deep Dive
@@ -594,9 +594,9 @@ export default function DiagnosticMatrixSection() {
                 sx={{
                   p: { xs: 3.5, sm: 5, md: 6 },
                   borderRadius: { xs: "20px", md: "28px" },
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(234, 88, 12, 0.3)",
-                  boxShadow: "0 20px 45px -15px rgba(234, 88, 12, 0.12)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(61, 118, 93, 0.3)",
+                  boxShadow: "0 20px 45px -15px rgba(61, 118, 93, 0.12)",
                 }}
               >
                 {/* Active Path Sub-Header */}
@@ -609,7 +609,7 @@ export default function DiagnosticMatrixSection() {
                     gap: 2,
                     mb: 4,
                     pb: 3,
-                    borderBottom: "1px solid rgba(24, 24, 27, 0.08)",
+                    borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
                   }}
                 >
                   <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
@@ -618,7 +618,7 @@ export default function DiagnosticMatrixSection() {
                         width: 52,
                         height: 52,
                         borderRadius: "14px",
-                        bgcolor: "#EA580C",
+                        bgcolor: "#3D765D",
                         color: "#FFFFFF",
                         display: "flex",
                         alignItems: "center",
@@ -628,10 +628,10 @@ export default function DiagnosticMatrixSection() {
                       {currentPath.icon}
                     </Box>
                     <Box>
-                      <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em" }}>
+                      <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.06em" }}>
                         {currentPath.badge}
                       </Typography>
-                      <Typography variant="h3" sx={{ fontSize: { xs: "1.25rem", md: "1.6rem" }, fontWeight: 600, color: "#18181B", textWrap: "balance", lineHeight: 1.25 }}>
+                      <Typography variant="h3" sx={{ fontSize: { xs: "1.25rem", md: "1.6rem" }, fontWeight: 600, color: "#183D35", textWrap: "balance", lineHeight: 1.25 }}>
                         {currentPath.ruleTitle}
                       </Typography>
                     </Box>
@@ -648,12 +648,12 @@ export default function DiagnosticMatrixSection() {
                         py: 0.8,
                         borderRadius: "9999px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.1)",
-                        color: "#18181B",
+                        border: "1px solid rgba(24, 61, 53, 0.1)",
+                        color: "#183D35",
                         fontSize: "0.8rem",
                         fontWeight: 600,
                         textTransform: "none",
-                        "&:hover": { bgcolor: "rgba(24, 24, 27, 0.04)" },
+                        "&:hover": { bgcolor: "rgba(24, 61, 53, 0.04)" },
                       }}
                     >
                       Previous
@@ -667,12 +667,12 @@ export default function DiagnosticMatrixSection() {
                         py: 0.8,
                         borderRadius: "9999px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.1)",
-                        color: "#18181B",
+                        border: "1px solid rgba(24, 61, 53, 0.1)",
+                        color: "#183D35",
                         fontSize: "0.8rem",
                         fontWeight: 600,
                         textTransform: "none",
-                        "&:hover": { bgcolor: "rgba(24, 24, 27, 0.04)" },
+                        "&:hover": { bgcolor: "rgba(24, 61, 53, 0.04)" },
                       }}
                     >
                       Next
@@ -688,7 +688,7 @@ export default function DiagnosticMatrixSection() {
                       sx={{
                         fontSize: { xs: "1.25rem", md: "1.45rem" },
                         fontWeight: 600,
-                        color: "#18181B",
+                        color: "#183D35",
                         lineHeight: 1.35,
                         mb: 3,
                       }}
@@ -702,7 +702,7 @@ export default function DiagnosticMatrixSection() {
                         p: 3,
                         borderRadius: "16px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         mb: 3,
                       }}
                     >
@@ -722,17 +722,17 @@ export default function DiagnosticMatrixSection() {
                       sx={{
                         p: 3,
                         borderRadius: "16px",
-                        bgcolor: "rgba(249, 115, 22, 0.05)",
-                        border: "1px solid rgba(249, 115, 22, 0.22)",
+                        bgcolor: "rgba(61, 118, 93, 0.05)",
+                        border: "1px solid rgba(61, 118, 93, 0.22)",
                       }}
                     >
                       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.2 }}>
-                        <LightbulbOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-                        <Typography sx={{ fontSize: "0.78rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.05em" }}>
+                        <LightbulbOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+                        <Typography sx={{ fontSize: "0.78rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.05em" }}>
                           WHAT WE HONESTLY RECOMMEND
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "0.95rem", color: "#18181B", fontWeight: 500, lineHeight: 1.75 }}>
+                      <Typography sx={{ fontSize: "0.95rem", color: "#183D35", fontWeight: 500, lineHeight: 1.75 }}>
                         {currentPath.honestAdvice}
                       </Typography>
                     </Box>
@@ -746,7 +746,7 @@ export default function DiagnosticMatrixSection() {
                         p: 3,
                         borderRadius: "16px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         mb: 3,
                       }}
                     >
@@ -756,7 +756,7 @@ export default function DiagnosticMatrixSection() {
                           WHAT WE ENGINEER FOR YOU
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "0.95rem", color: "#18181B", lineHeight: 1.75, mb: 2.5 }}>
+                      <Typography sx={{ fontSize: "0.95rem", color: "#183D35", lineHeight: 1.75, mb: 2.5 }}>
                         {currentPath.whatWeBuild}
                       </Typography>
 
@@ -768,8 +768,8 @@ export default function DiagnosticMatrixSection() {
                               px: 1.5,
                               py: 0.5,
                               borderRadius: "8px",
-                              bgcolor: "#FAF8F5",
-                              border: "1px solid rgba(24, 24, 27, 0.08)",
+                              bgcolor: "#F7F7F2",
+                              border: "1px solid rgba(24, 61, 53, 0.08)",
                             }}
                           >
                             <Typography sx={{ fontSize: "0.8rem", fontWeight: 600, color: "#3F3F46" }}>
@@ -786,7 +786,7 @@ export default function DiagnosticMatrixSection() {
                         p: 3,
                         borderRadius: "16px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         mb: 3,
                       }}
                     >
@@ -811,7 +811,7 @@ export default function DiagnosticMatrixSection() {
                         p: 2.5,
                         borderRadius: "14px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         display: "flex",
                         flexDirection: { xs: "column", sm: "row" },
                         alignItems: { xs: "flex-start", sm: "center" },
@@ -821,8 +821,8 @@ export default function DiagnosticMatrixSection() {
                     >
                       <Box>
                         <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, mb: 0.3 }}>
-                          <AccessTimeRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#18181B" }}>
+                          <AccessTimeRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
+                          <Typography sx={{ fontSize: "0.85rem", fontWeight: 700, color: "#183D35" }}>
                             {currentPath.timeline}
                           </Typography>
                         </Box>
@@ -836,7 +836,7 @@ export default function DiagnosticMatrixSection() {
                           variant="contained"
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 15 }} />}
                           sx={{
-                            bgcolor: "#EA580C",
+                            bgcolor: "#3D765D",
                             color: "#FFFFFF",
                             px: 2.8,
                             py: 1.1,
@@ -846,8 +846,8 @@ export default function DiagnosticMatrixSection() {
                             textTransform: "none",
                             boxShadow: "none",
                             "&:hover": {
-                              bgcolor: "#C2410C",
-                              boxShadow: "0 6px 20px -4px rgba(234, 88, 12, 0.4)",
+                              bgcolor: "#183D35",
+                              boxShadow: "0 6px 20px -4px rgba(61, 118, 93, 0.4)",
                             },
                           }}
                         >
@@ -868,8 +868,8 @@ export default function DiagnosticMatrixSection() {
             mt: { xs: 8, md: 10 },
             p: { xs: 4, md: 5 },
             borderRadius: { xs: "20px", md: "24px" },
-            bgcolor: "#FAF8F5",
-            border: "1px solid rgba(24, 24, 27, 0.08)",
+            bgcolor: "#F7F7F2",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             alignItems: { xs: "flex-start", md: "center" },
@@ -883,7 +883,7 @@ export default function DiagnosticMatrixSection() {
               sx={{
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 textWrap: "balance",
                 mb: 1,
               }}
@@ -902,7 +902,7 @@ export default function DiagnosticMatrixSection() {
                 variant="contained"
                 endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                 sx={{
-                  bgcolor: "#18181B",
+                  bgcolor: "#183D35",
                   color: "#FFFFFF",
                   px: 3,
                   py: 1.3,
@@ -913,7 +913,7 @@ export default function DiagnosticMatrixSection() {
                   boxShadow: "none",
                   "&:hover": {
                     bgcolor: "#27272A",
-                    boxShadow: "0 6px 20px -4px rgba(24, 24, 27, 0.3)",
+                    boxShadow: "0 6px 20px -4px rgba(24, 61, 53, 0.3)",
                   },
                 }}
               >

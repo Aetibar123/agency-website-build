@@ -4,12 +4,12 @@ import { Box, Container, Typography } from "@mui/material";
 
 export default function MissionSection() {
   return (
-    <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: "#FAF9F5" }}>
+    <Box sx={{ py: { xs: 12, md: 18 }, bgcolor: "#F7F7F2" }}>
       <Container maxWidth="md" sx={{ textAlign: "center" }}>
         <Typography
           variant="caption"
           sx={{
-            color: "#0E7490",
+            color: "#3D765D",
             fontWeight: 700,
             letterSpacing: "0.14em",
             display: "block",
@@ -22,7 +22,7 @@ export default function MissionSection() {
         <Typography
           variant="h2"
           sx={{
-            color: "#0E172A",
+            color: "#183D35",
             mb: 5,
             fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem" },
             fontWeight: 800,
@@ -33,7 +33,7 @@ export default function MissionSection() {
           }}
         >
           Accelerating Innovation Through{" "}
-          <Box component="span" sx={{ color: "#0E7490" }}>
+          <Box component="span" sx={{ color: "#3D765D" }}>
             Disciplined Technology.
           </Box>
         </Typography>
@@ -47,7 +47,7 @@ export default function MissionSection() {
               lineHeight: 1.85,
               position: "relative",
               pl: 3.5,
-              borderLeft: "3px solid #0E7490",
+              borderLeft: "3px solid #3D765D",
             }}
           >
             Our mission is to help business owners grow with confidence through dependable digital solutions. We don&apos;t just build websites or launch random ads—we create complete digital setups that combine fast mobile-friendly websites, Google search visibility, targeted ads, and automated customer follow-ups that consistently bring you real leads.

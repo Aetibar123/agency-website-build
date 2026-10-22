@@ -208,8 +208,8 @@ export default function ComparisonSection() {
                   px: 2.2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -217,14 +217,14 @@ export default function ComparisonSection() {
                   component={motion.div}
                   animate={{ scale: [1, 1.3, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                   }}
                 >
@@ -245,7 +245,7 @@ export default function ComparisonSection() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textAlign: "left",
@@ -259,7 +259,7 @@ export default function ComparisonSection() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -293,8 +293,8 @@ export default function ComparisonSection() {
               sx={{
                 p: { xs: 3.5, sm: 4.5 },
                 borderRadius: { xs: "20px", md: "24px" },
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(24, 24, 27, 0.08)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -328,7 +328,7 @@ export default function ComparisonSection() {
                   </Box>
                 </Box>
 
-                <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#18181B", mb: 1.2 }}>
+                <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#183D35", mb: 1.2 }}>
                   Website Templates &amp; Basic Portfolios
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65, mb: 3 }}>
@@ -355,11 +355,11 @@ export default function ComparisonSection() {
               </Box>
 
               {/* Bottom Cost & Verdict */}
-              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 24, 27, 0.08)" }}>
+              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase", mb: 0.5 }}>
                   PRACTICAL TRADE-OFF:
                 </Typography>
-                <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 1.5 }}>
+                <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35", mb: 1.5 }}>
                   Low initial setup cost &bull; High ongoing manual coordination
                 </Typography>
                 <Box
@@ -384,16 +384,16 @@ export default function ComparisonSection() {
               sx={{
                 p: { xs: 3.5, sm: 4.5 },
                 borderRadius: { xs: "20px", md: "24px" },
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(24, 24, 27, 0.08)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
                 transition: "all 0.25s ease",
                 "&:hover": {
-                  borderColor: "rgba(234, 88, 12, 0.4)",
-                  boxShadow: "0 14px 30px -10px rgba(234, 88, 12, 0.08)",
+                  borderColor: "rgba(61, 118, 93, 0.4)",
+                  boxShadow: "0 14px 30px -10px rgba(61, 118, 93, 0.08)",
                   transform: "translateY(-2px)",
                 },
               }}
@@ -409,17 +409,17 @@ export default function ComparisonSection() {
                       px: 1.2,
                       py: 0.3,
                       borderRadius: "6px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.25)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.25)",
                     }}
                   >
-                    <Typography sx={{ fontSize: "0.68rem", fontWeight: 700, color: "#EA580C" }}>
+                    <Typography sx={{ fontSize: "0.68rem", fontWeight: 700, color: "#3D765D" }}>
                       STANDARDIZED
                     </Typography>
                   </Box>
                 </Box>
 
-                <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#18181B", mb: 1.2 }}>
+                <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#183D35", mb: 1.2 }}>
                   Generic SaaS &amp; Subscription Platforms
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65, mb: 3 }}>
@@ -446,22 +446,22 @@ export default function ComparisonSection() {
               </Box>
 
               {/* Bottom Cost & Verdict */}
-              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 24, 27, 0.08)" }}>
+              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
                 <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase", mb: 0.5 }}>
                   PRACTICAL TRADE-OFF:
                 </Typography>
-                <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 1.5 }}>
+                <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35", mb: 1.5 }}>
                   Fast deployment &bull; Ongoing subscription overhead &amp; rigid constraints
                 </Typography>
                 <Box
                   sx={{
                     p: 1.6,
                     borderRadius: "10px",
-                    bgcolor: "rgba(249, 115, 22, 0.06)",
-                    border: "1px solid rgba(249, 115, 22, 0.2)",
+                    bgcolor: "rgba(61, 118, 93, 0.06)",
+                    border: "1px solid rgba(61, 118, 93, 0.2)",
                   }}
                 >
-                  <Typography sx={{ fontSize: "0.8rem", color: "#EA580C", fontWeight: 600, lineHeight: 1.4 }}>
+                  <Typography sx={{ fontSize: "0.8rem", color: "#3D765D", fontWeight: 600, lineHeight: 1.4 }}>
                     Verdict: Excellent for generic workflows, but restrictive when operational differentiation matters.
                   </Typography>
                 </Box>
@@ -476,8 +476,8 @@ export default function ComparisonSection() {
                 p: { xs: 3.5, sm: 4.5 },
                 borderRadius: { xs: "20px", md: "24px" },
                 bgcolor: "#FFFFFF",
-                border: "2px solid #EA580C",
-                boxShadow: "0 18px 40px -12px rgba(234, 88, 12, 0.18)",
+                border: "2px solid #3D765D",
+                boxShadow: "0 18px 40px -12px rgba(61, 118, 93, 0.18)",
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -485,7 +485,7 @@ export default function ComparisonSection() {
                 position: "relative",
                 transition: "all 0.25s ease",
                 "&:hover": {
-                  boxShadow: "0 22px 48px -12px rgba(234, 88, 12, 0.25)",
+                  boxShadow: "0 22px 48px -12px rgba(61, 118, 93, 0.25)",
                   transform: "translateY(-3px)",
                 },
               }}
@@ -493,7 +493,7 @@ export default function ComparisonSection() {
               <Box>
                 {/* Header Badge */}
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
-                  <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em" }}>
+                  <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.06em" }}>
                     OPTION 03 &bull; PURPOSE-BUILT ASSET
                   </Typography>
                   <Box
@@ -501,7 +501,7 @@ export default function ComparisonSection() {
                       px: 1.4,
                       py: 0.3,
                       borderRadius: "6px",
-                      bgcolor: "#EA580C",
+                      bgcolor: "#3D765D",
                       color: "#FFFFFF",
                     }}
                   >
@@ -511,7 +511,7 @@ export default function ComparisonSection() {
                   </Box>
                 </Box>
 
-                <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#18181B", mb: 1.2 }}>
+                <Typography sx={{ fontSize: "1.35rem", fontWeight: 600, color: "#183D35", mb: 1.2 }}>
                   Aetibar Connected Architecture
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.65, mb: 3 }}>
@@ -529,7 +529,7 @@ export default function ComparisonSection() {
                   ].map((pt, i) => (
                     <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
                       <CheckRoundedIcon sx={{ fontSize: 18, color: "#16A34A", mt: 0.2, flexShrink: 0 }} />
-                      <Typography sx={{ fontSize: "0.875rem", color: "#18181B", fontWeight: 500, lineHeight: 1.5 }}>
+                      <Typography sx={{ fontSize: "0.875rem", color: "#183D35", fontWeight: 500, lineHeight: 1.5 }}>
                         {pt}
                       </Typography>
                     </Box>
@@ -538,11 +538,11 @@ export default function ComparisonSection() {
               </Box>
 
               {/* Bottom Cost & Verdict */}
-              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 24, 27, 0.08)" }}>
-                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase", mb: 0.5 }}>
+              <Box sx={{ pt: 3, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
+                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase", mb: 0.5 }}>
                   LONG-TERM VALUE:
                 </Typography>
-                <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 1.5 }}>
+                <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35", mb: 1.5 }}>
                   Tailored architecture &bull; Full system control &bull; Permanent company asset
                 </Typography>
                 <Box
@@ -567,8 +567,8 @@ export default function ComparisonSection() {
           sx={{
             p: { xs: 3.5, sm: 5, md: 6 },
             borderRadius: { xs: "20px", md: "28px" },
-            bgcolor: "#FAF8F5",
-            border: "1px solid rgba(24, 24, 27, 0.08)",
+            bgcolor: "#F7F7F2",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
           }}
         >
           <Box sx={{ textAlign: "left", mb: 4 }}>
@@ -577,7 +577,7 @@ export default function ComparisonSection() {
               sx={{
                 fontSize: { xs: "1.35rem", sm: "1.7rem", md: "2rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 textWrap: "balance",
                 mb: 1.2,
                 textAlign: "left",
@@ -620,13 +620,13 @@ export default function ComparisonSection() {
                     textTransform: "none",
                     whiteSpace: "nowrap",
                     transition: "all 0.25s ease",
-                    bgcolor: isSelected ? "#EA580C" : "#FFFFFF",
+                    bgcolor: isSelected ? "#3D765D" : "#FFFFFF",
                     color: isSelected ? "#FFFFFF" : "#52525B",
                     border: "1px solid",
-                    borderColor: isSelected ? "#EA580C" : "rgba(24, 24, 27, 0.09)",
-                    boxShadow: isSelected ? "0 4px 14px rgba(234, 88, 12, 0.3)" : "none",
+                    borderColor: isSelected ? "#3D765D" : "rgba(24, 61, 53, 0.09)",
+                    boxShadow: isSelected ? "0 4px 14px rgba(61, 118, 93, 0.3)" : "none",
                     "&:hover": {
-                      bgcolor: isSelected ? "#C2410C" : "rgba(24, 24, 27, 0.04)",
+                      bgcolor: isSelected ? "#183D35" : "rgba(24, 61, 53, 0.04)",
                     },
                   }}
                 >
@@ -651,12 +651,12 @@ export default function ComparisonSection() {
                   p: 3,
                   borderRadius: "16px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(24, 24, 27, 0.07)",
+                  border: "1px solid rgba(24, 61, 53, 0.07)",
                   mb: 3.5,
                   textAlign: "left",
                 }}
               >
-                <Typography sx={{ fontSize: "1.2rem", fontWeight: 600, color: "#18181B", mb: 0.5, textAlign: "left" }}>
+                <Typography sx={{ fontSize: "1.2rem", fontWeight: 600, color: "#183D35", mb: 0.5, textAlign: "left" }}>
                   &ldquo;{currentScenario.questionTitle}&rdquo;
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#71717A", maxWidth: 740, ml: 0, mr: "auto", textAlign: "left" }}>
@@ -687,7 +687,7 @@ export default function ComparisonSection() {
                           WEB AGENCY OUTCOME
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#18181B", mb: 1 }}>
+                      <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#183D35", mb: 1 }}>
                         {currentScenario.agencyVerdict.badge}
                       </Typography>
                       <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.6, mb: 2 }}>
@@ -698,7 +698,7 @@ export default function ComparisonSection() {
                     <Box
                       sx={{
                         pt: 2,
-                        borderTop: "1px solid rgba(24, 24, 27, 0.06)",
+                        borderTop: "1px solid rgba(24, 61, 53, 0.06)",
                       }}
                     >
                       <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#DC2626" }}>
@@ -715,7 +715,7 @@ export default function ComparisonSection() {
                       p: 3,
                       borderRadius: "16px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(249, 115, 22, 0.25)",
+                      border: "1px solid rgba(61, 118, 93, 0.25)",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
@@ -724,12 +724,12 @@ export default function ComparisonSection() {
                   >
                     <Box>
                       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
-                        <CloseRoundedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
-                        <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase" }}>
+                        <CloseRoundedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
+                        <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase" }}>
                           GENERIC SAAS OUTCOME
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#18181B", mb: 1 }}>
+                      <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#183D35", mb: 1 }}>
                         {currentScenario.saasVerdict.badge}
                       </Typography>
                       <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.6, mb: 2 }}>
@@ -740,10 +740,10 @@ export default function ComparisonSection() {
                     <Box
                       sx={{
                         pt: 2,
-                        borderTop: "1px solid rgba(24, 24, 27, 0.06)",
+                        borderTop: "1px solid rgba(24, 61, 53, 0.06)",
                       }}
                     >
-                      <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#EA580C" }}>
+                      <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#3D765D" }}>
                         {currentScenario.saasVerdict.costOrSpeed}
                       </Typography>
                     </Box>
@@ -772,10 +772,10 @@ export default function ComparisonSection() {
                           AETIBAR ADVANTAGE
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#18181B", mb: 1 }}>
+                      <Typography sx={{ fontSize: "1rem", fontWeight: 600, color: "#183D35", mb: 1 }}>
                         {currentScenario.aetibarVerdict.badge}
                       </Typography>
-                      <Typography sx={{ fontSize: "0.875rem", color: "#18181B", fontWeight: 500, lineHeight: 1.6, mb: 2 }}>
+                      <Typography sx={{ fontSize: "0.875rem", color: "#183D35", fontWeight: 500, lineHeight: 1.6, mb: 2 }}>
                         {currentScenario.aetibarVerdict.description}
                       </Typography>
                     </Box>
@@ -806,8 +806,8 @@ export default function ComparisonSection() {
             mt: { xs: 8, md: 10 },
             p: { xs: 4, sm: 5 },
             borderRadius: { xs: "20px", md: "24px" },
-            bgcolor: "#FAF8F5",
-            border: "1px solid rgba(24, 24, 27, 0.08)",
+            bgcolor: "#F7F7F2",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             alignItems: { xs: "flex-start", md: "center" },
@@ -821,7 +821,7 @@ export default function ComparisonSection() {
               sx={{
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 textWrap: "balance",
                 mb: 1,
               }}
@@ -840,7 +840,7 @@ export default function ComparisonSection() {
               size="medium"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                bgcolor: "#EA580C",
+                bgcolor: "#3D765D",
                 color: "#FFFFFF",
                 px: 3.5,
                 py: 1.3,
@@ -851,8 +851,8 @@ export default function ComparisonSection() {
                 textTransform: "none",
                 whiteSpace: "nowrap",
                 "&:hover": {
-                  bgcolor: "#C2410C",
-                  boxShadow: "0 6px 20px -4px rgba(234, 88, 12, 0.4)",
+                  bgcolor: "#183D35",
+                  boxShadow: "0 6px 20px -4px rgba(61, 118, 93, 0.4)",
                 },
               }}
             >

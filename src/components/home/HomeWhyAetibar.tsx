@@ -51,10 +51,10 @@ export default function HomeWhyAetibar() {
       id="why-aetibar"
       sx={{
         py: { xs: 12, md: 16 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
         overflow: "hidden",
-        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
       }}
     >
       {/* Background Decorative Ambient Warm Glow */}
@@ -62,11 +62,10 @@ export default function HomeWhyAetibar() {
         sx={{
           position: "absolute",
           top: "10%",
-          left: "50%",
-          transform: "translateX(-50%)",
+          left: "5%",
           width: 850,
           height: 480,
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
           filter: "blur(70px)",
           pointerEvents: "none",
         }}
@@ -79,7 +78,7 @@ export default function HomeWhyAetibar() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 7.5 } }}>
+          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, textAlign: "left", mb: { xs: 6, md: 7.5 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -88,9 +87,9 @@ export default function HomeWhyAetibar() {
                 px: 2.2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: 2.5,
               }}
@@ -99,14 +98,14 @@ export default function HomeWhyAetibar() {
                 component={motion.div}
                 animate={{ scale: [1, 1.3, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72", boxShadow: "0 0 10px #4D8F72" }}
               />
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -117,11 +116,12 @@ export default function HomeWhyAetibar() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.2 },
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.35rem", md: "2.8rem", lg: "3.2rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                letterSpacing: "-0.025em",
                 textWrap: "balance",
                 mb: 2.2,
               }}
@@ -130,7 +130,9 @@ export default function HomeWhyAetibar() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  display: "inline",
+                  fontStyle: "italic",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -145,98 +147,89 @@ export default function HomeWhyAetibar() {
                 lineHeight: 1.7,
                 color: "#52525B",
                 maxWidth: { xs: "100%", md: 740, lg: 780 },
-                mx: "auto",
                 fontWeight: 400,
               }}
             >
-             In Urdu and Hindi, “Aetibar” means trust and reliability. We built Aetibar around a simple idea: businesses deserve clear communication, practical advice, transparent pricing, and digital solutions that are built around their actual needs. Here is how we put that into practice:
-
+            Aetibar means trust and reliability in Urdu and Hindi. We believe in clear communication, transparent pricing, practical advice, and digital solutions tailored to your business needs.
             </Typography>
           </Box>
         </motion.div>
 
-        <Box sx={{ maxWidth: 1080, mx: "auto" }}>
-          <Grid container spacing={3}>
-            {points.map((pt, idx) => (
-              <Grid size={{ xs: 12, md: 6 }} key={idx}>
-                <motion.div
-                  initial={{ opacity: 0, y: 55 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.85, delay: (idx % 2) * 0.18 + Math.floor(idx / 2) * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                  style={{ height: "100%" }}
-                >
-                  <Box
-                    sx={{
+        <Grid container spacing={3.5}>
+          {points.map((pt, idx) => (
+            <Grid size={{ xs: 12, md: 6, lg: 4 }} key={idx}>
+              <motion.div
+                initial={{ opacity: 0, y: 55 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.85, delay: (idx % 3) * 0.16 + Math.floor(idx / 3) * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                style={{ height: "100%" }}
+              >
+                <Box
+                  sx={{
                     bgcolor: "#FFFFFF",
-                    p: { xs: 3, sm: 3.5 },
+                    p: { xs: 3.5, sm: 4 },
                     borderRadius: { xs: "20px", md: "24px" },
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     height: "100%",
                     display: "flex",
-                    alignItems: "flex-start",
-                    gap: 2,
-                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    boxShadow: "0 2px 8px rgba(24, 61, 53, 0.02)",
                     transition: "all 0.3s ease",
                     "&:hover": {
-                      borderColor: "rgba(234, 88, 12, 0.4)",
-                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
-                      transform: "translateY(-3px)",
+                      borderColor: "rgba(61, 118, 93, 0.4)",
+                      boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.12)",
+                      transform: "translateY(-4px)",
                     },
                   }}
                 >
                   <Box
                     sx={{
-                      width: 42,
-                      height: 42,
-                      borderRadius: "12px",
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      color: "#EA580C",
+                      width: 44,
+                      height: 44,
+                      borderRadius: "14px",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.15)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       flexShrink: 0,
-                      mt: 0.2,
+                      mb: 2.5,
                     }}
                   >
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />
                   </Box>
 
-                  <Box>
-                    <Typography
-                      variant="h3"
-                      sx={{
-                        fontSize: { xs: "1.02rem", sm: "1.06rem", md: "1.08rem" },
-                        fontWeight: 600,
-                        letterSpacing: "-0.02em",
-                        color: "#18181B",
-                        lineHeight: 1.35,
-                        mb: 0.8,
-                        textWrap: "balance",
-                        display: "-webkit-box",
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: "vertical",
-                        overflow: "hidden",
-                      }}
-                    >
-                      {pt.title}
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontSize: "0.9rem",
-                        lineHeight: 1.65,
-                        color: "#52525B",
-                      }}
-                    >
-                      {pt.desc}
-                    </Typography>
-                  </Box>
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontFamily: '"DM Serif Display", serif',
+                      fontSize: { xs: "1.2rem", sm: "1.25rem", md: "1.3rem" },
+                      fontWeight: 400,
+                      letterSpacing: "-0.015em",
+                      color: "#183D35",
+                      lineHeight: 1.3,
+                      mb: 1.2,
+                      textWrap: "balance",
+                    }}
+                  >
+                    {pt.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: "0.875rem",
+                      lineHeight: 1.65,
+                      color: "#52525B",
+                    }}
+                  >
+                    {pt.desc}
+                  </Typography>
                 </Box>
               </motion.div>
             </Grid>
-            ))}
-          </Grid>
-        </Box>
+          ))}
+        </Grid>
       </Container>
     </Box>
   );

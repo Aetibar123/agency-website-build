@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
-import { Poppins } from "next/font/google";
+import { Poppins, DM_Serif_Display } from "next/font/google";
 import ThemeRegistry from "../components/providers/ThemeRegistry";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
@@ -10,6 +10,13 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
   variable: "--font-poppins",
+});
+
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-dm-serif",
 });
 
 
@@ -162,8 +169,14 @@ export default function RootLayout({
             gtag('config', 'G-EBH9X58H1B');
           `}
         </Script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={poppins.className} style={{ margin: 0 }}>
+      <body className={`${poppins.className} ${dmSerif.variable}`} style={{ margin: 0 }}>
         <ThemeRegistry>
           <Navbar />
           {children}

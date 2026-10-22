@@ -53,6 +53,7 @@ export interface ServicePageProps {
     title: string;
     desc: string;
   }[];
+  beforeSubServices?: React.ReactNode;
   subServiceSections?: SubServiceSection[];
   whoIsItFor: {
     title: string;
@@ -95,6 +96,7 @@ export default function ServicePageLayout({
   descriptionBullets,
   icon,
   heroHighlights,
+  beforeSubServices,
   subServiceSections,
   whoIsItFor,
   problemsAddressed,
@@ -112,25 +114,25 @@ export default function ServicePageLayout({
       value: "Fixed",
       title: "Clear Upfront Pricing",
       desc: "No hidden surprises. We agree on deliverables, milestones, and price before any work starts.",
-      icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+      icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
     },
     {
       value: "< 1s",
       title: "Ultra-Fast on Phones",
       desc: "Pages load in a fraction of a second on smartphones so impatient customers never leave.",
-      icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+      icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
     },
     {
       value: "100%",
       title: "Full Code Ownership",
       desc: "You own all code, domains, logins, and accounts completely with zero proprietary lock-in.",
-      icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+      icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
     },
     {
       value: "Direct",
       title: "WhatsApp & Call Leads",
       desc: "New inquiries land directly on your phone and email in seconds so you never miss a sale.",
-      icon: <PhoneInTalkOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+      icon: <PhoneInTalkOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
     },
   ];
 
@@ -142,7 +144,7 @@ export default function ServicePageLayout({
     : defaultHighlights;
 
   return (
-    <Box sx={{ bgcolor: "#FFFFFF", color: "#18181B", minHeight: "100vh", overflowX: "hidden" }}>
+    <Box sx={{ bgcolor: "#FFFFFF", color: "#183D35", minHeight: "100vh", overflowX: "hidden" }}>
       {/* High-Performance Sunset Scroll Progress Bar */}
       <HomeScrollProgress />
 
@@ -156,8 +158,8 @@ export default function ServicePageLayout({
           pt: { xs: 15, sm: 18, md: 21 },
           pb: { xs: 10, md: 14 },
           background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+            "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.09) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
           overflow: "hidden",
         }}
       >
@@ -172,7 +174,7 @@ export default function ServicePageLayout({
             right: "-6%",
             width: "520px",
             height: "520px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.16) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(61, 118, 93, 0.16) 0%, transparent 70%)",
             filter: "blur(75px)",
             pointerEvents: "none",
           }}
@@ -187,7 +189,7 @@ export default function ServicePageLayout({
             left: "-10%",
             width: "480px",
             height: "480px",
-            background: "radial-gradient(circle, rgba(251, 146, 60, 0.14) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(216, 229, 213, 0.14) 0%, transparent 70%)",
             filter: "blur(75px)",
             pointerEvents: "none",
           }}
@@ -213,12 +215,12 @@ export default function ServicePageLayout({
                   fontWeight: 600,
                   padding: "6px 14px",
                   borderRadius: "9999px",
-                  backgroundColor: "rgba(24, 24, 27, 0.03)",
-                  border: "1px solid rgba(24, 24, 27, 0.08)",
+                  backgroundColor: "rgba(24, 61, 53, 0.03)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   transition: "all 0.2s ease",
                 }}
               >
-                <ArrowBackIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                <ArrowBackIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                 <span>All Digital Services</span>
               </Link>
             </Box>
@@ -249,9 +251,9 @@ export default function ServicePageLayout({
                   px: { xs: 2, sm: 2.4 },
                   py: 0.7,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
+                  boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                   backdropFilter: "blur(12px)",
                   mb: 3,
                 }}
@@ -264,18 +266,18 @@ export default function ServicePageLayout({
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    bgcolor: "#F97316",
-                    boxShadow: "0 0 10px #F97316",
+                    bgcolor: "#4D8F72",
+                    boxShadow: "0 0 10px #4D8F72",
                     flexShrink: 0,
                   }}
                 />
-                <Box sx={{ display: "flex", alignItems: "center", color: "#EA580C" }}>{icon}</Box>
+                <Box sx={{ display: "flex", alignItems: "center", color: "#3D765D" }}>{icon}</Box>
                 <Typography
                   sx={{
                     fontSize: { xs: "0.75rem", sm: "0.825rem" },
                     fontWeight: 700,
                     letterSpacing: "0.06em",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     textTransform: "uppercase",
                   }}
                 >
@@ -295,7 +297,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -320,7 +322,7 @@ export default function ServicePageLayout({
                       display: "block",
                       whiteSpace: { xs: "normal", lg: "nowrap" },
                       mt: { xs: 0.5, sm: 0.75 },
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                     }}
@@ -341,7 +343,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.05rem", sm: "1.2rem", md: "1.25rem" },
                   fontWeight: 600,
-                  color: "#EA580C",
+                  color: "#3D765D",
                   lineHeight: 1.5,
                   mb: 2,
                   maxWidth: 780,
@@ -401,8 +403,8 @@ export default function ServicePageLayout({
                             width: 20,
                             height: 20,
                             borderRadius: "50%",
-                            bgcolor: "rgba(249, 115, 22, 0.12)",
-                            color: "#EA580C",
+                            bgcolor: "rgba(61, 118, 93, 0.12)",
+                            color: "#3D765D",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
@@ -410,7 +412,7 @@ export default function ServicePageLayout({
                             mt: 0.25,
                           }}
                         >
-                          <CheckCircleOutlinedIcon sx={{ fontSize: 13, color: "#EA580C" }} />
+                          <CheckCircleOutlinedIcon sx={{ fontSize: 13, color: "#3D765D" }} />
                         </Box>
                         <Typography
                           sx={{
@@ -450,18 +452,18 @@ export default function ServicePageLayout({
                       variant="contained"
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                       sx={{
-                        background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                        background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                         color: "#FFFFFF",
                         px: { xs: 3.5, sm: 4.5 },
                         py: { xs: 1.4, sm: 1.6 },
                         fontSize: { xs: "0.95rem", sm: "1rem" },
                         fontWeight: 700,
                         borderRadius: "9999px",
-                        boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.38)",
+                        boxShadow: "0 10px 25px -5px rgba(61, 118, 93, 0.38)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                          boxShadow: "0 15px 30px -5px rgba(234, 88, 12, 0.5)",
+                          background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                          boxShadow: "0 15px 30px -5px rgba(61, 118, 93, 0.5)",
                         },
                       }}
                     >
@@ -475,8 +477,8 @@ export default function ServicePageLayout({
                     <Button
                       variant="outlined"
                       sx={{
-                        color: "#18181B",
-                        borderColor: "rgba(24, 24, 27, 0.2)",
+                        color: "#183D35",
+                        borderColor: "rgba(24, 61, 53, 0.2)",
                         bgcolor: "rgba(255, 255, 255, 0.9)",
                         backdropFilter: "blur(10px)",
                         px: { xs: 3.5, sm: 4 },
@@ -484,12 +486,12 @@ export default function ServicePageLayout({
                         fontSize: { xs: "0.95rem", sm: "1rem" },
                         fontWeight: 600,
                         borderRadius: "9999px",
-                        boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+                        boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          borderColor: "#EA580C",
-                          bgcolor: "rgba(249, 115, 22, 0.04)",
-                          color: "#EA580C",
+                          borderColor: "#3D765D",
+                          bgcolor: "rgba(61, 118, 93, 0.04)",
+                          color: "#3D765D",
                         },
                       }}
                     >
@@ -521,7 +523,7 @@ export default function ServicePageLayout({
                   "Direct Access to Dedicated Builders",
                 ].map((text, i) => (
                   <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                     <Typography sx={{ fontSize: "0.85rem", color: "#52525B", fontWeight: 500 }}>
                       {text}
                     </Typography>
@@ -547,17 +549,17 @@ export default function ServicePageLayout({
                         p: 2.8,
                         borderRadius: "20px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
-                        boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
+                        boxShadow: "0 2px 10px rgba(24, 61, 53, 0.02)",
                         height: "100%",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
                         transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                         "&:hover": {
-                          borderColor: "rgba(234, 88, 12, 0.4)",
+                          borderColor: "rgba(61, 118, 93, 0.4)",
                           transform: "translateY(-4px)",
-                          boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.14)",
+                          boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.14)",
                         },
                       }}
                     >
@@ -567,7 +569,7 @@ export default function ServicePageLayout({
                             sx={{
                               fontSize: "1.65rem",
                               fontWeight: 800,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "-0.03em",
                               fontFamily: "monospace",
                             }}
@@ -579,7 +581,7 @@ export default function ServicePageLayout({
                               width: 34,
                               height: 34,
                               borderRadius: "10px",
-                              bgcolor: "rgba(249, 115, 22, 0.08)",
+                              bgcolor: "rgba(61, 118, 93, 0.08)",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
@@ -592,7 +594,7 @@ export default function ServicePageLayout({
                           sx={{
                             fontSize: "0.95rem",
                             fontWeight: 700,
-                            color: "#18181B",
+                            color: "#183D35",
                             mb: 0.8,
                           }}
                         >
@@ -618,6 +620,11 @@ export default function ServicePageLayout({
       </Box>
 
       {/* ========================================================================= */}
+      {/* 1.25 CUSTOM OVERVIEW SECTION BEFORE SUB-SERVICES */}
+      {/* ========================================================================= */}
+      {beforeSubServices}
+
+      {/* ========================================================================= */}
       {/* 1.5 SUB-SERVICE SECTIONS (STICKY NAV & DETAILED CHANNEL BREAKDOWNS) */}
       {/* ========================================================================= */}
       {subServiceSections && subServiceSections.length > 0 && (
@@ -630,7 +637,7 @@ export default function ServicePageLayout({
               zIndex: 90,
               bgcolor: "rgba(255, 255, 255, 0.94)",
               backdropFilter: "blur(16px)",
-              borderBottom: "1px solid rgba(24, 24, 27, 0.08)",
+              borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
               boxShadow: "0 2px 10px rgba(0, 0, 0, 0.03)",
               py: 1.5,
             }}
@@ -653,7 +660,7 @@ export default function ServicePageLayout({
                   sx={{
                     fontSize: "0.75rem",
                     fontWeight: 700,
-                    color: "#EA580C",
+                    color: "#3D765D",
                     textTransform: "uppercase",
                     letterSpacing: "0.08em",
                     whiteSpace: "nowrap",
@@ -680,16 +687,16 @@ export default function ServicePageLayout({
                       py: { xs: 0.75, sm: 0.9 },
                       fontSize: { xs: "0.8rem", sm: "0.875rem" },
                       fontWeight: 600,
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.12)",
+                      color: "#183D35",
+                      borderColor: "rgba(24, 61, 53, 0.12)",
                       bgcolor: "rgba(255, 255, 255, 0.9)",
                       boxShadow: "0 1px 3px rgba(0,0,0,0.04)",
                       textTransform: "none",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
-                        borderColor: "#EA580C",
-                        color: "#EA580C",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
+                        borderColor: "#3D765D",
+                        color: "#3D765D",
                         transform: "translateY(-1px)",
                       },
                     }}
@@ -709,8 +716,8 @@ export default function ServicePageLayout({
               key={sub.id}
               sx={{
                 py: { xs: 10, md: 14 },
-                bgcolor: idx % 2 === 0 ? "#FFFFFF" : "#FAFAFA",
-                borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+                bgcolor: idx % 2 === 0 ? "#FFFFFF" : "#F7F7F2",
+                borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
                 position: "relative",
                 scrollMarginTop: { xs: 80, md: 100 },
               }}
@@ -735,8 +742,8 @@ export default function ServicePageLayout({
                         px: 2,
                         py: 0.6,
                         borderRadius: "9999px",
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
-                        border: "1px solid rgba(249, 115, 22, 0.25)",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
+                        border: "1px solid rgba(61, 118, 93, 0.25)",
                         mb: 2.5,
                       }}
                     >
@@ -744,11 +751,11 @@ export default function ServicePageLayout({
                         component={motion.div}
                         animate={{ scale: [1, 1.35, 1] }}
                         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                        sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                        sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                       />
                       <Typography
                         sx={{
-                          color: "#EA580C",
+                          color: "#3D765D",
                           fontWeight: 700,
                           fontSize: "0.8rem",
                           letterSpacing: "0.06em",
@@ -764,7 +771,7 @@ export default function ServicePageLayout({
                       sx={{
                         fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                         letterSpacing: "-0.03em",
                         maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -790,7 +797,7 @@ export default function ServicePageLayout({
                             whiteSpace: { xs: "normal", lg: "nowrap" },
                             mt: { xs: 0.5, sm: 0.75 },
                             background:
-                              "linear-gradient(135deg, #EA580C 0%, #F97316 50%, #FB923C 100%)",
+                              "linear-gradient(135deg, #3D765D 0%, #4D8F72 50%, #62A486 100%)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                           }}
@@ -802,7 +809,7 @@ export default function ServicePageLayout({
 
                     <Typography
                       sx={{
-                        color: "#EA580C",
+                        color: "#3D765D",
                         fontSize: { xs: "1.05rem", sm: "1.2rem" },
                         fontWeight: 600,
                         lineHeight: 1.6,
@@ -837,8 +844,8 @@ export default function ServicePageLayout({
                           sx={{
                             p: { xs: 2.5, sm: 3 },
                             borderRadius: "16px",
-                            bgcolor: idx % 2 === 0 ? "#FAF8F5" : "#FFFFFF",
-                            border: "1px solid rgba(24, 24, 27, 0.08)",
+                            bgcolor: idx % 2 === 0 ? "#F7F7F2" : "#FFFFFF",
+                            border: "1px solid rgba(24, 61, 53, 0.08)",
                             textAlign: "center",
                             boxShadow: "0 2px 8px rgba(0,0,0,0.03)",
                           }}
@@ -847,7 +854,7 @@ export default function ServicePageLayout({
                             sx={{
                               fontSize: { xs: "1.85rem", sm: "2.25rem" },
                               fontWeight: 800,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               letterSpacing: "-0.03em",
                               lineHeight: 1.1,
                               mb: 0.5,
@@ -877,7 +884,7 @@ export default function ServicePageLayout({
                       sx={{
                         fontSize: { xs: "1.2rem", sm: "1.35rem" },
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.02em",
                         textAlign: "center",
                         mb: 3.5,
@@ -892,16 +899,16 @@ export default function ServicePageLayout({
                             sx={{
                               p: { xs: 3, sm: 3.5 },
                               borderRadius: "18px",
-                              bgcolor: idx % 2 === 0 ? "#FAF8F5" : "#FFFFFF",
-                              border: "1px solid rgba(24, 24, 27, 0.08)",
+                              bgcolor: idx % 2 === 0 ? "#F7F7F2" : "#FFFFFF",
+                              border: "1px solid rgba(24, 61, 53, 0.08)",
                               height: "100%",
                               display: "flex",
                               flexDirection: "column",
                               transition: "all 0.25s ease",
                               "&:hover": {
                                 transform: "translateY(-4px)",
-                                borderColor: "rgba(249, 115, 22, 0.35)",
-                                boxShadow: "0 10px 25px rgba(249, 115, 22, 0.08)",
+                                borderColor: "rgba(61, 118, 93, 0.35)",
+                                boxShadow: "0 10px 25px rgba(61, 118, 93, 0.08)",
                               },
                             }}
                           >
@@ -910,8 +917,8 @@ export default function ServicePageLayout({
                                 width: 36,
                                 height: 36,
                                 borderRadius: "10px",
-                                bgcolor: "rgba(249, 115, 22, 0.1)",
-                                color: "#EA580C",
+                                bgcolor: "rgba(61, 118, 93, 0.1)",
+                                color: "#3D765D",
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
@@ -926,7 +933,7 @@ export default function ServicePageLayout({
                               sx={{
                                 fontSize: "1.05rem",
                                 fontWeight: 700,
-                                color: "#18181B",
+                                color: "#183D35",
                                 mb: 1,
                                 lineHeight: 1.35,
                               }}
@@ -956,8 +963,8 @@ export default function ServicePageLayout({
                     sx={{
                       p: { xs: 3, sm: 4 },
                       borderRadius: "20px",
-                      bgcolor: idx % 2 === 0 ? "#FAF8F5" : "#FFFFFF",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      bgcolor: idx % 2 === 0 ? "#F7F7F2" : "#FFFFFF",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       mb: { xs: 6, md: 7 },
                     }}
                   >
@@ -965,7 +972,7 @@ export default function ServicePageLayout({
                       sx={{
                         fontSize: "0.95rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         mb: 2.5,
                         textTransform: "uppercase",
                         letterSpacing: "0.06em",
@@ -978,7 +985,7 @@ export default function ServicePageLayout({
                         <Grid size={{ xs: 12, sm: 6 }} key={bIdx}>
                           <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                             <CheckCircleOutlinedIcon
-                              sx={{ fontSize: 20, color: "#EA580C", flexShrink: 0, mt: 0.2 }}
+                              sx={{ fontSize: 20, color: "#3D765D", flexShrink: 0, mt: 0.2 }}
                             />
                             <Typography sx={{ fontSize: "0.92rem", color: "#3F3F46", lineHeight: 1.55 }}>
                               {b}
@@ -1003,8 +1010,8 @@ export default function ServicePageLayout({
                       borderRadius: "24px",
                       background:
                         "linear-gradient(135deg, rgba(255, 247, 237, 0.95) 0%, rgba(254, 242, 242, 0.9) 100%)",
-                      border: "1.5px solid rgba(249, 115, 22, 0.25)",
-                      boxShadow: "0 8px 30px rgba(249, 115, 22, 0.08)",
+                      border: "1.5px solid rgba(61, 118, 93, 0.25)",
+                      boxShadow: "0 8px 30px rgba(61, 118, 93, 0.08)",
                       display: "flex",
                       flexDirection: { xs: "column", md: "row" },
                       alignItems: { xs: "flex-start", md: "center" },
@@ -1014,12 +1021,12 @@ export default function ServicePageLayout({
                   >
                     <Box sx={{ maxWidth: 700 }}>
                       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
-                        <Box sx={{ color: "#EA580C", display: "flex" }}>{sub.icon}</Box>
+                        <Box sx={{ color: "#3D765D", display: "flex" }}>{sub.icon}</Box>
                         <Typography
                           sx={{
                             fontSize: "0.85rem",
                             fontWeight: 700,
-                            color: "#EA580C",
+                            color: "#3D765D",
                             textTransform: "uppercase",
                             letterSpacing: "0.06em",
                           }}
@@ -1031,7 +1038,7 @@ export default function ServicePageLayout({
                         sx={{
                           fontSize: { xs: "1.2rem", sm: "1.45rem" },
                           fontWeight: 700,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.02em",
                           mb: 0.75,
                         }}
@@ -1056,7 +1063,7 @@ export default function ServicePageLayout({
                       endIcon={<ArrowForwardIcon />}
                       sx={{
                         flexShrink: 0,
-                        bgcolor: "#EA580C",
+                        bgcolor: "#3D765D",
                         color: "#FFFFFF",
                         px: { xs: 3, sm: 4 },
                         py: 1.6,
@@ -1064,12 +1071,12 @@ export default function ServicePageLayout({
                         fontSize: { xs: "0.92rem", sm: "1rem" },
                         fontWeight: 700,
                         textTransform: "none",
-                        boxShadow: "0 6px 20px rgba(234, 88, 12, 0.35)",
+                        boxShadow: "0 6px 20px rgba(61, 118, 93, 0.35)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          bgcolor: "#C2410C",
+                          bgcolor: "#183D35",
                           transform: "translateY(-2px)",
-                          boxShadow: "0 10px 25px rgba(234, 88, 12, 0.45)",
+                          boxShadow: "0 10px 25px rgba(61, 118, 93, 0.45)",
                         },
                       }}
                     >
@@ -1091,8 +1098,8 @@ export default function ServicePageLayout({
         id="who-it-is-for"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAFAFA",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
           position: "relative",
         }}
       >
@@ -1112,8 +1119,8 @@ export default function ServicePageLayout({
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -1121,11 +1128,11 @@ export default function ServicePageLayout({
                   component={motion.div}
                   animate={{ scale: [1, 1.35, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
@@ -1141,7 +1148,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -1173,7 +1180,7 @@ export default function ServicePageLayout({
                       p: 3.5,
                       bgcolor: "#FFFFFF",
                       borderRadius: "20px",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
                       height: "100%",
                       display: "flex",
@@ -1188,14 +1195,14 @@ export default function ServicePageLayout({
                         left: 0,
                         right: 0,
                         height: "3px",
-                        background: "linear-gradient(90deg, #EA580C, #F97316, #FB923C)",
+                        background: "linear-gradient(90deg, #3D765D, #4D8F72, #62A486)",
                         opacity: 0,
                         transition: "opacity 0.3s ease",
                       },
                       "&:hover": {
                         transform: "translateY(-6px)",
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 18px 36px -10px rgba(234, 88, 12, 0.16)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 18px 36px -10px rgba(61, 118, 93, 0.16)",
                         "&::before": {
                           opacity: 1,
                         },
@@ -1207,18 +1214,18 @@ export default function ServicePageLayout({
                         width: 42,
                         height: 42,
                         borderRadius: "12px",
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                         mb: 2.5,
                       }}
                     >
-                      <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 22 }} />
+                      <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 22 }} />
                     </Box>
                     <Typography
                       variant="h3"
-                      sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 1.2 }}
+                      sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#183D35", mb: 1.2 }}
                     >
                       {item.title}
                     </Typography>
@@ -1242,7 +1249,7 @@ export default function ServicePageLayout({
         sx={{
           py: { xs: 10, md: 14 },
           bgcolor: "#FFFFFF",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
         }}
       >
         <Container maxWidth="xl">
@@ -1261,8 +1268,8 @@ export default function ServicePageLayout({
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -1270,11 +1277,11 @@ export default function ServicePageLayout({
                   component={motion.div}
                   animate={{ scale: [1, 1.35, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
@@ -1290,7 +1297,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -1322,8 +1329,8 @@ export default function ServicePageLayout({
                       p: { xs: 3.5, sm: 4 },
                       bgcolor: "#FFFFFF",
                       borderRadius: "20px",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
-                      boxShadow: "0 2px 12px rgba(24, 24, 27, 0.03)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
+                      boxShadow: "0 2px 12px rgba(24, 61, 53, 0.03)",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
@@ -1331,8 +1338,8 @@ export default function ServicePageLayout({
                       transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                       "&:hover": {
                         transform: "translateY(-4px)",
-                        borderColor: "rgba(234, 88, 12, 0.35)",
-                        boxShadow: "0 20px 40px -12px rgba(234, 88, 12, 0.12)",
+                        borderColor: "rgba(61, 118, 93, 0.35)",
+                        boxShadow: "0 20px 40px -12px rgba(61, 118, 93, 0.12)",
                       },
                     }}
                   >
@@ -1358,13 +1365,13 @@ export default function ServicePageLayout({
                       </Box>
                       <Typography
                         variant="h3"
-                        sx={{ fontSize: "1.18rem", fontWeight: 700, color: "#18181B", lineHeight: 1.4 }}
+                        sx={{ fontSize: "1.18rem", fontWeight: 700, color: "#183D35", lineHeight: 1.4 }}
                       >
                         {item.problem}
                       </Typography>
                     </Box>
 
-                    <Box sx={{ pt: 2.5, borderTop: "1px dashed rgba(24, 24, 27, 0.1)" }}>
+                    <Box sx={{ pt: 2.5, borderTop: "1px dashed rgba(24, 61, 53, 0.1)" }}>
                       <Box
                         sx={{
                           display: "inline-flex",
@@ -1404,8 +1411,8 @@ export default function ServicePageLayout({
         id="deliverables"
         sx={{
           py: { xs: 10, md: 15 },
-          bgcolor: "#FAFAFA",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
         }}
       >
         <Container maxWidth="xl">
@@ -1424,8 +1431,8 @@ export default function ServicePageLayout({
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -1433,11 +1440,11 @@ export default function ServicePageLayout({
                   component={motion.div}
                   animate={{ scale: [1, 1.35, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
@@ -1453,7 +1460,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -1485,7 +1492,7 @@ export default function ServicePageLayout({
                       p: { xs: 3.5, sm: 4 },
                       bgcolor: "#FFFFFF",
                       borderRadius: "20px",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
                       height: "100%",
                       display: "flex",
@@ -1500,14 +1507,14 @@ export default function ServicePageLayout({
                         left: 0,
                         right: 0,
                         height: "3px",
-                        background: "linear-gradient(90deg, #EA580C, #F97316, #FB923C)",
+                        background: "linear-gradient(90deg, #3D765D, #4D8F72, #62A486)",
                         opacity: 0,
                         transition: "opacity 0.3s ease",
                       },
                       "&:hover": {
                         transform: "translateY(-6px)",
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 20px 40px -12px rgba(234, 88, 12, 0.16)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 20px 40px -12px rgba(61, 118, 93, 0.16)",
                         "&::before": {
                           opacity: 1,
                         },
@@ -1516,7 +1523,7 @@ export default function ServicePageLayout({
                   >
                     <Typography
                       variant="h3"
-                      sx={{ fontSize: "1.22rem", fontWeight: 700, color: "#18181B", mb: 1.5, lineHeight: 1.35 }}
+                      sx={{ fontSize: "1.22rem", fontWeight: 700, color: "#183D35", mb: 1.5, lineHeight: 1.35 }}
                     >
                       {item.title}
                     </Typography>
@@ -1525,10 +1532,10 @@ export default function ServicePageLayout({
                     </Typography>
 
                     {item.items && item.items.length > 0 && (
-                      <Box sx={{ mt: "auto", pt: 2.5, borderTop: "1px solid rgba(24, 24, 27, 0.06)" }}>
+                      <Box sx={{ mt: "auto", pt: 2.5, borderTop: "1px solid rgba(24, 61, 53, 0.06)" }}>
                         {item.items.map((subItem, i) => (
                           <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2, mb: 1.2 }}>
-                            <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#EA580C", mt: 0.3, flexShrink: 0 }} />
+                            <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#3D765D", mt: 0.3, flexShrink: 0 }} />
                             <Typography sx={{ fontSize: "0.875rem", color: "#3F3F46", fontWeight: 500, lineHeight: 1.5 }}>
                               {subItem}
                             </Typography>
@@ -1553,7 +1560,7 @@ export default function ServicePageLayout({
         sx={{
           py: { xs: 10, md: 14 },
           bgcolor: "#FFFFFF",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
         }}
       >
         <Container maxWidth="xl">
@@ -1572,8 +1579,8 @@ export default function ServicePageLayout({
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -1581,11 +1588,11 @@ export default function ServicePageLayout({
                   component={motion.div}
                   animate={{ scale: [1, 1.35, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
@@ -1601,7 +1608,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -1633,14 +1640,14 @@ export default function ServicePageLayout({
                       p: { xs: 3.5, sm: 4 },
                       bgcolor: "#FFFFFF",
                       borderRadius: "20px",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
                       height: "100%",
                       transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                       "&:hover": {
                         transform: "translateY(-4px)",
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 18px 36px -10px rgba(234, 88, 12, 0.14)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 18px 36px -10px rgba(61, 118, 93, 0.14)",
                       },
                     }}
                   >
@@ -1650,18 +1657,18 @@ export default function ServicePageLayout({
                           width: 36,
                           height: 36,
                           borderRadius: "10px",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
                           flexShrink: 0,
                         }}
                       >
-                        <VerifiedOutlinedIcon sx={{ color: "#EA580C", fontSize: 20 }} />
+                        <VerifiedOutlinedIcon sx={{ color: "#3D765D", fontSize: 20 }} />
                       </Box>
                       <Typography
                         variant="h3"
-                        sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#18181B" }}
+                        sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#183D35" }}
                       >
                         {benefit.title}
                       </Typography>
@@ -1685,8 +1692,8 @@ export default function ServicePageLayout({
         id="process"
         sx={{
           py: { xs: 10, md: 15 },
-          bgcolor: "#FAFAFA",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
         }}
       >
         <Container maxWidth="xl">
@@ -1705,8 +1712,8 @@ export default function ServicePageLayout({
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -1714,11 +1721,11 @@ export default function ServicePageLayout({
                   component={motion.div}
                   animate={{ scale: [1, 1.35, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
@@ -1734,7 +1741,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -1766,7 +1773,7 @@ export default function ServicePageLayout({
                       p: 3.2,
                       bgcolor: "#FFFFFF",
                       borderRadius: "20px",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
                       height: "100%",
                       display: "flex",
@@ -1774,8 +1781,8 @@ export default function ServicePageLayout({
                       transition: "all 0.3s ease",
                       "&:hover": {
                         transform: "translateY(-4px)",
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.14)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.14)",
                       },
                     }}
                   >
@@ -1784,7 +1791,7 @@ export default function ServicePageLayout({
                         fontFamily: "monospace",
                         fontSize: "1.75rem",
                         fontWeight: 800,
-                        color: "#EA580C",
+                        color: "#3D765D",
                         mb: 1.5,
                       }}
                     >
@@ -1792,7 +1799,7 @@ export default function ServicePageLayout({
                     </Typography>
                     <Typography
                       variant="h3"
-                      sx={{ fontSize: "1.08rem", fontWeight: 700, color: "#18181B", mb: 1.2 }}
+                      sx={{ fontSize: "1.08rem", fontWeight: 700, color: "#183D35", mb: 1.2 }}
                     >
                       {step.title}
                     </Typography>
@@ -1817,7 +1824,7 @@ export default function ServicePageLayout({
           sx={{
             py: { xs: 10, md: 15 },
             bgcolor: "#FFFFFF",
-            borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+            borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
           }}
         >
           <Container maxWidth="xl">
@@ -1836,8 +1843,8 @@ export default function ServicePageLayout({
                     px: 2,
                     py: 0.6,
                     borderRadius: "9999px",
-                    bgcolor: "rgba(249, 115, 22, 0.08)",
-                    border: "1px solid rgba(249, 115, 22, 0.25)",
+                    bgcolor: "rgba(61, 118, 93, 0.08)",
+                    border: "1px solid rgba(61, 118, 93, 0.25)",
                     mb: 2.5,
                   }}
                 >
@@ -1845,11 +1852,11 @@ export default function ServicePageLayout({
                     component={motion.div}
                     animate={{ scale: [1, 1.35, 1] }}
                     transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                    sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                    sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                   />
                   <Typography
                     sx={{
-                      color: "#EA580C",
+                      color: "#3D765D",
                       fontWeight: 700,
                       fontSize: "0.8rem",
                       letterSpacing: "0.06em",
@@ -1865,7 +1872,7 @@ export default function ServicePageLayout({
                   sx={{
                     fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                     fontWeight: 700,
-                    color: "#18181B",
+                    color: "#183D35",
                     lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                     letterSpacing: "-0.03em",
                     maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -1896,7 +1903,7 @@ export default function ServicePageLayout({
                       sx={{
                         bgcolor: "#FFFFFF",
                         borderRadius: "20px",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         overflow: "hidden",
                         height: "100%",
                         display: "flex",
@@ -1906,8 +1913,8 @@ export default function ServicePageLayout({
                         transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
                         "&:hover": {
                           transform: "translateY(-5px)",
-                          borderColor: "rgba(234, 88, 12, 0.4)",
-                          boxShadow: "0 20px 40px -12px rgba(234, 88, 12, 0.18)",
+                          borderColor: "rgba(61, 118, 93, 0.4)",
+                          boxShadow: "0 20px 40px -12px rgba(61, 118, 93, 0.18)",
                         },
                       }}
                     >
@@ -1917,7 +1924,7 @@ export default function ServicePageLayout({
                             position: "relative",
                             width: "100%",
                             height: 220,
-                            bgcolor: "#18181B",
+                            bgcolor: "#183D35",
                             overflow: "hidden",
                           }}
                         >
@@ -1936,7 +1943,7 @@ export default function ServicePageLayout({
                                 bgcolor:
                                   project.projectType === "Production Build"
                                     ? "#16A34A"
-                                    : "#EA580C",
+                                    : "#3D765D",
                                 color: "#FFFFFF",
                                 fontWeight: 700,
                                 fontSize: "0.72rem",
@@ -1950,7 +1957,7 @@ export default function ServicePageLayout({
                           <Typography
                             variant="caption"
                             sx={{
-                              color: "#EA580C",
+                              color: "#3D765D",
                               fontWeight: 700,
                               fontSize: "0.75rem",
                               letterSpacing: "0.06em",
@@ -1963,7 +1970,7 @@ export default function ServicePageLayout({
                           </Typography>
                           <Typography
                             variant="h3"
-                            sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#18181B", mb: 1.2, lineHeight: 1.35 }}
+                            sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#183D35", mb: 1.2, lineHeight: 1.35 }}
                           >
                             {project.title}
                           </Typography>
@@ -1982,7 +1989,7 @@ export default function ServicePageLayout({
                                   px: 1.2,
                                   py: 0.4,
                                   borderRadius: "6px",
-                                  bgcolor: "rgba(24, 24, 27, 0.04)",
+                                  bgcolor: "rgba(24, 61, 53, 0.04)",
                                   color: "#52525B",
                                   fontSize: "0.75rem",
                                   fontWeight: 600,
@@ -2002,12 +2009,12 @@ export default function ServicePageLayout({
                             endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                             sx={{
                               p: 0,
-                              color: "#18181B",
+                              color: "#183D35",
                               fontWeight: 700,
                               fontSize: "0.9rem",
                               textTransform: "none",
                               "&:hover": {
-                                color: "#EA580C",
+                                color: "#3D765D",
                                 bgcolor: "transparent",
                               },
                             }}
@@ -2030,8 +2037,8 @@ export default function ServicePageLayout({
                     variant="outlined"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.2)",
+                      color: "#183D35",
+                      borderColor: "rgba(24, 61, 53, 0.2)",
                       bgcolor: "#FFFFFF",
                       borderRadius: "9999px",
                       px: 4,
@@ -2039,9 +2046,9 @@ export default function ServicePageLayout({
                       fontWeight: 600,
                       textTransform: "none",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        color: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.04)",
+                        borderColor: "#3D765D",
+                        color: "#3D765D",
+                        bgcolor: "rgba(61, 118, 93, 0.04)",
                       },
                     }}
                   >
@@ -2062,8 +2069,8 @@ export default function ServicePageLayout({
         id="faqs"
         sx={{
           py: { xs: 10, md: 15 },
-          bgcolor: "#FAFAFA",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
         }}
       >
         <Container maxWidth="xl">
@@ -2082,8 +2089,8 @@ export default function ServicePageLayout({
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -2091,11 +2098,11 @@ export default function ServicePageLayout({
                   component={motion.div}
                   animate={{ scale: [1, 1.35, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
+                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72" }}
                 />
                 <Typography
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
@@ -2111,7 +2118,7 @@ export default function ServicePageLayout({
                 sx={{
                   fontSize: { xs: "1.5rem", sm: "1.85rem", md: "2.15rem", lg: "2.45rem" },
                   fontWeight: 700,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.25, sm: 1.22, md: 1.2 },
                   letterSpacing: "-0.03em",
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
@@ -2141,23 +2148,23 @@ export default function ServicePageLayout({
                   elevation={0}
                   sx={{
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     borderRadius: "16px !important",
                     mb: 2,
                     boxShadow: "0 2px 6px rgba(0, 0, 0, 0.015)",
                     transition: "border-color 0.2s ease, box-shadow 0.2s ease",
                     "&:before": { display: "none" },
                     "&:hover": {
-                      borderColor: "rgba(234, 88, 12, 0.35)",
-                      boxShadow: "0 6px 18px rgba(234, 88, 12, 0.06)",
+                      borderColor: "rgba(61, 118, 93, 0.35)",
+                      boxShadow: "0 6px 18px rgba(61, 118, 93, 0.06)",
                     },
                   }}
                 >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "#EA580C" }} />}
+                    expandIcon={<ExpandMoreIcon sx={{ color: "#3D765D" }} />}
                     sx={{ px: { xs: 2.5, sm: 3.5 }, py: 1.2 }}
                   >
-                    <Typography sx={{ fontWeight: 700, fontSize: "1.05rem", color: "#18181B" }}>
+                    <Typography sx={{ fontWeight: 700, fontSize: "1.05rem", color: "#183D35" }}>
                       {faq.question}
                     </Typography>
                   </AccordionSummary>
@@ -2199,9 +2206,9 @@ export default function ServicePageLayout({
                 textAlign: "center",
                 border: "1px solid rgba(255, 255, 255, 0.12)",
                 p: { xs: 3.5, sm: 6, md: 7.5 },
-                background: "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
+                background: "linear-gradient(145deg, #183D35 0%, #0F0E0E 60%, #201A18 100%)",
                 borderRadius: { xs: "24px", md: "36px" },
-                boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
+                boxShadow: "0 30px 80px -20px rgba(24, 61, 53, 0.5)",
                 position: "relative",
                 overflow: "hidden",
               }}
@@ -2217,7 +2224,7 @@ export default function ServicePageLayout({
                   right: "-10%",
                   width: "440px",
                   height: "440px",
-                  background: "radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 70%)",
+                  background: "radial-gradient(circle, rgba(61, 118, 93, 0.32) 0%, transparent 70%)",
                   filter: "blur(60px)",
                   pointerEvents: "none",
                 }}
@@ -2254,8 +2261,8 @@ export default function ServicePageLayout({
                       px: 2.2,
                       py: 0.6,
                       borderRadius: "9999px",
-                      bgcolor: "rgba(249, 115, 22, 0.2)",
-                      border: "1px solid rgba(251, 146, 60, 0.4)",
+                      bgcolor: "rgba(61, 118, 93, 0.2)",
+                      border: "1px solid rgba(216, 229, 213, 0.4)",
                       mb: 3.5,
                     }}
                   >
@@ -2263,14 +2270,14 @@ export default function ServicePageLayout({
                       component={motion.div}
                       animate={{ scale: [1, 1.3, 1] }}
                       transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                      sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 10px #FB923C" }}
+                      sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#62A486", boxShadow: "0 0 10px #62A486" }}
                     />
                     <Typography
                       sx={{
                         fontSize: "0.8rem",
                         letterSpacing: "0.06em",
                         textTransform: "uppercase",
-                        color: "#FB923C",
+                        color: "#62A486",
                         fontWeight: 700,
                       }}
                     >
@@ -2316,7 +2323,7 @@ export default function ServicePageLayout({
                           display: "block",
                           whiteSpace: { xs: "normal", lg: "nowrap" },
                           mt: { xs: 0.5, sm: 0.75 },
-                          background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
+                          background: "linear-gradient(135deg, #4D8F72 0%, #62A486 60%, #D8E5D5 100%)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
                         }}
@@ -2378,20 +2385,20 @@ export default function ServicePageLayout({
                           fullWidth
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                           sx={{
-                            background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
-                            color: "#18181B",
+                            background: "linear-gradient(135deg, #4D8F72 0%, #62A486 100%)",
+                            color: "#183D35",
                             px: { xs: 3, sm: 4.5 },
                             py: 1.6,
                             fontSize: "0.95rem",
                             fontWeight: 800,
                             borderRadius: "9999px",
-                            boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
+                            boxShadow: "0 10px 25px rgba(61, 118, 93, 0.4)",
                             transition: "all 0.25s ease",
                             width: { xs: "100%", sm: "auto" },
                             "&:hover": {
-                              background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                              background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                               color: "#FFFFFF",
-                              boxShadow: "0 15px 30px rgba(234, 88, 12, 0.5)",
+                              boxShadow: "0 15px 30px rgba(61, 118, 93, 0.5)",
                             },
                           }}
                         >
@@ -2423,9 +2430,9 @@ export default function ServicePageLayout({
                             transition: "all 0.25s ease",
                             width: { xs: "100%", sm: "auto" },
                             "&:hover": {
-                              borderColor: "#FB923C",
-                              color: "#FB923C",
-                              bgcolor: "rgba(249, 115, 22, 0.12)",
+                              borderColor: "#62A486",
+                              color: "#62A486",
+                              bgcolor: "rgba(61, 118, 93, 0.12)",
                             },
                           }}
                         >
@@ -2459,7 +2466,7 @@ export default function ServicePageLayout({
                       "Direct WhatsApp & Phone Support",
                     ].map((badgeText, idx) => (
                       <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                        <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+                        <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#62A486" }} />
                         <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.82)", fontWeight: 500 }}>
                           {badgeText}
                         </Typography>

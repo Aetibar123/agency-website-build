@@ -71,11 +71,11 @@ export default function ContactDiagnosticForm() {
           <Grid size={{ xs: 12, lg: 7.5 }}>
             <Box
               sx={{
-                bgcolor: "#FAF8F5",
+                bgcolor: "#F7F7F2",
                 borderRadius: "24px",
                 p: { xs: 3.5, sm: 5 },
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 12px 40px rgba(24, 24, 27, 0.04)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 12px 40px rgba(24, 61, 53, 0.04)",
               }}
             >
               {submitted ? (
@@ -85,16 +85,16 @@ export default function ContactDiagnosticForm() {
                       width: 64,
                       height: 64,
                       borderRadius: "50%",
-                      bgcolor: "rgba(234, 88, 12, 0.1)",
+                      bgcolor: "rgba(61, 118, 93, 0.1)",
                       display: "inline-flex",
                       alignItems: "center",
                       justifyContent: "center",
                       mb: 2.5,
                     }}
                   >
-                    <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 36 }} />
+                    <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 36 }} />
                   </Box>
-                  <Typography variant="h3" sx={{ fontSize: "1.75rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                  <Typography variant="h3" sx={{ fontSize: "1.75rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                     Diagnostic Received.
                   </Typography>
                   <Typography sx={{ color: "#52525B", maxWidth: 480, mx: "auto", mb: 4, lineHeight: 1.7 }}>
@@ -104,8 +104,8 @@ export default function ContactDiagnosticForm() {
                     variant="outlined"
                     onClick={() => setSubmitted(false)}
                     sx={{
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.2)",
+                      color: "#183D35",
+                      borderColor: "rgba(24, 61, 53, 0.2)",
                       borderRadius: "9999px",
                     }}
                   >
@@ -119,7 +119,7 @@ export default function ContactDiagnosticForm() {
                     sx={{
                       fontSize: { xs: "1.5rem", sm: "1.85rem" },
                       fontWeight: 700,
-                      color: "#18181B",
+                      color: "#183D35",
                       letterSpacing: "-0.02em",
                       mb: 1,
                     }}
@@ -131,7 +131,7 @@ export default function ContactDiagnosticForm() {
                   </Typography>
 
                   {/* Section 1: Who You Are */}
-                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
+                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
                     01 &bull; About Your Business
                   </Typography>
 
@@ -175,7 +175,7 @@ export default function ContactDiagnosticForm() {
                   </Grid>
 
                   {/* Section 2: What are you trying to improve? */}
-                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 1.5 }}>
+                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.06em", mb: 1.5 }}>
                     02 &bull; What are you trying to improve?
                   </Typography>
                   <Typography sx={{ fontSize: "0.825rem", color: "#71717A", mb: 2 }}>
@@ -192,14 +192,14 @@ export default function ContactDiagnosticForm() {
                           onClick={() => toggleImprovement(opt)}
                           clickable
                           sx={{
-                            bgcolor: selected ? "#18181B" : "#FFFFFF",
-                            color: selected ? "#FB923C" : "#52525B",
+                            bgcolor: selected ? "#183D35" : "#FFFFFF",
+                            color: selected ? "#62A486" : "#52525B",
                             fontWeight: 600,
                             fontSize: "0.8rem",
                             border: "1px solid",
-                            borderColor: selected ? "#EA580C" : "rgba(228, 228, 231, 0.9)",
+                            borderColor: selected ? "#3D765D" : "rgba(216, 229, 213, 0.9)",
                             "&:hover": {
-                              borderColor: "#EA580C",
+                              borderColor: "#3D765D",
                             },
                           }}
                         />
@@ -218,7 +218,7 @@ export default function ContactDiagnosticForm() {
                   />
 
                   {/* Section 3: How do you currently manage this? */}
-                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 1.5 }}>
+                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.06em", mb: 1.5 }}>
                     03 &bull; How do you currently manage this?
                   </Typography>
                   <Typography sx={{ fontSize: "0.825rem", color: "#71717A", mb: 2 }}>
@@ -235,14 +235,14 @@ export default function ContactDiagnosticForm() {
                           onClick={() => toggleManagement(opt)}
                           clickable
                           sx={{
-                            bgcolor: selected ? "#18181B" : "#FFFFFF",
-                            color: selected ? "#FB923C" : "#52525B",
+                            bgcolor: selected ? "#183D35" : "#FFFFFF",
+                            color: selected ? "#62A486" : "#52525B",
                             fontWeight: 600,
                             fontSize: "0.8rem",
                             border: "1px solid",
-                            borderColor: selected ? "#EA580C" : "rgba(228, 228, 231, 0.9)",
+                            borderColor: selected ? "#3D765D" : "rgba(216, 229, 213, 0.9)",
                             "&:hover": {
-                              borderColor: "#EA580C",
+                              borderColor: "#3D765D",
                             },
                           }}
                         />
@@ -260,7 +260,7 @@ export default function ContactDiagnosticForm() {
                   />
 
                   {/* Section 4: Contact Information */}
-                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
+                  <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.06em", mb: 2 }}>
                     04 &bull; Your Direct Contact
                   </Typography>
 
@@ -298,16 +298,16 @@ export default function ContactDiagnosticForm() {
                     size="large"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       px: 4.5,
                       py: 1.6,
                       fontSize: "0.95rem",
                       fontWeight: 700,
                       borderRadius: "9999px",
-                      boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
+                      boxShadow: "0 10px 28px rgba(61, 118, 93, 0.35)",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                         transform: "translateY(-2px)",
                       },
                     }}
@@ -327,11 +327,11 @@ export default function ContactDiagnosticForm() {
                 sx={{
                   p: 4,
                   borderRadius: "20px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                 }}
               >
-                <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 2 }}>
+                <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#183D35", mb: 2 }}>
                   What happens next?
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -342,7 +342,7 @@ export default function ContactDiagnosticForm() {
                     "If we cannot genuinely solve your problem, we will tell you directly.",
                   ].map((step, idx) => (
                     <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.25 }}>
-                      <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 18, mt: 0.2 }} />
+                      <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 18, mt: 0.2 }} />
                       <Typography sx={{ fontSize: "0.85rem", color: "#52525B", lineHeight: 1.6 }}>
                         {step}
                       </Typography>
@@ -356,17 +356,17 @@ export default function ContactDiagnosticForm() {
                 sx={{
                   p: 4,
                   borderRadius: "20px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                 }}
               >
-                <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 2.5 }}>
+                <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#183D35", mb: 2.5 }}>
                   Direct Studio Details
                 </Typography>
 
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
                   <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                    <EmailOutlinedIcon sx={{ color: "#EA580C", fontSize: 22, mt: 0.2 }} />
+                    <EmailOutlinedIcon sx={{ color: "#3D765D", fontSize: 22, mt: 0.2 }} />
                     <Box>
                       <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                         Direct Email
@@ -377,9 +377,9 @@ export default function ContactDiagnosticForm() {
                         sx={{
                           fontSize: "0.95rem",
                           fontWeight: 700,
-                          color: "#18181B",
+                          color: "#183D35",
                           textDecoration: "none",
-                          "&:hover": { color: "#EA580C" },
+                          "&:hover": { color: "#3D765D" },
                         }}
                       >
                         hello.aetibar@gmail.com
@@ -388,12 +388,12 @@ export default function ContactDiagnosticForm() {
                   </Box>
 
                   <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                    <LocationOnOutlinedIcon sx={{ color: "#EA580C", fontSize: 22, mt: 0.2 }} />
+                    <LocationOnOutlinedIcon sx={{ color: "#3D765D", fontSize: 22, mt: 0.2 }} />
                     <Box>
                       <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                         Studio Headquarters
                       </Typography>
-                      <Typography sx={{ fontSize: "0.9rem", color: "#18181B", fontWeight: 600 }}>
+                      <Typography sx={{ fontSize: "0.9rem", color: "#183D35", fontWeight: 600 }}>
                         Udaipur, Rajasthan, India
                       </Typography>
                       <Typography sx={{ fontSize: "0.8rem", color: "#71717A" }}>
@@ -403,12 +403,12 @@ export default function ContactDiagnosticForm() {
                   </Box>
 
                   <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                    <AccessTimeOutlinedIcon sx={{ color: "#EA580C", fontSize: 22, mt: 0.2 }} />
+                    <AccessTimeOutlinedIcon sx={{ color: "#3D765D", fontSize: 22, mt: 0.2 }} />
                     <Box>
                       <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                         Response Time
                       </Typography>
-                      <Typography sx={{ fontSize: "0.9rem", color: "#18181B", fontWeight: 600 }}>
+                      <Typography sx={{ fontSize: "0.9rem", color: "#183D35", fontWeight: 600 }}>
                         Within 1 business day
                       </Typography>
                     </Box>

@@ -147,7 +147,7 @@ const servicesPageSchema = {
               "description":
                 "Social media content planning, branded creatives, platform-specific content strategy, publishing, and performance reporting.",
               "url":
-                "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
+                "https://www.aetibar.in/services/social-media-marketing-service-in-udaipur",
             },
           },
           {
@@ -158,7 +158,7 @@ const servicesPageSchema = {
               "description":
                 "Technical SEO, keyword research, on-page optimization, local SEO, Google Business Profile optimization, and SEO content optimization.",
               "url":
-                "https://www.aetibar.in/services/seo-company-in-udaipur",
+                "https://www.aetibar.in/services/seo-service-in-udaipur",
             },
           },
           {
@@ -169,7 +169,7 @@ const servicesPageSchema = {
               "description":
                 "Google Ads and Meta Ads campaign management covering audience and keyword targeting, conversion tracking, budget management, and ongoing optimization.",
               "url":
-                "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
+                "https://www.aetibar.in/services/performance-marketing-company-in-udaipur",
             },
           },
           {

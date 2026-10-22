@@ -7,10 +7,10 @@ export default function AboutHeroSection() {
   return (
     <Box
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         pt: { xs: 16, md: 24 },
         pb: { xs: 10, md: 14 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -25,8 +25,8 @@ export default function AboutHeroSection() {
                 px: 1.8,
                 py: 0.6,
                 borderRadius: "4px",
-                bgcolor: "rgba(14, 116, 144, 0.08)",
-                border: "1px solid rgba(14, 116, 144, 0.18)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.18)",
               }}
             >
               <Box
@@ -34,13 +34,13 @@ export default function AboutHeroSection() {
                   width: 6,
                   height: 6,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                 }}
               />
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.14em",
                   fontSize: "0.78rem",
@@ -53,7 +53,7 @@ export default function AboutHeroSection() {
             <Typography
               variant="h1"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 mb: 3,
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 800,
@@ -64,7 +64,7 @@ export default function AboutHeroSection() {
               }}
             >
               Building Digital Solutions That{" "}
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box component="span" sx={{ color: "#3D765D" }}>
                 Drive Real Growth.
               </Box>
             </Typography>
@@ -90,8 +90,8 @@ export default function AboutHeroSection() {
                 width: "100%",
                 borderRadius: "12px",
                 overflow: "hidden",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
-                boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
+                boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
               }}
             >
               <Image

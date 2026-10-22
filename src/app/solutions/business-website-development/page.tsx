@@ -98,32 +98,32 @@ const valueDrivers = [
   {
     title: "Understanding Your Business",
     desc: "Communicates exactly what problems you solve, who you help, and why your approach works without confusing jargon or empty buzzwords.",
-    icon: <PsychologyOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <PsychologyOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Communicating Services & Scope",
     desc: "Organizes your offerings into intuitive service tiers, capabilities, and delivery models so buyers grasp your boundaries effortlessly.",
-    icon: <LanguageOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <LanguageOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Generating High-Intent Enquiries",
     desc: "Replaces empty contact forms with structured scope intake questions that gather budget, timeline, and project needs upfront.",
-    icon: <SendOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SendOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Building Credibility & Trust",
     desc: "Demonstrates authentic engineering rigor, real project context, and transparent methodology instead of fabricated social proof.",
-    icon: <CheckCircleOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <CheckCircleOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Guiding Customers Toward Action",
     desc: "Guides visitors seamlessly across logical page paths, addressing buyer hesitations and presenting clear next steps.",
-    icon: <TouchAppOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <TouchAppOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Connecting With Operations Tools",
     desc: "Routes incoming prospect inquiries straight to your team's CRM, inbox, or operational dispatch queue the moment they submit.",
-    icon: <HubOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <HubOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
 ];
 
@@ -132,37 +132,37 @@ const websiteTypes = [
     title: "Company Websites",
     desc: "Authoritative digital presences for established organizations looking to reflect their true market position, culture, and service standards.",
     badge: "Core Brand",
-    icon: <BusinessOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <BusinessOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Service Business Websites",
     desc: "High-converting platforms for consulting, engineering, professional services, and technical firms requiring qualified lead intake.",
     badge: "Lead Focused",
-    icon: <SupportAgentOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SupportAgentOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Corporate Websites",
     desc: "Structured multi-page architectures built for multi-division companies, investor relations, compliance, and institutional trust.",
     badge: "Institutional",
-    icon: <LanguageOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <LanguageOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Headless E-Commerce Websites",
     desc: "Fast, responsive digital storefronts built with modern Next.js architecture, custom product discovery, and automated catalog synchronization.",
     badge: "Commerce",
-    icon: <StorefrontOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <StorefrontOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "High-Conversion Landing Pages",
     desc: "Laser-focused landing pages engineered for specific marketing campaigns, flagship service launches, or targeted commercial offerings.",
     badge: "Campaigns",
-    icon: <WebAssetOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <WebAssetOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Content-Driven Business Websites",
     desc: "Publishing-ready business platforms with structured knowledge hubs, technical journals, case studies, and automated search indexing.",
     badge: "Editorial & SEO",
-    icon: <ArticleOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <ArticleOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
 ];
 
@@ -259,32 +259,32 @@ const technicalCapabilities = [
   {
     title: "Next.js & React App Architecture",
     desc: "Server-Side Rendering (SSR) and Static Site Generation (SSG) deliver instantaneous initial page loads and superior Core Web Vitals.",
-    icon: <SpeedOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SpeedOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "TypeScript & Modular Components",
     desc: "Type-safe engineering guarantees maintainable, bug-resistant code that remains durable as your business scales over years.",
-    icon: <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <IntegrationInstructionsOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "Technical SEO & Schema.org Markup",
     desc: "Semantic HTML5, automated XML sitemaps, JSON-LD structured data, and OpenGraph tags built directly into server-rendered pages.",
-    icon: <SearchOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SearchOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "Mobile-First Responsive UX",
     desc: "Every interaction is thoroughly tested across mobile, tablet, and desktop viewports to ensure seamless touch navigation and readability.",
-    icon: <DevicesOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <DevicesOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "Secure Edge Hosting & CDN",
     desc: "Edge-cached deployments with automatic SSL, zero server maintenance overhead, and resilience against common web vulnerabilities.",
-    icon: <SecurityOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <SecurityOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
   {
     title: "Headless CMS & Admin Control",
     desc: "Optional headless content management or lightweight markdown workflows that let your team publish articles and updates without touching code.",
-    icon: <AutoAwesomeOutlinedIcon sx={{ fontSize: 22, color: "#EA580C" }} />,
+    icon: <AutoAwesomeOutlinedIcon sx={{ fontSize: 22, color: "#3D765D" }} />,
   },
 ];
 
@@ -433,7 +433,7 @@ export default function BusinessWebsiteDevelopmentPage() {
           pt: { xs: 16, sm: 18, md: 22 },
           pb: { xs: 10, md: 14 },
           background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+            "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.09) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
           overflow: "hidden",
         }}
       >
@@ -442,7 +442,7 @@ export default function BusinessWebsiteDevelopmentPage() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
             maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
             WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
@@ -461,9 +461,9 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2.2,
                 py: 0.8,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: 3.5,
               }}
@@ -473,8 +473,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                   width: 8,
                   height: 8,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#4D8F72",
+                  boxShadow: "0 0 10px #4D8F72",
                 }}
               />
               <Typography
@@ -482,7 +482,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontSize: { xs: "0.75rem", sm: "0.825rem" },
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -496,7 +496,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.035em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -541,18 +541,18 @@ export default function BusinessWebsiteDevelopmentPage() {
                   size="large"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     px: { xs: 3.5, sm: 4.5 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 700,
                     fontSize: "0.95rem",
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
+                    boxShadow: "0 10px 28px rgba(61, 118, 93, 0.35)",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       transform: "translateY(-2px)",
-                      boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
+                      boxShadow: "0 14px 34px rgba(61, 118, 93, 0.5)",
                     },
                   }}
                 >
@@ -564,18 +564,18 @@ export default function BusinessWebsiteDevelopmentPage() {
                 <Button
                   variant="outlined"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     px: { xs: 3, sm: 4 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: "0.95rem",
-                    border: "1px solid rgba(24, 24, 27, 0.18)",
+                    border: "1px solid rgba(24, 61, 53, 0.18)",
                     bgcolor: "rgba(255, 255, 255, 0.8)",
                     backdropFilter: "blur(8px)",
                     "&:hover": {
-                      bgcolor: "#FAF8F5",
-                      borderColor: "rgba(24, 24, 27, 0.35)",
+                      bgcolor: "#F7F7F2",
+                      borderColor: "rgba(24, 61, 53, 0.35)",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -592,8 +592,8 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 p: 2.5,
                 borderRadius: "20px",
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
                 textAlign: "left",
               }}
             >
@@ -605,7 +605,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               ].map((item, idx) => (
                 <Grid size={{ xs: 12, sm: 6, md: 3 }} key={idx}>
                   <Box sx={{ p: 1.5 }}>
-                    <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#183D35", mb: 0.5 }}>
                       {item.title}
                     </Typography>
                     <Typography sx={{ fontSize: "0.825rem", color: "#52525B", lineHeight: 1.5 }}>
@@ -631,8 +631,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -642,7 +642,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 BEYOND THE DIGITAL BROCHURE
@@ -654,7 +654,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -679,17 +679,17 @@ export default function BusinessWebsiteDevelopmentPage() {
                   sx={{
                     p: { xs: 3.5, sm: 4 },
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.06)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.06)",
                     },
                   }}
                 >
@@ -700,7 +700,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                         height: 48,
                         borderRadius: "12px",
                         bgcolor: "#FFFFFF",
-                        border: "1px solid rgba(249, 115, 22, 0.2)",
+                        border: "1px solid rgba(61, 118, 93, 0.2)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -714,7 +714,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                       sx={{
                         fontSize: "1.25rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.02em",
                         mb: 1.5,
                       }}
@@ -737,9 +737,9 @@ export default function BusinessWebsiteDevelopmentPage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -752,8 +752,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -763,7 +763,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 SOLUTIONS & SCOPE
@@ -775,7 +775,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -800,16 +800,16 @@ export default function BusinessWebsiteDevelopmentPage() {
                     p: { xs: 3.5, sm: 4 },
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.06)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.06)",
                     },
                   }}
                 >
@@ -820,8 +820,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                           width: 48,
                           height: 48,
                           borderRadius: "12px",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
-                          border: "1px solid rgba(249, 115, 22, 0.2)",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
+                          border: "1px solid rgba(61, 118, 93, 0.2)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -834,9 +834,9 @@ export default function BusinessWebsiteDevelopmentPage() {
                           fontSize: "0.75rem",
                           fontWeight: 700,
                           letterSpacing: "0.08em",
-                          color: "#EA580C",
+                          color: "#3D765D",
                           textTransform: "uppercase",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
                           px: 1.5,
                           py: 0.5,
                           borderRadius: "9999px",
@@ -851,7 +851,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                       sx={{
                         fontSize: "1.28rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.02em",
                         mb: 1.5,
                       }}
@@ -882,8 +882,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -893,7 +893,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     fontWeight: 700,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                   }}
                 >
                   CUSTOM ARCHITECTURE
@@ -905,7 +905,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                 sx={{
                   fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.18, md: 1.2 },
                   textWrap: "balance",
@@ -932,16 +932,16 @@ export default function BusinessWebsiteDevelopmentPage() {
                   variant="outlined"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     px: 3.5,
                     py: 1.4,
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: "0.92rem",
-                    border: "1px solid rgba(24, 24, 27, 0.2)",
+                    border: "1px solid rgba(24, 61, 53, 0.2)",
                     "&:hover": {
-                      borderColor: "#EA580C",
-                      bgcolor: "rgba(234, 88, 12, 0.04)",
+                      borderColor: "#3D765D",
+                      bgcolor: "rgba(61, 118, 93, 0.04)",
                     },
                   }}
                 >
@@ -958,8 +958,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                       sx={{
                         p: 3.5,
                         borderRadius: "20px",
-                        bgcolor: "#FAF8F5",
-                        border: "1px solid rgba(228, 228, 231, 0.9)",
+                        bgcolor: "#F7F7F2",
+                        border: "1px solid rgba(216, 229, 213, 0.9)",
                         height: "100%",
                       }}
                     >
@@ -967,7 +967,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                         sx={{
                           fontSize: "1.1rem",
                           fontWeight: 800,
-                          color: "#EA580C",
+                          color: "#3D765D",
                           fontFamily: "monospace",
                           mb: 1.5,
                         }}
@@ -979,7 +979,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                         sx={{
                           fontSize: "1.2rem",
                           fontWeight: 700,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.02em",
                           mb: 1.2,
                         }}
@@ -1003,9 +1003,9 @@ export default function BusinessWebsiteDevelopmentPage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1018,8 +1018,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1029,7 +1029,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 THE BUYER CONVERSION JOURNEY
@@ -1041,7 +1041,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1066,7 +1066,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     p: 3.5,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -1079,7 +1079,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                         sx={{
                           fontSize: "1.1rem",
                           fontWeight: 800,
-                          color: "#EA580C",
+                          color: "#3D765D",
                           fontFamily: "monospace",
                         }}
                       >
@@ -1090,7 +1090,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                           fontSize: "0.72rem",
                           fontWeight: 700,
                           color: "#52525B",
-                          bgcolor: "rgba(24, 24, 27, 0.05)",
+                          bgcolor: "rgba(24, 61, 53, 0.05)",
                           px: 1.4,
                           py: 0.4,
                           borderRadius: "9999px",
@@ -1107,7 +1107,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                       sx={{
                         fontSize: "1.2rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.02em",
                         mb: 1.2,
                       }}
@@ -1137,8 +1137,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1148,7 +1148,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 OPERATIONAL INTEGRATIONS
@@ -1160,7 +1160,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1184,8 +1184,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                   sx={{
                     p: 3.5,
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
@@ -1194,7 +1194,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     sx={{
                       fontSize: "1.2rem",
                       fontWeight: 700,
-                      color: "#18181B",
+                      color: "#183D35",
                       letterSpacing: "-0.02em",
                       mb: 1.2,
                     }}
@@ -1215,8 +1215,8 @@ export default function BusinessWebsiteDevelopmentPage() {
               mt: 5,
               p: 3.5,
               borderRadius: "20px",
-              bgcolor: "rgba(249, 115, 22, 0.04)",
-              border: "1px solid rgba(249, 115, 22, 0.2)",
+              bgcolor: "rgba(61, 118, 93, 0.04)",
+              border: "1px solid rgba(61, 118, 93, 0.2)",
               display: "flex",
               flexDirection: { xs: "column", sm: "row" },
               alignItems: { xs: "flex-start", sm: "center" },
@@ -1225,7 +1225,7 @@ export default function BusinessWebsiteDevelopmentPage() {
             }}
           >
             <Box>
-              <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+              <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#183D35", mb: 0.5 }}>
                 Need multi-channel lead routing or custom customer portals?
               </Typography>
               <Typography sx={{ fontSize: "0.9rem", color: "#52525B" }}>
@@ -1237,8 +1237,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 variant="outlined"
                 endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                 sx={{
-                  color: "#EA580C",
-                  borderColor: "rgba(234, 88, 12, 0.3)",
+                  color: "#3D765D",
+                  borderColor: "rgba(61, 118, 93, 0.3)",
                   borderRadius: "9999px",
                   fontWeight: 600,
                   fontSize: "0.875rem",
@@ -1246,8 +1246,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                   py: 1,
                   whiteSpace: "nowrap",
                   "&:hover": {
-                    borderColor: "#EA580C",
-                    bgcolor: "rgba(234, 88, 12, 0.08)",
+                    borderColor: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.08)",
                   },
                 }}
               >
@@ -1263,9 +1263,9 @@ export default function BusinessWebsiteDevelopmentPage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1278,8 +1278,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1289,7 +1289,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 ENGINEERING FOUNDATION
@@ -1301,7 +1301,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1326,7 +1326,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     p: 3.5,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
@@ -1335,8 +1335,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                       width: 44,
                       height: 44,
                       borderRadius: "10px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.2)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -1350,7 +1350,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     sx={{
                       fontSize: "1.18rem",
                       fontWeight: 700,
-                      color: "#18181B",
+                      color: "#183D35",
                       letterSpacing: "-0.02em",
                       mb: 1.2,
                     }}
@@ -1379,8 +1379,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1390,7 +1390,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 DEVELOPMENT METHODOLOGY
@@ -1402,7 +1402,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1425,8 +1425,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                   sx={{
                     p: 3,
                     borderRadius: "16px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -1436,7 +1436,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     sx={{
                       fontSize: "1.25rem",
                       fontWeight: 800,
-                      color: "#EA580C",
+                      color: "#3D765D",
                       fontFamily: "monospace",
                       mb: 1,
                     }}
@@ -1448,7 +1448,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                     sx={{
                       fontSize: "1.15rem",
                       fontWeight: 700,
-                      color: "#18181B",
+                      color: "#183D35",
                       letterSpacing: "-0.02em",
                       mb: 1,
                     }}
@@ -1470,9 +1470,9 @@ export default function BusinessWebsiteDevelopmentPage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1485,8 +1485,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1496,7 +1496,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 GENUINE PROJECT WORK
@@ -1508,7 +1508,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1532,16 +1532,16 @@ export default function BusinessWebsiteDevelopmentPage() {
                     p: 4,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.06)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.06)",
                     },
                   }}
                 >
@@ -1551,8 +1551,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                         sx={{
                           fontSize: "0.75rem",
                           fontWeight: 700,
-                          color: "#EA580C",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
+                          color: "#3D765D",
+                          bgcolor: "rgba(61, 118, 93, 0.08)",
                           px: 1.5,
                           py: 0.5,
                           borderRadius: "9999px",
@@ -1569,7 +1569,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                       sx={{
                         fontSize: "1.3rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.02em",
                         mb: 1,
                       }}
@@ -1603,8 +1603,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                           sx={{
                             fontSize: "0.75rem",
                             color: "#52525B",
-                            bgcolor: "#FAF8F5",
-                            border: "1px solid rgba(228, 228, 231, 0.9)",
+                            bgcolor: "#F7F7F2",
+                            border: "1px solid rgba(216, 229, 213, 0.9)",
                             px: 1.2,
                             py: 0.4,
                             borderRadius: "6px",
@@ -1621,13 +1621,13 @@ export default function BusinessWebsiteDevelopmentPage() {
                         variant="text"
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
                         sx={{
-                          color: "#EA580C",
+                          color: "#3D765D",
                           fontWeight: 700,
                           p: 0,
                           fontSize: "0.875rem",
                           "&:hover": {
                             bgcolor: "transparent",
-                            color: "#C2410C",
+                            color: "#183D35",
                           },
                         }}
                       >
@@ -1654,8 +1654,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1665,7 +1665,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 COMPREHENSIVE DIGITAL CAPABILITIES
@@ -1677,7 +1677,7 @@ export default function BusinessWebsiteDevelopmentPage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1719,8 +1719,8 @@ export default function BusinessWebsiteDevelopmentPage() {
                   sx={{
                     p: 4,
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -1733,7 +1733,7 @@ export default function BusinessWebsiteDevelopmentPage() {
                       sx={{
                         fontSize: "1.25rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.02em",
                         mb: 1.5,
                       }}
@@ -1750,13 +1750,13 @@ export default function BusinessWebsiteDevelopmentPage() {
                       variant="text"
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
                       sx={{
-                        color: "#EA580C",
+                        color: "#3D765D",
                         fontWeight: 700,
                         p: 0,
                         fontSize: "0.875rem",
                         "&:hover": {
                           bgcolor: "transparent",
-                          color: "#C2410C",
+                          color: "#183D35",
                         },
                       }}
                     >

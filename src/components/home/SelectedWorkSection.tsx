@@ -11,9 +11,9 @@ export default function SelectedWorkSection() {
       id="selected-work"
       component="section"
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -22,7 +22,7 @@ export default function SelectedWorkSection() {
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.14em",
               display: "block",
@@ -44,7 +44,7 @@ export default function SelectedWorkSection() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.75rem", md: "3.4rem" },
                 fontWeight: 800,
                 letterSpacing: "-0.03em",
@@ -53,7 +53,7 @@ export default function SelectedWorkSection() {
             >
               Real Projects.{" "}
               <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box component="span" sx={{ color: "#3D765D" }}>
                 Measurable Impact.
               </Box>
             </Typography>
@@ -64,14 +64,14 @@ export default function SelectedWorkSection() {
               variant="outlined"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                borderColor: "rgba(17, 18, 21, 0.2)",
-                color: "#0E172A",
+                borderColor: "rgba(24, 61, 53, 0.2)",
+                color: "#183D35",
                 px: 3,
                 py: 1.2,
                 fontWeight: 600,
                 "&:hover": {
-                  borderColor: "#0E172A",
-                  bgcolor: "rgba(14, 23, 42, 0.04)",
+                  borderColor: "#183D35",
+                  bgcolor: "rgba(24, 61, 53, 0.04)",
                 },
               }}
             >
@@ -89,19 +89,19 @@ export default function SelectedWorkSection() {
             textDecoration: "none",
             bgcolor: "#FFFFFF",
             borderRadius: "12px",
-            border: "1px solid rgba(17, 18, 21, 0.08)",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             overflow: "hidden",
             mb: { xs: 6, md: 8 },
             transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
             "&:hover": {
               transform: "translateY(-4px)",
-              boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+              boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
               "& .project-img": {
                 transform: "scale(1.03)",
               },
               "& .cta-arrow": {
                 transform: "translateX(6px)",
-                color: "#0E7490",
+                color: "#3D765D",
               },
             },
           }}
@@ -133,7 +133,7 @@ export default function SelectedWorkSection() {
                     position: "absolute",
                     inset: 0,
                     background:
-                      "linear-gradient(180deg, rgba(14, 23, 42, 0.04) 0%, rgba(14, 23, 42, 0.3) 100%)",
+                      "linear-gradient(180deg, rgba(24, 61, 53, 0.04) 0%, rgba(24, 61, 53, 0.3) 100%)",
                   }}
                 />
               </Box>
@@ -145,7 +145,7 @@ export default function SelectedWorkSection() {
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 700,
                       letterSpacing: "0.1em",
                       fontSize: "0.75rem",
@@ -158,7 +158,7 @@ export default function SelectedWorkSection() {
                 <Typography
                   variant="h3"
                   sx={{
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontSize: { xs: "1.6rem", md: "2.1rem" },
                     fontWeight: 800,
                     letterSpacing: "-0.02em",
@@ -201,7 +201,7 @@ export default function SelectedWorkSection() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 1.2,
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontWeight: 700,
                     fontSize: "0.95rem",
                   }}
@@ -231,18 +231,18 @@ export default function SelectedWorkSection() {
                 textDecoration: "none",
                 bgcolor: "#FFFFFF",
                 borderRadius: "12px",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 overflow: "hidden",
                 transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
                 "&:hover": {
                   transform: "translateY(-4px)",
-                  boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+                  boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
                   "& .p2-img": {
                     transform: "scale(1.03)",
                   },
                   "& .p2-arrow": {
                     transform: "translateX(6px)",
-                    color: "#0E7490",
+                    color: "#3D765D",
                   },
                 },
               }}
@@ -273,7 +273,7 @@ export default function SelectedWorkSection() {
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 700,
                       letterSpacing: "0.1em",
                       fontSize: "0.75rem",
@@ -287,7 +287,7 @@ export default function SelectedWorkSection() {
                   <Typography
                     variant="h4"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: { xs: "1.4rem", md: "1.65rem" },
                       fontWeight: 800,
                       letterSpacing: "-0.02em",
@@ -331,7 +331,7 @@ export default function SelectedWorkSection() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 1,
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontWeight: 700,
                     fontSize: "0.9rem",
                   }}
@@ -355,18 +355,18 @@ export default function SelectedWorkSection() {
                 textDecoration: "none",
                 bgcolor: "#FFFFFF",
                 borderRadius: "12px",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 overflow: "hidden",
                 transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
                 "&:hover": {
                   transform: "translateY(-4px)",
-                  boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+                  boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
                   "& .p3-img": {
                     transform: "scale(1.03)",
                   },
                   "& .p3-arrow": {
                     transform: "translateX(6px)",
-                    color: "#0E7490",
+                    color: "#3D765D",
                   },
                 },
               }}
@@ -397,7 +397,7 @@ export default function SelectedWorkSection() {
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 700,
                       letterSpacing: "0.1em",
                       fontSize: "0.75rem",
@@ -411,7 +411,7 @@ export default function SelectedWorkSection() {
                   <Typography
                     variant="h4"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: { xs: "1.4rem", md: "1.65rem" },
                       fontWeight: 800,
                       letterSpacing: "-0.02em",
@@ -455,7 +455,7 @@ export default function SelectedWorkSection() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 1,
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontWeight: 700,
                     fontSize: "0.9rem",
                   }}
@@ -475,18 +475,18 @@ export default function SelectedWorkSection() {
           sx={{
             display: "block",
             textDecoration: "none",
-            bgcolor: "#F2F0EB",
+            bgcolor: "#F7F7F2",
             borderRadius: "12px",
-            border: "1px solid rgba(17, 18, 21, 0.08)",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             p: { xs: 4, sm: 5, md: 7 },
             transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
             "&:hover": {
               transform: "translateY(-4px)",
-              boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+              boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
               bgcolor: "#FFFFFF",
               "& .p4-arrow": {
                 transform: "translateX(6px)",
-                color: "#0E7490",
+                color: "#3D765D",
               },
             },
           }}
@@ -496,7 +496,7 @@ export default function SelectedWorkSection() {
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   fontSize: "0.75rem",
@@ -510,7 +510,7 @@ export default function SelectedWorkSection() {
               <Typography
                 variant="h3"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
                   fontWeight: 800,
                   letterSpacing: "-0.02em",
@@ -540,7 +540,7 @@ export default function SelectedWorkSection() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 1.2,
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 700,
                   fontSize: "0.95rem",
                 }}
@@ -563,10 +563,10 @@ export default function SelectedWorkSection() {
                     bgcolor: "#FFFFFF",
                     p: 3,
                     borderRadius: "8px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                   }}
                 >
-                  <Typography sx={{ color: "#0E7490", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
+                  <Typography sx={{ color: "#3D765D", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
                     500K+
                   </Typography>
                   <Typography sx={{ color: "#5E6068", fontSize: "0.85rem", fontWeight: 600, mt: 1 }}>
@@ -579,10 +579,10 @@ export default function SelectedWorkSection() {
                     bgcolor: "#FFFFFF",
                     p: 3,
                     borderRadius: "8px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                   }}
                 >
-                  <Typography sx={{ color: "#0E7490", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
+                  <Typography sx={{ color: "#3D765D", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
                     +18%
                   </Typography>
                   <Typography sx={{ color: "#5E6068", fontSize: "0.85rem", fontWeight: 600, mt: 1 }}>
@@ -595,10 +595,10 @@ export default function SelectedWorkSection() {
                     bgcolor: "#FFFFFF",
                     p: 3,
                     borderRadius: "8px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                   }}
                 >
-                  <Typography sx={{ color: "#0E7490", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
+                  <Typography sx={{ color: "#3D765D", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
                     150K+
                   </Typography>
                   <Typography sx={{ color: "#5E6068", fontSize: "0.85rem", fontWeight: 600, mt: 1 }}>
@@ -611,10 +611,10 @@ export default function SelectedWorkSection() {
                     bgcolor: "#FFFFFF",
                     p: 3,
                     borderRadius: "8px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                   }}
                 >
-                  <Typography sx={{ color: "#0E7490", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
+                  <Typography sx={{ color: "#3D765D", fontWeight: 800, fontSize: "1.8rem", lineHeight: 1 }}>
                     0%
                   </Typography>
                   <Typography sx={{ color: "#5E6068", fontSize: "0.85rem", fontWeight: 600, mt: 1 }}>

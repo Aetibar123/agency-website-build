@@ -22,13 +22,13 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
       : allProjects[0];
 
   return (
-    <Box sx={{ bgcolor: "#FAF9F5", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", minHeight: "100vh" }}>
       {/* Editorial Hero Header */}
       <Box
         sx={{
           pt: { xs: 16, md: 22 },
           pb: { xs: 8, md: 12 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -38,7 +38,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               <Link href="/portfolio" style={{ textDecoration: "none" }}>
                 <Typography
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 700,
                     fontSize: "0.85rem",
                     display: "flex",
@@ -51,7 +51,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   Work
                 </Typography>
               </Link>
-              <Typography sx={{ color: "rgba(17, 18, 21, 0.25)", fontSize: "0.85rem" }}>
+              <Typography sx={{ color: "rgba(24, 61, 53, 0.25)", fontSize: "0.85rem" }}>
                 /
               </Typography>
               <Typography
@@ -74,8 +74,8 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 px: 1.8,
                 py: 0.6,
                 borderRadius: "4px",
-                bgcolor: "rgba(14, 116, 144, 0.08)",
-                border: "1px solid rgba(14, 116, 144, 0.18)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.18)",
               }}
             >
               <Box
@@ -83,13 +83,13 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   width: 6,
                   height: 6,
                   borderRadius: "50%",
-                  bgcolor: "#0E7490",
+                  bgcolor: "#3D765D",
                 }}
               />
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.14em",
                   fontSize: "0.78rem",
@@ -102,7 +102,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
             <Typography
               variant="h1"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
                 letterSpacing: "-0.03em",
@@ -119,7 +119,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
             <Typography
               variant="subtitle1"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 fontSize: { xs: "1rem", md: "1.15rem" },
                 mb: 3,
@@ -148,7 +148,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 p: { xs: 2.5, md: 3 },
                 borderRadius: "10px",
                 bgcolor: "#FFFFFF",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 display: "grid",
                 gridTemplateColumns: {
                   xs: "repeat(2, 1fr)",
@@ -171,7 +171,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 >
                   CLIENT SECTOR
                 </Typography>
-                <Typography sx={{ color: "#0E172A", fontWeight: 700, fontSize: "0.95rem" }}>
+                <Typography sx={{ color: "#183D35", fontWeight: 700, fontSize: "0.95rem" }}>
                   {project.client}
                 </Typography>
               </Box>
@@ -190,7 +190,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 >
                   DELIVERY TIMELINE
                 </Typography>
-                <Typography sx={{ color: "#0E172A", fontWeight: 700, fontSize: "0.95rem" }}>
+                <Typography sx={{ color: "#183D35", fontWeight: 700, fontSize: "0.95rem" }}>
                   {project.timeline || "8-12 Weeks"}
                 </Typography>
               </Box>
@@ -228,7 +228,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 >
                   CORE ARCHITECTURE
                 </Typography>
-                <Typography sx={{ color: "#0E7490", fontWeight: 700, fontSize: "0.95rem" }}>
+                <Typography sx={{ color: "#3D765D", fontWeight: 700, fontSize: "0.95rem" }}>
                   {project.techStack?.[0] || project.category}
                 </Typography>
               </Box>
@@ -247,8 +247,8 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               width: "100%",
               borderRadius: "12px",
               overflow: "hidden",
-              border: "1px solid rgba(17, 18, 21, 0.08)",
-              boxShadow: "0 20px 40px rgba(17, 18, 21, 0.04)",
+              border: "1px solid rgba(24, 61, 53, 0.08)",
+              boxShadow: "0 20px 40px rgba(24, 61, 53, 0.04)",
             }}
           >
             <Image
@@ -272,7 +272,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -284,7 +284,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               <Typography
                 variant="h2"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 600,
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
@@ -311,14 +311,14 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               ))}
             </Box>
 
-            <Divider sx={{ my: 6, borderColor: "rgba(17, 18, 21, 0.08)" }} />
+            <Divider sx={{ my: 6, borderColor: "rgba(24, 61, 53, 0.08)" }} />
 
             {/* Phase 02: Strategic Approach */}
             <Box sx={{ mb: 8 }}>
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -330,7 +330,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               <Typography
                 variant="h2"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 600,
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
@@ -344,13 +344,13 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               <Box
                 sx={{
                   pl: 3,
-                  borderLeft: "3px solid #0E7490",
+                  borderLeft: "3px solid #3D765D",
                   mb: 3.5,
                 }}
               >
                 <Typography
                   sx={{
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontSize: { xs: "1.05rem", md: "1.15rem" },
                     fontStyle: "italic",
                     fontWeight: 500,
@@ -376,14 +376,14 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               ))}
             </Box>
 
-            <Divider sx={{ my: 6, borderColor: "rgba(17, 18, 21, 0.08)" }} />
+            <Divider sx={{ my: 6, borderColor: "rgba(24, 61, 53, 0.08)" }} />
 
             {/* Phase 03: Solution & Impact */}
             <Box sx={{ mb: 6 }}>
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   display: "block",
@@ -395,7 +395,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               <Typography
                 variant="h2"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 600,
                   mb: 3,
                   fontSize: { xs: "1.6rem", md: "2.2rem" },
@@ -429,17 +429,17 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
               {/* Project Results Card */}
               <Box
                 sx={{
-                  bgcolor: "#F2F0EB",
+                  bgcolor: "#F7F7F2",
                   borderRadius: "12px",
                   p: { xs: 4, sm: 5 },
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   mb: 4,
                 }}
               >
                 <Typography
                   variant="caption"
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 700,
                     letterSpacing: "0.1em",
                     display: "block",
@@ -452,7 +452,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   variant="h3"
                   sx={{
                     fontWeight: 600,
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontSize: { xs: "1.5rem", md: "1.85rem" },
                     letterSpacing: "-0.02em",
                     mb: 3.5,
@@ -469,14 +469,14 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                         display: "flex",
                         alignItems: "flex-start",
                         gap: 1.5,
-                        bgcolor: "#FAF9F5",
+                        bgcolor: "#F7F7F2",
                         p: 2.5,
                         borderRadius: "8px",
-                        border: "1px solid rgba(17, 18, 21, 0.06)",
+                        border: "1px solid rgba(24, 61, 53, 0.06)",
                       }}
                     >
                       <CheckCircleIcon
-                        sx={{ color: "#0E7490", mt: 0.2, fontSize: 20 }}
+                        sx={{ color: "#3D765D", mt: 0.2, fontSize: 20 }}
                       />
                       <Typography
                         variant="body1"
@@ -484,7 +484,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                           fontSize: "0.95rem",
                           fontWeight: 600,
                           lineHeight: 1.6,
-                          color: "#111215",
+                          color: "#183D35",
                         }}
                       >
                         {result}
@@ -500,7 +500,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   p: { xs: 3.5, sm: 4 },
                   bgcolor: "#FFFFFF",
                   borderRadius: "10px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   textAlign: "center",
                 }}
               >
@@ -508,7 +508,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   variant="h5"
                   sx={{
                     fontWeight: 600,
-                    color: "#0E172A",
+                    color: "#183D35",
                     mb: 1.5,
                     fontSize: "1.2rem",
                   }}
@@ -535,7 +535,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                     gap: 1,
                     px: 3.5,
                     py: 1.3,
-                    bgcolor: "#0E172A",
+                    bgcolor: "#183D35",
                     color: "#FFFFFF",
                     borderRadius: "6px",
                     fontWeight: 600,
@@ -560,10 +560,10 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
       {/* 4. PREVIOUS / NEXT CASE STUDY NAVIGATOR */}
       <Box
         sx={{
-          bgcolor: "#F2F0EB",
+          bgcolor: "#F7F7F2",
           py: { xs: 8, md: 10 },
-          borderTop: "1px solid rgba(17, 18, 21, 0.08)",
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderTop: "1px solid rgba(24, 61, 53, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -571,7 +571,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 textTransform: "uppercase",
@@ -583,10 +583,10 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
             <Link href="/portfolio" style={{ textDecoration: "none" }}>
               <Typography
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 700,
                   fontSize: "0.88rem",
-                  "&:hover": { color: "#0E7490" },
+                  "&:hover": { color: "#3D765D" },
                 }}
               >
                 View All Work &rarr;
@@ -602,25 +602,25 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 href={`/portfolio/${prevProject.slug}`}
                 sx={{
                   p: { xs: 3, sm: 4 },
-                  bgcolor: "#FAF9F5",
+                  bgcolor: "#F7F7F2",
                   borderRadius: "10px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   display: "block",
                   textDecoration: "none",
                   transition: "all 0.25s ease",
                   "&:hover": {
-                    borderColor: "#0E7490",
+                    borderColor: "#3D765D",
                     transform: "translateY(-3px)",
-                    boxShadow: "0 12px 24px rgba(17, 18, 21, 0.04)",
+                    boxShadow: "0 12px 24px rgba(24, 61, 53, 0.04)",
                   },
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-                  <ArrowBackIcon sx={{ color: "#0E7490", fontSize: 16 }} />
+                  <ArrowBackIcon sx={{ color: "#3D765D", fontSize: 16 }} />
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 700,
                       fontFamily: "monospace",
                       fontSize: "0.75rem",
@@ -632,7 +632,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 <Typography
                   variant="h5"
                   sx={{
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontWeight: 600,
                     fontSize: { xs: "1.15rem", md: "1.3rem" },
                     lineHeight: 1.25,
@@ -660,17 +660,17 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                 href={`/portfolio/${nextProject.slug}`}
                 sx={{
                   p: { xs: 3, sm: 4 },
-                  bgcolor: "#FAF9F5",
+                  bgcolor: "#F7F7F2",
                   borderRadius: "10px",
-                  border: "1px solid rgba(17, 18, 21, 0.08)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   display: "block",
                   textDecoration: "none",
                   textAlign: { md: "right" },
                   transition: "all 0.25s ease",
                   "&:hover": {
-                    borderColor: "#0E7490",
+                    borderColor: "#3D765D",
                     transform: "translateY(-3px)",
-                    boxShadow: "0 12px 24px rgba(17, 18, 21, 0.04)",
+                    boxShadow: "0 12px 24px rgba(24, 61, 53, 0.04)",
                   },
                 }}
               >
@@ -686,7 +686,7 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontWeight: 700,
                       fontFamily: "monospace",
                       fontSize: "0.75rem",
@@ -694,12 +694,12 @@ export default function PortfolioDetailClient({ project }: { project: PortfolioP
                   >
                     NEXT CASE STUDY
                   </Typography>
-                  <ArrowForwardIcon sx={{ color: "#0E7490", fontSize: 16 }} />
+                  <ArrowForwardIcon sx={{ color: "#3D765D", fontSize: 16 }} />
                 </Box>
                 <Typography
                   variant="h5"
                   sx={{
-                    color: "#0E172A",
+                    color: "#183D35",
                     fontWeight: 600,
                     fontSize: { xs: "1.15rem", md: "1.3rem" },
                     lineHeight: 1.25,

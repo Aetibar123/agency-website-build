@@ -46,7 +46,7 @@ export default function SolutionsCta({
           width: { xs: "100%", md: "900px" },
           height: "450px",
           background:
-            "radial-gradient(ellipse, rgba(234, 88, 12, 0.18) 0%, rgba(249, 115, 22, 0.05) 50%, transparent 75%)",
+            "radial-gradient(ellipse, rgba(61, 118, 93, 0.18) 0%, rgba(61, 118, 93, 0.05) 50%, transparent 75%)",
           filter: "blur(60px)",
           pointerEvents: "none",
           zIndex: 0,
@@ -76,8 +76,8 @@ export default function SolutionsCta({
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           sx={{
             borderRadius: { xs: "24px", md: "32px" },
-            background: "linear-gradient(145deg, rgba(24, 24, 27, 0.9) 0%, rgba(17, 18, 24, 0.95) 100%)",
-            border: "1px solid rgba(249, 115, 22, 0.28)",
+            background: "linear-gradient(145deg, rgba(24, 61, 53, 0.9) 0%, rgba(17, 18, 24, 0.95) 100%)",
+            border: "1px solid rgba(61, 118, 93, 0.28)",
             boxShadow: "0 30px 80px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.04)",
             p: { xs: 4, sm: 6, md: 8 },
             textAlign: "center",
@@ -92,17 +92,17 @@ export default function SolutionsCta({
               px: 2,
               py: 0.6,
               borderRadius: "9999px",
-              bgcolor: "rgba(234, 88, 12, 0.12)",
-              border: "1px solid rgba(234, 88, 12, 0.3)",
+              bgcolor: "rgba(61, 118, 93, 0.12)",
+              border: "1px solid rgba(61, 118, 93, 0.3)",
               mb: 3,
             }}
           >
-            <BoltOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+            <BoltOutlinedIcon sx={{ fontSize: 16, color: "#62A486" }} />
             <Typography
               sx={{
                 fontSize: "0.75rem",
                 fontWeight: 700,
-                color: "#FB923C",
+                color: "#62A486",
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
               }}
@@ -160,18 +160,18 @@ export default function SolutionsCta({
                 size="large"
                 endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                   color: "#FFFFFF",
                   px: { xs: 3.5, sm: 4.5 },
                   py: { xs: 1.5, sm: 1.75 },
                   fontSize: "0.95rem",
                   fontWeight: 700,
                   borderRadius: "9999px",
-                  boxShadow: "0 10px 28px rgba(234, 88, 12, 0.4)",
+                  boxShadow: "0 10px 28px rgba(61, 118, 93, 0.4)",
                   transition: "all 0.25s ease",
                   "&:hover": {
-                    background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                    boxShadow: "0 16px 36px rgba(234, 88, 12, 0.55)",
+                    background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                    boxShadow: "0 16px 36px rgba(61, 118, 93, 0.55)",
                     transform: "translateY(-2px)",
                   },
                 }}
@@ -196,9 +196,9 @@ export default function SolutionsCta({
                   backdropFilter: "blur(10px)",
                   transition: "all 0.25s ease",
                   "&:hover": {
-                    borderColor: "#FB923C",
-                    color: "#FB923C",
-                    bgcolor: "rgba(234, 88, 12, 0.1)",
+                    borderColor: "#62A486",
+                    color: "#62A486",
+                    bgcolor: "rgba(61, 118, 93, 0.1)",
                     transform: "translateY(-2px)",
                   },
                 }}
@@ -226,7 +226,7 @@ export default function SolutionsCta({
             ].map((text, idx) => (
               <Grid size={{ xs: 12, sm: 4 }} key={idx}>
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1 }}>
-                  <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
+                  <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
                   <Typography sx={{ fontSize: "0.825rem", color: "#D4D4D8", fontWeight: 500 }}>
                     {text}
                   </Typography>

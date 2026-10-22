@@ -31,9 +31,9 @@ export default function IntroductionSection() {
       id="trust-intro"
       component="section"
       sx={{
-        bgcolor: "#FAF9F5",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -43,7 +43,7 @@ export default function IntroductionSection() {
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -56,7 +56,7 @@ export default function IntroductionSection() {
             <Typography
               variant="h2"
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "2rem", sm: "2.75rem", md: "3.4rem" },
                 fontWeight: 800,
                 lineHeight: { xs: 1.15, md: 1.12 },
@@ -66,7 +66,7 @@ export default function IntroductionSection() {
             >
               Digital products should do more than look good.{" "}
               <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-              <Box component="span" sx={{ color: "#0E7490" }}>
+              <Box component="span" sx={{ color: "#3D765D" }}>
                 They should create lasting advantage.
               </Box>
             </Typography>
@@ -79,7 +79,7 @@ export default function IntroductionSection() {
                 color: "#4A4D57",
                 fontSize: { xs: "1.05rem", md: "1.125rem" },
                 lineHeight: 1.8,
-                borderLeft: "2px solid #0E7490",
+                borderLeft: "2px solid #3D765D",
                 pl: 3,
               }}
             >
@@ -98,7 +98,7 @@ export default function IntroductionSection() {
             gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr", lg: "repeat(4, 1fr)" },
             gap: { xs: 5, md: 6 },
             pt: { xs: 5, md: 7 },
-            borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+            borderTop: "1px solid rgba(24, 61, 53, 0.08)",
           }}
         >
           {pillars.map((pillar) => (
@@ -112,7 +112,7 @@ export default function IntroductionSection() {
             >
               <Typography
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 800,
                   fontSize: "0.85rem",
                   letterSpacing: "0.1em",
@@ -123,7 +123,7 @@ export default function IntroductionSection() {
               <Typography
                 variant="h5"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 700,
                   fontSize: { xs: "1.18rem", md: "1.25rem" },
                   lineHeight: 1.3,

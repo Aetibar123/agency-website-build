@@ -19,19 +19,19 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
         bgcolor: "#FFFFFF",
         borderRadius: "12px",
         overflow: "hidden",
-        border: "1px solid rgba(17, 18, 21, 0.08)",
+        border: "1px solid rgba(24, 61, 53, 0.08)",
         transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
         cursor: "pointer",
         "&:hover": {
           transform: "translateY(-5px)",
-          boxShadow: "0 20px 40px rgba(14, 23, 42, 0.08)",
-          borderColor: "rgba(14, 116, 144, 0.4)",
+          boxShadow: "0 20px 40px rgba(24, 61, 53, 0.08)",
+          borderColor: "rgba(61, 118, 93, 0.4)",
           "& .card-img": {
             transform: "scale(1.04)",
           },
           "& .card-arrow": {
             transform: "translateX(6px)",
-            color: "#0E7490",
+            color: "#3D765D",
           },
         },
       }}
@@ -72,7 +72,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(180deg, rgba(14, 23, 42, 0.04) 0%, rgba(14, 23, 42, 0.35) 100%)",
+              "linear-gradient(180deg, rgba(24, 61, 53, 0.04) 0%, rgba(24, 61, 53, 0.35) 100%)",
           }}
         />
 
@@ -82,7 +82,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
             position: "absolute",
             top: 14,
             left: 14,
-            bgcolor: "rgba(14, 23, 42, 0.85)",
+            bgcolor: "rgba(24, 61, 53, 0.85)",
             backdropFilter: "blur(8px)",
             px: 1.4,
             py: 0.4,
@@ -115,7 +115,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
               px: 1.4,
               py: 0.4,
               borderRadius: "4px",
-              border: "1px solid rgba(17, 18, 21, 0.1)",
+              border: "1px solid rgba(24, 61, 53, 0.1)",
               display: "flex",
               alignItems: "center",
               gap: 0.8,
@@ -126,7 +126,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
               sx={{
                 fontSize: "0.72rem",
                 fontWeight: 800,
-                color: "#0E172A",
+                color: "#183D35",
                 fontFamily: "monospace",
               }}
             >
@@ -151,7 +151,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
@@ -180,7 +180,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
             variant="h5"
             sx={{
               fontWeight: 600,
-              color: "#0E172A",
+              color: "#183D35",
               mb: 1.5,
               lineHeight: 1.28,
               fontSize: { xs: "1.2rem", md: "1.32rem" },
@@ -215,12 +215,12 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
                   sx={{
                     px: 1.2,
                     py: 0.3,
-                    bgcolor: "#F2F0EB",
+                    bgcolor: "#F7F7F2",
                     borderRadius: "4px",
-                    border: "1px solid rgba(17, 18, 21, 0.06)",
+                    border: "1px solid rgba(24, 61, 53, 0.06)",
                     fontSize: "0.72rem",
                     fontWeight: 600,
-                    color: "#0E172A",
+                    color: "#183D35",
                   }}
                 >
                   {tech}
@@ -248,7 +248,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
         <Box
           sx={{
             pt: 2,
-            borderTop: "1px solid rgba(17, 18, 21, 0.08)",
+            borderTop: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
@@ -256,7 +256,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
         >
           <Typography
             sx={{
-              color: "#0E172A",
+              color: "#183D35",
               fontWeight: 700,
               fontSize: "0.85rem",
               letterSpacing: "-0.01em",
@@ -268,7 +268,7 @@ export default function PortfolioCard({ project }: { project: PortfolioProject }
             className="card-arrow"
             sx={{
               fontSize: 16,
-              color: "#0E172A",
+              color: "#183D35",
               transition: "all 0.25s ease",
             }}
           />

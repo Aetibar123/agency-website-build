@@ -75,7 +75,7 @@ export function buildAnchorTag(href: string, anchorText: string, title?: string)
 
   return `<a href="${escapeHtml(
     normalizedHref
-  )}"${targetAttr}${titleAttr} class="blog-link" style="color: #EA580C; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(234, 88, 12, 0.4); cursor: pointer; transition: all 0.2s ease;">${anchorText}</a>`;
+  )}"${targetAttr}${titleAttr} class="blog-link" style="color: #3D765D; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(61, 118, 93, 0.4); cursor: pointer; transition: all 0.2s ease;">${anchorText}</a>`;
 }
 
 export function stripMarkdown(text: string): string {
@@ -107,7 +107,7 @@ export function parseInlineMarkdown(text: string): string {
   let processed = text.replace(/`([^`]+)`/g, (_, codeContent) => {
     const index = codeTokens.length;
     codeTokens.push(
-      `<code style="background: #F4F4F5; color: #EA580C; padding: 2px 6px; border-radius: 6px; font-size: 0.88em; font-family: monospace; border: 1px solid rgba(228, 228, 231, 0.6);">${escapeHtml(
+      `<code style="background: #F4F4F5; color: #3D765D; padding: 2px 6px; border-radius: 6px; font-size: 0.88em; font-family: monospace; border: 1px solid rgba(216, 229, 213, 0.6);">${escapeHtml(
         codeContent
       )}</code>`
     );
@@ -133,8 +133,8 @@ export function parseInlineMarkdown(text: string): string {
       const index = linkTokens.length;
       // Allow bold / italic inside anchor text
       const parsedAnchor = anchorText
-        .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #18181B; font-weight: 700;">$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em style="color: #EA580C; font-style: normal; font-weight: 600;">$1</em>');
+        .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #183D35; font-weight: 700;">$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em style="color: #3D765D; font-style: normal; font-weight: 600;">$1</em>');
       linkTokens.push(buildAnchorTag(url, parsedAnchor, title));
       return `@@LINKtok${index}END@@`;
     }
@@ -170,13 +170,13 @@ export function parseInlineMarkdown(text: string): string {
 
   // 7. Bold: **text** or __text__
   processed = processed
-    .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #18181B; font-weight: 700;">$1</strong>')
-    .replace(/__(.*?)__/g, '<strong style="color: #18181B; font-weight: 700;">$1</strong>');
+    .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #183D35; font-weight: 700;">$1</strong>')
+    .replace(/__(.*?)__/g, '<strong style="color: #183D35; font-weight: 700;">$1</strong>');
 
   // 8. Italic: *text* or _text_
   processed = processed
-    .replace(/\*([^*]+)\*/g, '<em style="color: #EA580C; font-style: normal; font-weight: 600;">$1</em>')
-    .replace(/\b_([^_]+)_\b/g, '<em style="color: #EA580C; font-style: normal; font-weight: 600;">$1</em>');
+    .replace(/\*([^*]+)\*/g, '<em style="color: #3D765D; font-style: normal; font-weight: 600;">$1</em>')
+    .replace(/\b_([^_]+)_\b/g, '<em style="color: #3D765D; font-style: normal; font-weight: 600;">$1</em>');
 
   // 9. Strikethrough: ~~text~~
   processed = processed.replace(/~~(.*?)~~/g, '<del style="color: #71717A;">$1</del>');
@@ -214,7 +214,7 @@ export function renderBlogContent(content: string): React.ReactNode {
             key={`code-${i}`}
             component="pre"
             sx={{
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
               color: "#F4F4F5",
               p: { xs: 2.5, sm: 3 },
               borderRadius: "14px",
@@ -265,12 +265,13 @@ export function renderBlogContent(content: string): React.ReactNode {
             __html: parseInlineMarkdown(trimmed.replace(/^##\s+/, "")),
           }}
           sx={{
-            color: "#18181B",
-            fontWeight: 700,
+            fontFamily: '"DM Serif Display", serif',
+            color: "#183D35",
+            fontWeight: 400,
             mt: { xs: 5, md: 7 },
             mb: 2.5,
-            fontSize: { xs: "1.55rem", sm: "1.95rem", md: "2.15rem" },
-            letterSpacing: "-0.025em",
+            fontSize: { xs: "1.65rem", sm: "2.05rem", md: "2.3rem" },
+            letterSpacing: "-0.02em",
             lineHeight: 1.25,
             textWrap: "balance",
           }}
@@ -288,11 +289,12 @@ export function renderBlogContent(content: string): React.ReactNode {
             __html: parseInlineMarkdown(trimmed.replace(/^###\s+/, "")),
           }}
           sx={{
-            color: "#27272A",
-            fontWeight: 700,
+            fontFamily: '"DM Serif Display", serif',
+            color: "#183D35",
+            fontWeight: 400,
             mt: { xs: 4, md: 5 },
             mb: 2,
-            fontSize: { xs: "1.25rem", sm: "1.45rem", md: "1.55rem" },
+            fontSize: { xs: "1.3rem", sm: "1.5rem", md: "1.65rem" },
             letterSpacing: "-0.015em",
             lineHeight: 1.35,
             textWrap: "balance",
@@ -311,11 +313,12 @@ export function renderBlogContent(content: string): React.ReactNode {
             __html: parseInlineMarkdown(trimmed.replace(/^####\s+/, "")),
           }}
           sx={{
-            color: "#18181B",
-            fontWeight: 600,
+            fontFamily: '"DM Serif Display", serif',
+            color: "#183D35",
+            fontWeight: 400,
             mt: 3.5,
             mb: 1.5,
-            fontSize: "1.15rem",
+            fontSize: "1.2rem",
             letterSpacing: "-0.01em",
           }}
         />
@@ -329,11 +332,11 @@ export function renderBlogContent(content: string): React.ReactNode {
         <Box
           key={`quote-${i}`}
           sx={{
-            borderLeft: "4px solid #EA580C",
+            borderLeft: "4px solid #3D765D",
             pl: { xs: 2.5, sm: 3.5 },
             py: 2,
             my: 4,
-            bgcolor: "rgba(249, 115, 22, 0.05)",
+            bgcolor: "rgba(61, 118, 93, 0.05)",
             borderRadius: "0 14px 14px 0",
           }}
         >
@@ -342,7 +345,7 @@ export function renderBlogContent(content: string): React.ReactNode {
               __html: parseInlineMarkdown(trimmed.replace(/^>\s+/, "")),
             }}
             sx={{
-              color: "#18181B",
+              color: "#183D35",
               fontStyle: "italic",
               fontWeight: 500,
               fontSize: { xs: "1.05rem", md: "1.18rem" },
@@ -359,7 +362,7 @@ export function renderBlogContent(content: string): React.ReactNode {
       nodes.push(
         <Divider
           key={`divider-${i}`}
-          sx={{ my: 4, borderColor: "rgba(228, 228, 231, 0.8)" }}
+          sx={{ my: 4, borderColor: "rgba(216, 229, 213, 0.8)" }}
         />
       );
       continue;
@@ -405,7 +408,7 @@ export function renderBlogContent(content: string): React.ReactNode {
           sx={{ display: "flex", alignItems: "flex-start", gap: 1.5, mb: 1.2, pl: 1 }}
         >
           <Typography
-            sx={{ color: "#EA580C", fontWeight: 700, fontSize: "1.1rem", lineHeight: 1.6 }}
+            sx={{ color: "#3D765D", fontWeight: 700, fontSize: "1.1rem", lineHeight: 1.6 }}
           >
             &bull;
           </Typography>
@@ -436,8 +439,8 @@ export function renderBlogContent(content: string): React.ReactNode {
                 minWidth: 24,
                 height: 24,
                 borderRadius: "50%",
-                bgcolor: "rgba(249, 115, 22, 0.1)",
-                color: "#EA580C",
+                bgcolor: "rgba(61, 118, 93, 0.1)",
+                color: "#3D765D",
                 fontWeight: 700,
                 fontSize: "0.78rem",
                 display: "flex",
@@ -487,7 +490,7 @@ export function renderBlogContent(content: string): React.ReactNode {
         key="code-end"
         component="pre"
         sx={{
-          bgcolor: "#18181B",
+          bgcolor: "#183D35",
           color: "#F4F4F5",
           p: { xs: 2.5, sm: 3 },
           borderRadius: "14px",

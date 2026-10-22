@@ -7,6 +7,7 @@ import InteractiveSprintSimulator from "../../components/how-we-work/Interactive
 import TransparencyGuaranteesSection from "../../components/how-we-work/TransparencyGuaranteesSection";
 import HowWeWorkFaqSection from "../../components/how-we-work/HowWeWorkFaqSection";
 import HowWeWorkCta from "../../components/how-we-work/HowWeWorkCta";
+import HomeScrollProgress from "../../components/home/HomeScrollProgress";
 
 
 export const metadata: Metadata = {
@@ -99,6 +100,7 @@ const howWeWorkSchema = {
 export default function HowWeWorkPage() {
   return (
     <main>
+      <HomeScrollProgress />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

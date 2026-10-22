@@ -12,7 +12,7 @@ export default function HomeCtaSection() {
       component="section"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
       }}
     >
@@ -31,9 +31,9 @@ export default function HomeCtaSection() {
               border: "1px solid rgba(255, 255, 255, 0.12)",
               p: { xs: 2.5, sm: 6, md: 9 },
               background:
-                "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
+                "linear-gradient(145deg, #183D35 0%, #0F0E0E 60%, #201A18 100%)",
               borderRadius: { xs: "24px", md: "36px" },
-              boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
+              boxShadow: "0 30px 80px -20px rgba(24, 61, 53, 0.5)",
               position: "relative",
               overflow: "hidden",
             }}
@@ -49,7 +49,7 @@ export default function HomeCtaSection() {
                 right: "-10%",
                 width: "440px",
                 height: "440px",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.32) 0%, transparent 70%)",
                 filter: "blur(60px)",
                 pointerEvents: "none",
               }}
@@ -86,8 +86,8 @@ export default function HomeCtaSection() {
                     px: 2.2,
                     py: 0.6,
                     borderRadius: "9999px",
-                    bgcolor: "rgba(249, 115, 22, 0.2)",
-                    border: "1px solid rgba(251, 146, 60, 0.4)",
+                    bgcolor: "rgba(61, 118, 93, 0.2)",
+                    border: "1px solid rgba(216, 229, 213, 0.4)",
                     mb: 3.5,
                   }}
                 >
@@ -95,14 +95,14 @@ export default function HomeCtaSection() {
                     component={motion.div}
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                    sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 10px #FB923C" }}
+                    sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#62A486", boxShadow: "0 0 10px #62A486" }}
                   />
                   <Typography
                     sx={{
                       fontSize: "0.8rem",
                       letterSpacing: "0.06em",
                       textTransform: "uppercase",
-                      color: "#FB923C",
+                      color: "#62A486",
                       fontWeight: 700,
                     }}
                   >
@@ -120,11 +120,12 @@ export default function HomeCtaSection() {
                 <Typography
                   variant="h2"
                   sx={{
-                    fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.85rem" },
-                    fontWeight: 700,
+                    fontFamily: '"DM Serif Display", serif',
+                    fontSize: { xs: "1.9rem", sm: "2.35rem", md: "2.8rem", lg: "3.2rem" },
+                    fontWeight: 400,
                     color: "#FFFFFF",
-                    lineHeight: { xs: 1.25, md: 1.2 },
-                    letterSpacing: "-0.03em",
+                    lineHeight: { xs: 1.2, md: 1.15 },
+                    letterSpacing: "-0.025em",
                     maxWidth: { xs: "100%", sm: 800, md: 880 },
                     mx: "auto",
                     textWrap: "balance",
@@ -135,7 +136,9 @@ export default function HomeCtaSection() {
                   <Box
                     component="span"
                     sx={{
-                      background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
+                      display: "inline",
+                      fontStyle: "italic",
+                      background: "linear-gradient(135deg, #4D8F72 0%, #62A486 60%, #D8E5D5 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                     }}
@@ -197,20 +200,20 @@ export default function HomeCtaSection() {
                       fullWidth
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                       sx={{
-                        background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
-                        color: "#18181B",
+                        background: "linear-gradient(135deg, #4D8F72 0%, #62A486 100%)",
+                        color: "#183D35",
                         px: { xs: 3, sm: 4.5 },
                         py: 1.6,
                         fontSize: "0.95rem",
                         fontWeight: 800,
                         borderRadius: "9999px",
-                        boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
+                        boxShadow: "0 10px 25px rgba(61, 118, 93, 0.4)",
                         transition: "all 0.25s ease",
                         width: { xs: "100%", sm: "auto" },
                         "&:hover": {
-                          background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                          background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                           color: "#FFFFFF",
-                          boxShadow: "0 15px 30px rgba(234, 88, 12, 0.5)",
+                          boxShadow: "0 15px 30px rgba(61, 118, 93, 0.5)",
                         },
                       }}
                     >
@@ -242,9 +245,9 @@ export default function HomeCtaSection() {
                         transition: "all 0.25s ease",
                         width: { xs: "100%", sm: "auto" },
                         "&:hover": {
-                          borderColor: "#FB923C",
-                          color: "#FB923C",
-                          bgcolor: "rgba(249, 115, 22, 0.12)",
+                          borderColor: "#62A486",
+                          color: "#62A486",
+                          bgcolor: "rgba(61, 118, 93, 0.12)",
                         },
                       }}
                     >
@@ -274,7 +277,7 @@ export default function HomeCtaSection() {
               >
                 {["Free 30-Minute Business Strategy", "100% Asset & Code Ownership", "Direct WhatsApp Reply Within 24h"].map((badge, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#62A486" }} />
                     <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.82)", fontWeight: 500 }}>
                       {badge}
                     </Typography>

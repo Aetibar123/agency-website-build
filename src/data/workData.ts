@@ -91,7 +91,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Home Services & Property Maintenance",
     industry: "Residential & Commercial Services",
     primaryNeed: "Clear service visibility & structured online enquiry capture",
-    image: "/images/portfolio/b2b.png",
+    image: "/images/portfolio/b2b.png", 
     summary:
       "A clean, professional website for a home cleaning and maintenance business, designed to clearly present service packages, establish trust, and make it easy for customers to request a service online.",
     timeline: "Concept Build",
@@ -1017,7 +1017,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "SEO Services",
-      href: "/services/seo-company-in-udaipur",
+      href: "/services/seo-service-in-udaipur",
       description: "Technical search engine optimization and local search visibility to help customers find your business on Google.",
     },
   },
@@ -1151,7 +1151,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "SEO Services",
-      href: "/services/seo-company-in-udaipur",
+      href: "/services/seo-service-in-udaipur",
       description: "Comprehensive technical audits, on-page optimization, and structured search markup for sustainable organic growth.",
     },
   },
@@ -1285,7 +1285,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Social Media Marketing",
-      href: "/services/social-media-marketing-company-in-udaipur",
+      href: "/services/social-media-marketing-service-in-udaipur",
       description: "Structured content calendars, custom branded graphics, and ongoing management to keep your audience engaged.",
     },
   },
@@ -1419,7 +1419,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Social Media Marketing",
-      href: "/services/social-media-marketing-company-in-udaipur",
+      href: "/services/social-media-marketing-service-in-udaipur",
       description: "Content planning and audience engagement strategies built to turn social attention into genuine business inquiries.",
     },
   },
@@ -1553,7 +1553,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Paid Advertising",
-      href: "/services/paid-advertising-company-in-udaipur",
+      href: "/services/performance-marketing-company-in-udaipur",
       description: "Targeted Google Ads and Meta Ads campaigns managed with conversion tracking and disciplined budget control.",
     },
   },
@@ -1687,7 +1687,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Paid Advertising",
-      href: "/services/paid-advertising-company-in-udaipur",
+      href: "/services/performance-marketing-company-in-udaipur",
       description: "Data-driven advertising campaigns across Google and Meta platforms managed with transparent performance reporting.",
     },
   },

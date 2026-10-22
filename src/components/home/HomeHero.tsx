@@ -24,28 +24,28 @@ const heroMetrics = [
     value: "Clear",
     title: "Clear Project Scope",
     desc: "We agree on the work, deliverables, timeline, and pricing before the project begins, so you know what to expect.",
-    icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
   },
 
   {
     value: "6",
     title: "Services Under One Roof",
     desc: "From websites and mobile apps to SEO, social media, advertising, and AI automation, you can get the right digital support in one place.",
-    icon: <CampaignOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <CampaignOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
   },
 
   {
     value: "Direct",
     title: "Direct Communication",
     desc: "Discuss your requirements, feedback, and progress directly with the people working on your project.",
-    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
   },
 
   {
     value: "Practical",
     title: "Built Around Your Business",
     desc: "We recommend the tools and approach based on what your business actually needs, rather than adding technology for the sake of it.",
-    icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#3D765D" }} />,
   },
 ];
 
@@ -64,9 +64,9 @@ export default function HomeHero() {
         pt: { xs: 16, sm: 18, md: 20 },
         pb: { xs: 10, md: 14 },
         background:
-          "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.08) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+          "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.08) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
         overflow: "hidden",
-        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
       }}
     >
       {/* Ambient subtle warm lighting */}
@@ -80,7 +80,7 @@ export default function HomeHero() {
           right: "-5%",
           width: "500px",
           height: "500px",
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.14) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.14) 0%, transparent 70%)",
           filter: "blur(70px)",
           pointerEvents: "none",
         }}
@@ -95,7 +95,7 @@ export default function HomeHero() {
           left: "-10%",
           width: "460px",
           height: "460px",
-          background: "radial-gradient(circle, rgba(251, 146, 60, 0.12) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(216, 229, 213, 0.12) 0%, transparent 70%)",
           filter: "blur(70px)",
           pointerEvents: "none",
         }}
@@ -131,9 +131,9 @@ export default function HomeHero() {
                 px: { xs: 1.8, sm: 2.2 },
                 py: { xs: 0.6, sm: 0.8 },
                 borderRadius: { xs: "16px", sm: "9999px" },
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 maxWidth: "100%",
                 mb: { xs: 3, md: 3.5 },
@@ -147,8 +147,8 @@ export default function HomeHero() {
                   width: 8,
                   height: 8,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#4D8F72",
+                  boxShadow: "0 0 10px #4D8F72",
                   flexShrink: 0,
                   display: { xs: "none", sm: "block" },
                 }}
@@ -158,7 +158,7 @@ export default function HomeHero() {
                   fontSize: { xs: "0.72rem", sm: "0.825rem" },
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                   lineHeight: 1.35,
                   textAlign: "center",
@@ -178,11 +178,12 @@ export default function HomeHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem", lg: "3.25rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
-                letterSpacing: { xs: "-0.02em", md: "-0.03em" },
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "3.15rem", lg: "3.6rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.2, sm: 1.15, md: 1.12 },
+                letterSpacing: "-0.025em",
                 textWrap: "balance",
                 mb: { xs: 2.5, md: 3 },
               }}
@@ -192,7 +193,8 @@ export default function HomeHero() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  fontStyle: "italic",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -218,7 +220,7 @@ export default function HomeHero() {
                 fontWeight: 400,
               }}
             >
-             Stop losing potential clients to outdated websites, low Google visibility, and inconsistent digital marketing. We build business websites and mobile apps, improve your search presence, manage social media and targeted advertising, and automate repetitive office tasks with AI—helping your business build a stronger online presence and generate more enquiries.
+            We help businesses grow through website and mobile app development, SEO, social media marketing, paid advertising, and AI automation to strengthen online visibility and generate more enquiries.
 
             </Typography>
           </motion.div>
@@ -245,18 +247,18 @@ export default function HomeHero() {
                     variant="contained"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       px: { xs: 3.5, sm: 4.5 },
                       py: { xs: 1.4, sm: 1.6 },
                       fontSize: { xs: "0.95rem", sm: "1rem" },
                       fontWeight: 700,
                       borderRadius: "9999px",
-                      boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.38)",
+                      boxShadow: "0 10px 25px -5px rgba(61, 118, 93, 0.38)",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                        boxShadow: "0 15px 30px -5px rgba(234, 88, 12, 0.5)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                        boxShadow: "0 15px 30px -5px rgba(61, 118, 93, 0.5)",
                       },
                     }}
                   >
@@ -270,8 +272,8 @@ export default function HomeHero() {
                   <Button
                     variant="outlined"
                     sx={{
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.2)",
+                      color: "#183D35",
+                      borderColor: "rgba(24, 61, 53, 0.2)",
                       bgcolor: "rgba(255, 255, 255, 0.8)",
                       backdropFilter: "blur(10px)",
                       px: { xs: 3.5, sm: 4 },
@@ -279,12 +281,12 @@ export default function HomeHero() {
                       fontSize: { xs: "0.95rem", sm: "1rem" },
                       fontWeight: 600,
                       borderRadius: "9999px",
-                      boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+                      boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.04)",
-                        color: "#EA580C",
+                        borderColor: "#3D765D",
+                        bgcolor: "rgba(61, 118, 93, 0.04)",
+                        color: "#3D765D",
                       },
                     }}
                   >
@@ -316,7 +318,7 @@ export default function HomeHero() {
                 "Complete Asset Sovereignty",
               ].map((text, i) => (
                 <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                  <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                   <Typography sx={{ fontSize: "0.85rem", color: "#52525B", fontWeight: 500 }}>
                     {text}
                   </Typography>
@@ -350,7 +352,7 @@ export default function HomeHero() {
                 width: "94%",
                 height: "85%",
                 background:
-                  "radial-gradient(ellipse, rgba(249, 115, 22, 0.18) 0%, rgba(251, 146, 60, 0.08) 50%, transparent 75%)",
+                  "radial-gradient(ellipse, rgba(61, 118, 93, 0.18) 0%, rgba(216, 229, 213, 0.08) 50%, transparent 75%)",
                 filter: "blur(60px)",
                 zIndex: 0,
                 pointerEvents: "none",
@@ -365,14 +367,14 @@ export default function HomeHero() {
                 p: { xs: 1, sm: 1.5 },
                 bgcolor: "#FFFFFF",
                 borderRadius: { xs: "20px", sm: "26px", md: "32px" },
-                border: "1px solid rgba(228, 228, 231, 0.9)",
-                boxShadow: "0 25px 70px -15px rgba(24, 24, 27, 0.1), 0 0 0 1px rgba(24, 24, 27, 0.03)",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
+                boxShadow: "0 25px 70px -15px rgba(24, 61, 53, 0.1), 0 0 0 1px rgba(24, 61, 53, 0.03)",
                 overflow: "hidden",
                 transition: "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease",
                 "&:hover": {
                   transform: "translateY(-4px)",
-                  boxShadow: "0 35px 85px -15px rgba(234, 88, 12, 0.22), 0 0 0 1px rgba(249, 115, 22, 0.25)",
-                  borderColor: "rgba(249, 115, 22, 0.35)",
+                  boxShadow: "0 35px 85px -15px rgba(61, 118, 93, 0.22), 0 0 0 1px rgba(61, 118, 93, 0.25)",
+                  borderColor: "rgba(61, 118, 93, 0.35)",
                 },
               }}
             >
@@ -384,7 +386,7 @@ export default function HomeHero() {
                   height: { xs: 260, sm: 400, md: 520, lg: 580 },
                   borderRadius: { xs: "16px", sm: "22px", md: "26px" },
                   overflow: "hidden",
-                  bgcolor: "#18181B",
+                  bgcolor: "#183D35",
                 }}
               >
                 <Image
@@ -405,7 +407,7 @@ export default function HomeHero() {
                     position: "absolute",
                     inset: 0,
                     background:
-                      "linear-gradient(180deg, rgba(24, 24, 27, 0.05) 0%, rgba(24, 24, 27, 0.35) 100%)",
+                      "linear-gradient(180deg, rgba(24, 61, 53, 0.05) 0%, rgba(24, 61, 53, 0.35) 100%)",
                     pointerEvents: "none",
                   }}
                 />
@@ -438,8 +440,8 @@ export default function HomeHero() {
                       width: 9,
                       height: 9,
                       borderRadius: "50%",
-                      bgcolor: "#F97316",
-                      boxShadow: "0 0 0 3px rgba(249, 115, 22, 0.25)",
+                      bgcolor: "#4D8F72",
+                      boxShadow: "0 0 0 3px rgba(61, 118, 93, 0.25)",
                       flexShrink: 0,
                     }}
                   />
@@ -448,7 +450,7 @@ export default function HomeHero() {
                       sx={{
                         fontSize: { xs: "0.68rem", sm: "0.75rem" },
                         fontWeight: 700,
-                        color: "#EA580C",
+                        color: "#3D765D",
                         letterSpacing: "0.06em",
                         textTransform: "uppercase",
                         lineHeight: 1.2,
@@ -461,7 +463,7 @@ export default function HomeHero() {
                       sx={{
                         fontSize: { xs: "0.78rem", sm: "0.875rem" },
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         lineHeight: 1.3,
                       }}
                     >
@@ -479,7 +481,7 @@ export default function HomeHero() {
                     position: "absolute",
                     bottom: { xs: 14, sm: 20, md: 24 },
                     right: { xs: 14, sm: 20, md: 24 },
-                    bgcolor: "rgba(24, 24, 27, 0.88)",
+                    bgcolor: "rgba(24, 61, 53, 0.88)",
                     backdropFilter: "blur(14px)",
                     borderRadius: "16px",
                     px: { xs: 1.8, sm: 2.4 },
@@ -492,13 +494,13 @@ export default function HomeHero() {
                     color: "#FFFFFF",
                   }}
                 >
-                  <AutoAwesomeOutlinedIcon sx={{ fontSize: 20, color: "#FB923C" }} />
+                  <AutoAwesomeOutlinedIcon sx={{ fontSize: 20, color: "#62A486" }} />
                   <Box>
                     <Typography
                       sx={{
                         fontSize: "0.725rem",
                         fontWeight: 700,
-                        color: "#FB923C",
+                        color: "#62A486",
                         letterSpacing: "0.06em",
                         textTransform: "uppercase",
                         fontFamily: "monospace",
@@ -532,17 +534,17 @@ export default function HomeHero() {
                       p: 2.8,
                       borderRadius: "20px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
-                      boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
+                      boxShadow: "0 2px 8px rgba(24, 61, 53, 0.02)",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
                       transition: "all 0.3s ease",
                       "&:hover": {
-                        borderColor: "rgba(234, 88, 12, 0.4)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
                         transform: "translateY(-3px)",
-                        boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                        boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.12)",
                       },
                     }}
                   >
@@ -552,7 +554,7 @@ export default function HomeHero() {
                           sx={{
                             fontSize: "1.75rem",
                             fontWeight: 800,
-                            color: "#EA580C",
+                            color: "#3D765D",
                             letterSpacing: "-0.03em",
                             fontFamily: "monospace",
                           }}
@@ -564,7 +566,7 @@ export default function HomeHero() {
                             width: 32,
                             height: 32,
                             borderRadius: "8px",
-                            bgcolor: "rgba(249, 115, 22, 0.08)",
+                            bgcolor: "rgba(61, 118, 93, 0.08)",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
@@ -575,9 +577,10 @@ export default function HomeHero() {
                       </Box>
                       <Typography
                         sx={{
-                          fontSize: "0.95rem",
-                          fontWeight: 700,
-                          color: "#18181B",
+                          fontFamily: '"DM Serif Display", serif',
+                          fontSize: "1.05rem",
+                          fontWeight: 400,
+                          color: "#183D35",
                           mb: 0.8,
                         }}
                       >

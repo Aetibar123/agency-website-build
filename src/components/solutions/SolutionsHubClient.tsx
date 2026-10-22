@@ -78,7 +78,7 @@ const domains: SolutionDomain[] = [
       "We engineer websites as the strategic starting point of your customer journey: sub-second edge rendering, clear problem-first messaging, and interactive scope intake forms.",
     description:
       "Most agency websites look decent but fail to explain what the business actually solves. We design and engineer Next.js platforms as strategic customer journeys: establishing instant authority, answering complex buying questions, and capturing qualified project scopes with sub-second page delivery.",
-    icon: <LanguageIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <LanguageIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     capabilities: [
       "Sub-0.4s Core Web Vitals (LCP < 380ms) on global edge CDN",
       "Problem-first positioning and clear commercial value articulation",
@@ -113,7 +113,7 @@ const domains: SolutionDomain[] = [
       "A centralized webhook pipeline that consolidates every inquiry instantly, sends automated confirmations, and routes leads to the right specialist without delay.",
     description:
       "When leads arrive across fragmented channels, inquiries get lost and follow-ups drag. We engineer unified intake pipelines and custom sales CRMs tailored to how your sales team operates—eliminating enterprise CRM bloat while ensuring every inquiry is accounted for.",
-    icon: <HubOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <HubOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     capabilities: [
       "Multi-channel webhook lead consolidation (WhatsApp, Web, Email)",
       "Automated follow-up triggers and scheduled reminder workflows",
@@ -148,7 +148,7 @@ const domains: SolutionDomain[] = [
       "Custom internal web applications and dashboards built around your exact daily workflow—with built-in validation rules, mobile dispatch, and a centralized database.",
     description:
       "When core business operations run on fragile spreadsheets, dropped tasks and double-bookings become inevitable. We build custom operational dashboards, field dispatch tools, and quotation engines that give management complete clarity and operational control.",
-    icon: <DashboardCustomizeOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <DashboardCustomizeOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     capabilities: [
       "Role-based operational dashboards for managers, field staff, and clients",
       "Work order scheduling, mobile dispatch, and digital photo sign-offs",
@@ -183,7 +183,7 @@ const domains: SolutionDomain[] = [
       "Zero-fluff document extraction and API bridges that automatically parse unstructured invoices and sync records across your tools—with human-in-the-loop verification.",
     description:
       "We reject empty AI marketing and glowing gimmicks. We deploy automation and language models strictly where repetitive manual friction drains human effort—such as extracting unstructured invoices, classifying support tickets, or syncing legacy tools with human-in-the-loop oversight.",
-    icon: <SmartToyOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SmartToyOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
     capabilities: [
       "Automated extraction of tables and invoices into structured database fields",
       "Inbound email and ticket categorization with confidence scoring",
@@ -301,7 +301,7 @@ const ecosystemSteps = [
     action: "Attracts & Qualifies",
     detail: "High-speed Next.js platform delivers instant authority and captures structured project scope.",
     metric: "0.38s Edge Load",
-    color: "#EA580C",
+    color: "#3D765D",
   },
   {
     step: "02",
@@ -310,7 +310,7 @@ const ecosystemSteps = [
     action: "Captures & Triages",
     detail: "Multi-channel webhook engine routes inquiries from Web, WhatsApp & Email into an accountable queue.",
     metric: "< 45s SLA Response",
-    color: "#F97316",
+    color: "#4D8F72",
   },
   {
     step: "03",
@@ -319,7 +319,7 @@ const ecosystemSteps = [
     action: "Executes & Tracks",
     detail: "Custom dashboard manages scheduling, mobile field dispatch, and dynamic margin-protected quotes.",
     metric: "14+ Sheets Replaced",
-    color: "#FB923C",
+    color: "#62A486",
   },
   {
     step: "04",
@@ -328,7 +328,7 @@ const ecosystemSteps = [
     action: "Syncs & Eliminates Toil",
     detail: "Parses inbound invoices and syncs data to accounting with human-in-the-loop verification.",
     metric: "85% Hours Saved",
-    color: "#EA580C",
+    color: "#3D765D",
   },
 ];
 
@@ -402,7 +402,7 @@ export default function SolutionsHubClient() {
   };
 
   return (
-    <Box component="main" sx={{ bgcolor: "#FFFFFF", color: "#18181B" }}>
+    <Box component="main" sx={{ bgcolor: "#FFFFFF", color: "#183D35" }}>
       {/* 1. HERO SECTION: "Understand In One Glance" */}
       <Box
         component="section"
@@ -411,7 +411,7 @@ export default function SolutionsHubClient() {
           pt: { xs: 16, sm: 18, md: 22 },
           pb: { xs: 10, md: 14 },
           background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+            "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.09) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
           overflow: "hidden",
         }}
       >
@@ -421,7 +421,7 @@ export default function SolutionsHubClient() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
             maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
             WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
@@ -446,9 +446,9 @@ export default function SolutionsHubClient() {
                   px: 2.2,
                   py: 0.8,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
+                  boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                   backdropFilter: "blur(12px)",
                   mb: { xs: 3, md: 3.5 },
                 }}
@@ -457,14 +457,14 @@ export default function SolutionsHubClient() {
                   component={motion.div}
                   animate={{ scale: [1, 1.3, 1] }}
                   transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#4D8F72", boxShadow: "0 0 10px #4D8F72" }}
                 />
                 <Typography
                   sx={{
                     fontSize: { xs: "0.75rem", sm: "0.825rem" },
                     fontWeight: 700,
                     letterSpacing: "0.06em",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     textTransform: "uppercase",
                   }}
                 >
@@ -484,7 +484,7 @@ export default function SolutionsHubClient() {
                 sx={{
                   fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.18, md: 1.2 },
                   letterSpacing: { xs: "-0.03em", md: "-0.04em" },
                   textWrap: "balance",
@@ -498,7 +498,7 @@ export default function SolutionsHubClient() {
                   component="span"
                   sx={{
                     display: "inline",
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}
@@ -552,19 +552,19 @@ export default function SolutionsHubClient() {
                   variant="contained"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     px: { xs: 3.5, sm: 4.5 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: { xs: "0.95rem", sm: "1rem" },
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
+                    boxShadow: "0 10px 28px rgba(61, 118, 93, 0.35)",
                     transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       transform: "translateY(-2px)",
-                      boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
+                      boxShadow: "0 14px 34px rgba(61, 118, 93, 0.5)",
                     },
                   }}
                 >
@@ -575,18 +575,18 @@ export default function SolutionsHubClient() {
                   onClick={() => scrollToSection("bottleneck-diagnostic")}
                   variant="outlined"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     px: { xs: 3, sm: 4 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: { xs: "0.95rem", sm: "1rem" },
-                    border: "1px solid rgba(24, 24, 27, 0.18)",
+                    border: "1px solid rgba(24, 61, 53, 0.18)",
                     bgcolor: "rgba(255, 255, 255, 0.8)",
                     backdropFilter: "blur(8px)",
                     "&:hover": {
-                      bgcolor: "#FAF8F5",
-                      borderColor: "rgba(24, 24, 27, 0.35)",
+                      bgcolor: "#F7F7F2",
+                      borderColor: "rgba(24, 61, 53, 0.35)",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -611,7 +611,7 @@ export default function SolutionsHubClient() {
                   fontWeight: 700,
                   letterSpacing: "0.08em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   mb: 3,
                 }}
               >
@@ -631,14 +631,14 @@ export default function SolutionsHubClient() {
                         sx={{
                           p: 3,
                           borderRadius: "20px",
-                          bgcolor: isCurrent ? "#18181B" : "#FFFFFF",
-                          color: isCurrent ? "#FFFFFF" : "#18181B",
+                          bgcolor: isCurrent ? "#183D35" : "#FFFFFF",
+                          color: isCurrent ? "#FFFFFF" : "#183D35",
                           border: isCurrent
-                            ? "1px solid #EA580C"
-                            : "1px solid rgba(228, 228, 231, 0.9)",
+                            ? "1px solid #3D765D"
+                            : "1px solid rgba(216, 229, 213, 0.9)",
                           boxShadow: isCurrent
-                            ? "0 16px 36px -8px rgba(234, 88, 12, 0.25)"
-                            : "0 4px 16px rgba(24, 24, 27, 0.03)",
+                            ? "0 16px 36px -8px rgba(61, 118, 93, 0.25)"
+                            : "0 4px 16px rgba(24, 61, 53, 0.03)",
                           cursor: "pointer",
                           transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                           height: "100%",
@@ -649,8 +649,8 @@ export default function SolutionsHubClient() {
                           overflow: "hidden",
                           "&:hover": {
                             transform: "translateY(-4px)",
-                            borderColor: "#EA580C",
-                            boxShadow: "0 14px 30px rgba(24, 24, 27, 0.08)",
+                            borderColor: "#3D765D",
+                            boxShadow: "0 14px 30px rgba(24, 61, 53, 0.08)",
                           },
                         }}
                       >
@@ -669,10 +669,10 @@ export default function SolutionsHubClient() {
                                 width: 44,
                                 height: 44,
                                 borderRadius: "12px",
-                                bgcolor: isCurrent ? "rgba(234, 88, 12, 0.15)" : "rgba(249, 115, 22, 0.08)",
+                                bgcolor: isCurrent ? "rgba(61, 118, 93, 0.15)" : "rgba(61, 118, 93, 0.08)",
                                 border: isCurrent
-                                  ? "1px solid rgba(234, 88, 12, 0.4)"
-                                  : "1px solid rgba(249, 115, 22, 0.2)",
+                                  ? "1px solid rgba(61, 118, 93, 0.4)"
+                                  : "1px solid rgba(61, 118, 93, 0.2)",
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "center",
@@ -685,7 +685,7 @@ export default function SolutionsHubClient() {
                                 fontFamily: "monospace",
                                 fontSize: "0.75rem",
                                 fontWeight: 700,
-                                color: isCurrent ? "#FB923C" : "#A1A1AA",
+                                color: isCurrent ? "#62A486" : "#A1A1AA",
                               }}
                             >
                               {item.num}
@@ -696,7 +696,7 @@ export default function SolutionsHubClient() {
                             sx={{
                               fontSize: "0.75rem",
                               fontWeight: 700,
-                              color: isCurrent ? "#FB923C" : "#EA580C",
+                              color: isCurrent ? "#62A486" : "#3D765D",
                               letterSpacing: "0.04em",
                               textTransform: "uppercase",
                               mb: 0.5,
@@ -709,7 +709,7 @@ export default function SolutionsHubClient() {
                             sx={{
                               fontSize: "1.2rem",
                               fontWeight: 700,
-                              color: isCurrent ? "#FFFFFF" : "#18181B",
+                              color: isCurrent ? "#FFFFFF" : "#183D35",
                               lineHeight: 1.3,
                               mb: 1.5,
                             }}
@@ -735,7 +735,7 @@ export default function SolutionsHubClient() {
                             mt: 2,
                             borderTop: isCurrent
                               ? "1px solid rgba(255, 255, 255, 0.1)"
-                              : "1px solid rgba(228, 228, 231, 0.8)",
+                              : "1px solid rgba(216, 229, 213, 0.8)",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "space-between",
@@ -745,7 +745,7 @@ export default function SolutionsHubClient() {
                             sx={{
                               fontSize: "0.8rem",
                               fontWeight: 700,
-                              color: isCurrent ? "#FB923C" : "#18181B",
+                              color: isCurrent ? "#62A486" : "#183D35",
                             }}
                           >
                             {item.metrics.primary} &bull; {item.metrics.secondary}
@@ -754,7 +754,7 @@ export default function SolutionsHubClient() {
                             sx={{
                               fontSize: "0.75rem",
                               fontWeight: 600,
-                              color: isCurrent ? "#EA580C" : "#71717A",
+                              color: isCurrent ? "#3D765D" : "#71717A",
                               display: "flex",
                               alignItems: "center",
                               gap: 0.5,
@@ -778,9 +778,9 @@ export default function SolutionsHubClient() {
         component="section"
         sx={{
           py: { xs: 10, md: 16 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
           position: "relative",
         }}
       >
@@ -794,19 +794,19 @@ export default function SolutionsHubClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <SyncAltIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <SyncAltIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 THE CONNECTED ECOSYSTEM BLUEPRINT
@@ -818,7 +818,7 @@ export default function SolutionsHubClient() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -851,13 +851,13 @@ export default function SolutionsHubClient() {
                     p: 3.5,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     position: "relative",
-                    boxShadow: "0 4px 18px rgba(24, 24, 27, 0.03)",
+                    boxShadow: "0 4px 18px rgba(24, 61, 53, 0.03)",
                   }}
                 >
                   <Box>
@@ -867,8 +867,8 @@ export default function SolutionsHubClient() {
                           fontFamily: "monospace",
                           fontSize: "0.8rem",
                           fontWeight: 700,
-                          color: "#EA580C",
-                          bgcolor: "rgba(249, 115, 22, 0.1)",
+                          color: "#3D765D",
+                          bgcolor: "rgba(61, 118, 93, 0.1)",
                           px: 1.5,
                           py: 0.4,
                           borderRadius: "6px",
@@ -881,11 +881,11 @@ export default function SolutionsHubClient() {
                       </Typography>
                     </Box>
 
-                    <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+                    <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#183D35", mb: 0.5 }}>
                       {stage.name}
                     </Typography>
 
-                    <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#EA580C", mb: 2 }}>
+                    <Typography sx={{ fontSize: "0.85rem", fontWeight: 600, color: "#3D765D", mb: 2 }}>
                       {stage.domain}
                     </Typography>
 
@@ -897,14 +897,14 @@ export default function SolutionsHubClient() {
                   <Box
                     sx={{
                       pt: 2,
-                      borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                      borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                       display: "flex",
                       alignItems: "center",
                       gap: 1,
                     }}
                   >
-                    <DoneAllOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                    <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#18181B" }}>
+                    <DoneAllOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
+                    <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#183D35" }}>
                       Benchmark: {stage.metric}
                     </Typography>
                   </Box>
@@ -936,8 +936,8 @@ export default function SolutionsHubClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -945,14 +945,14 @@ export default function SolutionsHubClient() {
                 component={motion.div}
                 animate={{ scale: [1, 1.25, 1], opacity: [0.8, 1, 0.8] }}
                 transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#EA580C" }}
+                sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#3D765D" }}
               />
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   fontWeight: 700,
                 }}
               >
@@ -965,7 +965,7 @@ export default function SolutionsHubClient() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.035em",
                 textWrap: "balance",
@@ -1003,8 +1003,8 @@ export default function SolutionsHubClient() {
                 gap: 1.2,
                 p: 0.8,
                 borderRadius: "9999px",
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
               }}
             >
               {domains.map((item, idx) => {
@@ -1036,8 +1036,8 @@ export default function SolutionsHubClient() {
                           position: "absolute",
                           inset: 0,
                           borderRadius: "9999px",
-                          bgcolor: "#18181B",
-                          boxShadow: "0 8px 22px -4px rgba(24, 24, 27, 0.35)",
+                          bgcolor: "#183D35",
+                          boxShadow: "0 8px 22px -4px rgba(24, 61, 53, 0.35)",
                           zIndex: -1,
                         }}
                       />
@@ -1048,7 +1048,7 @@ export default function SolutionsHubClient() {
                         fontFamily: "monospace",
                         fontSize: "0.75rem",
                         fontWeight: 700,
-                        color: isSelected ? "#FB923C" : "#A1A1AA",
+                        color: isSelected ? "#62A486" : "#A1A1AA",
                       }}
                     >
                       {item.num}
@@ -1071,13 +1071,13 @@ export default function SolutionsHubClient() {
                   height: 44,
                   borderRadius: "50%",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  color: "#18181B",
-                  boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  color: "#183D35",
+                  boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
                   "&:hover": {
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
-                    bgcolor: "rgba(249, 115, 22, 0.05)",
+                    borderColor: "#3D765D",
+                    color: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.05)",
                   },
                 }}
               >
@@ -1092,13 +1092,13 @@ export default function SolutionsHubClient() {
                   height: 44,
                   borderRadius: "50%",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  color: "#18181B",
-                  boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  color: "#183D35",
+                  boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
                   "&:hover": {
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
-                    bgcolor: "rgba(249, 115, 22, 0.05)",
+                    borderColor: "#3D765D",
+                    color: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.05)",
                   },
                 }}
               >
@@ -1112,7 +1112,7 @@ export default function SolutionsHubClient() {
             sx={{
               borderRadius: { xs: "24px", md: "32px" },
               bgcolor: "#111218",
-              backgroundImage: `radial-gradient(ellipse at ${60 + activeIdx * 10}% 25%, rgba(234, 88, 12, 0.2) 0%, transparent 65%)`,
+              backgroundImage: `radial-gradient(ellipse at ${60 + activeIdx * 10}% 25%, rgba(61, 118, 93, 0.2) 0%, transparent 65%)`,
               border: "1px solid rgba(255, 255, 255, 0.1)",
               boxShadow: "0 30px 80px -20px rgba(0, 0, 0, 0.45)",
               overflow: "hidden",
@@ -1137,8 +1137,8 @@ export default function SolutionsHubClient() {
                         px: 1.8,
                         py: 0.5,
                         borderRadius: "8px",
-                        bgcolor: "rgba(234, 88, 12, 0.15)",
-                        border: "1px solid rgba(234, 88, 12, 0.3)",
+                        bgcolor: "rgba(61, 118, 93, 0.15)",
+                        border: "1px solid rgba(61, 118, 93, 0.3)",
                         mb: 2.5,
                       }}
                     >
@@ -1146,7 +1146,7 @@ export default function SolutionsHubClient() {
                         sx={{
                           fontSize: "0.75rem",
                           fontWeight: 700,
-                          color: "#FB923C",
+                          color: "#62A486",
                           letterSpacing: "0.06em",
                         }}
                       >
@@ -1187,7 +1187,7 @@ export default function SolutionsHubClient() {
                       sx={{
                         fontSize: { xs: "1.05rem", sm: "1.18rem" },
                         fontWeight: 500,
-                        color: "#FB923C",
+                        color: "#62A486",
                         lineHeight: 1.5,
                         mb: 3,
                       }}
@@ -1214,9 +1214,9 @@ export default function SolutionsHubClient() {
                     </Box>
 
                     <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                      <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#EA580C", mt: 0.25, flexShrink: 0 }} />
+                      <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#3D765D", mt: 0.25, flexShrink: 0 }} />
                       <Typography sx={{ fontSize: "0.85rem", color: "#E4E4E7", lineHeight: 1.6 }}>
-                        <strong style={{ color: "#FB923C" }}>Engineered System:</strong> {current.solution}
+                        <strong style={{ color: "#62A486" }}>Engineered System:</strong> {current.solution}
                       </Typography>
                     </Box>
                   </Box>
@@ -1231,7 +1231,7 @@ export default function SolutionsHubClient() {
                       {current.capabilities.map((cap, cIdx) => (
                         <Box key={cIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                           <CheckCircleOutlinedIcon
-                            sx={{ fontSize: 18, color: "#EA580C", mt: 0.25, flexShrink: 0 }}
+                            sx={{ fontSize: 18, color: "#3D765D", mt: 0.25, flexShrink: 0 }}
                           />
                           <Typography
                             sx={{
@@ -1254,7 +1254,7 @@ export default function SolutionsHubClient() {
                       p: 2,
                       borderRadius: "10px",
                       bgcolor: "rgba(255, 255, 255, 0.04)",
-                      borderLeft: "3px solid #EA580C",
+                      borderLeft: "3px solid #3D765D",
                       mb: 4,
                     }}
                   >
@@ -1284,17 +1284,17 @@ export default function SolutionsHubClient() {
                           variant="contained"
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                           sx={{
-                            background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                            background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                             color: "#FFFFFF",
                             px: 3.8,
                             py: 1.5,
                             fontSize: "0.925rem",
                             fontWeight: 700,
                             borderRadius: "9999px",
-                            boxShadow: "0 10px 24px rgba(234, 88, 12, 0.35)",
+                            boxShadow: "0 10px 24px rgba(61, 118, 93, 0.35)",
                             "&:hover": {
-                              background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                              boxShadow: "0 14px 32px rgba(234, 88, 12, 0.5)",
+                              background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                              boxShadow: "0 14px 32px rgba(61, 118, 93, 0.5)",
                               transform: "translateY(-1px)",
                             },
                           }}
@@ -1328,7 +1328,7 @@ export default function SolutionsHubClient() {
                             sx={{
                               fontSize: { xs: "1.45rem", sm: "1.75rem" },
                               fontWeight: 700,
-                              color: "#FB923C",
+                              color: "#62A486",
                               lineHeight: 1,
                             }}
                           >
@@ -1354,7 +1354,7 @@ export default function SolutionsHubClient() {
                       sx={{
                         position: "relative",
                         borderRadius: "22px",
-                        bgcolor: "rgba(24, 24, 27, 0.85)",
+                        bgcolor: "rgba(24, 61, 53, 0.85)",
                         border: "1px solid rgba(255, 255, 255, 0.15)",
                         boxShadow: "0 25px 60px -15px rgba(0, 0, 0, 0.6)",
                         overflow: "hidden",
@@ -1429,7 +1429,7 @@ export default function SolutionsHubClient() {
                             px: 1.8,
                             py: 0.8,
                             borderRadius: "10px",
-                            bgcolor: "rgba(24, 24, 27, 0.88)",
+                            bgcolor: "rgba(24, 61, 53, 0.88)",
                             backdropFilter: "blur(12px)",
                             border: "1px solid rgba(255, 255, 255, 0.15)",
                             color: "#22C55E",
@@ -1458,7 +1458,7 @@ export default function SolutionsHubClient() {
                             right: 16,
                             p: 1.8,
                             borderRadius: "14px",
-                            bgcolor: "rgba(24, 24, 27, 0.88)",
+                            bgcolor: "rgba(24, 61, 53, 0.88)",
                             backdropFilter: "blur(12px)",
                             border: "1px solid rgba(255, 255, 255, 0.15)",
                             color: "#FFFFFF",
@@ -1490,9 +1490,9 @@ export default function SolutionsHubClient() {
         id="bottleneck-diagnostic"
         sx={{
           py: { xs: 10, md: 16 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1505,17 +1505,17 @@ export default function SolutionsHubClient() {
                 px: 1.8,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(234, 88, 12, 0.08)",
-                border: "1px solid rgba(234, 88, 12, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2,
               }}
             >
-              <TuneOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <TuneOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
-                  color: "#EA580C",
+                  color: "#3D765D",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
                 }}
@@ -1529,7 +1529,7 @@ export default function SolutionsHubClient() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.03em",
                 textWrap: "balance",
@@ -1558,18 +1558,18 @@ export default function SolutionsHubClient() {
                       sx={{
                         p: 3,
                         borderRadius: "16px",
-                        bgcolor: isSelected ? "#18181B" : "#FFFFFF",
+                        bgcolor: isSelected ? "#183D35" : "#FFFFFF",
                         border: isSelected
-                          ? "1px solid #EA580C"
-                          : "1px solid rgba(228, 228, 231, 0.9)",
-                        color: isSelected ? "#FFFFFF" : "#18181B",
+                          ? "1px solid #3D765D"
+                          : "1px solid rgba(216, 229, 213, 0.9)",
+                        color: isSelected ? "#FFFFFF" : "#183D35",
                         cursor: "pointer",
                         transition: "all 0.25s ease",
                         boxShadow: isSelected
-                          ? "0 12px 32px rgba(24, 24, 27, 0.2)"
-                          : "0 2px 8px rgba(24, 24, 27, 0.02)",
+                          ? "0 12px 32px rgba(24, 61, 53, 0.2)"
+                          : "0 2px 8px rgba(24, 61, 53, 0.02)",
                         "&:hover": {
-                          borderColor: "#EA580C",
+                          borderColor: "#3D765D",
                           transform: "translateY(-2px)",
                         },
                       }}
@@ -1579,7 +1579,7 @@ export default function SolutionsHubClient() {
                           sx={{
                             fontSize: "1.1rem",
                             fontWeight: 700,
-                            color: isSelected ? "#FB923C" : "#18181B",
+                            color: isSelected ? "#62A486" : "#183D35",
                           }}
                         >
                           {item.title}
@@ -1589,11 +1589,11 @@ export default function SolutionsHubClient() {
                             width: 22,
                             height: 22,
                             borderRadius: "50%",
-                            border: isSelected ? "2px solid #EA580C" : "2px solid #D4D4D8",
+                            border: isSelected ? "2px solid #3D765D" : "2px solid #D4D4D8",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            bgcolor: isSelected ? "#EA580C" : "transparent",
+                            bgcolor: isSelected ? "#3D765D" : "transparent",
                           }}
                         >
                           {isSelected && <Box sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#FFFFFF" }} />}
@@ -1629,8 +1629,8 @@ export default function SolutionsHubClient() {
                     p: { xs: 4, sm: 5 },
                     borderRadius: "24px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    boxShadow: "0 16px 40px rgba(24, 24, 27, 0.05)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
+                    boxShadow: "0 16px 40px rgba(24, 61, 53, 0.05)",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
@@ -1643,8 +1643,8 @@ export default function SolutionsHubClient() {
                           px: 2,
                           py: 0.6,
                           borderRadius: "8px",
-                          bgcolor: "rgba(234, 88, 12, 0.1)",
-                          color: "#EA580C",
+                          bgcolor: "rgba(61, 118, 93, 0.1)",
+                          color: "#3D765D",
                           fontWeight: 700,
                           fontSize: "0.75rem",
                           letterSpacing: "0.05em",
@@ -1654,7 +1654,7 @@ export default function SolutionsHubClient() {
                         Recommended Architecture
                       </Box>
                       <Typography sx={{ fontSize: "0.85rem", color: "#71717A", fontWeight: 600 }}>
-                        Turnaround: <strong style={{ color: "#18181B" }}>{activeBottleneck.timeframe}</strong>
+                        Turnaround: <strong style={{ color: "#183D35" }}>{activeBottleneck.timeframe}</strong>
                       </Typography>
                     </Box>
 
@@ -1663,7 +1663,7 @@ export default function SolutionsHubClient() {
                       sx={{
                         fontSize: { xs: "1.75rem", sm: "2.1rem" },
                         fontWeight: 600,
-                        color: "#18181B",
+                        color: "#183D35",
                         letterSpacing: "-0.025em",
                         mb: 2,
                       }}
@@ -1681,7 +1681,7 @@ export default function SolutionsHubClient() {
                         fontWeight: 700,
                         letterSpacing: "0.06em",
                         textTransform: "uppercase",
-                        color: "#18181B",
+                        color: "#183D35",
                         mb: 2,
                       }}
                     >
@@ -1691,7 +1691,7 @@ export default function SolutionsHubClient() {
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.75, mb: 4 }}>
                       {activeBottleneck.keyDeliverables.map((del, dIdx) => (
                         <Box key={dIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                          <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 20, mt: 0.2 }} />
+                          <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 20, mt: 0.2 }} />
                           <Typography sx={{ fontSize: "0.95rem", color: "#27272A", fontWeight: 600 }}>
                             {del}
                           </Typography>
@@ -1703,7 +1703,7 @@ export default function SolutionsHubClient() {
                   <Box
                     sx={{
                       pt: 3,
-                      borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                      borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "space-between",
@@ -1716,7 +1716,7 @@ export default function SolutionsHubClient() {
                         variant="contained"
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                         sx={{
-                          background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                          background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                           color: "#FFFFFF",
                           px: 3.5,
                           py: 1.35,
@@ -1733,16 +1733,16 @@ export default function SolutionsHubClient() {
                       <Button
                         variant="outlined"
                         sx={{
-                          color: "#18181B",
-                          borderColor: "rgba(24, 24, 27, 0.2)",
+                          color: "#183D35",
+                          borderColor: "rgba(24, 61, 53, 0.2)",
                           px: 3,
                           py: 1.35,
                           borderRadius: "9999px",
                           fontWeight: 600,
                           fontSize: "0.9rem",
                           "&:hover": {
-                            borderColor: "#EA580C",
-                            color: "#EA580C",
+                            borderColor: "#3D765D",
+                            color: "#3D765D",
                           },
                         }}
                       >
@@ -1769,19 +1769,19 @@ export default function SolutionsHubClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <LayersOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <LayersOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 THE ARCHITECTURAL DIFFERENCE
@@ -1793,7 +1793,7 @@ export default function SolutionsHubClient() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.03em",
                 textWrap: "balance",
@@ -1813,16 +1813,16 @@ export default function SolutionsHubClient() {
           <Box
             sx={{
               borderRadius: "24px",
-              border: "1px solid rgba(228, 228, 231, 0.9)",
+              border: "1px solid rgba(216, 229, 213, 0.9)",
               overflow: "hidden",
-              boxShadow: "0 12px 36px rgba(24, 24, 27, 0.04)",
+              boxShadow: "0 12px 36px rgba(24, 61, 53, 0.04)",
             }}
           >
             {/* Table Header */}
             <Grid
               container
               sx={{
-                bgcolor: "#18181B",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 py: 2.5,
                 px: { xs: 2.5, sm: 4 },
@@ -1841,7 +1841,7 @@ export default function SolutionsHubClient() {
                 </Typography>
               </Grid>
               <Grid size={{ xs: 12, md: 4.5 }}>
-                <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#FB923C" }}>
+                <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#62A486" }}>
                   AETIBAR PURPOSE-BUILT SYSTEMS
                 </Typography>
               </Grid>
@@ -1855,13 +1855,13 @@ export default function SolutionsHubClient() {
                 sx={{
                   py: { xs: 3, md: 3 },
                   px: { xs: 2.5, sm: 4 },
-                  bgcolor: idx % 2 === 0 ? "#FFFFFF" : "#FAF8F5",
-                  borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                  bgcolor: idx % 2 === 0 ? "#FFFFFF" : "#F7F7F2",
+                  borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                   alignItems: "center",
                 }}
               >
                 <Grid size={{ xs: 12, md: 3 }} sx={{ mb: { xs: 1.5, md: 0 } }}>
-                  <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+                  <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                     {row.feature}
                   </Typography>
                 </Grid>
@@ -1877,8 +1877,8 @@ export default function SolutionsHubClient() {
 
                 <Grid size={{ xs: 12, md: 4.5 }}>
                   <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#EA580C", mt: 0.25, flexShrink: 0 }} />
-                    <Typography sx={{ fontSize: "0.875rem", color: "#18181B", fontWeight: 600, lineHeight: 1.6 }}>
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#3D765D", mt: 0.25, flexShrink: 0 }} />
+                    <Typography sx={{ fontSize: "0.875rem", color: "#183D35", fontWeight: 600, lineHeight: 1.6 }}>
                       {row.aetibar}
                     </Typography>
                   </Box>
@@ -1894,9 +1894,9 @@ export default function SolutionsHubClient() {
         component="section"
         sx={{
           py: { xs: 10, md: 16 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1909,19 +1909,19 @@ export default function SolutionsHubClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <TrendingUpOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <TrendingUpOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 PREDICTABLE DELIVERY BLUEPRINT
@@ -1933,7 +1933,7 @@ export default function SolutionsHubClient() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 letterSpacing: "-0.03em",
                 textWrap: "balance",
@@ -1957,12 +1957,12 @@ export default function SolutionsHubClient() {
                     p: 3.5,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    boxShadow: "0 4px 16px rgba(24, 24, 27, 0.02)",
+                    boxShadow: "0 4px 16px rgba(24, 61, 53, 0.02)",
                   }}
                 >
                   <Box>
@@ -1972,8 +1972,8 @@ export default function SolutionsHubClient() {
                         fontFamily: "monospace",
                         fontSize: "0.75rem",
                         fontWeight: 700,
-                        color: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        color: "#3D765D",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
                         px: 1.5,
                         py: 0.5,
                         borderRadius: "6px",
@@ -1982,7 +1982,7 @@ export default function SolutionsHubClient() {
                     >
                       {stage.phase}
                     </Box>
-                    <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                    <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                       {stage.title}
                     </Typography>
                     <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.65 }}>
@@ -2011,7 +2011,7 @@ export default function SolutionsHubClient() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -2036,17 +2036,17 @@ export default function SolutionsHubClient() {
                 sx={{
                   mb: 2,
                   borderRadius: "14px !important",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  bgcolor: "#FAF8F5",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  bgcolor: "#F7F7F2",
                   "&:before": { display: "none" },
                   overflow: "hidden",
                 }}
               >
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: "#EA580C" }} />}
+                  expandIcon={<ExpandMoreIcon sx={{ color: "#3D765D" }} />}
                   sx={{ px: 3, py: 1.5 }}
                 >
-                  <Typography sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#18181B" }}>
+                  <Typography sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#183D35" }}>
                     {faq.q}
                   </Typography>
                 </AccordionSummary>

@@ -107,7 +107,7 @@ export default function HowWeWorkHomeSection() {
       id="methodology"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
       }}
     >
@@ -138,8 +138,8 @@ export default function HowWeWorkHomeSection() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
@@ -147,14 +147,14 @@ export default function HowWeWorkHomeSection() {
                   component={motion.div}
                   animate={{ scale: [1, 1.25, 1], opacity: [0.8, 1, 0.8] }}
                   transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#EA580C" }}
+                  sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#3D765D" }}
                 />
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 600,
                   }}
                 >
@@ -167,7 +167,7 @@ export default function HowWeWorkHomeSection() {
                 sx={{
                   fontSize: { xs: "2.2rem", sm: "3.2rem", md: "4rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   lineHeight: { xs: 1.15, md: 1.08 },
                   letterSpacing: "-0.035em",
                   mb: 2.5,
@@ -177,7 +177,7 @@ export default function HowWeWorkHomeSection() {
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}
@@ -206,8 +206,8 @@ export default function HowWeWorkHomeSection() {
                   fullWidth
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    color: "#18181B",
-                    borderColor: "rgba(24, 24, 27, 0.25)",
+                    color: "#183D35",
+                    borderColor: "rgba(24, 61, 53, 0.25)",
                     bgcolor: "#FFFFFF",
                     px: 3.5,
                     py: 1.35,
@@ -215,13 +215,13 @@ export default function HowWeWorkHomeSection() {
                     fontWeight: 600,
                     borderRadius: "9999px",
                     whiteSpace: { xs: "normal", sm: "nowrap" },
-                    boxShadow: "0 2px 6px rgba(24, 24, 27, 0.03)",
+                    boxShadow: "0 2px 6px rgba(24, 61, 53, 0.03)",
                     transition: "all 0.2s ease",
                     width: { xs: "100%", md: "auto" },
                     "&:hover": {
-                      borderColor: "#EA580C",
-                      color: "#EA580C",
-                      bgcolor: "rgba(249, 115, 22, 0.04)",
+                      borderColor: "#3D765D",
+                      color: "#3D765D",
+                      bgcolor: "rgba(61, 118, 93, 0.04)",
                     },
                   }}
                 >
@@ -242,8 +242,8 @@ export default function HowWeWorkHomeSection() {
             mb: 3,
             bgcolor: "#FFFFFF",
             borderRadius: "20px",
-            border: "1px solid rgba(228, 228, 231, 0.9)",
-            boxShadow: "0 4px 16px -4px rgba(24, 24, 27, 0.03)",
+            border: "1px solid rgba(216, 229, 213, 0.9)",
+            boxShadow: "0 4px 16px -4px rgba(24, 61, 53, 0.03)",
           }}
         >
           {phases.map((ph, idx) => {
@@ -260,11 +260,11 @@ export default function HowWeWorkHomeSection() {
                   p: 1.4,
                   borderRadius: "14px",
                   cursor: "pointer",
-                  bgcolor: isActive ? "rgba(249, 115, 22, 0.08)" : "transparent",
-                  border: isActive ? "1px solid rgba(234, 88, 12, 0.3)" : "1px solid transparent",
+                  bgcolor: isActive ? "rgba(61, 118, 93, 0.08)" : "transparent",
+                  border: isActive ? "1px solid rgba(61, 118, 93, 0.3)" : "1px solid transparent",
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    bgcolor: isActive ? "rgba(249, 115, 22, 0.1)" : "rgba(24, 24, 27, 0.03)",
+                    bgcolor: isActive ? "rgba(61, 118, 93, 0.1)" : "rgba(24, 61, 53, 0.03)",
                   },
                 }}
               >
@@ -279,7 +279,7 @@ export default function HowWeWorkHomeSection() {
                     fontSize: "0.75rem",
                     fontWeight: 700,
                     fontFamily: "monospace",
-                    bgcolor: isActive ? "#EA580C" : isCompleted ? "#22C55E" : "#E4E4E7",
+                    bgcolor: isActive ? "#3D765D" : isCompleted ? "#22C55E" : "#E4E4E7",
                     color: isActive || isCompleted ? "#FFFFFF" : "#71717A",
                     flexShrink: 0,
                   }}
@@ -291,7 +291,7 @@ export default function HowWeWorkHomeSection() {
                     sx={{
                       fontSize: "0.85rem",
                       fontWeight: isActive ? 600 : 500,
-                      color: isActive ? "#EA580C" : "#27272A",
+                      color: isActive ? "#3D765D" : "#27272A",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
                       whiteSpace: "nowrap",
@@ -327,11 +327,11 @@ export default function HowWeWorkHomeSection() {
                   borderRadius: "22px",
                   bgcolor: "#FFFFFF",
                   border: isOpen
-                    ? "1px solid rgba(234, 88, 12, 0.5)"
-                    : "1px solid rgba(228, 228, 231, 0.9)",
+                    ? "1px solid rgba(61, 118, 93, 0.5)"
+                    : "1px solid rgba(216, 229, 213, 0.9)",
                   boxShadow: isOpen
-                    ? "0 14px 36px -10px rgba(234, 88, 12, 0.12), 0 2px 8px rgba(24, 24, 27, 0.04)"
-                    : "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    ? "0 14px 36px -10px rgba(61, 118, 93, 0.12), 0 2px 8px rgba(24, 61, 53, 0.04)"
+                    : "0 2px 8px rgba(24, 61, 53, 0.02)",
                   overflow: "hidden",
                   transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
                 }}
@@ -346,10 +346,10 @@ export default function HowWeWorkHomeSection() {
                     alignItems: "center",
                     justifyContent: "space-between",
                     gap: 2,
-                    bgcolor: isOpen ? "rgba(249, 115, 22, 0.03)" : "transparent",
+                    bgcolor: isOpen ? "rgba(61, 118, 93, 0.03)" : "transparent",
                     transition: "background-color 0.2s ease",
                     "&:hover": {
-                      bgcolor: isOpen ? "rgba(249, 115, 22, 0.04)" : "rgba(249, 115, 22, 0.02)",
+                      bgcolor: isOpen ? "rgba(61, 118, 93, 0.04)" : "rgba(61, 118, 93, 0.02)",
                     },
                   }}
                 >
@@ -362,8 +362,8 @@ export default function HowWeWorkHomeSection() {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        bgcolor: isOpen ? "#18181B" : "rgba(24, 24, 27, 0.05)",
-                        color: isOpen ? "#FB923C" : "#52525B",
+                        bgcolor: isOpen ? "#183D35" : "rgba(24, 61, 53, 0.05)",
+                        color: isOpen ? "#62A486" : "#52525B",
                         transition: "all 0.2s ease",
                         flexShrink: 0,
                       }}
@@ -378,7 +378,7 @@ export default function HowWeWorkHomeSection() {
                             fontFamily: "monospace",
                             fontSize: "0.8rem",
                             fontWeight: 700,
-                            color: isOpen ? "#EA580C" : "#71717A",
+                            color: isOpen ? "#3D765D" : "#71717A",
                           }}
                         >
                           STAGE {phase.num}
@@ -387,7 +387,7 @@ export default function HowWeWorkHomeSection() {
                         <Typography
                           sx={{
                             fontSize: "0.78rem",
-                            color: isOpen ? "#EA580C" : "#71717A",
+                            color: isOpen ? "#3D765D" : "#71717A",
                             fontWeight: 600,
                           }}
                         >
@@ -399,7 +399,7 @@ export default function HowWeWorkHomeSection() {
                         sx={{
                           fontSize: { xs: "1.1rem", sm: "1.25rem" },
                           fontWeight: 600,
-                          color: "#18181B",
+                          color: "#183D35",
                           letterSpacing: "-0.015em",
                         }}
                       >
@@ -417,7 +417,7 @@ export default function HowWeWorkHomeSection() {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      bgcolor: isOpen ? "#EA580C" : "#F4F4F5",
+                      bgcolor: isOpen ? "#3D765D" : "#F4F4F5",
                       color: isOpen ? "#FFFFFF" : "#71717A",
                       flexShrink: 0,
                       transition: "all 0.2s ease",
@@ -442,7 +442,7 @@ export default function HowWeWorkHomeSection() {
                           px: { xs: 2.6, sm: 3.8 },
                           pb: { xs: 3.2, sm: 4 },
                           pt: 1.5,
-                          borderTop: "1px solid rgba(228, 228, 231, 0.6)",
+                          borderTop: "1px solid rgba(216, 229, 213, 0.6)",
                         }}
                       >
                         <Grid container spacing={{ xs: 3, md: 5 }}>
@@ -452,7 +452,7 @@ export default function HowWeWorkHomeSection() {
                               sx={{
                                 fontSize: { xs: "1.15rem", sm: "1.35rem" },
                                 fontWeight: 600,
-                                color: "#18181B",
+                                color: "#183D35",
                                 lineHeight: 1.35,
                                 letterSpacing: "-0.02em",
                                 mb: 1.8,
@@ -501,17 +501,17 @@ export default function HowWeWorkHomeSection() {
                                 sx={{
                                   p: 2.4,
                                   borderRadius: "16px",
-                                  bgcolor: "#FAF8F5",
-                                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                                  bgcolor: "#F7F7F2",
+                                  border: "1px solid rgba(216, 229, 213, 0.9)",
                                 }}
                               >
                                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
-                                  <AssignmentOutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
+                                  <AssignmentOutlinedIcon sx={{ fontSize: 17, color: "#3D765D" }} />
                                   <Typography
                                     sx={{
                                       fontSize: "0.75rem",
                                       fontWeight: 700,
-                                      color: "#EA580C",
+                                      color: "#3D765D",
                                       textTransform: "uppercase",
                                       letterSpacing: "0.06em",
                                     }}
@@ -519,7 +519,7 @@ export default function HowWeWorkHomeSection() {
                                     Key Deliverable
                                   </Typography>
                                 </Box>
-                                <Typography sx={{ fontSize: "0.925rem", fontWeight: 600, color: "#18181B", lineHeight: 1.45 }}>
+                                <Typography sx={{ fontSize: "0.925rem", fontWeight: 600, color: "#183D35", lineHeight: 1.45 }}>
                                   {phase.deliverable}
                                 </Typography>
                               </Box>
@@ -557,17 +557,17 @@ export default function HowWeWorkHomeSection() {
 
                         {/* Next Stage Stepper Link */}
                         {idx < phases.length - 1 && (
-                          <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid rgba(228, 228, 231, 0.6)", display: "flex", justifyContent: "flex-end" }}>
+                          <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid rgba(216, 229, 213, 0.6)", display: "flex", justifyContent: "flex-end" }}>
                             <Button
                               size="small"
                               onClick={() => setActivePhase(idx + 1)}
                               endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
                               sx={{
-                                color: "#EA580C",
+                                color: "#3D765D",
                                 fontWeight: 600,
                                 fontSize: "0.825rem",
                                 textTransform: "none",
-                                "&:hover": { bgcolor: "rgba(249, 115, 22, 0.08)" },
+                                "&:hover": { bgcolor: "rgba(61, 118, 93, 0.08)" },
                               }}
                             >
                               Next: Stage 0{idx + 2} &rarr;
@@ -589,8 +589,8 @@ export default function HowWeWorkHomeSection() {
             p: { xs: 2.4, md: 3 },
             borderRadius: "20px",
             bgcolor: "#FFFFFF",
-            border: "1px solid rgba(228, 228, 231, 0.9)",
-            boxShadow: "0 4px 16px -4px rgba(24, 24, 27, 0.03)",
+            border: "1px solid rgba(216, 229, 213, 0.9)",
+            boxShadow: "0 4px 16px -4px rgba(24, 61, 53, 0.03)",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
@@ -600,9 +600,9 @@ export default function HowWeWorkHomeSection() {
         >
           <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: { xs: 2.5, md: 5 } }}>
             {[
-              { icon: <VerifiedOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Direct Access to Engineers" },
-              { icon: <LockOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Full Code & Asset Ownership" },
-              { icon: <SpeedOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />, text: "Built for Reliability" },
+              { icon: <VerifiedOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />, text: "Direct Access to Engineers" },
+              { icon: <LockOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />, text: "Full Code & Asset Ownership" },
+              { icon: <SpeedOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />, text: "Built for Reliability" },
             ].map((item, idx) => (
               <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
                 {item.icon}
@@ -618,7 +618,7 @@ export default function HowWeWorkHomeSection() {
               sx={{
                 fontSize: "0.875rem",
                 fontWeight: 600,
-                color: "#EA580C",
+                color: "#3D765D",
                 cursor: "pointer",
                 display: "flex",
                 alignItems: "center",

@@ -115,37 +115,37 @@ const whatWeBuildItems = [
     title: "Operations Management Software",
     subtitle: "Internal workflows, operational processes, and business activities",
     desc: "Purpose-built platforms that coordinate internal handoffs across sales, operations, technicians, and management with audited status pipelines and milestone tracking.",
-    icon: <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <PrecisionManufacturingOutlinedIcon sx={{ fontSize: 26, color: "#3D765D" }} />,
   },
   {
     title: "Business Dashboards",
     subtitle: "Operational visibility and executive monitoring",
     desc: "Single-pane-of-glass consoles aggregating active orders, team capacity, project bottlenecks, and real-time business metrics into clear visual views and searchable logs.",
-    icon: <DashboardCustomizeOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <DashboardCustomizeOutlinedIcon sx={{ fontSize: 26, color: "#3D765D" }} />,
   },
   {
     title: "Scheduling & Dispatch Systems",
     subtitle: "Resource coordination and status management",
     desc: "Custom scheduling, assignment, dispatch, crew availability, and status-management systems with mobile-friendly technician views and automated milestone updates.",
-    icon: <CalendarMonthOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <CalendarMonthOutlinedIcon sx={{ fontSize: 26, color: "#3D765D" }} />,
   },
   {
     title: "Service & Task Management",
     subtitle: "Work orders, execution tracking, and accountability",
     desc: "Internal systems for assigning work orders, tracking execution progress, recording customer communications, and maintaining clear accountability across departments.",
-    icon: <FactCheckOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <FactCheckOutlinedIcon sx={{ fontSize: 26, color: "#3D765D" }} />,
   },
   {
     title: "Quotation & Invoicing Systems",
     subtitle: "Custom pricing rules, approvals, and financial workflows",
     desc: "Custom workflows for quotations, dynamic pricing rules, margin verification, discount approval gates, and automated, branded proposal and invoice generation.",
-    icon: <ReceiptLongOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <ReceiptLongOutlinedIcon sx={{ fontSize: 26, color: "#3D765D" }} />,
   },
   {
     title: "Custom Admin & Role Portals",
     subtitle: "Audited multi-stakeholder interfaces",
     desc: "Role-based interfaces providing granular access for employees, operations managers, executives, vendors, or external partners—ensuring each user sees only what their role permits.",
-    icon: <AdminPanelSettingsOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <AdminPanelSettingsOutlinedIcon sx={{ fontSize: 26, color: "#3D765D" }} />,
   },
 ];
 
@@ -230,32 +230,32 @@ const technicalCapabilities = [
   {
     title: "Next.js & React Frontend",
     desc: "Fast, responsive web interfaces with sub-second page loads, Server Components, and intuitive daily usability on desktop and mobile.",
-    icon: <CodeOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <CodeOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Node.js & NestJS Services",
     desc: "Modular backend services enforcing strict business rules, background processing, validation layers, and reliable API orchestration.",
-    icon: <StorageOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <StorageOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "TypeScript End-to-End",
     desc: "Strict type contracts across frontend and backend, minimizing runtime regressions and ensuring predictable system behavior.",
-    icon: <LayersOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <LayersOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "PostgreSQL & MongoDB",
     desc: "ACID-compliant relational architectures, indexed schemas, and transactional integrity that replace vulnerable flat files.",
-    icon: <SecurityOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SecurityOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "REST & GraphQL APIs",
     desc: "Clean service boundaries, secure webhook ingestion, and seamless integrations with third-party business services.",
-    icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <SyncAltOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
   {
     title: "Role-Based Permissions & Auth",
     desc: "Secure session and token management, granular permission matrices, and immutable audit logs of all user actions.",
-    icon: <AdminPanelSettingsOutlinedIcon sx={{ fontSize: 24, color: "#EA580C" }} />,
+    icon: <AdminPanelSettingsOutlinedIcon sx={{ fontSize: 24, color: "#3D765D" }} />,
   },
 ];
 
@@ -435,7 +435,7 @@ export default function CustomBusinessSoftwarePage() {
           pt: { xs: 15, sm: 17, md: 21 },
           pb: { xs: 9, md: 13 },
           background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+            "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.09) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
           overflow: "hidden",
         }}
       >
@@ -444,7 +444,7 @@ export default function CustomBusinessSoftwarePage() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
             maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
             WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
@@ -477,7 +477,7 @@ export default function CustomBusinessSoftwarePage() {
               <span>/</span>
               <Typography
                 component="span"
-                sx={{ fontSize: "0.85rem", color: "#EA580C", fontWeight: 600 }}
+                sx={{ fontSize: "0.85rem", color: "#3D765D", fontWeight: 600 }}
               >
                 Custom Business Software
               </Typography>
@@ -493,9 +493,9 @@ export default function CustomBusinessSoftwarePage() {
                   px: 2.2,
                   py: 0.8,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
+                  boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                   backdropFilter: "blur(12px)",
                   mb: 3.5,
                 }}
@@ -505,8 +505,8 @@ export default function CustomBusinessSoftwarePage() {
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    bgcolor: "#F97316",
-                    boxShadow: "0 0 10px #F97316",
+                    bgcolor: "#4D8F72",
+                    boxShadow: "0 0 10px #4D8F72",
                   }}
                 />
                 <Typography
@@ -514,7 +514,7 @@ export default function CustomBusinessSoftwarePage() {
                     fontSize: { xs: "0.75rem", sm: "0.825rem" },
                     fontWeight: 700,
                     letterSpacing: "0.06em",
-                    color: "#EA580C",
+                    color: "#3D765D",
                     textTransform: "uppercase",
                   }}
                 >
@@ -529,7 +529,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.035em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -546,7 +546,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.15rem", md: "1.3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: 1.6,
                 maxWidth: 820,
                 mx: "auto",
@@ -588,18 +588,18 @@ export default function CustomBusinessSoftwarePage() {
                   size="large"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     px: { xs: 3.5, sm: 4.5 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 700,
                     fontSize: "0.95rem",
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
+                    boxShadow: "0 10px 28px rgba(61, 118, 93, 0.35)",
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       transform: "translateY(-2px)",
-                      boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
+                      boxShadow: "0 14px 34px rgba(61, 118, 93, 0.5)",
                     },
                   }}
                 >
@@ -611,18 +611,18 @@ export default function CustomBusinessSoftwarePage() {
                 <Button
                   variant="outlined"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     px: { xs: 3, sm: 4 },
                     py: { xs: 1.5, sm: 1.6 },
                     borderRadius: "9999px",
                     fontWeight: 600,
                     fontSize: "0.95rem",
-                    border: "1px solid rgba(24, 24, 27, 0.18)",
+                    border: "1px solid rgba(24, 61, 53, 0.18)",
                     bgcolor: "rgba(255, 255, 255, 0.8)",
                     backdropFilter: "blur(8px)",
                     "&:hover": {
-                      bgcolor: "#FAF8F5",
-                      borderColor: "rgba(24, 24, 27, 0.35)",
+                      bgcolor: "#F7F7F2",
+                      borderColor: "rgba(24, 61, 53, 0.35)",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -639,8 +639,8 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 p: { xs: 2.5, md: 3 },
                 borderRadius: "20px",
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
                 textAlign: "left",
               }}
             >
@@ -651,14 +651,14 @@ export default function CustomBusinessSoftwarePage() {
                       sx={{
                         fontSize: "0.95rem",
                         fontWeight: 700,
-                        color: "#18181B",
+                        color: "#183D35",
                         mb: 0.75,
                         display: "flex",
                         alignItems: "center",
                         gap: 1,
                       }}
                     >
-                      <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                      <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                       {principle.title}
                     </Typography>
                     <Typography sx={{ fontSize: "0.825rem", color: "#52525B", lineHeight: 1.6 }}>
@@ -685,19 +685,19 @@ export default function CustomBusinessSoftwarePage() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
-                <TuneOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                <TuneOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                 <Typography
                   sx={{
                     fontSize: "0.75rem",
                     fontWeight: 700,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
                   }}
                 >
                   OPERATIONAL REALITY
@@ -709,7 +709,7 @@ export default function CustomBusinessSoftwarePage() {
                 sx={{
                   fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                   fontWeight: 600,
-                  color: "#18181B",
+                  color: "#183D35",
                   letterSpacing: "-0.03em",
                   lineHeight: { xs: 1.18, md: 1.2 },
                   textWrap: "balance",
@@ -738,7 +738,7 @@ export default function CustomBusinessSoftwarePage() {
                   "Workflows where generic software forces teams to adapt rather than supporting them",
                 ].map((item, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                    <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 18, mt: 0.3, flexShrink: 0 }} />
+                    <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 18, mt: 0.3, flexShrink: 0 }} />
                     <Typography sx={{ fontSize: "0.925rem", color: "#27272A", fontWeight: 500, lineHeight: 1.6 }}>
                       {item}
                     </Typography>
@@ -756,8 +756,8 @@ export default function CustomBusinessSoftwarePage() {
                 sx={{
                   p: { xs: 4, sm: 5 },
                   borderRadius: "24px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.04)",
                 }}
               >
@@ -765,7 +765,7 @@ export default function CustomBusinessSoftwarePage() {
                   sx={{
                     fontSize: "0.8rem",
                     fontWeight: 700,
-                    color: "#EA580C",
+                    color: "#3D765D",
                     textTransform: "uppercase",
                     letterSpacing: "0.06em",
                     mb: 1.5,
@@ -774,7 +774,7 @@ export default function CustomBusinessSoftwarePage() {
                   THE SPREADSHEET BOTTLENECK
                 </Typography>
 
-                <Typography sx={{ fontSize: "1.4rem", fontWeight: 600, color: "#18181B", mb: 2 }}>
+                <Typography sx={{ fontSize: "1.4rem", fontWeight: 600, color: "#183D35", mb: 2 }}>
                   From tangled spreadsheet workarounds to an authoritative system of record
                 </Typography>
 
@@ -791,10 +791,10 @@ export default function CustomBusinessSoftwarePage() {
                     p: 2.5,
                     borderRadius: "16px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(249, 115, 22, 0.25)",
+                    border: "1px solid rgba(61, 118, 93, 0.25)",
                   }}
                 >
-                  <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#18181B", mb: 0.5 }}>
+                  <Typography sx={{ fontSize: "0.875rem", fontWeight: 600, color: "#183D35", mb: 0.5 }}>
                     The Aetibar Guiding Principle
                   </Typography>
                   <Typography sx={{ fontSize: "0.85rem", color: "#52525B", fontStyle: "italic", lineHeight: 1.6 }}>
@@ -813,9 +813,9 @@ export default function CustomBusinessSoftwarePage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -828,8 +828,8 @@ export default function CustomBusinessSoftwarePage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -839,7 +839,7 @@ export default function CustomBusinessSoftwarePage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 CORE APPLICATION SUITE
@@ -851,7 +851,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -874,15 +874,15 @@ export default function CustomBusinessSoftwarePage() {
                     p: 4,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
@@ -891,8 +891,8 @@ export default function CustomBusinessSoftwarePage() {
                       width: 52,
                       height: 52,
                       borderRadius: "14px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.2)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -904,7 +904,7 @@ export default function CustomBusinessSoftwarePage() {
 
                   <Typography
                     variant="h3"
-                    sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#18181B", mb: 0.75 }}
+                    sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#183D35", mb: 0.75 }}
                   >
                     {item.title}
                   </Typography>
@@ -913,7 +913,7 @@ export default function CustomBusinessSoftwarePage() {
                     sx={{
                       fontSize: "0.8rem",
                       fontWeight: 600,
-                      color: "#EA580C",
+                      color: "#3D765D",
                       textTransform: "uppercase",
                       letterSpacing: "0.04em",
                       mb: 2,
@@ -944,8 +944,8 @@ export default function CustomBusinessSoftwarePage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -955,7 +955,7 @@ export default function CustomBusinessSoftwarePage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 ENGINEERING METHODOLOGY
@@ -967,7 +967,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -989,8 +989,8 @@ export default function CustomBusinessSoftwarePage() {
                   sx={{
                     p: 3.5,
                     borderRadius: "18px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -1001,7 +1001,7 @@ export default function CustomBusinessSoftwarePage() {
                     sx={{
                       fontSize: "1.5rem",
                       fontWeight: 800,
-                      color: "#EA580C",
+                      color: "#3D765D",
                       fontFamily: "monospace",
                       mb: 1.5,
                     }}
@@ -1013,7 +1013,7 @@ export default function CustomBusinessSoftwarePage() {
                     sx={{
                       fontSize: "1.1rem",
                       fontWeight: 700,
-                      color: "#18181B",
+                      color: "#183D35",
                       mb: 1.25,
                       lineHeight: 1.35,
                     }}
@@ -1035,9 +1035,9 @@ export default function CustomBusinessSoftwarePage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1050,8 +1050,8 @@ export default function CustomBusinessSoftwarePage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1061,7 +1061,7 @@ export default function CustomBusinessSoftwarePage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 FLEXIBILITY &amp; ADAPTABILITY
@@ -1073,7 +1073,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1096,7 +1096,7 @@ export default function CustomBusinessSoftwarePage() {
                     p: 3.5,
                     borderRadius: "18px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
@@ -1105,14 +1105,14 @@ export default function CustomBusinessSoftwarePage() {
                     sx={{
                       fontSize: "1.05rem",
                       fontWeight: 700,
-                      color: "#18181B",
+                      color: "#183D35",
                       mb: 1,
                       display: "flex",
                       alignItems: "center",
                       gap: 1,
                     }}
                   >
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
                     {rule.title}
                   </Typography>
                   <Typography sx={{ fontSize: "0.875rem", color: "#52525B", lineHeight: 1.7 }}>
@@ -1129,7 +1129,7 @@ export default function CustomBusinessSoftwarePage() {
               mt: 6,
               p: { xs: 3.5, md: 4.5 },
               borderRadius: "20px",
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
               color: "#FFFFFF",
               textAlign: "center",
             }}
@@ -1165,8 +1165,8 @@ export default function CustomBusinessSoftwarePage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1176,7 +1176,7 @@ export default function CustomBusinessSoftwarePage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 PROVEN ARCHITECTURE
@@ -1188,7 +1188,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 textWrap: "balance",
@@ -1210,8 +1210,8 @@ export default function CustomBusinessSoftwarePage() {
                   sx={{
                     p: 3.5,
                     borderRadius: "18px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
@@ -1220,8 +1220,8 @@ export default function CustomBusinessSoftwarePage() {
                       width: 44,
                       height: 44,
                       borderRadius: "10px",
-                      bgcolor: "rgba(249, 115, 22, 0.08)",
-                      border: "1px solid rgba(249, 115, 22, 0.2)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -1233,7 +1233,7 @@ export default function CustomBusinessSoftwarePage() {
 
                   <Typography
                     variant="h3"
-                    sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 1 }}
+                    sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#183D35", mb: 1 }}
                   >
                     {tech.title}
                   </Typography>
@@ -1253,9 +1253,9 @@ export default function CustomBusinessSoftwarePage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1263,7 +1263,7 @@ export default function CustomBusinessSoftwarePage() {
             sx={{
               p: { xs: 4, sm: 6 },
               borderRadius: "24px",
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
               color: "#FFFFFF",
               border: "1px solid rgba(255, 255, 255, 0.12)",
               position: "relative",
@@ -1277,7 +1277,7 @@ export default function CustomBusinessSoftwarePage() {
                 right: "-10%",
                 width: "400px",
                 height: "400px",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.2) 0%, transparent 70%)",
                 filter: "blur(50px)",
                 pointerEvents: "none",
               }}
@@ -1292,8 +1292,8 @@ export default function CustomBusinessSoftwarePage() {
                   px: 1.8,
                   py: 0.5,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.15)",
-                  border: "1px solid rgba(249, 115, 22, 0.35)",
+                  bgcolor: "rgba(61, 118, 93, 0.15)",
+                  border: "1px solid rgba(61, 118, 93, 0.35)",
                   mb: 2.5,
                 }}
               >
@@ -1301,7 +1301,7 @@ export default function CustomBusinessSoftwarePage() {
                   sx={{
                     fontSize: "0.75rem",
                     fontWeight: 700,
-                    color: "#FB923C",
+                    color: "#62A486",
                     textTransform: "uppercase",
                     letterSpacing: "0.06em",
                   }}
@@ -1355,7 +1355,7 @@ export default function CustomBusinessSoftwarePage() {
                         height: "100%",
                       }}
                     >
-                      <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#FB923C", mb: 0.75 }}>
+                      <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#62A486", mb: 0.75 }}>
                         {feature.label}
                       </Typography>
                       <Typography sx={{ fontSize: "0.85rem", color: "#A1A1AA", lineHeight: 1.6 }}>
@@ -1372,7 +1372,7 @@ export default function CustomBusinessSoftwarePage() {
                     variant="contained"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       px: 3.5,
                       py: 1.35,
@@ -1380,7 +1380,7 @@ export default function CustomBusinessSoftwarePage() {
                       fontSize: "0.9rem",
                       borderRadius: "9999px",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       },
                     }}
                   >
@@ -1426,19 +1426,19 @@ export default function CustomBusinessSoftwarePage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <HelpOutlineOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+              <HelpOutlineOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 COMMON QUESTIONS
@@ -1450,7 +1450,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 maxWidth: { xs: "100%", md: 980, lg: 1100 },
@@ -1477,9 +1477,9 @@ export default function CustomBusinessSoftwarePage() {
         component="section"
         sx={{
           py: { xs: 10, md: 14 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          bgcolor: "#F7F7F2",
+          borderTop: "1px solid rgba(216, 229, 213, 0.8)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.8)",
         }}
       >
         <Container maxWidth="xl">
@@ -1492,8 +1492,8 @@ export default function CustomBusinessSoftwarePage() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
@@ -1503,7 +1503,7 @@ export default function CustomBusinessSoftwarePage() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                 }}
               >
                 COMPREHENSIVE DIGITAL CAPABILITIES
@@ -1515,7 +1515,7 @@ export default function CustomBusinessSoftwarePage() {
               sx={{
                 fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 letterSpacing: "-0.03em",
                 lineHeight: { xs: 1.18, md: 1.2 },
                 maxWidth: { xs: "100%", md: 980, lg: 1100 },
@@ -1560,16 +1560,16 @@ export default function CustomBusinessSoftwarePage() {
                     p: 4,
                     borderRadius: "20px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 12px 30px rgba(24, 24, 27, 0.05)",
+                      boxShadow: "0 12px 30px rgba(24, 61, 53, 0.05)",
                     },
                   }}
                 >
@@ -1578,8 +1578,8 @@ export default function CustomBusinessSoftwarePage() {
                       sx={{
                         fontSize: "0.75rem",
                         fontWeight: 700,
-                        color: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        color: "#3D765D",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
                         px: 1.5,
                         py: 0.5,
                         borderRadius: "9999px",
@@ -1594,7 +1594,7 @@ export default function CustomBusinessSoftwarePage() {
 
                     <Typography
                       variant="h3"
-                      sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}
+                      sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}
                     >
                       {sol.title}
                     </Typography>
@@ -1609,13 +1609,13 @@ export default function CustomBusinessSoftwarePage() {
                       variant="text"
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                       sx={{
-                        color: "#EA580C",
+                        color: "#3D765D",
                         fontWeight: 700,
                         p: 0,
                         fontSize: "0.9rem",
                         "&:hover": {
                           bgcolor: "transparent",
-                          color: "#C2410C",
+                          color: "#183D35",
                         },
                       }}
                     >

@@ -12,7 +12,7 @@ export default function HowWeHelpCta() {
       component="section"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
       }}
     >
@@ -31,9 +31,9 @@ export default function HowWeHelpCta() {
               border: "1px solid rgba(255, 255, 255, 0.12)",
               p: { xs: 4, sm: 6, md: 8 },
               background:
-                "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
+                "linear-gradient(145deg, #183D35 0%, #0F0E0E 60%, #201A18 100%)",
               borderRadius: { xs: "24px", md: "36px" },
-              boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
+              boxShadow: "0 30px 80px -20px rgba(24, 61, 53, 0.5)",
               position: "relative",
               overflow: "hidden",
             }}
@@ -49,7 +49,7 @@ export default function HowWeHelpCta() {
                 right: "-10%",
                 width: "440px",
                 height: "440px",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.32) 0%, transparent 70%)",
                 filter: "blur(60px)",
                 pointerEvents: "none",
               }}
@@ -92,8 +92,8 @@ export default function HowWeHelpCta() {
                     px: 2.2,
                     py: 0.6,
                     borderRadius: "9999px",
-                    bgcolor: "rgba(249, 115, 22, 0.2)",
-                    border: "1px solid rgba(251, 146, 60, 0.4)",
+                    bgcolor: "rgba(61, 118, 93, 0.2)",
+                    border: "1px solid rgba(216, 229, 213, 0.4)",
                     mb: 3.5,
                   }}
                 >
@@ -101,14 +101,14 @@ export default function HowWeHelpCta() {
                     component={motion.div}
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                    sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 10px #FB923C" }}
+                    sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#62A486", boxShadow: "0 0 10px #62A486" }}
                   />
                   <Typography
                     sx={{
                       fontSize: "0.8rem",
                       letterSpacing: "0.06em",
                       textTransform: "uppercase",
-                      color: "#FB923C",
+                      color: "#62A486",
                       fontWeight: 700,
                     }}
                   >
@@ -137,7 +137,7 @@ export default function HowWeHelpCta() {
                 <Box
                   component="span"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}
@@ -181,18 +181,18 @@ export default function HowWeHelpCta() {
                       variant="contained"
                       endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                       sx={{
-                        background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                        background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                         color: "#FFFFFF",
                         px: { xs: 3.5, sm: 4.5 },
                         py: { xs: 1.4, sm: 1.6 },
                         fontSize: { xs: "0.95rem", sm: "1rem" },
                         fontWeight: 700,
                         borderRadius: "9999px",
-                        boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.4)",
+                        boxShadow: "0 10px 25px -5px rgba(61, 118, 93, 0.4)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                          boxShadow: "0 15px 30px -5px rgba(234, 88, 12, 0.5)",
+                          background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                          boxShadow: "0 15px 30px -5px rgba(61, 118, 93, 0.5)",
                         },
                       }}
                     >
@@ -217,9 +217,9 @@ export default function HowWeHelpCta() {
                         backdropFilter: "blur(10px)",
                         transition: "all 0.25s ease",
                         "&:hover": {
-                          borderColor: "#FB923C",
-                          bgcolor: "rgba(249, 115, 22, 0.1)",
-                          color: "#FB923C",
+                          borderColor: "#62A486",
+                          bgcolor: "rgba(61, 118, 93, 0.1)",
+                          color: "#62A486",
                         },
                       }}
                     >
@@ -248,7 +248,7 @@ export default function HowWeHelpCta() {
                   "Zero sales pressure • Objective system guidance",
                 ].map((item, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#62A486" }} />
                     <Typography sx={{ fontSize: "0.85rem", color: "#A1A1AA", fontWeight: 500 }}>
                       {item}
                     </Typography>

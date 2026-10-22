@@ -23,11 +23,11 @@ export default function PortfolioBackButton() {
           onClick={() => router.push('/portfolio')}
           aria-label="Back to Work"
           sx={{ 
-            bgcolor: '#FAF9F5', 
-            color: '#0E172A', 
-            border: '1px solid rgba(17, 18, 21, 0.12)',
-            boxShadow: '0 8px 24px rgba(17, 18, 21, 0.08)',
-            '&:hover': { bgcolor: '#0E172A', color: '#FFFFFF' },
+            bgcolor: '#F7F7F2', 
+            color: '#183D35', 
+            border: '1px solid rgba(24, 61, 53, 0.12)',
+            boxShadow: '0 8px 24px rgba(24, 61, 53, 0.08)',
+            '&:hover': { bgcolor: '#183D35', color: '#FFFFFF' },
             width: 44,
             height: 44,
             transition: 'all 0.25s ease',

@@ -35,7 +35,7 @@ export default function InteractiveServiceExplorer({
         <Typography
           variant="caption"
           sx={{
-            color: "#0E7490",
+            color: "#3D765D",
             fontWeight: 700,
             letterSpacing: "0.14em",
             display: "block",
@@ -47,7 +47,7 @@ export default function InteractiveServiceExplorer({
         <Typography
           variant="h3"
           sx={{
-            color: "#0E172A",
+            color: "#183D35",
             fontSize: { xs: "1.75rem", sm: "2.2rem", md: "2.6rem" },
             fontWeight: 800,
             letterSpacing: "-0.025em",
@@ -64,7 +64,7 @@ export default function InteractiveServiceExplorer({
             flexWrap: "wrap",
             gap: 1.2,
             p: 0.8,
-            bgcolor: "#F2F0EB",
+            bgcolor: "#F7F7F2",
             borderRadius: "10px",
             width: "fit-content",
           }}
@@ -87,17 +87,17 @@ export default function InteractiveServiceExplorer({
                   borderRadius: "8px",
                   border: "none",
                   bgcolor: isSelected ? "#FFFFFF" : "transparent",
-                  color: isSelected ? "#0E172A" : "#5E6068",
+                  color: isSelected ? "#183D35" : "#5E6068",
                   fontWeight: isSelected ? 800 : 600,
                   fontSize: { xs: "0.82rem", sm: "0.9rem" },
                   cursor: "pointer",
-                  boxShadow: isSelected ? "0 4px 12px rgba(17, 18, 21, 0.08)" : "none",
+                  boxShadow: isSelected ? "0 4px 12px rgba(24, 61, 53, 0.08)" : "none",
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 1,
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    color: isSelected ? "#0E172A" : "#0E7490",
+                    color: isSelected ? "#183D35" : "#3D765D",
                   },
                 }}
               >
@@ -106,7 +106,7 @@ export default function InteractiveServiceExplorer({
                   sx={{
                     fontFamily: "monospace",
                     fontSize: "0.75rem",
-                    color: isSelected ? "#0E7490" : "#8E9098",
+                    color: isSelected ? "#3D765D" : "#8E9098",
                     fontWeight: 700,
                   }}
                 >
@@ -134,8 +134,8 @@ export default function InteractiveServiceExplorer({
             bgcolor: "#FFFFFF",
             p: { xs: 3.5, sm: 4.5, md: 5 },
             borderRadius: "14px",
-            border: "1px solid rgba(17, 18, 21, 0.08)",
-            boxShadow: "0 8px 24px rgba(17, 18, 21, 0.03)",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
+            boxShadow: "0 8px 24px rgba(24, 61, 53, 0.03)",
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2 }}>
@@ -144,8 +144,8 @@ export default function InteractiveServiceExplorer({
                 px: 1.4,
                 py: 0.4,
                 borderRadius: "4px",
-                bgcolor: "rgba(14, 116, 144, 0.08)",
-                color: "#0E7490",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                color: "#3D765D",
                 fontSize: "0.75rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
@@ -159,7 +159,7 @@ export default function InteractiveServiceExplorer({
           <Typography
             variant="h4"
             sx={{
-              color: "#0E172A",
+              color: "#183D35",
               fontSize: { xs: "1.45rem", sm: "1.75rem" },
               fontWeight: 800,
               letterSpacing: "-0.02em",
@@ -192,8 +192,8 @@ export default function InteractiveServiceExplorer({
             sx={{
               p: 2.5,
               borderRadius: "8px",
-              bgcolor: "#FAF9F5",
-              border: "1px solid rgba(17, 18, 21, 0.06)",
+              bgcolor: "#F7F7F2",
+              border: "1px solid rgba(24, 61, 53, 0.06)",
               display: "flex",
               flexDirection: { xs: "column", sm: "row" },
               justifyContent: "space-between",
@@ -202,8 +202,8 @@ export default function InteractiveServiceExplorer({
             }}
           >
             <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
-              <CheckCircleIcon sx={{ color: "#0E7490", fontSize: 20 }} />
-              <Typography sx={{ color: "#0E172A", fontWeight: 700, fontSize: "0.9rem" }}>
+              <CheckCircleIcon sx={{ color: "#3D765D", fontSize: 20 }} />
+              <Typography sx={{ color: "#183D35", fontWeight: 700, fontSize: "0.9rem" }}>
                 Deliverable: Fully documented &amp; tested implementation
               </Typography>
             </Box>
@@ -214,11 +214,11 @@ export default function InteractiveServiceExplorer({
               variant="text"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 fontSize: "0.85rem",
                 p: 0,
-                "&:hover": { bgcolor: "transparent", color: "#0E172A" },
+                "&:hover": { bgcolor: "transparent", color: "#183D35" },
               }}
             >
               Ask an Engineer
@@ -232,7 +232,7 @@ export default function InteractiveServiceExplorer({
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.1em",
                 display: "block",
@@ -243,7 +243,7 @@ export default function InteractiveServiceExplorer({
             </Typography>
             <Typography
               sx={{
-                color: "#0E172A",
+                color: "#183D35",
                 fontWeight: 800,
                 fontSize: "1.25rem",
                 letterSpacing: "-0.01em",
@@ -260,12 +260,12 @@ export default function InteractiveServiceExplorer({
                 bgcolor: "#FFFFFF",
                 p: 3,
                 borderRadius: "10px",
-                border: "1px solid rgba(17, 18, 21, 0.08)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
                 transition: "all 0.25s ease",
                 "&:hover": {
-                  borderColor: "#0E7490",
+                  borderColor: "#3D765D",
                   transform: "translateY(-2px)",
-                  boxShadow: "0 8px 24px rgba(14, 116, 144, 0.06)",
+                  boxShadow: "0 8px 24px rgba(61, 118, 93, 0.06)",
                 },
               }}
             >
@@ -273,7 +273,7 @@ export default function InteractiveServiceExplorer({
                 <Typography
                   sx={{
                     fontFamily: "monospace",
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 800,
                     fontSize: "0.8rem",
                   }}
@@ -285,7 +285,7 @@ export default function InteractiveServiceExplorer({
               <Typography
                 variant="h6"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontWeight: 700,
                   fontSize: "1.05rem",
                   mb: 0.8,

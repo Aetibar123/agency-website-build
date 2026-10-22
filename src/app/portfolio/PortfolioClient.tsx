@@ -89,13 +89,13 @@ export default function PortfolioClient() {
   }, [allProjects, activeFilter]);
 
   return (
-    <Box sx={{ bgcolor: "#FAF9F5", minHeight: "100vh", color: "#111215" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", minHeight: "100vh", color: "#183D35" }}>
       {/* 1. EDITORIAL HERO & TELEMETRY */}
       <Box
         sx={{
           pt: { xs: 16, md: 22 },
           pb: { xs: 8, md: 12 },
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -111,15 +111,15 @@ export default function PortfolioClient() {
                   px: 1.8,
                   py: 0.6,
                   borderRadius: "4px",
-                  bgcolor: "rgba(14, 116, 144, 0.08)",
-                  border: "1px solid rgba(14, 116, 144, 0.18)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.18)",
                 }}
               >
-                <TrendingUpIcon sx={{ color: "#0E7490", fontSize: 18 }} />
+                <TrendingUpIcon sx={{ color: "#3D765D", fontSize: 18 }} />
                 <Typography
                   variant="caption"
                   sx={{
-                    color: "#0E7490",
+                    color: "#3D765D",
                     fontWeight: 700,
                     letterSpacing: "0.14em",
                     fontSize: "0.78rem",
@@ -132,7 +132,7 @@ export default function PortfolioClient() {
               <Typography
                 variant="h1"
                 sx={{
-                  color: "#0E172A",
+                  color: "#183D35",
                   fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                   fontWeight: 600,
                   letterSpacing: "-0.03em",
@@ -143,7 +143,7 @@ export default function PortfolioClient() {
                 }}
               >
                 Selected Work.{" "}
-                <Box component="span" sx={{ color: "#0E7490" }}>
+                <Box component="span" sx={{ color: "#3D765D" }}>
                   Engineered for Impact.
                 </Box>
               </Typography>
@@ -165,8 +165,8 @@ export default function PortfolioClient() {
               {/* 3 Quick Highlight Metrics */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3, alignItems: "center" }}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <VerifiedIcon sx={{ fontSize: 20, color: "#0E7490" }} />
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.92rem", color: "#0E172A" }}>
+                  <VerifiedIcon sx={{ fontSize: 20, color: "#3D765D" }} />
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.92rem", color: "#183D35" }}>
                     100% On-Time Sprints
                   </Typography>
                 </Box>
@@ -190,8 +190,8 @@ export default function PortfolioClient() {
                   bgcolor: "#FFFFFF",
                   borderRadius: "12px",
                   p: 3,
-                  border: "1px solid rgba(17, 18, 21, 0.12)",
-                  boxShadow: "0 20px 40px rgba(17, 18, 21, 0.06)",
+                  border: "1px solid rgba(24, 61, 53, 0.12)",
+                  boxShadow: "0 20px 40px rgba(24, 61, 53, 0.06)",
                 }}
               >
                 {/* Header */}
@@ -199,7 +199,7 @@ export default function PortfolioClient() {
                   sx={{
                     pb: 1.5,
                     mb: 2,
-                    borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+                    borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -208,7 +208,7 @@ export default function PortfolioClient() {
                   <Typography
                     variant="caption"
                     sx={{
-                      color: "#0E7490",
+                      color: "#3D765D",
                       fontFamily: "monospace",
                       fontWeight: 800,
                       fontSize: "0.75rem",
@@ -234,23 +234,23 @@ export default function PortfolioClient() {
 
                 {/* 4 Telemetry Metrics */}
                 <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 1.5 }}>
-                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#FAF9F5", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#F7F7F2", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#6B6E76", fontFamily: "monospace", fontSize: "0.68rem", fontWeight: 700, display: "block", mb: 0.4 }}>
                       PAGE SPEED BENCHMARK
                     </Typography>
-                    <Typography sx={{ color: "#0E172A", fontWeight: 800, fontSize: "1.1rem" }}>
+                    <Typography sx={{ color: "#183D35", fontWeight: 800, fontSize: "1.1rem" }}>
                       0.38s FCP
                     </Typography>
-                    <Typography variant="caption" sx={{ color: "#0E7490", fontWeight: 600, fontSize: "0.72rem" }}>
+                    <Typography variant="caption" sx={{ color: "#3D765D", fontWeight: 600, fontSize: "0.72rem" }}>
                       Top 1% Lighthouse
                     </Typography>
                   </Box>
 
-                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#FAF9F5", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#F7F7F2", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#6B6E76", fontFamily: "monospace", fontSize: "0.68rem", fontWeight: 700, display: "block", mb: 0.4 }}>
                       INDEXED URL SCALE
                     </Typography>
-                    <Typography sx={{ color: "#0E172A", fontWeight: 800, fontSize: "1.1rem" }}>
+                    <Typography sx={{ color: "#183D35", fontWeight: 800, fontSize: "1.1rem" }}>
                       500K+ URLs
                     </Typography>
                     <Typography variant="caption" sx={{ color: "#059669", fontWeight: 600, fontSize: "0.72rem" }}>
@@ -258,23 +258,23 @@ export default function PortfolioClient() {
                     </Typography>
                   </Box>
 
-                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#FAF9F5", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#F7F7F2", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#6B6E76", fontFamily: "monospace", fontSize: "0.68rem", fontWeight: 700, display: "block", mb: 0.4 }}>
                       AI SUPPORT WORKFLOWS
                     </Typography>
-                    <Typography sx={{ color: "#0E172A", fontWeight: 800, fontSize: "1.1rem" }}>
+                    <Typography sx={{ color: "#183D35", fontWeight: 800, fontSize: "1.1rem" }}>
                       &lt; 5s Resolution
                     </Typography>
-                    <Typography variant="caption" sx={{ color: "#0E7490", fontWeight: 600, fontSize: "0.72rem" }}>
+                    <Typography variant="caption" sx={{ color: "#3D765D", fontWeight: 600, fontSize: "0.72rem" }}>
                       70% Deflection
                     </Typography>
                   </Box>
 
-                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#FAF9F5", border: "1px solid rgba(17, 18, 21, 0.06)" }}>
+                  <Box sx={{ p: 1.8, borderRadius: "8px", bgcolor: "#F7F7F2", border: "1px solid rgba(24, 61, 53, 0.06)" }}>
                     <Typography variant="caption" sx={{ color: "#6B6E76", fontFamily: "monospace", fontSize: "0.68rem", fontWeight: 700, display: "block", mb: 0.4 }}>
                       IP &amp; CODEBASE
                     </Typography>
-                    <Typography sx={{ color: "#0E172A", fontWeight: 800, fontSize: "1.1rem" }}>
+                    <Typography sx={{ color: "#183D35", fontWeight: 800, fontSize: "1.1rem" }}>
                       100% Transfer
                     </Typography>
                     <Typography variant="caption" sx={{ color: "#059669", fontWeight: 600, fontSize: "0.72rem" }}>
@@ -290,13 +290,13 @@ export default function PortfolioClient() {
 
       {/* 2. SPOTLIGHT MARQUEE CASE STUDY */}
       {spotlightProject && !searchQuery && (
-        <Box sx={{ bgcolor: "#F2F0EB", py: { xs: 8, md: 12 }, borderBottom: "1px solid rgba(17, 18, 21, 0.08)" }}>
+        <Box sx={{ bgcolor: "#F7F7F2", py: { xs: 8, md: 12 }, borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}>
           <Container maxWidth="xl">
             <Box sx={{ mb: 3 }}>
               <Typography
                 variant="caption"
                 sx={{
-                  color: "#0E7490",
+                  color: "#3D765D",
                   fontWeight: 700,
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
@@ -311,9 +311,9 @@ export default function PortfolioClient() {
               sx={{
                 bgcolor: "#FFFFFF",
                 borderRadius: "14px",
-                border: "1px solid rgba(17, 18, 21, 0.1)",
+                border: "1px solid rgba(24, 61, 53, 0.1)",
                 overflow: "hidden",
-                boxShadow: "0 24px 48px rgba(17, 18, 21, 0.06)",
+                boxShadow: "0 24px 48px rgba(24, 61, 53, 0.06)",
               }}
             >
               <Grid container>
@@ -342,7 +342,7 @@ export default function PortfolioClient() {
                         position: "absolute",
                         inset: 0,
                         background:
-                          "linear-gradient(180deg, rgba(14, 23, 42, 0.04) 0%, rgba(14, 23, 42, 0.35) 100%)",
+                          "linear-gradient(180deg, rgba(24, 61, 53, 0.04) 0%, rgba(24, 61, 53, 0.35) 100%)",
                       }}
                     />
 
@@ -357,14 +357,14 @@ export default function PortfolioClient() {
                           px: 2,
                           py: 0.8,
                           borderRadius: "6px",
-                          border: "1px solid rgba(17, 18, 21, 0.1)",
+                          border: "1px solid rgba(24, 61, 53, 0.1)",
                           display: "flex",
                           alignItems: "center",
                           gap: 1,
                         }}
                       >
                         <Box sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#059669" }} />
-                        <Typography sx={{ fontWeight: 800, fontSize: "0.85rem", color: "#0E172A", fontFamily: "monospace" }}>
+                        <Typography sx={{ fontWeight: 800, fontSize: "0.85rem", color: "#183D35", fontFamily: "monospace" }}>
                           {spotlightProject.metric} &bull; {spotlightProject.metricLabel}
                         </Typography>
                       </Box>
@@ -380,7 +380,7 @@ export default function PortfolioClient() {
                         <Typography
                           variant="caption"
                           sx={{
-                            color: "#0E7490",
+                            color: "#3D765D",
                             fontWeight: 700,
                             letterSpacing: "0.08em",
                             fontSize: "0.8rem",
@@ -409,7 +409,7 @@ export default function PortfolioClient() {
                         variant="h3"
                         sx={{
                           fontWeight: 800,
-                          color: "#0E172A",
+                          color: "#183D35",
                           fontSize: { xs: "1.6rem", md: "2.1rem" },
                           letterSpacing: "-0.02em",
                           lineHeight: 1.25,
@@ -435,8 +435,8 @@ export default function PortfolioClient() {
                       <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, mb: 3.5 }}>
                         {spotlightProject.results.slice(0, 3).map((res, rIdx) => (
                           <Box key={rIdx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.2 }}>
-                            <CheckCircleIcon sx={{ color: "#0E7490", fontSize: 18, mt: 0.2 }} />
-                            <Typography sx={{ color: "#111215", fontSize: "0.9rem", fontWeight: 600 }}>
+                            <CheckCircleIcon sx={{ color: "#3D765D", fontSize: 18, mt: 0.2 }} />
+                            <Typography sx={{ color: "#183D35", fontSize: "0.9rem", fontWeight: 600 }}>
                               {res}
                             </Typography>
                           </Box>
@@ -452,12 +452,12 @@ export default function PortfolioClient() {
                               sx={{
                                 px: 1.4,
                                 py: 0.4,
-                                bgcolor: "#FAF9F5",
+                                bgcolor: "#F7F7F2",
                                 borderRadius: "4px",
-                                border: "1px solid rgba(17, 18, 21, 0.08)",
+                                border: "1px solid rgba(24, 61, 53, 0.08)",
                                 fontSize: "0.75rem",
                                 fontWeight: 600,
-                                color: "#0E172A",
+                                color: "#183D35",
                               }}
                             >
                               {tech}
@@ -475,14 +475,14 @@ export default function PortfolioClient() {
                         variant="contained"
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                         sx={{
-                          bgcolor: "#0E172A",
+                          bgcolor: "#183D35",
                           color: "#FFFFFF",
                           px: 3.5,
                           py: 1.4,
                           fontSize: "0.92rem",
                           fontWeight: 600,
                           borderRadius: "6px",
-                          boxShadow: "0 6px 20px rgba(14, 23, 42, 0.12)",
+                          boxShadow: "0 6px 20px rgba(24, 61, 53, 0.12)",
                           "&:hover": {
                             bgcolor: "#1E293B",
                             transform: "translateY(-2px)",
@@ -501,7 +501,7 @@ export default function PortfolioClient() {
       )}
 
       {/* 3. FILTER BAR & SEARCH */}
-      <Box sx={{ py: 6, borderBottom: "1px solid rgba(17, 18, 21, 0.08)", bgcolor: "#FAF9F5" }}>
+      <Box sx={{ py: 6, borderBottom: "1px solid rgba(24, 61, 53, 0.08)", bgcolor: "#F7F7F2" }}>
         <Container maxWidth="xl">
           <Box
             sx={{
@@ -529,18 +529,18 @@ export default function PortfolioClient() {
                       textTransform: "none",
                       fontWeight: 600,
                       fontSize: "0.85rem",
-                      bgcolor: isSelected ? "#0E172A" : "#FFFFFF",
+                      bgcolor: isSelected ? "#183D35" : "#FFFFFF",
                       color: isSelected ? "#FFFFFF" : "#4A4D57",
                       border: "1px solid",
                       borderColor: isSelected
-                        ? "#0E172A"
-                        : "rgba(17, 18, 21, 0.1)",
+                        ? "#183D35"
+                        : "rgba(24, 61, 53, 0.1)",
                       display: "flex",
                       alignItems: "center",
                       gap: 1,
                       "&:hover": {
-                        bgcolor: isSelected ? "#1E293B" : "#F2F0EB",
-                        borderColor: isSelected ? "#1E293B" : "#0E172A",
+                        bgcolor: isSelected ? "#1E293B" : "#F7F7F2",
+                        borderColor: isSelected ? "#1E293B" : "#183D35",
                       },
                     }}
                   >
@@ -552,7 +552,7 @@ export default function PortfolioClient() {
                         px: 0.8,
                         py: 0.1,
                         borderRadius: "10px",
-                        bgcolor: isSelected ? "rgba(255, 255, 255, 0.2)" : "rgba(17, 18, 21, 0.06)",
+                        bgcolor: isSelected ? "rgba(255, 255, 255, 0.2)" : "rgba(24, 61, 53, 0.06)",
                         color: isSelected ? "#FFFFFF" : "#6B6E76",
                         fontFamily: "monospace",
                       }}
@@ -574,7 +574,7 @@ export default function PortfolioClient() {
                 alignItems: "center",
                 width: { xs: "100%", md: 280 },
                 borderRadius: "6px",
-                border: "1px solid rgba(17, 18, 21, 0.12)",
+                border: "1px solid rgba(24, 61, 53, 0.12)",
                 bgcolor: "#FFFFFF",
               }}
             >
@@ -602,7 +602,7 @@ export default function PortfolioClient() {
       {/* 4. MAIN PROJECT GRID */}
       <Container maxWidth="xl" sx={{ py: { xs: 8, md: 14 } }}>
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 5 }}>
-          <Typography variant="h4" sx={{ fontWeight: 800, fontSize: { xs: "1.4rem", md: "1.8rem" }, color: "#0E172A" }}>
+          <Typography variant="h4" sx={{ fontWeight: 800, fontSize: { xs: "1.4rem", md: "1.8rem" }, color: "#183D35" }}>
             {activeFilter === "All" ? "All Selected Work" : `${activeFilter} Work`}
           </Typography>
           <Typography variant="body2" sx={{ color: "#6B6E76", fontWeight: 600 }}>
@@ -625,10 +625,10 @@ export default function PortfolioClient() {
               textAlign: "center",
               bgcolor: "#FFFFFF",
               borderRadius: "12px",
-              border: "1px solid rgba(17, 18, 21, 0.08)",
+              border: "1px solid rgba(24, 61, 53, 0.08)",
             }}
           >
-            <Typography variant="h5" sx={{ fontWeight: 700, mb: 1.5, color: "#0E172A" }}>
+            <Typography variant="h5" sx={{ fontWeight: 700, mb: 1.5, color: "#183D35" }}>
               No matching work found
             </Typography>
             <Typography variant="body2" sx={{ color: "#5E6068", mb: 3 }}>
@@ -640,7 +640,7 @@ export default function PortfolioClient() {
                 setActiveFilter("All");
                 setSearchQuery("");
               }}
-              sx={{ borderColor: "#0E172A", color: "#0E172A" }}
+              sx={{ borderColor: "#183D35", color: "#183D35" }}
             >
               Reset Filters
             </Button>
@@ -651,10 +651,10 @@ export default function PortfolioClient() {
       {/* 5. QUALITY GUARANTEES & STANDARDS */}
       <Box
         sx={{
-          bgcolor: "#F2F0EB",
+          bgcolor: "#F7F7F2",
           py: { xs: 10, md: 14 },
-          borderTop: "1px solid rgba(17, 18, 21, 0.08)",
-          borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+          borderTop: "1px solid rgba(24, 61, 53, 0.08)",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
@@ -662,7 +662,7 @@ export default function PortfolioClient() {
             <Typography
               variant="caption"
               sx={{
-                color: "#0E7490",
+                color: "#3D765D",
                 fontWeight: 700,
                 letterSpacing: "0.14em",
                 display: "block",
@@ -675,7 +675,7 @@ export default function PortfolioClient() {
               variant="h3"
               sx={{
                 fontWeight: 800,
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "1.8rem", md: "2.4rem" },
                 letterSpacing: "-0.02em",
                 mb: 2,
@@ -714,10 +714,10 @@ export default function PortfolioClient() {
               <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={std.num}>
                 <Box
                   sx={{
-                    bgcolor: "#FAF9F5",
+                    bgcolor: "#F7F7F2",
                     p: 3.5,
                     borderRadius: "10px",
-                    border: "1px solid rgba(17, 18, 21, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -727,7 +727,7 @@ export default function PortfolioClient() {
                   <Box>
                     <Typography
                       sx={{
-                        color: "#0E7490",
+                        color: "#3D765D",
                         fontWeight: 800,
                         fontSize: "0.85rem",
                         fontFamily: "monospace",
@@ -741,7 +741,7 @@ export default function PortfolioClient() {
                       sx={{
                         fontWeight: 700,
                         fontSize: "1.1rem",
-                        color: "#0E172A",
+                        color: "#183D35",
                         mb: 1.2,
                         lineHeight: 1.35,
                       }}

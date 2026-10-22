@@ -198,7 +198,7 @@ export default function HowWeHelpHero() {
         pt: { xs: 16, sm: 18, md: 20 },
         pb: { xs: 10, md: 16 },
         background:
-          "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.08) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+          "radial-gradient(120% 75% at 50% 0%, rgba(61, 118, 93, 0.08) 0%, rgba(216, 229, 213, 0.03) 45%, #FFFFFF 85%)",
         overflow: "hidden",
       }}
     >
@@ -208,7 +208,7 @@ export default function HowWeHelpHero() {
           position: "absolute",
           inset: 0,
           backgroundImage:
-            "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
+            "linear-gradient(to right, rgba(24, 61, 53, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.04) 1px, transparent 1px)",
           backgroundSize: "56px 56px",
           maskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
           WebkitMaskImage: "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
@@ -245,9 +245,9 @@ export default function HowWeHelpHero() {
                 px: 2.2,
                 py: 0.8,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: { xs: 3, md: 3.5 },
               }}
@@ -260,8 +260,8 @@ export default function HowWeHelpHero() {
                   width: 8,
                   height: 8,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#4D8F72",
+                  boxShadow: "0 0 10px #4D8F72",
                 }}
               />
               <Typography
@@ -269,7 +269,7 @@ export default function HowWeHelpHero() {
                   fontSize: { xs: "0.75rem", sm: "0.825rem" },
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -290,7 +290,7 @@ export default function HowWeHelpHero() {
               sx={{
                 fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 lineHeight: { xs: 1.25, md: 1.18 },
                 letterSpacing: { xs: "-0.02em", md: "-0.035em" },
                 textAlign: "left",
@@ -303,7 +303,7 @@ export default function HowWeHelpHero() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -360,18 +360,18 @@ export default function HowWeHelpHero() {
                     variant="contained"
                     endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       px: { xs: 3.5, sm: 4.5 },
                       py: { xs: 1.4, sm: 1.6 },
                       fontSize: { xs: "0.95rem", sm: "1rem" },
                       fontWeight: 700,
                       borderRadius: "9999px",
-                      boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.38)",
+                      boxShadow: "0 10px 25px -5px rgba(61, 118, 93, 0.38)",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                        boxShadow: "0 15px 30px -5px rgba(234, 88, 12, 0.5)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                        boxShadow: "0 15px 30px -5px rgba(61, 118, 93, 0.5)",
                       },
                     }}
                   >
@@ -386,8 +386,8 @@ export default function HowWeHelpHero() {
                     variant="outlined"
                     endIcon={<ArrowDownwardRoundedIcon sx={{ fontSize: 18 }} />}
                     sx={{
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.2)",
+                      color: "#183D35",
+                      borderColor: "rgba(24, 61, 53, 0.2)",
                       bgcolor: "rgba(255, 255, 255, 0.85)",
                       backdropFilter: "blur(10px)",
                       px: { xs: 3.5, sm: 4 },
@@ -395,12 +395,12 @@ export default function HowWeHelpHero() {
                       fontSize: { xs: "0.95rem", sm: "1rem" },
                       fontWeight: 600,
                       borderRadius: "9999px",
-                      boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
+                      boxShadow: "0 2px 8px rgba(24, 61, 53, 0.04)",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.04)",
-                        color: "#EA580C",
+                        borderColor: "#3D765D",
+                        bgcolor: "rgba(61, 118, 93, 0.04)",
+                        color: "#3D765D",
                       },
                     }}
                   >
@@ -433,7 +433,7 @@ export default function HowWeHelpHero() {
                 "Engineering Studio Based in Udaipur, India",
               ].map((text, i) => (
                 <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
+                  <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#3D765D" }} />
                   <Typography sx={{ fontSize: "0.85rem", color: "#52525B", fontWeight: 500 }}>
                     {text}
                   </Typography>
@@ -465,7 +465,7 @@ export default function HowWeHelpHero() {
                 width: "95%",
                 height: "85%",
                 background:
-                  "radial-gradient(ellipse, rgba(249, 115, 22, 0.2) 0%, rgba(251, 146, 60, 0.08) 50%, transparent 75%)",
+                  "radial-gradient(ellipse, rgba(61, 118, 93, 0.2) 0%, rgba(216, 229, 213, 0.08) 50%, transparent 75%)",
                 filter: "blur(65px)",
                 zIndex: 0,
                 pointerEvents: "none",
@@ -478,10 +478,10 @@ export default function HowWeHelpHero() {
                 position: "relative",
                 zIndex: 1,
                 borderRadius: { xs: "20px", sm: "28px", md: "32px" },
-                background: "linear-gradient(145deg, #18181B 0%, #111113 70%, #1A1816 100%)",
-                border: "1px solid rgba(249, 115, 22, 0.35)",
+                background: "linear-gradient(145deg, #183D35 0%, #111113 70%, #1A1816 100%)",
+                border: "1px solid rgba(61, 118, 93, 0.35)",
                 boxShadow:
-                  "0 30px 80px -20px rgba(24, 24, 27, 0.5), 0 0 0 1px rgba(249, 115, 22, 0.15)",
+                  "0 30px 80px -20px rgba(24, 61, 53, 0.5), 0 0 0 1px rgba(61, 118, 93, 0.15)",
                 overflow: "hidden",
                 transition: "all 0.3s ease",
               }}
@@ -491,7 +491,7 @@ export default function HowWeHelpHero() {
                 sx={{
                   px: { xs: 2.5, sm: 3.5 },
                   py: 2,
-                  bgcolor: "rgba(24, 24, 27, 0.6)",
+                  bgcolor: "rgba(24, 61, 53, 0.6)",
                   borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
                   display: "flex",
                   flexWrap: "wrap",
@@ -540,13 +540,13 @@ export default function HowWeHelpHero() {
                           borderRadius: "9999px",
                           fontSize: "0.775rem",
                           fontWeight: 700,
-                          bgcolor: isSelected ? "rgba(249, 115, 22, 0.2)" : "rgba(255, 255, 255, 0.04)",
-                          border: isSelected ? "1px solid #EA580C" : "1px solid rgba(255, 255, 255, 0.1)",
-                          color: isSelected ? "#FB923C" : "#A1A1AA",
+                          bgcolor: isSelected ? "rgba(61, 118, 93, 0.2)" : "rgba(255, 255, 255, 0.04)",
+                          border: isSelected ? "1px solid #3D765D" : "1px solid rgba(255, 255, 255, 0.1)",
+                          color: isSelected ? "#62A486" : "#A1A1AA",
                           transition: "all 0.2s ease",
                           "&:hover": {
-                            bgcolor: "rgba(249, 115, 22, 0.25)",
-                            borderColor: "#EA580C",
+                            bgcolor: "rgba(61, 118, 93, 0.25)",
+                            borderColor: "#3D765D",
                             color: "#FFFFFF",
                           },
                         }}
@@ -578,11 +578,11 @@ export default function HowWeHelpHero() {
                             bgcolor: "rgba(255, 255, 255, 0.04)",
                             border:
                               simStep === 1
-                                ? "2px solid #EA580C"
+                                ? "2px solid #3D765D"
                                 : "1px solid rgba(255, 255, 255, 0.1)",
                             boxShadow:
                               simStep === 1
-                                ? "0 0 25px rgba(234, 88, 12, 0.35)"
+                                ? "0 0 25px rgba(61, 118, 93, 0.35)"
                                 : "none",
                             height: "100%",
                             display: "flex",
@@ -594,8 +594,8 @@ export default function HowWeHelpHero() {
                           <Box>
                             <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
                               <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
-                                <LanguageIcon sx={{ fontSize: 20, color: "#FB923C" }} />
-                                <Typography sx={{ fontSize: "0.725rem", fontWeight: 800, color: "#FB923C", letterSpacing: "0.06em" }}>
+                                <LanguageIcon sx={{ fontSize: 20, color: "#62A486" }} />
+                                <Typography sx={{ fontSize: "0.725rem", fontWeight: 800, color: "#62A486", letterSpacing: "0.06em" }}>
                                   {currentDemo.frontStage.badge}
                                 </Typography>
                               </Box>
@@ -603,8 +603,8 @@ export default function HowWeHelpHero() {
                                 label={currentDemo.frontStage.tag}
                                 size="small"
                                 sx={{
-                                  bgcolor: "rgba(249, 115, 22, 0.15)",
-                                  color: "#FB923C",
+                                  bgcolor: "rgba(61, 118, 93, 0.15)",
+                                  color: "#62A486",
                                   fontWeight: 700,
                                   fontSize: "0.7rem",
                                   borderRadius: "6px",
@@ -680,25 +680,25 @@ export default function HowWeHelpHero() {
                               borderRadius: "16px",
                               bgcolor:
                                 simStep === 2
-                                  ? "#EA580C"
-                                  : "rgba(249, 115, 22, 0.15)",
-                              border: "1px solid rgba(249, 115, 22, 0.4)",
+                                  ? "#3D765D"
+                                  : "rgba(61, 118, 93, 0.15)",
+                              border: "1px solid rgba(61, 118, 93, 0.4)",
                               color: "#FFFFFF",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
                               boxShadow:
                                 simStep === 2
-                                  ? "0 0 25px #EA580C"
-                                  : "0 4px 15px rgba(249, 115, 22, 0.2)",
+                                  ? "0 0 25px #3D765D"
+                                  : "0 4px 15px rgba(61, 118, 93, 0.2)",
                               mb: 1.5,
                               transition: "all 0.3s ease",
                             }}
                           >
-                            <SyncAltRoundedIcon sx={{ fontSize: 26, color: simStep === 2 ? "#FFFFFF" : "#FB923C" }} />
+                            <SyncAltRoundedIcon sx={{ fontSize: 26, color: simStep === 2 ? "#FFFFFF" : "#62A486" }} />
                           </Box>
 
-                          <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#FB923C", textAlign: "center", mb: 0.5 }}>
+                          <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#62A486", textAlign: "center", mb: 0.5 }}>
                             {currentDemo.eventBus.latency}
                           </Typography>
                           <Typography sx={{ fontSize: "0.7rem", color: "#71717A", textAlign: "center", maxWidth: 120 }}>
@@ -716,11 +716,11 @@ export default function HowWeHelpHero() {
                             bgcolor: "rgba(255, 255, 255, 0.04)",
                             border:
                               simStep === 3
-                                ? "2px solid #EA580C"
+                                ? "2px solid #3D765D"
                                 : "1px solid rgba(255, 255, 255, 0.1)",
                             boxShadow:
                               simStep === 3
-                                ? "0 0 25px rgba(234, 88, 12, 0.35)"
+                                ? "0 0 25px rgba(61, 118, 93, 0.35)"
                                 : "none",
                             height: "100%",
                             display: "flex",
@@ -814,8 +814,8 @@ export default function HowWeHelpHero() {
                         width: 8,
                         height: 8,
                         borderRadius: "50%",
-                        bgcolor: isSimulating ? "#F97316" : "#10B981",
-                        boxShadow: isSimulating ? "0 0 12px #F97316" : "0 0 8px #10B981",
+                        bgcolor: isSimulating ? "#4D8F72" : "#10B981",
+                        boxShadow: isSimulating ? "0 0 12px #4D8F72" : "0 0 8px #10B981",
                       }}
                     />
                     <Typography sx={{ fontSize: "0.8rem", color: "#D4D4D8", fontWeight: 500 }}>
@@ -841,13 +841,13 @@ export default function HowWeHelpHero() {
                       px: 3,
                       py: 1,
                       borderRadius: "9999px",
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       fontWeight: 700,
                       fontSize: "0.85rem",
-                      boxShadow: "0 6px 20px rgba(234, 88, 12, 0.4)",
+                      boxShadow: "0 6px 20px rgba(61, 118, 93, 0.4)",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                       },
                     }}
                   >

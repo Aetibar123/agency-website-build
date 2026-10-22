@@ -85,9 +85,9 @@ export default function ProcessSection() {
       id="process"
       component="section"
       sx={{
-        bgcolor: "#F2F0EB",
+        bgcolor: "#F7F7F2",
         py: { xs: 12, md: 18 },
-        borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
       }}
     >
       <Container maxWidth="xl">
@@ -96,7 +96,7 @@ export default function ProcessSection() {
           <Typography
             variant="caption"
             sx={{
-              color: "#0E7490",
+              color: "#3D765D",
               fontWeight: 700,
               letterSpacing: "0.14em",
               display: "block",
@@ -109,7 +109,7 @@ export default function ProcessSection() {
           <Typography
             variant="h2"
             sx={{
-              color: "#0E172A",
+              color: "#183D35",
               fontSize: { xs: "2rem", sm: "2.75rem", md: "3.4rem" },
               fontWeight: 800,
               letterSpacing: "-0.03em",
@@ -119,7 +119,7 @@ export default function ProcessSection() {
           >
             From Initial Hypothesis{" "}
             <Box component="br" sx={{ display: { xs: "none", md: "block" } }} />
-            <Box component="span" sx={{ color: "#0E7490" }}>
+            <Box component="span" sx={{ color: "#3D765D" }}>
               To Predictable Scale.
             </Box>
           </Typography>
@@ -139,14 +139,14 @@ export default function ProcessSection() {
         </Box>
 
         {/* Vertical Typographic Sequence */}
-        <Box sx={{ borderBottom: "1px solid rgba(17, 18, 21, 0.1)" }}>
+        <Box sx={{ borderBottom: "1px solid rgba(24, 61, 53, 0.1)" }}>
           {steps.map((step) => (
             <Box
               key={step.num}
               sx={{
                 py: { xs: 4, sm: 5, md: 5.5 },
                 px: { xs: 2, md: 3 },
-                borderTop: "1px solid rgba(17, 18, 21, 0.1)",
+                borderTop: "1px solid rgba(24, 61, 53, 0.1)",
                 transition: "all 0.25s ease",
                 borderRadius: "8px",
                 "&:hover": {
@@ -167,7 +167,7 @@ export default function ProcessSection() {
                   >
                     <Typography
                       sx={{
-                        color: "#0E7490",
+                        color: "#3D765D",
                         fontSize: { xs: "1.8rem", md: "2.8rem" },
                         fontWeight: 800,
                         lineHeight: 1,
@@ -196,7 +196,7 @@ export default function ProcessSection() {
                   <Typography
                     variant="h4"
                     sx={{
-                      color: "#0E172A",
+                      color: "#183D35",
                       fontSize: { xs: "1.25rem", md: "1.45rem" },
                       fontWeight: 800,
                       letterSpacing: "-0.02em",
@@ -223,16 +223,16 @@ export default function ProcessSection() {
                 <Grid size={{ xs: 12, md: 4 }}>
                   <Box
                     sx={{
-                      bgcolor: "#FAF9F5",
+                      bgcolor: "#F7F7F2",
                       p: 2.5,
                       borderRadius: "8px",
-                      border: "1px solid rgba(17, 18, 21, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                     }}
                   >
                     <Typography
                       variant="caption"
                       sx={{
-                        color: "#0E7490",
+                        color: "#3D765D",
                         fontWeight: 800,
                         fontSize: "0.72rem",
                         letterSpacing: "0.1em",
@@ -258,7 +258,7 @@ export default function ProcessSection() {
                               width: 5,
                               height: 5,
                               borderRadius: "50%",
-                              bgcolor: "#0E172A",
+                              bgcolor: "#183D35",
                               flexShrink: 0,
                             }}
                           />

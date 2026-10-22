@@ -128,7 +128,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main style={{ backgroundColor: "#FFFFFF", color: "#18181B" }}>
+    <main style={{ backgroundColor: "#FFFFFF", color: "#183D35" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -144,8 +144,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         sx={{
           pt: { xs: 14, sm: 16, md: 20 },
           pb: { xs: 8, md: 12 },
-          bgcolor: "#FAFAFA",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.9)",
           position: "relative",
           overflow: "hidden",
         }}
@@ -162,7 +162,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   color: "#71717A",
                   fontSize: "0.85rem",
                   fontWeight: 600,
-                  "&:hover": { color: "#EA580C" },
+                  "&:hover": { color: "#3D765D" },
                 }}
               >
                 <ArrowBackIcon sx={{ fontSize: 14 }} />
@@ -182,14 +182,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 label={project.projectType}
                 size="small"
                 sx={{
-                  bgcolor: "rgba(249, 115, 22, 0.1)",
-                  color: "#EA580C",
+                  bgcolor: "rgba(61, 118, 93, 0.1)",
+                  color: "#3D765D",
                   fontWeight: 700,
                   fontSize: "0.75rem",
                   letterSpacing: "0.04em",
                   textTransform: "uppercase",
                   borderRadius: "9999px",
-                  border: "1px solid rgba(249, 115, 22, 0.3)",
+                  border: "1px solid rgba(61, 118, 93, 0.3)",
                 }}
               />
               <Chip
@@ -201,7 +201,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   fontWeight: 600,
                   fontSize: "0.75rem",
                   borderRadius: "9999px",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                 }}
               />
             </Box>
@@ -210,11 +210,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.18 },
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem", lg: "3.6rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                letterSpacing: "-0.02em",
                 maxWidth: { xs: "100%", md: 1000, lg: 1100 },
                 mx: "auto",
                 textWrap: "balance",
@@ -246,19 +247,19 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   p: 2.5,
                   borderRadius: "14px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 2px 6px rgba(24, 24, 27, 0.02)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 2px 6px rgba(24, 61, 53, 0.02)",
                   textAlign: "center",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, mb: 0.5 }}>
-                  <BusinessOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
+                  <BusinessOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
                   <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                     Business Type
                   </Typography>
                 </Box>
-                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                   {project.businessType || project.clientType}
                 </Typography>
               </Box>
@@ -270,19 +271,19 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   p: 2.5,
                   borderRadius: "14px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 2px 6px rgba(24, 24, 27, 0.02)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 2px 6px rgba(24, 61, 53, 0.02)",
                   textAlign: "center",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, mb: 0.5 }}>
-                  <CategoryOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
+                  <CategoryOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
                   <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                     Solution Area
                   </Typography>
                 </Box>
-                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                   {categoryName}
                 </Typography>
               </Box>
@@ -294,19 +295,19 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   p: 2.5,
                   borderRadius: "14px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 2px 6px rgba(24, 24, 27, 0.02)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 2px 6px rgba(24, 61, 53, 0.02)",
                   textAlign: "center",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, mb: 0.5 }}>
-                  <FlagOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />
+                  <FlagOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />
                   <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#71717A", textTransform: "uppercase" }}>
                     Project Status
                   </Typography>
                 </Box>
-                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                   {project.projectType}
                 </Typography>
               </Box>
@@ -323,8 +324,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               height: { xs: 260, sm: 420, md: 540 },
               borderRadius: { xs: "16px", md: "24px" },
               overflow: "hidden",
-              border: "1px solid rgba(228, 228, 231, 0.9)",
-              boxShadow: "0 14px 40px -10px rgba(24, 24, 27, 0.08)",
+              border: "1px solid rgba(216, 229, 213, 0.9)",
+              boxShadow: "0 14px 40px -10px rgba(24, 61, 53, 0.08)",
               bgcolor: "#F4F4F5",
             }}
           >
@@ -343,7 +344,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 2. SECTION 2: ABOUT THE BUSINESS                                          */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -354,12 +355,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                 The Client Profile
               </Typography>
             </Box>
@@ -367,10 +368,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -390,15 +392,15 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3.5, sm: 4.5 },
                     borderRadius: "20px",
-                    bgcolor: "#FAFAFA",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                   }}
                 >
-                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em", textTransform: "uppercase", mb: 2 }}>
+                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.06em", textTransform: "uppercase", mb: 2 }}>
                     Business Context &amp; Operations
                   </Typography>
 
@@ -418,32 +420,32 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3.5, sm: 4.5 },
                     borderRadius: "20px",
-                    bgcolor: "#FAFAFA",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                   }}
                 >
-                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em", textTransform: "uppercase", mb: 2.5 }}>
+                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.06em", textTransform: "uppercase", mb: 2.5 }}>
                     Business Snapshot
                   </Typography>
 
-                  <Box sx={{ mb: 2.5, pb: 2.5, borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+                  <Box sx={{ mb: 2.5, pb: 2.5, borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
                     <Typography sx={{ fontSize: "0.78rem", color: "#71717A", fontWeight: 600, mb: 0.5 }}>
                       Business Classification
                     </Typography>
-                    <Typography sx={{ fontSize: "1rem", color: "#18181B", fontWeight: 700 }}>
+                    <Typography sx={{ fontSize: "1rem", color: "#183D35", fontWeight: 700 }}>
                       {project.businessType || project.clientType}
                     </Typography>
                   </Box>
 
-                  <Box sx={{ mb: 2.5, pb: 2.5, borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+                  <Box sx={{ mb: 2.5, pb: 2.5, borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
                     <Typography sx={{ fontSize: "0.78rem", color: "#71717A", fontWeight: 600, mb: 0.5 }}>
                       Industry Domain
                     </Typography>
-                    <Typography sx={{ fontSize: "1rem", color: "#18181B", fontWeight: 700 }}>
+                    <Typography sx={{ fontSize: "1rem", color: "#183D35", fontWeight: 700 }}>
                       {project.industry || "Commercial & Digital Services"}
                     </Typography>
                   </Box>
@@ -452,7 +454,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     <Typography sx={{ fontSize: "0.78rem", color: "#71717A", fontWeight: 600, mb: 0.5 }}>
                       Primary Business Need
                     </Typography>
-                    <Typography sx={{ fontSize: "0.98rem", color: "#EA580C", fontWeight: 700 }}>
+                    <Typography sx={{ fontSize: "0.98rem", color: "#3D765D", fontWeight: 700 }}>
                       {project.primaryNeed || project.summary}
                     </Typography>
                   </Box>
@@ -466,7 +468,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 3. SECTION 3: THE SITUATION BEFORE                                        */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#F7F7F2", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -490,10 +492,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -513,8 +516,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "16px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
+                    boxShadow: "0 2px 10px rgba(24, 61, 53, 0.02)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -553,7 +556,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 4. SECTION 4: OUR ANALYSIS                                                */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -564,12 +567,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                 Strategic Diagnosis
               </Typography>
             </Box>
@@ -577,10 +580,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -599,18 +603,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "18px",
-                  bgcolor: "#FAFAFA",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-                  <SearchOutlinedIcon sx={{ color: "#EA580C", fontSize: 22 }} />
-                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.05em", textTransform: "uppercase" }}>
+                  <SearchOutlinedIcon sx={{ color: "#3D765D", fontSize: 22 }} />
+                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.05em", textTransform: "uppercase" }}>
                     1. Business Situation
                   </Typography>
                 </Box>
-                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                   What the business was experiencing
                 </Typography>
                 <Typography sx={{ fontSize: "0.92rem", color: "#52525B", lineHeight: 1.75 }}>
@@ -625,18 +629,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "18px",
-                  bgcolor: "#FAFAFA",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-                  <LightbulbOutlinedIcon sx={{ color: "#EA580C", fontSize: 22 }} />
-                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.05em", textTransform: "uppercase" }}>
+                  <LightbulbOutlinedIcon sx={{ color: "#3D765D", fontSize: 22 }} />
+                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.05em", textTransform: "uppercase" }}>
                     2. The Root Bottleneck
                   </Typography>
                 </Box>
-                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                   Where the workflow stalled
                 </Typography>
                 <Typography sx={{ fontSize: "0.92rem", color: "#52525B", lineHeight: 1.75 }}>
@@ -651,18 +655,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "18px",
-                  bgcolor: "#FAFAFA",
-                  border: "1px solid rgba(249, 115, 22, 0.3)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(61, 118, 93, 0.3)",
                   height: "100%",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-                  <TrendingUpOutlinedIcon sx={{ color: "#EA580C", fontSize: 22 }} />
-                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.05em", textTransform: "uppercase" }}>
+                  <TrendingUpOutlinedIcon sx={{ color: "#3D765D", fontSize: 22 }} />
+                  <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.05em", textTransform: "uppercase" }}>
                     3. Digital Opportunity
                   </Typography>
                 </Box>
-                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B", mb: 1.5 }}>
+                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35", mb: 1.5 }}>
                   Why the planned solution works
                 </Typography>
                 <Typography sx={{ fontSize: "0.92rem", color: "#52525B", lineHeight: 1.75 }}>
@@ -677,7 +681,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 5. SECTION 5: WHAT WE BUILT                                               */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#F7F7F2", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -688,12 +692,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                 The Solution Delivery
               </Typography>
             </Box>
@@ -701,10 +705,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -727,8 +732,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "18px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
+                    boxShadow: "0 2px 10px rgba(24, 61, 53, 0.02)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
@@ -741,18 +746,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                         width: 44,
                         height: 44,
                         borderRadius: "12px",
-                        bgcolor: "rgba(249, 115, 22, 0.08)",
+                        bgcolor: "rgba(61, 118, 93, 0.08)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        color: "#EA580C",
+                        color: "#3D765D",
                         mb: 2,
                       }}
                     >
                       <BuildCircleOutlinedIcon sx={{ fontSize: 22 }} />
                     </Box>
 
-                    <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#18181B", mb: 1 }}>
+                    <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#183D35", mb: 1 }}>
                       {feat.title}
                     </Typography>
 
@@ -770,7 +775,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 6. SECTION 6: HOW IT WORKS (SIMPLE STEP FLOW)                              */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -781,12 +786,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                 Simplified Workflow
               </Typography>
             </Box>
@@ -794,10 +799,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -824,15 +830,15 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "16px",
-                    bgcolor: "#FAFAFA",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                   }}
                 >
                   <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
-                    <Typography sx={{ fontSize: "0.85rem", fontWeight: 800, color: "#EA580C", fontFamily: "monospace" }}>
+                    <Typography sx={{ fontSize: "0.85rem", fontWeight: 800, color: "#3D765D", fontFamily: "monospace" }}>
                       STEP {st.step}
                     </Typography>
                     {idx < 3 && (
@@ -840,7 +846,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     )}
                   </Box>
 
-                  <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#18181B", mb: 1 }}>
+                  <Typography sx={{ fontSize: "1.05rem", fontWeight: 700, color: "#183D35", mb: 1 }}>
                     {st.title}
                   </Typography>
 
@@ -857,7 +863,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 7. SECTION 7: BEFORE VS AFTER                                             */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#F7F7F2", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -868,12 +874,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                 Practical Transformation
               </Typography>
             </Box>
@@ -881,10 +887,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -917,8 +924,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   p: { xs: 2.5, sm: 3.5 },
                   borderRadius: "18px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
-                  boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
+                  boxShadow: "0 2px 8px rgba(24, 61, 53, 0.02)",
                 }}
               >
                 <Grid container spacing={3} sx={{ alignItems: "center" }}>
@@ -968,7 +975,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                       >
                         After
                       </Box>
-                      <Typography sx={{ fontSize: "0.92rem", color: "#18181B", fontWeight: 600, lineHeight: 1.65 }}>
+                      <Typography sx={{ fontSize: "0.92rem", color: "#183D35", fontWeight: 600, lineHeight: 1.65 }}>
                         {comp.after}
                       </Typography>
                     </Box>
@@ -983,7 +990,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 8. SECTION 8: BUSINESS VALUE                                              */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -994,12 +1001,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 px: 2,
                 py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2.5,
               }}
             >
-              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                 Commercial Impact
               </Typography>
             </Box>
@@ -1007,10 +1014,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -1037,14 +1045,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   sx={{
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "18px",
-                    bgcolor: "#FAFAFA",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                     height: "100%",
                   }}
                 >
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-                    <CheckCircleOutlinedIcon sx={{ color: "#EA580C", fontSize: 20 }} />
-                    <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#18181B" }}>
+                    <CheckCircleOutlinedIcon sx={{ color: "#3D765D", fontSize: 20 }} />
+                    <Typography sx={{ fontSize: "1rem", fontWeight: 700, color: "#183D35" }}>
                       {val.title}
                     </Typography>
                   </Box>
@@ -1061,7 +1069,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 9. SECTION 9: PROJECT OUTCOME                                             */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 14 }, bgcolor: "#F7F7F2", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
             <Box
@@ -1085,10 +1093,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.5rem", md: "2.9rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.02em",
                 mb: 2,
               }}
             >
@@ -1108,8 +1117,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     p: { xs: 3, sm: 3.5 },
                     borderRadius: "16px",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
+                    boxShadow: "0 2px 10px rgba(24, 61, 53, 0.02)",
                     height: "100%",
                   }}
                 >
@@ -1119,7 +1128,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                       Delivered Result 0{idx + 1}
                     </Typography>
                   </Box>
-                  <Typography sx={{ fontSize: "0.95rem", color: "#18181B", fontWeight: 600, lineHeight: 1.65 }}>
+                  <Typography sx={{ fontSize: "0.95rem", color: "#183D35", fontWeight: 600, lineHeight: 1.65 }}>
                     {out}
                   </Typography>
                 </Box>
@@ -1132,7 +1141,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 10. SECTION 10: TECHNOLOGY USED                                           */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 8, md: 10 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 8, md: 10 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 760, mx: "auto", textAlign: "center" }}>
             <Typography sx={{ fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.06em", color: "#71717A", textTransform: "uppercase", mb: 1.5 }}>
@@ -1142,9 +1151,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <Typography
               variant="h3"
               sx={{
-                fontSize: { xs: "1.4rem", sm: "1.75rem" },
-                fontWeight: 700,
-                color: "#18181B",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.5rem", sm: "1.85rem" },
+                fontWeight: 400,
+                color: "#183D35",
                 mb: 3,
               }}
             >
@@ -1157,14 +1167,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   key={idx}
                   label={tech}
                   sx={{
-                    bgcolor: "#FAFAFA",
+                    bgcolor: "#F7F7F2",
                     color: "#27272A",
                     fontSize: "0.85rem",
                     fontWeight: 600,
                     px: 1.5,
                     py: 1,
                     borderRadius: "9999px",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    border: "1px solid rgba(216, 229, 213, 0.9)",
                   }}
                 />
               ))}
@@ -1176,7 +1186,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* ========================================================================= */}
       {/* 11. SECTION 11: RELATED SERVICES                                          */}
       {/* ========================================================================= */}
-      <Box component="section" sx={{ py: { xs: 10, md: 12 }, bgcolor: "#FAFAFA", borderBottom: "1px solid rgba(228, 228, 231, 0.8)" }}>
+      <Box component="section" sx={{ py: { xs: 10, md: 12 }, bgcolor: "#F7F7F2", borderBottom: "1px solid rgba(216, 229, 213, 0.8)" }}>
         <Container maxWidth="xl">
           <Box sx={{ maxWidth: 820, mx: "auto", textAlign: "center" }}>
             <Box
@@ -1184,8 +1194,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 p: { xs: 4, sm: 6 },
                 borderRadius: "22px",
                 bgcolor: "#FFFFFF",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
-                boxShadow: "0 6px 24px -6px rgba(24, 24, 27, 0.04)",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
+                boxShadow: "0 6px 24px -6px rgba(24, 61, 53, 0.04)",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -1200,12 +1210,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   px: 2,
                   py: 0.5,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
-                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#EA580C", textTransform: "uppercase" }}>
+                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", color: "#3D765D", textTransform: "uppercase" }}>
                   Our Capabilities
                 </Typography>
               </Box>
@@ -1213,9 +1223,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <Typography
                 variant="h3"
                 sx={{
-                  fontSize: { xs: "1.45rem", sm: "1.85rem" },
-                  fontWeight: 700,
-                  color: "#18181B",
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "1.5rem", sm: "1.95rem" },
+                  fontWeight: 400,
+                  color: "#183D35",
                   mb: 2,
                   maxWidth: 680,
                 }}
@@ -1232,9 +1243,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   variant="outlined"
                   endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
-                    bgcolor: "rgba(249, 115, 22, 0.04)",
+                    borderColor: "#3D765D",
+                    color: "#3D765D",
+                    bgcolor: "rgba(61, 118, 93, 0.04)",
                     px: 3.5,
                     py: 1.3,
                     borderRadius: "9999px",
@@ -1242,7 +1253,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     fontSize: "0.92rem",
                     textTransform: "none",
                     "&:hover": {
-                      bgcolor: "#EA580C",
+                      bgcolor: "#3D765D",
                       color: "#FFFFFF",
                     },
                   }}
@@ -1262,64 +1273,100 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <Container maxWidth="xl">
           <Box
             sx={{
-              maxWidth: 920,
+              maxWidth: 960,
               mx: "auto",
               textAlign: "center",
               p: { xs: 4, sm: 6, md: 8 },
-              bgcolor: "#18181B",
-              borderRadius: "24px",
-              boxShadow: "0 25px 60px -15px rgba(24, 24, 27, 0.4)",
+              bgcolor: "#183D35",
+              borderRadius: "28px",
+              border: "1px solid rgba(216, 229, 213, 0.15)",
+              boxShadow: "0 25px 60px -15px rgba(24, 61, 53, 0.4)",
+              position: "relative",
+              overflow: "hidden",
             }}
           >
-            <Typography
-              variant="h2"
+            {/* Ambient Warm Sage Glows */}
+            <Box
               sx={{
-                fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3.2rem" },
-                fontWeight: 700,
-                color: "#FFFFFF",
-                letterSpacing: "-0.03em",
-                mb: 2,
+                position: "absolute",
+                top: "-20%",
+                right: "-10%",
+                width: 400,
+                height: 400,
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.35) 0%, transparent 70%)",
+                filter: "blur(60px)",
+                pointerEvents: "none",
               }}
-            >
-              Have a Similar Business Challenge?
-            </Typography>
-
-            <Typography
+            />
+            <Box
               sx={{
-                fontSize: { xs: "1rem", sm: "1.15rem" },
-                color: "rgba(255, 255, 255, 0.8)",
-                maxWidth: 640,
-                mx: "auto",
-                lineHeight: 1.75,
-                mb: 4,
+                position: "absolute",
+                bottom: "-20%",
+                left: "-10%",
+                width: 350,
+                height: 350,
+                background: "radial-gradient(circle, rgba(216, 229, 213, 0.12) 0%, transparent 70%)",
+                filter: "blur(60px)",
+                pointerEvents: "none",
               }}
-            >
-              Tell us what your business needs. We&apos;ll discuss your goals, explain the right digital approach, and provide a clear plan without technical jargon.
-            </Typography>
+            />
 
-            <Link href="/contact" style={{ textDecoration: "none" }}>
-              <Button
-                variant="contained"
-                endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
+            <Box sx={{ position: "relative", zIndex: 1 }}>
+              <Typography
+                variant="h2"
                 sx={{
-                  background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
-                  color: "#18181B",
-                  px: 4.5,
-                  py: 1.6,
-                  fontSize: "1rem",
-                  fontWeight: 700,
-                  borderRadius: "9999px",
-                  boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
-                  textTransform: "none",
-                  "&:hover": {
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                    color: "#FFFFFF",
-                  },
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "1.85rem", sm: "2.5rem", md: "3.2rem" },
+                  fontWeight: 400,
+                  color: "#FFFFFF",
+                  letterSpacing: "-0.02em",
+                  mb: 2,
                 }}
               >
-                Discuss Your Project
-              </Button>
-            </Link>
+                Have a Similar{" "}
+                <Box component="span" sx={{ fontStyle: "italic", color: "#D8E5D5" }}>
+                  Business Challenge?
+                </Box>
+              </Typography>
+
+              <Typography
+                sx={{
+                  fontSize: { xs: "1rem", sm: "1.15rem" },
+                  color: "rgba(216, 229, 213, 0.85)",
+                  maxWidth: 640,
+                  mx: "auto",
+                  lineHeight: 1.75,
+                  mb: 4,
+                }}
+              >
+                Tell us what your business needs. We&apos;ll discuss your goals, explain the right digital approach, and provide a clear plan without technical jargon.
+              </Typography>
+
+              <Link href="/contact" style={{ textDecoration: "none" }}>
+                <Button
+                  variant="contained"
+                  endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
+                  sx={{
+                    bgcolor: "#D8E5D5",
+                    color: "#183D35",
+                    px: 4.5,
+                    py: 1.5,
+                    fontSize: "0.95rem",
+                    fontWeight: 800,
+                    borderRadius: "9999px",
+                    boxShadow: "0 6px 20px rgba(0, 0, 0, 0.25)",
+                    textTransform: "none",
+                    "&:hover": {
+                      bgcolor: "#FFFFFF",
+                      color: "#183D35",
+                      boxShadow: "0 8px 25px rgba(216, 229, 213, 0.4)",
+                    },
+                  }}
+                >
+                  Discuss Your Project
+                </Button>
+              </Link>
+            </Box>
           </Box>
         </Container>
       </Box>
