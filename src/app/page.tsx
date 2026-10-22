@@ -12,10 +12,10 @@ import HomeScrollProgress from "../components/home/HomeScrollProgress";
 
 export const metadata: Metadata = {
   title:
-    "Aetibar | Web Development, SEO, Digital Marketing & AI Automation in Udaipur",
+    "Aetibar | Digital Marketing & Web Development Company Udaipur",
 
   description:
-    "Aetibar helps businesses with web development, mobile app development, SEO, social media marketing, Google & Meta advertising, and AI automation. Practical digital solutions built around your business needs.",
+    "Grow your business with Aetibar, a Udaipur agency for web development, mobile apps, SEO, digital marketing, and AI automation solutions. Build smarter today!",
 
   keywords: [
     // Core business terms
