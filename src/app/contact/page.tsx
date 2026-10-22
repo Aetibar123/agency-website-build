@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import ContactPageClient from "../../components/contact/ContactPageClient";
+import HomeScrollProgress from "../../components/home/HomeScrollProgress";
 
 export const metadata: Metadata = {
   title: "Contact Aetibar | Discuss Your Business Needs",
@@ -88,6 +89,7 @@ const contactPageSchema = {
 export default function ContactPage() {
   return (
     <main>
+      <HomeScrollProgress />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

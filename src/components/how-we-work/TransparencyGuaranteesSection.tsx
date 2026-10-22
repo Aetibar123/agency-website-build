@@ -256,7 +256,7 @@ export default function TransparencyGuaranteesSection() {
       id="client-promise"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
         overflow: "hidden",
       }}
@@ -270,7 +270,7 @@ export default function TransparencyGuaranteesSection() {
           transform: "translateX(-50%)",
           width: 900,
           height: 500,
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
           filter: "blur(70px)",
           pointerEvents: "none",
         }}
@@ -278,7 +278,7 @@ export default function TransparencyGuaranteesSection() {
 
       <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
         {/* Section Header */}
-        <Box sx={{ maxWidth: 940, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+        <Box sx={{ maxWidth: 880, textAlign: "left", mb: { xs: 6, md: 8 } }}>
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -290,33 +290,21 @@ export default function TransparencyGuaranteesSection() {
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 1.2,
-                px: 2.2,
-                py: 0.6,
+                gap: 1,
+                px: 1.8,
+                py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2.5,
+                bgcolor: "#D8E5D5",
+                color: "#183D35",
+                fontSize: "0.72rem",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                fontFamily: "monospace",
+                mb: 2,
               }}
             >
-              <Box
-                component={motion.div}
-                animate={{ scale: [1, 1.3, 1] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
-              />
-              <Typography
-                sx={{
-                  fontSize: "0.8rem",
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                  color: "#EA580C",
-                  fontWeight: 700,
-                  fontFamily: "monospace",
-                }}
-              >
-                OUR APPROACH & COMMITMENTS
-              </Typography>
+              OUR APPROACH & COMMITMENTS
             </Box>
           </motion.div>
 
@@ -330,45 +318,38 @@ export default function TransparencyGuaranteesSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                lineHeight: { xs: 1.18, md: 1.2 },
-                letterSpacing: "-0.035em",
-                textWrap: "balance",
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
-                mx: "auto",
-                mb: 2.5,
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.25, md: 1.18 },
+                letterSpacing: "-0.015em",
+                maxWidth: { xs: "100%", md: 980 },
+                mb: 2,
               }}
             >
-              Six Practical Commitments You Can Expect From Us {" "}
+              Six Practical Commitments —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  color: "#3D765D",
+                  fontStyle: "italic",
                 }}
               >
-                Six Practical Commitments You Can Expect From Aetibar
-
+                You Can Expect From Aetibar
               </Box>
             </Typography>
 
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", md: "1.2rem" },
+                fontSize: { xs: "0.95rem", md: "1.05rem" },
                 color: "#52525B",
-                lineHeight: 1.75,
-                fontWeight: 400,
-                maxWidth: 780,
-                mx: "auto",
+                lineHeight: 1.7,
+                maxWidth: 820,
                 mb: 4.5,
               }}
             >
              Working with a digital partner should feel clear and straightforward. We keep you informed with regular progress updates, direct communication, documented scope, transparent pricing, and clear access to the digital assets connected to your business.
-
             </Typography>
           </motion.div>
 
@@ -385,8 +366,8 @@ export default function TransparencyGuaranteesSection() {
                 p: 0.6,
                 borderRadius: "16px",
                 bgcolor: "#FFFFFF",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
-                boxShadow: "0 4px 20px -4px rgba(24, 24, 27, 0.05)",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
+                boxShadow: "0 4px 20px -4px rgba(24, 61, 53, 0.05)",
                 gap: 1,
                 mb: 3,
                 flexWrap: "wrap",
@@ -406,12 +387,12 @@ export default function TransparencyGuaranteesSection() {
                   display: "flex",
                   alignItems: "center",
                   gap: 1,
-                  bgcolor: viewMode === "promise" ? "#EA580C" : "transparent",
+                  bgcolor: viewMode === "promise" ? "#3D765D" : "transparent",
                   color: viewMode === "promise" ? "#FFFFFF" : "#52525B",
-                  boxShadow: viewMode === "promise" ? "0 4px 14px rgba(234, 88, 12, 0.35)" : "none",
+                  boxShadow: viewMode === "promise" ? "0 4px 14px rgba(61, 118, 93, 0.35)" : "none",
                   "&:hover": {
-                    bgcolor: viewMode === "promise" ? "#C2410C" : "rgba(234, 88, 12, 0.06)",
-                    color: viewMode === "promise" ? "#FFFFFF" : "#EA580C",
+                    bgcolor: viewMode === "promise" ? "#183D35" : "rgba(61, 118, 93, 0.06)",
+                    color: viewMode === "promise" ? "#FFFFFF" : "#3D765D",
                   },
                 }}
               >
@@ -503,14 +484,14 @@ export default function TransparencyGuaranteesSection() {
                       borderRadius: "10px",
                       fontSize: "0.78rem",
                       fontWeight: 600,
-                      bgcolor: isSelected ? "#18181B" : "#FFFFFF",
+                      bgcolor: isSelected ? "#183D35" : "#FFFFFF",
                       color: isSelected ? "#FFFFFF" : "#52525B",
                       border: "1px solid",
-                      borderColor: isSelected ? "#18181B" : "rgba(228, 228, 231, 0.8)",
-                      boxShadow: isSelected ? "0 2px 8px rgba(24, 24, 27, 0.15)" : "none",
+                      borderColor: isSelected ? "#183D35" : "rgba(216, 229, 213, 0.8)",
+                      boxShadow: isSelected ? "0 2px 8px rgba(24, 61, 53, 0.15)" : "none",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        bgcolor: isSelected ? "#27272A" : "rgba(24, 24, 27, 0.05)",
+                        bgcolor: isSelected ? "#27272A" : "rgba(24, 61, 53, 0.05)",
                       },
                     }}
                   />
@@ -543,10 +524,10 @@ export default function TransparencyGuaranteesSection() {
                       borderRadius: "24px",
                       bgcolor: "#FFFFFF",
                       border: "1px solid",
-                      borderColor: isTrapView ? "rgba(220, 38, 38, 0.3)" : "rgba(228, 228, 231, 0.9)",
+                      borderColor: isTrapView ? "rgba(220, 38, 38, 0.3)" : "rgba(216, 229, 213, 0.9)",
                       boxShadow: isTrapView
                         ? "0 8px 24px -6px rgba(220, 38, 38, 0.08)"
-                        : "0 6px 24px -6px rgba(24, 24, 27, 0.04)",
+                        : "0 6px 24px -6px rgba(24, 61, 53, 0.04)",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
@@ -556,10 +537,10 @@ export default function TransparencyGuaranteesSection() {
                       overflow: "hidden",
                       "&:hover": {
                         transform: "translateY(-4px)",
-                        borderColor: isTrapView ? "#DC2626" : "rgba(234, 88, 12, 0.45)",
+                        borderColor: isTrapView ? "#DC2626" : "rgba(61, 118, 93, 0.45)",
                         boxShadow: isTrapView
                           ? "0 20px 40px -10px rgba(220, 38, 38, 0.15)"
-                          : "0 20px 40px -10px rgba(234, 88, 12, 0.14)",
+                          : "0 20px 40px -10px rgba(61, 118, 93, 0.14)",
                       },
                     }}
                   >
@@ -571,7 +552,7 @@ export default function TransparencyGuaranteesSection() {
                         left: 0,
                         right: 0,
                         height: 4,
-                        bgcolor: isTrapView ? "#DC2626" : "#EA580C",
+                        bgcolor: isTrapView ? "#DC2626" : "#3D765D",
                         opacity: 0.85,
                       }}
                     />
@@ -585,11 +566,11 @@ export default function TransparencyGuaranteesSection() {
                               width: 46,
                               height: 46,
                               borderRadius: "14px",
-                              bgcolor: isTrapView ? "rgba(220, 38, 38, 0.08)" : "rgba(249, 115, 22, 0.08)",
+                              bgcolor: isTrapView ? "rgba(220, 38, 38, 0.08)" : "rgba(61, 118, 93, 0.08)",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
-                              color: isTrapView ? "#DC2626" : "#EA580C",
+                              color: isTrapView ? "#DC2626" : "#3D765D",
                               transition: "all 0.25s ease",
                             }}
                           >
@@ -600,7 +581,7 @@ export default function TransparencyGuaranteesSection() {
                               sx={{
                                 fontSize: "0.78rem",
                                 fontWeight: 800,
-                                color: isTrapView ? "#DC2626" : "#EA580C",
+                                color: isTrapView ? "#DC2626" : "#3D765D",
                                 fontFamily: "monospace",
                                 letterSpacing: "0.06em",
                               }}
@@ -619,9 +600,9 @@ export default function TransparencyGuaranteesSection() {
                             px: 1.5,
                             py: 0.4,
                             borderRadius: "9999px",
-                            bgcolor: isTrapView ? "rgba(220, 38, 38, 0.08)" : "#FAF8F5",
+                            bgcolor: isTrapView ? "rgba(220, 38, 38, 0.08)" : "#F7F7F2",
                             border: "1px solid",
-                            borderColor: isTrapView ? "rgba(220, 38, 38, 0.2)" : "rgba(228, 228, 231, 0.9)",
+                            borderColor: isTrapView ? "rgba(220, 38, 38, 0.2)" : "rgba(216, 229, 213, 0.9)",
                             fontSize: "0.725rem",
                             fontWeight: 700,
                             color: isTrapView ? "#DC2626" : "#52525B",
@@ -637,10 +618,11 @@ export default function TransparencyGuaranteesSection() {
                       <Typography
                         variant="h3"
                         sx={{
-                          fontSize: { xs: "1.2rem", sm: "1.45rem" },
-                          fontWeight: 700,
-                          color: "#18181B",
-                          letterSpacing: "-0.02em",
+                          fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                          fontSize: { xs: "1.25rem", sm: "1.45rem" },
+                          fontWeight: 400,
+                          color: "#183D35",
+                          letterSpacing: "-0.015em",
                           lineHeight: 1.3,
                           textWrap: "balance",
                           display: "-webkit-box",
@@ -657,7 +639,7 @@ export default function TransparencyGuaranteesSection() {
                         sx={{
                           fontSize: "0.98rem",
                           fontWeight: 600,
-                          color: isTrapView ? "#DC2626" : "#EA580C",
+                          color: isTrapView ? "#DC2626" : "#3D765D",
                           mb: 2.2,
                           lineHeight: 1.45,
                         }}
@@ -670,9 +652,9 @@ export default function TransparencyGuaranteesSection() {
                         sx={{
                           p: 1.8,
                           borderRadius: "12px",
-                          bgcolor: isTrapView ? "rgba(220, 38, 38, 0.04)" : "rgba(249, 115, 22, 0.04)",
+                          bgcolor: isTrapView ? "rgba(220, 38, 38, 0.04)" : "rgba(61, 118, 93, 0.04)",
                           border: "1px solid",
-                          borderColor: isTrapView ? "rgba(220, 38, 38, 0.15)" : "rgba(249, 115, 22, 0.12)",
+                          borderColor: isTrapView ? "rgba(220, 38, 38, 0.15)" : "rgba(61, 118, 93, 0.12)",
                           mb: 2.5,
                         }}
                       >
@@ -707,7 +689,7 @@ export default function TransparencyGuaranteesSection() {
                     </Box>
 
                     {/* Bottom Section: Metric Chips & Expandable Proof Drawer */}
-                    <Box sx={{ pt: 2, borderTop: "1px solid rgba(228, 228, 231, 0.8)" }}>
+                    <Box sx={{ pt: 2, borderTop: "1px solid rgba(216, 229, 213, 0.8)" }}>
                       {/* Metric Pills */}
                       <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mb: 2 }}>
                         {item.metrics.map((m, mIdx) => (
@@ -720,8 +702,8 @@ export default function TransparencyGuaranteesSection() {
                               px: 1.3,
                               py: 0.45,
                               borderRadius: "8px",
-                              bgcolor: "#FAF8F5",
-                              border: "1px solid rgba(228, 228, 231, 0.8)",
+                              bgcolor: "#F7F7F2",
+                              border: "1px solid rgba(216, 229, 213, 0.8)",
                             }}
                           >
                             <CheckCircleRoundedIcon sx={{ fontSize: 14, color: "#16A34A" }} />
@@ -750,13 +732,13 @@ export default function TransparencyGuaranteesSection() {
                           textTransform: "none",
                           fontSize: "0.82rem",
                           fontWeight: 700,
-                          color: isExpanded ? "#EA580C" : "#52525B",
-                          bgcolor: isExpanded ? "rgba(249, 115, 22, 0.06)" : "#F4F4F5",
+                          color: isExpanded ? "#3D765D" : "#52525B",
+                          bgcolor: isExpanded ? "rgba(61, 118, 93, 0.06)" : "#F4F4F5",
                           borderRadius: "10px",
                           px: 2,
                           "&:hover": {
-                            bgcolor: "rgba(249, 115, 22, 0.1)",
-                            color: "#EA580C",
+                            bgcolor: "rgba(61, 118, 93, 0.1)",
+                            color: "#3D765D",
                           },
                         }}
                       >
@@ -781,7 +763,7 @@ export default function TransparencyGuaranteesSection() {
                               sx={{
                                 p: 2.2,
                                 borderRadius: "14px",
-                                bgcolor: "#18181B",
+                                bgcolor: "#183D35",
                                 color: "#F4F4F5",
                                 border: "1px solid #27272A",
                               }}
@@ -829,7 +811,7 @@ export default function TransparencyGuaranteesSection() {
                               <Box
                                 sx={{
                                   p: 1.2,
-                                  bgcolor: "#09090B",
+                                  bgcolor: "#0F2823",
                                   borderRadius: "8px",
                                   border: "1px solid #27272A",
                                   mb: 1.8,
@@ -839,7 +821,7 @@ export default function TransparencyGuaranteesSection() {
                                   sx={{
                                     fontFamily: "monospace",
                                     fontSize: "0.78rem",
-                                    color: "#FB923C",
+                                    color: "#62A486",
                                     wordBreak: "break-all",
                                   }}
                                 >
@@ -850,12 +832,12 @@ export default function TransparencyGuaranteesSection() {
                               {/* Contract Clause Box */}
                               <Box>
                                 <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, mb: 0.6 }}>
-                                  <ArticleOutlinedIcon sx={{ fontSize: 14, color: "#EA580C" }} />
+                                  <ArticleOutlinedIcon sx={{ fontSize: 14, color: "#3D765D" }} />
                                   <Typography
                                     sx={{
                                       fontSize: "0.72rem",
                                       fontWeight: 800,
-                                      color: "#EA580C",
+                                      color: "#3D765D",
                                       letterSpacing: "0.04em",
                                     }}
                                   >
@@ -898,12 +880,12 @@ export default function TransparencyGuaranteesSection() {
               sx={{
                 p: { xs: 4, sm: 6, md: 7 },
                 borderRadius: "32px",
-                bgcolor: "#18181B",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 position: "relative",
                 overflow: "hidden",
                 border: "1px solid rgba(255, 255, 255, 0.1)",
-                boxShadow: "0 24px 60px -15px rgba(24, 24, 27, 0.4)",
+                boxShadow: "0 24px 60px -15px rgba(24, 61, 53, 0.4)",
               }}
             >
               {/* Glow Accent */}
@@ -915,7 +897,7 @@ export default function TransparencyGuaranteesSection() {
                   width: 380,
                   height: 380,
                   borderRadius: "50%",
-                  background: "radial-gradient(circle, rgba(234, 88, 12, 0.25) 0%, rgba(24, 24, 27, 0) 70%)",
+                  background: "radial-gradient(circle, rgba(61, 118, 93, 0.25) 0%, rgba(24, 61, 53, 0) 70%)",
                   filter: "blur(60px)",
                   pointerEvents: "none",
                 }}
@@ -925,12 +907,12 @@ export default function TransparencyGuaranteesSection() {
                 {/* Left Side: Assurance Statement */}
                 <Grid size={{ xs: 12, lg: 7 }}>
                   <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 2 }}>
-                    <VerifiedRoundedIcon sx={{ color: "#EA580C", fontSize: 20 }} />
+                    <VerifiedRoundedIcon sx={{ color: "#3D765D", fontSize: 20 }} />
                     <Typography
                       sx={{
                         fontSize: "0.82rem",
                         fontWeight: 800,
-                        color: "#FB923C",
+                        color: "#62A486",
                         letterSpacing: "0.08em",
                         fontFamily: "monospace",
                         textTransform: "uppercase",
@@ -957,7 +939,7 @@ export default function TransparencyGuaranteesSection() {
                       component="span"
                       sx={{
                         display: "inline",
-                        background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                        background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                       }}
@@ -1054,15 +1036,15 @@ export default function TransparencyGuaranteesSection() {
                           sx={{
                             py: 1.5,
                             borderRadius: "14px",
-                            background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                            background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                             fontSize: "0.95rem",
                             fontWeight: 700,
                             textTransform: "none",
                             color: "#FFFFFF",
-                            boxShadow: "0 8px 24px -4px rgba(234, 88, 12, 0.4)",
+                            boxShadow: "0 8px 24px -4px rgba(61, 118, 93, 0.4)",
                             "&:hover": {
-                              background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                              boxShadow: "0 12px 30px -4px rgba(234, 88, 12, 0.6)",
+                              background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                              boxShadow: "0 12px 30px -4px rgba(61, 118, 93, 0.6)",
                             },
                           }}
                         >

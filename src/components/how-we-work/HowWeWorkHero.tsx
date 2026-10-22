@@ -13,15 +13,13 @@ import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 import PlayCircleOutlineRoundedIcon from "@mui/icons-material/PlayCircleOutlineRounded";
 import { motion, AnimatePresence } from "framer-motion";
 
-
-
 const heroMetrics = [
   {
     value: "Clear",
     title: "Scope & Pricing",
     desc:
       "We agree on your requirements, deliverables, timeline, and pricing before work begins, so you know exactly what is included.",
-    icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <VerifiedOutlinedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
   },
   {
     value: "Open",
@@ -29,7 +27,7 @@ const heroMetrics = [
     desc:
       "We keep you informed throughout the project, share relevant progress, and give you opportunities to provide feedback along the way.",
     icon: (
-      <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#EA580C" }} />
+      <PlayCircleOutlineRoundedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />
     ),
   },
   {
@@ -37,18 +35,16 @@ const heroMetrics = [
     title: "Easy Communication",
     desc:
       "Discuss requirements, feedback, questions, and changes directly with the people working on your website, marketing, app, or automation project.",
-    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <LockOutlinedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
   },
   {
     value: "Ready",
     title: "Review Before Delivery",
     desc:
       "We review the agreed work with you before completion, make the required changes, and ensure the project or service is ready for the next stage.",
-    icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#EA580C" }} />,
+    icon: <SpeedOutlinedIcon sx={{ fontSize: 20, color: "#D8E5D5" }} />,
   },
 ];
-
-
 
 const showcaseTabs = [
   {
@@ -63,7 +59,6 @@ const showcaseTabs = [
     metric1: "Clear Requirements",
     metric2: "Practical Recommendations",
   },
-
   {
     id: "planning",
     label: "02. Planning",
@@ -76,7 +71,6 @@ const showcaseTabs = [
     metric1: "Defined Scope",
     metric2: "Clear Timeline & Pricing",
   },
-
   {
     id: "implementation",
     label: "03. Implementation",
@@ -91,8 +85,6 @@ const showcaseTabs = [
   },
 ];
 
-
-
 export default function HowWeWorkHero() {
   const [activeTab, setActiveTab] = useState<number>(0);
   const currentTab = showcaseTabs[activeTab];
@@ -103,55 +95,54 @@ export default function HowWeWorkHero() {
       sx={{
         position: "relative",
         pt: { xs: 16, sm: 19, md: 22 },
-        pb: { xs: 10, md: 15 },
-        background:
-          "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.08) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+        pb: { xs: 10, md: 14 },
+        bgcolor: "#183D35",
+        color: "#FFFFFF",
+        borderBottom: "1px solid rgba(216, 229, 213, 0.12)",
         overflow: "hidden",
-        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
       }}
     >
-      {/* Ambient subtle warm lighting */}
+      {/* Ambient Emerald Lighting Glows */}
       <Box
         component={motion.div}
-        animate={{ scale: [1, 1.15, 1], opacity: [0.25, 0.4, 0.25] }}
+        animate={{ scale: [1, 1.15, 1], opacity: [0.15, 0.25, 0.15] }}
         transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
         sx={{
           position: "absolute",
           top: "-10%",
           right: "-5%",
-          width: "500px",
-          height: "500px",
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.14) 0%, transparent 70%)",
-          filter: "blur(70px)",
+          width: "550px",
+          height: "550px",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.35) 0%, transparent 70%)",
+          filter: "blur(80px)",
           pointerEvents: "none",
         }}
       />
       <Box
         component={motion.div}
-        animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.35, 0.2] }}
+        animate={{ scale: [1, 1.2, 1], opacity: [0.12, 0.22, 0.12] }}
         transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 1 }}
         sx={{
           position: "absolute",
-          top: "15%",
+          top: "20%",
           left: "-10%",
-          width: "460px",
-          height: "460px",
-          background: "radial-gradient(circle, rgba(251, 146, 60, 0.12) 0%, transparent 70%)",
-          filter: "blur(70px)",
+          width: "480px",
+          height: "480px",
+          background: "radial-gradient(circle, rgba(216, 229, 213, 0.2) 0%, transparent 70%)",
+          filter: "blur(80px)",
           pointerEvents: "none",
         }}
       />
 
       <Container maxWidth="xl" sx={{ position: "relative", zIndex: 2 }}>
-        {/* Centered Hero Typographic Core */}
+        {/* Left-Aligned Hero Core */}
         <Box
           sx={{
-            maxWidth: "1020px",
-            mx: "auto",
-            textAlign: "center",
+            maxWidth: "1040px",
+            textAlign: "left",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
+            alignItems: "flex-start",
             mb: { xs: 6, md: 8 },
           }}
         >
@@ -165,15 +156,13 @@ export default function HowWeWorkHero() {
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 1.5,
-                px: 2.4,
-                py: 0.8,
+                gap: 1.2,
+                px: 2.2,
+                py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
-                backdropFilter: "blur(12px)",
-                mb: { xs: 3, md: 3.5 },
+                bgcolor: "rgba(61, 118, 93, 0.28)",
+                border: "1px solid rgba(216, 229, 213, 0.25)",
+                mb: 3,
               }}
             >
               <Box
@@ -181,29 +170,29 @@ export default function HowWeWorkHero() {
                 animate={{ scale: [1, 1.35, 1] }}
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 sx={{
-                  width: 8,
-                  height: 8,
+                  width: 7,
+                  height: 7,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#D8E5D5",
+                  boxShadow: "0 0 10px #D8E5D5",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: { xs: "0.75rem", sm: "0.825rem" },
+                  fontSize: { xs: "0.72rem", sm: "0.78rem" },
                   fontWeight: 700,
-                  letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  letterSpacing: "0.08em",
+                  color: "#D8E5D5",
                   textTransform: "uppercase",
+                  fontFamily: "monospace",
                 }}
               >
-               OUR PROCESS • TRANSPARENT • PRACTICAL • RELIABLE
-
+                OUR PROCESS • TRANSPARENT • PRACTICAL • RELIABLE
               </Typography>
             </Box>
           </motion.div>
 
-          {/* Main Headline - Generous Line-Height (Zero Text Overlap) */}
+          {/* Main Headline - DM Serif Display */}
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
@@ -212,30 +201,26 @@ export default function HowWeWorkHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
-                letterSpacing: { xs: "-0.02em", md: "-0.03em" },
-                textAlign: "center",
-                maxWidth: { xs: "100%", sm: 860, md: 1040, lg: 1160 },
-                mx: "auto",
-                textWrap: "balance",
-                mb: { xs: 3, md: 3.5 },
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "2.35rem", sm: "3.2rem", md: "4.15rem" },
+                fontWeight: 400,
+                color: "#FFFFFF",
+                lineHeight: { xs: 1.18, md: 1.12 },
+                letterSpacing: "-0.015em",
+                textAlign: "left",
+                maxWidth: { xs: "100%", md: 1040 },
+                mb: 2.5,
               }}
             >
               We take the mystery out of technology projects —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  color: "#D8E5D5",
+                  fontStyle: "italic",
                 }}
               >
-              with clear plans, regular updates & simple communication.
-
+                with clear plans, regular updates & simple communication.
               </Box>
             </Typography>
           </motion.div>
@@ -248,19 +233,16 @@ export default function HowWeWorkHero() {
           >
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", sm: "1.18rem", md: "1.25rem" },
-                lineHeight: 1.8,
-                color: "#52525B",
-                maxWidth: 820,
-                mx: "auto",
-                textAlign: "center",
-                mb: { xs: 4, md: 5 },
+                fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" },
+                lineHeight: 1.75,
+                color: "rgba(216, 229, 213, 0.88)",
+                maxWidth: 860,
+                textAlign: "left",
+                mb: 4,
                 fontWeight: 400,
               }}
             >
-             Building a website, mobile app, marketing campaign, or AI automation workflow shouldn’t feel complicated. We start by understanding your business goals, define a clear plan around your requirements, keep you informed throughout the work, and review the agreed deliverables with you before completion.
-
-
+              Building a website, mobile app, marketing campaign, or AI automation workflow shouldn’t feel complicated. We start by understanding your business goals, define a clear plan around your requirements, keep you informed throughout the work, and review the agreed deliverables with you before completion.
             </Typography>
           </motion.div>
 
@@ -274,68 +256,59 @@ export default function HowWeWorkHero() {
               sx={{
                 display: "flex",
                 flexWrap: "wrap",
-                justifyContent: "center",
+                justifyContent: "flex-start",
                 gap: 2,
                 alignItems: "center",
-                mb: 4,
+                mb: 3.5,
               }}
             >
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <Link href="/contact" style={{ textDecoration: "none" }}>
-                  <Button
-                    variant="contained"
-                    endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
-                    sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                      color: "#FFFFFF",
-                      px: { xs: 3.5, sm: 4.5 },
-                      py: { xs: 1.4, sm: 1.6 },
-                      fontSize: { xs: "0.95rem", sm: "1rem" },
-                      fontWeight: 700,
-                      borderRadius: "9999px",
-                      boxShadow: "0 10px 25px -5px rgba(234, 88, 12, 0.38)",
-                      transition: "all 0.25s ease",
-                      "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                        boxShadow: "0 15px 30px -5px rgba(234, 88, 12, 0.5)",
-                      },
-                    }}
-                  >
-                    Start a Conversation About Your Business
+              <Button
+                component={Link}
+                href="/contact"
+                variant="contained"
+                endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+                sx={{
+                  bgcolor: "#3D765D",
+                  color: "#FFFFFF",
+                  px: { xs: 3.2, sm: 3.8 },
+                  py: 1.4,
+                  fontSize: "0.925rem",
+                  fontWeight: 600,
+                  borderRadius: "12px",
+                  boxShadow: "none",
+                  textTransform: "none",
+                  "&:hover": {
+                    bgcolor: "#D8E5D5",
+                    color: "#183D35",
+                  },
+                }}
+              >
+                Start a Conversation About Your Business
+              </Button>
 
-                  </Button>
-                </Link>
-              </motion.div>
-
-              <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                <a href="#lifecycle-engine" style={{ textDecoration: "none" }}>
-                  <Button
-                    variant="outlined"
-                    endIcon={<ArrowDownwardRoundedIcon sx={{ fontSize: 18 }} />}
-                    sx={{
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.2)",
-                      bgcolor: "rgba(255, 255, 255, 0.85)",
-                      backdropFilter: "blur(10px)",
-                      px: { xs: 3.5, sm: 4 },
-                      py: { xs: 1.4, sm: 1.55 },
-                      fontSize: { xs: "0.95rem", sm: "1rem" },
-                      fontWeight: 600,
-                      borderRadius: "9999px",
-                      boxShadow: "0 2px 8px rgba(24, 24, 27, 0.04)",
-                      transition: "all 0.25s ease",
-                      "&:hover": {
-                        borderColor: "#EA580C",
-                        color: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.05)",
-                      },
-                    }}
-                  >
-                   Explore Our 5-Step Process
-
-                  </Button>
-                </a>
-              </motion.div>
+              <Button
+                component="a"
+                href="#lifecycle-engine"
+                variant="outlined"
+                endIcon={<ArrowDownwardRoundedIcon sx={{ fontSize: 16 }} />}
+                sx={{
+                  borderColor: "rgba(216, 229, 213, 0.35)",
+                  bgcolor: "rgba(255, 255, 255, 0.04)",
+                  color: "#FFFFFF",
+                  px: { xs: 3, sm: 3.5 },
+                  py: 1.4,
+                  fontSize: "0.925rem",
+                  fontWeight: 600,
+                  borderRadius: "12px",
+                  textTransform: "none",
+                  "&:hover": {
+                    borderColor: "#D8E5D5",
+                    bgcolor: "rgba(216, 229, 213, 0.1)",
+                  },
+                }}
+              >
+                Explore Our 5-Step Process
+              </Button>
             </Box>
           </motion.div>
 
@@ -349,7 +322,7 @@ export default function HowWeWorkHero() {
               sx={{
                 display: "flex",
                 flexWrap: "wrap",
-                justifyContent: "center",
+                justifyContent: "flex-start",
                 gap: { xs: 2, sm: 3.5 },
                 alignItems: "center",
               }}
@@ -357,8 +330,8 @@ export default function HowWeWorkHero() {
               {["Clear, Documented Scope", "Careful Staged Deployment", "Direct Code & Asset Ownership"].map(
                 (badge, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
-                    <Typography sx={{ fontSize: "0.85rem", color: "#52525B", fontWeight: 600 }}>
+                    <CheckCircleOutlinedIcon sx={{ fontSize: 17, color: "#D8E5D5" }} />
+                    <Typography sx={{ fontSize: "0.85rem", color: "rgba(216, 229, 213, 0.85)", fontWeight: 500 }}>
                       {badge}
                     </Typography>
                   </Box>
@@ -368,7 +341,7 @@ export default function HowWeWorkHero() {
           </motion.div>
         </Box>
 
-        {/* Centerpiece Showcase Image Frame (Clean, High-Performance Image Instead of 3D) */}
+        {/* Centerpiece Showcase Image Frame */}
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
@@ -383,38 +356,21 @@ export default function HowWeWorkHero() {
               mb: { xs: 6, md: 8 },
             }}
           >
-            {/* Ambient Warm Glow behind frame */}
-            <Box
-              sx={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                width: "94%",
-                height: "85%",
-                background:
-                  "radial-gradient(ellipse, rgba(249, 115, 22, 0.16) 0%, rgba(251, 146, 60, 0.06) 50%, transparent 75%)",
-                filter: "blur(60px)",
-                zIndex: 0,
-                pointerEvents: "none",
-              }}
-            />
-
             {/* Showcase Card Frame */}
             <Box
               sx={{
                 position: "relative",
                 zIndex: 1,
                 p: { xs: 1.5, sm: 2 },
-                bgcolor: "#FFFFFF",
-                borderRadius: { xs: "22px", sm: "28px", md: "34px" },
-                border: "1px solid rgba(228, 228, 231, 0.9)",
-                boxShadow: "0 25px 70px -15px rgba(24, 24, 27, 0.08), 0 0 0 1px rgba(24, 24, 27, 0.03)",
+                bgcolor: "rgba(255, 255, 255, 0.04)",
+                borderRadius: { xs: "22px", sm: "28px" },
+                border: "1px solid rgba(216, 229, 213, 0.18)",
+                backdropFilter: "blur(12px)",
+                boxShadow: "0 25px 70px -15px rgba(0, 0, 0, 0.4)",
                 overflow: "hidden",
-                transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+                transition: "all 0.35s ease",
                 "&:hover": {
-                  boxShadow: "0 35px 85px -15px rgba(234, 88, 12, 0.2)",
-                  borderColor: "rgba(249, 115, 22, 0.4)",
+                  borderColor: "rgba(216, 229, 213, 0.35)",
                 },
               }}
             >
@@ -430,8 +386,8 @@ export default function HowWeWorkHero() {
                   py: 1.2,
                   mb: 1.5,
                   borderRadius: "16px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.8)",
+                  bgcolor: "rgba(255, 255, 255, 0.06)",
+                  border: "1px solid rgba(216, 229, 213, 0.15)",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -444,9 +400,8 @@ export default function HowWeWorkHero() {
                       boxShadow: "0 0 8px #22C55E",
                     }}
                   />
-                  <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#18181B" }}>
+                  <Typography sx={{ fontSize: "0.825rem", fontWeight: 700, color: "#D8E5D5", fontFamily: "monospace" }}>
                     Our Process:
-
                   </Typography>
                 </Box>
 
@@ -465,14 +420,13 @@ export default function HowWeWorkHero() {
                           fontSize: "0.785rem",
                           fontWeight: 700,
                           textTransform: "none",
-                          bgcolor: isActive ? "#EA580C" : "#FFFFFF",
-                          color: isActive ? "#FFFFFF" : "#52525B",
+                          bgcolor: isActive ? "#3D765D" : "rgba(255, 255, 255, 0.06)",
+                          color: isActive ? "#FFFFFF" : "#D8E5D5",
                           border: "1px solid",
-                          borderColor: isActive ? "#EA580C" : "rgba(228, 228, 231, 0.9)",
-                          boxShadow: isActive ? "0 4px 12px rgba(234, 88, 12, 0.3)" : "none",
+                          borderColor: isActive ? "#D8E5D5" : "rgba(216, 229, 213, 0.2)",
                           transition: "all 0.2s ease",
                           "&:hover": {
-                            bgcolor: isActive ? "#C2410C" : "rgba(249, 115, 22, 0.08)",
+                            bgcolor: isActive ? "#3D765D" : "rgba(255, 255, 255, 0.12)",
                           },
                         }}
                       >
@@ -489,9 +443,9 @@ export default function HowWeWorkHero() {
                   position: "relative",
                   width: "100%",
                   height: { xs: 260, sm: 420, md: 520, lg: 580 },
-                  borderRadius: { xs: "16px", sm: "22px", md: "26px" },
+                  borderRadius: { xs: "16px", sm: "22px" },
                   overflow: "hidden",
-                  bgcolor: "#18181B",
+                  bgcolor: "#183D35",
                 }}
               >
                 <AnimatePresence mode="wait">
@@ -521,7 +475,7 @@ export default function HowWeWorkHero() {
                         position: "absolute",
                         inset: 0,
                         background:
-                          "linear-gradient(180deg, rgba(24, 24, 27, 0.15) 0%, rgba(24, 24, 27, 0.5) 100%)",
+                          "linear-gradient(180deg, rgba(24, 61, 53, 0.15) 0%, rgba(24, 61, 53, 0.55) 100%)",
                         pointerEvents: "none",
                       }}
                     />
@@ -534,12 +488,12 @@ export default function HowWeWorkHero() {
                     position: "absolute",
                     top: { xs: 14, sm: 20, md: 24 },
                     left: { xs: 14, sm: 20, md: 24 },
-                    bgcolor: "rgba(255, 255, 255, 0.94)",
+                    bgcolor: "rgba(24, 61, 53, 0.88)",
                     backdropFilter: "blur(14px)",
                     borderRadius: "16px",
                     p: { xs: 1.5, sm: 2 },
-                    border: "1px solid rgba(255, 255, 255, 0.8)",
-                    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.12)",
+                    border: "1px solid rgba(216, 229, 213, 0.25)",
+                    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)",
                     display: "flex",
                     alignItems: "center",
                     gap: 1.5,
@@ -550,8 +504,8 @@ export default function HowWeWorkHero() {
                       width: 38,
                       height: 38,
                       borderRadius: "10px",
-                      bgcolor: "rgba(249, 115, 22, 0.12)",
-                      color: "#EA580C",
+                      bgcolor: "rgba(61, 118, 93, 0.35)",
+                      color: "#D8E5D5",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -560,10 +514,10 @@ export default function HowWeWorkHero() {
                     <BoltRoundedIcon sx={{ fontSize: 20 }} />
                   </Box>
                   <Box>
-                    <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase" }}>
+                    <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#D8E5D5", textTransform: "uppercase", fontFamily: "monospace" }}>
                       {currentTab.phaseTag}
                     </Typography>
-                    <Typography sx={{ fontSize: "0.875rem", fontWeight: 700, color: "#18181B" }}>
+                    <Typography sx={{ fontSize: "0.875rem", fontWeight: 700, color: "#FFFFFF" }}>
                       {currentTab.metric1}
                     </Typography>
                   </Box>
@@ -575,12 +529,12 @@ export default function HowWeWorkHero() {
                     position: "absolute",
                     bottom: { xs: 14, sm: 20, md: 24 },
                     right: { xs: 14, sm: 20, md: 24 },
-                    bgcolor: "rgba(24, 24, 27, 0.9)",
+                    bgcolor: "rgba(24, 61, 53, 0.92)",
                     backdropFilter: "blur(14px)",
                     borderRadius: "16px",
                     p: { xs: 1.5, sm: 2 },
-                    border: "1px solid rgba(255, 255, 255, 0.15)",
-                    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.25)",
+                    border: "1px solid rgba(216, 229, 213, 0.25)",
+                    boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)",
                     display: { xs: "none", sm: "flex" },
                     alignItems: "center",
                     gap: 1.5,
@@ -591,7 +545,7 @@ export default function HowWeWorkHero() {
                       width: 38,
                       height: 38,
                       borderRadius: "10px",
-                      bgcolor: "rgba(34, 197, 94, 0.15)",
+                      bgcolor: "rgba(34, 197, 94, 0.2)",
                       color: "#22C55E",
                       display: "flex",
                       alignItems: "center",
@@ -601,9 +555,8 @@ export default function HowWeWorkHero() {
                     <CheckCircleOutlinedIcon sx={{ fontSize: 20 }} />
                   </Box>
                   <Box>
-                    <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#22C55E", textTransform: "uppercase" }}>
-                    Our Standards
-
+                    <Typography sx={{ fontSize: "0.72rem", fontWeight: 700, color: "#22C55E", textTransform: "uppercase", fontFamily: "monospace" }}>
+                      Our Standards
                     </Typography>
                     <Typography sx={{ fontSize: "0.875rem", fontWeight: 700, color: "#FFFFFF" }}>
                       {currentTab.metric2}
@@ -617,24 +570,24 @@ export default function HowWeWorkHero() {
                     position: "absolute",
                     bottom: { xs: 14, sm: 20, md: 24 },
                     left: { xs: 14, sm: 20, md: 24 },
-                    bgcolor: "rgba(255, 255, 255, 0.94)",
+                    bgcolor: "rgba(24, 61, 53, 0.92)",
                     backdropFilter: "blur(12px)",
                     px: 2.2,
                     py: 0.9,
                     borderRadius: "9999px",
-                    border: "1px solid rgba(255, 255, 255, 0.8)",
+                    border: "1px solid rgba(216, 229, 213, 0.25)",
                     display: "flex",
                     alignItems: "center",
                     gap: 1.2,
                     maxWidth: { xs: "85%", sm: "60%" },
                   }}
                 >
-                  <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#EA580C", flexShrink: 0 }} />
+                  <Box sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#D8E5D5", flexShrink: 0 }} />
                   <Typography
                     sx={{
                       fontSize: "0.8rem",
                       fontWeight: 600,
-                      color: "#18181B",
+                      color: "#FFFFFF",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
                       whiteSpace: "nowrap",
@@ -648,7 +601,7 @@ export default function HowWeWorkHero() {
           </Box>
         </motion.div>
 
-        {/* 4-Item Executive Trust & Performance Strip */}
+        {/* 4-Item Executive Trust & Performance Strip (Glass Dark Theme) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -659,20 +612,20 @@ export default function HowWeWorkHero() {
               <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={idx}>
                 <Box
                   sx={{
-                    p: 2.8,
-                    borderRadius: "20px",
-                    bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    p: 3,
+                    borderRadius: "16px",
+                    bgcolor: "rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(216, 229, 213, 0.12)",
+                    backdropFilter: "blur(10px)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.25s ease",
                     "&:hover": {
-                      borderColor: "rgba(234, 88, 12, 0.35)",
+                      bgcolor: "rgba(255, 255, 255, 0.07)",
+                      borderColor: "rgba(216, 229, 213, 0.3)",
                       transform: "translateY(-3px)",
-                      boxShadow: "0 10px 24px -4px rgba(24, 24, 27, 0.06)",
                     },
                   }}
                 >
@@ -680,21 +633,21 @@ export default function HowWeWorkHero() {
                     <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1.5 }}>
                       <Typography
                         sx={{
+                          fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
                           fontSize: "1.75rem",
-                          fontWeight: 800,
-                          color: "#EA580C",
-                          letterSpacing: "-0.03em",
-                          fontFamily: "monospace",
+                          fontWeight: 400,
+                          color: "#D8E5D5",
+                          letterSpacing: "-0.015em",
                         }}
                       >
                         {metric.value}
                       </Typography>
                       <Box
                         sx={{
-                          width: 32,
-                          height: 32,
+                          width: 34,
+                          height: 34,
                           borderRadius: "8px",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
+                          bgcolor: "rgba(61, 118, 93, 0.3)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -705,18 +658,20 @@ export default function HowWeWorkHero() {
                     </Box>
                     <Typography
                       sx={{
-                        fontSize: "0.95rem",
-                        fontWeight: 700,
-                        color: "#18181B",
+                        fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                        fontSize: "1.08rem",
+                        fontWeight: 400,
+                        color: "#FFFFFF",
                         mb: 0.8,
+                        letterSpacing: "-0.01em",
                       }}
                     >
                       {metric.title}
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "0.825rem",
-                        color: "#52525B",
+                        fontSize: "0.85rem",
+                        color: "rgba(216, 229, 213, 0.75)",
                         lineHeight: 1.6,
                       }}
                     >

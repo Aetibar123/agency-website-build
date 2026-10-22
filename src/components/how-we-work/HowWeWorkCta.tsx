@@ -13,224 +13,176 @@ export default function HowWeWorkCta() {
     <Box
       component="section"
       sx={{
-        py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        py: { xs: 10, md: 14 },
+        bgcolor: "#183D35",
+        color: "#FFFFFF",
         position: "relative",
+        overflow: "hidden",
+        borderTop: "1px solid rgba(216, 229, 213, 0.12)",
       }}
     >
       <Container maxWidth="xl">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <Box
             sx={{
-              maxWidth: 1040,
-              mx: "auto",
-              textAlign: "center",
-              border: "1px solid rgba(255, 255, 255, 0.12)",
-              p: { xs: 4, sm: 6, md: 9 },
-              background:
-                "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
-              borderRadius: { xs: "24px", md: "36px" },
-              boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
+              maxWidth: 960,
+              textAlign: "left",
               position: "relative",
-              overflow: "hidden",
+              zIndex: 1,
             }}
           >
-            {/* Ambient Warm Orange & Amber Glows with Pulse Animation */}
+            {/* Status Pill */}
             <Box
-              component={motion.div}
-              animate={{ scale: [1, 1.2, 1], opacity: [0.25, 0.4, 0.25] }}
-              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
               sx={{
-                position: "absolute",
-                top: "-20%",
-                right: "-10%",
-                width: "440px",
-                height: "440px",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 70%)",
-                filter: "blur(60px)",
-                pointerEvents: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1.2,
+                px: 2,
+                py: 0.5,
+                borderRadius: "9999px",
+                bgcolor: "rgba(61, 118, 93, 0.35)",
+                border: "1px solid rgba(216, 229, 213, 0.25)",
+                mb: 3,
               }}
-            />
-            <Box
-              component={motion.div}
-              animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.35, 0.2] }}
-              transition={{ repeat: Infinity, duration: 7, ease: "easeInOut", delay: 1 }}
-              sx={{
-                position: "absolute",
-                bottom: "-20%",
-                left: "-10%",
-                width: "440px",
-                height: "440px",
-                background: "radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, transparent 70%)",
-                filter: "blur(60px)",
-                pointerEvents: "none",
-              }}
-            />
-
-            <Box sx={{ position: "relative", zIndex: 1 }}>
-              {/* Warm Sunset Status Pill */}
+            >
               <Box
+                component={motion.div}
+                animate={{ scale: [1, 1.3, 1] }}
+                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#D8E5D5", boxShadow: "0 0 10px #D8E5D5" }}
+              />
+              <Typography
                 sx={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 1.2,
-                  px: 2.2,
-                  py: 0.6,
-                  borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.2)",
-                  border: "1px solid rgba(251, 146, 60, 0.4)",
-                  mb: 3.5,
+                  fontSize: "0.72rem",
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  color: "#D8E5D5",
+                  fontWeight: 700,
+                  fontFamily: "monospace",
                 }}
               >
-                <Box
-                  component={motion.div}
-                  animate={{ scale: [1, 1.3, 1] }}
-                  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 10px #FB923C" }}
-                />
-                <Typography
-                  sx={{
-                    fontSize: "0.8rem",
-                    letterSpacing: "0.06em",
-                    textTransform: "uppercase",
-                    color: "#FB923C",
-                    fontWeight: 700,
-                  }}
-                >
-                  LET'S TALK ABOUT YOUR BUSINESS
+                LET&apos;S TALK ABOUT YOUR BUSINESS
+              </Typography>
+            </Box>
 
-                </Typography>
-              </Box>
-
-              <Typography
-                variant="h2"
+            {/* Headline with DM Serif Display */}
+            <Typography
+              variant="h2"
+              sx={{
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "2rem", sm: "2.8rem", md: "3.4rem" },
+                fontWeight: 400,
+                color: "#FFFFFF",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                letterSpacing: "-0.015em",
+                maxWidth: { xs: "100%", md: 940 },
+                mb: 2.5,
+              }}
+            >
+              Ready to Build a Website, Mobile App, or Grow Your Online Presence?{" "}
+              <Box
+                component="span"
                 sx={{
-                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                  fontWeight: 600,
+                  color: "#D8E5D5",
+                  fontStyle: "italic",
+                }}
+              >
+                Need AI Automation or a Smarter Business Workflow?
+              </Box>
+            </Typography>
+
+            {/* Description */}
+            <Typography
+              sx={{
+                fontSize: { xs: "0.95rem", sm: "1.05rem" },
+                color: "rgba(216, 229, 213, 0.85)",
+                lineHeight: 1.75,
+                maxWidth: 780,
+                mb: 4.5,
+                fontWeight: 400,
+              }}
+            >
+              Tell us what your business needs, what is slowing your team down, and what you want to achieve. We’ll provide honest, practical recommendations, clear pricing, and a straightforward roadmap—without high-pressure sales tactics.
+            </Typography>
+
+            {/* Button Row */}
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "flex-start", alignItems: "center", mb: 4.5 }}>
+              <Button
+                component={Link}
+                href="/contact"
+                variant="contained"
+                endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+                sx={{
+                  bgcolor: "#3D765D",
                   color: "#FFFFFF",
-                  lineHeight: { xs: 1.25, md: 1.18 },
-                  letterSpacing: "-0.035em",
-                  maxWidth: { xs: "100%", md: 980, lg: 1100 },
-                  mx: "auto",
-                  textWrap: "balance",
-                  mb: 3,
+                  px: { xs: 3.2, sm: 4 },
+                  py: 1.4,
+                  fontSize: "0.925rem",
+                  fontWeight: 600,
+                  borderRadius: "12px",
+                  boxShadow: "none",
+                  textTransform: "none",
+                  "&:hover": {
+                    bgcolor: "#D8E5D5",
+                    color: "#183D35",
+                  },
                 }}
               >
-                Ready to Build a Website, Mobile App, or Grow Your Online Presence?{" "}
-                <Box
-                  component="span"
-                  sx={{
-                    background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  Need AI Automation or a Smarter Business Workflow?
+                Discuss Your Requirements
+              </Button>
 
+              <Button
+                component={Link}
+                href="/services"
+                variant="outlined"
+                sx={{
+                  borderColor: "rgba(216, 229, 213, 0.35)",
+                  bgcolor: "rgba(255, 255, 255, 0.04)",
+                  color: "#FFFFFF",
+                  px: { xs: 3, sm: 3.5 },
+                  py: 1.4,
+                  fontSize: "0.925rem",
+                  fontWeight: 600,
+                  borderRadius: "12px",
+                  textTransform: "none",
+                  "&:hover": {
+                    borderColor: "#D8E5D5",
+                    bgcolor: "rgba(216, 229, 213, 0.1)",
+                  },
+                }}
+              >
+                Explore Our Services
+              </Button>
+            </Box>
+
+            {/* Trust Badges */}
+            <Box
+              sx={{
+                pt: 3.5,
+                borderTop: "1px solid rgba(216, 229, 213, 0.15)",
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "flex-start",
+                gap: { xs: 2.5, sm: 4 },
+              }}
+            >
+              {[
+                { text: "Direct Engineer Access", icon: <VerifiedOutlinedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} /> },
+                { text: "Confidential & Respectful", icon: <LockOutlinedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} /> },
+                { text: "Clear, Honest Advice", icon: <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} /> },
+              ].map((item, idx) => (
+                <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  {item.icon}
+                  <Typography sx={{ fontSize: "0.825rem", color: "rgba(216, 229, 213, 0.78)", fontWeight: 500 }}>
+                    {item.text}
+                  </Typography>
                 </Box>
-              </Typography>
-
-              <Typography
-                sx={{
-                  fontSize: { xs: "1.05rem", md: "1.2rem" },
-                  color: "rgba(255, 255, 255, 0.82)",
-                  lineHeight: 1.75,
-                  maxWidth: 720,
-                  mx: "auto",
-                  mb: 5,
-                  fontWeight: 400,
-                }}
-              >
-                Tell us what your business needs, what is slowing your team down, and what you want to achieve. We’ll provide honest, practical recommendations, clear pricing, and a straightforward roadmap—without high-pressure sales tactics.
-
-              </Typography>
-
-              {/* Button Row */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center", alignItems: "center", mb: 5 }}>
-                <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-                  <Link href="/contact" style={{ textDecoration: "none" }}>
-                    <Button
-                      variant="contained"
-                      endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
-                      sx={{
-                        background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
-                        color: "#18181B",
-                        px: 4.5,
-                        py: 1.6,
-                        fontSize: "0.95rem",
-                        fontWeight: 800,
-                        borderRadius: "9999px",
-                        boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
-                        transition: "all 0.25s ease",
-                        "&:hover": {
-                          background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                          boxShadow: "0 15px 35px rgba(249, 115, 22, 0.6)",
-                        },
-                      }}
-                    >
-                     Discuss Your Requirements
-
-                    </Button>
-                  </Link>
-                </motion.div>
-
-                <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-                  <Link href="/how-we-help" style={{ textDecoration: "none" }}>
-                    <Button
-                      variant="outlined"
-                      sx={{
-                        color: "#FFFFFF",
-                        borderColor: "rgba(255, 255, 255, 0.25)",
-                        bgcolor: "rgba(255, 255, 255, 0.05)",
-                        backdropFilter: "blur(10px)",
-                        px: 4,
-                        py: 1.55,
-                        fontSize: "0.95rem",
-                        fontWeight: 600,
-                        borderRadius: "9999px",
-                        transition: "all 0.25s ease",
-                        "&:hover": {
-                          borderColor: "#FB923C",
-                          color: "#FB923C",
-                          bgcolor: "rgba(251, 146, 60, 0.1)",
-                        },
-                      }}
-                    >
-                      Explore How We Help
-                    </Button>
-                  </Link>
-                </motion.div>
-              </Box>
-
-              {/* Trust Badges */}
-              <Box
-                sx={{
-                  pt: 4,
-                  borderTop: "1px solid rgba(255, 255, 255, 0.1)",
-                  display: "flex",
-                  flexWrap: "wrap",
-                  justifyContent: "center",
-                  gap: { xs: 2.5, sm: 5 },
-                }}
-              >
-                {[
-                  { text: "Direct Engineer Access", icon: <VerifiedOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
-                  { text: "Confidential & Respectful", icon: <LockOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
-                  { text: "Clear, Honest Advice", icon: <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} /> },
-                ].map((item, idx) => (
-                  <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    {item.icon}
-                    <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.7)", fontWeight: 500 }}>
-                      {item.text}
-                    </Typography>
-                  </Box>
-                ))}
-              </Box>
+              ))}
             </Box>
           </Box>
         </motion.div>

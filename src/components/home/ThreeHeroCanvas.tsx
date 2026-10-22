@@ -27,11 +27,11 @@ export default function ThreeHeroCanvas() {
     const ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.8);
     scene.add(ambientLight);
 
-    const dirLight1 = new THREE.DirectionalLight(0xF97316, 2.5);
+    const dirLight1 = new THREE.DirectionalLight(0x3D765D, 2.5);
     dirLight1.position.set(20, 20, 30);
     scene.add(dirLight1);
 
-    const dirLight2 = new THREE.DirectionalLight(0xFB923C, 1.8);
+    const dirLight2 = new THREE.DirectionalLight(0x529677, 1.8);
     dirLight2.position.set(-20, -10, 20);
     scene.add(dirLight2);
 
@@ -53,8 +53,8 @@ export default function ThreeHeroCanvas() {
     const colors = new Float32Array(count * 3);
 
     // Warm Sunset Color Gradient (Ember -> Sunset Orange -> Golden Amber)
-    const colorDeep = new THREE.Color("#EA580C");  // Valleys
-    const colorMid = new THREE.Color("#F97316");   // Slopes
+    const colorDeep = new THREE.Color("#3D765D");  // Valleys
+    const colorMid = new THREE.Color("#4D8F72");   // Slopes
     const colorPeak = new THREE.Color("#FBBF24");  // Crests
 
     for (let i = 0; i < count; i++) {

@@ -334,7 +334,7 @@ const homePageSchema = {
               "description":
                 "Technical SEO, on-page optimization, keyword research, local SEO, Google Business Profile optimization, and useful content to improve search visibility.",
               "url":
-                "https://www.aetibar.in/services/seo-company-in-udaipur",
+                "https://www.aetibar.in/services/seo-service-in-udaipur",
             },
           },
 
@@ -346,7 +346,7 @@ const homePageSchema = {
               "description":
                 "Targeted Google Ads and Meta advertising campaigns with audience and keyword targeting, conversion tracking, ongoing optimization, and performance reporting.",
               "url":
-                "https://www.aetibar.in/services/paid-advertising-company-in-udaipur",
+                "https://www.aetibar.in/services/performance-marketing-company-in-udaipur",
             },
           },
 
@@ -358,7 +358,7 @@ const homePageSchema = {
               "description":
                 "Social media content planning, branded posts, captions, publishing, and performance reporting for platforms such as Instagram, Facebook, and LinkedIn.",
               "url":
-                "https://www.aetibar.in/services/social-media-marketing-company-in-udaipur",
+                "https://www.aetibar.in/services/social-media-marketing-service-in-udaipur",
             },
           },
 

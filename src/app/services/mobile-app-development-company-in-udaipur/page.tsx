@@ -1,8 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import ServicePageLayout from "../../../components/services/ServicePageLayout";
-import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
-import { workProjects } from "../../../data/workData";
+import MobileDevelopmentClient from "./MobileDevelopmentClient";
 
 export const metadata: Metadata = {
   title:
@@ -96,10 +94,6 @@ const serviceSchema = {
 };
 
 export default function AppDevelopmentServicePage() {
-  const relevantProjects = workProjects.filter((p) =>
-    ["mobile-booking-app", "field-service-mobile-app"].includes(p.slug),
-  );
-
   return (
     <main>
       <script

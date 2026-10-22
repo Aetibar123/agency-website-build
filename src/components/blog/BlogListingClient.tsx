@@ -123,7 +123,7 @@ export default function BlogListingClient() {
   }, [filteredBlogs, featuredArticle, isDefaultView]);
 
   return (
-    <Box sx={{ bgcolor: "#FAF8F5", minHeight: "100vh", color: "#18181B" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", minHeight: "100vh", color: "#183D35" }}>
       {/* ========================================================================= */}
       {/* HERO SECTION                                                              */}
       {/* ========================================================================= */}
@@ -132,8 +132,8 @@ export default function BlogListingClient() {
         sx={{
           pt: { xs: 15, sm: 17, md: 20 },
           pb: { xs: 6, md: 8 },
-          bgcolor: "#FAF8F5",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.9)",
           position: "relative",
           overflow: "hidden",
         }}
@@ -144,7 +144,7 @@ export default function BlogListingClient() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.03) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.03) 1px, transparent 1px)",
             backgroundSize: "64px 64px",
             pointerEvents: "none",
           }}
@@ -159,7 +159,7 @@ export default function BlogListingClient() {
             transform: "translateX(-50%)",
             width: "700px",
             height: "400px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, rgba(250, 248, 245, 0) 70%)",
+            background: "radial-gradient(circle, rgba(61, 118, 93, 0.08) 0%, rgba(250, 248, 245, 0) 70%)",
             filter: "blur(50px)",
             pointerEvents: "none",
           }}
@@ -176,18 +176,23 @@ export default function BlogListingClient() {
                 px: 2.2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
+                backdropFilter: "blur(12px)",
                 mb: 2.5,
               }}
             >
               <Box
+                component={motion.div}
+                animate={{ scale: [1, 1.3, 1] }}
+                transition={{ repeat: Infinity, duration: 2 }}
                 sx={{
                   width: 7,
                   height: 7,
                   borderRadius: "50%",
-                  bgcolor: "#F97316",
-                  boxShadow: "0 0 10px #F97316",
+                  bgcolor: "#4D8F72",
+                  boxShadow: "0 0 10px #4D8F72",
                 }}
               />
               <Typography
@@ -195,7 +200,7 @@ export default function BlogListingClient() {
                   fontSize: "0.8rem",
                   letterSpacing: "0.08em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   fontWeight: 700,
                   fontFamily: "monospace",
                 }}
@@ -208,11 +213,12 @@ export default function BlogListingClient() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                letterSpacing: { xs: "-0.03em", md: "-0.035em" },
-                lineHeight: { xs: 1.18, md: 1.2 },
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "2.1rem", sm: "2.7rem", md: "3.3rem", lg: "3.75rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: { xs: "-0.02em", md: "-0.025em" },
+                lineHeight: { xs: 1.16, md: 1.12 },
                 textWrap: "balance",
                 maxWidth: { xs: "100%", md: 1040, lg: 1140 },
                 mx: "auto",
@@ -224,7 +230,8 @@ export default function BlogListingClient() {
                 component="span"
                 sx={{
                   display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
+                  fontStyle: "italic",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 60%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -257,11 +264,11 @@ export default function BlogListingClient() {
         sx={{
           py: 2.5,
           bgcolor: "#FFFFFF",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.9)",
           position: "sticky",
           top: 0,
           zIndex: 10,
-          boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+          boxShadow: "0 2px 10px rgba(24, 61, 53, 0.02)",
         }}
       >
         <Container maxWidth="xl">
@@ -302,15 +309,15 @@ export default function BlogListingClient() {
                       textTransform: "none",
                       whiteSpace: "nowrap",
                       flexShrink: 0,
-                      bgcolor: isActive ? "#18181B" : "#FAF8F5",
+                      bgcolor: isActive ? "#183D35" : "#F7F7F2",
                       color: isActive ? "#FFFFFF" : "#52525B",
                       border: "1px solid",
-                      borderColor: isActive ? "#18181B" : "rgba(228, 228, 231, 0.9)",
+                      borderColor: isActive ? "#183D35" : "rgba(216, 229, 213, 0.9)",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        bgcolor: isActive ? "#27272A" : "rgba(234, 88, 12, 0.06)",
-                        borderColor: isActive ? "#27272A" : "#EA580C",
-                        color: isActive ? "#FFFFFF" : "#EA580C",
+                        bgcolor: isActive ? "#27272A" : "rgba(61, 118, 93, 0.06)",
+                        borderColor: isActive ? "#27272A" : "#3D765D",
+                        color: isActive ? "#FFFFFF" : "#3D765D",
                       },
                     }}
                   >
@@ -321,7 +328,7 @@ export default function BlogListingClient() {
                         ml: 0.8,
                         fontSize: "0.72rem",
                         fontFamily: "monospace",
-                        color: isActive ? "#FB923C" : "#A1A1AA",
+                        color: isActive ? "#62A486" : "#A1A1AA",
                       }}
                     >
                       ({count})
@@ -357,13 +364,13 @@ export default function BlogListingClient() {
                 }}
                 sx={{
                   "& .MuiOutlinedInput-root": {
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "#F7F7F2",
                     borderRadius: "9999px",
                     fontSize: "0.82rem",
                     px: 1.5,
-                    "& fieldset": { borderColor: "rgba(228, 228, 231, 0.9)" },
-                    "&:hover fieldset": { borderColor: "#EA580C" },
-                    "&.Mui-focused fieldset": { borderColor: "#EA580C" },
+                    "& fieldset": { borderColor: "rgba(216, 229, 213, 0.9)" },
+                    "&:hover fieldset": { borderColor: "#3D765D" },
+                    "&.Mui-focused fieldset": { borderColor: "#3D765D" },
                   },
                 }}
               />
@@ -392,7 +399,7 @@ export default function BlogListingClient() {
               Showing <strong>{filteredBlogs.length}</strong> of <strong>{blogs.length}</strong> dispatches
               {selectedCategory !== "All Articles" && (
                 <>
-                  {" "}in <span style={{ color: "#EA580C", fontWeight: 600 }}>{selectedCategory}</span>
+                  {" "}in <span style={{ color: "#3D765D", fontWeight: 600 }}>{selectedCategory}</span>
                 </>
               )}
               {searchQuery.trim() && (
@@ -409,7 +416,7 @@ export default function BlogListingClient() {
                 setSearchQuery("");
               }}
               sx={{
-                color: "#EA580C",
+                color: "#3D765D",
                 fontSize: "0.8rem",
                 fontWeight: 600,
                 textTransform: "none",
@@ -430,13 +437,13 @@ export default function BlogListingClient() {
               px: 3,
               borderRadius: "20px",
               bgcolor: "#FFFFFF",
-              border: "1px dashed rgba(228, 228, 231, 0.9)",
+              border: "1px dashed rgba(216, 229, 213, 0.9)",
               maxWidth: 540,
               mx: "auto",
             }}
           >
-            <SearchRoundedIcon sx={{ fontSize: 36, color: "#EA580C", mb: 1.5 }} />
-            <Typography variant="h6" sx={{ fontWeight: 700, color: "#18181B", mb: 1 }}>
+            <SearchRoundedIcon sx={{ fontSize: 36, color: "#3D765D", mb: 1.5 }} />
+            <Typography variant="h6" sx={{ fontWeight: 700, color: "#183D35", mb: 1 }}>
               No articles found
             </Typography>
             <Typography sx={{ color: "#71717A", fontSize: "0.9rem", mb: 3 }}>
@@ -449,7 +456,7 @@ export default function BlogListingClient() {
                 setSearchQuery("");
               }}
               sx={{
-                bgcolor: "#18181B",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 borderRadius: "9999px",
                 fontWeight: 600,
@@ -477,14 +484,14 @@ export default function BlogListingClient() {
                     sx={{
                       borderRadius: "24px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
                       overflow: "hidden",
-                      boxShadow: "0 6px 24px -4px rgba(24, 24, 27, 0.04)",
+                      boxShadow: "0 6px 24px -4px rgba(24, 61, 53, 0.04)",
                       transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                       "&:hover": {
                         transform: "translateY(-3px)",
-                        borderColor: "rgba(234, 88, 12, 0.4)",
-                        boxShadow: "0 18px 40px -8px rgba(234, 88, 12, 0.12)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
+                        boxShadow: "0 18px 40px -8px rgba(61, 118, 93, 0.12)",
                         "& .featured-img": {
                           transform: "scale(1.03)",
                         },
@@ -502,7 +509,7 @@ export default function BlogListingClient() {
                             position: "relative",
                             height: { xs: 220, sm: 280, md: 340 },
                             overflow: "hidden",
-                            bgcolor: "#18181B",
+                            bgcolor: "#183D35",
                           }}
                         >
                           <CardMedia
@@ -522,7 +529,7 @@ export default function BlogListingClient() {
                               position: "absolute",
                               inset: 0,
                               background:
-                                "linear-gradient(to top, rgba(24, 24, 27, 0.4) 0%, transparent 60%)",
+                                "linear-gradient(to top, rgba(24, 61, 53, 0.4) 0%, transparent 60%)",
                             }}
                           />
 
@@ -535,10 +542,10 @@ export default function BlogListingClient() {
                               px: 1.4,
                               py: 0.4,
                               borderRadius: "6px",
-                              bgcolor: "rgba(24, 24, 27, 0.85)",
+                              bgcolor: "rgba(24, 61, 53, 0.85)",
                               backdropFilter: "blur(8px)",
-                              border: "1px solid rgba(249, 115, 22, 0.4)",
-                              color: "#FB923C",
+                              border: "1px solid rgba(61, 118, 93, 0.4)",
+                              color: "#62A486",
                               fontSize: "0.72rem",
                               fontWeight: 700,
                               textTransform: "uppercase",
@@ -557,7 +564,7 @@ export default function BlogListingClient() {
                               px: 1.2,
                               py: 0.35,
                               borderRadius: "6px",
-                              bgcolor: "rgba(24, 24, 27, 0.85)",
+                              bgcolor: "rgba(24, 61, 53, 0.85)",
                               backdropFilter: "blur(8px)",
                               color: "#FFFFFF",
                               fontSize: "0.72rem",
@@ -567,7 +574,7 @@ export default function BlogListingClient() {
                               gap: 0.6,
                             }}
                           >
-                            <AccessTimeRoundedIcon sx={{ fontSize: 13, color: "#FB923C" }} />
+                            <AccessTimeRoundedIcon sx={{ fontSize: 13, color: "#62A486" }} />
                             <span>{featuredArticle.readTime}</span>
                           </Box>
                         </Box>
@@ -593,9 +600,9 @@ export default function BlogListingClient() {
                                 px: 1.2,
                                 py: 0.3,
                                 borderRadius: "6px",
-                                bgcolor: "rgba(249, 115, 22, 0.08)",
-                                border: "1px solid rgba(249, 115, 22, 0.25)",
-                                color: "#EA580C",
+                                bgcolor: "rgba(61, 118, 93, 0.08)",
+                                border: "1px solid rgba(61, 118, 93, 0.25)",
+                                color: "#3D765D",
                                 fontSize: "0.72rem",
                                 fontWeight: 700,
                                 fontFamily: "monospace",
@@ -617,11 +624,12 @@ export default function BlogListingClient() {
                           <Typography
                             variant="h2"
                             sx={{
-                              fontSize: { xs: "1.35rem", sm: "1.65rem", md: "1.85rem" },
-                              fontWeight: 700,
-                              color: "#18181B",
-                              lineHeight: 1.3,
-                              letterSpacing: "-0.025em",
+                              fontFamily: '"DM Serif Display", serif',
+                              fontSize: { xs: "1.45rem", sm: "1.75rem", md: "2.05rem" },
+                              fontWeight: 400,
+                              color: "#183D35",
+                              lineHeight: 1.25,
+                              letterSpacing: "-0.02em",
                               textWrap: "balance",
                               display: "-webkit-box",
                               WebkitLineClamp: 2,
@@ -657,8 +665,8 @@ export default function BlogListingClient() {
                                 label={`#${tag}`}
                                 size="small"
                                 sx={{
-                                  bgcolor: "#FAF8F5",
-                                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                                  bgcolor: "#F7F7F2",
+                                  border: "1px solid rgba(216, 229, 213, 0.9)",
                                   color: "#52525B",
                                   fontSize: "0.72rem",
                                   fontWeight: 600,
@@ -674,7 +682,7 @@ export default function BlogListingClient() {
                               display: "inline-flex",
                               alignItems: "center",
                               gap: 1,
-                              color: "#EA580C",
+                              color: "#3D765D",
                               fontWeight: 700,
                               fontSize: "0.9rem",
                             }}
@@ -701,10 +709,11 @@ export default function BlogListingClient() {
                 <Typography
                   variant="h3"
                   sx={{
-                    fontSize: "1.1rem",
-                    fontWeight: 700,
-                    color: "#18181B",
-                    letterSpacing: "-0.01em",
+                    fontFamily: '"DM Serif Display", serif',
+                    fontSize: { xs: "1.35rem", sm: "1.55rem" },
+                    fontWeight: 400,
+                    color: "#183D35",
+                    letterSpacing: "-0.015em",
                     mb: 3,
                   }}
                 >
@@ -736,23 +745,23 @@ export default function BlogListingClient() {
                             justifyContent: "space-between",
                             borderRadius: "20px",
                             bgcolor: "#FFFFFF",
-                            border: "1px solid rgba(228, 228, 231, 0.9)",
-                            boxShadow: "0 4px 14px rgba(24, 24, 27, 0.03)",
+                            border: "1px solid rgba(216, 229, 213, 0.9)",
+                            boxShadow: "0 4px 14px rgba(24, 61, 53, 0.03)",
                             overflow: "hidden",
                             transition: "all 0.28s cubic-bezier(0.16, 1, 0.3, 1)",
                             "&:hover": {
-                              borderColor: "rgba(234, 88, 12, 0.4)",
+                              borderColor: "rgba(61, 118, 93, 0.4)",
                               transform: "translateY(-4px)",
-                              boxShadow: "0 14px 30px -6px rgba(234, 88, 12, 0.12)",
+                              boxShadow: "0 14px 30px -6px rgba(61, 118, 93, 0.12)",
                               "& .blog-grid-img": {
                                 transform: "scale(1.04)",
                               },
                               "& .card-action-arrow": {
                                 transform: "translateX(4px)",
-                                color: "#EA580C",
+                                color: "#3D765D",
                               },
                               "& .card-title": {
-                                color: "#EA580C",
+                                color: "#3D765D",
                               },
                             },
                           }}
@@ -763,7 +772,7 @@ export default function BlogListingClient() {
                               position: "relative",
                               width: "100%",
                               height: 180,
-                              bgcolor: "#18181B",
+                              bgcolor: "#183D35",
                               overflow: "hidden",
                               flexShrink: 0,
                             }}
@@ -785,7 +794,7 @@ export default function BlogListingClient() {
                                 position: "absolute",
                                 inset: 0,
                                 background:
-                                  "linear-gradient(to top, rgba(24, 24, 27, 0.45) 0%, transparent 60%)",
+                                  "linear-gradient(to top, rgba(24, 61, 53, 0.45) 0%, transparent 60%)",
                               }}
                             />
 
@@ -798,10 +807,10 @@ export default function BlogListingClient() {
                                 px: 1.2,
                                 py: 0.3,
                                 borderRadius: "5px",
-                                bgcolor: "rgba(24, 24, 27, 0.85)",
+                                bgcolor: "rgba(24, 61, 53, 0.85)",
                                 backdropFilter: "blur(6px)",
-                                border: "1px solid rgba(249, 115, 22, 0.35)",
-                                color: "#FB923C",
+                                border: "1px solid rgba(61, 118, 93, 0.35)",
+                                color: "#62A486",
                                 fontSize: "0.68rem",
                                 fontWeight: 700,
                                 textTransform: "uppercase",
@@ -820,7 +829,7 @@ export default function BlogListingClient() {
                                 px: 1,
                                 py: 0.3,
                                 borderRadius: "5px",
-                                bgcolor: "rgba(24, 24, 27, 0.85)",
+                                bgcolor: "rgba(24, 61, 53, 0.85)",
                                 backdropFilter: "blur(6px)",
                                 color: "#FFFFFF",
                                 fontSize: "0.68rem",
@@ -830,7 +839,7 @@ export default function BlogListingClient() {
                                 gap: 0.5,
                               }}
                             >
-                              <AccessTimeRoundedIcon sx={{ fontSize: 12, color: "#FB923C" }} />
+                              <AccessTimeRoundedIcon sx={{ fontSize: 12, color: "#62A486" }} />
                               <span>{blog.readTime}</span>
                             </Box>
                           </Box>
@@ -878,7 +887,7 @@ export default function BlogListingClient() {
                                     sx={{
                                       fontSize: "0.7rem",
                                       fontWeight: 600,
-                                      color: "#EA580C",
+                                      color: "#3D765D",
                                       fontFamily: "monospace",
                                     }}
                                   >
@@ -892,11 +901,12 @@ export default function BlogListingClient() {
                                 className="card-title"
                                 variant="h3"
                                 sx={{
-                                  fontSize: "1.1rem",
-                                  fontWeight: 700,
-                                  color: "#18181B",
+                                  fontFamily: '"DM Serif Display", serif',
+                                  fontSize: "1.15rem",
+                                  fontWeight: 400,
+                                  color: "#183D35",
                                   letterSpacing: "-0.015em",
-                                  lineHeight: 1.38,
+                                  lineHeight: 1.35,
                                   mb: 1.2,
                                   height: "2.8em",
                                   minHeight: "2.8em",
@@ -933,7 +943,7 @@ export default function BlogListingClient() {
                             <Box
                               sx={{
                                 pt: 1.8,
-                                borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+                                borderTop: "1px solid rgba(216, 229, 213, 0.8)",
                                 display: "flex",
                                 alignItems: "center",
                                 justifyContent: "space-between",
@@ -954,7 +964,7 @@ export default function BlogListingClient() {
                                   display: "flex",
                                   alignItems: "center",
                                   gap: 0.6,
-                                  color: "#18181B",
+                                  color: "#183D35",
                                   fontSize: "0.8rem",
                                   fontWeight: 600,
                                 }}
@@ -985,7 +995,7 @@ export default function BlogListingClient() {
         component="section"
         sx={{
           py: { xs: 8, md: 12 },
-          bgcolor: "#FAF8F5",
+          bgcolor: "#F7F7F2",
           position: "relative",
         }}
       >
@@ -996,10 +1006,10 @@ export default function BlogListingClient() {
               mx: "auto",
               textAlign: "center",
               p: { xs: 4, sm: 6, md: 8 },
-              background: "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
+              background: "linear-gradient(145deg, #183D35 0%, #0F0E0E 60%, #201A18 100%)",
               borderRadius: { xs: "24px", md: "32px" },
               border: "1px solid rgba(255, 255, 255, 0.12)",
-              boxShadow: "0 25px 60px -15px rgba(24, 24, 27, 0.4)",
+              boxShadow: "0 25px 60px -15px rgba(24, 61, 53, 0.4)",
               position: "relative",
               overflow: "hidden",
             }}
@@ -1013,7 +1023,7 @@ export default function BlogListingClient() {
                 transform: "translateX(-50%)",
                 width: "600px",
                 height: "300px",
-                background: "radial-gradient(circle, rgba(249, 115, 22, 0.25) 0%, transparent 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.25) 0%, transparent 70%)",
                 filter: "blur(60px)",
                 pointerEvents: "none",
               }}
@@ -1028,17 +1038,17 @@ export default function BlogListingClient() {
                   px: 2,
                   py: 0.5,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.15)",
-                  border: "1px solid rgba(251, 146, 60, 0.35)",
+                  bgcolor: "rgba(61, 118, 93, 0.15)",
+                  border: "1px solid rgba(216, 229, 213, 0.35)",
                   mb: 2.5,
                 }}
               >
-                <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 8px #FB923C" }} />
+                <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#62A486", boxShadow: "0 0 8px #62A486" }} />
                 <Typography
                   sx={{
                     fontSize: "0.75rem",
                     letterSpacing: "0.06em",
-                    color: "#FB923C",
+                    color: "#62A486",
                     fontWeight: 700,
                     fontFamily: "monospace",
                     textTransform: "uppercase",
@@ -1051,18 +1061,22 @@ export default function BlogListingClient() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                  fontWeight: 600,
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "1.85rem", sm: "2.4rem", md: "2.9rem", lg: "3.3rem" },
+                  fontWeight: 400,
                   color: "#FFFFFF",
-                  letterSpacing: "-0.03em",
-                  lineHeight: { xs: 1.18, md: 1.2 },
+                  letterSpacing: "-0.02em",
+                  lineHeight: { xs: 1.18, md: 1.15 },
                   textWrap: "balance",
                   maxWidth: { xs: "100%", md: 980, lg: 1100 },
                   mx: "auto",
                   mb: 2,
                 }}
               >
-                Building software with real business utility.
+                Building software with{" "}
+                <Box component="span" sx={{ fontStyle: "italic", color: "#D8E5D5" }}>
+                  real business utility.
+                </Box>
               </Typography>
 
               <Typography
@@ -1093,7 +1107,7 @@ export default function BlogListingClient() {
                     variant="contained"
                     endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       color: "#FFFFFF",
                       px: 3.8,
                       py: 1.35,
@@ -1101,10 +1115,10 @@ export default function BlogListingClient() {
                       fontWeight: 600,
                       borderRadius: "9999px",
                       textTransform: "none",
-                      boxShadow: "0 8px 20px rgba(234, 88, 12, 0.35)",
+                      boxShadow: "0 8px 20px rgba(61, 118, 93, 0.35)",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                        boxShadow: "0 12px 26px rgba(234, 88, 12, 0.45)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                        boxShadow: "0 12px 26px rgba(61, 118, 93, 0.45)",
                       },
                     }}
                   >

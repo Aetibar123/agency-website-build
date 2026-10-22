@@ -1,17 +1,38 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Box, Container, Typography, TextField, Button, Paper, Grid } from "@mui/material";
+import { Box, Container, Typography, TextField, Button, Paper, CircularProgress } from "@mui/material";
 import { useRouter, useParams } from "next/navigation";
 import Link from "next/link";
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
+import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 import BlogContentEditor from "../../../../../components/admin/BlogContentEditor";
+
+const textFieldStyles = {
+  "& .MuiOutlinedInput-root": {
+    borderRadius: "12px",
+    bgcolor: "#FFFFFF",
+    "& fieldset": {
+      borderColor: "rgba(24, 61, 53, 0.15)",
+    },
+    "&:hover fieldset": {
+      borderColor: "#3D765D",
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "#3D765D",
+      borderWidth: "1.5px",
+    },
+  },
+  "& .MuiInputLabel-root.Mui-focused": {
+    color: "#3D765D",
+  },
+};
 
 export default function EditBlog() {
   const router = useRouter();
   const params = useParams();
   const [loading, setLoading] = useState(false);
   const [fetching, setFetching] = useState(true);
-  
+
   const [formData, setFormData] = useState({
     title: "",
     slug: "",
@@ -82,31 +103,112 @@ export default function EditBlog() {
 
   if (fetching) {
     return (
-      <Box sx={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Typography>Loading Blog Data...</Typography>
+      <Box sx={{ minHeight: "100vh", bgcolor: "#F7F7F2", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 2 }}>
+        <CircularProgress size={36} sx={{ color: "#3D765D" }} />
+        <Typography sx={{ color: "#183D35", fontWeight: 600 }}>Loading Blog Data...</Typography>
       </Box>
     );
   }
 
   return (
-    <Box sx={{ bgcolor: '#f8f9fa', minHeight: '100vh', py: 15 }}>
-      <Container maxWidth="lg">
-        <Button 
-          component={Link} 
-          href="/admin/blog" 
-          startIcon={<ArrowBackIcon />}
-          sx={{ mb: 4, fontWeight: 700 }}
+    <Box sx={{ bgcolor: "#F7F7F2", minHeight: "100vh", pt: { xs: 15, md: 18 }, pb: 12, position: "relative", overflow: "hidden" }}>
+      {/* Background Decorative Ambient Warm Glow */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: "8%",
+          right: "5%",
+          width: 500,
+          height: 500,
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
+          filter: "blur(70px)",
+          pointerEvents: "none",
+        }}
+      />
+
+      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
+        <Link href="/admin/blog" style={{ textDecoration: "none" }}>
+          <Button
+            startIcon={<ArrowBackRoundedIcon sx={{ fontSize: 18 }} />}
+            sx={{
+              mb: 4,
+              color: "#52525B",
+              bgcolor: "#FFFFFF",
+              border: "1px solid rgba(24, 61, 53, 0.12)",
+              borderRadius: "9999px",
+              px: 2.2,
+              py: 0.6,
+              fontSize: "0.82rem",
+              fontWeight: 600,
+              textTransform: "none",
+              boxShadow: "0 2px 6px rgba(24, 61, 53, 0.02)",
+              "&:hover": {
+                color: "#3D765D",
+                borderColor: "#3D765D",
+                bgcolor: "#FFFFFF",
+                transform: "translateX(-2px)",
+              },
+            }}
+          >
+            Back to Dashboard
+          </Button>
+        </Link>
+
+        <Paper
+          sx={{
+            p: { xs: 3.5, sm: 5, md: 6 },
+            borderRadius: "24px",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
+            boxShadow: "0 10px 40px rgba(24, 61, 53, 0.03)",
+            bgcolor: "#FFFFFF",
+          }}
         >
-          Back to Dashboard
-        </Button>
-        
-        <Paper sx={{ p: { xs: 4, md: 6 }, borderRadius: 4, boxShadow: '0 10px 40px rgba(0,0,0,0.03)' }}>
-          <Typography variant="h4" sx={{ fontWeight: 900, mb: 4, color: '#0B0F19' }}>
-            Edit Blog Post
-          </Typography>
+          <Box sx={{ mb: 4 }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 1,
+                px: 1.8,
+                py: 0.4,
+                borderRadius: "9999px",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                mb: 1.5,
+              }}
+            >
+              <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#4D8F72" }} />
+              <Typography
+                sx={{
+                  fontSize: "0.72rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  color: "#3D765D",
+                  textTransform: "uppercase",
+                  fontFamily: "monospace",
+                }}
+              >
+                AUTHORING &bull; EDIT DISPATCH
+              </Typography>
+            </Box>
+
+            <Typography
+              variant="h1"
+              sx={{
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.85rem", sm: "2.3rem", md: "2.6rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: 1.2,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Edit Blog Post
+            </Typography>
+          </Box>
 
           <form onSubmit={handleSubmit}>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 3.5 }}>
               <Box>
                 <TextField
                   fullWidth
@@ -116,10 +218,11 @@ export default function EditBlog() {
                   onChange={handleChange}
                   required
                   variant="outlined"
+                  sx={textFieldStyles}
                 />
               </Box>
-              
-              <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 3 }}>
+
+              <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 3 }}>
                 <TextField
                   fullWidth
                   label="URL Slug"
@@ -128,6 +231,7 @@ export default function EditBlog() {
                   onChange={handleChange}
                   required
                   variant="outlined"
+                  sx={textFieldStyles}
                 />
                 <TextField
                   fullWidth
@@ -136,6 +240,7 @@ export default function EditBlog() {
                   value={formData.author}
                   onChange={handleChange}
                   variant="outlined"
+                  sx={textFieldStyles}
                 />
               </Box>
 
@@ -147,19 +252,21 @@ export default function EditBlog() {
                   value={formData.coverImage}
                   onChange={handleChange}
                   variant="outlined"
+                  sx={textFieldStyles}
                 />
               </Box>
 
               <Box>
                 <TextField
                   fullWidth
-                  label="Excerpt (Short Summary)"
+                  label="Excerpt (Executive Summary)"
                   name="excerpt"
                   value={formData.excerpt}
                   onChange={handleChange}
                   multiline
-                  rows={2}
+                  rows={3}
                   variant="outlined"
+                  sx={textFieldStyles}
                   helperText="Short summary. Plain URLs (e.g. aetibar.in) or Markdown links [Text](https://...) will automatically be rendered as clickable links on the article page."
                 />
               </Box>
@@ -169,20 +276,39 @@ export default function EditBlog() {
                   value={formData.content}
                   onChange={(val) => setFormData((prev) => ({ ...prev, content: val }))}
                   label="Main Content (Markdown or plain text)"
-                  rows={15}
+                  rows={16}
                   required
                 />
               </Box>
 
-              <Box sx={{ mt: 2 }}>
-                <Button 
-                  type="submit" 
-                  variant="contained" 
-                  size="large" 
+              <Box sx={{ mt: 1, display: "flex", justifyContent: "flex-end" }}>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="large"
                   disabled={loading}
-                  sx={{ borderRadius: 8, px: 6, py: 1.5, fontWeight: 700 }}
+                  endIcon={loading ? <CircularProgress size={18} sx={{ color: "#FFFFFF" }} /> : <CheckRoundedIcon sx={{ fontSize: 18 }} />}
+                  sx={{
+                    bgcolor: "#183D35",
+                    color: "#FFFFFF",
+                    borderRadius: "9999px",
+                    px: 5,
+                    py: 1.4,
+                    fontSize: "0.92rem",
+                    fontWeight: 700,
+                    textTransform: "none",
+                    boxShadow: "0 6px 20px rgba(24, 61, 53, 0.25)",
+                    "&:hover": {
+                      bgcolor: "#3D765D",
+                      boxShadow: "0 8px 25px rgba(61, 118, 93, 0.35)",
+                    },
+                    "&:disabled": {
+                      bgcolor: "rgba(24, 61, 53, 0.4)",
+                      color: "#FFFFFF",
+                    },
+                  }}
                 >
-                  {loading ? "Updating..." : "Update Blog Post"}
+                  {loading ? "Updating Dispatch..." : "Update Blog Post"}
                 </Button>
               </Box>
             </Box>

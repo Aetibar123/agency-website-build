@@ -17,10 +17,10 @@ export default function HomeWork() {
       id="work"
       sx={{
         py: { xs: 12, md: 16 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
         overflow: "hidden",
-        borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+        borderBottom: "1px solid rgba(24, 61, 53, 0.06)",
       }}
     >
       {/* Background Decorative Ambient Warm Glow */}
@@ -32,7 +32,7 @@ export default function HomeWork() {
           transform: "translateX(-50%)",
           width: 850,
           height: 480,
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.05) 0%, rgba(250, 248, 245, 0) 70%)",
           filter: "blur(70px)",
           pointerEvents: "none",
         }}
@@ -45,7 +45,7 @@ export default function HomeWork() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, mx: "auto", textAlign: "center", mb: { xs: 6, md: 7.5 } }}>
+          <Box sx={{ maxWidth: { xs: "100%", sm: 800, md: 880 }, textAlign: "left", mb: { xs: 6, md: 7.5 } }}>
             <Box
               sx={{
                 display: "inline-flex",
@@ -54,9 +54,9 @@ export default function HomeWork() {
                 px: 2.2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                boxShadow: "0 2px 10px rgba(61, 118, 93, 0.08)",
                 backdropFilter: "blur(12px)",
                 mb: 2.5,
               }}
@@ -65,14 +65,14 @@ export default function HomeWork() {
                 component={motion.div}
                 animate={{ scale: [1, 1.3, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#4D8F72", boxShadow: "0 0 10px #4D8F72" }}
               />
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#3D765D",
                   textTransform: "uppercase",
                 }}
               >
@@ -83,11 +83,12 @@ export default function HomeWork() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.2 },
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.35rem", md: "2.8rem", lg: "3.2rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                letterSpacing: "-0.025em",
                 textWrap: "balance",
                 mb: 2.2,
               }}
@@ -96,7 +97,9 @@ export default function HomeWork() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
+                  display: "inline",
+                  fontStyle: "italic",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 55%, #62A486 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -111,11 +114,10 @@ export default function HomeWork() {
                 lineHeight: 1.7,
                 color: "#52525B",
                 maxWidth: { xs: "100%", md: 740, lg: 780 },
-                mx: "auto",
                 fontWeight: 400,
               }}
             >
-              See how we help businesses modernize outdated websites, rank higher on Google, capture qualified client inquiries, and automate repetitive office operations with proven return on investment.
+             Discover how we help businesses improve website performance, Google visibility, generate qualified enquiries, and automate repetitive tasks with AI.
             </Typography>
           </Box>
         </motion.div>
@@ -138,18 +140,18 @@ export default function HomeWork() {
                     sx={{
                     bgcolor: "#FFFFFF",
                     borderRadius: { xs: "20px", md: "24px" },
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     overflow: "hidden",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    boxShadow: "0 2px 8px rgba(24, 61, 53, 0.02)",
                     transition: "all 0.3s ease",
                     "&:hover": {
                       transform: "translateY(-4px)",
-                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
-                      borderColor: "rgba(234, 88, 12, 0.4)",
+                      boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.12)",
+                      borderColor: "rgba(61, 118, 93, 0.4)",
                     },
                   }}
                 >
@@ -186,7 +188,7 @@ export default function HomeWork() {
                             bgcolor: isProduction
                               ? "#16A34A"
                               : isPrototype
-                              ? "#EA580C"
+                              ? "#3D765D"
                               : "#4B5563",
                             color: "#FFFFFF",
                             fontWeight: 700,
@@ -204,7 +206,7 @@ export default function HomeWork() {
                       <Typography
                         variant="caption"
                         sx={{
-                          color: "#EA580C",
+                          color: "#3D765D",
                           fontWeight: 700,
                           fontSize: "0.75rem",
                           letterSpacing: "0.06em",
@@ -220,11 +222,12 @@ export default function HomeWork() {
                       <Typography
                         variant="h3"
                         sx={{
-                          fontSize: { xs: "1.05rem", sm: "1.1rem", md: "1.15rem" },
-                          fontWeight: 600,
-                          letterSpacing: "-0.02em",
-                          color: "#18181B",
-                          lineHeight: 1.35,
+                          fontFamily: '"DM Serif Display", serif',
+                          fontSize: { xs: "1.15rem", sm: "1.2rem", md: "1.25rem" },
+                          fontWeight: 400,
+                          letterSpacing: "-0.015em",
+                          color: "#183D35",
+                          lineHeight: 1.3,
                           mb: 1.5,
                           textWrap: "balance",
                           display: "-webkit-box",
@@ -257,7 +260,7 @@ export default function HomeWork() {
                               px: 1.2,
                               py: 0.4,
                               borderRadius: "6px",
-                              bgcolor: "rgba(24, 24, 27, 0.04)",
+                              bgcolor: "rgba(24, 61, 53, 0.04)",
                               color: "#52525B",
                               fontSize: "0.75rem",
                               fontWeight: 600,
@@ -285,12 +288,12 @@ export default function HomeWork() {
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 15 }} />}
                         sx={{
                           p: 0,
-                          color: "#18181B",
+                          color: "#183D35",
                           fontWeight: 700,
                           fontSize: "0.85rem",
                           textTransform: "none",
                           "&:hover": {
-                            color: "#EA580C",
+                            color: "#3D765D",
                             bgcolor: "transparent",
                             "& .MuiButton-endIcon": {
                               transform: "translateX(3px)",
@@ -325,8 +328,8 @@ export default function HomeWork() {
               variant="outlined"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                color: "#18181B",
-                borderColor: "rgba(24, 24, 27, 0.2)",
+                color: "#183D35",
+                borderColor: "rgba(24, 61, 53, 0.2)",
                 bgcolor: "#FFFFFF",
                 px: 3.5,
                 py: 1.3,
@@ -335,9 +338,9 @@ export default function HomeWork() {
                 textTransform: "none",
                 fontSize: "0.95rem",
                 "&:hover": {
-                  borderColor: "#EA580C",
-                  color: "#EA580C",
-                  bgcolor: "rgba(249, 115, 22, 0.04)",
+                  borderColor: "#3D765D",
+                  color: "#3D765D",
+                  bgcolor: "rgba(61, 118, 93, 0.04)",
                 },
               }}
             >

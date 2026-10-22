@@ -236,7 +236,7 @@ export default function HowWeWorkFaqSection() {
           right: "10%",
           width: 600,
           height: 600,
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, rgba(255, 255, 255, 0) 70%)",
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.04) 0%, rgba(255, 255, 255, 0) 70%)",
           filter: "blur(60px)",
           pointerEvents: "none",
         }}
@@ -255,33 +255,21 @@ export default function HowWeWorkFaqSection() {
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 1.2,
-                px: 2.2,
-                py: 0.6,
+                gap: 1,
+                px: 1.8,
+                py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2.5,
+                bgcolor: "#D8E5D5",
+                color: "#183D35",
+                fontSize: "0.72rem",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                fontFamily: "monospace",
+                mb: 2,
               }}
             >
-              <Box
-                component={motion.div}
-                animate={{ scale: [1, 1.3, 1] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
-              />
-              <Typography
-                sx={{
-                  fontSize: "0.8rem",
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                  color: "#EA580C",
-                  fontWeight: 700,
-                  fontFamily: "monospace",
-                }}
-              >
-                FREQUENTLY ASKED QUESTIONS
-              </Typography>
+              FREQUENTLY ASKED QUESTIONS
             </Box>
           </motion.div>
 
@@ -294,29 +282,27 @@ export default function HowWeWorkFaqSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                lineHeight: { xs: 1.18, md: 1.2 },
-                letterSpacing: "-0.035em",
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                lineHeight: { xs: 1.25, md: 1.18 },
+                letterSpacing: "-0.015em",
                 textWrap: "balance",
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                maxWidth: { xs: "100%", md: 980 },
                 mx: "auto",
-                mb: 2.5,
+                mb: 2,
               }}
             >
-              EVERYTHING YOU NEED TO KNOW ABOUT{" "}
+              Everything You Need to Know About —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  color: "#3D765D",
+                  fontStyle: "italic",
                 }}
               >
-                HOW WE WORK TOGETHER
-
+                How We Work Together
               </Box>
             </Typography>
 
@@ -354,22 +340,22 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                   input: {
                     startAdornment: (
                       <InputAdornment position="start">
-                        <SearchRoundedIcon sx={{ color: "#EA580C", fontSize: 20 }} />
+                        <SearchRoundedIcon sx={{ color: "#3D765D", fontSize: 20 }} />
                       </InputAdornment>
                     ),
                     sx: {
-                      bgcolor: "#FAF8F5",
+                      bgcolor: "#F7F7F2",
                       borderRadius: "14px",
                       fontSize: "0.9rem",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
                       "& fieldset": { border: "none" },
                       "&:hover": {
                         bgcolor: "#FFFFFF",
-                        boxShadow: "0 4px 14px rgba(24, 24, 27, 0.05)",
+                        boxShadow: "0 4px 14px rgba(24, 61, 53, 0.05)",
                       },
                       "&.Mui-focused": {
                         bgcolor: "#FFFFFF",
-                        boxShadow: "0 0 0 2px rgba(234, 88, 12, 0.3)",
+                        boxShadow: "0 0 0 2px rgba(61, 118, 93, 0.3)",
                       },
                     },
                   },
@@ -403,14 +389,14 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                       borderRadius: "12px",
                       fontSize: "0.82rem",
                       fontWeight: 600,
-                      bgcolor: isSelected ? "#18181B" : "#FAF8F5",
+                      bgcolor: isSelected ? "#183D35" : "#F7F7F2",
                       color: isSelected ? "#FFFFFF" : "#52525B",
                       border: "1px solid",
-                      borderColor: isSelected ? "#18181B" : "rgba(228, 228, 231, 0.9)",
-                      boxShadow: isSelected ? "0 4px 12px rgba(24, 24, 27, 0.15)" : "none",
+                      borderColor: isSelected ? "#183D35" : "rgba(216, 229, 213, 0.9)",
+                      boxShadow: isSelected ? "0 4px 12px rgba(24, 61, 53, 0.15)" : "none",
                       transition: "all 0.2s ease",
                       "&:hover": {
-                        bgcolor: isSelected ? "#27272A" : "rgba(24, 24, 27, 0.06)",
+                        bgcolor: isSelected ? "#27272A" : "rgba(24, 61, 53, 0.06)",
                       },
                     }}
                   />
@@ -430,12 +416,12 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                   p: 6,
                   textAlign: "center",
                   borderRadius: "24px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px dashed rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px dashed rgba(216, 229, 213, 0.9)",
                 }}
               >
-                <QuestionAnswerRoundedIcon sx={{ fontSize: 40, color: "#EA580C", mb: 1.5 }} />
-                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+                <QuestionAnswerRoundedIcon sx={{ fontSize: 40, color: "#3D765D", mb: 1.5 }} />
+                <Typography sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#183D35", mb: 0.5 }}>
                   No matching questions found
                 </Typography>
                 <Typography sx={{ fontSize: "0.9rem", color: "#71717A", mb: 2.5 }}>
@@ -449,8 +435,8 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                   variant="outlined"
                   sx={{
                     borderRadius: "10px",
-                    color: "#EA580C",
-                    borderColor: "#EA580C",
+                    color: "#3D765D",
+                    borderColor: "#3D765D",
                     textTransform: "none",
                     fontWeight: 600,
                   }}
@@ -471,14 +457,14 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                         borderRadius: "22px",
                         bgcolor: "#FFFFFF",
                         border: "1px solid",
-                        borderColor: isOpen ? "rgba(234, 88, 12, 0.45)" : "rgba(228, 228, 231, 0.85)",
+                        borderColor: isOpen ? "rgba(61, 118, 93, 0.45)" : "rgba(216, 229, 213, 0.85)",
                         boxShadow: isOpen
-                          ? "0 14px 36px -10px rgba(234, 88, 12, 0.12), 0 2px 8px rgba(24, 24, 27, 0.03)"
-                          : "0 2px 8px rgba(24, 24, 27, 0.02)",
+                          ? "0 14px 36px -10px rgba(61, 118, 93, 0.12), 0 2px 8px rgba(24, 61, 53, 0.03)"
+                          : "0 2px 8px rgba(24, 61, 53, 0.02)",
                         overflow: "hidden",
                         transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
                         "&:hover": {
-                          borderColor: isOpen ? "#EA580C" : "rgba(234, 88, 12, 0.3)",
+                          borderColor: isOpen ? "#3D765D" : "rgba(61, 118, 93, 0.3)",
                         },
                       }}
                     >
@@ -492,7 +478,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                           alignItems: "center",
                           justifyContent: "space-between",
                           gap: 2,
-                          bgcolor: isOpen ? "rgba(249, 115, 22, 0.02)" : "transparent",
+                          bgcolor: isOpen ? "rgba(61, 118, 93, 0.02)" : "transparent",
                           transition: "background-color 0.2s ease",
                         }}
                       >
@@ -502,8 +488,8 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                               width: 40,
                               height: 40,
                               borderRadius: "12px",
-                              bgcolor: isOpen ? "#EA580C" : "rgba(249, 115, 22, 0.08)",
-                              color: isOpen ? "#FFFFFF" : "#EA580C",
+                              bgcolor: isOpen ? "#3D765D" : "rgba(61, 118, 93, 0.08)",
+                              color: isOpen ? "#FFFFFF" : "#3D765D",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
@@ -521,7 +507,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                                 sx={{
                                   fontSize: "0.72rem",
                                   fontWeight: 700,
-                                  color: "#EA580C",
+                                  color: "#3D765D",
                                   textTransform: "uppercase",
                                   letterSpacing: "0.06em",
                                   fontFamily: "monospace",
@@ -532,9 +518,10 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                             </Box>
                             <Typography
                               sx={{
-                                fontSize: { xs: "1.05rem", sm: "1.2rem" },
-                                fontWeight: 700,
-                                color: "#18181B",
+                                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                                fontSize: { xs: "1.1rem", sm: "1.25rem" },
+                                fontWeight: 400,
+                                color: "#183D35",
                                 letterSpacing: "-0.015em",
                                 lineHeight: 1.35,
                               }}
@@ -553,10 +540,10 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            bgcolor: isOpen ? "#EA580C" : "#FAF8F5",
+                            bgcolor: isOpen ? "#3D765D" : "#F7F7F2",
                             color: isOpen ? "#FFFFFF" : "#71717A",
                             border: "1px solid",
-                            borderColor: isOpen ? "#EA580C" : "rgba(228, 228, 231, 0.8)",
+                            borderColor: isOpen ? "#3D765D" : "rgba(216, 229, 213, 0.8)",
                             flexShrink: 0,
                             transition: "all 0.2s ease",
                           }}
@@ -580,7 +567,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                                 px: { xs: 2.6, sm: 3.5 },
                                 pb: { xs: 3.2, sm: 4 },
                                 pt: 1,
-                                borderTop: "1px solid rgba(228, 228, 231, 0.7)",
+                                borderTop: "1px solid rgba(216, 229, 213, 0.7)",
                               }}
                             >
                               {/* Executive Summary Callout Box */}
@@ -588,21 +575,21 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                                 sx={{
                                   p: 2,
                                   borderRadius: "14px",
-                                  bgcolor: "rgba(249, 115, 22, 0.05)",
-                                  border: "1px solid rgba(249, 115, 22, 0.2)",
+                                  bgcolor: "rgba(61, 118, 93, 0.05)",
+                                  border: "1px solid rgba(61, 118, 93, 0.2)",
                                   mb: 2.2,
                                   display: "flex",
                                   alignItems: "flex-start",
                                   gap: 1.2,
                                 }}
                               >
-                                <BoltRoundedIcon sx={{ fontSize: 20, color: "#EA580C", flexShrink: 0, mt: 0.1 }} />
+                                <BoltRoundedIcon sx={{ fontSize: 20, color: "#3D765D", flexShrink: 0, mt: 0.1 }} />
                                 <Box>
                                   <Typography
                                     sx={{
                                       fontSize: "0.75rem",
                                       fontWeight: 800,
-                                      color: "#EA580C",
+                                      color: "#3D765D",
                                       letterSpacing: "0.05em",
                                       textTransform: "uppercase",
                                       mb: 0.3,
@@ -615,7 +602,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                                     sx={{
                                       fontSize: "0.92rem",
                                       fontWeight: 600,
-                                      color: "#18181B",
+                                      color: "#183D35",
                                       lineHeight: 1.55,
                                     }}
                                   >
@@ -643,7 +630,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                                   flexWrap: "wrap",
                                   gap: 1,
                                   pt: 1.8,
-                                  borderTop: "1px dashed rgba(228, 228, 231, 0.9)",
+                                  borderTop: "1px dashed rgba(216, 229, 213, 0.9)",
                                 }}
                               >
                                 {faq.takeaways.map((pill, pIdx) => (
@@ -656,8 +643,8 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                                       px: 1.3,
                                       py: 0.45,
                                       borderRadius: "8px",
-                                      bgcolor: "#FAF8F5",
-                                      border: "1px solid rgba(228, 228, 231, 0.8)",
+                                      bgcolor: "#F7F7F2",
+                                      border: "1px solid rgba(216, 229, 213, 0.8)",
                                     }}
                                   >
                                     <CheckCircleRoundedIcon sx={{ fontSize: 14, color: "#16A34A" }} />
@@ -694,11 +681,11 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                 sx={{
                   p: { xs: 3.5, sm: 4 },
                   borderRadius: "28px",
-                  bgcolor: "#18181B",
+                  bgcolor: "#183D35",
                   color: "#FFFFFF",
                   position: "relative",
                   overflow: "hidden",
-                  boxShadow: "0 20px 48px -12px rgba(24, 24, 27, 0.25)",
+                  boxShadow: "0 20px 48px -12px rgba(24, 61, 53, 0.25)",
                   border: "1px solid rgba(255, 255, 255, 0.1)",
                 }}
               >
@@ -711,7 +698,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                     width: 200,
                     height: 200,
                     borderRadius: "50%",
-                    background: "radial-gradient(circle, rgba(234, 88, 12, 0.3) 0%, rgba(24, 24, 27, 0) 70%)",
+                    background: "radial-gradient(circle, rgba(61, 118, 93, 0.3) 0%, rgba(24, 61, 53, 0) 70%)",
                     filter: "blur(40px)",
                     pointerEvents: "none",
                   }}
@@ -722,8 +709,8 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                     width: 48,
                     height: 48,
                     borderRadius: "14px",
-                    bgcolor: "rgba(249, 115, 22, 0.15)",
-                    color: "#EA580C",
+                    bgcolor: "rgba(61, 118, 93, 0.15)",
+                    color: "#3D765D",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -737,7 +724,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                   sx={{
                     fontSize: "0.75rem",
                     fontWeight: 800,
-                    color: "#FB923C",
+                    color: "#62A486",
                     letterSpacing: "0.08em",
                     fontFamily: "monospace",
                     textTransform: "uppercase",
@@ -776,15 +763,15 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                     sx={{
                       py: 1.4,
                       borderRadius: "14px",
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                       fontSize: "0.9rem",
                       fontWeight: 700,
                       textTransform: "none",
                       color: "#FFFFFF",
-                      boxShadow: "0 8px 20px -4px rgba(234, 88, 12, 0.4)",
+                      boxShadow: "0 8px 20px -4px rgba(61, 118, 93, 0.4)",
                       "&:hover": {
-                        background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                        boxShadow: "0 12px 28px -4px rgba(234, 88, 12, 0.6)",
+                        background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                        boxShadow: "0 12px 28px -4px rgba(61, 118, 93, 0.6)",
                       },
                     }}
                   >
@@ -817,14 +804,14 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                 sx={{
                   p: 3,
                   borderRadius: "20px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(216, 229, 213, 0.9)",
                 }}
               >
-                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", mb: 0.5, textTransform: "uppercase" }}>
+                <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", mb: 0.5, textTransform: "uppercase" }}>
                   OUR COMMITMENTS
                 </Typography>
-                <Typography sx={{ fontSize: "0.88rem", fontWeight: 600, color: "#18181B", mb: 1 }}>
+                <Typography sx={{ fontSize: "0.88rem", fontWeight: 600, color: "#183D35", mb: 1 }}>
                   Want to review our working commitments?
                 </Typography>
                 <Typography sx={{ fontSize: "0.8rem", color: "#71717A", lineHeight: 1.6, mb: 2 }}>
@@ -836,7 +823,7 @@ Clear answers about collaboration, existing tools, ownership, pricing, support, 
                     sx={{
                       fontSize: "0.82rem",
                       fontWeight: 700,
-                      color: "#EA580C",
+                      color: "#3D765D",
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 0.5,

@@ -20,11 +20,11 @@ export default function HomeScrollProgress() {
         left: 0,
         right: 0,
         height: "3px",
-        background: "linear-gradient(90deg, #EA580C 0%, #F97316 50%, #FB923C 100%)",
+        background: "linear-gradient(90deg, #3D765D 0%, #4D8F72 50%, #62A486 100%)",
         transformOrigin: "0%",
         zIndex: 99999,
         pointerEvents: "none",
-        boxShadow: "0 0 12px rgba(234, 88, 12, 0.6)",
+        boxShadow: "0 0 12px rgba(61, 118, 93, 0.6)",
       }}
     />
   );

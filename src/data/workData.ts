@@ -91,7 +91,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Home Services & Property Maintenance",
     industry: "Residential & Commercial Services",
     primaryNeed: "Clear service visibility & structured online enquiry capture",
-    image: "/images/portfolio/b2b.png",
+    image: "/images/portfolio/homeClening.png", 
     summary:
       "A clean, professional website for a home cleaning and maintenance business, designed to clearly present service packages, establish trust, and make it easy for customers to request a service online.",
     timeline: "Concept Build",
@@ -361,7 +361,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Appointment-Based Service Provider",
     industry: "Health, Wellness & Professional Services",
     primaryNeed: "Native mobile booking app to eliminate phone scheduling bottlenecks",
-    image: "/images/portfolio/logix.png",
+    image: "/images/portfolio/appointment.png",
     summary:
       "A cross-platform iOS and Android mobile app designed to make appointment scheduling, service discovery, and customer reminders effortless from any smartphone.",
     timeline: "Concept Build",
@@ -496,7 +496,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Field Operations & Contracting",
     industry: "Facilities & On-Site Contracting",
     primaryNeed: "Mobile job dispatch, status reporting, and photo completion proof for field staff",
-    image: "/images/portfolio/inventry.png",
+    image: "/images/portfolio/field.png",
     summary:
       "A mobile workflow app for field technicians to view assigned jobs, update work status, capture completion photos, and keep office dispatchers informed in real time.",
     timeline: "Functional Prototype",
@@ -631,7 +631,7 @@ export const workProjects: WorkProject[] = [
     businessType: "B2B & High-Value Service Firm",
     industry: "Sales & Professional Services",
     primaryNeed: "Automated enquiry triage, response drafting, and scheduled follow-up reminders",
-    image: "/images/portfolio/aiCostomer.png",
+    image: "/images/portfolio/b2b.png",
     summary:
       "A practical AI automation workflow that organizes incoming website enquiries, drafts context-aware responses for team review, and ensures prospective clients are never left waiting.",
     timeline: "Workflow Prototype",
@@ -1017,7 +1017,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "SEO Services",
-      href: "/services/seo-company-in-udaipur",
+      href: "/services/seo-service-in-udaipur",
       description: "Technical search engine optimization and local search visibility to help customers find your business on Google.",
     },
   },
@@ -1151,7 +1151,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "SEO Services",
-      href: "/services/seo-company-in-udaipur",
+      href: "/services/seo-service-in-udaipur",
       description: "Comprehensive technical audits, on-page optimization, and structured search markup for sustainable organic growth.",
     },
   },
@@ -1285,7 +1285,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Social Media Marketing",
-      href: "/services/social-media-marketing-company-in-udaipur",
+      href: "/services/social-media-marketing-service-in-udaipur",
       description: "Structured content calendars, custom branded graphics, and ongoing management to keep your audience engaged.",
     },
   },
@@ -1419,7 +1419,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Social Media Marketing",
-      href: "/services/social-media-marketing-company-in-udaipur",
+      href: "/services/social-media-marketing-service-in-udaipur",
       description: "Content planning and audience engagement strategies built to turn social attention into genuine business inquiries.",
     },
   },
@@ -1553,7 +1553,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Paid Advertising",
-      href: "/services/paid-advertising-company-in-udaipur",
+      href: "/services/performance-marketing-company-in-udaipur",
       description: "Targeted Google Ads and Meta Ads campaigns managed with conversion tracking and disciplined budget control.",
     },
   },
@@ -1687,7 +1687,7 @@ export const workProjects: WorkProject[] = [
     ],
     relatedService: {
       title: "Paid Advertising",
-      href: "/services/paid-advertising-company-in-udaipur",
+      href: "/services/performance-marketing-company-in-udaipur",
       description: "Data-driven advertising campaigns across Google and Meta platforms managed with transparent performance reporting.",
     },
   },

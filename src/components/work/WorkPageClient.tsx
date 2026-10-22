@@ -55,9 +55,9 @@ export default function WorkPageClient() {
   }, [selectedCategory, searchQuery]);
 
   return (
-    <Box sx={{ bgcolor: "#FFFFFF", color: "#18181B", minHeight: "100vh", overflowX: "hidden" }}>
+    <Box sx={{ bgcolor: "#FFFFFF", color: "#183D35", minHeight: "100vh", overflowX: "hidden" }}>
       {/* ========================================================================= */}
-      {/* 1. HERO HEADER WITH HOME PAGE STYLING & ANIMATIONS                        */}
+      {/* 1. HERO HEADER WITH WEB DEV HERO STYLING                                  */}
       {/* ========================================================================= */}
       <Box
         component="section"
@@ -65,25 +65,25 @@ export default function WorkPageClient() {
           position: "relative",
           pt: { xs: 15, sm: 18, md: 21 },
           pb: { xs: 8, md: 12 },
-          background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.06)",
+          bgcolor: "#183D35",
+          color: "#FFFFFF",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.12)",
           textAlign: "center",
           overflow: "hidden",
         }}
       >
-        {/* Ambient Warm Glowing Background Orbs */}
+        {/* Ambient Dark Pine & Sage Glowing Background Orbs matching Web Dev Hero */}
         <Box
           component={motion.div}
-          animate={{ scale: [1, 1.15, 1], opacity: [0.25, 0.4, 0.25] }}
+          animate={{ scale: [1, 1.15, 1], opacity: [0.35, 0.5, 0.35] }}
           transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
           sx={{
             position: "absolute",
             top: "-12%",
             right: "-6%",
-            width: "520px",
-            height: "520px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.16) 0%, transparent 70%)",
+            width: "550px",
+            height: "550px",
+            background: "radial-gradient(circle, rgba(61, 118, 93, 0.35) 0%, transparent 70%)",
             filter: "blur(75px)",
             pointerEvents: "none",
           }}
@@ -94,19 +94,19 @@ export default function WorkPageClient() {
           transition={{ repeat: Infinity, duration: 9, ease: "easeInOut", delay: 1 }}
           sx={{
             position: "absolute",
-            top: "20%",
+            bottom: "0%",
             left: "-10%",
-            width: "480px",
-            height: "480px",
-            background: "radial-gradient(circle, rgba(251, 146, 60, 0.14) 0%, transparent 70%)",
-            filter: "blur(75px)",
+            width: "500px",
+            height: "500px",
+            background: "radial-gradient(circle, rgba(216, 229, 213, 0.12) 0%, transparent 70%)",
+            filter: "blur(80px)",
             pointerEvents: "none",
           }}
         />
 
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 2 }}>
           <Box sx={{ maxWidth: 880, mx: "auto" }}>
-            {/* Status Pill Badge with Pulsing Orange Dot */}
+            {/* Status Pill Badge matching Web Dev Hero */}
             <motion.div
               initial={{ opacity: 0, y: -20, scale: 0.94 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -120,9 +120,9 @@ export default function WorkPageClient() {
                   px: { xs: 2, sm: 2.4 },
                   py: 0.7,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(61, 118, 93, 0.28)",
+                  border: "1px solid rgba(216, 229, 213, 0.25)",
+                  boxShadow: "0 2px 12px rgba(0, 0, 0, 0.2)",
                   backdropFilter: "blur(12px)",
                   mb: 3,
                 }}
@@ -135,8 +135,8 @@ export default function WorkPageClient() {
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    bgcolor: "#F97316",
-                    boxShadow: "0 0 10px #F97316",
+                    bgcolor: "#D8E5D5",
+                    boxShadow: "0 0 10px #D8E5D5",
                     flexShrink: 0,
                   }}
                 />
@@ -145,7 +145,7 @@ export default function WorkPageClient() {
                     fontSize: { xs: "0.75rem", sm: "0.825rem" },
                     fontWeight: 700,
                     letterSpacing: "0.06em",
-                    color: "#EA580C",
+                    color: "#D8E5D5",
                     textTransform: "uppercase",
                   }}
                 >
@@ -154,7 +154,7 @@ export default function WorkPageClient() {
               </Box>
             </motion.div>
 
-            {/* Main Title H1 with Sunset Gradient Highlight */}
+            {/* Main Title H1 with DM Serif Display */}
             <motion.div
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
@@ -163,11 +163,12 @@ export default function WorkPageClient() {
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                  fontWeight: 600,
-                  color: "#18181B",
-                  lineHeight: { xs: 1.25, sm: 1.2, md: 1.18 },
-                  letterSpacing: { xs: "-0.02em", md: "-0.035em" },
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "2.1rem", sm: "2.7rem", md: "3.3rem", lg: "3.75rem" },
+                  fontWeight: 400,
+                  color: "#FFFFFF",
+                  lineHeight: { xs: 1.18, sm: 1.15, md: 1.12 },
+                  letterSpacing: { xs: "-0.02em", md: "-0.025em" },
                   maxWidth: { xs: "100%", md: 1040, lg: 1160 },
                   mx: "auto",
                   textWrap: "balance",
@@ -179,9 +180,8 @@ export default function WorkPageClient() {
                   component="span"
                   sx={{
                     display: "inline",
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
+                    fontStyle: "italic",
+                    color: "#D8E5D5",
                   }}
                 >
                   Real Projects That Drive Real Revenue.
@@ -199,7 +199,7 @@ export default function WorkPageClient() {
                 sx={{
                   fontSize: { xs: "1rem", sm: "1.15rem", md: "1.2rem" },
                   lineHeight: 1.8,
-                  color: "#52525B",
+                  color: "rgba(216, 229, 213, 0.85)",
                   maxWidth: 800,
                   mx: "auto",
                   mb: 2,
@@ -216,7 +216,7 @@ export default function WorkPageClient() {
       {/* ========================================================================= */}
       {/* 2. CATEGORY FILTER TABS & SEARCH BAR                                      */}
       {/* ========================================================================= */}
-      <Box sx={{ pt: { xs: 6, md: 8 }, pb: { xs: 10, md: 16 }, bgcolor: "#FAFAFA", position: "relative" }}>
+      <Box sx={{ pt: { xs: 6, md: 8 }, pb: { xs: 10, md: 16 }, bgcolor: "#F7F7F2", position: "relative" }}>
         <Container maxWidth="xl">
           <Box sx={{ mb: { xs: 6, md: 8 }, textAlign: "center" }}>
             {/* Category Filter Pills */}
@@ -260,21 +260,21 @@ export default function WorkPageClient() {
                           fontSize: "0.88rem",
                           fontWeight: isSelected ? 700 : 500,
                           background: isSelected
-                            ? "linear-gradient(135deg, #EA580C 0%, #F97316 100%)"
+                            ? "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)"
                             : "#FFFFFF",
                           color: isSelected ? "#FFFFFF" : "#52525B",
                           border: "1px solid",
-                          borderColor: isSelected ? "transparent" : "rgba(24, 24, 27, 0.08)",
+                          borderColor: isSelected ? "transparent" : "rgba(24, 61, 53, 0.08)",
                           boxShadow: isSelected
-                            ? "0 6px 18px -3px rgba(234, 88, 12, 0.38)"
+                            ? "0 6px 18px -3px rgba(61, 118, 93, 0.38)"
                             : "0 2px 6px rgba(0, 0, 0, 0.02)",
                           transition: "all 0.25s ease",
                           "&:hover": {
                             background: isSelected
-                              ? "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)"
-                              : "rgba(249, 115, 22, 0.06)",
-                            borderColor: isSelected ? "transparent" : "#EA580C",
-                            color: isSelected ? "#FFFFFF" : "#EA580C",
+                              ? "linear-gradient(135deg, #183D35 0%, #3D765D 100%)"
+                              : "rgba(61, 118, 93, 0.06)",
+                            borderColor: isSelected ? "transparent" : "#3D765D",
+                            color: isSelected ? "#FFFFFF" : "#3D765D",
                           },
                         }}
                       >
@@ -303,7 +303,7 @@ export default function WorkPageClient() {
                     input: {
                       startAdornment: (
                         <InputAdornment position="start">
-                          <SearchIcon sx={{ color: "#EA580C", fontSize: 20 }} />
+                          <SearchIcon sx={{ color: "#3D765D", fontSize: 20 }} />
                         </InputAdornment>
                       ),
                       endAdornment: searchQuery ? (
@@ -314,7 +314,7 @@ export default function WorkPageClient() {
                               cursor: "pointer",
                               display: "flex",
                               color: "#A1A1AA",
-                              "&:hover": { color: "#18181B" },
+                              "&:hover": { color: "#183D35" },
                             }}
                           >
                             <CloseIcon sx={{ fontSize: 18 }} />
@@ -327,13 +327,13 @@ export default function WorkPageClient() {
                         fontSize: "0.9rem",
                         px: 2,
                         py: 0.5,
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         boxShadow: "0 2px 8px rgba(0, 0, 0, 0.02)",
                         "& fieldset": { border: "none" },
-                        "&:hover": { borderColor: "rgba(234, 88, 12, 0.4)" },
+                        "&:hover": { borderColor: "rgba(61, 118, 93, 0.4)" },
                         "&.Mui-focused": {
-                          boxShadow: "0 0 0 3px rgba(249, 115, 22, 0.15)",
-                          borderColor: "#EA580C",
+                          boxShadow: "0 0 0 3px rgba(61, 118, 93, 0.15)",
+                          borderColor: "#3D765D",
                         },
                       },
                     },
@@ -351,7 +351,7 @@ export default function WorkPageClient() {
                 <Typography
                   onClick={() => setSearchQuery("")}
                   sx={{
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontSize: "0.85rem",
                     fontWeight: 700,
                     cursor: "pointer",
@@ -373,13 +373,13 @@ export default function WorkPageClient() {
                   textAlign: "center",
                   borderRadius: "24px",
                   bgcolor: "#FFFFFF",
-                  border: "1px dashed rgba(24, 24, 27, 0.15)",
+                  border: "1px dashed rgba(24, 61, 53, 0.15)",
                   my: 4,
                   maxWidth: 600,
                   mx: "auto",
                 }}
               >
-                <Typography sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#18181B", mb: 1 }}>
+                <Typography sx={{ fontSize: "1.25rem", fontWeight: 700, color: "#183D35", mb: 1 }}>
                   No matching projects found
                 </Typography>
                 <Typography sx={{ fontSize: "0.95rem", color: "#71717A", mb: 3 }}>
@@ -392,7 +392,7 @@ export default function WorkPageClient() {
                   }}
                   variant="contained"
                   sx={{
-                    background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                    background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                     color: "#FFFFFF",
                     borderRadius: "9999px",
                     textTransform: "none",
@@ -400,7 +400,7 @@ export default function WorkPageClient() {
                     px: 3.5,
                     py: 1.2,
                     "&:hover": {
-                      background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                      background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                     },
                   }}
                 >
@@ -430,7 +430,7 @@ export default function WorkPageClient() {
                       sx={{
                         bgcolor: "#FFFFFF",
                         borderRadius: "20px",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         boxShadow: "0 2px 10px rgba(0, 0, 0, 0.02)",
                         overflow: "hidden",
                         height: "100%",
@@ -440,8 +440,8 @@ export default function WorkPageClient() {
                         transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
                         "&:hover": {
                           transform: "translateY(-5px)",
-                          boxShadow: "0 20px 40px -12px rgba(234, 88, 12, 0.16)",
-                          borderColor: "rgba(234, 88, 12, 0.4)",
+                          boxShadow: "0 20px 40px -12px rgba(61, 118, 93, 0.16)",
+                          borderColor: "rgba(61, 118, 93, 0.4)",
                         },
                       }}
                     >
@@ -452,7 +452,7 @@ export default function WorkPageClient() {
                             position: "relative",
                             width: "100%",
                             height: 230,
-                            bgcolor: "#18181B",
+                            bgcolor: "#183D35",
                             overflow: "hidden",
                           }}
                         >
@@ -484,7 +484,7 @@ export default function WorkPageClient() {
                                 bgcolor:
                                   project.projectType === "Production Build"
                                     ? "#16A34A"
-                                    : "rgba(24, 24, 27, 0.85)",
+                                    : "rgba(24, 61, 53, 0.85)",
                                 backdropFilter: "blur(8px)",
                                 color: "#FFFFFF",
                                 fontWeight: 700,
@@ -500,11 +500,11 @@ export default function WorkPageClient() {
                               sx={{
                                 bgcolor: "rgba(255, 255, 255, 0.95)",
                                 backdropFilter: "blur(8px)",
-                                color: "#EA580C",
+                                color: "#3D765D",
                                 fontWeight: 700,
                                 fontSize: "0.72rem",
                                 borderRadius: "6px",
-                                border: "1px solid rgba(234, 88, 12, 0.25)",
+                                border: "1px solid rgba(61, 118, 93, 0.25)",
                               }}
                             />
                           </Box>
@@ -514,12 +514,12 @@ export default function WorkPageClient() {
                         <Box sx={{ p: { xs: 2.5, sm: 3.5 } }}>
                           {/* Business Type */}
                           <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, mb: 1.2 }}>
-                            <BusinessOutlinedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                            <BusinessOutlinedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                             <Typography
                               sx={{
                                 fontSize: "0.78rem",
                                 fontWeight: 700,
-                                color: "#EA580C",
+                                color: "#3D765D",
                                 textTransform: "uppercase",
                                 letterSpacing: "0.05em",
                               }}
@@ -532,10 +532,12 @@ export default function WorkPageClient() {
                           <Typography
                             variant="h3"
                             sx={{
-                              fontSize: { xs: "1.05rem", sm: "1.1rem", md: "1.15rem" },
-                              fontWeight: 700,
-                              color: "#18181B",
-                              lineHeight: 1.35,
+                              fontFamily: '"DM Serif Display", serif',
+                              fontSize: { xs: "1.15rem", sm: "1.2rem", md: "1.25rem" },
+                              fontWeight: 400,
+                              color: "#183D35",
+                              lineHeight: 1.3,
+                              letterSpacing: "-0.015em",
                               mb: 1.5,
                               textWrap: "balance",
                               display: "-webkit-box",
@@ -570,7 +572,7 @@ export default function WorkPageClient() {
                                     px: 1.2,
                                     py: 0.4,
                                     borderRadius: "6px",
-                                    bgcolor: "rgba(24, 24, 27, 0.04)",
+                                    bgcolor: "rgba(24, 61, 53, 0.04)",
                                     color: "#52525B",
                                     fontSize: "0.75rem",
                                     fontWeight: 600,
@@ -589,7 +591,7 @@ export default function WorkPageClient() {
                         sx={{
                           p: { xs: 2.5, sm: 3.5 },
                           pt: 0,
-                          borderTop: "1px solid rgba(24, 24, 27, 0.06)",
+                          borderTop: "1px solid rgba(24, 61, 53, 0.06)",
                           mt: "auto",
                         }}
                       >
@@ -601,18 +603,18 @@ export default function WorkPageClient() {
                                 fullWidth
                                 endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                                 sx={{
-                                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                                   color: "#FFFFFF",
                                   fontWeight: 700,
                                   fontSize: "0.9rem",
                                   borderRadius: "9999px",
                                   py: 1.3,
                                   textTransform: "none",
-                                  boxShadow: "0 4px 14px rgba(234, 88, 12, 0.25)",
+                                  boxShadow: "0 4px 14px rgba(61, 118, 93, 0.25)",
                                   transition: "all 0.25s ease",
                                   "&:hover": {
-                                    background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                                    boxShadow: "0 8px 20px rgba(234, 88, 12, 0.4)",
+                                    background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                                    boxShadow: "0 8px 20px rgba(61, 118, 93, 0.4)",
                                   },
                                 }}
                               >
@@ -649,9 +651,9 @@ export default function WorkPageClient() {
                 textAlign: "center",
                 border: "1px solid rgba(255, 255, 255, 0.12)",
                 p: { xs: 3.5, sm: 6, md: 9 },
-                background: "linear-gradient(145deg, #18181B 0%, #0F0E0E 60%, #201A18 100%)",
+                background: "linear-gradient(145deg, #183D35 0%, #0F0E0E 60%, #201A18 100%)",
                 borderRadius: { xs: "24px", md: "36px" },
-                boxShadow: "0 30px 80px -20px rgba(24, 24, 27, 0.5)",
+                boxShadow: "0 30px 80px -20px rgba(24, 61, 53, 0.5)",
                 position: "relative",
                 overflow: "hidden",
               }}
@@ -667,7 +669,7 @@ export default function WorkPageClient() {
                   right: "-10%",
                   width: "440px",
                   height: "440px",
-                  background: "radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 70%)",
+                  background: "radial-gradient(circle, rgba(61, 118, 93, 0.32) 0%, transparent 70%)",
                   filter: "blur(60px)",
                   pointerEvents: "none",
                 }}
@@ -703,8 +705,8 @@ export default function WorkPageClient() {
                       px: 2.2,
                       py: 0.6,
                       borderRadius: "9999px",
-                      bgcolor: "rgba(249, 115, 22, 0.2)",
-                      border: "1px solid rgba(251, 146, 60, 0.4)",
+                      bgcolor: "rgba(61, 118, 93, 0.2)",
+                      border: "1px solid rgba(216, 229, 213, 0.4)",
                       mb: 3.5,
                     }}
                   >
@@ -712,14 +714,14 @@ export default function WorkPageClient() {
                       component={motion.div}
                       animate={{ scale: [1, 1.3, 1] }}
                       transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                      sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#FB923C", boxShadow: "0 0 10px #FB923C" }}
+                      sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#62A486", boxShadow: "0 0 10px #62A486" }}
                     />
                     <Typography
                       sx={{
                         fontSize: "0.8rem",
                         letterSpacing: "0.06em",
                         textTransform: "uppercase",
-                        color: "#FB923C",
+                        color: "#62A486",
                         fontWeight: 700,
                       }}
                     >
@@ -737,11 +739,12 @@ export default function WorkPageClient() {
                   <Typography
                     variant="h2"
                     sx={{
-                      fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-                      fontWeight: 600,
+                      fontFamily: '"DM Serif Display", serif',
+                      fontSize: { xs: "1.85rem", sm: "2.4rem", md: "2.9rem", lg: "3.3rem" },
+                      fontWeight: 400,
                       color: "#FFFFFF",
-                      lineHeight: { xs: 1.25, md: 1.18 },
-                      letterSpacing: "-0.035em",
+                      lineHeight: { xs: 1.2, md: 1.15 },
+                      letterSpacing: "-0.02em",
                       maxWidth: { xs: "100%", md: 980, lg: 1100 },
                       mx: "auto",
                       textWrap: "balance",
@@ -753,9 +756,8 @@ export default function WorkPageClient() {
                       component="span"
                       sx={{
                         display: "inline",
-                        background: "linear-gradient(135deg, #F97316 0%, #FB923C 60%, #FED7AA 100%)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "transparent",
+                        fontStyle: "italic",
+                        color: "#D8E5D5",
                       }}
                     >
                       Let&apos;s Build It Together.
@@ -814,20 +816,20 @@ export default function WorkPageClient() {
                           fullWidth
                           endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                           sx={{
-                            background: "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
-                            color: "#18181B",
+                            background: "linear-gradient(135deg, #4D8F72 0%, #62A486 100%)",
+                            color: "#183D35",
                             px: { xs: 3, sm: 4.5 },
                             py: 1.6,
                             fontSize: "0.95rem",
                             fontWeight: 800,
                             borderRadius: "9999px",
-                            boxShadow: "0 10px 25px rgba(249, 115, 22, 0.4)",
+                            boxShadow: "0 10px 25px rgba(61, 118, 93, 0.4)",
                             transition: "all 0.25s ease",
                             width: { xs: "100%", sm: "auto" },
                             "&:hover": {
-                              background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                              background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                               color: "#FFFFFF",
-                              boxShadow: "0 15px 30px rgba(234, 88, 12, 0.5)",
+                              boxShadow: "0 15px 30px rgba(61, 118, 93, 0.5)",
                             },
                           }}
                         >
@@ -859,9 +861,9 @@ export default function WorkPageClient() {
                             transition: "all 0.25s ease",
                             width: { xs: "100%", sm: "auto" },
                             "&:hover": {
-                              borderColor: "#FB923C",
-                              color: "#FB923C",
-                              bgcolor: "rgba(249, 115, 22, 0.12)",
+                              borderColor: "#62A486",
+                              color: "#62A486",
+                              bgcolor: "rgba(61, 118, 93, 0.12)",
                             },
                           }}
                         >
@@ -895,7 +897,7 @@ export default function WorkPageClient() {
                       "Direct WhatsApp & Phone Support",
                     ].map((badgeText, idx) => (
                       <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                        <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+                        <CheckCircleOutlinedIcon sx={{ fontSize: 16, color: "#62A486" }} />
                         <Typography sx={{ fontSize: "0.825rem", color: "rgba(255, 255, 255, 0.82)", fontWeight: 500 }}>
                           {badgeText}
                         </Typography>

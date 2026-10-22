@@ -31,25 +31,25 @@ const serviceItems = [
     title: "Web Development",
     desc: "Business websites, e-commerce, and custom web apps",
     path: "/services/web-development-company-in-udaipur",
-    icon: <LanguageIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+    icon: <LanguageIcon sx={{ fontSize: 18, color: "#3D765D" }} />,
   },
   {
     title: "Mobile App Development",
     desc: "Mobile applications for iOS & Android",
     path: "/services/mobile-app-development-company-in-udaipur",
-    icon: <PhoneIphoneIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+    icon: <PhoneIphoneIcon sx={{ fontSize: 18, color: "#3D765D" }} />,
   },
   {
     title: "AI Automation & Integration",
     desc: "Workflow automation and smart system integrations",
     path: "/services/ai-automation-company-in-udaipur",
-    icon: <SmartToyOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+    icon: <SmartToyOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />,
   },
   {
     title: "Digital Marketing",
     desc: "SEO, Social Media Marketing & High-ROI Paid Ads",
     path: "/services/digital-marketing-company-in-udaipur",
-    icon: <CampaignOutlinedIcon sx={{ fontSize: 18, color: "#EA580C" }} />,
+    icon: <CampaignOutlinedIcon sx={{ fontSize: 18, color: "#3D765D" }} />,
   },
 ];
 
@@ -121,7 +121,7 @@ export default function Navbar() {
               sx={{
                 fontWeight: 900,
                 letterSpacing: "-0.03em",
-                color: "#0E172A",
+                color: "#183D35",
                 textDecoration: "none",
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 display: "inline-flex",
@@ -136,7 +136,7 @@ export default function Navbar() {
                   width: 7,
                   height: 7,
                   borderRadius: "50%",
-                  bgcolor: "#EA580C",
+                  bgcolor: "#3D765D",
                   display: "inline-block",
                 }}
               />
@@ -169,7 +169,7 @@ export default function Navbar() {
                     />
                   }
                   sx={{
-                    color: isServicesActive ? "#0E172A" : "#525760",
+                    color: isServicesActive ? "#183D35" : "#525760",
                     fontWeight: isServicesActive ? 700 : 500,
                     fontSize: { md: "0.875rem", lg: "0.9375rem" },
                     textTransform: "none",
@@ -177,7 +177,7 @@ export default function Navbar() {
                     minWidth: "auto",
                     whiteSpace: "nowrap",
                     "&:hover": {
-                      color: "#0E172A",
+                      color: "#183D35",
                       bgcolor: "transparent",
                     },
                   }}
@@ -200,7 +200,7 @@ export default function Navbar() {
                         mt: 1.5,
                         borderRadius: "16px",
                         border: "1px solid rgba(226, 232, 240, 0.9)",
-                        boxShadow: "0 16px 40px rgba(14, 23, 42, 0.08)",
+                        boxShadow: "0 16px 40px rgba(24, 61, 53, 0.08)",
                         bgcolor: "#FFFFFF",
                         overflow: "visible",
                       },
@@ -215,7 +215,7 @@ export default function Navbar() {
                       sx={{
                         fontWeight: 700,
                         letterSpacing: "0.08em",
-                        color: "#EA580C",
+                        color: "#3D765D",
                         textTransform: "uppercase",
                         fontSize: "0.7rem",
                       }}
@@ -238,7 +238,7 @@ export default function Navbar() {
                         alignItems: "flex-start",
                         gap: 1.5,
                         "&:hover": {
-                          bgcolor: "rgba(234, 88, 12, 0.06)",
+                          bgcolor: "rgba(61, 118, 93, 0.06)",
                         },
                       }}
                     >
@@ -248,7 +248,7 @@ export default function Navbar() {
                           sx={{
                             fontSize: "0.875rem",
                             fontWeight: 600,
-                            color: "#0E172A",
+                            color: "#183D35",
                           }}
                         >
                           {item.title}
@@ -268,7 +268,7 @@ export default function Navbar() {
                     </MenuItem>
                   ))}
 
-                  <Divider sx={{ my: 1, borderColor: "rgba(17, 18, 21, 0.06)" }} />
+                  <Divider sx={{ my: 1, borderColor: "rgba(24, 61, 53, 0.06)" }} />
 
                   <MenuItem
                     component={Link}
@@ -280,7 +280,7 @@ export default function Navbar() {
                       px: 1.5,
                       display: "flex",
                       justifyContent: "space-between",
-                      color: "#EA580C",
+                      color: "#3D765D",
                       fontWeight: 600,
                       fontSize: "0.825rem",
                     }}
@@ -309,7 +309,7 @@ export default function Navbar() {
                     component={Link}
                     href={item.path}
                     sx={{
-                      color: isActive ? "#0E172A" : "#525760",
+                      color: isActive ? "#183D35" : "#525760",
                       fontWeight: isActive ? 700 : 500,
                       fontSize: { md: "0.875rem", lg: "0.9375rem" },
                       textDecoration: "none",
@@ -317,7 +317,7 @@ export default function Navbar() {
                       whiteSpace: "nowrap",
                       transition: "color 0.2s ease",
                       "&:hover": {
-                        color: "#0E172A",
+                        color: "#183D35",
                       },
                       ...(isActive && {
                         "&::after": {
@@ -327,7 +327,7 @@ export default function Navbar() {
                           left: 0,
                           width: "100%",
                           height: 2,
-                          bgcolor: "#EA580C",
+                          bgcolor: "#3D765D",
                           borderRadius: 1,
                         },
                       }),
@@ -347,20 +347,20 @@ export default function Navbar() {
                 variant="contained"
                 sx={{
                   display: { xs: "none", sm: "inline-flex" },
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                   color: "#FFFFFF",
                   px: { sm: 2.2, md: 2.5, lg: 3 },
                   py: { sm: 0.85, md: 1, lg: 1.1 },
                   fontSize: { sm: "0.8125rem", md: "0.85rem", lg: "0.875rem" },
                   fontWeight: 700,
                   borderRadius: "9999px",
-                  boxShadow: "0 4px 14px rgba(234, 88, 12, 0.28)",
+                  boxShadow: "0 4px 14px rgba(61, 118, 93, 0.28)",
                   whiteSpace: "nowrap",
                   transition: "all 0.25s ease",
                   textTransform: "none",
                   "&:hover": {
-                    background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                    boxShadow: "0 6px 20px rgba(234, 88, 12, 0.4)",
+                    background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                    boxShadow: "0 6px 20px rgba(61, 118, 93, 0.4)",
                     transform: "translateY(-1px)",
                   },
                 }}
@@ -373,17 +373,17 @@ export default function Navbar() {
                 onClick={handleDrawerToggle}
                 sx={{
                   display: { md: "none" },
-                  color: "#0E172A",
+                  color: "#183D35",
                   width: { xs: 40, sm: 44 },
                   height: { xs: 40, sm: 44 },
-                  border: "1px solid rgba(17, 18, 21, 0.12)",
+                  border: "1px solid rgba(24, 61, 53, 0.12)",
                   borderRadius: "12px",
                   bgcolor: "#FFFFFF",
                   transition: "all 0.2s ease",
                   "&:hover": {
-                    bgcolor: "rgba(234, 88, 12, 0.08)",
-                    borderColor: "#EA580C",
-                    color: "#EA580C",
+                    bgcolor: "rgba(61, 118, 93, 0.08)",
+                    borderColor: "#3D765D",
+                    color: "#3D765D",
                   },
                   "&:active": {
                     transform: "scale(0.95)",
@@ -414,7 +414,7 @@ export default function Navbar() {
             justifyContent: "space-between",
             overflowY: "auto",
             overflowX: "hidden",
-            boxShadow: "-8px 0 32px rgba(14, 23, 42, 0.15)",
+            boxShadow: "-8px 0 32px rgba(24, 61, 53, 0.15)",
           },
         }}
       >
@@ -425,35 +425,35 @@ export default function Navbar() {
               justifyContent: "space-between",
               alignItems: "center",
               pb: { xs: 2, sm: 2.5 },
-              borderBottom: "1px solid rgba(17, 18, 21, 0.08)",
+              borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
             }}
           >
             <Typography
               sx={{
                 fontWeight: 900,
                 letterSpacing: "-0.03em",
-                color: "#0E172A",
+                color: "#183D35",
                 fontSize: { xs: "1.05rem", sm: "1.2rem" },
                 whiteSpace: "nowrap",
               }}
             >
-              AETIBAR<Box component="span" sx={{ color: "#EA580C" }}>.</Box>
+              AETIBAR<Box component="span" sx={{ color: "#3D765D" }}>.</Box>
             </Typography>
             <IconButton
               onClick={handleDrawerToggle}
               aria-label="Close navigation"
               sx={{
-                color: "#0E172A",
-                border: "1px solid rgba(17, 18, 21, 0.12)",
+                color: "#183D35",
+                border: "1px solid rgba(24, 61, 53, 0.12)",
                 borderRadius: "50%",
                 width: { xs: 32, sm: 36 },
                 height: { xs: 32, sm: 36 },
                 p: 0,
                 transition: "all 0.2s ease",
                 "&:hover": {
-                  bgcolor: "rgba(234, 88, 12, 0.08)",
-                  borderColor: "#EA580C",
-                  color: "#EA580C",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  borderColor: "#3D765D",
+                  color: "#3D765D",
                 },
                 "&:active": {
                   transform: "scale(0.95)",
@@ -478,11 +478,11 @@ export default function Navbar() {
                 alignItems: "center",
                 borderRadius: "8px",
                 "&:hover": {
-                  bgcolor: "rgba(234, 88, 12, 0.05)",
+                  bgcolor: "rgba(61, 118, 93, 0.05)",
                 },
               }}
             >
-              <Typography sx={{ fontSize: { xs: "0.95rem", sm: "1.05rem" }, fontWeight: 700, color: "#0E172A" }}>
+              <Typography sx={{ fontSize: { xs: "0.95rem", sm: "1.05rem" }, fontWeight: 700, color: "#183D35" }}>
                 Services
               </Typography>
               <ArrowForwardIcon sx={{ fontSize: { xs: 14, sm: 16 }, color: "#94A3B8" }} />
@@ -499,13 +499,13 @@ export default function Navbar() {
                   sx={{
                     textDecoration: "none",
                     fontSize: { xs: "0.78rem", sm: "0.85rem" },
-                    color: pathname === sub.path ? "#EA580C" : "#64748B",
+                    color: pathname === sub.path ? "#3D765D" : "#64748B",
                     fontWeight: pathname === sub.path ? 600 : 500,
                     py: 0.35,
                     lineHeight: 1.3,
                     transition: "color 0.2s ease",
                     "&:hover": {
-                      color: "#EA580C",
+                      color: "#3D765D",
                     },
                   }}
                 >
@@ -514,7 +514,7 @@ export default function Navbar() {
               ))}
             </Box>
 
-            <Divider sx={{ my: 0.75, borderColor: "rgba(17, 18, 21, 0.06)" }} />
+            <Divider sx={{ my: 0.75, borderColor: "rgba(24, 61, 53, 0.06)" }} />
 
             {[
               { name: "Our Work", path: "/work" },
@@ -541,9 +541,9 @@ export default function Navbar() {
                     justifyContent: "space-between",
                     alignItems: "center",
                     borderRadius: "8px",
-                    borderBottom: "1px solid rgba(17, 18, 21, 0.04)",
+                    borderBottom: "1px solid rgba(24, 61, 53, 0.04)",
                     "&:hover": {
-                      bgcolor: "rgba(234, 88, 12, 0.05)",
+                      bgcolor: "rgba(61, 118, 93, 0.05)",
                     },
                   }}
                 >
@@ -551,7 +551,7 @@ export default function Navbar() {
                     sx={{
                       fontSize: { xs: "0.95rem", sm: "1.05rem" },
                       fontWeight: isActive ? 700 : 500,
-                      color: isActive ? "#EA580C" : "#0E172A",
+                      color: isActive ? "#3D765D" : "#183D35",
                     }}
                   >
                     {item.name}
@@ -562,7 +562,7 @@ export default function Navbar() {
           </List>
         </Box>
 
-        <Box sx={{ pt: 2, mt: 2, borderTop: "1px solid rgba(17, 18, 21, 0.08)" }}>
+        <Box sx={{ pt: 2, mt: 2, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
           <Button
             component={Link}
             href="/contact"
@@ -575,13 +575,13 @@ export default function Navbar() {
               px: 1,
               fontSize: { xs: "0.825rem", sm: "0.9rem" },
               fontWeight: 700,
-              background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+              background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
               color: "#FFFFFF",
               borderRadius: "9999px",
-              boxShadow: "0 4px 12px rgba(234, 88, 12, 0.25)",
+              boxShadow: "0 4px 12px rgba(61, 118, 93, 0.25)",
               textTransform: "none",
               "&:hover": {
-                background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
               },
             }}
           >
@@ -606,7 +606,7 @@ export default function Navbar() {
             component="a"
             href="mailto:hello.aetibar@gmail.com"
             sx={{
-              color: "#0E172A",
+              color: "#183D35",
               fontWeight: 600,
               fontSize: { xs: "0.75rem", sm: "0.85rem" },
               textDecoration: "none",

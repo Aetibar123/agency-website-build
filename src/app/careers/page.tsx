@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import CareersHeroSection from "../../components/careers/CareersHeroSection";
 import PerksSection from "../../components/careers/PerksSection";
 import OpeningsSection from "../../components/careers/OpeningsSection";
-import CtaSection from "../../components/home/CtaSection";
+import HomeCtaSection from "../../components/home/HomeCtaSection";
 
 export const metadata: Metadata = {
   title: "Careers at Aetibar | Web Development, App Engineering & Marketing Roles in Udaipur",
@@ -70,7 +70,7 @@ export default function CareersPage() {
       <CareersHeroSection />
       <PerksSection />
       <OpeningsSection />
-      <CtaSection />
+      <HomeCtaSection />
     </main>
   );
 }

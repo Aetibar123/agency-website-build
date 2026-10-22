@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   };
 
   return (
-    <Box sx={{ bgcolor: "#FAF8F5", minHeight: "100vh", color: "#18181B" }}>
+    <Box sx={{ bgcolor: "#F7F7F2", minHeight: "100vh", color: "#183D35" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -192,8 +192,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         sx={{
           pt: { xs: 15, sm: 18, md: 22 },
           pb: { xs: 6, md: 8 },
-          bgcolor: "#FAF8F5",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.9)",
           position: "relative",
           overflow: "hidden",
         }}
@@ -204,7 +204,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.03) 1px, transparent 1px)",
+              "linear-gradient(to right, rgba(24, 61, 53, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 61, 53, 0.03) 1px, transparent 1px)",
             backgroundSize: "64px 64px",
             pointerEvents: "none",
           }}
@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             transform: "translateX(-50%)",
             width: "750px",
             height: "450px",
-            background: "radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, rgba(250, 248, 245, 0) 70%)",
+            background: "radial-gradient(circle, rgba(61, 118, 93, 0.08) 0%, rgba(250, 248, 245, 0) 70%)",
             filter: "blur(60px)",
             pointerEvents: "none",
           }}
@@ -235,16 +235,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 fontWeight: 700,
                 color: "#52525B",
                 bgcolor: "#FFFFFF",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
                 borderRadius: "12px",
                 px: 2.5,
                 py: 0.8,
                 fontSize: "0.85rem",
                 textTransform: "none",
-                boxShadow: "0 2px 6px rgba(24, 24, 27, 0.02)",
+                boxShadow: "0 2px 6px rgba(24, 61, 53, 0.02)",
                 "&:hover": {
-                  color: "#EA580C",
-                  borderColor: "#EA580C",
+                  color: "#3D765D",
+                  borderColor: "#3D765D",
                   bgcolor: "#FFFFFF",
                   transform: "translateX(-2px)",
                 },
@@ -259,7 +259,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <Chip
               label={blog.category}
               sx={{
-                bgcolor: "#EA580C",
+                bgcolor: "#3D765D",
                 color: "#FFFFFF",
                 fontWeight: 700,
                 fontSize: "0.76rem",
@@ -290,11 +290,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: "1.65rem", sm: "2.25rem", md: "2.85rem", lg: "3.25rem" },
-              fontWeight: 700,
-              color: "#18181B",
-              lineHeight: 1.18,
-              letterSpacing: "-0.03em",
+              fontFamily: '"DM Serif Display", serif',
+              fontSize: { xs: "2rem", sm: "2.6rem", md: "3.2rem", lg: "3.6rem" },
+              fontWeight: 400,
+              color: "#183D35",
+              lineHeight: 1.15,
+              letterSpacing: "-0.02em",
               textWrap: "balance",
               maxWidth: { xs: "100%", md: 1040, lg: 1160 },
               mb: 4,
@@ -310,8 +311,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               alignItems: "center",
               justifyContent: "space-between",
               py: 2.5,
-              borderTop: "1px solid rgba(228, 228, 231, 0.9)",
-              borderBottom: "1px solid rgba(228, 228, 231, 0.9)",
+              borderTop: "1px solid rgba(216, 229, 213, 0.9)",
+              borderBottom: "1px solid rgba(216, 229, 213, 0.9)",
               flexWrap: "wrap",
               gap: 2,
             }}
@@ -319,7 +320,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
               <Avatar
                 sx={{
-                  bgcolor: "#18181B",
+                  bgcolor: "#183D35",
                   color: "#FFFFFF",
                   width: 44,
                   height: 44,
@@ -330,7 +331,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 {blog.author.charAt(0)}
               </Avatar>
               <Box>
-                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B" }}>
+                <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35" }}>
                   {blog.author}
                 </Typography>
                 <Typography sx={{ fontSize: "0.78rem", color: "#71717A" }}>
@@ -349,7 +350,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     size="small"
                     sx={{
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
                       color: "#71717A",
                       fontSize: "0.72rem",
                       fontWeight: 600,
@@ -371,10 +372,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             sx={{
               borderRadius: "24px",
               overflow: "hidden",
-              border: "1px solid rgba(228, 228, 231, 0.9)",
-              boxShadow: "0 16px 40px -10px rgba(24, 24, 27, 0.08)",
+              border: "1px solid rgba(216, 229, 213, 0.9)",
+              boxShadow: "0 16px 40px -10px rgba(24, 61, 53, 0.08)",
               maxHeight: { xs: 260, sm: 400, md: 520 },
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
             }}
           >
             <Box
@@ -401,9 +402,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           sx={{
             bgcolor: "#FFFFFF",
             borderRadius: "28px",
-            border: "1px solid rgba(228, 228, 231, 0.9)",
+            border: "1px solid rgba(216, 229, 213, 0.9)",
             p: { xs: 3.5, sm: 5, md: 8 },
-            boxShadow: "0 4px 20px rgba(24, 24, 27, 0.02)",
+            boxShadow: "0 4px 20px rgba(24, 61, 53, 0.02)",
           }}
         >
           {/* Executive Summary Callout */}
@@ -412,8 +413,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               sx={{
                 p: { xs: 2.5, sm: 3.5 },
                 borderRadius: "16px",
-                bgcolor: "#FAF8F5",
-                border: "1px solid rgba(228, 228, 231, 0.9)",
+                bgcolor: "#F7F7F2",
+                border: "1px solid rgba(216, 229, 213, 0.9)",
                 mb: 6,
               }}
             >
@@ -421,7 +422,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 sx={{
                   fontSize: "0.74rem",
                   fontWeight: 800,
-                  color: "#EA580C",
+                  color: "#3D765D",
                   letterSpacing: "0.08em",
                   fontFamily: "monospace",
                   textTransform: "uppercase",
@@ -438,18 +439,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   lineHeight: 1.75,
                   fontWeight: 500,
                   "& a, & .blog-link": {
-                    color: "#EA580C",
+                    color: "#3D765D",
                     fontWeight: 600,
                     textDecoration: "underline",
                     textUnderlineOffset: "3px",
-                    textDecorationColor: "rgba(234, 88, 12, 0.4)",
+                    textDecorationColor: "rgba(61, 118, 93, 0.4)",
                     cursor: "pointer",
                     pointerEvents: "auto",
                     transition: "all 0.2s ease-in-out",
                     "&:hover": {
-                      color: "#C2410C",
-                      textDecorationColor: "#EA580C",
-                      bgcolor: "rgba(234, 88, 12, 0.08)",
+                      color: "#183D35",
+                      textDecorationColor: "#3D765D",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
                       borderRadius: "3px",
                     },
                   },
@@ -463,18 +464,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             className="article-body"
             sx={{
               "& a, & .blog-link": {
-                color: "#EA580C",
+                color: "#3D765D",
                 fontWeight: 600,
                 textDecoration: "underline",
                 textUnderlineOffset: "3px",
-                textDecorationColor: "rgba(234, 88, 12, 0.4)",
+                textDecorationColor: "rgba(61, 118, 93, 0.4)",
                 cursor: "pointer",
                 pointerEvents: "auto",
                 transition: "all 0.2s ease-in-out",
                 "&:hover": {
-                  color: "#C2410C",
-                  textDecorationColor: "#EA580C",
-                  bgcolor: "rgba(234, 88, 12, 0.08)",
+                  color: "#183D35",
+                  textDecorationColor: "#3D765D",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
                   borderRadius: "3px",
                 },
               },
@@ -485,7 +486,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           {/* All Tags */}
           {blog.tags && blog.tags.length > 0 && (
-            <Box sx={{ mt: 8, pt: 4, borderTop: "1px solid rgba(228, 228, 231, 0.9)" }}>
+            <Box sx={{ mt: 8, pt: 4, borderTop: "1px solid rgba(216, 229, 213, 0.9)" }}>
               <Typography
                 sx={{
                   fontSize: "0.75rem",
@@ -505,9 +506,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     key={tag}
                     label={`#${tag}`}
                     sx={{
-                      bgcolor: "#FAF8F5",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
-                      color: "#18181B",
+                      bgcolor: "#F7F7F2",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
+                      color: "#183D35",
                       fontSize: "0.82rem",
                       fontWeight: 600,
                     }}
@@ -523,8 +524,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               mt: 6,
               p: { xs: 3, sm: 4 },
               borderRadius: "20px",
-              bgcolor: "#FAF8F5",
-              border: "1px solid rgba(228, 228, 231, 0.9)",
+              bgcolor: "#F7F7F2",
+              border: "1px solid rgba(216, 229, 213, 0.9)",
               display: "flex",
               gap: 3,
               alignItems: "center",
@@ -536,11 +537,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               sx={{
                 width: 68,
                 height: 68,
-                bgcolor: "#18181B",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 fontSize: "1.7rem",
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(24, 24, 27, 0.1)",
+                boxShadow: "0 4px 12px rgba(24, 61, 53, 0.1)",
               }}
             >
               {blog.author.charAt(0)}
@@ -550,7 +551,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 sx={{
                   fontSize: "0.72rem",
                   fontWeight: 800,
-                  color: "#EA580C",
+                  color: "#3D765D",
                   letterSpacing: "0.08em",
                   fontFamily: "monospace",
                   textTransform: "uppercase",
@@ -559,7 +560,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               >
                 WRITTEN BY
               </Typography>
-              <Typography variant="h5" sx={{ color: "#18181B", fontWeight: 700, mb: 0.5 }}>
+              <Typography variant="h5" sx={{ color: "#183D35", fontWeight: 700, mb: 0.5 }}>
                 {blog.author}
               </Typography>
               <Typography sx={{ color: "#52525B", fontSize: "0.88rem", lineHeight: 1.6 }}>
@@ -575,18 +576,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* ========================================================================= */}
         <Box sx={{ mt: { xs: 10, md: 14 } }}>
           <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 4 }}>
-            <Typography variant="h3" sx={{ fontSize: { xs: "1.4rem", sm: "1.75rem" }, fontWeight: 700, color: "#18181B" }}>
+            <Typography variant="h3" sx={{ fontFamily: '"DM Serif Display", serif', fontSize: { xs: "1.5rem", sm: "1.85rem" }, fontWeight: 400, color: "#183D35" }}>
               More from the Journal
             </Typography>
             <Link href="/blog" style={{ textDecoration: "none" }}>
               <Button
                 endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                 sx={{
-                  color: "#EA580C",
+                  color: "#3D765D",
                   fontWeight: 700,
                   fontSize: "0.85rem",
                   textTransform: "none",
-                  "&:hover": { bgcolor: "rgba(234, 88, 12, 0.08)" },
+                  "&:hover": { bgcolor: "rgba(61, 118, 93, 0.08)" },
                 }}
               >
                 View all articles
@@ -616,18 +617,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       flexGrow: 1,
                       borderRadius: "20px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
-                      boxShadow: "0 2px 10px rgba(24, 24, 27, 0.02)",
+                      border: "1px solid rgba(216, 229, 213, 0.9)",
+                      boxShadow: "0 2px 10px rgba(24, 61, 53, 0.02)",
                       overflow: "hidden",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "rgba(234, 88, 12, 0.4)",
+                        borderColor: "rgba(61, 118, 93, 0.4)",
                         transform: "translateY(-3px)",
-                        boxShadow: "0 10px 24px -4px rgba(234, 88, 12, 0.1)",
+                        boxShadow: "0 10px 24px -4px rgba(61, 118, 93, 0.1)",
                       },
                     }}
                   >
-                    <Box sx={{ width: "100%", height: 160, position: "relative", overflow: "hidden", bgcolor: "#18181B", flexShrink: 0 }}>
+                    <Box sx={{ width: "100%", height: 160, position: "relative", overflow: "hidden", bgcolor: "#183D35", flexShrink: 0 }}>
                       <CardMedia
                         component="img"
                         image={rel.coverImage}
@@ -640,7 +641,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                           size="small"
                           sx={{
                             bgcolor: "#FFFFFF",
-                            color: "#18181B",
+                            color: "#183D35",
                             fontWeight: 700,
                             fontSize: "0.68rem",
                           }}
@@ -656,9 +657,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       <Typography
                         variant="h4"
                         sx={{
-                          fontSize: "1.05rem",
-                          fontWeight: 700,
-                          color: "#18181B",
+                          fontFamily: '"DM Serif Display", serif',
+                          fontSize: "1.12rem",
+                          fontWeight: 400,
+                          color: "#183D35",
                           lineHeight: 1.35,
                           mb: 1.2,
                           height: { xs: "auto", sm: "2.7em" },
@@ -703,12 +705,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             sx={{
               p: { xs: 4, sm: 6 },
               borderRadius: "32px",
-              bgcolor: "#18181B",
+              bgcolor: "#183D35",
               color: "#FFFFFF",
               position: "relative",
               overflow: "hidden",
               border: "1px solid rgba(255, 255, 255, 0.1)",
-              boxShadow: "0 24px 60px -15px rgba(24, 24, 27, 0.4)",
+              boxShadow: "0 24px 60px -15px rgba(24, 61, 53, 0.4)",
             }}
           >
             {/* Ambient Glow */}
@@ -720,7 +722,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 width: 350,
                 height: 350,
                 borderRadius: "50%",
-                background: "radial-gradient(circle, rgba(234, 88, 12, 0.3) 0%, rgba(24, 24, 27, 0) 70%)",
+                background: "radial-gradient(circle, rgba(61, 118, 93, 0.3) 0%, rgba(24, 61, 53, 0) 70%)",
                 filter: "blur(60px)",
                 pointerEvents: "none",
               }}
@@ -729,12 +731,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <Grid container spacing={3} sx={{ alignItems: "center" }}>
               <Grid size={{ xs: 12, md: 8 }}>
                 <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-                  <VerifiedRoundedIcon sx={{ color: "#EA580C", fontSize: 18 }} />
+                  <VerifiedRoundedIcon sx={{ color: "#3D765D", fontSize: 18 }} />
                   <Typography
                     sx={{
                       fontSize: "0.78rem",
                       fontWeight: 800,
-                      color: "#FB923C",
+                      color: "#62A486",
                       letterSpacing: "0.08em",
                       fontFamily: "monospace",
                       textTransform: "uppercase",
@@ -746,8 +748,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <Typography
                   variant="h3"
                   sx={{
-                    fontSize: { xs: "1.65rem", sm: "2.2rem" },
-                    fontWeight: 700,
+                    fontFamily: '"DM Serif Display", serif',
+                    fontSize: { xs: "1.75rem", sm: "2.35rem" },
+                    fontWeight: 400,
                     lineHeight: 1.2,
                     mb: 1.5,
                   }}
@@ -756,9 +759,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <Box
                     component="span"
                     sx={{
-                      background: "linear-gradient(135deg, #EA580C 0%, #F97316 60%, #FB923C 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
+                      display: "inline",
+                      fontStyle: "italic",
+                      color: "#D8E5D5",
                     }}
                   >
                     solve together?
@@ -780,13 +783,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       sx={{
                         py: 1.4,
                         borderRadius: "12px",
-                        background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                        background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                         fontSize: "0.92rem",
                         fontWeight: 700,
                         textTransform: "none",
                         color: "#FFFFFF",
                         "&:hover": {
-                          background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                          background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                         },
                       }}
                     >

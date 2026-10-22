@@ -253,13 +253,13 @@ export default function MethodologyDeepDiveSection() {
       id="lifecycle-engine"
       sx={{
         py: { xs: 12, md: 18 },
-        bgcolor: "#FAF8F5",
+        bgcolor: "#F7F7F2",
         position: "relative",
       }}
     >
       <Container maxWidth="xl">
-        {/* Centered Section Header */}
-        <Box sx={{ maxWidth: 860, mx: "auto", textAlign: "center", mb: { xs: 6, md: 8 } }}>
+        {/* Left-Aligned Section Header */}
+        <Box sx={{ maxWidth: 860, textAlign: "left", mb: { xs: 6, md: 8 } }}>
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -270,33 +270,21 @@ export default function MethodologyDeepDiveSection() {
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 1.2,
-                px: 2.2,
-                py: 0.6,
+                gap: 1,
+                px: 1.8,
+                py: 0.5,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2.5,
+                bgcolor: "#D8E5D5",
+                color: "#183D35",
+                fontSize: "0.72rem",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                fontFamily: "monospace",
+                mb: 2,
               }}
             >
-              <Box
-                component={motion.div}
-                animate={{ scale: [1, 1.3, 1] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
-              />
-              <Typography
-                sx={{
-                  fontSize: "0.8rem",
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase",
-                  color: "#EA580C",
-                  fontWeight: 700,
-                }}
-              >
-                OUR 5-STAGE PROCESS
-
-              </Typography>
+              OUR 5-STAGE PROCESS
             </Box>
           </motion.div>
 
@@ -309,42 +297,36 @@ export default function MethodologyDeepDiveSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
-                color: "#18181B",
-                letterSpacing: "-0.035em",
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem" },
+                fontWeight: 400,
+                color: "#183D35",
+                letterSpacing: "-0.015em",
                 lineHeight: { xs: 1.25, md: 1.18 },
-                maxWidth: { xs: "100%", md: 1000, lg: 1100 },
-                mx: "auto",
-                textWrap: "balance",
-                mb: 2.5,
+                maxWidth: { xs: "100%", md: 980 },
+                mb: 2,
               }}
             >
-             From the first conversation to completed delivery — {" "}
+             From the first conversation to completed delivery —{" "}
               <Box
                 component="span"
                 sx={{
-                  display: "inline",
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  color: "#3D765D",
+                  fontStyle: "italic",
                 }}
               >
                through 5 simple, transparent steps.
-
               </Box>
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: "1.05rem", md: "1.2rem" },
+                fontSize: { xs: "0.95rem", md: "1.05rem" },
                 color: "#52525B",
-                lineHeight: 1.75,
+                lineHeight: 1.7,
                 maxWidth: 780,
-                mx: "auto",
               }}
             >
             A clear, collaborative process designed to keep you informed and involved at every stage—from understanding your needs and planning the right approach to delivering the agreed work and providing ongoing support.
-
             </Typography>
           </motion.div>
         </Box>
@@ -377,15 +359,15 @@ export default function MethodologyDeepDiveSection() {
                   cursor: "pointer",
                   bgcolor: isActive ? "#FFFFFF" : "rgba(255, 255, 255, 0.6)",
                   border: "2px solid",
-                  borderColor: isActive ? "#EA580C" : "rgba(24, 24, 27, 0.08)",
-                  boxShadow: isActive ? "0 10px 25px -6px rgba(234, 88, 12, 0.2)" : "none",
+                  borderColor: isActive ? "#3D765D" : "rgba(24, 61, 53, 0.08)",
+                  boxShadow: isActive ? "0 10px 25px -6px rgba(61, 118, 93, 0.2)" : "none",
                   transition: "all 0.25s ease",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
                   "&:hover": {
                     bgcolor: "#FFFFFF",
-                    borderColor: isActive ? "#EA580C" : "rgba(234, 88, 12, 0.4)",
+                    borderColor: isActive ? "#3D765D" : "rgba(61, 118, 93, 0.4)",
                   },
                 }}
               >
@@ -395,7 +377,7 @@ export default function MethodologyDeepDiveSection() {
                       width: 28,
                       height: 28,
                       borderRadius: "8px",
-                      bgcolor: isActive ? "#EA580C" : "rgba(24, 24, 27, 0.06)",
+                      bgcolor: isActive ? "#3D765D" : "rgba(24, 61, 53, 0.06)",
                       color: isActive ? "#FFFFFF" : "#71717A",
                       display: "flex",
                       alignItems: "center",
@@ -410,7 +392,7 @@ export default function MethodologyDeepDiveSection() {
                     sx={{
                       fontSize: "0.72rem",
                       fontWeight: 700,
-                      color: isActive ? "#EA580C" : "#71717A",
+                      color: isActive ? "#3D765D" : "#71717A",
                     }}
                   >
                     {stg.timeframe}
@@ -420,7 +402,7 @@ export default function MethodologyDeepDiveSection() {
                   sx={{
                     fontSize: "0.875rem",
                     fontWeight: 600,
-                    color: isActive ? "#18181B" : "#52525B",
+                    color: isActive ? "#183D35" : "#52525B",
                     lineHeight: 1.3,
                   }}
                 >
@@ -445,8 +427,8 @@ export default function MethodologyDeepDiveSection() {
                 p: { xs: 3.5, sm: 5, md: 6 },
                 borderRadius: { xs: "22px", md: "28px" },
                 bgcolor: "#FFFFFF",
-                border: "1px solid rgba(24, 24, 27, 0.08)",
-                boxShadow: "0 18px 45px -12px rgba(24, 24, 27, 0.06)",
+                border: "1px solid rgba(24, 61, 53, 0.08)",
+                boxShadow: "0 18px 45px -12px rgba(24, 61, 53, 0.06)",
               }}
             >
               {/* Header inside Showcase Card */}
@@ -459,7 +441,7 @@ export default function MethodologyDeepDiveSection() {
                   gap: 2,
                   pb: 3,
                   mb: 4,
-                  borderBottom: "1px solid rgba(24, 24, 27, 0.08)",
+                  borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.8 }}>
@@ -468,8 +450,8 @@ export default function MethodologyDeepDiveSection() {
                       width: 48,
                       height: 48,
                       borderRadius: "14px",
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      color: "#EA580C",
+                      bgcolor: "rgba(61, 118, 93, 0.1)",
+                      color: "#3D765D",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -478,10 +460,19 @@ export default function MethodologyDeepDiveSection() {
                     {currentStage.icon}
                   </Box>
                   <Box>
-                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", letterSpacing: "0.06em" }}>
+                    <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", letterSpacing: "0.06em" }}>
                       PROCESS {currentStage.num} &bull; {currentStage.timeframe.toUpperCase()}
                     </Typography>
-                    <Typography variant="h3" sx={{ fontSize: { xs: "1.3rem", sm: "1.6rem" }, fontWeight: 600, color: "#18181B" }}>
+                    <Typography
+                      variant="h3"
+                      sx={{
+                        fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                        fontSize: { xs: "1.35rem", sm: "1.65rem" },
+                        fontWeight: 400,
+                        color: "#183D35",
+                        letterSpacing: "-0.015em",
+                      }}
+                    >
                       {currentStage.name}
                     </Typography>
                   </Box>
@@ -497,13 +488,13 @@ export default function MethodologyDeepDiveSection() {
                       px: 2,
                       py: 0.8,
                       borderRadius: "9999px",
-                      bgcolor: "#FAF8F5",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
-                      color: "#18181B",
+                      bgcolor: "#F7F7F2",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
+                      color: "#183D35",
                       fontSize: "0.8rem",
                       fontWeight: 600,
                       textTransform: "none",
-                      "&:hover": { bgcolor: "rgba(24, 24, 27, 0.04)" },
+                      "&:hover": { bgcolor: "rgba(24, 61, 53, 0.04)" },
                     }}
                   >
                     Previous
@@ -516,12 +507,12 @@ export default function MethodologyDeepDiveSection() {
                       px: 2.2,
                       py: 0.8,
                       borderRadius: "9999px",
-                      bgcolor: "#EA580C",
+                      bgcolor: "#3D765D",
                       color: "#FFFFFF",
                       fontSize: "0.8rem",
                       fontWeight: 600,
                       textTransform: "none",
-                      "&:hover": { bgcolor: "#C2410C" },
+                      "&:hover": { bgcolor: "#183D35" },
                     }}
                   >
                     Next Process
@@ -535,10 +526,12 @@ export default function MethodologyDeepDiveSection() {
                 <Grid size={{ xs: 12, lg: 7 }}>
                   <Typography
                     sx={{
-                      fontSize: { xs: "1.2rem", sm: "1.45rem" },
-                      fontWeight: 600,
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                      fontSize: { xs: "1.25rem", sm: "1.5rem" },
+                      fontWeight: 400,
+                      color: "#183D35",
                       lineHeight: 1.35,
+                      letterSpacing: "-0.015em",
                       mb: 2,
                     }}
                   >
@@ -558,9 +551,9 @@ export default function MethodologyDeepDiveSection() {
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8, mb: 4 }}>
                     {currentStage.whatHappens.map((item, i) => (
                       <Box key={i} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                        <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#EA580C", mt: 0.2, flexShrink: 0 }} />
+                        <CheckCircleOutlinedIcon sx={{ fontSize: 18, color: "#3D765D", mt: 0.2, flexShrink: 0 }} />
                         <Box>
-                          <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#18181B", mb: 0.3 }}>
+                          <Typography sx={{ fontSize: "0.9rem", fontWeight: 600, color: "#183D35", mb: 0.3 }}>
                             {item.title}
                           </Typography>
                           <Typography sx={{ fontSize: "0.85rem", color: "#52525B", lineHeight: 1.5 }}>
@@ -578,19 +571,19 @@ export default function MethodologyDeepDiveSection() {
                         sx={{
                           p: 2.2,
                           borderRadius: "14px",
-                          bgcolor: "#FAF8F5",
-                          border: "1px solid rgba(24, 24, 27, 0.08)",
+                          bgcolor: "#F7F7F2",
+                          border: "1px solid rgba(24, 61, 53, 0.08)",
                           height: "100%",
                         }}
                       >
                         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
-                          <Inventory2OutlinedIcon sx={{ fontSize: 17, color: "#EA580C" }} />
-                          <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#EA580C", textTransform: "uppercase" }}>
+                          <Inventory2OutlinedIcon sx={{ fontSize: 17, color: "#3D765D" }} />
+                          <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#3D765D", textTransform: "uppercase" }}>
                            WHAT YOU RECEIVE:
 
                           </Typography>
                         </Box>
-                        <Typography sx={{ fontSize: "0.875rem", color: "#18181B", fontWeight: 500, lineHeight: 1.5 }}>
+                        <Typography sx={{ fontSize: "0.875rem", color: "#183D35", fontWeight: 500, lineHeight: 1.5 }}>
                           {currentStage.deliverable}
                         </Typography>
                       </Box>
@@ -601,8 +594,8 @@ export default function MethodologyDeepDiveSection() {
                         sx={{
                           p: 2.2,
                           borderRadius: "14px",
-                          bgcolor: "#FAF8F5",
-                          border: "1px solid rgba(24, 24, 27, 0.08)",
+                          bgcolor: "#F7F7F2",
+                          border: "1px solid rgba(24, 61, 53, 0.08)",
                           height: "100%",
                         }}
                       >
@@ -627,8 +620,8 @@ export default function MethodologyDeepDiveSection() {
                     sx={{
                       borderRadius: "20px",
                       overflow: "hidden",
-                      border: "1px solid rgba(24, 24, 27, 0.08)",
-                      boxShadow: "0 10px 30px -8px rgba(24, 24, 27, 0.08)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
+                      boxShadow: "0 10px 30px -8px rgba(24, 61, 53, 0.08)",
                     }}
                   >
                     {/* Visual Image Viewport */}
@@ -637,7 +630,7 @@ export default function MethodologyDeepDiveSection() {
                         position: "relative",
                         width: "100%",
                         height: { xs: 220, sm: 280, md: 320 },
-                        bgcolor: "#18181B",
+                        bgcolor: "#183D35",
                       }}
                     >
                       <Image
@@ -652,7 +645,7 @@ export default function MethodologyDeepDiveSection() {
                           position: "absolute",
                           inset: 0,
                           background:
-                            "linear-gradient(180deg, rgba(24, 24, 27, 0.1) 0%, rgba(24, 24, 27, 0.55) 100%)",
+                            "linear-gradient(180deg, rgba(24, 61, 53, 0.1) 0%, rgba(24, 61, 53, 0.55) 100%)",
                         }}
                       />
                       {/* Floating Stage Pill */}
@@ -671,15 +664,15 @@ export default function MethodologyDeepDiveSection() {
                           gap: 0.8,
                         }}
                       >
-                        <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#EA580C" }} />
-                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#18181B" }}>
+                        <Box sx={{ width: 6, height: 6, borderRadius: "50%", bgcolor: "#3D765D" }} />
+                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#183D35" }}>
                           Stage {currentStage.num}: {currentStage.tabLabel}
                         </Typography>
                       </Box>
                     </Box>
 
                     {/* Bottom Guaranteed Outcome Box */}
-                    <Box sx={{ p: 3, bgcolor: "#FAF8F5", borderTop: "1px solid rgba(24, 24, 27, 0.06)" }}>
+                    <Box sx={{ p: 3, bgcolor: "#F7F7F2", borderTop: "1px solid rgba(24, 61, 53, 0.06)" }}>
                       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.8 }}>
                         <ShieldOutlinedIcon sx={{ fontSize: 18, color: "#16A34A" }} />
                         <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#166534", textTransform: "uppercase" }}>
@@ -687,7 +680,7 @@ export default function MethodologyDeepDiveSection() {
 
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "0.9rem", color: "#18181B", fontWeight: 500, lineHeight: 1.55 }}>
+                      <Typography sx={{ fontSize: "0.9rem", color: "#183D35", fontWeight: 500, lineHeight: 1.55 }}>
                         {currentStage.outcome}
                       </Typography>
                     </Box>
@@ -705,7 +698,7 @@ export default function MethodologyDeepDiveSection() {
             p: { xs: 4, sm: 5 },
             borderRadius: { xs: "20px", md: "24px" },
             bgcolor: "#FFFFFF",
-            border: "1px solid rgba(24, 24, 27, 0.08)",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             alignItems: { xs: "flex-start", md: "center" },
@@ -719,7 +712,7 @@ export default function MethodologyDeepDiveSection() {
               sx={{
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 fontWeight: 600,
-                color: "#18181B",
+                color: "#183D35",
                 mb: 1,
               }}
             >
@@ -738,7 +731,7 @@ export default function MethodologyDeepDiveSection() {
               size="medium"
               endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
               sx={{
-                bgcolor: "#EA580C",
+                bgcolor: "#3D765D",
                 color: "#FFFFFF",
                 px: 3.5,
                 py: 1.3,
@@ -749,8 +742,8 @@ export default function MethodologyDeepDiveSection() {
                 textTransform: "none",
                 whiteSpace: "nowrap",
                 "&:hover": {
-                  bgcolor: "#C2410C",
-                  boxShadow: "0 6px 20px -4px rgba(234, 88, 12, 0.4)",
+                  bgcolor: "#183D35",
+                  boxShadow: "0 6px 20px -4px rgba(61, 118, 93, 0.4)",
                 },
               }}
             >

@@ -110,42 +110,46 @@ export default function ContactPageClient() {
   )}&body=${encodeURIComponent(BRIEF_TEMPLATE)}`;
 
   return (
-    <Box sx={{ bgcolor: "#FFFFFF", color: "#18181B", minHeight: "100vh" }}>
-      {/* 1. HERO SECTION (Home Page Sunset Theme) */}
+    <Box sx={{ bgcolor: "#FFFFFF", color: "#183D35", minHeight: "100vh" }}>
+      {/* ========================================================================= */}
+      {/* 1. HERO SECTION (LEFT-ALIGNED, DARK PINE #183D35)                         */}
+      {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
           position: "relative",
-          pt: { xs: 16, sm: 18, md: 22 },
-          pb: { xs: 8, md: 12 },
-          background:
-            "radial-gradient(120% 75% at 50% 0%, rgba(249, 115, 22, 0.09) 0%, rgba(251, 146, 60, 0.03) 45%, #FFFFFF 85%)",
+          pt: { xs: 16, sm: 19, md: 22 },
+          pb: { xs: 10, md: 14 },
+          bgcolor: "#183D35",
+          color: "#FFFFFF",
           overflow: "hidden",
+          borderBottom: "1px solid rgba(216, 229, 213, 0.15)",
         }}
       >
-        {/* Subtle Architectural Grid */}
+        {/* Subtle Ambient Glows */}
         <Box
+          component={motion.div}
+          animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.35, 0.2] }}
+          transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
           sx={{
             position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "linear-gradient(to right, rgba(24, 24, 27, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(24, 24, 27, 0.04) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
-            maskImage:
-              "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse 75% 65% at 50% 30%, #000 35%, transparent 85%)",
+            top: "-15%",
+            right: "-5%",
+            width: "550px",
+            height: "550px",
+            background: "radial-gradient(circle, rgba(61, 118, 93, 0.3) 0%, transparent 70%)",
+            filter: "blur(70px)",
             pointerEvents: "none",
           }}
         />
 
-        <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-          <Box sx={{ textAlign: "center", maxWidth: 920, mx: "auto" }}>
-            {/* Status Pill Matching Home Page */}
+        <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
+          <Box sx={{ maxWidth: 940 }}>
+            {/* Status Pill */}
             <motion.div
-              initial={{ opacity: 0, y: -16, scale: 0.96 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
               <Box
                 sx={{
@@ -153,13 +157,13 @@ export default function ContactPageClient() {
                   alignItems: "center",
                   gap: 1.5,
                   px: 2.2,
-                  py: 0.8,
+                  py: 0.7,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                  bgcolor: "rgba(216, 229, 213, 0.12)",
+                  border: "1px solid rgba(216, 229, 213, 0.28)",
+                  boxShadow: "0 2px 12px rgba(0, 0, 0, 0.15)",
                   backdropFilter: "blur(12px)",
-                  mb: 3.5,
+                  mb: 3,
                 }}
               >
                 <Box
@@ -174,8 +178,8 @@ export default function ContactPageClient() {
                     width: 8,
                     height: 8,
                     borderRadius: "50%",
-                    bgcolor: "#F97316",
-                    boxShadow: "0 0 10px #F97316",
+                    bgcolor: "#D8E5D5",
+                    boxShadow: "0 0 10px #D8E5D5",
                   }}
                 />
                 <Typography
@@ -183,8 +187,9 @@ export default function ContactPageClient() {
                     fontSize: { xs: "0.75rem", sm: "0.825rem" },
                     fontWeight: 700,
                     letterSpacing: "0.06em",
-                    color: "#EA580C",
+                    color: "#D8E5D5",
                     textTransform: "uppercase",
+                    fontFamily: "monospace",
                   }}
                 >
                   DIRECT EMAIL ACCESS • SIMPLE COMMUNICATION
@@ -194,41 +199,38 @@ export default function ContactPageClient() {
 
             {/* Main Headline */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.6,
-                delay: 0.1,
+                duration: 0.8,
+                delay: 0.15,
                 ease: [0.16, 1, 0.3, 1],
               }}
             >
               <Typography
                 variant="h1"
                 sx={{
+                  fontFamily: '"DM Serif Display", serif',
                   fontSize: {
-                    xs: "1.65rem",
-                    sm: "2.25rem",
-                    md: "2.85rem",
-                    lg: "3.25rem",
+                    xs: "2.1rem",
+                    sm: "2.8rem",
+                    md: "3.5rem",
+                    lg: "4.1rem",
                   },
-                  fontWeight: 600,
-                  letterSpacing: { xs: "-0.03em", md: "-0.04em" },
-                  lineHeight: { xs: 1.18, md: 1.2 },
-                  maxWidth: { xs: "100%", md: 1040, lg: 1160 },
-                  mx: "auto",
-                  textWrap: "balance",
-                  color: "#18181B",
+                  fontWeight: 400,
+                  letterSpacing: "-0.025em",
+                  lineHeight: { xs: 1.15, sm: 1.12, md: 1.1 },
+                  maxWidth: { xs: "100%", md: 940 },
+                  color: "#FFFFFF",
                   mb: 3,
                 }}
               >
-                Reach our team directly via {" "}
+                Reach our team directly via{" "}
                 <Box
                   component="span"
                   sx={{
-                    background:
-                      "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
+                    fontStyle: "italic",
+                    color: "#D8E5D5",
                     display: "inline",
                   }}
                 >
@@ -239,21 +241,20 @@ export default function ContactPageClient() {
 
             {/* Subtitle */}
             <motion.div
-              initial={{ opacity: 0, y: 18 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.6,
-                delay: 0.2,
+                duration: 0.8,
+                delay: 0.28,
                 ease: [0.16, 1, 0.3, 1],
               }}
             >
               <Typography
                 sx={{
-                  fontSize: { xs: "1.05rem", sm: "1.2rem", md: "1.25rem" },
-                  color: "#52525B",
+                  fontSize: { xs: "1.05rem", sm: "1.15rem", md: "1.2rem" },
+                  color: "rgba(255, 255, 255, 0.85)",
                   lineHeight: 1.75,
                   maxWidth: 780,
-                  mx: "auto",
                   mb: 4.5,
                   fontWeight: 400,
                 }}
@@ -266,11 +267,11 @@ export default function ContactPageClient() {
 
             {/* Quick Hero Action Strip */}
             <motion.div
-              initial={{ opacity: 0, y: 18 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.6,
-                delay: 0.3,
+                duration: 0.8,
+                delay: 0.4,
                 ease: [0.16, 1, 0.3, 1],
               }}
             >
@@ -279,37 +280,37 @@ export default function ContactPageClient() {
                   display: "flex",
                   flexWrap: "wrap",
                   gap: 2,
-                  justifyContent: "center",
                   alignItems: "center",
                 }}
               >
-                <Button
-                  component="a"
-                  href="mailto:hello.aetibar@gmail.com"
-                  variant="contained"
-                  size="large"
-                  startIcon={<EmailOutlinedIcon />}
-                  sx={{
-                    background:
-                      "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                    color: "#FFFFFF",
-                    px: { xs: 3.5, sm: 4 },
-                    py: 1.6,
-                    fontSize: "0.95rem",
-                    fontWeight: 700,
-                    borderRadius: "9999px",
-                    boxShadow: "0 10px 28px rgba(234, 88, 12, 0.35)",
-                    transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                    "&:hover": {
-                      background:
-                        "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                      transform: "translateY(-2px)",
-                      boxShadow: "0 14px 34px rgba(234, 88, 12, 0.5)",
-                    },
-                  }}
-                >
-                  Email: hello.aetibar@gmail.com
-                </Button>
+                <motion.div whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}>
+                  <Button
+                    component="a"
+                    href="mailto:hello.aetibar@gmail.com"
+                    variant="contained"
+                    size="large"
+                    startIcon={<EmailOutlinedIcon />}
+                    sx={{
+                      bgcolor: "#D8E5D5",
+                      color: "#183D35",
+                      px: { xs: 3.5, sm: 4 },
+                      py: 1.6,
+                      fontSize: "0.95rem",
+                      fontWeight: 700,
+                      borderRadius: "9999px",
+                      textTransform: "none",
+                      boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.25)",
+                      transition: "all 0.25s ease",
+                      "&:hover": {
+                        bgcolor: "#FFFFFF",
+                        color: "#183D35",
+                        boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.35)",
+                      },
+                    }}
+                  >
+                    Email: hello.aetibar@gmail.com
+                  </Button>
+                </motion.div>
 
                 <Tooltip
                   title={
@@ -321,27 +322,28 @@ export default function ContactPageClient() {
                     variant="outlined"
                     startIcon={
                       copiedEmail ? (
-                        <CheckCircleRoundedIcon sx={{ color: "#EA580C" }} />
+                        <CheckCircleRoundedIcon sx={{ color: "#D8E5D5" }} />
                       ) : (
-                        <ContentCopyRoundedIcon sx={{ color: "#71717A" }} />
+                        <ContentCopyRoundedIcon sx={{ color: "rgba(255, 255, 255, 0.8)" }} />
                       )
                     }
                     sx={{
-                      color: copiedEmail ? "#EA580C" : "#18181B",
+                      color: copiedEmail ? "#D8E5D5" : "#FFFFFF",
                       borderColor: copiedEmail
-                        ? "#EA580C"
-                        : "rgba(24, 24, 27, 0.2)",
+                        ? "#D8E5D5"
+                        : "rgba(216, 229, 213, 0.3)",
                       fontWeight: 600,
                       fontSize: "0.9rem",
+                      textTransform: "none",
                       px: 3,
                       py: 1.5,
                       borderRadius: "9999px",
-                      bgcolor: "rgba(255, 255, 255, 0.9)",
+                      bgcolor: "rgba(255, 255, 255, 0.08)",
                       backdropFilter: "blur(8px)",
                       "&:hover": {
-                        bgcolor: "#FAF8F5",
-                        borderColor: "#EA580C",
-                        color: "#EA580C",
+                        bgcolor: "rgba(216, 229, 213, 0.16)",
+                        borderColor: "#D8E5D5",
+                        color: "#FFFFFF",
                       },
                     }}
                   >
@@ -355,15 +357,16 @@ export default function ContactPageClient() {
                   variant="text"
                   endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    color: "#52525B",
+                    color: "rgba(255, 255, 255, 0.85)",
                     fontWeight: 600,
                     fontSize: "0.9rem",
+                    textTransform: "none",
                     px: 2.5,
                     py: 1.5,
                     borderRadius: "9999px",
                     "&:hover": {
-                      color: "#EA580C",
-                      bgcolor: "rgba(249, 115, 22, 0.06)",
+                      color: "#D8E5D5",
+                      bgcolor: "rgba(216, 229, 213, 0.1)",
                     },
                   }}
                 >
@@ -375,17 +378,23 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 2. PRIMARY DIRECT EMAIL CHANNEL */}
+      {/* ========================================================================= */}
+      {/* 2. PRIMARY DIRECT EMAIL CHANNEL (CENTER-ALIGNED HEADER, WHITE #FFFFFF)    */}
+      {/* ========================================================================= */}
       <Box
         component="section"
-        sx={{ py: { xs: 8, md: 12 }, bgcolor: "#FFFFFF" }}
+        sx={{
+          py: { xs: 12, md: 16 },
+          bgcolor: "#FFFFFF",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
+        }}
       >
         <Container maxWidth="xl">
           <Box
             sx={{
-              mb: 6,
+              mb: { xs: 6, md: 8 },
               textAlign: "center",
-              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              maxWidth: 900,
               mx: "auto",
             }}
           >
@@ -397,9 +406,9 @@ export default function ContactPageClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                mb: 2,
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
+                mb: 2.5,
               }}
             >
               <Typography
@@ -408,7 +417,8 @@ export default function ContactPageClient() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
+                  fontFamily: "monospace",
                 }}
               >
                 EXCLUSIVE DIRECT CONTACT
@@ -418,26 +428,26 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
+                fontFamily: '"DM Serif Display", serif',
                 fontSize: {
-                  xs: "1.55rem",
-                  sm: "2.15rem",
-                  md: "2.65rem",
-                  lg: "3rem",
+                  xs: "1.9rem",
+                  sm: "2.4rem",
+                  md: "3rem",
+                  lg: "3.4rem",
                 },
-                fontWeight: 600,
-                letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.18, md: 1.2 },
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                fontWeight: 400,
+                letterSpacing: "-0.025em",
+                lineHeight: { xs: 1.2, md: 1.15 },
                 textWrap: "balance",
                 mx: "auto",
-                color: "#18181B",
-                mb: 1.5,
+                color: "#183D35",
+                mb: 2,
               }}
             >
               One direct inbox. Straight to senior engineering.
             </Typography>
             <Typography
-              sx={{ color: "#52525B", fontSize: "1rem", lineHeight: 1.7 }}
+              sx={{ color: "#52525B", fontSize: "1.05rem", lineHeight: 1.75, maxWidth: 780, mx: "auto" }}
             >
               We work with businesses in India and international markets through
               direct email communication—simple, clear, and without unnecessary
@@ -452,18 +462,18 @@ export default function ContactPageClient() {
                 sx={{
                   p: { xs: 3.5, sm: 4.5 },
                   borderRadius: "24px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
                   transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                  boxShadow: "0 6px 20px rgba(24, 24, 27, 0.03)",
+                  boxShadow: "0 4px 18px rgba(24, 61, 53, 0.03)",
                   "&:hover": {
                     transform: "translateY(-4px)",
-                    boxShadow: "0 16px 36px rgba(234, 88, 12, 0.12)",
-                    borderColor: "#EA580C",
+                    boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.14)",
+                    borderColor: "#3D765D",
                   },
                 }}
               >
@@ -473,13 +483,13 @@ export default function ContactPageClient() {
                       width: 52,
                       height: 52,
                       borderRadius: "14px",
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      border: "1px solid rgba(249, 115, 22, 0.25)",
+                      bgcolor: "rgba(61, 118, 93, 0.08)",
+                      border: "1px solid rgba(61, 118, 93, 0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       mb: 2.5,
-                      color: "#EA580C",
+                      color: "#3D765D",
                     }}
                   >
                     <EmailOutlinedIcon sx={{ fontSize: 26 }} />
@@ -489,8 +499,8 @@ export default function ContactPageClient() {
                     label="Official Contact Method"
                     size="small"
                     sx={{
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      color: "#EA580C",
+                      bgcolor: "rgba(61, 118, 93, 0.1)",
+                      color: "#3D765D",
                       fontWeight: 700,
                       fontSize: "0.7rem",
                       letterSpacing: "0.04em",
@@ -503,9 +513,10 @@ export default function ContactPageClient() {
                   <Typography
                     variant="h5"
                     sx={{
-                      fontWeight: 700,
-                      fontSize: "1.3rem",
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", serif',
+                      fontWeight: 400,
+                      fontSize: "1.45rem",
+                      color: "#183D35",
                       mb: 0.5,
                     }}
                   >
@@ -519,7 +530,7 @@ export default function ContactPageClient() {
                       display: "inline-block",
                       fontSize: "1.05rem",
                       fontWeight: 700,
-                      color: "#EA580C",
+                      color: "#3D765D",
                       textDecoration: "none",
                       mb: 2,
                       wordBreak: "break-all",
@@ -551,17 +562,17 @@ export default function ContactPageClient() {
                       p: 1.5,
                       borderRadius: "10px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       mb: 2,
                     }}
                   >
                     <AccessTimeOutlinedIcon
-                      sx={{ fontSize: 16, color: "#EA580C" }}
+                      sx={{ fontSize: 16, color: "#3D765D" }}
                     />
                     <Typography
                       sx={{
                         fontSize: "0.8rem",
-                        color: "#18181B",
+                        color: "#183D35",
                         fontWeight: 600,
                       }}
                     >
@@ -576,17 +587,16 @@ export default function ContactPageClient() {
                     variant="contained"
                     endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      background:
-                        "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+                      bgcolor: "#183D35",
                       color: "#FFFFFF",
                       py: 1.35,
                       borderRadius: "9999px",
                       fontWeight: 700,
                       fontSize: "0.9rem",
-                      boxShadow: "0 8px 20px rgba(234, 88, 12, 0.25)",
+                      textTransform: "none",
+                      boxShadow: "0 6px 18px rgba(24, 61, 53, 0.15)",
                       "&:hover": {
-                        background:
-                          "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
+                        bgcolor: "#3D765D",
                       },
                     }}
                   >
@@ -602,18 +612,18 @@ export default function ContactPageClient() {
                 sx={{
                   p: { xs: 3.5, sm: 4.5 },
                   borderRadius: "24px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
                   transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                  boxShadow: "0 6px 20px rgba(24, 24, 27, 0.03)",
+                  boxShadow: "0 4px 18px rgba(24, 61, 53, 0.03)",
                   "&:hover": {
                     transform: "translateY(-4px)",
-                    boxShadow: "0 16px 36px rgba(24, 24, 27, 0.08)",
-                    borderColor: "#EA580C",
+                    boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.14)",
+                    borderColor: "#3D765D",
                   },
                 }}
               >
@@ -623,12 +633,12 @@ export default function ContactPageClient() {
                       width: 52,
                       height: 52,
                       borderRadius: "14px",
-                      bgcolor: "rgba(24, 24, 27, 0.06)",
+                      bgcolor: "rgba(24, 61, 53, 0.06)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       mb: 2.5,
-                      color: "#18181B",
+                      color: "#183D35",
                     }}
                   >
                     <EngineeringOutlinedIcon sx={{ fontSize: 26 }} />
@@ -638,8 +648,8 @@ export default function ContactPageClient() {
                     label="Zero Sales Bureaucracy"
                     size="small"
                     sx={{
-                      bgcolor: "rgba(24, 24, 27, 0.06)",
-                      color: "#18181B",
+                      bgcolor: "rgba(24, 61, 53, 0.06)",
+                      color: "#183D35",
                       fontWeight: 700,
                       fontSize: "0.7rem",
                       letterSpacing: "0.04em",
@@ -652,9 +662,10 @@ export default function ContactPageClient() {
                   <Typography
                     variant="h5"
                     sx={{
-                      fontWeight: 700,
-                      fontSize: "1.3rem",
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", serif',
+                      fontWeight: 400,
+                      fontSize: "1.45rem",
+                      color: "#183D35",
                       mb: 0.5,
                     }}
                   >
@@ -695,15 +706,15 @@ export default function ContactPageClient() {
                       p: 1.5,
                       borderRadius: "10px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       mb: 2,
                     }}
                   >
-                    <CodeRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
+                    <CodeRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
                     <Typography
                       sx={{
                         fontSize: "0.8rem",
-                        color: "#18181B",
+                        color: "#183D35",
                         fontWeight: 600,
                       }}
                     >
@@ -718,16 +729,17 @@ export default function ContactPageClient() {
                     variant="outlined"
                     endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                     sx={{
-                      color: "#18181B",
-                      borderColor: "rgba(24, 24, 27, 0.2)",
+                      color: "#183D35",
+                      borderColor: "rgba(24, 61, 53, 0.2)",
                       py: 1.35,
                       borderRadius: "9999px",
                       fontWeight: 700,
                       fontSize: "0.9rem",
+                      textTransform: "none",
                       "&:hover": {
-                        borderColor: "#EA580C",
-                        color: "#EA580C",
-                        bgcolor: "rgba(249, 115, 22, 0.05)",
+                        borderColor: "#3D765D",
+                        color: "#3D765D",
+                        bgcolor: "rgba(61, 118, 93, 0.05)",
                       },
                     }}
                   >
@@ -743,18 +755,18 @@ export default function ContactPageClient() {
                 sx={{
                   p: { xs: 3.5, sm: 4.5 },
                   borderRadius: "24px",
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
                   transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                  boxShadow: "0 6px 20px rgba(24, 24, 27, 0.03)",
+                  boxShadow: "0 4px 18px rgba(24, 61, 53, 0.03)",
                   "&:hover": {
                     transform: "translateY(-4px)",
-                    boxShadow: "0 16px 36px rgba(24, 24, 27, 0.08)",
-                    borderColor: "#EA580C",
+                    boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.14)",
+                    borderColor: "#3D765D",
                   },
                 }}
               >
@@ -764,12 +776,12 @@ export default function ContactPageClient() {
                       width: 52,
                       height: 52,
                       borderRadius: "14px",
-                      bgcolor: "rgba(24, 24, 27, 0.06)",
+                      bgcolor: "rgba(24, 61, 53, 0.06)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       mb: 2.5,
-                      color: "#18181B",
+                      color: "#183D35",
                     }}
                   >
                     <ShieldOutlinedIcon sx={{ fontSize: 26 }} />
@@ -779,8 +791,8 @@ export default function ContactPageClient() {
                     label="Strict Confidentiality"
                     size="small"
                     sx={{
-                      bgcolor: "rgba(24, 24, 27, 0.06)",
-                      color: "#18181B",
+                      bgcolor: "rgba(24, 61, 53, 0.06)",
+                      color: "#183D35",
                       fontWeight: 700,
                       fontSize: "0.7rem",
                       letterSpacing: "0.04em",
@@ -793,9 +805,10 @@ export default function ContactPageClient() {
                   <Typography
                     variant="h5"
                     sx={{
-                      fontWeight: 700,
-                      fontSize: "1.3rem",
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", serif',
+                      fontWeight: 400,
+                      fontSize: "1.45rem",
+                      color: "#183D35",
                       mb: 0.5,
                     }}
                   >
@@ -836,17 +849,17 @@ export default function ContactPageClient() {
                       p: 1.5,
                       borderRadius: "10px",
                       bgcolor: "#FFFFFF",
-                      border: "1px solid rgba(228, 228, 231, 0.9)",
+                      border: "1px solid rgba(24, 61, 53, 0.08)",
                       mb: 2,
                     }}
                   >
                     <CheckCircleRoundedIcon
-                      sx={{ fontSize: 16, color: "#EA580C" }}
+                      sx={{ fontSize: 16, color: "#3D765D" }}
                     />
                     <Typography
                       sx={{
                         fontSize: "0.8rem",
-                        color: "#18181B",
+                        color: "#183D35",
                         fontWeight: 600,
                       }}
                     >
@@ -862,16 +875,17 @@ export default function ContactPageClient() {
                         <ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />
                       }
                       sx={{
-                        color: "#18181B",
-                        borderColor: "rgba(24, 24, 27, 0.2)",
+                        color: "#183D35",
+                        borderColor: "rgba(24, 61, 53, 0.2)",
                         py: 1.35,
                         borderRadius: "9999px",
                         fontWeight: 700,
                         fontSize: "0.9rem",
+                        textTransform: "none",
                         "&:hover": {
-                          borderColor: "#EA580C",
-                          color: "#EA580C",
-                          bgcolor: "rgba(249, 115, 22, 0.05)",
+                          borderColor: "#3D765D",
+                          color: "#3D765D",
+                          bgcolor: "rgba(61, 118, 93, 0.05)",
                         },
                       }}
                     >
@@ -885,21 +899,22 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 3. THE 1-CLICK COPYABLE BRIEF (Zero-Form Alternative) */}
+      {/* ========================================================================= */}
+      {/* 3. 1-CLICK BRIEF (LEFT-ALIGNED HEADER, WARM WHITE #F7F7F2)               */}
+      {/* ========================================================================= */}
       <Box
         id="brief-template"
         component="section"
         sx={{
-          py: { xs: 10, md: 16 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
-          borderBottom: "1px solid rgba(228, 228, 231, 0.8)",
+          py: { xs: 12, md: 18 },
+          bgcolor: "#F7F7F2",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
           <Grid
             container
-            spacing={{ xs: 5, lg: 8 }}
+            spacing={{ xs: 6, lg: 8 }}
             sx={{ alignItems: "center" }}
           >
             {/* Left Description */}
@@ -912,13 +927,13 @@ export default function ContactPageClient() {
                   px: 2,
                   py: 0.6,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
+                  bgcolor: "rgba(61, 118, 93, 0.08)",
+                  border: "1px solid rgba(61, 118, 93, 0.25)",
                   mb: 2.5,
                 }}
               >
                 <AssignmentOutlinedIcon
-                  sx={{ fontSize: 16, color: "#EA580C" }}
+                  sx={{ fontSize: 16, color: "#3D765D" }}
                 />
                 <Typography
                   sx={{
@@ -926,7 +941,8 @@ export default function ContactPageClient() {
                     fontWeight: 700,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: "#EA580C",
+                    color: "#3D765D",
+                    fontFamily: "monospace",
                   }}
                 >
                   DIRECT EMAIL BRIEF
@@ -936,11 +952,12 @@ export default function ContactPageClient() {
               <Typography
                 variant="h2"
                 sx={{
-                  fontSize: { xs: "1.55rem", sm: "2rem", md: "2.4rem" },
-                  fontWeight: 600,
-                  letterSpacing: "-0.03em",
-                  color: "#18181B",
-                  lineHeight: { xs: 1.18, md: 1.2 },
+                  fontFamily: '"DM Serif Display", serif',
+                  fontSize: { xs: "1.9rem", sm: "2.3rem", md: "2.75rem" },
+                  fontWeight: 400,
+                  letterSpacing: "-0.025em",
+                  color: "#183D35",
+                  lineHeight: { xs: 1.2, md: 1.15 },
                   textWrap: "balance",
                   mb: 2.5,
                 }}
@@ -949,10 +966,8 @@ export default function ContactPageClient() {
                 <Box
                   component="span"
                   sx={{
-                    background:
-                      "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
+                    fontStyle: "italic",
+                    color: "#3D765D",
                     display: "inline",
                   }}
                 >
@@ -991,12 +1006,12 @@ export default function ContactPageClient() {
                     sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}
                   >
                     <CheckCircleOutlinedIcon
-                      sx={{ color: "#EA580C", fontSize: 20, mt: 0.2 }}
+                      sx={{ color: "#3D765D", fontSize: 20, mt: 0.2 }}
                     />
                     <Typography
                       sx={{
                         fontSize: "0.95rem",
-                        color: "#18181B",
+                        color: "#183D35",
                         fontWeight: 500,
                       }}
                     >
@@ -1012,22 +1027,22 @@ export default function ContactPageClient() {
                   variant="contained"
                   startIcon={
                     copiedBrief ? (
-                      <CheckCircleRoundedIcon sx={{ color: "#FFFFFF" }} />
+                      <CheckCircleRoundedIcon sx={{ color: "#183D35" }} />
                     ) : (
-                      <ContentCopyRoundedIcon />
+                      <ContentCopyRoundedIcon sx={{ color: "#183D35" }} />
                     )
                   }
                   sx={{
-                    background: copiedBrief
-                      ? "linear-gradient(135deg, #16A34A 0%, #22C55E 100%)"
-                      : "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                    color: "#FFFFFF",
+                    bgcolor: copiedBrief ? "#A7F3D0" : "#D8E5D5",
+                    color: "#183D35",
                     px: 3.5,
                     py: 1.4,
                     fontWeight: 700,
+                    textTransform: "none",
                     borderRadius: "9999px",
-                    boxShadow: "0 8px 24px rgba(234, 88, 12, 0.3)",
+                    boxShadow: "0 6px 18px rgba(0, 0, 0, 0.08)",
                     "&:hover": {
+                      bgcolor: "#FFFFFF",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -1043,15 +1058,17 @@ export default function ContactPageClient() {
                   variant="outlined"
                   endIcon={<ArrowForwardRoundedIcon sx={{ fontSize: 16 }} />}
                   sx={{
-                    color: "#18181B",
-                    borderColor: "rgba(24, 24, 27, 0.2)",
+                    color: "#183D35",
+                    borderColor: "rgba(24, 61, 53, 0.25)",
                     px: 3,
                     py: 1.4,
                     fontWeight: 600,
+                    textTransform: "none",
                     borderRadius: "9999px",
                     "&:hover": {
-                      borderColor: "#EA580C",
-                      color: "#EA580C",
+                      borderColor: "#3D765D",
+                      color: "#3D765D",
+                      bgcolor: "#FFFFFF",
                       transform: "translateY(-2px)",
                     },
                   }}
@@ -1065,11 +1082,11 @@ export default function ContactPageClient() {
             <Grid size={{ xs: 12, lg: 7 }}>
               <Box
                 sx={{
-                  bgcolor: "#18181B",
+                  bgcolor: "#183D35",
                   borderRadius: "24px",
                   p: { xs: 3, sm: 4.5 },
                   boxShadow: "0 24px 60px rgba(0, 0, 0, 0.25)",
-                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  border: "1px solid rgba(216, 229, 213, 0.2)",
                   position: "relative",
                   overflow: "hidden",
                 }}
@@ -1082,7 +1099,7 @@ export default function ContactPageClient() {
                     justifyContent: "space-between",
                     pb: 2,
                     mb: 2.5,
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+                    borderBottom: "1px solid rgba(255, 255, 255, 0.12)",
                   }}
                 >
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -1113,7 +1130,7 @@ export default function ContactPageClient() {
                     <Typography
                       sx={{
                         ml: 1.5,
-                        color: "#A1A1AA",
+                        color: "#D8E5D5",
                         fontFamily: "monospace",
                         fontSize: "0.8rem",
                       }}
@@ -1127,9 +1144,9 @@ export default function ContactPageClient() {
                       onClick={handleCopyBrief}
                       size="small"
                       sx={{
-                        color: copiedBrief ? "#22C55E" : "#A1A1AA",
-                        bgcolor: "rgba(255, 255, 255, 0.06)",
-                        "&:hover": { bgcolor: "rgba(255, 255, 255, 0.12)" },
+                        color: copiedBrief ? "#D8E5D5" : "rgba(255, 255, 255, 0.7)",
+                        bgcolor: "rgba(255, 255, 255, 0.08)",
+                        "&:hover": { bgcolor: "rgba(255, 255, 255, 0.15)" },
                       }}
                     >
                       {copiedBrief ? (
@@ -1162,7 +1179,7 @@ export default function ContactPageClient() {
                   sx={{
                     mt: 3,
                     pt: 2.5,
-                    borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+                    borderTop: "1px solid rgba(255, 255, 255, 0.1)",
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -1170,16 +1187,16 @@ export default function ContactPageClient() {
                     gap: 1,
                   }}
                 >
-                  <Typography sx={{ fontSize: "0.8rem", color: "#A1A1AA" }}>
+                  <Typography sx={{ fontSize: "0.8rem", color: "rgba(255, 255, 255, 0.75)" }}>
                     Send to:{" "}
                     <Box
                       component="span"
-                      sx={{ color: "#FB923C", fontWeight: 700 }}
+                      sx={{ color: "#D8E5D5", fontWeight: 700 }}
                     >
                       hello.aetibar@gmail.com
                     </Box>
                   </Typography>
-                  <Typography sx={{ fontSize: "0.75rem", color: "#71717A" }}>
+                  <Typography sx={{ fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.55)" }}>
                     Plain Text / Markdown Compatible
                   </Typography>
                 </Box>
@@ -1189,19 +1206,22 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 4. TRANSPARENT TURNAROUND PROTOCOL (4-Stage Process) */}
+      {/* ========================================================================= */}
+      {/* 4. PROCESS PROTOCOL (CENTER-ALIGNED HEADER, WHITE #FFFFFF)                */}
+      {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
-          py: { xs: 10, md: 16 },
+          py: { xs: 12, md: 18 },
           bgcolor: "#FFFFFF",
+          borderBottom: "1px solid rgba(24, 61, 53, 0.08)",
         }}
       >
         <Container maxWidth="xl">
           <Box
             sx={{
               textAlign: "center",
-              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              maxWidth: 900,
               mx: "auto",
               mb: { xs: 6, md: 9 },
             }}
@@ -1214,8 +1234,8 @@ export default function ContactPageClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2,
               }}
             >
@@ -1225,7 +1245,8 @@ export default function ContactPageClient() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
+                  fontFamily: "monospace",
                 }}
               >
                 CLEAR PROCESS
@@ -1235,26 +1256,26 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
+                fontFamily: '"DM Serif Display", serif',
                 fontSize: {
-                  xs: "1.55rem",
-                  sm: "2.15rem",
-                  md: "2.65rem",
-                  lg: "3rem",
+                  xs: "1.9rem",
+                  sm: "2.4rem",
+                  md: "3rem",
+                  lg: "3.4rem",
                 },
-                fontWeight: 600,
-                letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.18, md: 1.2 },
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                fontWeight: 400,
+                letterSpacing: "-0.025em",
+                lineHeight: { xs: 1.2, md: 1.15 },
                 textWrap: "balance",
                 mx: "auto",
-                color: "#18181B",
+                color: "#183D35",
                 mb: 2,
               }}
             >
               What Happens After You Contact Us?
             </Typography>
             <Typography
-              sx={{ fontSize: "1.05rem", color: "#52525B", lineHeight: 1.75 }}
+              sx={{ fontSize: "1.05rem", color: "#52525B", lineHeight: 1.75, maxWidth: 780, mx: "auto" }}
             >
               Here’s what you can expect after reaching out—clear communication,
               practical questions, and straightforward next steps.
@@ -1268,17 +1289,19 @@ export default function ContactPageClient() {
                   sx={{
                     p: 3.5,
                     borderRadius: "20px",
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     position: "relative",
-                    boxShadow: "0 4px 16px rgba(24, 24, 27, 0.02)",
+                    boxShadow: "0 4px 16px rgba(24, 61, 53, 0.02)",
                     transition: "all 0.25s ease",
                     "&:hover": {
                       transform: "translateY(-3px)",
-                      borderColor: "#EA580C",
+                      borderColor: "#3D765D",
+                      bgcolor: "#FFFFFF",
+                      boxShadow: "0 12px 30px -8px rgba(61, 118, 93, 0.12)",
                     },
                   }}
                 >
@@ -1286,7 +1309,7 @@ export default function ContactPageClient() {
                     sx={{
                       fontSize: "1.8rem",
                       fontWeight: 800,
-                      color: "#EA580C",
+                      color: "#3D765D",
                       lineHeight: 1,
                       mb: 2,
                       fontFamily: "monospace",
@@ -1298,9 +1321,10 @@ export default function ContactPageClient() {
                   <Typography
                     variant="h6"
                     sx={{
-                      fontWeight: 700,
-                      fontSize: "1.15rem",
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", serif',
+                      fontWeight: 400,
+                      fontSize: "1.25rem",
+                      color: "#183D35",
                       mb: 1,
                     }}
                   >
@@ -1311,8 +1335,8 @@ export default function ContactPageClient() {
                     label={item.timeframe}
                     size="small"
                     sx={{
-                      bgcolor: "rgba(249, 115, 22, 0.1)",
-                      color: "#EA580C",
+                      bgcolor: "rgba(61, 118, 93, 0.1)",
+                      color: "#3D765D",
                       fontWeight: 700,
                       fontSize: "0.7rem",
                       alignSelf: "flex-start",
@@ -1337,18 +1361,20 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 5. STUDIO GUARANTEES (Home Page Dark Zinc Luxury Container) */}
+      {/* ========================================================================= */}
+      {/* 5. STUDIO COMMITMENTS (LEFT-ALIGNED HEADER, DARK PINE #183D35)            */}
+      {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
-          py: { xs: 10, md: 16 },
-          bgcolor: "#18181B",
+          py: { xs: 12, md: 18 },
+          bgcolor: "#183D35",
           color: "#FFFFFF",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* Ambient Warm Glow */}
+        {/* Subtle Ambient Glow */}
         <Box
           sx={{
             position: "absolute",
@@ -1357,7 +1383,7 @@ export default function ContactPageClient() {
             width: "500px",
             height: "500px",
             background:
-              "radial-gradient(circle, rgba(249, 115, 22, 0.2) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(61, 118, 93, 0.25) 0%, transparent 70%)",
             filter: "blur(60px)",
             pointerEvents: "none",
           }}
@@ -1366,9 +1392,7 @@ export default function ContactPageClient() {
         <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
           <Box
             sx={{
-              textAlign: "center",
-              maxWidth: { xs: "100%", md: 980, lg: 1100 },
-              mx: "auto",
+              maxWidth: 900,
               mb: { xs: 6, md: 8 },
             }}
           >
@@ -1380,19 +1404,20 @@ export default function ContactPageClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.15)",
-                border: "1px solid rgba(251, 146, 60, 0.3)",
+                bgcolor: "rgba(216, 229, 213, 0.12)",
+                border: "1px solid rgba(216, 229, 213, 0.3)",
                 mb: 2,
               }}
             >
-              <BoltOutlinedIcon sx={{ fontSize: 16, color: "#FB923C" }} />
+              <BoltOutlinedIcon sx={{ fontSize: 16, color: "#D8E5D5" }} />
               <Typography
                 sx={{
                   fontSize: "0.75rem",
                   fontWeight: 700,
-                  color: "#FB923C",
+                  color: "#D8E5D5",
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
+                  fontFamily: "monospace",
                 }}
               >
                 OUR COMMITMENTS
@@ -1402,22 +1427,20 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
+                fontFamily: '"DM Serif Display", serif',
                 fontSize: {
-                  xs: "1.55rem",
-                  sm: "2.15rem",
-                  md: "2.65rem",
-                  lg: "3rem",
+                  xs: "1.9rem",
+                  sm: "2.4rem",
+                  md: "3rem",
+                  lg: "3.4rem",
                 },
-                fontWeight: 600,
-                letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.18, md: 1.2 },
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
-                textWrap: "balance",
-                mx: "auto",
+                fontWeight: 400,
+                letterSpacing: "-0.025em",
+                lineHeight: { xs: 1.2, md: 1.15 },
                 color: "#FFFFFF",
               }}
             >
-              How We Respect Your Time & Information
+              How We Respect Your Time &amp; Information
             </Typography>
           </Box>
 
@@ -1446,15 +1469,17 @@ export default function ContactPageClient() {
                     sx={{
                       p: 4,
                       borderRadius: "20px",
-                      bgcolor: "rgba(255, 255, 255, 0.04)",
-                      border: "1px solid rgba(255, 255, 255, 0.08)",
+                      bgcolor: "rgba(255, 255, 255, 0.05)",
+                      border: "1px solid rgba(216, 229, 213, 0.18)",
+                      backdropFilter: "blur(10px)",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
                       transition: "all 0.25s ease",
                       "&:hover": {
-                        borderColor: "rgba(249, 115, 22, 0.4)",
+                        borderColor: "rgba(216, 229, 213, 0.45)",
                         transform: "translateY(-3px)",
+                        boxShadow: "0 18px 36px -10px rgba(0, 0, 0, 0.3)",
                       },
                     }}
                   >
@@ -1463,13 +1488,13 @@ export default function ContactPageClient() {
                         width: 48,
                         height: 48,
                         borderRadius: "12px",
-                        bgcolor: "rgba(249, 115, 22, 0.15)",
-                        border: "1px solid rgba(249, 115, 22, 0.3)",
+                        bgcolor: "rgba(216, 229, 213, 0.12)",
+                        border: "1px solid rgba(216, 229, 213, 0.25)",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                         mb: 2.5,
-                        color: "#FB923C",
+                        color: "#D8E5D5",
                       }}
                     >
                       <IconComp sx={{ fontSize: 24 }} />
@@ -1478,8 +1503,9 @@ export default function ContactPageClient() {
                     <Typography
                       variant="h6"
                       sx={{
-                        fontWeight: 700,
-                        fontSize: "1.2rem",
+                        fontFamily: '"DM Serif Display", serif',
+                        fontWeight: 400,
+                        fontSize: "1.35rem",
                         color: "#FFFFFF",
                         mb: 1.5,
                       }}
@@ -1490,7 +1516,7 @@ export default function ContactPageClient() {
                     <Typography
                       sx={{
                         fontSize: "0.925rem",
-                        color: "#A1A1AA",
+                        color: "rgba(255, 255, 255, 0.78)",
                         lineHeight: 1.75,
                       }}
                     >
@@ -1504,16 +1530,18 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 6. FREQUENTLY ASKED QUESTIONS */}
+      {/* ========================================================================= */}
+      {/* 6. FAQS (CENTER-ALIGNED HEADER, WHITE #FFFFFF)                            */}
+      {/* ========================================================================= */}
       <Box
         component="section"
-        sx={{ py: { xs: 10, md: 16 }, bgcolor: "#FFFFFF" }}
+        sx={{ py: { xs: 12, md: 18 }, bgcolor: "#FFFFFF", borderBottom: "1px solid rgba(24, 61, 53, 0.08)" }}
       >
         <Container maxWidth="md">
           <Box
             sx={{
               textAlign: "center",
-              maxWidth: { xs: "100%", md: 980, lg: 1100 },
+              maxWidth: 820,
               mx: "auto",
               mb: 6,
             }}
@@ -1526,8 +1554,8 @@ export default function ContactPageClient() {
                 px: 2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
+                bgcolor: "rgba(61, 118, 93, 0.08)",
+                border: "1px solid rgba(61, 118, 93, 0.25)",
                 mb: 2,
               }}
             >
@@ -1537,7 +1565,8 @@ export default function ContactPageClient() {
                   fontWeight: 700,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#EA580C",
+                  color: "#3D765D",
+                  fontFamily: "monospace",
                 }}
               >
                 DIRECT ANSWERS
@@ -1547,19 +1576,19 @@ export default function ContactPageClient() {
             <Typography
               variant="h2"
               sx={{
+                fontFamily: '"DM Serif Display", serif',
                 fontSize: {
-                  xs: "1.55rem",
-                  sm: "2.15rem",
-                  md: "2.65rem",
-                  lg: "3rem",
+                  xs: "1.9rem",
+                  sm: "2.4rem",
+                  md: "3rem",
+                  lg: "3.4rem",
                 },
-                fontWeight: 600,
-                letterSpacing: "-0.03em",
-                lineHeight: { xs: 1.18, md: 1.2 },
-                maxWidth: { xs: "100%", md: 980, lg: 1100 },
+                fontWeight: 400,
+                letterSpacing: "-0.025em",
+                lineHeight: { xs: 1.2, md: 1.15 },
                 textWrap: "balance",
                 mx: "auto",
-                color: "#18181B",
+                color: "#183D35",
               }}
             >
               Frequently Asked Questions
@@ -1573,15 +1602,19 @@ export default function ContactPageClient() {
                 disableGutters
                 elevation={0}
                 sx={{
-                  bgcolor: "#FAF8F5",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  bgcolor: "#F7F7F2",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
                   borderRadius: "16px !important",
                   "&:before": { display: "none" },
                   overflow: "hidden",
+                  transition: "all 0.2s ease",
+                  "&:hover": {
+                    borderColor: "#3D765D",
+                  },
                 }}
               >
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: "#EA580C" }} />}
+                  expandIcon={<ExpandMoreIcon sx={{ color: "#3D765D" }} />}
                   sx={{
                     px: 3,
                     py: 1.25,
@@ -1590,9 +1623,10 @@ export default function ContactPageClient() {
                 >
                   <Typography
                     sx={{
-                      fontWeight: 700,
-                      fontSize: { xs: "0.98rem", sm: "1.08rem" },
-                      color: "#18181B",
+                      fontFamily: '"DM Serif Display", serif',
+                      fontWeight: 400,
+                      fontSize: { xs: "1.05rem", sm: "1.18rem" },
+                      color: "#183D35",
                     }}
                   >
                     {faq.q}
@@ -1615,40 +1649,42 @@ export default function ContactPageClient() {
         </Container>
       </Box>
 
-      {/* 7. SOCIAL & EXPLORATION FOOTER */}
+      {/* ========================================================================= */}
+      {/* 7. SOCIAL & EXPLORATION FOOTER (LEFT-ALIGNED, WARM WHITE #F7F7F2)         */}
+      {/* ========================================================================= */}
       <Box
         component="section"
         sx={{
-          py: { xs: 8, md: 10 },
-          bgcolor: "#FAF8F5",
-          borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+          py: { xs: 10, md: 14 },
+          bgcolor: "#F7F7F2",
         }}
       >
         <Container maxWidth="lg">
-          <Grid container spacing={4} sx={{ alignItems: "center" }}>
+          <Grid container spacing={5} sx={{ alignItems: "center" }}>
             <Grid size={{ xs: 12, md: 6 }}>
               <Typography
                 variant="h4"
                 sx={{
-                  fontWeight: 700,
-                  fontSize: { xs: "1.35rem", md: "1.6rem" },
-                  color: "#18181B",
+                  fontFamily: '"DM Serif Display", serif',
+                  fontWeight: 400,
+                  fontSize: { xs: "1.65rem", md: "2.1rem" },
+                  color: "#183D35",
+                  letterSpacing: "-0.02em",
                   mb: 1.5,
                 }}
               >
                 Connect With Our Team
-
               </Typography>
               <Typography
                 sx={{
                   color: "#52525B",
-                  fontSize: "0.95rem",
-                  lineHeight: 1.7,
-                  mb: 3,
+                  fontSize: "1rem",
+                  lineHeight: 1.75,
+                  mb: 3.5,
+                  maxWidth: 500,
                 }}
               >
-               Follow our latest insights, project updates, and practical digital solutions across our social channels.
-
+                Follow our latest insights, project updates, and practical digital solutions across our social channels.
               </Typography>
 
               <Box sx={{ display: "flex", gap: 1.5 }}>
@@ -1659,14 +1695,14 @@ export default function ContactPageClient() {
                   rel="noopener noreferrer"
                   aria-label="Aetibar on X"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    width: 46,
-                    height: 46,
+                    border: "1px solid rgba(24, 61, 53, 0.12)",
+                    width: 48,
+                    height: 48,
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      bgcolor: "#18181B",
+                      bgcolor: "#183D35",
                       color: "#FFFFFF",
                       transform: "translateY(-2px)",
                     },
@@ -1681,14 +1717,14 @@ export default function ContactPageClient() {
                   rel="noopener noreferrer"
                   aria-label="Aetibar on LinkedIn"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    width: 46,
-                    height: 46,
+                    border: "1px solid rgba(24, 61, 53, 0.12)",
+                    width: 48,
+                    height: 48,
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      bgcolor: "#18181B",
+                      bgcolor: "#183D35",
                       color: "#FFFFFF",
                       transform: "translateY(-2px)",
                     },
@@ -1703,14 +1739,14 @@ export default function ContactPageClient() {
                   rel="noopener noreferrer"
                   aria-label="Aetibar on Instagram"
                   sx={{
-                    color: "#18181B",
+                    color: "#183D35",
                     bgcolor: "#FFFFFF",
-                    border: "1px solid rgba(228, 228, 231, 0.9)",
-                    width: 46,
-                    height: 46,
+                    border: "1px solid rgba(24, 61, 53, 0.12)",
+                    width: 48,
+                    height: 48,
                     transition: "all 0.2s ease",
                     "&:hover": {
-                      bgcolor: "#18181B",
+                      bgcolor: "#183D35",
                       color: "#FFFFFF",
                       transform: "translateY(-2px)",
                     },
@@ -1724,33 +1760,35 @@ export default function ContactPageClient() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Box
                 sx={{
-                  p: 3.5,
-                  borderRadius: "20px",
+                  p: { xs: 3.5, sm: 4.5 },
+                  borderRadius: "24px",
                   bgcolor: "#FFFFFF",
-                  border: "1px solid rgba(228, 228, 231, 0.9)",
+                  border: "1px solid rgba(24, 61, 53, 0.08)",
+                  boxShadow: "0 6px 20px rgba(24, 61, 53, 0.03)",
                 }}
               >
                 <Typography
                   sx={{
                     fontSize: "0.8rem",
                     fontWeight: 700,
-                    color: "#EA580C",
+                    color: "#3D765D",
                     mb: 1,
                     textTransform: "uppercase",
+                    fontFamily: "monospace",
                   }}
                 >
                   Not ready to scope yet?
                 </Typography>
                 <Typography
                   sx={{
-                    fontWeight: 700,
-                    fontSize: "1.15rem",
-                    color: "#18181B",
-                    mb: 2,
+                    fontFamily: '"DM Serif Display", serif',
+                    fontWeight: 400,
+                    fontSize: "1.45rem",
+                    color: "#183D35",
+                    mb: 2.5,
                   }}
                 >
-                  Explore Our Work & Projects
-
+                  Explore Our Work &amp; Projects
                 </Typography>
 
                 <Box
@@ -1765,22 +1803,24 @@ export default function ContactPageClient() {
                       }
                       sx={{
                         justifyContent: "space-between",
-                        color: "#18181B",
-                        p: 1.5,
-                        borderRadius: "10px",
-                        bgcolor: "#FAF8F5",
-                        border: "1px solid rgba(228, 228, 231, 0.8)",
+                        color: "#183D35",
+                        p: 1.8,
+                        borderRadius: "12px",
+                        bgcolor: "#F7F7F2",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         fontWeight: 600,
-                        fontSize: "0.9rem",
+                        fontSize: "0.92rem",
+                        textTransform: "none",
+                        transition: "all 0.2s ease",
                         "&:hover": {
-                          bgcolor: "#FAF8F5",
-                          borderColor: "#EA580C",
-                          color: "#EA580C",
+                          bgcolor: "#F7F7F2",
+                          borderColor: "#3D765D",
+                          color: "#3D765D",
+                          transform: "translateX(4px)",
                         },
                       }}
                     >
                       View Our Work
-
                     </Button>
                   </Link>
 
@@ -1793,22 +1833,24 @@ export default function ContactPageClient() {
                       }
                       sx={{
                         justifyContent: "space-between",
-                        color: "#18181B",
-                        p: 1.5,
-                        borderRadius: "10px",
-                        bgcolor: "#FAF8F5",
-                        border: "1px solid rgba(228, 228, 231, 0.8)",
+                        color: "#183D35",
+                        p: 1.8,
+                        borderRadius: "12px",
+                        bgcolor: "#F7F7F2",
+                        border: "1px solid rgba(24, 61, 53, 0.08)",
                         fontWeight: 600,
-                        fontSize: "0.9rem",
+                        fontSize: "0.92rem",
+                        textTransform: "none",
+                        transition: "all 0.2s ease",
                         "&:hover": {
-                          bgcolor: "#FAF8F5",
-                          borderColor: "#EA580C",
-                          color: "#EA580C",
+                          bgcolor: "#F7F7F2",
+                          borderColor: "#3D765D",
+                          color: "#3D765D",
+                          transform: "translateX(4px)",
                         },
                       }}
                     >
-                     Explore Our Services
-
+                      Explore Our Services
                     </Button>
                   </Link>
                 </Box>

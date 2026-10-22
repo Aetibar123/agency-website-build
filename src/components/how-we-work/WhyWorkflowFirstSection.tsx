@@ -107,33 +107,21 @@ export default function WhyWorkflowFirstSection() {
                 sx={{
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: 1.2,
-                  px: 2.2,
-                  py: 0.6,
+                  gap: 1,
+                  px: 1.8,
+                  py: 0.5,
                   borderRadius: "9999px",
-                  bgcolor: "rgba(249, 115, 22, 0.08)",
-                  border: "1px solid rgba(249, 115, 22, 0.25)",
-                  mb: 2.5,
+                  bgcolor: "#D8E5D5",
+                  color: "#183D35",
+                  fontSize: "0.72rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  fontFamily: "monospace",
+                  mb: 2,
                 }}
               >
-                <Box
-                  component={motion.div}
-                  animate={{ scale: [1, 1.3, 1] }}
-                  transition={{ repeat: Infinity, duration: 2 }}
-                  sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316" }}
-                />
-                <Typography
-                  sx={{
-                    fontSize: "0.8rem",
-                    letterSpacing: "0.06em",
-                    textTransform: "uppercase",
-                    color: "#EA580C",
-                    fontWeight: 700,
-                  }}
-                >
-                 THE AETIBAR ADVANTAGE • BUILT ON TRUST
-
-                </Typography>
+                THE AETIBAR ADVANTAGE • BUILT ON TRUST
               </Box>
             </Box>
           </motion.div>
@@ -148,29 +136,28 @@ export default function WhyWorkflowFirstSection() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.55rem", sm: "2.15rem", md: "2.65rem", lg: "3rem" },
-                fontWeight: 600,
-                color: "#18181B",
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: { xs: "1.75rem", sm: "2.35rem", md: "2.85rem" },
+                fontWeight: 400,
+                color: "#183D35",
                 lineHeight: { xs: 1.25, md: 1.18 },
-                letterSpacing: "-0.035em",
+                letterSpacing: "-0.015em",
                 textAlign: "center",
                 maxWidth: { xs: "100%", md: 1000, lg: 1100 },
                 mx: "auto",
                 textWrap: "balance",
-                mb: 2.5,
+                mb: 2,
               }}
             >
-             Why Digital Projects Often Go Off Track — {" "}
+             Why Digital Projects Often Go Off Track —{" "}
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  color: "#3D765D",
+                  fontStyle: "italic",
                 }}
               >
                 and how our process helps keep your project on track.
-
               </Box>
             </Typography>
 
@@ -207,15 +194,15 @@ export default function WhyWorkflowFirstSection() {
                     height: "100%",
                     p: { xs: 3.5, sm: 4.5 },
                     borderRadius: { xs: "20px", md: "24px" },
-                    bgcolor: "#FAF8F5",
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    bgcolor: "#F7F7F2",
+                    border: "1px solid rgba(24, 61, 53, 0.08)",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
                     transition: "all 0.3s ease",
                     "&:hover": {
-                      borderColor: "rgba(234, 88, 12, 0.4)",
-                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
+                      borderColor: "rgba(61, 118, 93, 0.4)",
+                      boxShadow: "0 18px 36px -12px rgba(61, 118, 93, 0.12)",
                       transform: "translateY(-3px)",
                     },
                   }}
@@ -229,8 +216,8 @@ export default function WhyWorkflowFirstSection() {
                             width: 36,
                             height: 36,
                             borderRadius: "10px",
-                            bgcolor: "rgba(249, 115, 22, 0.1)",
-                            color: "#EA580C",
+                            bgcolor: "rgba(61, 118, 93, 0.1)",
+                            color: "#3D765D",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
@@ -238,14 +225,24 @@ export default function WhyWorkflowFirstSection() {
                         >
                           {card.icon}
                         </Box>
-                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#EA580C", letterSpacing: "0.06em" }}>
+                        <Typography sx={{ fontSize: "0.75rem", fontWeight: 800, color: "#3D765D", letterSpacing: "0.06em" }}>
                           {card.number} &bull; {card.category}
                         </Typography>
                       </Box>
                     </Box>
 
                     {/* Card Title */}
-                    <Typography sx={{ fontSize: "1.35rem", fontWeight: 700, color: "#18181B", lineHeight: 1.3, mb: 3 }}>
+                    <Typography
+                      sx={{
+                        fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                        fontSize: "1.35rem",
+                        fontWeight: 400,
+                        color: "#183D35",
+                        lineHeight: 1.3,
+                        mb: 3,
+                        letterSpacing: "-0.015em",
+                      }}
+                    >
                       {card.title}
                     </Typography>
 
@@ -275,18 +272,18 @@ export default function WhyWorkflowFirstSection() {
                       sx={{
                         p: 2.5,
                         borderRadius: "14px",
-                        bgcolor: "rgba(249, 115, 22, 0.05)",
-                        border: "1px solid rgba(234, 88, 12, 0.3)",
+                        bgcolor: "rgba(61, 118, 93, 0.05)",
+                        border: "1px solid rgba(61, 118, 93, 0.3)",
                         mb: 3,
                       }}
                     >
                       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
-                        <CheckRoundedIcon sx={{ fontSize: 16, color: "#EA580C" }} />
-                        <Typography sx={{ fontSize: "0.725rem", fontWeight: 800, color: "#EA580C", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                        <CheckRoundedIcon sx={{ fontSize: 16, color: "#3D765D" }} />
+                        <Typography sx={{ fontSize: "0.725rem", fontWeight: 800, color: "#3D765D", textTransform: "uppercase", letterSpacing: "0.05em" }}>
                           {card.solutionBadge}
                         </Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#18181B", mb: 0.8 }}>
+                      <Typography sx={{ fontSize: "0.95rem", fontWeight: 700, color: "#183D35", mb: 0.8 }}>
                         {card.solutionTitle}
                       </Typography>
                       <Typography sx={{ fontSize: "0.85rem", color: "#3F3F46", lineHeight: 1.6 }}>
@@ -319,8 +316,8 @@ export default function WhyWorkflowFirstSection() {
           sx={{
             p: { xs: 3.5, sm: 4.5 },
             borderRadius: { xs: "20px", md: "24px" },
-            bgcolor: "#FAF8F5",
-            border: "1px solid rgba(24, 24, 27, 0.08)",
+            bgcolor: "#F7F7F2",
+            border: "1px solid rgba(24, 61, 53, 0.08)",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             alignItems: { xs: "flex-start", md: "center" },
@@ -329,9 +326,17 @@ export default function WhyWorkflowFirstSection() {
           }}
         >
           <Box sx={{ maxWidth: 780 }}>
-            <Typography sx={{ fontSize: "1.15rem", fontWeight: 700, color: "#18181B", mb: 0.5 }}>
+            <Typography
+              sx={{
+                fontFamily: '"DM Serif Display", var(--font-dm-serif), Georgia, serif',
+                fontSize: "1.25rem",
+                fontWeight: 400,
+                color: "#183D35",
+                mb: 0.5,
+                letterSpacing: "-0.015em",
+              }}
+            >
               Ready to see how our process works from start to finish?
-
             </Typography>
             <Typography sx={{ fontSize: "0.9rem", color: "#52525B", lineHeight: 1.6 }}>
               See how we move from understanding your needs and planning the right approach to implementing, reviewing, delivering, and supporting your project.
@@ -344,7 +349,7 @@ export default function WhyWorkflowFirstSection() {
               variant="contained"
               endIcon={<ArrowDownwardRoundedIcon sx={{ fontSize: 18 }} />}
               sx={{
-                bgcolor: "#18181B",
+                bgcolor: "#183D35",
                 color: "#FFFFFF",
                 px: 3.5,
                 py: 1.3,
@@ -355,8 +360,8 @@ export default function WhyWorkflowFirstSection() {
                 boxShadow: "none",
                 whiteSpace: "nowrap",
                 "&:hover": {
-                  bgcolor: "#EA580C",
-                  boxShadow: "0 6px 20px -4px rgba(234, 88, 12, 0.4)",
+                  bgcolor: "#3D765D",
+                  boxShadow: "0 6px 20px -4px rgba(61, 118, 93, 0.4)",
                 },
               }}
             >

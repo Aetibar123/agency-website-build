@@ -26,7 +26,7 @@ const coreServices = [
       "SEO-ready website foundations",
     ],
     href: "/services/web-development-company-in-udaipur",
-    icon: <LanguageIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <LanguageIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 
   {
@@ -42,7 +42,7 @@ const coreServices = [
       "Offline data capture & synchronization",
     ],
     href: "/services/mobile-app-development-company-in-udaipur",
-    icon: <PhoneIphoneIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <PhoneIphoneIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 
   {
@@ -57,8 +57,8 @@ const coreServices = [
       "Keyword research & content optimization",
       "Search performance reporting",
     ],
-    href: "/services/seo-company-in-udaipur",
-    icon: <SearchIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    href: "/services/seo-service-in-udaipur",
+    icon: <SearchIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 
   {
@@ -73,8 +73,8 @@ const coreServices = [
       "Keyword & audience targeting",
       "Conversion tracking & performance reporting",
     ],
-    href: "/services/paid-advertising-company-in-udaipur",
-    icon: <AdsClickOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    href: "/services/performance-marketing-company-in-udaipur",
+    icon: <AdsClickOutlinedIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 
   {
@@ -89,8 +89,8 @@ const coreServices = [
       "Instagram, Facebook & LinkedIn",
       "Publishing & performance reporting",
     ],
-    href: "/services/social-media-marketing-company-in-udaipur",
-    icon: <ShareOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    href: "/services/social-media-marketing-service-in-udaipur",
+    icon: <ShareOutlinedIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 
   {
@@ -106,7 +106,7 @@ const coreServices = [
       "AI-assisted customer support & responses",
     ],
     href: "/services/ai-automation-company-in-udaipur",
-    icon: <SmartToyOutlinedIcon sx={{ fontSize: 26, color: "#EA580C" }} />,
+    icon: <SmartToyOutlinedIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 ];
 
@@ -133,7 +133,7 @@ bullets: [
 href: "/services/ai-automation-company-in-udaipur",
 
 
-  icon: <SmartToyOutlinedIcon sx={{ fontSize: 30, color: "#EA580C" }} />,
+  icon: <SmartToyOutlinedIcon sx={{ fontSize: 30, color: "#D8E5D5" }} />,
 };
 
 export default function HomeServices() {
@@ -143,21 +143,36 @@ export default function HomeServices() {
       id="services"
       sx={{
         py: { xs: 12, md: 16 },
-        bgcolor: "#FFFFFF",
+        bgcolor: "#183D35",
+        color: "#FFFFFF",
         position: "relative",
         overflow: "hidden",
+        borderTop: "1px solid rgba(216, 229, 213, 0.12)",
+        borderBottom: "1px solid rgba(216, 229, 213, 0.12)",
       }}
     >
-      {/* Background Decorative Ambient Warm Glow */}
+      {/* Background Decorative Ambient Glows matching Web Dev Hero */}
       <Box
         sx={{
           position: "absolute",
-          top: "15%",
+          top: "5%",
           right: "5%",
-          width: 600,
-          height: 600,
-          background: "radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, rgba(255, 255, 255, 0) 70%)",
-          filter: "blur(60px)",
+          width: 650,
+          height: 650,
+          background: "radial-gradient(circle, rgba(61, 118, 93, 0.3) 0%, rgba(24, 61, 53, 0) 70%)",
+          filter: "blur(70px)",
+          pointerEvents: "none",
+        }}
+      />
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: "10%",
+          left: "5%",
+          width: 550,
+          height: 550,
+          background: "radial-gradient(circle, rgba(216, 229, 213, 0.1) 0%, rgba(24, 61, 53, 0) 70%)",
+          filter: "blur(80px)",
           pointerEvents: "none",
         }}
       />
@@ -178,9 +193,9 @@ export default function HomeServices() {
                 px: 2.2,
                 py: 0.6,
                 borderRadius: "9999px",
-                bgcolor: "rgba(249, 115, 22, 0.08)",
-                border: "1px solid rgba(249, 115, 22, 0.25)",
-                boxShadow: "0 2px 10px rgba(249, 115, 22, 0.08)",
+                bgcolor: "rgba(61, 118, 93, 0.28)",
+                border: "1px solid rgba(216, 229, 213, 0.25)",
+                boxShadow: "0 2px 12px rgba(0, 0, 0, 0.2)",
                 backdropFilter: "blur(12px)",
                 mb: 2.5,
               }}
@@ -189,14 +204,14 @@ export default function HomeServices() {
                 component={motion.div}
                 animate={{ scale: [1, 1.3, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#F97316", boxShadow: "0 0 10px #F97316" }}
+                sx={{ width: 7, height: 7, borderRadius: "50%", bgcolor: "#D8E5D5", boxShadow: "0 0 10px #D8E5D5" }}
               />
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  color: "#EA580C",
+                  color: "#D8E5D5",
                   textTransform: "uppercase",
                 }}
               >
@@ -207,11 +222,12 @@ export default function HomeServices() {
             <Typography
               variant="h2"
               sx={{
-                fontSize: { xs: "1.65rem", sm: "2.15rem", md: "2.5rem", lg: "2.75rem" },
-                fontWeight: 700,
-                color: "#18181B",
-                lineHeight: { xs: 1.25, md: 1.2 },
-                letterSpacing: "-0.03em",
+                fontFamily: '"DM Serif Display", serif',
+                fontSize: { xs: "1.9rem", sm: "2.35rem", md: "2.8rem", lg: "3.2rem" },
+                fontWeight: 400,
+                color: "#FFFFFF",
+                lineHeight: { xs: 1.2, md: 1.15 },
+                letterSpacing: "-0.025em",
                 textWrap: "balance",
                 mb: 2.2,
               }}
@@ -220,9 +236,9 @@ export default function HomeServices() {
               <Box
                 component="span"
                 sx={{
-                  background: "linear-gradient(135deg, #EA580C 0%, #F97316 55%, #FB923C 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
+                  display: "inline",
+                  fontStyle: "italic",
+                  color: "#D8E5D5",
                 }}
               >
                 Market &amp; Automate Your Business.
@@ -233,13 +249,13 @@ export default function HomeServices() {
               sx={{
                 fontSize: { xs: "1rem", sm: "1.05rem", md: "1.125rem" },
                 lineHeight: 1.7,
-                color: "#52525B",
+                color: "rgba(216, 229, 213, 0.85)",
                 fontWeight: 400,
                 maxWidth: { xs: "100%", md: 740, lg: 780 },
                 mx: "auto",
               }}
             >
-              You don&apos;t need five different agencies. From establishing a memorable brand look and launching a fast website to ranking on Google, running profitable ads, and automating daily busywork—we deliver practical results under one roof.
+              From website development and branding to SEO, paid advertising, and AI automation, Aetibar brings essential digital services together under one roof.
             </Typography>
           </Box>
         </motion.div>
@@ -256,20 +272,22 @@ export default function HomeServices() {
               >
                 <Box
                   sx={{
-                    bgcolor: "#FAF8F5",
+                    bgcolor: "rgba(255, 255, 255, 0.04)",
                     p: { xs: 3.5, sm: 4 },
                     borderRadius: { xs: "20px", md: "24px" },
-                    border: "1px solid rgba(24, 24, 27, 0.08)",
+                    border: "1px solid rgba(216, 229, 213, 0.14)",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    boxShadow: "0 2px 8px rgba(24, 24, 27, 0.02)",
+                    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
+                    backdropFilter: "blur(10px)",
                     transition: "all 0.3s ease",
                     "&:hover": {
                       transform: "translateY(-4px)",
-                      boxShadow: "0 18px 36px -12px rgba(234, 88, 12, 0.12)",
-                      borderColor: "rgba(234, 88, 12, 0.4)",
+                      boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.5)",
+                      borderColor: "rgba(216, 229, 213, 0.38)",
+                      bgcolor: "rgba(255, 255, 255, 0.07)",
                     },
                   }}
                 >
@@ -287,9 +305,9 @@ export default function HomeServices() {
                           width: 48,
                           height: 48,
                           borderRadius: "14px",
-                          bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(24, 24, 27, 0.08)",
-                          boxShadow: "0 2px 6px rgba(24, 24, 27, 0.03)",
+                          bgcolor: "rgba(216, 229, 213, 0.1)",
+                          border: "1px solid rgba(216, 229, 213, 0.2)",
+                          boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
@@ -304,9 +322,9 @@ export default function HomeServices() {
                           fontFamily: "monospace",
                           letterSpacing: "0.05em",
                           textTransform: "uppercase",
-                          color: "#EA580C",
-                          bgcolor: "rgba(249, 115, 22, 0.08)",
-                          border: "1px solid rgba(249, 115, 22, 0.2)",
+                          color: "#D8E5D5",
+                          bgcolor: "rgba(216, 229, 213, 0.12)",
+                          border: "1px solid rgba(216, 229, 213, 0.25)",
                           px: 1.5,
                           py: 0.4,
                           borderRadius: "9999px",
@@ -319,12 +337,13 @@ export default function HomeServices() {
                     <Typography
                       variant="h3"
                       sx={{
-                        fontSize: { xs: "1.15rem", sm: "1.2rem", md: "1.25rem" },
-                        fontWeight: 700,
-                        letterSpacing: "-0.02em",
-                        color: "#18181B",
+                        fontFamily: '"DM Serif Display", serif',
+                        fontSize: { xs: "1.25rem", sm: "1.35rem" },
+                        fontWeight: 400,
+                        letterSpacing: "-0.015em",
+                        color: "#FFFFFF",
                         mb: 1,
-                        lineHeight: 1.35,
+                        lineHeight: 1.3,
                         textWrap: "balance",
                       }}
                     >
@@ -335,7 +354,7 @@ export default function HomeServices() {
                       sx={{
                         fontSize: "0.9rem",
                         fontWeight: 600,
-                        color: "#EA580C",
+                        color: "#D8E5D5",
                         mb: 1.4,
                         lineHeight: 1.45,
                       }}
@@ -347,7 +366,7 @@ export default function HomeServices() {
                       sx={{
                         fontSize: "0.875rem",
                         lineHeight: 1.65,
-                        color: "#52525B",
+                        color: "rgba(216, 229, 213, 0.8)",
                         mb: 2.5,
                       }}
                     >
@@ -362,8 +381,8 @@ export default function HomeServices() {
                               width: 16,
                               height: 16,
                               borderRadius: "50%",
-                              bgcolor: "rgba(234, 88, 12, 0.1)",
-                              color: "#EA580C",
+                              bgcolor: "rgba(216, 229, 213, 0.15)",
+                              color: "#D8E5D5",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
@@ -378,7 +397,7 @@ export default function HomeServices() {
                           <Typography
                             sx={{
                               fontSize: "0.825rem",
-                              color: "#3F3F46",
+                              color: "rgba(255, 255, 255, 0.88)",
                               fontWeight: 500,
                               lineHeight: 1.5,
                             }}
@@ -390,19 +409,19 @@ export default function HomeServices() {
                     </Box>
                   </Box>
 
-                  <Box sx={{ pt: 2, borderTop: "1px solid rgba(24, 24, 27, 0.06)" }}>
+                  <Box sx={{ pt: 2, borderTop: "1px solid rgba(216, 229, 213, 0.12)" }}>
                     <Link href={service.href} style={{ textDecoration: "none" }}>
                       <Button
                         variant="text"
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
                         sx={{
                           p: 0,
-                          color: "#18181B",
+                          color: "#D8E5D5",
                           fontWeight: 700,
                           fontSize: "0.9rem",
                           textTransform: "none",
                           "&:hover": {
-                            color: "#EA580C",
+                            color: "#FFFFFF",
                             bgcolor: "transparent",
                             "& .MuiButton-endIcon": {
                               transform: "translateX(4px)",
@@ -432,18 +451,20 @@ export default function HomeServices() {
             >
               <Box
                 sx={{
-                  bgcolor: "#FAF8F5",
+                  bgcolor: "rgba(255, 255, 255, 0.05)",
                   p: { xs: 3.5, sm: 4.5, md: 5 },
                   borderRadius: { xs: "20px", md: "28px" },
-                  border: "1.5px solid rgba(249, 115, 22, 0.25)",
-                  boxShadow: "0 4px 20px rgba(249, 115, 22, 0.06)",
+                  border: "1.5px solid rgba(216, 229, 213, 0.25)",
+                  boxShadow: "0 8px 30px rgba(0, 0, 0, 0.3)",
+                  backdropFilter: "blur(12px)",
                   position: "relative",
                   overflow: "hidden",
                   transition: "all 0.3s ease",
                   "&:hover": {
-                    borderColor: "rgba(234, 88, 12, 0.5)",
-                    boxShadow: "0 20px 40px -10px rgba(234, 88, 12, 0.15)",
+                    borderColor: "rgba(216, 229, 213, 0.45)",
+                    boxShadow: "0 20px 45px -10px rgba(0, 0, 0, 0.5)",
                     transform: "translateY(-3px)",
+                    bgcolor: "rgba(255, 255, 255, 0.08)",
                   },
                 }}
               >
@@ -455,12 +476,12 @@ export default function HomeServices() {
                           width: 48,
                           height: 48,
                           borderRadius: "14px",
-                          bgcolor: "#FFFFFF",
-                          border: "1px solid rgba(24, 24, 27, 0.08)",
+                          bgcolor: "rgba(216, 229, 213, 0.1)",
+                          border: "1px solid rgba(216, 229, 213, 0.2)",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          boxShadow: "0 2px 6px rgba(24, 24, 27, 0.03)",
+                          boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
                         }}
                       >
                         {automationService.icon}
@@ -472,9 +493,9 @@ export default function HomeServices() {
                           fontFamily: "monospace",
                           letterSpacing: "0.06em",
                           textTransform: "uppercase",
-                          color: "#EA580C",
-                          bgcolor: "rgba(249, 115, 22, 0.1)",
-                          border: "1px solid rgba(249, 115, 22, 0.25)",
+                          color: "#D8E5D5",
+                          bgcolor: "rgba(216, 229, 213, 0.12)",
+                          border: "1px solid rgba(216, 229, 213, 0.25)",
                           px: 1.8,
                           py: 0.5,
                           borderRadius: "9999px",
@@ -487,12 +508,13 @@ export default function HomeServices() {
                     <Typography
                       variant="h3"
                       sx={{
-                        fontSize: { xs: "1.3rem", sm: "1.5rem", md: "1.65rem" },
-                        fontWeight: 700,
-                        letterSpacing: "-0.025em",
-                        color: "#18181B",
+                        fontFamily: '"DM Serif Display", serif',
+                        fontSize: { xs: "1.45rem", sm: "1.65rem", md: "1.85rem" },
+                        fontWeight: 400,
+                        letterSpacing: "-0.02em",
+                        color: "#FFFFFF",
                         mb: 1.2,
-                        lineHeight: 1.3,
+                        lineHeight: 1.25,
                       }}
                     >
                       {automationService.title}
@@ -502,7 +524,7 @@ export default function HomeServices() {
                       sx={{
                         fontSize: "0.95rem",
                         fontWeight: 600,
-                        color: "#EA580C",
+                        color: "#D8E5D5",
                         mb: 1.8,
                         lineHeight: 1.5,
                       }}
@@ -514,7 +536,7 @@ export default function HomeServices() {
                       sx={{
                         fontSize: "0.9rem",
                         lineHeight: 1.7,
-                        color: "#52525B",
+                        color: "rgba(216, 229, 213, 0.85)",
                         mb: 3,
                       }}
                     >
@@ -526,18 +548,19 @@ export default function HomeServices() {
                         variant="contained"
                         endIcon={<ArrowForwardIcon sx={{ fontSize: 18 }} />}
                         sx={{
-                          background: "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
-                          color: "#FFFFFF",
+                          bgcolor: "#D8E5D5",
+                          color: "#183D35",
                           px: 3.5,
                           py: 1.2,
                           fontSize: "0.9rem",
                           fontWeight: 700,
                           borderRadius: "9999px",
-                          boxShadow: "0 6px 20px rgba(234, 88, 12, 0.3)",
+                          boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)",
                           textTransform: "none",
                           "&:hover": {
-                            background: "linear-gradient(135deg, #C2410C 0%, #EA580C 100%)",
-                            boxShadow: "0 8px 25px rgba(234, 88, 12, 0.4)",
+                            bgcolor: "#FFFFFF",
+                            color: "#183D35",
+                            boxShadow: "0 8px 25px rgba(216, 229, 213, 0.4)",
                           },
                         }}
                       >
@@ -549,11 +572,11 @@ export default function HomeServices() {
                   <Grid size={{ xs: 12, md: 5 }}>
                     <Box
                       sx={{
-                        bgcolor: "#FFFFFF",
+                        bgcolor: "rgba(0, 0, 0, 0.2)",
                         p: { xs: 3, sm: 3.5 },
                         borderRadius: "20px",
-                        border: "1px solid rgba(24, 24, 27, 0.08)",
-                        boxShadow: "0 4px 15px rgba(24, 24, 27, 0.03)",
+                        border: "1px solid rgba(216, 229, 213, 0.15)",
+                        boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
                         display: "flex",
                         flexDirection: "column",
                         gap: 2,
@@ -563,7 +586,7 @@ export default function HomeServices() {
                         sx={{
                           fontSize: "0.85rem",
                           fontWeight: 700,
-                          color: "#18181B",
+                          color: "#D8E5D5",
                           letterSpacing: "0.02em",
                           textTransform: "uppercase",
                           fontFamily: "monospace",
@@ -578,8 +601,8 @@ export default function HomeServices() {
                               width: 20,
                               height: 20,
                               borderRadius: "50%",
-                              bgcolor: "rgba(234, 88, 12, 0.12)",
-                              color: "#EA580C",
+                              bgcolor: "rgba(216, 229, 213, 0.15)",
+                              color: "#D8E5D5",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
@@ -594,7 +617,7 @@ export default function HomeServices() {
                           <Typography
                             sx={{
                               fontSize: "0.85rem",
-                              color: "#3F3F46",
+                              color: "rgba(255, 255, 255, 0.9)",
                               fontWeight: 500,
                               lineHeight: 1.55,
                             }}
