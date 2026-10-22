@@ -4,10 +4,10 @@ import DigitalMarketingClient from "./DigitalMarketingClient";
 import { workProjects } from "../../../data/workData";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Company in Udaipur | SEO, SMM & Paid Ads | Aetibar",
+  title: "Digital Marketing Company in Udaipur | Aetibar",
 
   description:
-    "Aetibar provides digital marketing services in Udaipur, combining SEO, social media marketing, and Google & Meta advertising to help businesses improve online visibility and generate more enquiries.",
+    "Aetibar is the Best digital marketing company in Udaipur. Offers SEO, SMM, and Ads to improve online visibility, boost traffic, and generate leads.",
 
   keywords: [
     "Digital Marketing Company in Udaipur",

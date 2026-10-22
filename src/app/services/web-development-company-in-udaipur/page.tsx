@@ -3,10 +3,11 @@ import { Metadata } from "next";
 import WebDevelopmentClient from "./WebDevelopmentClient";
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Udaipur | Custom Websites | Aetibar",
+  title:
+    "Web Development Company in Udaipur | Aetibar",
 
   description:
-    "Aetibar provides web development services in Udaipur, including custom business websites, e-commerce stores, client portals, web applications, and website redesigns.",
+    "Aetibar is a trusted web development company in Udaipur. Building custom and responsive business website, eCommerce solutions, and boost your business. ",
 
   keywords: [
     "Web Development Company in Udaipur",
