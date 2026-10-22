@@ -138,7 +138,7 @@ export default function HowWeWorkCta() {
 
               <Button
                 component={Link}
-                href="/how-we-help"
+                href="/services"
                 variant="outlined"
                 sx={{
                   borderColor: "rgba(216, 229, 213, 0.35)",
@@ -156,7 +156,7 @@ export default function HowWeWorkCta() {
                   },
                 }}
               >
-                Explore How We Help
+                Explore Our Services
               </Button>
             </Box>
 

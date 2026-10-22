@@ -91,7 +91,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Home Services & Property Maintenance",
     industry: "Residential & Commercial Services",
     primaryNeed: "Clear service visibility & structured online enquiry capture",
-    image: "/images/portfolio/b2b.png", 
+    image: "/images/portfolio/homeClening.png", 
     summary:
       "A clean, professional website for a home cleaning and maintenance business, designed to clearly present service packages, establish trust, and make it easy for customers to request a service online.",
     timeline: "Concept Build",
@@ -361,7 +361,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Appointment-Based Service Provider",
     industry: "Health, Wellness & Professional Services",
     primaryNeed: "Native mobile booking app to eliminate phone scheduling bottlenecks",
-    image: "/images/portfolio/logix.png",
+    image: "/images/portfolio/appointment.png",
     summary:
       "A cross-platform iOS and Android mobile app designed to make appointment scheduling, service discovery, and customer reminders effortless from any smartphone.",
     timeline: "Concept Build",
@@ -496,7 +496,7 @@ export const workProjects: WorkProject[] = [
     businessType: "Field Operations & Contracting",
     industry: "Facilities & On-Site Contracting",
     primaryNeed: "Mobile job dispatch, status reporting, and photo completion proof for field staff",
-    image: "/images/portfolio/inventry.png",
+    image: "/images/portfolio/field.png",
     summary:
       "A mobile workflow app for field technicians to view assigned jobs, update work status, capture completion photos, and keep office dispatchers informed in real time.",
     timeline: "Functional Prototype",
@@ -631,7 +631,7 @@ export const workProjects: WorkProject[] = [
     businessType: "B2B & High-Value Service Firm",
     industry: "Sales & Professional Services",
     primaryNeed: "Automated enquiry triage, response drafting, and scheduled follow-up reminders",
-    image: "/images/portfolio/aiCostomer.png",
+    image: "/images/portfolio/b2b.png",
     summary:
       "A practical AI automation workflow that organizes incoming website enquiries, drafts context-aware responses for team review, and ensures prospective clients are never left waiting.",
     timeline: "Workflow Prototype",
