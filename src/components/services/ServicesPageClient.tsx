@@ -45,24 +45,6 @@ interface ServiceItem {
 
 const allServicesData: ServiceItem[] = [
   {
-    id: "digital-marketing",
-    category: "marketing",
-    badge: "Complete Growth",
-    title: "Digital Marketing & Online Growth",
-    subtitle: "End-to-end digital marketing combining SEO, social media & targeted ads",
-    simpleExplanation:
-      "Grow your business with a complete digital marketing strategy. We combine search engine ranking, engaging social media, and high-converting paid ads so your business reaches more local customers and gets consistent inquiries.",
-    href: "/services/digital-marketing-company-in-udaipur",
-    icon: <CampaignOutlinedIcon sx={{ fontSize: 26 }} />,
-    benefits: [
-      "Integrated SEO, social media marketing, and Google & Meta advertising",
-      "Consistent inbound customer inquiries, phone calls, and WhatsApp leads",
-      "Transparent reporting with clear return on investment tracking",
-      "You keep 100% control of all your ad accounts, analytics, and assets",
-    ],
-    bestFor: "Businesses looking for an all-in-one digital marketing partner to scale inquiries.",
-  },
-  {
     id: "social-media-marketing",
     category: "marketing",
     badge: "Audience & Trust",
@@ -563,8 +545,8 @@ export default function ServicesPageClient() {
               }}
             >
               {[
-                { id: "all", label: "All Services (7)" },
-                { id: "marketing", label: "Marketing, SEO & Ads (4)" },
+                { id: "all", label: "All Services (6)" },
+                { id: "marketing", label: "Marketing, SEO & Ads (3)" },
                 { id: "websites-apps", label: "Websites & Mobile Apps (2)" },
                 { id: "automation", label: "Smart AI Automation (1)" },
               ].map((tab) => {
