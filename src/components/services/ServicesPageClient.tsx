@@ -18,7 +18,6 @@ import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import AdsClickOutlinedIcon from "@mui/icons-material/AdsClickOutlined";
-import PaletteOutlinedIcon from "@mui/icons-material/PaletteOutlined";
 import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import CheckIcon from "@mui/icons-material/Check";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -29,7 +28,7 @@ import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Comprehensive categories covering all digital services
-type CategoryType = "all" | "branding" | "marketing" | "websites-apps" | "automation";
+type CategoryType = "all" | "marketing" | "websites-apps" | "automation";
 
 interface ServiceItem {
   id: string;
@@ -45,24 +44,6 @@ interface ServiceItem {
 }
 
 const allServicesData: ServiceItem[] = [
-  {
-    id: "graphic-design-branding",
-    category: "branding",
-    badge: "Branding & Visuals",
-    title: "Graphic Design & Brand Identity",
-    subtitle: "Memorable logos, brand colors, UI/UX design & marketing graphics",
-    simpleExplanation:
-      "First impressions happen in seconds. We design eye-catching logos, professional color palettes, social media graphics, product packaging, and clean UI/UX designs that make your business look established, premium, and trustworthy to buyers.",
-    href: "/services/social-media-marketing-service-in-udaipur",
-    icon: <PaletteOutlinedIcon sx={{ fontSize: 26 }} />,
-    benefits: [
-      "Custom logo design with complete brand color and font guidelines",
-      "Clean UI/UX design for websites and mobile apps that are easy to use",
-      "High-converting social media post templates, banners, and advertising creatives",
-      "Print-ready business cards, brochures, flyers, and product packaging",
-    ],
-    bestFor: "Businesses wanting to build instant trust and stand out with a premium brand look.",
-  },
   {
     id: "social-media-marketing",
     category: "marketing",
@@ -176,7 +157,7 @@ const allServicesData: ServiceItem[] = [
 const trustPoints = [
   {
     title: "All Digital Services in One Place",
-    desc: "You don't need five different agencies. We handle branding, social media, Google SEO, paid advertising, websites, and automation under one roof.",
+    desc: "You don't need five different agencies. We handle digital marketing, social media, Google SEO, paid advertising, websites, and automation under one roof.",
     icon: <CampaignOutlinedIcon sx={{ fontSize: 22, color: "#183D35" }} />,
   },
   {
@@ -186,12 +167,12 @@ const trustPoints = [
   },
   {
     title: "100% Asset & Code Ownership",
-    desc: "You own all design files, logos, ad accounts, websites, and code from day one. No monthly agency hostage fees or proprietary lock-ins ever.",
+    desc: "You own all design files, ad accounts, websites, and code from day one. No monthly agency hostage fees or proprietary lock-ins ever.",
     icon: <LockOutlinedIcon sx={{ fontSize: 22, color: "#183D35" }} />,
   },
   {
     title: "Direct Phone & Team Access",
-    desc: "You speak directly with the real designers, marketers, and developers working on your project, not a salesperson or remote call center.",
+    desc: "You speak directly with the real marketers, designers, and developers working on your project, not a salesperson or remote call center.",
     icon: <SupportAgentOutlinedIcon sx={{ fontSize: 22, color: "#183D35" }} />,
   },
 ];
@@ -199,27 +180,27 @@ const trustPoints = [
 const faqs = [
   {
     q: "I am not comfortable with technology or digital marketing. Can your team still help me?",
-    a: "Yes, 100%! Most of our clients are business owners who prefer to focus on running their day-to-day operations. Whether it's designing a logo, ranking on Google Maps, setting up Instagram ads, or building a website, we handle all the technical work. We explain everything in simple, everyday language so you always feel confident and in control.",
+    a: "Yes, 100%! Most of our clients are business owners who prefer to focus on running their day-to-day operations. Whether it's ranking on Google Maps, setting up Instagram ads, or building a website, we handle all the technical work. We explain everything in simple, everyday language so you always feel confident and in control.",
   },
   {
-    q: "Can you handle our branding, social media, and website together?",
-    a: "Yes! That is one of our biggest strengths. Instead of hiring one designer for a logo, another agency for social media, and a separate developer for your website, Aetibar handles everything together. This ensures your logo, brand colors, social media posts, ads, and website all look completely consistent and work as one unified system.",
+    q: "Can you handle our marketing, social media, and website together?",
+    a: "Yes! That is one of our biggest strengths. Instead of hiring separate agencies for social media, ads, and your website, Aetibar handles everything together under one roof. This ensures your digital marketing, social media posts, ads, and website all look completely consistent and work as one unified system.",
   },
   {
     q: "Will customer inquiries come directly to my email and phone?",
     a: "Yes! On every website, ad campaign, and social media channel we manage, we configure direct phone call buttons and instant lead forms. Whenever an interested customer reaches out, you receive their notification and details immediately on your phone and email.",
   },
   {
-    q: "Do I own my logo designs, website, and ad accounts after completion?",
-    a: "Yes, completely. Once the work is completed, all graphic files (high-resolution and editable vectors), website source files, domain logins, and Google/Meta ad accounts belong 100% to you. We never hold your digital assets hostage or charge monthly fees to access what is rightfully yours.",
+    q: "Do I own my website and ad accounts after completion?",
+    a: "Yes, completely. Once the work is completed, all website source files, domain logins, and Google/Meta ad accounts belong 100% to you. We never hold your digital assets hostage or charge monthly fees to access what is rightfully yours.",
   },
   {
     q: "How do we choose which service to start with?",
-    a: "It depends on what your business needs most right now. If you need a trustworthy look, start with Graphic Design & Brand Identity. If you need a central place to send clients, build a Fast Business Website. If you want immediate customer inquiries, start with Google & Meta Ads. Reach out to us via our contact form or phone, and we'll give you honest advice on what will bring the fastest return.",
+    a: "It depends on what your business needs most right now. If you need a solid online foundation, start with a Custom Business Website. If you want steady organic reach, start with Search Engine Optimization (SEO). If you need immediate customer inquiries, start with Google & Meta Ads or full Digital Marketing. Reach out to us via our contact form or phone, and we'll give you honest advice on what will bring the fastest return.",
   },
   {
     q: "How long does a typical project take?",
-    a: "Logo design and brand identity usually takes 3 to 7 days. A standard business website or SEO setup takes 1 to 3 weeks. Targeted ad campaigns can go live within 2 to 4 days. In our very first chat, we give you a clear, fixed timeline so you know exactly when to expect results.",
+    a: "A standard business website or SEO setup takes 1 to 3 weeks. Targeted ad campaigns can go live within 2 to 4 days. In our very first chat, we give you a clear, fixed timeline so you know exactly when to expect results.",
   },
 ];
 
@@ -564,8 +545,7 @@ export default function ServicesPageClient() {
               }}
             >
               {[
-                { id: "all", label: "All Services (7)" },
-                { id: "branding", label: "Design & Branding (1)" },
+                { id: "all", label: "All Services (6)" },
                 { id: "marketing", label: "Marketing, SEO & Ads (3)" },
                 { id: "websites-apps", label: "Websites & Mobile Apps (2)" },
                 { id: "automation", label: "Smart AI Automation (1)" },

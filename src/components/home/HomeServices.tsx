@@ -10,6 +10,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AdsClickOutlinedIcon from "@mui/icons-material/AdsClickOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
+import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import { motion } from "framer-motion";
 
 const coreServices = [
@@ -94,19 +95,19 @@ const coreServices = [
   },
 
   {
-    badge: "AI Automation",
-    title: "Automate Repetitive Business Work",
-    desc: "Reduce manual work by connecting your everyday tools and automating repetitive tasks where it makes sense.",
+    badge: "Digital Marketing",
+    title: "Complete Digital Growth & Marketing",
+    desc: "Grow your online presence, reach targeted customers, and generate qualified enquiries through integrated digital marketing strategies.",
     details:
-      "We create practical workflows that can move information between the tools your business already uses, such as WhatsApp, Gmail, Google Sheets, CRMs, and other software. AI can be added where it genuinely improves the workflow.",
+      "We provide comprehensive digital marketing services that combine search engine optimization, content-driven social media marketing, and targeted advertising on Google & Meta. Everything is managed to improve visibility and bring consistent business inquiries.",
     bullets: [
-      "Lead routing & follow-up workflows",
-      "Email, spreadsheet & CRM automation",
-      "Document & invoice data extraction",
-      "AI-assisted customer support & responses",
+      "Integrated SEO, SMM & PPC strategy",
+      "Targeted lead generation campaigns",
+      "Brand visibility & reputation building",
+      "Transparent reporting & conversion tracking",
     ],
-    href: "/services/ai-automation-company-in-udaipur",
-    icon: <SmartToyOutlinedIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
+    href: "/services/digital-marketing-company-in-udaipur",
+    icon: <CampaignOutlinedIcon sx={{ fontSize: 26, color: "#D8E5D5" }} />,
   },
 ];
 
