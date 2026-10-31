@@ -7,6 +7,7 @@ import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook"
 
 const serviceLinks = [
   { name: "Web Development", href: "/services/web-development-company-in-udaipur" },
@@ -39,8 +40,13 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/aetibar_information/",
+    href: "https://www.instagram.com/aetibar_digital/",
     icon: <InstagramIcon sx={{ fontSize: 16 }} />,
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/AetibarDigitalSolutions",
+    icon: <FacebookIcon sx={{ fontSize: 16 }} />,
   },
 ];
 
@@ -77,10 +83,22 @@ export default function Footer() {
                   fontSize: { xs: "1.35rem", md: "1.5rem" },
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: 0.8,
+                  gap: 1,
                   mb: 2,
                 }}
               >
+                <Box
+                  component="img"
+                  src="/logo.jpeg"
+                  alt="Aetibar Logo"
+                  sx={{
+                    width: { xs: 34, md: 40 },
+                    height: { xs: 34, md: 40 },
+                    borderRadius: "8px",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
                 AETIBAR
                 <Box
                   component="span"
