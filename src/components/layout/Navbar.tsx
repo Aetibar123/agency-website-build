@@ -16,6 +16,7 @@ import {
   Menu,
   MenuItem,
   Divider,
+  CardMedia,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -56,7 +57,9 @@ const serviceItems = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [servicesAnchor, setServicesAnchor] = useState<null | HTMLElement>(null);
+  const [servicesAnchor, setServicesAnchor] = useState<null | HTMLElement>(
+    null,
+  );
   const pathname = usePathname();
 
   useEffect(() => {
@@ -126,9 +129,22 @@ export default function Navbar() {
                 fontSize: { xs: "1.25rem", md: "1.45rem" },
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 0.75,
+                gap: 1,
               }}
             >
+              <CardMedia
+                component="img"
+                image="/image.png"
+                alt="Aetibar Logo"
+                src="https://www.aetibar.in/"
+                sx={{
+                  width: { xs: 34, sm: 38, md: 42 },
+                  height: { xs: 34, sm: 38, md: 42 },
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
               AETIBAR
               <Box
                 component="span"
@@ -164,7 +180,9 @@ export default function Navbar() {
                       sx={{
                         fontSize: "1.1rem !important",
                         transition: "transform 0.2s",
-                        transform: Boolean(servicesAnchor) ? "rotate(180deg)" : "none",
+                        transform: Boolean(servicesAnchor)
+                          ? "rotate(180deg)"
+                          : "none",
                       }}
                     />
                   }
@@ -268,7 +286,9 @@ export default function Navbar() {
                     </MenuItem>
                   ))}
 
-                  <Divider sx={{ my: 1, borderColor: "rgba(24, 61, 53, 0.06)" }} />
+                  <Divider
+                    sx={{ my: 1, borderColor: "rgba(24, 61, 53, 0.06)" }}
+                  />
 
                   <MenuItem
                     component={Link}
@@ -340,14 +360,21 @@ export default function Navbar() {
             </Box>
 
             {/* Desktop CTA & Mobile Menu Toggle */}
-            <Box sx={{ display: "flex", alignItems: "center", gap: { xs: 1, sm: 2 } }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: { xs: 1, sm: 2 },
+              }}
+            >
               <Button
                 component={Link}
                 href="/contact"
                 variant="contained"
                 sx={{
                   display: { xs: "none", sm: "inline-flex" },
-                  background: "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
+                  background:
+                    "linear-gradient(135deg, #3D765D 0%, #4D8F72 100%)",
                   color: "#FFFFFF",
                   px: { sm: 2.2, md: 2.5, lg: 3 },
                   py: { sm: 0.85, md: 1, lg: 1.1 },
@@ -359,7 +386,8 @@ export default function Navbar() {
                   transition: "all 0.25s ease",
                   textTransform: "none",
                   "&:hover": {
-                    background: "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
+                    background:
+                      "linear-gradient(135deg, #183D35 0%, #3D765D 100%)",
                     boxShadow: "0 6px 20px rgba(61, 118, 93, 0.4)",
                     transform: "translateY(-1px)",
                   },
@@ -429,15 +457,37 @@ export default function Navbar() {
             }}
           >
             <Typography
+              component={Link}
+              href="/"
+              onClick={() => setMobileOpen(false)}
               sx={{
                 fontWeight: 900,
                 letterSpacing: "-0.03em",
                 color: "#183D35",
                 fontSize: { xs: "1.05rem", sm: "1.2rem" },
                 whiteSpace: "nowrap",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 0.9,
+                textDecoration: "none",
               }}
             >
-              AETIBAR<Box component="span" sx={{ color: "#3D765D" }}>.</Box>
+              <CardMedia
+                component="img"
+                image="/logo.jpeg"
+                alt="Aetibar Logo"
+                sx={{
+                  width: { xs: 28, sm: 32 },
+                  height: { xs: 28, sm: 32 },
+                  borderRadius: "6px",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
+              AETIBAR
+              <Box component="span" sx={{ color: "#3D765D" }}>
+                .
+              </Box>
             </Typography>
             <IconButton
               onClick={handleDrawerToggle}
@@ -464,7 +514,10 @@ export default function Navbar() {
             </IconButton>
           </Box>
 
-          <List disablePadding sx={{ pt: 2, display: "flex", flexDirection: "column", gap: 0.25 }}>
+          <List
+            disablePadding
+            sx={{ pt: 2, display: "flex", flexDirection: "column", gap: 0.25 }}
+          >
             <ListItem
               component={Link}
               href="/services"
@@ -482,14 +535,31 @@ export default function Navbar() {
                 },
               }}
             >
-              <Typography sx={{ fontSize: { xs: "0.95rem", sm: "1.05rem" }, fontWeight: 700, color: "#183D35" }}>
+              <Typography
+                sx={{
+                  fontSize: { xs: "0.95rem", sm: "1.05rem" },
+                  fontWeight: 700,
+                  color: "#183D35",
+                }}
+              >
                 Services
               </Typography>
-              <ArrowForwardIcon sx={{ fontSize: { xs: 14, sm: 16 }, color: "#94A3B8" }} />
+              <ArrowForwardIcon
+                sx={{ fontSize: { xs: 14, sm: 16 }, color: "#94A3B8" }}
+              />
             </ListItem>
 
             {/* Sub items for Services in mobile */}
-            <Box sx={{ pl: { xs: 1.25, sm: 2 }, pr: 0.5, pb: 0.5, display: "flex", flexDirection: "column", gap: 0.4 }}>
+            <Box
+              sx={{
+                pl: { xs: 1.25, sm: 2 },
+                pr: 0.5,
+                pb: 0.5,
+                display: "flex",
+                flexDirection: "column",
+                gap: 0.4,
+              }}
+            >
               {serviceItems.map((sub) => (
                 <Typography
                   key={sub.path}
@@ -562,7 +632,9 @@ export default function Navbar() {
           </List>
         </Box>
 
-        <Box sx={{ pt: 2, mt: 2, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}>
+        <Box
+          sx={{ pt: 2, mt: 2, borderTop: "1px solid rgba(24, 61, 53, 0.08)" }}
+        >
           <Button
             component={Link}
             href="/contact"
