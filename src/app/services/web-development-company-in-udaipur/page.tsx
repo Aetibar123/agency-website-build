@@ -11,13 +11,20 @@ export const metadata: Metadata = {
 
   keywords: [
     "Web Development Company in Udaipur",
+    "Best Web Development Company in Udaipur",
+    "Web Development services in Udaipur",
+    "Best Web Development services in Udaipur",
     "Website Development Company in Udaipur",
+    "Best Website Development Company in Udaipur",
     "Web Design Company in Udaipur",
+    "Best Web Design Company in Udaipur",
     "Custom Web Development Udaipur",
     "E-commerce Website Development Udaipur",
     "Web Application Development Udaipur",
     "Website Redesign Udaipur",
     "Web Development Services",
+    "Web Development Company",
+    "Website Development Company",
   ],
 
   authors: [
