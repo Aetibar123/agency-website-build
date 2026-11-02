@@ -19,9 +19,14 @@ export const metadata: Metadata = {
 
   keywords: [
     // Core business terms
-    "digital agency",
-    "digital solutions company",
-    "digital services for businesses",
+    "digital marketing company in udaipur",
+    "digital marketing agency in udaipur",
+    "digital marketing services in udaipur",
+    "best digital marketing company in udaipur",
+    "best digital marketing agency in udaipur",
+    "digital marketing company in india",
+    "digital solutions company in udaipur",
+    "digital marketing services for businesses",
     "business technology solutions",
     "digital marketing company",
     "digital marketing agency",
@@ -30,6 +35,8 @@ export const metadata: Metadata = {
 
     // Web development
     "web development",
+    "web development services in Udaipur",
+    "website development services in Udaipur",
     "website development",
     "web development company",
     "custom web development",
