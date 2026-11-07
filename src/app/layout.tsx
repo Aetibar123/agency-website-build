@@ -19,6 +19,8 @@ const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
 });
 
+const logoPath = "/logo.jpeg";
+const logoUrl = `https://www.aetibar.in${logoPath}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aetibar.in"),
@@ -61,7 +63,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-
     googleBot: {
       index: true,
       follow: true,
@@ -72,48 +73,38 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/logo.jpeg",
-    shortcut: "/logo.jpeg",
-    apple: "/logo.jpeg",
+    icon: [{ url: logoPath, type: "image/png", sizes: "676x676" }],
+    shortcut: [{ url: logoPath, type: "image/png", sizes: "676x676" }],
+    apple: [{ url: logoPath, type: "image/png", sizes: "676x676" }],
   },
 
   openGraph: {
     title: "Aetibar | Websites, Software & Digital Solutions for Businesses",
-
     description:
       "We help businesses build practical websites, software, mobile apps, digital marketing systems, and AI-powered workflows around how they actually operate.",
-
     url: "https://www.aetibar.in",
-
     siteName: "Aetibar",
-
     images: [
       {
-        url: "https://www.aetibar.in/logo.jpeg",
-        width: 512,
-        height: 512,
+        url: logoUrl,
+        width: 676,
+        height: 676,
+        type: "image/png",
         alt: "Aetibar",
       },
     ],
-
     locale: "en_IN",
-
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-
     title: "Aetibar | Websites, Software & Digital Solutions for Businesses",
-
     description:
       "Practical websites, software, mobile apps, digital marketing, and AI-powered workflows for businesses.",
-
-    images: ["/logo.jpeg"],
+    images: [logoUrl],
   },
 };
-
-
 
 export default function RootLayout({
   children,
@@ -123,7 +114,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <head>
-        <meta name="google-site-verification" content="PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ" />
+        <meta
+          name="google-site-verification"
+          content="PVyFa8z-DWpWv1wQPIIsj9kBQAbxQXhvagtURSD7-ZQ"
+        />
 
         <Script
           id="organization-schema"
@@ -135,8 +129,8 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Aetibar",
               url: "https://www.aetibar.in",
-              logo: "https://www.aetibar.in/logo.jpeg",
-              image: "https://www.aetibar.in/logo.jpeg",
+              logo: logoUrl,
+              image: logoUrl,
               description:
                 "Building practical digital systems around how businesses actually work. We diagnose friction, connect fragmented workflows, and engineer purpose-built websites, internal tools, and automations.",
               email: "hello.aetibar@gmail.com",
@@ -150,8 +144,8 @@ export default function RootLayout({
               sameAs: [
                 "https://www.linkedin.com/company/aetibar",
                 "https://www.instagram.com/aetibar_information/",
-                "https://x.com/Aetibar_"
-              ]
+                "https://x.com/Aetibar_",
+              ],
             }),
           }}
         />
@@ -170,13 +164,20 @@ export default function RootLayout({
           `}
         </Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className={`${poppins.className} ${dmSerif.variable}`} style={{ margin: 0 }}>
+      <body
+        className={`${poppins.className} ${dmSerif.variable}`}
+        style={{ margin: 0 }}
+      >
         <ThemeRegistry>
           <Navbar />
           {children}
