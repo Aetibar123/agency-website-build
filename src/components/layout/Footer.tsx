@@ -89,7 +89,7 @@ export default function Footer() {
               >
                 <Box
                   component="img"
-                  src="/logo.jpeg"
+                  src="/logo.png"
                   alt="Aetibar Logo"
                   sx={{
                     width: { xs: 34, md: 40 },

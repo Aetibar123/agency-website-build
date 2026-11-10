@@ -347,7 +347,7 @@ export default function MobileDevelopmentClient() {
                 mb: 2.5,
               }}
             >
-              App Development Company in Udaipur —{" "}
+              Mobile App Development Company in Udaipur —{" "}
               <Box component="span" sx={{ color: "#D8E5D5", fontStyle: "italic" }}>
                 Custom Apps for iPhone &amp; Android
               </Box>

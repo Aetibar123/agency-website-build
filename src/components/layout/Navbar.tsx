@@ -134,9 +134,8 @@ export default function Navbar() {
             >
               <CardMedia
                 component="img"
-                image="/image.png"
+                image="/logo.png"
                 alt="Aetibar Logo"
-                src="https://www.aetibar.in/"
                 sx={{
                   width: { xs: 34, sm: 38, md: 42 },
                   height: { xs: 34, sm: 38, md: 42 },
@@ -474,7 +473,7 @@ export default function Navbar() {
             >
               <CardMedia
                 component="img"
-                image="/logo.jpeg"
+                image="/logo.png"
                 alt="Aetibar Logo"
                 sx={{
                   width: { xs: 28, sm: 32 },
